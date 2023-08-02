@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg20363"
+   version="1.1"
+   viewBox="0 0 563 543"
+   height="14.37cm"
+   width="14.90cm">
+  <metadata
+     id="metadata20369">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs20367" />
+  <desc
+     id="desc19895">Created with Enterprise Architect (Build: 1627) 1</desc>
+  <g
+     id="g19899"
+     style="fill:#FFFFFF;fill-opacity:1.00;">
+    <rect
+       id="rect19897"
+       shape-rendering="auto"
+       height="543"
+       width="563"
+       y="0"
+       x="0" />
+  </g>
+  <g
+     id="g19903"
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+    <path
+       id="path19901"
+       shape-rendering="auto"
+       d="M 6 6 L 6 537 L 557 537 L 557 6 L 6 6" />
+  </g>
+  <g
+     id="g19907"
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#FFFFFF;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <polygon
+       id="polygon19905"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="6 24 136 24 149 10 149 6 6 6 6 24" />
+  </g>
+  <g
+     id="g19911"
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text19909"
+       transform="rotate(-0.00 11.00 18.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="123"
+       y="18.00"
+       x="11.00">class ShuntCompensator</text>
+  </g>
+  <g
+     id="g20197"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20195"
+       shape-rendering="auto"
+       rx="0.00"
+       height="174"
+       width="278"
+       y="35"
+       x="111" />
+  </g>
+  <g
+     id="g20203"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20199"
+       transform="rotate(-0.00 298.00 47.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="88"
+       y="47.00"
+       x="298.00">RegulatingCondEq</text>
+    <text
+       id="text20201"
+       transform="rotate(-0.00 203.00 61.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="93"
+       y="61.00"
+       x="203.00">ShuntCompensator</text>
+  </g>
+  <g
+     id="g20207"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+    <path
+       id="path20205"
+       shape-rendering="auto"
+       d="M 111 68 L 388 68" />
+  </g>
+  <g
+     id="g20241"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20209"
+       transform="rotate(-0.00 116.00 81.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="81.00"
+       x="116.00">+ </text>
+    <text
+       id="text20211"
+       transform="rotate(-0.00 133.00 81.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="120"
+       y="81.00"
+       x="133.00">aVRDelay: Seconds [0..1]</text>
+    <text
+       id="text20213"
+       transform="rotate(-0.00 116.00 92.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="92.00"
+       x="116.00">+ </text>
+    <text
+       id="text20215"
+       transform="rotate(-0.00 133.00 92.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="117"
+       y="92.00"
+       x="133.00">grounded: Boolean [0..1]</text>
+    <text
+       id="text20217"
+       transform="rotate(-0.00 116.00 103.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="103.00"
+       x="116.00">+ </text>
+    <text
+       id="text20219"
+       transform="rotate(-0.00 133.00 103.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="122"
+       y="103.00"
+       x="133.00">maximumSections: Integer</text>
+    <text
+       id="text20221"
+       transform="rotate(-0.00 116.00 114.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="114.00"
+       x="116.00">+ </text>
+    <text
+       id="text20223"
+       transform="rotate(-0.00 133.00 114.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="69"
+       y="114.00"
+       x="133.00">nomU: Voltage</text>
+    <text
+       id="text20225"
+       transform="rotate(-0.00 116.00 125.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="125.00"
+       x="116.00">+ </text>
+    <text
+       id="text20227"
+       transform="rotate(-0.00 133.00 125.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="110"
+       y="125.00"
+       x="133.00">normalSections: Integer</text>
+    <text
+       id="text20229"
+       transform="rotate(-0.00 116.00 136.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="136.00"
+       x="116.00">+ </text>
+    <text
+       id="text20231"
+       transform="rotate(-0.00 133.00 136.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="136"
+       y="136.00"
+       x="133.00">switchOnCount: Integer [0..1]</text>
+    <text
+       id="text20233"
+       transform="rotate(-0.00 116.00 147.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="147.00"
+       x="116.00">+ </text>
+    <text
+       id="text20235"
+       transform="rotate(-0.00 133.00 147.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="141"
+       y="147.00"
+       x="133.00">switchOnDate: DateTime [0..1]</text>
+    <text
+       id="text20237"
+       transform="rotate(-0.00 116.00 158.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="158.00"
+       x="116.00">+ </text>
+    <text
+       id="text20239"
+       transform="rotate(-0.00 133.00 158.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="234"
+       y="158.00"
+       x="133.00">voltageSensitivity: VoltagePerReactivePower [0..1]</text>
+  </g>
+  <g
+     id="g20245"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20243"
+       shape-rendering="auto"
+       rx="0.00"
+       height="111"
+       width="185"
+       y="250"
+       x="35" />
+  </g>
+  <g
+     id="g20249"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20247"
+       transform="rotate(-0.00 65.00 268.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="124"
+       y="268.00"
+       x="65.00">LinearShuntCompensator</text>
+  </g>
+  <g
+     id="g20253"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+    <path
+       id="path20251"
+       shape-rendering="auto"
+       d="M 35 275 L 219 275" />
+  </g>
+  <g
+     id="g20263"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20255"
+       transform="rotate(-0.00 40.00 288.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="288.00"
+       x="40.00">+ </text>
+    <text
+       id="text20257"
+       transform="rotate(-0.00 57.00 288.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="124"
+       y="288.00"
+       x="57.00">bPerSection: Susceptance</text>
+    <text
+       id="text20259"
+       transform="rotate(-0.00 40.00 299.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="299.00"
+       x="40.00">+ </text>
+    <text
+       id="text20261"
+       transform="rotate(-0.00 57.00 299.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="125"
+       y="299.00"
+       x="57.00">gPerSection: Conductance</text>
+  </g>
+  <g
+     id="g20267"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20265"
+       transform="rotate(-0.00 48.00 314.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="65"
+       y="314.00"
+       x="48.00">«ShortCircuit»</text>
+  </g>
+  <g
+     id="g20277"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20269"
+       transform="rotate(-0.00 40.00 325.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="325.00"
+       x="40.00">+ </text>
+    <text
+       id="text20271"
+       transform="rotate(-0.00 57.00 325.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="130"
+       y="325.00"
+       x="57.00">b0PerSection: Susceptance</text>
+    <text
+       id="text20273"
+       transform="rotate(-0.00 40.00 336.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="336.00"
+       x="40.00">+ </text>
+    <text
+       id="text20275"
+       transform="rotate(-0.00 57.00 336.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="131"
+       y="336.00"
+       x="57.00">g0PerSection: Conductance</text>
+  </g>
+  <g
+     id="g20281"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20279"
+       shape-rendering="auto"
+       rx="0.00"
+       height="70"
+       width="171"
+       y="249"
+       x="272" />
+  </g>
+  <g
+     id="g20285"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20283"
+       transform="rotate(-0.00 287.00 267.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="140"
+       y="267.00"
+       x="287.00">NonlinearShuntCompensator</text>
+  </g>
+  <g
+     id="g20289"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20287"
+       shape-rendering="auto"
+       rx="0.00"
+       height="121"
+       width="201"
+       y="386"
+       x="261" />
+  </g>
+  <g
+     id="g20293"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20291"
+       transform="rotate(-0.00 279.00 404.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="165"
+       y="404.00"
+       x="279.00">NonlinearShuntCompensatorPoint</text>
+  </g>
+  <g
+     id="g20297"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+    <path
+       id="path20295"
+       shape-rendering="auto"
+       d="M 261 411 L 461 411" />
+  </g>
+  <g
+     id="g20311"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20299"
+       transform="rotate(-0.00 266.00 424.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="424.00"
+       x="266.00">+ </text>
+    <text
+       id="text20301"
+       transform="rotate(-0.00 283.00 424.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="73"
+       y="424.00"
+       x="283.00">b: Susceptance</text>
+    <text
+       id="text20303"
+       transform="rotate(-0.00 266.00 435.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="435.00"
+       x="266.00">+ </text>
+    <text
+       id="text20305"
+       transform="rotate(-0.00 283.00 435.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="74"
+       y="435.00"
+       x="283.00">g: Conductance</text>
+    <text
+       id="text20307"
+       transform="rotate(-0.00 266.00 446.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="446.00"
+       x="266.00">+ </text>
+    <text
+       id="text20309"
+       transform="rotate(-0.00 283.00 446.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="108"
+       y="446.00"
+       x="283.00">sectionNumber: Integer</text>
+  </g>
+  <g
+     id="g20315"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20313"
+       transform="rotate(-0.00 274.00 461.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="65"
+       y="461.00"
+       x="274.00">«ShortCircuit»</text>
+  </g>
+  <g
+     id="g20325"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20317"
+       transform="rotate(-0.00 266.00 472.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="472.00"
+       x="266.00">+ </text>
+    <text
+       id="text20319"
+       transform="rotate(-0.00 283.00 472.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="79"
+       y="472.00"
+       x="283.00">b0: Susceptance</text>
+    <text
+       id="text20321"
+       transform="rotate(-0.00 266.00 483.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="483.00"
+       x="266.00">+ </text>
+    <text
+       id="text20323"
+       transform="rotate(-0.00 283.00 483.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="80"
+       y="483.00"
+       x="283.00">g0: Conductance</text>
+  </g>
+  <g
+     id="g20329"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20327"
+       shape-rendering="auto"
+       d="M 360 386 L 359 319" />
+  </g>
+  <g
+     id="g20333"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20331"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="364 329 359 319 354 329 359 339" />
+  </g>
+  <g
+     id="g20339"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20335"
+       shape-rendering="auto"
+       d="M 365 354 L 359 339 L 353 354" />
+    <path
+       id="path20337"
+       shape-rendering="auto"
+       d="M 333 249 L 307 209" />
+  </g>
+  <g
+     id="g20343"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20341"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="321 219 311 226 307 209" />
+  </g>
+  <g
+     id="g20347"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20345"
+       shape-rendering="auto"
+       d="M 163 250 L 191 209" />
+  </g>
+  <g
+     id="g20351"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20349"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="187 226 177 219 191 209" />
+  </g>
+  <g
+     id="g20361"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20353"
+       transform="rotate(-0.00 186.00 380.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="169"
+       y="380.00"
+       x="186.00">+NonlinearShuntCompensatorPoints</text>
+    <text
+       id="text20355"
+       transform="rotate(-0.00 373.00 380.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="16"
+       y="380.00"
+       x="373.00">1..*</text>
+    <text
+       id="text20357"
+       transform="rotate(-0.00 372.00 354.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="140"
+       y="354.00"
+       x="372.00">+NonlinearShuntCompensator</text>
+    <text
+       id="text20359"
+       transform="rotate(-0.00 377.00 334.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="6"
+       y="334.00"
+       x="377.00">1</text>
+  </g>
+</svg>

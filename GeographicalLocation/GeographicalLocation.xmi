@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no" ?>
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2023-08-02 12:45:26">
+	<XMI.header>
+		<XMI.documentation>
+			<XMI.exporter>Enterprise Architect</XMI.exporter>
+			<XMI.exporterVersion>2.5</XMI.exporterVersion>
+			<XMI.exporterID>1627</XMI.exporterID>
+		</XMI.documentation>
+	</XMI.header>
+	<XMI.content>
+		<UML:Model name="EA Model" xmi.id="MX_EAID_B3B0BEBA_247A_42cf_8AF1_AE24E3F37EDD">
+			<UML:Namespace.ownedElement>
+				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
+				<UML:Package name="GeographicalLocationProfile" xmi.id="EAPK_B3B0BEBA_247A_42cf_8AF1_AE24E3F37EDD" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="documentation" value="This geographical location profile is built on the basis of the IEC profile. There is small difference in one association which is specific for exchanges between TSOs."/>
+					</UML:ModelElement.taggedValue>
+					<UML:Namespace.ownedElement>
+						<UML:Comment xmi.id="EAID_2EE08E45_62F6_4dbd_86C3_6639335EB411" visibility="public" namespace="EAPK_B3B0BEBA_247A_42cf_8AF1_AE24E3F37EDD">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="The CoordinateSystem.crsUrn uses WGS84 (latitude, longitude), i.e. urn:ogc:def:crs:EPSG::4326 if not specified otherwise in an EU Network code or another ENTSO-E document defining TSOs' data exchange processes."/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Class name="GeographicalLocationVersion" xmi.id="EAID_813940E6_3629_4dad_9C73_2D351A9CA802" visibility="public" namespace="EAPK_B3B0BEBA_247A_42cf_8AF1_AE24E3F37EDD" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="Entsoe"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Version details."/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="baseUML" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="iec61970cim16v28_iec61968cim12v08_iec62325cim03v01a"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Base UML provided by CIM model manager."/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="baseURI" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="http://entsoe.eu/Secretariat/2013/Geographical/2"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Profile URI used in the Model Exchange header and defined in IEC standards.  It uniquely identifies the Profile and its version. It is given for information only and to identify the closest IEC profile to which this CGMES profile is based on."/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="date" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="2014-08-07"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_FF85CB9F_4A0C_4339_A3E4_06CE2EA1772F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Profile creation date&#xA;Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{8DADB97F-283D-40c7-A25A-D75E4C0D8507}" xmi.id="EAID_E2CEF287_E18F_4529_ACA0_45E0D28D61FD"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="differenceModelURI" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="http://iec.ch/TC57/61970-552/DifferenceModel/1#"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Difference model URI defined by IEC 61970-552. "/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="entsoeUML" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="entsoe_v2.4.15"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="UML provided by ENTSO-E."/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="entsoeURI" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="http://entsoe.eu/CIM/GeographicalLocation/2/1"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Profile URI defined by ENTSO-E and used in the Model Exchange header.  It uniquely identifies the Profile and its version. The last two elements in the URI (http://entsoe.eu/CIM/GeographicalLocation/yy/zzz) indicate major and minor versions where: &#xA;- yy - indicates a major version;&#xA;- zzz - indicates a minor version. "/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="modelDescriptionURI" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="http://iec.ch/TC57/61970-552/ModelDescription/1#"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Model Description URI defined by IEC 61970-552. "/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="namespaceRDF" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="RDF namespace. "/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="namespaceUML" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="http://iec.ch/TC57/2013/CIM-schema-cim16#"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="CIM UML namespace. "/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="shortName" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="GL"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The short name of the profile used in profile documentation."/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Comment xmi.id="EAID_D7AA7673_B624_460d_94E9_331B5573FC69" visibility="public" namespace="EAPK_B3B0BEBA_247A_42cf_8AF1_AE24E3F37EDD">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Please pay attention: the multiplicity of this association is different with the distribution profile. The change was made to fit transmission needs. "/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Package name="Common" xmi.id="EAPK_8D3D2571_11C1_4571_A52E_D13F318833A0" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.taggedValue/>
+							<UML:Namespace.ownedElement>
+								<UML:Class name="Location" xmi.id="EAID_290E271B_B1D9_45d6_AA53_01C4302822B8" visibility="public" namespace="EAPK_8D3D2571_11C1_4571_A52E_D13F318833A0" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="documentation" value="The place, scene, or point of something where someone or something has been, is, and/or will be at a given moment in time. It can be defined with one or more postition points (coordinates) in a given coordinate system.&#xA;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Class>
+								<UML:Association xmi.id="EAID_3915E768_6DC5_4438_99FD_D7A52480F750" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{DBF35456-ABE1-4deb-A885-2E48B3D6F8F6}" xmi.id="EAID_6A9ABFEA_15D4_4b39_A3C5_7467EA6EB8A1"/>
+									</UML:ModelElement.taggedValue>
+									<UML:Association.connection>
+										<UML:AssociationEnd visibility="public" multiplicity="1" name="Location" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_290E271B_B1D9_45d6_AA53_01C4302822B8">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="description" value="Location described by this position point."/>
+											</UML:ModelElement.taggedValue>
+										</UML:AssociationEnd>
+										<UML:AssociationEnd visibility="public" multiplicity="1..*" name="PositionPoints" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_EF85055A_B753_4eb9_9FD7_FE577C68685D">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="description" value="Sequence of position points describing this location, expressed in coordinate system 'Location.CoordinateSystem'."/>
+											</UML:ModelElement.taggedValue>
+										</UML:AssociationEnd>
+									</UML:Association.connection>
+								</UML:Association>
+								<UML:Generalization subtype="EAID_290E271B_B1D9_45d6_AA53_01C4302822B8" supertype="EAID_48C46760_EC38_4c58_A10B_468A1DFD5A6E" xmi.id="EAID_4DBAD8EF_5D76_4e87_ABBE_D65E86B46420" visibility="public">
+									<UML:ModelElement.taggedValue/>
+								</UML:Generalization>
+								<UML:Association xmi.id="EAID_61A89810_B909_433b_B039_282C299F5241" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{9F4B30FA-0A66-4ce4-9A00-413B0DB058C7}" xmi.id="EAID_0276583F_7F79_452e_95FD_B62EB4ACC9E0"/>
+									</UML:ModelElement.taggedValue>
+									<UML:Association.connection>
+										<UML:AssociationEnd visibility="public" multiplicity="0..1" name="Location" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_290E271B_B1D9_45d6_AA53_01C4302822B8">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="description" value="Location of this power system resource."/>
+											</UML:ModelElement.taggedValue>
+										</UML:AssociationEnd>
+										<UML:AssociationEnd visibility="public" multiplicity="1" name="PowerSystemResources" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_C2DD674F_BE55_4260_B32A_A0B8A5CF0D13">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="description" value="All power system resources at this location."/>
+											</UML:ModelElement.taggedValue>
+										</UML:AssociationEnd>
+									</UML:Association.connection>
+								</UML:Association>
+								<UML:Association xmi.id="EAID_BC5C575E_F435_450d_AD64_575CD67A5E98" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{D9DB79D8-27F1-4071-9C79-F0F1F62B4F18}" xmi.id="EAID_9799AD2F_4BAF_4381_BF07_5365EF793F04"/>
+									</UML:ModelElement.taggedValue>
+									<UML:Association.connection>
+										<UML:AssociationEnd visibility="public" multiplicity="0..*" name="Location" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_290E271B_B1D9_45d6_AA53_01C4302822B8">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="description" value="All locations described with position points in this coordinate system."/>
+											</UML:ModelElement.taggedValue>
+										</UML:AssociationEnd>
+										<UML:AssociationEnd visibility="public" multiplicity="1..1" name="CoordinateSystem" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_D3B6F87F_97CC_4cbf_A14E_C851C839A167">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="description" value="Coordinate system used to describe position points of this location."/>
+											</UML:ModelElement.taggedValue>
+										</UML:AssociationEnd>
+									</UML:Association.connection>
+								</UML:Association>
+								<UML:Class name="CoordinateSystem" xmi.id="EAID_D3B6F87F_97CC_4cbf_A14E_C851C839A167" visibility="public" namespace="EAPK_8D3D2571_11C1_4571_A52E_D13F318833A0" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="documentation" value="Coordinate reference system.&#xA;"/>
+									</UML:ModelElement.taggedValue>
+									<UML:Classifier.feature>
+										<UML:Attribute name="crsUrn" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:Attribute.initialValue>
+												<UML:Expression/>
+											</UML:Attribute.initialValue>
+											<UML:StructuralFeature.type>
+												<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+											</UML:StructuralFeature.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="description" value="A Uniform Resource Name (URN) for the coordinate reference system (crs) used to define 'Location.PositionPoints'.&#xA;An example would be the European Petroleum Survey Group (EPSG) code for a coordinate reference system, defined in URN under the Open Geospatial Consortium (OGC) namespace as: urn:ogc:def:uom:EPSG::XXXX, where XXXX is an EPSG code (a full list of codes can be found at the EPSG Registry web site http://www.epsg-registry.org/). To define the coordinate system as being WGS84 (latitude, longitude) using an EPSG OGC, this attribute would be urn:ogc:def:uom:EPSG::4236.&#xA;A profile should limit this code to a set of allowed URNs agreed to by all sending and receiving parties."/>
+												<UML:TaggedValue tag="GUIDBasedOn" value="{961FC72C-29B9-4d09-B575-0140E5585552}" xmi.id="EAID_CDD47DCE_AD41_41dd_98EB_281668907C98"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Attribute>
+									</UML:Classifier.feature>
+								</UML:Class>
+								<UML:Generalization subtype="EAID_D3B6F87F_97CC_4cbf_A14E_C851C839A167" supertype="EAID_48C46760_EC38_4c58_A10B_468A1DFD5A6E" xmi.id="EAID_F7A21E38_E801_47b7_986A_2D5CD15E6493" visibility="public">
+									<UML:ModelElement.taggedValue/>
+								</UML:Generalization>
+								<UML:Class name="PositionPoint" xmi.id="EAID_EF85055A_B753_4eb9_9FD7_FE577C68685D" visibility="public" namespace="EAPK_8D3D2571_11C1_4571_A52E_D13F318833A0" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="documentation" value="Set of spatial coordinates that determine a point, defined in the coordinate system specified in 'Location.CoordinateSystem'. Use a single position point instance to desribe a point-oriented location. Use a sequence of position points to describe a line-oriented object (physical location of non-point oriented objects like cables or lines), or area of an object (like a substation or a geographical zone - in this case, have first and last position point with the same values)."/>
+									</UML:ModelElement.taggedValue>
+									<UML:Classifier.feature>
+										<UML:Attribute name="sequenceNumber" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:Attribute.initialValue>
+												<UML:Expression/>
+											</UML:Attribute.initialValue>
+											<UML:StructuralFeature.type>
+												<UML:Classifier xmi.idref="EAID_5444BCC6_E3F1_4ba3_9041_6E67985141CD"/>
+											</UML:StructuralFeature.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="description" value="Zero-relative sequence number of this point within a series of points."/>
+												<UML:TaggedValue tag="GUIDBasedOn" value="{9C1FA17F-EC70-452a-9BD5-2F5E29234B28}" xmi.id="EAID_A98306E7_1DA0_432f_84C4_A924D523982B"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Attribute>
+										<UML:Attribute name="xPosition" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:Attribute.initialValue>
+												<UML:Expression/>
+											</UML:Attribute.initialValue>
+											<UML:StructuralFeature.type>
+												<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+											</UML:StructuralFeature.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="description" value="X axis position."/>
+												<UML:TaggedValue tag="GUIDBasedOn" value="{2C06CBF6-1564-417b-98DF-24B9E0040DCC}" xmi.id="EAID_561A2AF7_BBF0_43e0_9D3B_093669963A92"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Attribute>
+										<UML:Attribute name="yPosition" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:Attribute.initialValue>
+												<UML:Expression/>
+											</UML:Attribute.initialValue>
+											<UML:StructuralFeature.type>
+												<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+											</UML:StructuralFeature.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="description" value="Y axis position."/>
+												<UML:TaggedValue tag="GUIDBasedOn" value="{150622F9-462B-4479-9DC4-F9035E140110}" xmi.id="EAID_F0757507_0E1B_43cd_9A76_3A43EAEEC6F4"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Attribute>
+										<UML:Attribute name="zPosition" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:Attribute.initialValue>
+												<UML:Expression/>
+											</UML:Attribute.initialValue>
+											<UML:StructuralFeature.type>
+												<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+											</UML:StructuralFeature.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="description" value="(if applicable) Z axis position."/>
+												<UML:TaggedValue tag="GUIDBasedOn" value="{A0537144-D5D9-4a24-805C-D4478E98690C}" xmi.id="EAID_50173C10_D52B_48e1_A980_175C8A74BDB0"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Attribute>
+									</UML:Classifier.feature>
+								</UML:Class>
+							</UML:Namespace.ownedElement>
+						</UML:Package>
+						<UML:Package name="Core" xmi.id="EAPK_B76FB6A8_5DC4_4197_808B_6144B26064BE" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.taggedValue/>
+							<UML:Namespace.ownedElement>
+								<UML:Class name="IdentifiedObject" xmi.id="EAID_48C46760_EC38_4c58_A10B_468A1DFD5A6E" visibility="public" namespace="EAPK_B76FB6A8_5DC4_4197_808B_6144B26064BE" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="documentation" value="This is a root class to provide common identification for all classes needing identification and naming attributes."/>
+									</UML:ModelElement.taggedValue>
+									<UML:Classifier.feature>
+										<UML:Attribute name="mRID" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:Attribute.initialValue>
+												<UML:Expression/>
+											</UML:Attribute.initialValue>
+											<UML:StructuralFeature.type>
+												<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+											</UML:StructuralFeature.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="description" value="Master resource identifier issued by a model authority. The mRID is globally unique within an exchange context. Global uniqueness is easily achieved by using a UUID,  as specified in RFC 4122, for the mRID.  The use of UUID is strongly recommended.&#xA;For CIMXML data files in RDF syntax conforming to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements."/>
+												<UML:TaggedValue tag="GUIDBasedOn" value="{C775F80A-A23D-4f38-AB9D-49D1FA882337}" xmi.id="EAID_F827B5AE_D087_43d6_8D3E_A07CCC1D8181"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Attribute>
+										<UML:Attribute name="name" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:Attribute.initialValue>
+												<UML:Expression/>
+											</UML:Attribute.initialValue>
+											<UML:StructuralFeature.type>
+												<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+											</UML:StructuralFeature.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="description" value="The name is any free human readable and possibly non unique text naming the object.&#xA;"/>
+												<UML:TaggedValue tag="GUIDBasedOn" value="{870F033B-EDA6-4a32-A5AD-47DCBBFE2997}" xmi.id="EAID_5A787184_EF6E_4a30_9F67_4112DC00EE2F"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Attribute>
+									</UML:Classifier.feature>
+								</UML:Class>
+								<UML:Generalization subtype="EAID_C2DD674F_BE55_4260_B32A_A0B8A5CF0D13" supertype="EAID_48C46760_EC38_4c58_A10B_468A1DFD5A6E" xmi.id="EAID_B81D222F_1144_4f03_8383_88A28938D312" visibility="public">
+									<UML:ModelElement.taggedValue/>
+								</UML:Generalization>
+								<UML:Class name="PowerSystemResource" xmi.id="EAID_C2DD674F_BE55_4260_B32A_A0B8A5CF0D13" visibility="public" namespace="EAPK_B76FB6A8_5DC4_4197_808B_6144B26064BE" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="documentation" value="A power system resource can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated.&#xA;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Class>
+							</UML:Namespace.ownedElement>
+						</UML:Package>
+					</UML:Namespace.ownedElement>
+				</UML:Package>
+			</UML:Namespace.ownedElement>
+		</UML:Model>
+		<UML:Diagram name="GeographicalLocationProfile" xmi.id="EAID_D148DEB3_15AF_4baf_BFCA_37A2350F4F30" diagramType="ClassDiagram" owner="EAPK_B3B0BEBA_247A_42cf_8AF1_AE24E3F37EDD" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue/>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=104;Top=7;Right=247;Bottom=72;imgL=129;imgT=37;imgR=272;imgB=102;" subject="EAID_48C46760_EC38_4c58_A10B_468A1DFD5A6E" seqno="1" style="DUID=785183E9;LCol=0;BCol=14745599;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=15;Top=336;Right=422;Bottom=404;imgL=40;imgT=366;imgR=447;imgB=434;" subject="EAID_2EE08E45_62F6_4dbd_86C3_6639335EB411" seqno="2" style="DUID=1FC1478D;"/>
+				<UML:DiagramElement geometry="Left=3;Top=429;Right=317;Bottom=631;imgL=28;imgT=459;imgR=342;imgB=661;" subject="EAID_813940E6_3629_4dad_9C73_2D351A9CA802" seqno="3" style="DUID=7A739209;BCol=13434828;"/>
+				<UML:DiagramElement geometry="Left=320;Top=16;Right=454;Bottom=62;imgL=345;imgT=46;imgR=479;imgB=92;" subject="EAID_C2DD674F_BE55_4260_B32A_A0B8A5CF0D13" seqno="4" style="DUID=FF4FC555;LCol=0;BCol=14745599;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=434;Top=91;Right=752;Bottom=154;imgL=459;imgT=121;imgR=777;imgB=184;" subject="EAID_D7AA7673_B624_460d_94E9_331B5573FC69" seqno="5" style="DUID=0B23DEC8;"/>
+				<UML:DiagramElement geometry="Left=15;Top=233;Right=134;Bottom=312;imgL=40;imgT=263;imgR=159;imgB=342;" subject="EAID_D3B6F87F_97CC_4cbf_A14E_C851C839A167" seqno="6" style="DUID=B3B1359C;LCol=0;BCol=14938876;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=610;Top=221;Right=789;Bottom=314;imgL=635;imgT=251;imgR=814;imgB=344;" subject="EAID_EF85055A_B753_4eb9_9FD7_FE577C68685D" seqno="7" style="DUID=D6DEFA1A;LCol=0;BCol=14938876;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=345;Top=242;Right=427;Bottom=291;imgL=370;imgT=272;imgR=452;imgB=321;" subject="EAID_290E271B_B1D9_45d6_AA53_01C4302822B8" seqno="8" style="DUID=BB0A94FD;LCol=0;BCol=14938876;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_B81D222F_1144_4f03_8383_88A28938D312" style="Mode=3;EOID=785183E9;SOID=FF4FC555;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=-59;SY=-5;EX=-63;EY=-5;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_D33B59B8_ECA5_4a5a_9B1D_94991BB22BFC" style="Mode=3;EOID=1FC1478D;SOID=B3B1359C;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_F7A21E38_E801_47b7_986A_2D5CD15E6493" style="Mode=3;EOID=785183E9;SOID=B3B1359C;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=CX=18:CY=14:OX=-26:OY=-16:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=49:CY=14:OX=54:OY=-4:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=119:CY=14:OX=0:OY=13:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=6:CY=14:OX=19:OY=-2:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_61A89810_B909_433b_B039_282C299F5241" style="Mode=3;EOID=FF4FC555;SOID=BB0A94FD;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=2;$LLB=CX=6:CY=14:OX=16:OY=-21:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=49:CY=14:OX=16:OY=25:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=77:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=17:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_3915E768_6DC5_4438_99FD_D7A52480F750" style="Mode=3;EOID=D6DEFA1A;SOID=BB0A94FD;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_4DBAD8EF_5D76_4e87_ABBE_D65E86B46420" style="Mode=3;EOID=785183E9;SOID=BB0A94FD;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=4;EX=59;EY=7;$LLB=CX=17:CY=14:OX=-18:OY=-21:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=49:CY=14:OX=-8:OY=23:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=95:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=18:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_BC5C575E_F435_450d_AD64_575CD67A5E98" style="Mode=3;EOID=B3B1359C;SOID=BB0A94FD;Color=-1;LWidth=0;Hidden=0;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_62BAADB0_DB20_4c21_8031_D323CC3E0964" value="{671B9EF5-A0CB-467e-ADAC-FBEA4156EEBB}" modelElement="EAID_290E271B_B1D9_45d6_AA53_01C4302822B8"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_F4E1C4E5_02C4_4699_B58E_726AFE19253D" value="{D7A22063-DBE9-467d-9E72-C32640FABCA0}" modelElement="EAID_D3B6F87F_97CC_4cbf_A14E_C851C839A167"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_122DCCF2_EC21_49d1_8F75_CA9C7BDD096A" value="{17847D7C-A86C-43c9-B8AA-522B70002D29}" modelElement="EAID_EF85055A_B753_4eb9_9FD7_FE577C68685D"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_6DA1EA01_A7E8_4f11_9623_6F70739AE15C" value="{055C5806-E9D8-4a7a-9307-DAF7C31763C7}" modelElement="EAID_48C46760_EC38_4c58_A10B_468A1DFD5A6E"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_A4215184_5424_41f8_BB3A_BB32AB58DF01" value="{0340C084-3759-40cc-AAF2-386101DE842F}" modelElement="EAID_C2DD674F_BE55_4260_B32A_A0B8A5CF0D13"/>
+		<UML:Diagram name="Core" xmi.id="EAID_0E975028_8260_4f67_8DFA_172FD0B102E2" diagramType="ClassDiagram" owner="EAPK_B76FB6A8_5DC4_4197_808B_6144B26064BE" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue/>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=42;Top=197;Right=176;Bottom=250;imgL=67;imgT=227;imgR=201;imgB=280;" subject="EAID_C2DD674F_BE55_4260_B32A_A0B8A5CF0D13" seqno="1" style="DUID=86F7854B;NSL=0;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;LCol=0;BCol=14745599;BFol=0;black=0;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+	</XMI.content>
+	<XMI.difference/>
+	<XMI.extensions xmi.extender="Enterprise Architect 2.5">
+		<EANoteLink xmi.id="EAID_D33B59B8_ECA5_4a5a_9B1D_94991BB22BFC" source="EAID_D3B6F87F_97CC_4cbf_A14E_C851C839A167" target="EAID_2EE08E45_62F6_4dbd_86C3_6639335EB411">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="-1"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+		<EAModel.paramSub/>
+		<EAStub xmi.id="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E" name="String" UMLType="Class"/>
+		<EAStub xmi.id="EAID_FF85CB9F_4A0C_4339_A3E4_06CE2EA1772F" name="Date" UMLType="Class"/>
+		<EAStub xmi.id="EAID_5444BCC6_E3F1_4ba3_9041_6E67985141CD" name="Integer" UMLType="Class"/>
+	</XMI.extensions>
+</XMI>

@@ -1,0 +1,2998 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no" ?>
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2023-08-02 12:39:53">
+	<XMI.header>
+		<XMI.documentation>
+			<XMI.exporter>Enterprise Architect</XMI.exporter>
+			<XMI.exporterVersion>2.5</XMI.exporterVersion>
+			<XMI.exporterID>1627</XMI.exporterID>
+		</XMI.documentation>
+	</XMI.header>
+	<XMI.content>
+		<UML:Model name="EA Model" xmi.id="MX_EAID_3A93D24C_824F_4ee9_8EAC_F78B5E55A655">
+			<UML:Namespace.ownedElement>
+				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
+				<UML:Package name="DomainProfile" xmi.id="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+					<UML:ModelElement.taggedValue/>
+					<UML:Namespace.ownedElement>
+						<UML:Class name="Susceptance" xmi.id="EAID_02ED9C37_41CF_4b5d_8FC9_B76A708CDAE8" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Imaginary part of admittance."/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{E0742F08-9A12-471f-ABF4-DD7CC752C0C9}" xmi.id="EAID_E820591E_91E1_475d_8E0E_E5E7BE41EAF4"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="S"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{5F029910-FE0C-4726-A5FD-9CBECFF40F29}" xmi.id="EAID_CDB2FB48_B2D0_4193_8D88_C6B39395B2C9"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{5AB38FF3-6ED0-4479-947D-CB7B7FF06765}" xmi.id="EAID_B20B663F_C43B_4e1e_8800_5F4D56088C7F"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="INV"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Comment xmi.id="EAID_06B63DAD_EFFA_483d_961C_616C104608F5" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Value type is IEEE 754 simple precision floating point&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Class name="PerCent" xmi.id="EAID_09443E86_E1BB_48ba_BC8A_23D67D248DA5" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Percentage on a defined base.   For example, specify as 100 to indicate at the defined base.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue/>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{A1336F58-9A3A-462d-A932-4C80CE9A24AB}" xmi.id="EAID_995D3407_BB81_4c93_A39F_0BAA750D7F9C"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Normally 0 - 100 on a defined base"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{3F3F1095-2284-438d-89FF-699BCA187532}" xmi.id="EAID_39A3E097_EEEB_4de9_A6FA_3D01BB852BC8"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="INV"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="CurrentFlow" xmi.id="EAID_10C4BCA8_22DB_48bc_B781_69F36A773E05" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Electrical current with sign convention: positive flow is out of the conducting equipment into the connectivity node. Can be both AC and DC."/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{86741909-5F72-4d38-8B1F-69C7C7308BE8}" xmi.id="EAID_5197FC5C_B3C8_4902_8783_4CFAAA0EADBA"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="A"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{58C58CD1-5C85-4073-ACF8-9D9F1331364E}" xmi.id="EAID_F057D50E_8D6A_4ed7_9212_9D88071E3FED"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{83BDDC04-3689-432d-BF6E-0712C32CE504}" xmi.id="EAID_142F6356_7E7E_4716_B414_CCCCE45D35BB"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="INV"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Comment xmi.id="EAID_12D15E73_24CE_45fe_81FC_821DB71E6C1D" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Value type is IEEE 754 simple precision floating point&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Class name="Reactance" xmi.id="EAID_1723B43D_4003_43a2_A6D2_4C6CEB829971" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Reactance (imaginary part of impedance), at rated frequency.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{19537A69-BEDD-487c-BFA7-131495198EB9}" xmi.id="EAID_985F33EA_5BF8_4ce3_8704_DE850641EB93"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="ohm"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{9D48185D-2672-4a59-B967-AFE697937BD5}" xmi.id="EAID_B32DEA1D_52DE_4344_87DE_984FB68ED3CD"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{1010C898-C3A2-45b0-BF5D-C0DEDEBA27CC}" xmi.id="EAID_3FFAB4A8_CEE8_41b3_A972_27D2D32A0777"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="Invariant"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="UnitMultiplier" xmi.id="EAID_187CAE57_A83B_4353_A002_AF61EACCB844" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="enumeration"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="The unit multipliers defined for the CIM.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="p" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Pico 10**-12.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{90F83546-DD55-4cf8-9E01-DD8F69D74A8D}" xmi.id="EAID_0A78A75C_2EA8_40d3_A450_035067EEDAF7"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="n" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Nano 10**-9.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{EA61DA27-05DF-41c7-B459-F1194928062C}" xmi.id="EAID_7597930A_3E50_4380_80F1_CA47D0BB245B"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="micro" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Micro 10**-6.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{FF8E9CD6-A459-47ab-A71E-E69857742CE1}" xmi.id="EAID_DA142B04_3C8B_4a17_AA85_AA027182F13F"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="m" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Milli 10**-3.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{E7A60C22-3D12-49c5-8F18-870B1A39A1AA}" xmi.id="EAID_B8ED4643_7B1A_42d9_A528_2B43F3C6B571"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="c" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Centi 10**-2.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{1219082C-9AED-439c-B862-8CA874195BA0}" xmi.id="EAID_D8C20481_D377_49d7_85D0_4961B9CB5A94"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="d" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Deci 10**-1.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{4E630955-DF5D-403d-A377-7ED5FF85978D}" xmi.id="EAID_0C0EC8FF_AC29_4593_84DE_9118B93D8A26"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="k" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Kilo 10**3.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{C868627C-3B72-4bc8-879D-E177E9059A22}" xmi.id="EAID_EA1BA9F5_70DF_4a67_922A_E7C7D4D01CA1"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="M" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Mega 10**6.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{F956FDD6-8C6E-427d-A51A-22A1D75BE1C3}" xmi.id="EAID_D4D80776_809F_4b19_9424_9FDCCC8C42E9"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="G" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Giga 10**9.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{351B5D79-6203-48e5-9D9E-ECD7FB7CA8A6}" xmi.id="EAID_4E1DDD07_F9A8_41c9_B620_7135D330A6F7"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="T" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Tera 10**12.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{F5185FB9-24E6-47c6-BB4D-259FDF678329}" xmi.id="EAID_91FF9440_3D5E_40a8_9D53_265D7863C47E"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="none" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="No multiplier or equivalently multiply by 1.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{C352D73C-B9DC-4e7d-B1DB-5BE6D4BAE868}" xmi.id="EAID_15057F5A_DFCE_4acb_AEA3_632417E7D46A"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Comment xmi.id="EAID_19560627_E034_40ce_8B03_F5F84B566DE8" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Value type is IEEE 754 simple precision floating point&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Class name="ActivePowerPerFrequency" xmi.id="EAID_1A8C79C7_F0ED_42d7_B8C9_BF552DF9CAEC" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Active power variation with frequency."/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="denominatorMultiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{C388B074-E66A-45aa-8153-6BF145841D2B}" xmi.id="EAID_9154611B_9A78_4139_988C_C5B5D2BC072E"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="denominatorUnit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="Hz"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{A62B939C-98DD-45bb-B0A4-0C0D78605CBD}" xmi.id="EAID_F5593C4B_6D37_44dc_9CA0_91F31C56CEDF"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="M"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{4325598F-25F9-4cd6-BF6E-5C862888172C}" xmi.id="EAID_84A357B8_0831_4599_B6C0_4CA93394E201"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="W"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{971E19EB-1560-4869-B75E-DE4120218C87}" xmi.id="EAID_146FA1BD_AD10_40e9_B42A_64542BE10DDA"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{358E511C-E364-4c9f-BB02-83A1E5F56D53}" xmi.id="EAID_3C545BE8_9A99_47fe_AE28_A55F4BDAB948"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="INV"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="Boolean" xmi.id="EAID_1BD84350_CD0A_4736_A7C4_0017A4F6F699" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="Primitive"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="A type with the value space &quot;true&quot; and &quot;false&quot;.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="PU" xmi.id="EAID_1DC56ADC_B426_461a_AEB0_AFAA3E44D10E" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Per Unit - a positive or negative value referred to a defined base. Values typically range from -10 to +10.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{39670F5A-8684-4c87-A5BD-DDCDAE008F27}" xmi.id="EAID_012EBB23_9011_4346_8162_017381AC6298"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{D54E5F22-5150-4af7-AFB8-57E4C7ACD22E}" xmi.id="EAID_EA38E8DB_2D9A_47a2_965E_EA2827B9EB24"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{9E5F92B8-7F02-49bd-BC52-81240FB30E84}" xmi.id="EAID_63DB9D97_B530_4f63_963B_E98C582D8C06"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="INV"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="Seconds" xmi.id="EAID_2682CA8F_0444_4500_A592_B05823889921" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Time, in seconds.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{DF58DF5F-F450-4b71-A1A9-1BBA5C696E5C}" xmi.id="EAID_06C7CBA2_7574_4875_9619_76742822097D"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="s"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{383E0AEB-B11C-4c02-8C56-5E84FCDA0D3B}" xmi.id="EAID_9C827B03_B336_4604_BFC8_31C280729BE6"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Time, in seconds"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{EC69405D-C44E-4c12-BAD5-58A3C1375649}" xmi.id="EAID_3BB8C962_F9AC_4470_99E8_484B89D88F9B"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="Invariant"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Comment xmi.id="EAID_2782E18B_6A31_4a88_8248_D92B74D3175C" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Value type is IEEE 754 simple precision floating point&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Class name="MonthDay" xmi.id="EAID_2BC619B8_EBED_47dd_A8BD_A4907AFAE5D7" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="Primitive"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="MonthDay format as &quot;--mm-dd&quot;, which conforms with XSD data type gMonthDay."/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="AngleDegrees" xmi.id="EAID_2C503787_F407_4afc_AB13_D0AFD33066C1" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Measurement of angle in degrees.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{8FDF9698-E454-4c56-B58E-BFEBE384F311}" xmi.id="EAID_A2E838D4_10AF_48e5_A7CA_E15A9EC4838F"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="deg"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{58D1D28E-ADAB-4417-A5F4-D089FF60AE02}" xmi.id="EAID_59C347B6_9961_4e1f_A701_7733C0435804"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{8C467CE2-6EA5-4aed-810B-32597261DB61}" xmi.id="EAID_EA8EBFA8_6603_49c2_9118_455E9F2C02A0"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="INV"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="DateTime" xmi.id="EAID_3431BFAD_9FE8_4849_BEA9_DC80605841DF" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="Primitive"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Date and time as &quot;yyyy-mm-ddThh:mm:ss.sss&quot;, which conforms with ISO 8601. UTC time zone is specified as &quot;yyyy-mm-ddThh:mm:ss.sssZ&quot;. A local timezone relative UTC is specified as &quot;yyyy-mm-ddThh:mm:ss.sss-hh:mm&quot;. The second component (shown here as &quot;ss.sss&quot;) could have any number of digits in its fractional part to allow any kind of precision beyond seconds."/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="VolumeFlowRate" xmi.id="EAID_3923CF90_4D18_4eff_A770_BDC011DAFC80" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Volume per time.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="denominatorMultiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{F736799E-8F61-4369-9975-3075ECB0C636}" xmi.id="EAID_799A5B16_D970_49db_8AB7_ECDB9CAC9BE9"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="denominatorUnit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="s"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{E7293232-5EBC-4a29-82F2-73C1CC89FE25}" xmi.id="EAID_183F1D2B_8947_412b_B2F3_4B137CE91888"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{3140412A-C74C-40b5-950C-0022CB841EDC}" xmi.id="EAID_0FC8030B_D332_431f_93E9_10F280D2DFC4"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="m3"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{A829C826-5E30-413d-B779-035125B7FAD3}" xmi.id="EAID_365B5431_FFF3_46bb_8995_5C353F2A78AD"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{EA19120F-0FA0-4791-9F6D-5D9B7FB8AFF0}" xmi.id="EAID_735B39C5_72CE_4869_B48D_17FA82DFC277"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="Length" xmi.id="EAID_398CAA1A_4354_4a2e_857A_72886A898CAE" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Unit of length. Never negative.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="k"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{7E3DD904-59E9-4a23-8877-756089992413}" xmi.id="EAID_0DC4C9A6_7088_4dd1_8FFF_DE40D0CEDD44"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="m"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{3D6E3075-6B8A-44df-9D89-B4713FE7BDAC}" xmi.id="EAID_542A2381_1187_4bc8_9A99_AA0F074AF162"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{133597D7-9050-4335-B968-86AF7E16558C}" xmi.id="EAID_13420B4D_2871_4b06_BC7A_78D185824EE6"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="Invariant"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Comment xmi.id="EAID_4AC509F9_EB07_45f1_AAD5_C4FBE9385C06" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Value type is IEEE 754 simple precision floating point&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Class name="MonthDayInterval" xmi.id="EAID_4E08F5AB_2CA6_4ca7_8837_952F364DF901" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="Compound"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Interval between two times specified as mont and date."/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="end" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_2BC619B8_EBED_47dd_A8BD_A4907AFAE5D7"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="End time of this interval."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{33539151-664A-4d98-95A1-991B84C84CF9}" xmi.id="EAID_67CD6AC6_88B6_4d4d_BE57_C4476C6FF2A4"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="start" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_2BC619B8_EBED_47dd_A8BD_A4907AFAE5D7"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Start time of this interval."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{87DA0F8E-0F49-4525-A5CC-52843D7C4420}" xmi.id="EAID_B66AD28F_B100_43b8_846F_D537D0CF7F2C"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="VoltagePerReactivePower" xmi.id="EAID_51039AD5_3E43_43ce_9D21_321E40357971" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Voltage variation with reactive power.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="denominatorMultiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="M"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{78BF2415-F49D-4500-B528-A1811370868F}" xmi.id="EAID_B4117575_9DBD_485c_90EB_AA271BC6D398"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="denominatorUnit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="VAr"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{A8E6FCDC-6D49-492c-9855-236AED614C5F}" xmi.id="EAID_F5191144_370C_4803_9295_774492500462"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="k"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{39EBF43D-BF3B-422f-8AFC-F6270D86CE37}" xmi.id="EAID_FBA7CD1E_71C8_44aa_8F3B_3E29621B1DAB"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="V"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{0D0A9B79-90D9-49de-A575-7F0FF7992C42}" xmi.id="EAID_4258C1E8_D611_43a0_A598_CA968CD96AB2"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{B46101E6-5EB2-4dd5-ABC5-B1CB020B9DBA}" xmi.id="EAID_1C7CAA2F_ED23_4c1e_84F5_24BA925FA836"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="INV"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="Integer" xmi.id="EAID_5444BCC6_E3F1_4ba3_9041_6E67985141CD" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="Primitive"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="An integer number. The range is unspecified and not limited.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Frequency" xmi.id="EAID_556928DD_3787_489e_ABA2_CDD14F3A838F" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Cycles per second."/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{72725AEC-C5F4-458b-9558-EF3378A97B34}" xmi.id="EAID_53D0CC5F_28A6_4ab3_81A8_635628030545"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="Hz"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{1400EF48-1ADD-4118-B82C-00E133BEEDD5}" xmi.id="EAID_A4FA9B18_E3CD_475c_9359_C228C1D1376B"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{1CC12D60-90B2-4e21-BD77-F209F6F728FF}" xmi.id="EAID_7D4CE284_CF10_4b0a_B95E_79F3294F04FB"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="Invariant"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="Resistance" xmi.id="EAID_565A666F_316D_44a9_9ADF_C21A3513C52B" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Resistance (real part of impedance).&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{6256F839-CBEB-4164-926A-0C7D450E1529}" xmi.id="EAID_87A0177A_AB08_4a54_8903_6FFCA40F98C8"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="ohm"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{CDBE0328-0DCE-4f27-A805-49EC479BCAD4}" xmi.id="EAID_0271930A_5A77_4adc_B7D8_35AF1E5EB54F"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{CFCFA1A2-5401-4f99-81B4-5B5441697F60}" xmi.id="EAID_2293E66B_05C6_4e34_BD72_D655CB1665DE"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="Invariant"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Comment xmi.id="EAID_5E30A8AF_2FC0_4349_929C_94D197DA604E" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Value type is IEEE 754 simple precision floating point&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Comment xmi.id="EAID_5F4393AF_1514_4ae9_B4BD_6C4B573A9EA7" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Value type is IEEE 754 simple precision floating point&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Class name="Money" xmi.id="EAID_6164FD2F_1321_4385_BA04_1D46A2CD16FB" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Amount of money.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{86CC9B3D-6DFC-4a34-9152-1BD808FBDD41}" xmi.id="EAID_6941844B_9147_449d_A423_723226CEB3E8"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="EUR"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_FBD234B2_390F_47f7_82D6_785623646D6A"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{FA0E49C2-B5F3-4084-948C-2A553D874695}" xmi.id="EAID_CBDC6F2E_6D6D_4570_AD76_FF8EECA2A7FE"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_E0A38044_8E87_4322_ABA2_FD69A778AEEA"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{FD1C5A68-05E0-448a-9515-88FB188D1A41}" xmi.id="EAID_06724BAD_E551_4ece_91DC_FA031D210FB4"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Comment xmi.id="EAID_617E5858_0A69_4b7a_8258_FD522F0C964A" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Value type is IEEE 754 simple precision floating point&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Class name="UnitSymbol" xmi.id="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="enumeration"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="The units defined for usage in the CIM."/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="VA" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Apparent power in volt ampere.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{2A6C639B-07EF-4ec1-90FE-7F3B55FEC466}" xmi.id="EAID_D164F2D2_7E51_4782_AC76_716F00AE0C7F"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="W" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Active power in watt.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{0C6FC879-3330-40c5-840B-FA4D11DD92CA}" xmi.id="EAID_FBA799BB_F8B8_4810_877E_C4A296C994A2"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="VAr" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Reactive power in volt ampere reactive.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{EB818682-FB29-4a83-ADDD-7D9A42DF05FA}" xmi.id="EAID_8CEF0A01_897F_4232_BD2D_07089B526E89"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="VAh" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Apparent energy in volt ampere hours.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{BC16CD17-F133-46fc-BA52-A3568AE7389E}" xmi.id="EAID_CAF83A7C_EA2E_4326_8C7C_FA8DC0D4061D"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="Wh" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Real energy in what hours.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{7069D1E3-C2D9-4a10-8B91-0D9AC394F38F}" xmi.id="EAID_8B63DE68_6216_4073_BC0D_DF25DAA26A08"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="VArh" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Reactive energy in volt ampere reactive hours.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{D0851FC4-83F3-4911-B874-CE37B0104941}" xmi.id="EAID_5F8EDA10_BEE5_437a_A64E_E1A1CA6061EC"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="V" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Voltage in volt.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{7B623DFC-A240-4023-AC11-C8A279608CFE}" xmi.id="EAID_1C42EAB6_8364_422c_8CCE_9A2E4B61FA01"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="ohm" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Resistance in ohm.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{4A304014-4EC4-4c01-AC1C-E1C9D68AF390}" xmi.id="EAID_967226E5_C38D_4ec1_A507_2280B44B645C"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="A" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Current in ampere.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{B9C0CD6C-435E-4dbc-9613-BB1EF4A950C1}" xmi.id="EAID_D94D2906_865E_4241_8B71_6FF5C0E331FB"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="F" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Capacitance in farad.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{DE960AB5-4C9B-4079-8BD4-F158F1785B5C}" xmi.id="EAID_356D8315_15CC_4b64_94B1_810070702795"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="H" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Inductance in henry.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{7B87ECEA-CB89-4395-9C1A-BF342DBB00A7}" xmi.id="EAID_9D77446C_F2FF_4c1b_8C21_76924C5A9B42"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="degC" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Relative temperature in degrees Celsius. In the SI unit system the symbol is ºC. Electric charge is measured in coulomb that has the unit symbol C. To distinguish degree Celsius form coulomb the symbol used in the UML is degC. Reason for not using ºC is the special character º is difficult to manage in software."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{3D791F1B-3826-43c9-8B95-384A2CEC6B1D}" xmi.id="EAID_D567159B_E8F2_4e27_9FD0_E2B51B4B489F"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="s" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Time in seconds.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{173DF248-0E38-42af-A33E-460F413D5C35}" xmi.id="EAID_7202506F_1406_4f1b_B4B0_0A678F8FA8E0"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="min" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Time in minutes.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{F3C2C2B7-88D3-4144-A993-6BB01538909F}" xmi.id="EAID_484807F9_8713_4781_9DF1_6B76D4B24A7E"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="h" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Time in hours.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{8D5395D7-20D2-4d16-8AA0-46BE6B3A4905}" xmi.id="EAID_63898054_0811_45f1_BBDE_AE8B1CA56406"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="deg" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Plane angle in degrees.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{6F295BE4-CF54-4781-AE65-554D3DA58236}" xmi.id="EAID_C29D22D1_3461_486c_8D54_EBA486A14EE8"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="rad" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Plane angle in radians.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{C45DCC7F-FD4A-4359-84C6-D740C56234E9}" xmi.id="EAID_54A623EE_0D2C_4286_8B22_98D8EDF15084"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="J" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Energy in joule.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{54E72D74-D283-4720-94FB-A411C9888D14}" xmi.id="EAID_346E41F7_5DD0_49c1_BC52_18109C74B39A"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="N" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Force in newton.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{B4811904-31E9-4915-A3CB-432E4AF2C744}" xmi.id="EAID_9EFF0FB6_465B_4843_B2DA_8D7083B644FC"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="S" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Conductance in siemens.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{910795B5-E8CB-467a-B6DA-FCEB7F9C5AE0}" xmi.id="EAID_42F4B2C8_43D3_4c57_A83A_54AE0CB1BB16"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="none" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Dimension less quantity, e.g. count, per unit, etc."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{BBC06058-30E3-4851-A905-93E9B23F32D5}" xmi.id="EAID_FE152FFB_732D_405c_BD6C_31004C3D196F"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="Hz" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Frequency in hertz.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{FEEB3794-F2F0-4f0e-AD18-3C217F641EE5}" xmi.id="EAID_0B159DA8_45D2_4c2c_8074_0D019F357E87"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="g" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Mass in gram.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{8CB1FDE2-DF64-4bb1-AF2F-DF8025D92EAA}" xmi.id="EAID_173AA5B4_ED22_43a7_AEEF_934C751D0A60"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="Pa" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Pressure in pascal (n/m2).&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{23A2B824-9DCE-4fde-A626-A1D9C9F60C28}" xmi.id="EAID_FFF59630_24D4_451d_84AE_0DD154242F5C"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="m" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Length in meter.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{12DEDC13-8E22-481f-8DBE-977C82791D07}" xmi.id="EAID_8F70C3F1_BB9F_47d5_9FAB_ABFF7E1B835A"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="m2" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Area in square meters.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{38241F8A-C4AF-4a92-96AD-D80010BDCEC6}" xmi.id="EAID_78BC3176_2358_4ada_9C02_1B5AB6BC688A"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="m3" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Volume in cubic meters.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{24D5EF94-21EB-4d21-9651-E1D865EEC09D}" xmi.id="EAID_22AB40A9_D88F_42ef_BC31_1A1E39DE5CD3"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Comment xmi.id="EAID_819D4363_9F1A_49e8_B791_17DBAEED8BBC" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Value type is IEEE 754 simple precision floating point&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Class name="Capacitance" xmi.id="EAID_84F589A8_B112_4559_B87F_79921CC96435" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Capacitive part of reactance (imaginary part of impedance), at rated frequency.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{6B627C28-A1CA-4e5d-973E-F3AD555F9CCB}" xmi.id="EAID_658C0239_4894_4700_B027_DF8670C55D16"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="F"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{20932C4A-6600-416b-B9C4-DCC7BD3FAA98}" xmi.id="EAID_03F2D901_E6BB_4ddf_AE2F_760410C082AF"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{DD5CA50E-8CF4-4d9d-B637-E3028CDD0DC8}" xmi.id="EAID_C9F26D82_851E_4308_BE93_54C1848B072C"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="INV"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="Voltage" xmi.id="EAID_879A7B06_25F5_4f30_B20A_371CE9B9789D" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Electrical voltage, can be both AC and DC."/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="k"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{5CFD034E-D7E1-4d20-BE0B-BB9E4F9D2D4B}" xmi.id="EAID_93373114_7B58_47cb_855E_846F05CC32AE"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="V"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{6E959BD4-0ACC-4884-99F5-0B158661A3D9}" xmi.id="EAID_E44D67BE_E196_4514_B179_6054348F9DBD"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{C86122FF-94E1-4244-975A-BA865D8135BC}" xmi.id="EAID_D9958B91_381F_4846_95AA_1CBC36265A2F"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="Invariant"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="InductancePerLength" xmi.id="EAID_8884C537_2573_42f2_A9B8_0DD24F971F29" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Inductance per unit of length."/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="denominatorMultiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{911B43B8-72C7-49e5-A00F-247310E835F1}" xmi.id="EAID_087679CD_B81D_4938_BCA3_63E6E723C418"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="denominatorUnit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="m"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{8FC7737B-D4CF-42f2-9627-6163647A198E}" xmi.id="EAID_677E61A7_5120_4d79_B959_50A9A9D3B63A"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{F05ABE27-834D-45c9-AD64-4B7F0EC4DC73}" xmi.id="EAID_2A345E12_C10A_4623_89B7_166D2521441F"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="H"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{AD33BEF6-443E-4d2c-A32A-9152AEB8D250}" xmi.id="EAID_ED0B09FE_9814_4134_B524_2C812F9909BB"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{165B20CD-D566-4ac4-83F9-2989DE99DEFA}" xmi.id="EAID_33992673_A266_4b7d_AF66_6DAC5594AF50"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="AngleRadians" xmi.id="EAID_8F9764E5_0351_4aca_BAF1_5102FCE6E557" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Phase angle in radians.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{6023067B-C576-43bb-8474-6B6A763AD6D2}" xmi.id="EAID_A03BC5BD_AE36_4caf_B979_1EEFCC9DD1F2"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="rad"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{C0911890-BF89-4edd-A9AD-F0E170B0BC6A}" xmi.id="EAID_BBE4B112_0999_4620_B405_7386E1E15CFC"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{08CB4299-C5CB-4f08-810B-C8DD2ADB26DA}" xmi.id="EAID_C0344009_AF1B_4d74_954F_61B944DACF53"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="ApparentPower" xmi.id="EAID_9107E786_9706_407a_BCC2_12A82E528D26" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Product of the RMS value of the voltage and the RMS value of the current.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="M"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{C363463C-85C7-487f-BE31-B6444DAB07DD}" xmi.id="EAID_B482FC3D_6640_4fd5_A41E_03B0D8821DA3"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="VA"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{C93DE952-5AF9-40cc-9792-4D2372DC5EEF}" xmi.id="EAID_5AE96C32_92F0_47d5_8092_2BD7B76F974A"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{FEE24CD4-5876-4e4c-B179-AEAA3E11B738}" xmi.id="EAID_B0C3B3D0_5EF2_456a_AE91_4E174C346B0C"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="INV"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="ResistancePerLength" xmi.id="EAID_91119C31_51D8_4f65_BEB3_BFF7A227B52E" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Resistance (real part of impedance) per unit of length.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="denominatorMultiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{F4D0A12E-8E4D-4c2c-B659-782F4C6C089F}" xmi.id="EAID_BDF98972_9EA2_4bfe_ABB0_9695024F560E"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="denominatorUnit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="m"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{4C9B5F48-7A32-4aa6-8A92-0B736D1BC569}" xmi.id="EAID_583FF93D_4A98_44b2_8BBB_17740F5D7C22"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{99CB440E-D654-4929-9D1A-3B22407B5ADC}" xmi.id="EAID_FEBCFCD1_8908_4c15_84B7_5A1D830C451C"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="ohm"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{93670290-AE2E-44b4-BF92-B336ACF73EAA}" xmi.id="EAID_5504493B_74F1_45bb_9182_221D4169C659"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{E4ECE412-83A1-4181-9E29-DE88C54FB005}" xmi.id="EAID_AF8D34FF_861E_4f16_B63D_3A4105FC9213"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Comment xmi.id="EAID_91A9744E_3D84_4068_8A3B_DE130ABAB729" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Value type is IEEE 754 simple precision floating point&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Comment xmi.id="EAID_9A83CF7E_8EC2_4a5c_8305_F44634F0E588" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Value type is IEEE 754 simple precision floating point&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Class name="Temperature" xmi.id="EAID_A15FFFD4_B3E8_471f_8F9D_BD78F4C7E0E9" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Value of temperature in degrees Celsius.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{28CABC7C-75AF-4bd8-AD42-B3EE3582114F}" xmi.id="EAID_F7C7277C_5A0D_4088_B8A8_1E4A6A9ABECA"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="degC"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{191926AD-DB8F-466a-94B7-D3BA4C4167F6}" xmi.id="EAID_CF413912_682B_4296_A8A9_8840BEB67668"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{7716E759-D73B-4c62-81B9-898473941C90}" xmi.id="EAID_3640876E_E6C9_4c4a_A62A_F9A97B0A689B"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="INV"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="ReactivePower" xmi.id="EAID_A73381F1_DFD1_41f4_9B87_C7AA7DF51474" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Product of RMS value of the voltage and the RMS value of the quadrature component of the current.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="M"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{3ED78537-D36E-429a-AA73-EB86BF7020FB}" xmi.id="EAID_A801453B_AEB9_4d6e_9F5D_4D62A611EC23"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="VAr"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{C4DA5044-2A5B-4504-997D-67F35395A5B0}" xmi.id="EAID_85BD617C_2BEA_4661_BE44_CE9D338E3361"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{4AEEBF1D-260E-4615-95F2-8219EA8B0AC9}" xmi.id="EAID_EDCE822B_F17E_45fc_B095_686A18007EF2"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="INV"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Comment xmi.id="EAID_AA3F71CF_39C7_4093_9BF2_FC789176FC07" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Value type is IEEE 754 simple precision floating point&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Class name="CapacitancePerLength" xmi.id="EAID_AFB3B698_D55B_4b0c_B695_7A4806B80814" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Capacitance per unit of length."/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="denominatorMultiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{BF0CD6D0-A559-4ae3-BE83-790F4D8FC937}" xmi.id="EAID_1CCF8286_42A4_4fd6_A4C7_101678BF63ED"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="denominatorUnit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="m"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{49750357-43F8-42f7-BBFC-20CF2AF99F3F}" xmi.id="EAID_2D99D09B_BB22_4752_904E_FD39CA63F68B"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{D62CFC12-58FC-4949-A5A3-4AD5F5F76DB8}" xmi.id="EAID_7174B38D_53EC_48c0_8F54_C7CF2ECDDAA3"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="F"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{25F43457-2958-4551-82D0-499592D2953A}" xmi.id="EAID_64833AE8_A507_45a8_86C5_CE0B67A1935E"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{D86CCBDD-AB37-4d35-8A40-24064DEA2769}" xmi.id="EAID_296806F8_959B_45f9_A5F8_32FCEE2CFFF8"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="String" xmi.id="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="Primitive"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="A string consisting of a sequence of characters. The character encoding is UTF-8. The string length is unspecified and unlimited."/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Comment xmi.id="EAID_B7B5B4F6_46C3_4754_937C_FD4E093F96FC" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Value type is IEEE 754 simple precision floating point&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Class name="Simple_Float" xmi.id="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="A floating point number. The range is unspecified and not limited.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue/>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="Invariant"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Comment xmi.id="EAID_BE7205FA_24A0_43b3_BC1F_BF2D55A8BCC5" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Value type is IEEE 754 simple precision floating point&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Class name="ActivePowerPerCurrentFlow" xmi.id="EAID_BEAED12F_1B14_48d9_B9E9_3F059EC1BD4B" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue/>
+							<UML:Classifier.feature>
+								<UML:Attribute name="denominatorMultiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{A27C83F4-0CA5-4fd1-B6B0-7739D7215C16}" xmi.id="EAID_3BEAD627_F4A2_476a_BA39_F7752EF83A90"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="denominatorUnit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="A"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid1"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{B0E8427E-4843-4684-B0BC-85B504EEE849}" xmi.id="EAID_29022E23_67AD_4e9a_8BA3_ECB197FACAEC"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="M"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{F35C1985-6CCA-44a7-898A-AC5460E4319D}" xmi.id="EAID_5F9A40C6_D98D_41dd_89B2_565B8939C565"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="W"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid1"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{860D073A-9544-41bc-BD10-66C21C8B2C88}" xmi.id="EAID_A0608B17_C8BA_4759_AEA9_7237A2878D22"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid2"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{4A5E6FCF-E14C-413e-A596-5EA78FA133AB}" xmi.id="EAID_F52926D0_98D8_4aef_8945_9F448EA28D45"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="Area" xmi.id="EAID_C0D66EBE_A9A2_4d23_A24C_FC4388BD262E" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Area."/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{7A1160C2-A913-4954-A9BE-9DB145518EC1}" xmi.id="EAID_521E58F3_12A4_494a_A4C6_7E5A263B5CA2"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="m2"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{46AED7DB-6F91-477e-BF3D-92F640E352E9}" xmi.id="EAID_6B25E7D3_F433_426e_B54B_1C087DF46163"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{E8C2C47C-6308-4c7e-BA6A-D38EF8BB0DA9}" xmi.id="EAID_2D264DE4_2DD5_4dd0_9C25_BE2C67C26A7D"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="INV"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Comment xmi.id="EAID_C27F70EF_C899_48ed_ADE5_B74AFD51EB71" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Value type is IEEE 754 simple precision floating point&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Comment xmi.id="EAID_C355E39B_95B2_4a38_A6E5_2791F3CA7D22" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Value type is IEEE 754 simple precision floating point&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Class name="Float" xmi.id="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="Primitive"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="A floating point number. The range is unspecified and not limited.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Comment xmi.id="EAID_D03AC452_F37C_4986_BFA9_7760A7B6C6A4" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Value type is IEEE 754 simple precision floating point&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Class name="Conductance" xmi.id="EAID_D442E270_BF34_483d_90D6_5E6B99052CED" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Factor by which voltage must be multiplied to give corresponding power lost from a circuit. Real part of admittance.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{EDFA4FD2-D5E9-4dc7-AC28-EE6658BED80A}" xmi.id="EAID_4BEF10F3_6E02_43dd_88A1_FB724B1D248E"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="S"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{19818A5D-D769-4eb2-B84D-616C971F1004}" xmi.id="EAID_DB9AE46D_2108_44f9_A536_C9F67D71E4CD"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{A37F340D-8291-465f-8A0A-FF87B2676B0E}" xmi.id="EAID_330C2429_9678_4d22_A753_576ED5CE4568"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="INV"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Comment xmi.id="EAID_D8CB30A6_B4CA_4b1e_A76D_5924C4C4BC29" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Value type is IEEE 754 simple precision floating point&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Comment xmi.id="EAID_DA536212_AE44_4d1f_AC5C_A6B3E22FE3C0" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Value type is IEEE 754 simple precision floating point&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Class name="Decimal" xmi.id="EAID_E0A38044_8E87_4322_ABA2_FD69A778AEEA" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="Primitive"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Decimal is the base-10 notational system for representing real numbers.&#xA;&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="RotationSpeed" xmi.id="EAID_E3F6B8F8_B817_4e2b_AF5B_927CC5474EAE" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Number of revolutions per second.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="denominatorMultiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{C07FF01A-7FA5-4399-AFEE-F0B126164597}" xmi.id="EAID_77BAE927_3C95_438a_B6BD_F0D704254D21"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="denominatorUnit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="s"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{370BA08D-DB8D-4c98-9AA6-F90E764E3A7F}" xmi.id="EAID_58E09DD0_852E_48e2_BBC7_AA2D65F9FE86"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{82A7E88E-89CA-46ed-8FAA-1B2E2CFF4928}" xmi.id="EAID_FA974373_3287_4f0b_B883_B815DA1BC106"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{0919D36A-A771-475c-85DA-CEF54827C06D}" xmi.id="EAID_88047153_03BF_48ce_889A_83608D0DCAC6"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{F2A70238-8D27-4b54-AD10-EFF7F53201E5}" xmi.id="EAID_F702F692_1FF9_467c_A114_6F8BE09A4B26"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="INV"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="OrientationKind" xmi.id="EAID_E4220C0C_428B_4f5a_9BD9_6403DC459AB2" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="enumeration"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="The orientation of the coordinate system with respect to top, left, and the coordinate number system.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="negative" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="For 2D diagrams, a negative orientation gives the left-hand orientation (favoured by computer graphics displays) with X values increasing from left to right and Y values increasing from top to bottom.   This is also known as a left hand orientation.&#xA;&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{6D82C240-A79A-4526-8D68-5EB815024164}" xmi.id="EAID_4D0484FC_94FF_466a_AA3A_07E69C9CAE49"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="Inductance" xmi.id="EAID_F5C26220_1658_46c9_AA2E_B8AFDBB486FC" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Inductive part of reactance (imaginary part of impedance), at rated frequency.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="none"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{DF6B0AAC-52CD-4c60-8800-409FE83F07D1}" xmi.id="EAID_2D6DC492_C63C_4b5f_86F6_19381C1FD4B9"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="H"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{7668DEE2-8EA2-47c3-9C02-E4B53F39569C}" xmi.id="EAID_F01D5000_31DF_4361_9883_CD2A96E65E6D"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{83AE2102-F0CF-4ab8-BBB6-03E5262DCC86}" xmi.id="EAID_A7D82918_BCFA_4584_8A0D_27AC00EA65C2"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="INV"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="ActivePower" xmi.id="EAID_F61B9533_2BB1_4457_82AC_D9C1F312CA92" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="CIMDatatype"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Product of RMS value of the voltage and the RMS value of the in-phase component of the current.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="multiplier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="M"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{A3961E95-7DD0-4d68-A41A-FDC07295CD2B}" xmi.id="EAID_23264CCD_2F43_4891_945F_AB00E44491BE"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="unit" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="W"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{8C27ACD4-E6D7-407f-B0AF-B545966B9337}" xmi.id="EAID_D35943B7_4739_4caa_891D_524CCE19BD66"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{133597D7-9050-4335-B968-86AF7E16558C}" xmi.id="EAID_C9990F0C_EE2B_4b0b_9CD9_93CF9F8ED759"/>
+									</UML:ModelElement.taggedValue>
+									<UML:ModelElement.constraint>
+										<UML:Constraint name="precision">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="INV"/>
+												<UML:TaggedValue tag="documentation" value="choice=simple"/>
+											</UML:ModelElement.taggedValue>
+										</UML:Constraint>
+									</UML:ModelElement.constraint>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="Currency" xmi.id="EAID_FBD234B2_390F_47f7_82D6_785623646D6A" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="enumeration"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Monetary currencies. Apologies for this list not being exhaustive.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="USD" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="US dollar"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{BD7715AD-8607-429e-905E-CA26C170ECBF}" xmi.id="EAID_B0B97308_1F5A_4958_9B1D_688700C8AF7B"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="EUR" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="European euro"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{F9D2BF52-65C4-45f2-91C7-F0990AF9B19F}" xmi.id="EAID_92C3492B_E7F3_42cb_A5FA_9680D40F0BB6"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="AUD" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Australian dollar"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{B68ED9D0-E666-4c95-B4C8-3A2C8760C838}" xmi.id="EAID_F4FD7132_2B10_4753_8F5D_646CDD662A9B"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="CAD" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Canadian dollar"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{911D1995-C80E-4d3e-914F-A68C43786DDB}" xmi.id="EAID_0BBE4F7C_9A53_4756_AD0D_02C37BA92D2C"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="CHF" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Swiss francs"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{5EFD5A2E-31B9-4aea-84D5-914F1C0A31DC}" xmi.id="EAID_CAEFD17D_7A32_415f_BEE1_441C6E549AA6"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="CNY" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Chinese yuan renminbi"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{FE84795F-1D80-4a7f-B2FC-E502533890BD}" xmi.id="EAID_4CF5BA83_305D_47f0_89A2_B2A1E09C80ED"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="DKK" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Danish crown"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{2B725900-37D7-430e-A696-95A9DE1853F5}" xmi.id="EAID_1C722DA6_7221_484c_831A_26FE22CACCA6"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="GBP" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="British pound"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{5284C310-CFA9-4f8c-9FC1-89878D959008}" xmi.id="EAID_8222FEB2_0A4B_45a0_B4FA_48FD08FEBC03"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="JPY" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Japanese yen"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{D6821076-1C19-4116-9141-1E3B66B12E37}" xmi.id="EAID_CE67911C_D7AE_49e1_A633_BD89AD26F6BA"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="NOK" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Norwegian crown"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{C8641234-DC52-4a27-84B0-840661758085}" xmi.id="EAID_3A6E39C0_C8C0_427e_89BA_3E64C24C61B6"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="RUR" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Russian ruble"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{4EA192E2-0BD3-4085-8CE4-6078AEA30D97}" xmi.id="EAID_42630795_2ACF_43ed_B514_B360D56E1938"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="SEK" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Swedish crown"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{52FEE14B-6D80-4799-97EE-C8B3734C7B0F}" xmi.id="EAID_166854AD_5C89_411d_8C57_C6FF28F7FBFD"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="INR" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="India rupees"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{ABB74D98-5437-40d9-AB9B-575FF2F27A53}" xmi.id="EAID_F35E0DBF_3D61_49c2_922C_668907F8AA19"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="other" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="enum"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Another type of currency."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{3D3DF56A-8E85-4f34-AD5D-C16CB7171783}" xmi.id="EAID_2ABF7ABA_BD0F_4489_BB16_B61B27C61DDD"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="DomainVersion" xmi.id="EAID_FE05509D_D4AF_495a_BC54_66BF13CD446D" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="Entsoe"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Version details."/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="baseUML" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="iec61970cim16v28_iec61968cim12v08_iec62325cim03v01a"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Base UML provided by CIM model manager."/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="date" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="2014-08-07"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_FF85CB9F_4A0C_4339_A3E4_06CE2EA1772F"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Profile creation date&#xA;Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05."/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="entsoeUML" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="entsoe_v2.4.15"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="UML provided by ENTSO-E."/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="version" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="2.4.15"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Domain version define in the following format: yy.zzz where:&#xA;- yy - indicates a major version;&#xA;- zzz - indicates a minor version."/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Class name="Date" xmi.id="EAID_FF85CB9F_4A0C_4339_A3E4_06CE2EA1772F" visibility="public" namespace="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="Primitive"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Date as &quot;yyyy-mm-dd&quot;, which conforms with ISO 8601. UTC time zone is specified as &quot;yyyy-mm-ddZ&quot;. A local timezone relative UTC is specified as &quot;yyyy-mm-dd(+/-)hh:mm&quot;."/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+					</UML:Namespace.ownedElement>
+				</UML:Package>
+				<UML:DataType xmi.id="eaxmiid0" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid2" name="Float" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid1" name="UnitSymbol" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+			</UML:Namespace.ownedElement>
+		</UML:Model>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_15EBA996_FA5D_42d5_AB14_FA13C48BC060" value="{F246F97E-529D-4ec3-9F06-BAF4AFD0829B}" modelElement="EAID_02ED9C37_41CF_4b5d_8FC9_B76A708CDAE8"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_895CBAC3_D21E_4950_8689_BA0B103C77F9" value="{8345A4E0-E4BB-45d6-894B-983BB43C4B4F}" modelElement="EAID_09443E86_E1BB_48ba_BC8A_23D67D248DA5"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_15622E55_27F1_438c_AD04_233B9F0E5B7F" value="{DC3FD69C-E9B2-440d-A113-BE84B71BA691}" modelElement="EAID_10C4BCA8_22DB_48bc_B781_69F36A773E05"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_4FD79DD3_F17B_4a32_BA23_92100114B274" value="{F1C90FB4-B7BE-4528-A974-E36BBEAB8616}" modelElement="EAID_1723B43D_4003_43a2_A6D2_4C6CEB829971"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_60EC8FD5_D8F3_4e5e_9550_122CBBE67B50" value="{DC62CC93-2E3F-4b9c-9C81-C84C30A6C67D}" modelElement="EAID_187CAE57_A83B_4353_A002_AF61EACCB844"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_8A363857_B2C3_4c13_877D_8D0D64429713" value="{1A8C79C7-F0ED-42d7-B8C9-BF552DF9CAEC}" modelElement="EAID_1A8C79C7_F0ED_42d7_B8C9_BF552DF9CAEC"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_6598BF04_423E_4036_8764_08BAD82D77BD" value="{9F8964F1-6C32-465b-A83D-F5A201A291C3}" modelElement="EAID_1BD84350_CD0A_4736_A7C4_0017A4F6F699"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_A417BCFA_77E2_40b9_B87F_2B6331AAFA92" value="{B47F1EC8-BE4F-47df-9ACA-3F12A128BF85}" modelElement="EAID_1DC56ADC_B426_461a_AEB0_AFAA3E44D10E"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_1B174564_6874_40ca_BB6C_DFEC81E91A4E" value="{A2008978-193D-4955-8102-599E43C7CFE4}" modelElement="EAID_2682CA8F_0444_4500_A592_B05823889921"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_2D28349E_022D_4131_B405_9725C5E3411F" value="{06EEB33A-0F70-4c8c-A932-3836A0BF6872}" modelElement="EAID_2BC619B8_EBED_47dd_A8BD_A4907AFAE5D7"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_49C18B6B_FDCF_45ed_A609_68C8B0707B96" value="{A633BDC9-A238-4f69-AF1B-FF8A5C2FFCC8}" modelElement="EAID_2C503787_F407_4afc_AB13_D0AFD33066C1"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_9477155F_28E3_405b_B1ED_211F0FD63A9B" value="{EEAE6E83-944C-489c-8E25-CFB85F80C3EB}" modelElement="EAID_3431BFAD_9FE8_4849_BEA9_DC80605841DF"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_D7E349E2_2B92_4eb5_B201_79229363AB5A" value="{0EFCC366-353D-41d8-983D-E16E170F716A}" modelElement="EAID_3923CF90_4D18_4eff_A770_BDC011DAFC80"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_A9D6387E_78AF_4857_AB60_18AA2915C746" value="{06F9A3F0-3AE3-4ad1-88F8-06C207238C3B}" modelElement="EAID_398CAA1A_4354_4a2e_857A_72886A898CAE"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_0431AD1E_8904_43a8_8DAC_11384F8F19CE" value="{4EA61E08-03B6-4eec-9C3B-0978F4898AB3}" modelElement="EAID_4E08F5AB_2CA6_4ca7_8837_952F364DF901"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_EE2F2996_534B_4bc0_8578_128DB897362F" value="{00D99B0C-4D20-43b7-AFA4-B0F9746CFE74}" modelElement="EAID_51039AD5_3E43_43ce_9D21_321E40357971"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_66A13E43_764C_4687_A0B1_D902B43F5233" value="{5F6B613B-C31A-4476-8050-E600FBD5F789}" modelElement="EAID_5444BCC6_E3F1_4ba3_9041_6E67985141CD"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_D6673693_49B9_48d4_947A_62D5605676C1" value="{DD71FE93-4683-440c-8622-A8AA2EB44F6F}" modelElement="EAID_556928DD_3787_489e_ABA2_CDD14F3A838F"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_369B8A67_AE02_40a6_AD93_2E46B4B06EDE" value="{EDB281E6-BBB4-438d-953B-7D746CAF55B5}" modelElement="EAID_565A666F_316D_44a9_9ADF_C21A3513C52B"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_AF99899E_A296_45ae_8D27_0BF7725AEFA3" value="{5E4B6DE1-9115-4fce-9859-6714580E5C66}" modelElement="EAID_6164FD2F_1321_4385_BA04_1D46A2CD16FB"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_6797113E_84FB_4a98_AE07_17DD21B82875" value="{80012160-A038-43b5-BA6F-9862E525518C}" modelElement="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_0D27C9A0_8515_4613_AD94_100FB37773C0" value="{84F589A8-B112-4559-B87F-79921CC96435}" modelElement="EAID_84F589A8_B112_4559_B87F_79921CC96435"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_9BEBBB36_805C_460e_A5A1_DBA0FC1AEBA5" value="{233C330A-11B8-4705-879C-5497380F1D82}" modelElement="EAID_879A7B06_25F5_4f30_B20A_371CE9B9789D"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_40210EA2_BE33_4301_A09F_24B327907E3E" value="{256B27BD-003D-4cf9-9BAE-D9AD4CF6D948}" modelElement="EAID_8884C537_2573_42f2_A9B8_0DD24F971F29"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_F89592C0_94BA_464a_AA94_35AC0D434043" value="{E491E83D-03A0-4cad-86D4-30A09EF320F3}" modelElement="EAID_8F9764E5_0351_4aca_BAF1_5102FCE6E557"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_5CC84DFF_7A79_40c7_85E7_055B51B9D246" value="{95576B4A-D9AC-49fc-82ED-CB6DB2CE8584}" modelElement="EAID_9107E786_9706_407a_BCC2_12A82E528D26"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_CCBC449E_9D07_41af_B030_112429199004" value="{A4EFE5A9-F88A-4d8a-A35F-26D017259C43}" modelElement="EAID_91119C31_51D8_4f65_BEB3_BFF7A227B52E"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_0C343E26_B16F_4c75_87A7_1C8A64973586" value="{2C614F42-FED1-4705-82C8-57771A0466CE}" modelElement="EAID_A15FFFD4_B3E8_471f_8F9D_BD78F4C7E0E9"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_647DC8AB_2533_4c76_B0CF_8039E31628A5" value="{C15CB4E4-4430-43ea-AF69-BC3250B1F4A3}" modelElement="EAID_A73381F1_DFD1_41f4_9B87_C7AA7DF51474"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_745D7EEE_8870_4c5f_90AC_A4657D112124" value="{7436C3C1-BA51-447f-B351-1C9FAA335847}" modelElement="EAID_AFB3B698_D55B_4b0c_B695_7A4806B80814"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_1CFCD003_8366_4070_A897_7FCC9FD22DFE" value="{E50DF78B-84CE-42e9-A275-A956DEF45490}" modelElement="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_AC7B76A9_6E3E_4220_8354_C05396974DDA" value="{921A00A7-D33C-43ea-9DE4-70A026CBA70F}" modelElement="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_BA378B0F_8FE9_478b_ABAB_56FE051DF7C3" value="{D0F4E10E-A379-4a83-A452-974B8D2B45AD}" modelElement="EAID_BEAED12F_1B14_48d9_B9E9_3F059EC1BD4B"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_0358B660_EB12_4541_AB12_E61C8BA7F17F" value="{BD3D15F2-CB39-41a5-935D-7B8F490ECBF8}" modelElement="EAID_C0D66EBE_A9A2_4d23_A24C_FC4388BD262E"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_3326BE38_8F52_4824_A2CE_9A20307C6596" value="{921A00A7-D33C-43ea-9DE4-70A026CBA70F}" modelElement="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_8FA6513F_0F7A_4834_A70B_219D846F2A51" value="{CCE4615A-C403-4c96-8122-26904C128276}" modelElement="EAID_D442E270_BF34_483d_90D6_5E6B99052CED"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_98361BCD_AF68_4843_8A52_4BAAD068097A" value="{9CD33DFD-D5FD-46a0-A320-11DFA5341F73}" modelElement="EAID_E0A38044_8E87_4322_ABA2_FD69A778AEEA"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_D94B4DDB_49D4_43c9_90C3_026881394136" value="{E3F6B8F8-B817-4e2b-AF5B-927CC5474EAE}" modelElement="EAID_E3F6B8F8_B817_4e2b_AF5B_927CC5474EAE"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_99C73B98_0693_415b_8DCC_44CCE000EBE4" value="{A91C1953-7D39-41d4-B0E8-C88B80E11D26}" modelElement="EAID_E4220C0C_428B_4f5a_9BD9_6403DC459AB2"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_E9B294CC_597C_4865_A6E3_5723211D1568" value="{F5C26220-1658-46c9-AA2E-B8AFDBB486FC}" modelElement="EAID_F5C26220_1658_46c9_AA2E_B8AFDBB486FC"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_0D3DE379_F200_45a9_A8CE_060B2F9383B9" value="{E52EDC2D-8972-42c7-A7EB-D8C017E138A4}" modelElement="EAID_F61B9533_2BB1_4457_82AC_D9C1F312CA92"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_CC5E3473_661A_4781_A213_F1C23433768E" value="{157FF307-0C5D-4c09-A480-5EBB085B0E02}" modelElement="EAID_FBD234B2_390F_47f7_82D6_785623646D6A"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_FCDA76F1_2117_486a_900E_DA9FE8145BC5" value="{C724EF94-9D38-4673-A889-46E7C5C6321C}" modelElement="EAID_FF85CB9F_4A0C_4339_A3E4_06CE2EA1772F"/>
+		<UML:Diagram name="DomainProfile" xmi.id="EAID_5D1A43F7_1B03_45e5_B682_CC929652BAFA" diagramType="ClassDiagram" owner="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue/>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=53;Top=1713;Right=282;Bottom=1803;imgL=78;imgT=1743;imgR=307;imgB=1833;" subject="EAID_C0D66EBE_A9A2_4d23_A24C_FC4388BD262E" seqno="1" style="DUID=3AD6B933;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=16;Top=1583;Right=347;Bottom=1701;imgL=41;imgT=1613;imgR=372;imgB=1731;" subject="EAID_3923CF90_4D18_4eff_A770_BDC011DAFC80" seqno="2" style="DUID=5A2FF427;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=367;Top=1582;Right=698;Bottom=1700;imgL=392;imgT=1612;imgR=723;imgB=1730;" subject="EAID_91119C31_51D8_4f65_BEB3_BFF7A227B52E" seqno="3" style="DUID=A59CA0B7;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=359;Top=1449;Right=690;Bottom=1567;imgL=384;imgT=1479;imgR=715;imgB=1597;" subject="EAID_8884C537_2573_42f2_A9B8_0DD24F971F29" seqno="4" style="DUID=68E1B66F;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=13;Top=1304;Right=344;Bottom=1422;imgL=38;imgT=1334;imgR=369;imgB=1452;" subject="EAID_AFB3B698_D55B_4b0c_B695_7A4806B80814" seqno="5" style="DUID=12E60E47;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=363;Top=1337;Right=632;Bottom=1427;imgL=388;imgT=1367;imgR=657;imgB=1457;" subject="EAID_8F9764E5_0351_4aca_BAF1_5102FCE6E557" seqno="6" style="DUID=3CA5194E;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=225;Top=1207;Right=315;Bottom=1277;imgL=250;imgT=1237;imgR=340;imgB=1307;" subject="EAID_2BC619B8_EBED_47dd_A8BD_A4907AFAE5D7" seqno="7" style="DUID=DD878B23;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=37;Top=1191;Right=176;Bottom=1281;imgL=62;imgT=1221;imgR=201;imgB=1311;" subject="EAID_4E08F5AB_2CA6_4ca7_8837_952F364DF901" seqno="8" style="DUID=2757FDDC;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=665;Top=1305;Right=996;Bottom=1423;imgL=690;imgT=1335;imgR=1021;imgB=1453;" subject="EAID_1A8C79C7_F0ED_42d7_B8C9_BF552DF9CAEC" seqno="9" style="DUID=D87E4B89;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=354;Top=1231;Right=623;Bottom=1321;imgL=379;imgT=1261;imgR=648;imgB=1351;" subject="EAID_F5C26220_1658_46c9_AA2E_B8AFDBB486FC" seqno="10" style="DUID=9E140DA7;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=35;Top=1068;Right=304;Bottom=1158;imgL=60;imgT=1098;imgR=329;imgB=1188;" subject="EAID_84F589A8_B112_4559_B87F_79921CC96435" seqno="11" style="DUID=0897AEB0;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=673;Top=1221;Right=995;Bottom=1261;imgL=698;imgT=1251;imgR=1020;imgB=1291;" subject="EAID_DA536212_AE44_4d1f_AC5C_A6B3E22FE3C0" seqno="12" style="DUID=D06F7943;"/>
+				<UML:DiagramElement geometry="Left=666;Top=1058;Right=997;Bottom=1190;imgL=691;imgT=1088;imgR=1022;imgB=1220;" subject="EAID_E3F6B8F8_B817_4e2b_AF5B_927CC5474EAE" seqno="13" style="DUID=6158D8F4;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=537;Top=129;Right=805;Bottom=166;imgL=562;imgT=159;imgR=830;imgB=196;" subject="EAID_D8CB30A6_B4CA_4b1e_A76D_5924C4C4BC29" seqno="14" style="DUID=C385ED0E;"/>
+				<UML:DiagramElement geometry="Left=8;Top=138;Right=273;Bottom=173;imgL=33;imgT=168;imgR=298;imgB=203;" subject="EAID_819D4363_9F1A_49e8_B791_17DBAEED8BBC" seqno="15" style="DUID=AB5182A8;"/>
+				<UML:DiagramElement geometry="Left=11;Top=24;Right=280;Bottom=128;imgL=36;imgT=54;imgR=305;imgB=158;" subject="EAID_A15FFFD4_B3E8_471f_8F9D_BD78F4C7E0E9" seqno="16" style="DUID=A0E7A396;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=535;Top=16;Right=805;Bottom=120;imgL=560;imgT=46;imgR=830;imgB=150;" subject="EAID_1DC56ADC_B426_461a_AEB0_AFAA3E44D10E" seqno="17" style="DUID=74D6F2DC;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=353;Top=1167;Right=627;Bottom=1205;imgL=378;imgT=1197;imgR=652;imgB=1235;" subject="EAID_BE7205FA_24A0_43b3_BC1F_BF2D55A8BCC5" seqno="18" style="DUID=F66F1665;"/>
+				<UML:DiagramElement geometry="Left=631;Top=816;Right=911;Bottom=855;imgL=656;imgT=846;imgR=936;imgB=885;" subject="EAID_5F4393AF_1514_4ae9_B4BD_6C4B573A9EA7" seqno="19" style="DUID=D7537B8C;"/>
+				<UML:DiagramElement geometry="Left=331;Top=974;Right=607;Bottom=1013;imgL=356;imgT=1004;imgR=632;imgB=1043;" subject="EAID_D03AC452_F37C_4986_BFA9_7760A7B6C6A4" seqno="20" style="DUID=1FBEE0A4;"/>
+				<UML:DiagramElement geometry="Left=15;Top=970;Right=288;Bottom=1004;imgL=40;imgT=1000;imgR=313;imgB=1034;" subject="EAID_B7B5B4F6_46C3_4754_937C_FD4E093F96FC" seqno="21" style="DUID=A8270CBB;"/>
+				<UML:DiagramElement geometry="Left=642;Top=988;Right=910;Bottom=1031;imgL=667;imgT=1018;imgR=935;imgB=1061;" subject="EAID_19560627_E034_40ce_8B03_F5F84B566DE8" seqno="22" style="DUID=C3099D7B;"/>
+				<UML:DiagramElement geometry="Left=323;Top=803;Right=597;Bottom=844;imgL=348;imgT=833;imgR=622;imgB=874;" subject="EAID_91A9744E_3D84_4068_8A3B_DE130ABAB729" seqno="23" style="DUID=F26F1B45;"/>
+				<UML:DiagramElement geometry="Left=13;Top=806;Right=281;Bottom=843;imgL=38;imgT=836;imgR=306;imgB=873;" subject="EAID_2782E18B_6A31_4a88_8248_D92B74D3175C" seqno="24" style="DUID=4600E6B9;"/>
+				<UML:DiagramElement geometry="Left=354;Top=1058;Right=623;Bottom=1148;imgL=379;imgT=1088;imgR=648;imgB=1178;" subject="EAID_02ED9C37_41CF_4b5d_8FC9_B76A708CDAE8" seqno="25" style="DUID=735717E8;NSL=0;LWth=-1;bold=0;italic=0;ul=0;charset=0;pitch=0;LCol=0;BCol=14938876;BFol=0;black=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=614;Top=684;Right=931;Bottom=802;imgL=639;imgT=714;imgR=956;imgB=832;" subject="EAID_51039AD5_3E43_43ce_9D21_321E40357971" seqno="26" style="DUID=6A63B9F2;NSL=0;LWth=-1;bold=0;italic=0;ul=0;charset=0;pitch=0;LCol=0;BCol=14938876;BFol=0;black=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=333;Top=865;Right=602;Bottom=955;imgL=358;imgT=895;imgR=627;imgB=985;" subject="EAID_09443E86_E1BB_48ba_BC8A_23D67D248DA5" seqno="27" style="DUID=301203D9;NSL=0;LWth=-1;bold=0;italic=0;ul=0;charset=0;pitch=0;LCol=0;BCol=14938876;BFol=0;black=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=16;Top=864;Right=285;Bottom=954;imgL=41;imgT=894;imgR=310;imgB=984;" subject="EAID_6164FD2F_1321_4385_BA04_1D46A2CD16FB" seqno="28" style="DUID=A0399F05;NSL=0;LWth=-1;bold=0;italic=0;ul=0;charset=0;pitch=0;LCol=0;BCol=14938876;BFol=0;black=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=636;Top=869;Right=905;Bottom=967;imgL=661;imgT=899;imgR=930;imgB=997;" subject="EAID_398CAA1A_4354_4a2e_857A_72886A898CAE" seqno="29" style="NSL=0;LWth=-1;bold=0;italic=0;ul=0;charset=0;pitch=0;DUID=45D4E32D;LCol=0;BCol=14938876;BFol=0;black=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=323;Top=695;Right=592;Bottom=785;imgL=348;imgT=725;imgR=617;imgB=815;" subject="EAID_10C4BCA8_22DB_48bc_B781_69F36A773E05" seqno="30" style="DUID=63D9B28A;NSL=0;LWth=-1;bold=0;italic=0;ul=0;charset=0;pitch=0;LCol=0;BCol=14938876;BFol=0;black=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=14;Top=695;Right=283;Bottom=785;imgL=39;imgT=725;imgR=308;imgB=815;" subject="EAID_D442E270_BF34_483d_90D6_5E6B99052CED" seqno="31" style="DUID=679BF71A;NSL=0;LWth=-1;bold=0;italic=0;ul=0;charset=0;pitch=0;LCol=0;BCol=14938876;BFol=0;black=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=28;Top=1450;Right=312;Bottom=1554;imgL=53;imgT=1480;imgR=337;imgB=1584;" subject="EAID_FE05509D_D4AF_495a_BC54_66BF13CD446D" seqno="32" style="DUID=D686035C;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=615;Top=629;Right=877;Bottom=663;imgL=640;imgT=659;imgR=902;imgB=693;" subject="EAID_C355E39B_95B2_4a38_A6E5_2791F3CA7D22" seqno="33" style="DUID=245D61C3;"/>
+				<UML:DiagramElement geometry="Left=311;Top=624;Right=588;Bottom=662;imgL=336;imgT=654;imgR=613;imgB=692;" subject="EAID_06B63DAD_EFFA_483d_961C_616C104608F5" seqno="34" style="DUID=5372CD6F;"/>
+				<UML:DiagramElement geometry="Left=8;Top=621;Right=284;Bottom=660;imgL=33;imgT=651;imgR=309;imgB=690;" subject="EAID_9A83CF7E_8EC2_4a5c_8305_F44634F0E588" seqno="35" style="DUID=D1252648;"/>
+				<UML:DiagramElement geometry="Left=626;Top=456;Right=899;Bottom=493;imgL=651;imgT=486;imgR=924;imgB=523;" subject="EAID_4AC509F9_EB07_45f1_AAD5_C4FBE9385C06" seqno="36" style="DUID=9BC02DB0;"/>
+				<UML:DiagramElement geometry="Left=319;Top=449;Right=586;Bottom=490;imgL=344;imgT=479;imgR=611;imgB=520;" subject="EAID_12D15E73_24CE_45fe_81FC_821DB71E6C1D" seqno="37" style="DUID=2D57695B;"/>
+				<UML:DiagramElement geometry="Left=6;Top=450;Right=271;Bottom=489;imgL=31;imgT=480;imgR=296;imgB=519;" subject="EAID_C27F70EF_C899_48ed_ADE5_B74AFD51EB71" seqno="38" style="DUID=69F9CE46;"/>
+				<UML:DiagramElement geometry="Left=615;Top=299;Right=882;Bottom=332;imgL=640;imgT=329;imgR=907;imgB=362;" subject="EAID_617E5858_0A69_4b7a_8258_FD522F0C964A" seqno="39" style="DUID=B2917F34;"/>
+				<UML:DiagramElement geometry="Left=312;Top=297;Right=581;Bottom=330;imgL=337;imgT=327;imgR=606;imgB=360;" subject="EAID_AA3F71CF_39C7_4093_9BF2_FC789176FC07" seqno="40" style="DUID=3649D74A;"/>
+				<UML:DiagramElement geometry="Left=3;Top=295;Right=269;Bottom=330;imgL=28;imgT=325;imgR=294;imgB=360;" subject="EAID_5E30A8AF_2FC0_4349_929C_94D197DA604E" seqno="41" style="DUID=0A7759C0;"/>
+				<UML:DiagramElement geometry="Left=631;Top=511;Right=850;Bottom=604;imgL=656;imgT=541;imgR=875;imgB=634;" subject="EAID_556928DD_3787_489e_ABA2_CDD14F3A838F" seqno="42" style="DUID=E5A3A066;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=303;Top=110;Right=493;Bottom=187;imgL=328;imgT=140;imgR=518;imgB=217;" subject="EAID_B19C3FBC_DFC7_4907_BB2E_B2447ED9E606" seqno="43" style="DUID=509D39B1;"/>
+				<UML:DiagramElement geometry="Left=316;Top=510;Right=585;Bottom=601;imgL=341;imgT=540;imgR=610;imgB=631;" subject="EAID_565A666F_316D_44a9_9ADF_C21A3513C52B" seqno="44" style="DUID=77332B15;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=8;Top=510;Right=277;Bottom=606;imgL=33;imgT=540;imgR=302;imgB=636;" subject="EAID_2682CA8F_0444_4500_A592_B05823889921" seqno="45" style="DUID=C216F453;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=627;Top=349;Right=896;Bottom=443;imgL=652;imgT=379;imgR=921;imgB=473;" subject="EAID_1723B43D_4003_43a2_A6D2_4C6CEB829971" seqno="46" style="DUID=E8EE1661;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=321;Top=348;Right=589;Bottom=435;imgL=346;imgT=378;imgR=614;imgB=465;" subject="EAID_2C503787_F407_4afc_AB13_D0AFD33066C1" seqno="47" style="DUID=2A427D17;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=16;Top=350;Right=268;Bottom=442;imgL=41;imgT=380;imgR=293;imgB=472;" subject="EAID_879A7B06_25F5_4f30_B20A_371CE9B9789D" seqno="48" style="DUID=4D9BB762;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=620;Top=203;Right=874;Bottom=293;imgL=645;imgT=233;imgR=899;imgB=323;" subject="EAID_F61B9533_2BB1_4457_82AC_D9C1F312CA92" seqno="49" style="DUID=0180926F;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=319;Top=204;Right=573;Bottom=291;imgL=344;imgT=234;imgR=598;imgB=321;" subject="EAID_9107E786_9706_407a_BCC2_12A82E528D26" seqno="50" style="DUID=B43AADC9;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=12;Top=200;Right=266;Bottom=286;imgL=37;imgT=230;imgR=291;imgB=316;" subject="EAID_A73381F1_DFD1_41f4_9B87_C7AA7DF51474" seqno="51" style="DUID=F2597BFE;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=339;Top=16;Right=452;Bottom=82;imgL=364;imgT=46;imgR=477;imgB=112;" subject="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F" seqno="52" style="DUID=40357BE9;LCol=0;BCol=14938876;BFol=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;fontsz=0;"/>
+				<UML:DiagramElement geometry="Left=711;Top=1451;Right=1025;Bottom=1569;imgL=736;imgT=1481;imgR=1050;imgB=1599;" subject="EAID_BEAED12F_1B14_48d9_B9E9_3F059EC1BD4B" seqno="53" style="DUID=A01DCA54;LCol=0;BCol=14938876;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_97AB1C07_7B47_4637_A5FD_1B4E811372EB" style="Mode=3;EOID=6158D8F4;SOID=D06F7943;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_6AFA28DD_E47B_4c5b_AAC3_210E1D118766" style="Mode=3;EOID=74D6F2DC;SOID=C385ED0E;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_4825B29B_BD9C_40e4_A63C_DF87DF3DFD7E" style="Mode=3;EOID=A0E7A396;SOID=AB5182A8;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_DD36514E_1D5E_4d3f_B381_7E38E15756AA" style="Mode=3;EOID=735717E8;SOID=F66F1665;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_965ECCA8_84C8_45ee_8C67_443C105585D7" style="Mode=3;EOID=6A63B9F2;SOID=D7537B8C;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_43136E6F_2192_4f23_B35D_F5186C984F1E" style="Mode=3;EOID=301203D9;SOID=1FBEE0A4;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_072579FD_CF4E_4850_9F31_DD1E0800FB86" style="Mode=3;EOID=A0399F05;SOID=A8270CBB;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_BF16B9F6_3845_4b6c_BFCF_6FAF16AD5FF8" style="Mode=3;EOID=45D4E32D;SOID=C3099D7B;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_761450FC_2FD0_423a_B1C9_BEB5DFAA7521" style="Mode=3;EOID=63D9B28A;SOID=F26F1B45;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_E4E0CD7A_EF45_42e4_BB45_9DD9E9F1DCE5" style="Mode=3;EOID=679BF71A;SOID=4600E6B9;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_ACBA39D6_4204_4c8b_91BF_E0C2189FA268" style="Mode=3;EOID=E5A3A066;SOID=245D61C3;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_2E7D2B52_8D95_41b3_8743_E0CD84D58A17" style="Mode=3;EOID=77332B15;SOID=5372CD6F;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_249D0077_437D_4fcb_A5F9_2521E45A9A92" style="Mode=3;EOID=C216F453;SOID=D1252648;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_2794037F_25F7_4b3a_8C0B_025B7335A929" style="Mode=3;EOID=E8EE1661;SOID=9BC02DB0;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_637D3BCD_2965_40ab_9ABD_155D0BE79AB2" style="Mode=3;EOID=2A427D17;SOID=2D57695B;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_C3ACB21A_94A8_4332_8135_8A642AE8169A" style="Mode=3;EOID=4D9BB762;SOID=69F9CE46;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_A0A1A60A_EA52_4dbb_8B82_E996F35DACB5" style="Mode=3;EOID=0180926F;SOID=B2917F34;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_0C075D90_4C01_4266_AFFC_1C30E752D4A1" style="Mode=3;EOID=B43AADC9;SOID=3649D74A;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_460B1644_224A_49de_87EA_1575FB53D0B9" style="Mode=3;EOID=F2597BFE;SOID=0A7759C0;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_6373270D_C8B5_4b6e_B70D_95168B1A3D65" style="Mode=3;EOID=40357BE9;SOID=509D39B1;Color=-1;LWidth=0;Hidden=0;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="EnumerationDomainProfile" xmi.id="EAID_82A7BE65_5C5F_44c4_8E56_A31AD8B9E2B4" diagramType="ClassDiagram" owner="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue/>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=24;Top=120;Right=161;Bottom=238;imgL=49;imgT=150;imgR=186;imgB=268;" subject="EAID_B3BE4232_3659_4e1c_A5D3_661DE755FEB2" seqno="1" style="DUID=F6F507D4;BCol=10092287;"/>
+				<UML:DiagramElement geometry="Left=427;Top=20;Right=527;Bottom=292;imgL=452;imgT=50;imgR=552;imgB=322;" subject="EAID_FBD234B2_390F_47f7_82D6_785623646D6A" seqno="2" style="DUID=DC2F2C0D;BCol=10092287;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=308;Top=264;Right=409;Bottom=354;imgL=333;imgT=294;imgR=434;imgB=384;" subject="EAID_E4220C0C_428B_4f5a_9BD9_6403DC459AB2" seqno="3" style="DUID=82F81E0C;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;BCol=10092287;black=0;"/>
+				<UML:DiagramElement geometry="Left=303;Top=14;Right=403;Bottom=244;imgL=328;imgT=44;imgR=428;imgB=274;" subject="EAID_187CAE57_A83B_4353_A002_AF61EACCB844" seqno="4" style="DUID=346D6A3B;BCol=10092287;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=189;Top=16;Right=289;Bottom=470;imgL=214;imgT=46;imgR=314;imgB=500;" subject="EAID_66DA823A_B6D8_4aea_8084_9DBADF8F8219" seqno="5" style="DUID=10F63238;BCol=10092287;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="PrimitiveDomainProfile" xmi.id="EAID_D34752E6_7D80_48ae_82DF_8B442B0030E5" diagramType="ClassDiagram" owner="EAPK_3A93D24C_824F_4ee9_8EAC_F78B5E55A655" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue/>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=26;Top=100;Right=116;Bottom=170;imgL=51;imgT=130;imgR=141;imgB=200;" subject="EAID_3431BFAD_9FE8_4849_BEA9_DC80605841DF" seqno="1" style="DUID=C62C55EB;BCol=10092287;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=229;Top=21;Right=319;Bottom=91;imgL=254;imgT=51;imgR=344;imgB=121;" subject="EAID_CE061B0C_E2E4_44e3_B93D_C87DE4DBD69F" seqno="2" style="DUID=AF5F0D6A;BCol=10092287;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=124;Top=21;Right=214;Bottom=91;imgL=149;imgT=51;imgR=239;imgB=121;" subject="EAID_FF85CB9F_4A0C_4339_A3E4_06CE2EA1772F" seqno="3" style="DUID=1DDDD781;BCol=10092287;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=338;Top=25;Right=428;Bottom=95;imgL=363;imgT=55;imgR=453;imgB=125;" subject="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E" seqno="4" style="DUID=F672FA1D;BCol=10092287;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=132;Top=107;Right=222;Bottom=177;imgL=157;imgT=137;imgR=247;imgB=207;" subject="EAID_E0A38044_8E87_4322_ABA2_FD69A778AEEA" seqno="5" style="DUID=3C294331;BCol=10092287;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=240;Top=106;Right=330;Bottom=176;imgL=265;imgT=136;imgR=355;imgB=206;" subject="EAID_5444BCC6_E3F1_4ba3_9041_6E67985141CD" seqno="6" style="DUID=89308F58;BCol=10092287;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=21;Top=20;Right=111;Bottom=84;imgL=46;imgT=50;imgR=136;imgB=114;" subject="EAID_1BD84350_CD0A_4736_A7C4_0017A4F6F699" seqno="7" style="DUID=F6D09434;BCol=10092287;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+	</XMI.content>
+	<XMI.difference/>
+	<XMI.extensions xmi.extender="Enterprise Architect 2.5">
+		<EANoteLink xmi.id="EAID_DD36514E_1D5E_4d3f_B381_7E38E15756AA" source="EAID_BE7205FA_24A0_43b3_BC1F_BF2D55A8BCC5" target="EAID_02ED9C37_41CF_4b5d_8FC9_B76A708CDAE8">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="0"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+		<EANoteLink xmi.id="EAID_2E7D2B52_8D95_41b3_8743_E0CD84D58A17" source="EAID_06B63DAD_EFFA_483d_961C_616C104608F5" target="EAID_565A666F_316D_44a9_9ADF_C21A3513C52B">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="0"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+		<EANoteLink xmi.id="EAID_43136E6F_2192_4f23_B35D_F5186C984F1E" source="EAID_D03AC452_F37C_4986_BFA9_7760A7B6C6A4" target="EAID_09443E86_E1BB_48ba_BC8A_23D67D248DA5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="0"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+		<EANoteLink xmi.id="EAID_761450FC_2FD0_423a_B1C9_BEB5DFAA7521" source="EAID_91A9744E_3D84_4068_8A3B_DE130ABAB729" target="EAID_10C4BCA8_22DB_48bc_B781_69F36A773E05">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="0"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+		<EANoteLink xmi.id="EAID_637D3BCD_2965_40ab_9ABD_155D0BE79AB2" source="EAID_12D15E73_24CE_45fe_81FC_821DB71E6C1D" target="EAID_2C503787_F407_4afc_AB13_D0AFD33066C1">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="0"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+		<EANoteLink xmi.id="EAID_2794037F_25F7_4b3a_8C0B_025B7335A929" source="EAID_4AC509F9_EB07_45f1_AAD5_C4FBE9385C06" target="EAID_1723B43D_4003_43a2_A6D2_4C6CEB829971">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="0"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+		<EANoteLink xmi.id="EAID_BF16B9F6_3845_4b6c_BFCF_6FAF16AD5FF8" source="EAID_19560627_E034_40ce_8B03_F5F84B566DE8" target="EAID_398CAA1A_4354_4a2e_857A_72886A898CAE">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="0"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+		<EANoteLink xmi.id="EAID_6AFA28DD_E47B_4c5b_AAC3_210E1D118766" source="EAID_D8CB30A6_B4CA_4b1e_A76D_5924C4C4BC29" target="EAID_1DC56ADC_B426_461a_AEB0_AFAA3E44D10E">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="-1"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+		<EANoteLink xmi.id="EAID_249D0077_437D_4fcb_A5F9_2521E45A9A92" source="EAID_9A83CF7E_8EC2_4a5c_8305_F44634F0E588" target="EAID_2682CA8F_0444_4500_A592_B05823889921">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="0"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+		<EANoteLink xmi.id="EAID_E4E0CD7A_EF45_42e4_BB45_9DD9E9F1DCE5" source="EAID_2782E18B_6A31_4a88_8248_D92B74D3175C" target="EAID_D442E270_BF34_483d_90D6_5E6B99052CED">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="0"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+		<EANoteLink xmi.id="EAID_965ECCA8_84C8_45ee_8C67_443C105585D7" source="EAID_5F4393AF_1514_4ae9_B4BD_6C4B573A9EA7" target="EAID_51039AD5_3E43_43ce_9D21_321E40357971">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="0"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+		<EANoteLink xmi.id="EAID_ACBA39D6_4204_4c8b_91BF_E0C2189FA268" source="EAID_C355E39B_95B2_4a38_A6E5_2791F3CA7D22" target="EAID_556928DD_3787_489e_ABA2_CDD14F3A838F">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="0"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+		<EANoteLink xmi.id="EAID_460B1644_224A_49de_87EA_1575FB53D0B9" source="EAID_5E30A8AF_2FC0_4349_929C_94D197DA604E" target="EAID_A73381F1_DFD1_41f4_9B87_C7AA7DF51474">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="0"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+		<EANoteLink xmi.id="EAID_072579FD_CF4E_4850_9F31_DD1E0800FB86" source="EAID_B7B5B4F6_46C3_4754_937C_FD4E093F96FC" target="EAID_6164FD2F_1321_4385_BA04_1D46A2CD16FB">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="0"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+		<EANoteLink xmi.id="EAID_A0A1A60A_EA52_4dbb_8B82_E996F35DACB5" source="EAID_617E5858_0A69_4b7a_8258_FD522F0C964A" target="EAID_F61B9533_2BB1_4457_82AC_D9C1F312CA92">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="0"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+		<EANoteLink xmi.id="EAID_4825B29B_BD9C_40e4_A63C_DF87DF3DFD7E" source="EAID_819D4363_9F1A_49e8_B791_17DBAEED8BBC" target="EAID_A15FFFD4_B3E8_471f_8F9D_BD78F4C7E0E9">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="-1"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+		<EANoteLink xmi.id="EAID_C3ACB21A_94A8_4332_8135_8A642AE8169A" source="EAID_C27F70EF_C899_48ed_ADE5_B74AFD51EB71" target="EAID_879A7B06_25F5_4f30_B20A_371CE9B9789D">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="0"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+		<EANoteLink xmi.id="EAID_0C075D90_4C01_4266_AFFC_1C30E752D4A1" source="EAID_AA3F71CF_39C7_4093_9BF2_FC789176FC07" target="EAID_9107E786_9706_407a_BCC2_12A82E528D26">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="0"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+		<EAStub xmi.id="EAID_B19C3FBC_DFC7_4907_BB2E_B2447ED9E606" UMLType="Note"/>
+		<EANoteLink xmi.id="EAID_6373270D_C8B5_4b6e_B70D_95168B1A3D65" source="EAID_B19C3FBC_DFC7_4907_BB2E_B2447ED9E606" target="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="0"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+		<EANoteLink xmi.id="EAID_97AB1C07_7B47_4637_A5FD_1B4E811372EB" source="EAID_DA536212_AE44_4d1f_AC5C_A6B3E22FE3C0" target="EAID_E3F6B8F8_B817_4e2b_AF5B_927CC5474EAE">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="linecolor" value="-1"/>
+				<UML:TaggedValue tag="linewidth" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</EANoteLink>
+	</XMI.extensions>
+</XMI>

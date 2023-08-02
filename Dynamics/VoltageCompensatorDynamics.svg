@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg10307"
+   version="1.1"
+   viewBox="0 0 892 445"
+   height="11.77cm"
+   width="23.60cm">
+  <metadata
+     id="metadata10313">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10311" />
+  <desc
+     id="desc9737">Created with Enterprise Architect (Build: 1627) 1</desc>
+  <g
+     id="g9741"
+     style="fill:#FFFFFF;fill-opacity:1.00;">
+    <rect
+       id="rect9739"
+       shape-rendering="auto"
+       height="445"
+       width="892"
+       y="0"
+       x="0" />
+  </g>
+  <g
+     id="g9745"
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+    <path
+       id="path9743"
+       shape-rendering="auto"
+       d="M 6 6 L 6 439 L 886 439 L 886 6 L 6 6" />
+  </g>
+  <g
+     id="g9749"
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#FFFFFF;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <polygon
+       id="polygon9747"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="6 24 194 24 207 10 207 6 6 6 6 24" />
+  </g>
+  <g
+     id="g9753"
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text9751"
+       transform="rotate(-0.00 11.00 18.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="181"
+       y="18.00"
+       x="11.00">class VoltageCompensatorDynamics</text>
+  </g>
+  <g
+     id="g10155"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect10153"
+       shape-rendering="auto"
+       rx="0.00"
+       height="32"
+       width="145"
+       y="353"
+       x="186" />
+  </g>
+  <g
+     id="g10159"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text10157"
+       transform="rotate(-0.00 214.00 371.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="89"
+       y="371.00"
+       x="214.00">VCompIEEEType1</text>
+  </g>
+  <g
+     id="g10163"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect10161"
+       shape-rendering="auto"
+       rx="0.00"
+       height="43"
+       width="208"
+       y="218"
+       x="215" />
+  </g>
+  <g
+     id="g10169"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text10165"
+       transform="rotate(-0.00 294.00 233.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="49"
+       y="233.00"
+       x="294.00">«abstract»</text>
+    <text
+       id="text10167"
+       transform="rotate(-0.00 243.00 244.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="151"
+       y="244.00"
+       x="243.00">VoltageCompensatorDynamics</text>
+  </g>
+  <g
+     id="g10173"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect10171"
+       shape-rendering="auto"
+       rx="0.00"
+       height="30"
+       width="151"
+       y="353"
+       x="359" />
+  </g>
+  <g
+     id="g10177"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text10175"
+       transform="rotate(-0.00 390.00 371.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="89"
+       y="371.00"
+       x="390.00">VCompIEEEType2</text>
+  </g>
+  <g
+     id="g10181"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect10179"
+       shape-rendering="auto"
+       rx="0.00"
+       height="41"
+       width="143"
+       y="35"
+       x="252" />
+  </g>
+  <g
+     id="g10187"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text10183"
+       transform="rotate(-0.00 299.00 50.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="49"
+       y="50.00"
+       x="299.00">«abstract»</text>
+    <text
+       id="text10185"
+       transform="rotate(-0.00 270.00 61.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="106"
+       y="61.00"
+       x="270.00">Core::IdentifiedObject</text>
+  </g>
+  <g
+     id="g10191"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect10189"
+       shape-rendering="auto"
+       rx="0.00"
+       height="76"
+       width="157"
+       y="333"
+       x="685" />
+  </g>
+  <g
+     id="g10195"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text10193"
+       transform="rotate(-0.00 696.00 351.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="135"
+       y="351.00"
+       x="696.00">GenICompensationForGenJ</text>
+  </g>
+  <g
+     id="g10199"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+    <path
+       id="path10197"
+       shape-rendering="auto"
+       d="M 685 358 L 841 358" />
+  </g>
+  <g
+     id="g10209"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text10201"
+       transform="rotate(-0.00 690.00 371.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="371.00"
+       x="690.00">+ </text>
+    <text
+       id="text10203"
+       transform="rotate(-0.00 707.00 371.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="32"
+       y="371.00"
+       x="707.00">rcij: PU</text>
+    <text
+       id="text10205"
+       transform="rotate(-0.00 690.00 382.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="382.00"
+       x="690.00">+ </text>
+    <text
+       id="text10207"
+       transform="rotate(-0.00 707.00 382.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="34"
+       y="382.00"
+       x="707.00">xcij: PU</text>
+  </g>
+  <g
+     id="g10213"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect10211"
+       shape-rendering="auto"
+       rx="0.00"
+       height="43"
+       width="196"
+       y="298"
+       x="35" />
+  </g>
+  <g
+     id="g10219"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text10215"
+       transform="rotate(-0.00 82.00 316.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="101"
+       y="316.00"
+       x="82.00">UserDefinedModels::</text>
+    <text
+       id="text10217"
+       transform="rotate(-0.00 52.00 327.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="162"
+       y="327.00"
+       x="52.00">VoltageCompensatorUserDefined</text>
+  </g>
+  <g
+     id="g10223"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect10221"
+       shape-rendering="auto"
+       rx="0.00"
+       height="76"
+       width="174"
+       y="99"
+       x="236" />
+  </g>
+  <g
+     id="g10231"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text10225"
+       transform="rotate(-0.00 298.00 114.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="49"
+       y="114.00"
+       x="298.00">«abstract»</text>
+    <text
+       id="text10227"
+       transform="rotate(-0.00 280.00 125.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="85"
+       y="125.00"
+       x="280.00">StandardModels::</text>
+    <text
+       id="text10229"
+       transform="rotate(-0.00 263.00 136.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="119"
+       y="136.00"
+       x="263.00">DynamicsFunctionBlock</text>
+  </g>
+  <g
+     id="g10235"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+    <path
+       id="path10233"
+       shape-rendering="auto"
+       d="M 236 143 L 409 143" />
+  </g>
+  <g
+     id="g10241"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text10237"
+       transform="rotate(-0.00 241.00 156.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="156.00"
+       x="241.00">+ </text>
+    <text
+       id="text10239"
+       transform="rotate(-0.00 258.00 156.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="83"
+       y="156.00"
+       x="258.00">enabled: Boolean</text>
+  </g>
+  <g
+     id="g10245"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path10243"
+       shape-rendering="auto"
+       d="M 323 99 L 323 76" />
+  </g>
+  <g
+     id="g10249"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon10247"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="329 92 317 92 323 76" />
+  </g>
+  <g
+     id="g10253"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path10251"
+       shape-rendering="auto"
+       d="M 181 298 L 267 261" />
+  </g>
+  <g
+     id="g10257"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon10255"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="255 273 250 262 267 261" />
+  </g>
+  <g
+     id="g10261"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path10259"
+       shape-rendering="auto"
+       d="M 788 333 L 395 51" />
+  </g>
+  <g
+     id="g10265"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon10263"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="411 55 405 65 395 51" />
+  </g>
+  <g
+     id="g10273"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path10267"
+       shape-rendering="auto"
+       d="M 685 370 L 510 368" />
+    <path
+       id="path10269"
+       shape-rendering="auto"
+       d="M 525 362 L 510 368 L 525 374" />
+    <path
+       id="path10271"
+       shape-rendering="auto"
+       d="M 420 353 L 338 261" />
+  </g>
+  <g
+     id="g10277"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon10275"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="353 269 344 277 338 261" />
+  </g>
+  <g
+     id="g10281"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path10279"
+       shape-rendering="auto"
+       d="M 319 218 L 321 175" />
+  </g>
+  <g
+     id="g10285"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon10283"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="326 191 314 191 321 175" />
+  </g>
+  <g
+     id="g10289"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+    <path
+       id="path10287"
+       shape-rendering="auto"
+       d="M 265 353 L 308 261" />
+  </g>
+  <g
+     id="g10293"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <polygon
+       id="polygon10291"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="307 278 296 273 308 261" />
+  </g>
+  <g
+     id="g10305"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text10295"
+       transform="rotate(-0.00 235.00 318.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="318.00"
+       x="235.00">{isSubstitutable=false}</text>
+    <text
+       id="text10297"
+       transform="rotate(-0.00 546.00 383.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="136"
+       y="383.00"
+       x="546.00">+GenICompensationForGenJ</text>
+    <text
+       id="text10299"
+       transform="rotate(-0.00 666.00 362.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="16"
+       y="362.00"
+       x="666.00">2..*</text>
+    <text
+       id="text10301"
+       transform="rotate(-0.00 513.00 361.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="91"
+       y="361.00"
+       x="513.00">+VcompIEEEType2</text>
+    <text
+       id="text10303"
+       transform="rotate(-0.00 513.00 382.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="6"
+       y="382.00"
+       x="513.00">1</text>
+  </g>
+</svg>

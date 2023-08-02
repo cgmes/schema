@@ -1,0 +1,1847 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg20615"
+   version="1.1"
+   viewBox="0 0 925 735"
+   height="19.45cm"
+   width="24.47cm">
+  <metadata
+     id="metadata20621">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs20619" />
+  <desc
+     id="desc19457">Created with Enterprise Architect (Build: 1627) 1</desc>
+  <g
+     id="g19461"
+     style="fill:#FFFFFF;fill-opacity:1.00;">
+    <rect
+       id="rect19459"
+       shape-rendering="auto"
+       height="735"
+       width="925"
+       y="0"
+       x="0" />
+  </g>
+  <g
+     id="g19465"
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+    <path
+       id="path19463"
+       shape-rendering="auto"
+       d="M 6 6 L 6 729 L 919 729 L 919 6 L 6 6" />
+  </g>
+  <g
+     id="g19469"
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#FFFFFF;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <polygon
+       id="polygon19467"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="6 24 175 24 188 10 188 6 6 6 6 24" />
+  </g>
+  <g
+     id="g19473"
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text19471"
+       transform="rotate(-0.00 11.00 18.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="162"
+       y="18.00"
+       x="11.00">class TurbineGovernorDynamics</text>
+  </g>
+  <g
+     id="g19959"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect19957"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="96"
+       y="190"
+       x="74" />
+  </g>
+  <g
+     id="g19963"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text19961"
+       transform="rotate(-0.00 81.00 208.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="81"
+       y="208.00"
+       x="81.00">GovSteamIEEE1</text>
+  </g>
+  <g
+     id="g19967"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect19965"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="83"
+       y="226"
+       x="54" />
+  </g>
+  <g
+     id="g19971"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text19969"
+       transform="rotate(-0.00 68.00 244.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="55"
+       y="244.00"
+       x="68.00">GovHydro1</text>
+  </g>
+  <g
+     id="g19975"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect19973"
+       shape-rendering="auto"
+       rx="0.00"
+       height="36"
+       width="160"
+       y="200"
+       x="285" />
+  </g>
+  <g
+     id="g19981"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text19977"
+       transform="rotate(-0.00 340.00 215.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="49"
+       y="215.00"
+       x="340.00">«abstract»</text>
+    <text
+       id="text19979"
+       transform="rotate(-0.00 299.00 226.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="132"
+       y="226.00"
+       x="299.00">TurbineGovernorDynamics</text>
+  </g>
+  <g
+     id="g19985"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect19983"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="82"
+       y="179"
+       x="739" />
+  </g>
+  <g
+     id="g19989"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text19987"
+       transform="rotate(-0.00 751.00 197.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="57"
+       y="197.00"
+       x="751.00">GovSteam0</text>
+  </g>
+  <g
+     id="g19993"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect19991"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="71"
+       y="494"
+       x="243" />
+  </g>
+  <g
+     id="g19997"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text19995"
+       transform="rotate(-0.00 259.00 512.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="39"
+       y="512.00"
+       x="259.00">GovCT1</text>
+  </g>
+  <g
+     id="g20001"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect19999"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="79"
+       y="495"
+       x="326" />
+  </g>
+  <g
+     id="g20005"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20003"
+       transform="rotate(-0.00 346.00 513.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="39"
+       y="513.00"
+       x="346.00">GovCT2</text>
+  </g>
+  <g
+     id="g20009"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20007"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="120"
+       y="112"
+       x="82" />
+  </g>
+  <g
+     id="g20013"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20011"
+       transform="rotate(-0.00 102.00 130.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="79"
+       y="130.00"
+       x="102.00">GovHydroIEEE0</text>
+  </g>
+  <g
+     id="g20017"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20015"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="78"
+       y="260"
+       x="59" />
+  </g>
+  <g
+     id="g20021"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20019"
+       transform="rotate(-0.00 70.00 278.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="55"
+       y="278.00"
+       x="70.00">GovHydro2</text>
+  </g>
+  <g
+     id="g20025"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20023"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="80"
+       y="299"
+       x="57" />
+  </g>
+  <g
+     id="g20029"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20027"
+       transform="rotate(-0.00 69.00 317.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="55"
+       y="317.00"
+       x="69.00">GovHydro3</text>
+  </g>
+  <g
+     id="g20033"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20031"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="80"
+       y="342"
+       x="57" />
+  </g>
+  <g
+     id="g20037"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20035"
+       transform="rotate(-0.00 69.00 360.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="55"
+       y="360.00"
+       x="69.00">GovHydro4</text>
+  </g>
+  <g
+     id="g20041"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20039"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="78"
+       y="592"
+       x="59" />
+  </g>
+  <g
+     id="g20045"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20043"
+       transform="rotate(-0.00 70.00 610.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="56"
+       y="610.00"
+       x="70.00">GovHydroR</text>
+  </g>
+  <g
+     id="g20049"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20047"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="92"
+       y="385"
+       x="45" />
+  </g>
+  <g
+     id="g20053"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20051"
+       transform="rotate(-0.00 59.00 403.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="63"
+       y="403.00"
+       x="59.00">GovHydroDD</text>
+  </g>
+  <g
+     id="g20057"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20055"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="76"
+       y="455"
+       x="593" />
+  </g>
+  <g
+     id="g20061"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20059"
+       transform="rotate(-0.00 607.00 473.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="48"
+       y="473.00"
+       x="607.00">GovGAST</text>
+  </g>
+  <g
+     id="g20065"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20063"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="81"
+       y="521"
+       x="549" />
+  </g>
+  <g
+     id="g20069"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20067"
+       transform="rotate(-0.00 562.00 539.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="54"
+       y="539.00"
+       x="562.00">GovGAST2</text>
+  </g>
+  <g
+     id="g20073"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20071"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="93"
+       y="629"
+       x="480" />
+  </g>
+  <g
+     id="g20077"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20075"
+       transform="rotate(-0.00 494.00 647.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="64"
+       y="647.00"
+       x="494.00">GovGASTWD</text>
+  </g>
+  <g
+     id="g20081"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20079"
+       shape-rendering="auto"
+       rx="0.00"
+       height="33"
+       width="88"
+       y="505"
+       x="49" />
+  </g>
+  <g
+     id="g20085"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20083"
+       transform="rotate(-0.00 60.00 523.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="66"
+       y="523.00"
+       x="60.00">GovHydroPID</text>
+  </g>
+  <g
+     id="g20089"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20087"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="90"
+       y="552"
+       x="47" />
+  </g>
+  <g
+     id="g20093"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20091"
+       transform="rotate(-0.00 56.00 570.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="72"
+       y="570.00"
+       x="56.00">GovHydroPID2</text>
+  </g>
+  <g
+     id="g20097"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20095"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="90"
+       y="328"
+       x="737" />
+  </g>
+  <g
+     id="g20101"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20099"
+       transform="rotate(-0.00 747.00 346.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="70"
+       y="346.00"
+       x="747.00">GovSteamFV2</text>
+  </g>
+  <g
+     id="g20105"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20103"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="90"
+       y="369"
+       x="737" />
+  </g>
+  <g
+     id="g20109"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20107"
+       transform="rotate(-0.00 747.00 387.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="70"
+       y="387.00"
+       x="747.00">GovSteamFV3</text>
+  </g>
+  <g
+     id="g20113"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20111"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="90"
+       y="253"
+       x="731" />
+  </g>
+  <g
+     id="g20117"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20115"
+       transform="rotate(-0.00 743.00 271.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="65"
+       y="271.00"
+       x="743.00">GovSteamCC</text>
+  </g>
+  <g
+     id="g20121"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20119"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="90"
+       y="419"
+       x="631" />
+  </g>
+  <g
+     id="g20125"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20123"
+       transform="rotate(-0.00 639.00 437.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="74"
+       y="437.00"
+       x="639.00">GovSteamSGO</text>
+  </g>
+  <g
+     id="g20129"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20127"
+       shape-rendering="auto"
+       rx="0.00"
+       height="29"
+       width="90"
+       y="670"
+       x="47" />
+  </g>
+  <g
+     id="g20133"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20131"
+       transform="rotate(-0.00 54.00 688.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="75"
+       y="688.00"
+       x="54.00">GovHydroWPID</text>
+  </g>
+  <g
+     id="g20137"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20135"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="90"
+       y="629"
+       x="47" />
+  </g>
+  <g
+     id="g20141"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20139"
+       transform="rotate(-0.00 56.00 647.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="72"
+       y="647.00"
+       x="56.00">GovHydroWEH</text>
+  </g>
+  <g
+     id="g20145"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20143"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="90"
+       y="290"
+       x="737" />
+  </g>
+  <g
+     id="g20149"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20147"
+       transform="rotate(-0.00 749.00 308.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="65"
+       y="308.00"
+       x="749.00">GovSteamEU</text>
+  </g>
+  <g
+     id="g20153"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20151"
+       shape-rendering="auto"
+       rx="0.00"
+       height="33"
+       width="143"
+       y="35"
+       x="301" />
+  </g>
+  <g
+     id="g20159"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20155"
+       transform="rotate(-0.00 348.00 50.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="49"
+       y="50.00"
+       x="348.00">«abstract»</text>
+    <text
+       id="text20157"
+       transform="rotate(-0.00 319.00 61.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="106"
+       y="61.00"
+       x="319.00">Core::IdentifiedObject</text>
+  </g>
+  <g
+     id="g20163"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20161"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="82"
+       y="165"
+       x="568" />
+  </g>
+  <g
+     id="g20167"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20165"
+       transform="rotate(-0.00 580.00 183.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="57"
+       y="183.00"
+       x="580.00">GovSteam1</text>
+  </g>
+  <g
+     id="g20171"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20169"
+       shape-rendering="auto"
+       rx="0.00"
+       height="29"
+       width="78"
+       y="489"
+       x="575" />
+  </g>
+  <g
+     id="g20175"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20173"
+       transform="rotate(-0.00 587.00 507.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="54"
+       y="507.00"
+       x="587.00">GovGAST1</text>
+  </g>
+  <g
+     id="g20179"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20177"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="91"
+       y="216"
+       x="733" />
+  </g>
+  <g
+     id="g20183"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20181"
+       transform="rotate(-0.00 750.00 234.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="57"
+       y="234.00"
+       x="750.00">GovSteam2</text>
+  </g>
+  <g
+     id="g20187"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20185"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="92"
+       y="413"
+       x="739" />
+  </g>
+  <g
+     id="g20191"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20189"
+       transform="rotate(-0.00 750.00 431.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="70"
+       y="431.00"
+       x="750.00">GovSteamFV4</text>
+  </g>
+  <g
+     id="g20195"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20193"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="107"
+       y="426"
+       x="30" />
+  </g>
+  <g
+     id="g20199"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20197"
+       transform="rotate(-0.00 40.00 444.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="86"
+       y="444.00"
+       x="40.00">GovHydroFrancis</text>
+  </g>
+  <g
+     id="g20203"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20201"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="101"
+       y="467"
+       x="36" />
+  </g>
+  <g
+     id="g20207"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20205"
+       transform="rotate(-0.00 46.00 485.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="80"
+       y="485.00"
+       x="46.00">GovHydroPelton</text>
+  </g>
+  <g
+     id="g20211"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20209"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="81"
+       y="559"
+       x="528" />
+  </g>
+  <g
+     id="g20215"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20213"
+       transform="rotate(-0.00 541.00 577.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="54"
+       y="577.00"
+       x="541.00">GovGAST3</text>
+  </g>
+  <g
+     id="g20219"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20217"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="72"
+       y="596"
+       x="504" />
+  </g>
+  <g
+     id="g20223"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20221"
+       transform="rotate(-0.00 513.00 614.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="54"
+       y="614.00"
+       x="513.00">GovGAST4</text>
+  </g>
+  <g
+     id="g20227"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20225"
+       shape-rendering="auto"
+       rx="0.00"
+       height="41"
+       width="175"
+       y="45"
+       x="38" />
+  </g>
+  <g
+     id="g20233"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20229"
+       transform="rotate(-0.00 75.00 63.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="101"
+       y="63.00"
+       x="75.00">UserDefinedModels::</text>
+    <text
+       id="text20231"
+       transform="rotate(-0.00 54.00 74.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="143"
+       y="74.00"
+       x="54.00">TurbineGovernorUserDefined</text>
+  </g>
+  <g
+     id="g20237"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20235"
+       shape-rendering="auto"
+       rx="0.00"
+       height="76"
+       width="174"
+       y="90"
+       x="284" />
+  </g>
+  <g
+     id="g20245"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20239"
+       transform="rotate(-0.00 346.00 105.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="49"
+       y="105.00"
+       x="346.00">«abstract»</text>
+    <text
+       id="text20241"
+       transform="rotate(-0.00 328.00 116.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="85"
+       y="116.00"
+       x="328.00">StandardModels::</text>
+    <text
+       id="text20243"
+       transform="rotate(-0.00 311.00 127.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="119"
+       y="127.00"
+       x="311.00">DynamicsFunctionBlock</text>
+  </g>
+  <g
+     id="g20249"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+    <path
+       id="path20247"
+       shape-rendering="auto"
+       d="M 284 134 L 457 134" />
+  </g>
+  <g
+     id="g20255"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20251"
+       transform="rotate(-0.00 289.00 147.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="147.00"
+       x="289.00">+ </text>
+    <text
+       id="text20253"
+       transform="rotate(-0.00 306.00 147.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="83"
+       y="147.00"
+       x="306.00">enabled: Boolean</text>
+  </g>
+  <g
+     id="g20259"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect20257"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="136"
+       y="150"
+       x="53" />
+  </g>
+  <g
+     id="g20263"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20261"
+       transform="rotate(-0.00 81.00 168.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="79"
+       y="168.00"
+       x="81.00">GovHydroIEEE2</text>
+  </g>
+  <g
+     id="g20267"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFFF;fill-opacity:1.00; stroke:#658A99; stroke-opacity:1.00">
+    <polygon
+       id="polygon20265"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="477 40 477 154 875 154 875 52 863 40" />
+  </g>
+  <g
+     id="g20271"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#DCDCDC;fill-opacity:1.00; stroke:#658A99; stroke-opacity:1.00">
+    <polygon
+       id="polygon20269"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="863 40 863 52 875 52" />
+  </g>
+  <g
+     id="g20285"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#3C3C3C;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20273"
+       transform="rotate(-0.00 482.00 63.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#3C3C3C;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="369"
+       y="63.00"
+       x="482.00">The vast majority of turbine-governor models have mwbase as a parameter. The</text>
+    <text
+       id="text20275"
+       transform="rotate(-0.00 482.00 74.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#3C3C3C;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="377"
+       y="74.00"
+       x="482.00">parameter is specified explicitly in the turbine-governor models to support use of a</text>
+    <text
+       id="text20277"
+       transform="rotate(-0.00 482.00 85.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#3C3C3C;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="375"
+       y="85.00"
+       x="482.00">different value by transient analysis tools, if needed. If this parameter is present it</text>
+    <text
+       id="text20279"
+       transform="rotate(-0.00 482.00 96.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#3C3C3C;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="391"
+       y="96.00"
+       x="482.00">shall correspond to RotatingMachine.ratedPowerFactor * RotatingMachine.ratedS. In</text>
+    <text
+       id="text20281"
+       transform="rotate(-0.00 482.00 107.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#3C3C3C;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="351"
+       y="107.00"
+       x="482.00">case mwbase is not provided or the value is set to 0 then the tools shall use</text>
+    <text
+       id="text20283"
+       transform="rotate(-0.00 482.00 118.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#3C3C3C;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="288"
+       y="118.00"
+       x="482.00">RotatingMachine.ratedPowerFactor * RotatingMachine.ratedS.</text>
+  </g>
+  <g
+     id="g20289"
+     stroke-dasharray="3,3"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#658A99; stroke-opacity:1.00">
+    <path
+       id="path20287"
+       shape-rendering="auto"
+       d="M 411 200 L 529 154 M 411 200" />
+  </g>
+  <g
+     id="g20293"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20291"
+       shape-rendering="auto"
+       d="M 184 178 L 285 200" />
+  </g>
+  <g
+     id="g20297"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20295"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="268 202 271 191 285 200" />
+  </g>
+  <g
+     id="g20301"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20299"
+       shape-rendering="auto"
+       d="M 371 90 L 371 68" />
+  </g>
+  <g
+     id="g20305"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20303"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="377 84 365 84 371 68" />
+  </g>
+  <g
+     id="g20309"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20307"
+       shape-rendering="auto"
+       d="M 195 86 L 341 200" />
+  </g>
+  <g
+     id="g20313"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20311"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="325 195 332 185 341 200" />
+  </g>
+  <g
+     id="g20317"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20315"
+       shape-rendering="auto"
+       d="M 532 596 L 372 236" />
+  </g>
+  <g
+     id="g20321"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20319"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="384 248 373 253 372 236" />
+  </g>
+  <g
+     id="g20325"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20323"
+       shape-rendering="auto"
+       d="M 552 559 L 374 236" />
+  </g>
+  <g
+     id="g20329"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20327"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="387 247 376 253 374 236" />
+  </g>
+  <g
+     id="g20333"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20331"
+       shape-rendering="auto"
+       d="M 100 467 L 345 236" />
+  </g>
+  <g
+     id="g20337"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20335"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="337 251 329 243 345 236" />
+  </g>
+  <g
+     id="g20341"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20339"
+       shape-rendering="auto"
+       d="M 100 426 L 342 236" />
+  </g>
+  <g
+     id="g20345"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20343"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="333 251 326 241 342 236" />
+  </g>
+  <g
+     id="g20349"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20347"
+       shape-rendering="auto"
+       d="M 739 429 L 396 236" />
+  </g>
+  <g
+     id="g20353"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20351"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="413 239 407 249 396 236" />
+  </g>
+  <g
+     id="g20357"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20355"
+       shape-rendering="auto"
+       d="M 733 228 L 445 220" />
+  </g>
+  <g
+     id="g20361"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20359"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="461 214 461 226 445 220" />
+  </g>
+  <g
+     id="g20365"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20363"
+       shape-rendering="auto"
+       d="M 601 489 L 380 236" />
+  </g>
+  <g
+     id="g20369"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20367"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="395 244 386 252 380 236" />
+  </g>
+  <g
+     id="g20373"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20371"
+       shape-rendering="auto"
+       d="M 568 185 L 445 205" />
+  </g>
+  <g
+     id="g20377"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20375"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="460 197 462 208 445 205" />
+  </g>
+  <g
+     id="g20381"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20379"
+       shape-rendering="auto"
+       d="M 737 305 L 441 236" />
+  </g>
+  <g
+     id="g20385"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20383"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="458 234 455 245 441 236" />
+  </g>
+  <g
+     id="g20389"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20387"
+       shape-rendering="auto"
+       d="M 137 641 L 354 236" />
+  </g>
+  <g
+     id="g20393"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20391"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="352 253 341 247 354 236" />
+  </g>
+  <g
+     id="g20397"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20395"
+       shape-rendering="auto"
+       d="M 137 680 L 356 236" />
+  </g>
+  <g
+     id="g20401"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20399"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="354 253 344 248 356 236" />
+  </g>
+  <g
+     id="g20405"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20403"
+       shape-rendering="auto"
+       d="M 631 432 L 389 236" />
+  </g>
+  <g
+     id="g20409"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20407"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="405 241 398 251 389 236" />
+  </g>
+  <g
+     id="g20413"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20411"
+       shape-rendering="auto"
+       d="M 731 261 L 445 227" />
+  </g>
+  <g
+     id="g20417"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20415"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="462 223 460 235 445 227" />
+  </g>
+  <g
+     id="g20421"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20419"
+       shape-rendering="auto"
+       d="M 737 384 L 405 236" />
+  </g>
+  <g
+     id="g20425"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20423"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="422 237 417 248 405 236" />
+  </g>
+  <g
+     id="g20429"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20427"
+       shape-rendering="auto"
+       d="M 737 347 L 416 236" />
+  </g>
+  <g
+     id="g20433"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20431"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="433 236 429 247 416 236" />
+  </g>
+  <g
+     id="g20437"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20435"
+       shape-rendering="auto"
+       d="M 137 566 L 353 236" />
+  </g>
+  <g
+     id="g20441"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20439"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="349 253 339 246 353 236" />
+  </g>
+  <g
+     id="g20445"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20443"
+       shape-rendering="auto"
+       d="M 137 522 L 351 236" />
+  </g>
+  <g
+     id="g20449"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20447"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="346 252 337 245 351 236" />
+  </g>
+  <g
+     id="g20453"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20451"
+       shape-rendering="auto"
+       d="M 499 629 L 366 236" />
+  </g>
+  <g
+     id="g20457"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20455"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="377 249 365 253 366 236" />
+  </g>
+  <g
+     id="g20461"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20459"
+       shape-rendering="auto"
+       d="M 579 521 L 377 236" />
+  </g>
+  <g
+     id="g20465"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20463"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="391 246 381 253 377 236" />
+  </g>
+  <g
+     id="g20469"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20467"
+       shape-rendering="auto"
+       d="M 616 455 L 384 236" />
+  </g>
+  <g
+     id="g20473"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20471"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="400 243 392 251 384 236" />
+  </g>
+  <g
+     id="g20477"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20475"
+       shape-rendering="auto"
+       d="M 137 398 L 342 236" />
+  </g>
+  <g
+     id="g20481"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20479"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="333 251 326 241 342 236" />
+  </g>
+  <g
+     id="g20485"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20483"
+       shape-rendering="auto"
+       d="M 137 604 L 353 236" />
+  </g>
+  <g
+     id="g20489"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20487"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="350 253 340 247 353 236" />
+  </g>
+  <g
+     id="g20493"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20491"
+       shape-rendering="auto"
+       d="M 137 357 L 335 236" />
+  </g>
+  <g
+     id="g20497"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20495"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="324 249 318 239 335 236" />
+  </g>
+  <g
+     id="g20501"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20499"
+       shape-rendering="auto"
+       d="M 137 313 L 322 236" />
+  </g>
+  <g
+     id="g20505"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20503"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="310 248 305 237 322 236" />
+  </g>
+  <g
+     id="g20509"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20507"
+       shape-rendering="auto"
+       d="M 137 275 L 293 236" />
+  </g>
+  <g
+     id="g20513"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20511"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="279 246 276 234 293 236" />
+  </g>
+  <g
+     id="g20517"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20515"
+       shape-rendering="auto"
+       d="M 202 127 L 332 200" />
+  </g>
+  <g
+     id="g20521"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20519"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="315 197 321 187 332 200" />
+  </g>
+  <g
+     id="g20525"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20523"
+       shape-rendering="auto"
+       d="M 365 495 L 365 236" />
+  </g>
+  <g
+     id="g20529"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20527"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="371 252 359 252 365 236" />
+  </g>
+  <g
+     id="g20533"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20531"
+       shape-rendering="auto"
+       d="M 282 494 L 359 236" />
+  </g>
+  <g
+     id="g20537"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20535"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="360 253 349 250 359 236" />
+  </g>
+  <g
+     id="g20541"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20539"
+       shape-rendering="auto"
+       d="M 739 195 L 445 213" />
+  </g>
+  <g
+     id="g20545"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20543"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="461 206 461 218 445 213" />
+  </g>
+  <g
+     id="g20549"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20547"
+       shape-rendering="auto"
+       d="M 366 200 L 368 166" />
+  </g>
+  <g
+     id="g20553"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20551"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="373 182 361 182 368 166" />
+  </g>
+  <g
+     id="g20557"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20555"
+       shape-rendering="auto"
+       d="M 137 243 L 285 219" />
+  </g>
+  <g
+     id="g20561"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20559"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="270 227 268 216 285 219" />
+  </g>
+  <g
+     id="g20565"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path20563"
+       shape-rendering="auto"
+       d="M 170 205 L 285 218" />
+  </g>
+  <g
+     id="g20569"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon20567"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="268 222 270 210 285 218" />
+  </g>
+  <g
+     id="g20613"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text20571"
+       transform="rotate(-0.00 216.00 174.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="174.00"
+       x="216.00">{isSubstitutable=false}</text>
+    <text
+       id="text20573"
+       transform="rotate(-0.00 164.00 266.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="266.00"
+       x="164.00">{isSubstitutable=false}</text>
+    <text
+       id="text20575"
+       transform="rotate(-0.00 178.00 285.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="285.00"
+       x="178.00">{isSubstitutable=false}</text>
+    <text
+       id="text20577"
+       transform="rotate(-0.00 194.00 412.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="412.00"
+       x="194.00">{isSubstitutable=false}</text>
+    <text
+       id="text20579"
+       transform="rotate(-0.00 185.00 307.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="307.00"
+       x="185.00">{isSubstitutable=false}</text>
+    <text
+       id="text20581"
+       transform="rotate(-0.00 525.00 302.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="302.00"
+       x="525.00">{isSubstitutable=false}</text>
+    <text
+       id="text20583"
+       transform="rotate(-0.00 194.00 431.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="431.00"
+       x="194.00">{isSubstitutable=false}</text>
+    <text
+       id="text20585"
+       transform="rotate(-0.00 520.00 321.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="321.00"
+       x="520.00">{isSubstitutable=false}</text>
+    <text
+       id="text20587"
+       transform="rotate(-0.00 188.00 328.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="328.00"
+       x="188.00">{isSubstitutable=false}</text>
+    <text
+       id="text20589"
+       transform="rotate(-0.00 176.00 222.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="222.00"
+       x="176.00">{isSubstitutable=false}</text>
+    <text
+       id="text20591"
+       transform="rotate(-0.00 537.00 255.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="255.00"
+       x="537.00">{isSubstitutable=false}</text>
+    <text
+       id="text20593"
+       transform="rotate(-0.00 449.00 356.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="356.00"
+       x="449.00">{isSubstitutable=false}</text>
+    <text
+       id="text20595"
+       transform="rotate(-0.00 160.00 242.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="242.00"
+       x="160.00">{isSubstitutable=false}</text>
+    <text
+       id="text20597"
+       transform="rotate(-0.00 459.00 345.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="345.00"
+       x="459.00">{isSubstitutable=false}</text>
+    <text
+       id="text20599"
+       transform="rotate(-0.00 427.00 389.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="389.00"
+       x="427.00">{isSubstitutable=false}</text>
+    <text
+       id="text20601"
+       transform="rotate(-0.00 195.00 469.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="469.00"
+       x="195.00">{isSubstitutable=false}</text>
+    <text
+       id="text20603"
+       transform="rotate(-0.00 381.00 443.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="443.00"
+       x="381.00">{isSubstitutable=false}</text>
+    <text
+       id="text20605"
+       transform="rotate(-0.00 194.00 449.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="449.00"
+       x="194.00">{isSubstitutable=false}</text>
+    <text
+       id="text20607"
+       transform="rotate(-0.00 538.00 281.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="281.00"
+       x="538.00">{isSubstitutable=false}</text>
+    <text
+       id="text20609"
+       transform="rotate(-0.00 193.00 390.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="390.00"
+       x="193.00">{isSubstitutable=false}</text>
+    <text
+       id="text20611"
+       transform="rotate(-0.00 541.00 215.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="215.00"
+       x="541.00">{isSubstitutable=false}</text>
+  </g>
+</svg>
