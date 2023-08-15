@@ -1,0 +1,12 @@
+class,super_class,label,comment
+http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,PowerSystemResource,"A power system resource (PSR) can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated."
+http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,,IdentifiedObject,
+http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint,,PositionPoint,
+http://iec.ch/TC57/2013/CIM-schema-cim16#TownDetail,,TownDetail,
+http://iec.ch/TC57/2013/CIM-schema-cim16#Status,,Status,
+http://iec.ch/TC57/2013/CIM-schema-cim16#Location,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,Location,"The place, scene, or point of something where someone or something has been, is, and/or will be at a given moment in time. It can be defined with one or more position points (coordinates) in a given coordinate system."
+http://iec.ch/TC57/2013/CIM-schema-cim16#StreetAddress,,StreetAddress,
+http://iec.ch/TC57/2013/CIM-schema-cim16#WorkLocation,http://iec.ch/TC57/2013/CIM-schema-cim16#Location,WorkLocation,Information about a particular location for various forms of work.
+http://iec.ch/TC57/2013/CIM-schema-cim16#ServiceLocation,http://iec.ch/TC57/2013/CIM-schema-cim16#WorkLocation,ServiceLocation,"A real estate location, commonly referred to as premises."
+http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,CoordinateSystem,Coordinate reference system.
+http://iec.ch/TC57/2013/CIM-schema-cim16#StreetDetail,,StreetDetail,

@@ -1,0 +1,11 @@
+class,super_class,label,comment
+http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,PowerSystemResource,"A power system resource (PSR) can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated."
+http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,,IdentifiedObject,
+http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterDesctiptor,http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor,ParameterDesctiptor,"Supports definition of one or more parameters of several different datatypes for use by the detailed model.  It describes the parameters used in the equations of the detailed model.
+The name of the parameter shall be the same as the name used in the equations of the detailed model."
+http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,DynamicsFunctionBlock,Abstract parent class for all Dynamics function blocks.
+http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterValue,,ParameterValue,
+http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics,http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock,DetailedModelDynamics,"The main class that packages all related to this detailed model. This includes all parameters, functions, signals, etc."
+http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,DetailedModelDescriptor,Describes different components of a detailed model.
+http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment,http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource,Equipment,"The parts of a power system that are physical devices, electronic or mechanical."
+http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelTypeDynamics,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,DetailedModelTypeDynamics,"The main class that packages all related to this type of a detailed model. This includes all parameters, functions, signals, etc."

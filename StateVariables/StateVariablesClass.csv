@@ -1,0 +1,32 @@
+class,super_class,label,comment
+http://iec.ch/TC57/2013/CIM-schema-cim16#SvShuntCompensatorSections,,SvShuntCompensatorSections,
+http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,,IdentifiedObject,
+http://iec.ch/TC57/2013/CIM-schema-cim16#ShuntCompensator,,ShuntCompensator,
+http://iec.ch/TC57/2013/CIM-schema-cim16#CsConverter,http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter,CsConverter,"DC side of the current source converter (CSC).
+The firing angle controls the dc voltage at the converter, both for rectifier and inverter. The difference between the dc voltages of the rectifier and inverter determines the dc current. The extinction angle is used to limit the dc voltage at the inverter, if needed, and is not used in active power control. The firing angle, transformer tap position and number of connected filters are the primary means to control a current source dc line. Higher level controls are built on top, e.g. dc voltage, dc current and active power. From a steady state perspective it is sufficient to specify the wanted active power transfer (ACDCConverter.targetPpcc) and the control functions will set the dc voltage, dc current, firing angle, transformer tap position and number of connected filters to meet this. Therefore attributes targetAlpha and targetGamma are not applicable in this case.
+The reactive power consumed by the converter is a function of the firing angle, transformer tap position and number of connected filter, which can be approximated with half of the active power. The losses is a function of the dc voltage and dc current.
+The attributes minAlpha and maxAlpha define the range of firing angles for rectifier operation between which no discrete tap changer action takes place. The range is typically 10-18 degrees.
+The attributes minGamma and maxGamma define the range of extinction angles for inverter operation between which no discrete tap changer action takes place. The range is typically 17-20 degrees."
+http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter,http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment,ACDCConverter,"A unit with valves for three phases, together with unit control equipment, essential protective and switching devices, DC storage capacitors, phase reactors and auxiliaries, if any, used for conversion."
+http://iec.ch/TC57/2013/CIM-schema-cim16#SvVoltage,,SvVoltage,
+http://iec.ch/TC57/2013/CIM-schema-cim16#SvPowerFlow,,SvPowerFlow,
+http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment,,ConductingEquipment,
+http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode,,TopologicalNode,
+http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger,,TapChanger,
+http://iec.ch/TC57/2013/CIM-schema-cim16#Switch,http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment,Switch,"A generic device designed to close, or open, or both, one or more electric circuits.  All switches are two terminal devices including grounding switches. The ACDCTerminal.connected at the two sides of the switch shall not be considered for assessing switch connectivity, i.e. only Switch.open, .normalOpen and .locked are relevant."
+http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,DCTopologicalNode,DC bus.
+http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalIsland,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,DCTopologicalIsland,"An electrically connected subset of the network. DC topological islands can change as the current network state changes, e.g. due to: 
+- disconnect switches or breakers changing state in a SCADA/EMS.
+- manual creation, change or deletion of topological nodes in a planning tool.
+Only energised TopologicalNode-s shall be part of the topological island."
+http://iec.ch/TC57/2013/CIM-schema-cim16#SvInjection,,SvInjection,
+http://iec.ch/TC57/2013/CIM-schema-cim16#SvTapStep,,SvTapStep,
+http://iec.ch/TC57/2013/CIM-schema-cim16#SvStatus,,SvStatus,
+http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,ACDCTerminal,An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.
+http://iec.ch/TC57/2013/CIM-schema-cim16#VsConverter,http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter,VsConverter,DC side of the voltage source converter (VSC).
+http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalIsland,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,TopologicalIsland,"An electrically connected subset of the network. Topological islands can change as the current network state changes, e.g. due to: 
+- disconnect switches or breakers changing state in a SCADA/EMS.
+- manual creation, change or deletion of topological nodes in a planning tool.
+Only energised TopologicalNode-s shall be part of the topological island."
+http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal,http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal,Terminal,An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.
+http://iec.ch/TC57/2013/CIM-schema-cim16#SvSwitch,,SvSwitch,
