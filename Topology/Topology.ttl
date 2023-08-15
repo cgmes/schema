@@ -3,132 +3,132 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-DCTerminal rdf:type rdfs:Class ;
-	rdfs:subClassOf DCBaseTerminal ;
+<DCTerminal> rdf:type rdfs:Class ;
+	rdfs:subClassOf <DCBaseTerminal> ;
 	rdfs:label "DCTerminal"@en ;
 	rdfs:comment "An electrical connection point to generic DC conducting equipment."^^rdf:XMLLiteral .
 
-DCEquipmentContainer rdf:type rdfs:Class ;
+<DCEquipmentContainer> rdf:type rdfs:Class ;
 	rdfs:label "DCEquipmentContainer"@en ;
 	rdfs:comment "A modelling construct to provide a root class for containment of DC as well as AC equipment. The class differ from the EquipmentContaner for AC in that it may also contain DCNode-s. Hence it can contain both AC and DC equipment."^^rdf:XMLLiteral .
 
-ACDCConverterDCTerminal rdf:type rdfs:Class ;
-	rdfs:subClassOf DCBaseTerminal ;
+<ACDCConverterDCTerminal> rdf:type rdfs:Class ;
+	rdfs:subClassOf <DCBaseTerminal> ;
 	rdfs:label "ACDCConverterDCTerminal"@en ;
 	rdfs:comment "A DC electrical connection point at the AC/DC converter. The AC/DC converter is electrically connected also to the AC side. The AC connection is inherited from the AC conducting equipment in the same way as any other AC equipment. The AC/DC converter DC terminal is separate from generic DC terminal to restrict the connection with the AC side to AC/DC converter and so that no other DC conducting equipment can be connected to the AC side."^^rdf:XMLLiteral .
 
-ReportingGroup rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<ReportingGroup> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "ReportingGroup"@en ;
 	rdfs:comment "A reporting group is used for various ad-hoc groupings used for reporting."^^rdf:XMLLiteral .
 
-TopologicalNode rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<TopologicalNode> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "TopologicalNode"@en ;
 	rdfs:comment "For a detailed substation model a topological node is a set of connectivity nodes that, in the current network state, are connected together through any type of closed switches, including  jumpers. Topological nodes change as the current network state changes (i.e., switches, breakers, etc. change state).\nFor a planning model, switch statuses are not used to form topological nodes. Instead they are manually created or deleted in a model builder tool. Topological nodes maintained this way are also called \"busses\"."^^rdf:XMLLiteral .
-TopologicalNode.ReportingGroup rdf:type rdfs:Property ;
+<TopologicalNode.ReportingGroup> rdf:type rdfs:Property ;
 	rdfs:label "ReportingGroup"@en ;
-	rdfs:domain TopologicalNode ;
-	rdfs:range ReportingGroup ;
+	rdfs:domain <TopologicalNode> ;
+	rdfs:range <ReportingGroup> ;
 	rdfs:comment "The reporting group to which the topological node belongs."^^rdf:XMLLiteral .
-TopologicalNode.BaseVoltage rdf:type rdfs:Property ;
+<TopologicalNode.BaseVoltage> rdf:type rdfs:Property ;
 	rdfs:label "BaseVoltage"@en ;
-	rdfs:domain TopologicalNode ;
-	rdfs:range BaseVoltage ;
+	rdfs:domain <TopologicalNode> ;
+	rdfs:range <BaseVoltage> ;
 	rdfs:comment "The base voltage of the topological node."^^rdf:XMLLiteral .
-TopologicalNode.ConnectivityNodeContainer rdf:type rdfs:Property ;
+<TopologicalNode.ConnectivityNodeContainer> rdf:type rdfs:Property ;
 	rdfs:label "ConnectivityNodeContainer"@en ;
-	rdfs:domain TopologicalNode ;
-	rdfs:range ConnectivityNodeContainer ;
+	rdfs:domain <TopologicalNode> ;
+	rdfs:range <ConnectivityNodeContainer> ;
 	rdfs:comment "The connectivity node container to which the topological node belongs."^^rdf:XMLLiteral .
 
-ConnectivityNodeContainer rdf:type rdfs:Class ;
+<ConnectivityNodeContainer> rdf:type rdfs:Class ;
 	rdfs:label "ConnectivityNodeContainer"@en ;
 	rdfs:comment "A base class for all objects that may contain connectivity nodes or topological nodes."^^rdf:XMLLiteral .
 
-BaseVoltage rdf:type rdfs:Class ;
+<BaseVoltage> rdf:type rdfs:Class ;
 	rdfs:label "BaseVoltage"@en ;
 	rdfs:comment "Defines a system base voltage which is referenced. "^^rdf:XMLLiteral .
 
-DCTopologicalNode rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<DCTopologicalNode> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "DCTopologicalNode"@en ;
 	rdfs:comment "DC bus."^^rdf:XMLLiteral .
-DCTopologicalNode.DCEquipmentContainer rdf:type rdfs:Property ;
+<DCTopologicalNode.DCEquipmentContainer> rdf:type rdfs:Property ;
 	rdfs:label "DCEquipmentContainer"@en ;
-	rdfs:domain DCTopologicalNode ;
-	rdfs:range DCEquipmentContainer ;
+	rdfs:domain <DCTopologicalNode> ;
+	rdfs:range <DCEquipmentContainer> ;
 	rdfs:comment "The connectivity node container to which the topological node belongs."^^rdf:XMLLiteral .
 
-Terminal rdf:type rdfs:Class ;
-	rdfs:subClassOf ACDCTerminal ;
+<Terminal> rdf:type rdfs:Class ;
+	rdfs:subClassOf <ACDCTerminal> ;
 	rdfs:label "Terminal"@en ;
 	rdfs:comment "An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^rdf:XMLLiteral .
-Terminal.TopologicalNode rdf:type rdfs:Property ;
+<Terminal.TopologicalNode> rdf:type rdfs:Property ;
 	rdfs:label "TopologicalNode"@en ;
-	rdfs:domain Terminal ;
-	rdfs:range TopologicalNode ;
+	rdfs:domain <Terminal> ;
+	rdfs:range <TopologicalNode> ;
 	rdfs:comment "The topological node associated with the terminal.   This can be used as an alternative to the connectivity node path to topological node, thus making it unnecessary to model connectivity nodes in some cases.   Note that the if connectivity nodes are in the model, this association would probably not be used as an input specification."^^rdf:XMLLiteral .
 
-DCNode rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<DCNode> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "DCNode"@en ;
 	rdfs:comment "DC nodes are points where terminals of DC conducting equipment are connected together with zero impedance."^^rdf:XMLLiteral .
-DCNode.DCTopologicalNode rdf:type rdfs:Property ;
+<DCNode.DCTopologicalNode> rdf:type rdfs:Property ;
 	rdfs:label "DCTopologicalNode"@en ;
-	rdfs:domain DCNode ;
-	rdfs:range DCTopologicalNode ;
+	rdfs:domain <DCNode> ;
+	rdfs:range <DCTopologicalNode> ;
 	rdfs:comment "The DC topological node to which this DC connectivity node is assigned.  May depend on the current state of switches in the network."^^rdf:XMLLiteral .
 
-DCBaseTerminal rdf:type rdfs:Class ;
-	rdfs:subClassOf ACDCTerminal ;
+<DCBaseTerminal> rdf:type rdfs:Class ;
+	rdfs:subClassOf <ACDCTerminal> ;
 	rdfs:label "DCBaseTerminal"@en ;
 	rdfs:comment "An electrical connection point at a piece of DC conducting equipment. DC terminals are connected at one physical DC node that may have multiple DC terminals connected. A DC node is similar to an AC connectivity node. The model requires that DC connections are distinct from AC connections. "^^rdf:XMLLiteral .
-DCBaseTerminal.DCTopologicalNode rdf:type rdfs:Property ;
+<DCBaseTerminal.DCTopologicalNode> rdf:type rdfs:Property ;
 	rdfs:label "DCTopologicalNode"@en ;
-	rdfs:domain DCBaseTerminal ;
-	rdfs:range DCTopologicalNode ;
+	rdfs:domain <DCBaseTerminal> ;
+	rdfs:range <DCTopologicalNode> ;
 	rdfs:comment "See association end Terminal.TopologicalNode."^^rdf:XMLLiteral .
 
-IdentifiedObject rdf:type rdfs:Class ;
+<IdentifiedObject> rdf:type rdfs:Class ;
 	rdfs:label "IdentifiedObject"@en ;
 	rdfs:comment "This is a root class to provide common identification for all classes needing identification and naming attributes."^^rdf:XMLLiteral .
-IdentifiedObject.description rdf:type rdfs:Property ;
+<IdentifiedObject.description> rdf:type rdfs:Property ;
 	rdfs:label "description"@en ;
-	rdfs:domain IdentifiedObject ;
+	rdfs:domain <IdentifiedObject> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy."^^rdf:XMLLiteral .
-IdentifiedObject.energyIdentCodeEic rdf:type rdfs:Property ;
+<IdentifiedObject.energyIdentCodeEic> rdf:type rdfs:Property ;
 	rdfs:label "energyIdentCodeEic"@en ;
-	rdfs:domain IdentifiedObject ;
+	rdfs:domain <IdentifiedObject> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The attribute is used for an exchange of the EIC code (Energy identification Code). The length of the string is 16 characters as defined by the EIC code. For details on EIC scheme please refer to ENTSO-E web site."^^rdf:XMLLiteral .
-IdentifiedObject.mRID rdf:type rdfs:Property ;
+<IdentifiedObject.mRID> rdf:type rdfs:Property ;
 	rdfs:label "mRID"@en ;
-	rdfs:domain IdentifiedObject ;
+	rdfs:domain <IdentifiedObject> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements."^^rdf:XMLLiteral .
-IdentifiedObject.name rdf:type rdfs:Property ;
+<IdentifiedObject.name> rdf:type rdfs:Property ;
 	rdfs:label "name"@en ;
-	rdfs:domain IdentifiedObject ;
+	rdfs:domain <IdentifiedObject> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The name is any free human readable and possibly non unique text naming the object."^^rdf:XMLLiteral .
-IdentifiedObject.shortName rdf:type rdfs:Property ;
+<IdentifiedObject.shortName> rdf:type rdfs:Property ;
 	rdfs:label "shortName"@en ;
-	rdfs:domain IdentifiedObject ;
+	rdfs:domain <IdentifiedObject> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The attribute is used for an exchange of a human readable short name with length of the string 12 characters maximum."^^rdf:XMLLiteral .
 
-ACDCTerminal rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<ACDCTerminal> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "ACDCTerminal"@en ;
 	rdfs:comment "An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^rdf:XMLLiteral .
 
-ConnectivityNode rdf:type rdfs:Class ;
+<ConnectivityNode> rdf:type rdfs:Class ;
 	rdfs:label "ConnectivityNode"@en ;
 	rdfs:comment "Connectivity nodes are points where terminals of AC conducting equipment are connected together with zero impedance."^^rdf:XMLLiteral .
-ConnectivityNode.TopologicalNode rdf:type rdfs:Property ;
+<ConnectivityNode.TopologicalNode> rdf:type rdfs:Property ;
 	rdfs:label "TopologicalNode"@en ;
-	rdfs:domain ConnectivityNode ;
-	rdfs:range TopologicalNode ;
+	rdfs:domain <ConnectivityNode> ;
+	rdfs:range <TopologicalNode> ;
 	rdfs:comment "The topological node to which this connectivity node is assigned.  May depend on the current state of switches in the network."^^rdf:XMLLiteral .

@@ -3,174 +3,174 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-DiagramObjectGluePoint rdf:type rdfs:Class ;
+<DiagramObjectGluePoint> rdf:type rdfs:Class ;
 	rdfs:label "DiagramObjectGluePoint"@en ;
 	rdfs:comment "This is used for grouping diagram object points from different diagram objects that are considered to be glued together in a diagram even if they are not at the exact same coordinates."^^rdf:XMLLiteral .
 
-DiagramObject rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<DiagramObject> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "DiagramObject"@en ;
 	rdfs:comment "An object that defines one or more points in a given space. This object can be associated with anything that specializes IdentifiedObject. For single line diagrams such objects typically include such items as analog values, breakers, disconnectors, power transformers, and transmission lines."^^rdf:XMLLiteral .
-DiagramObject.drawingOrder rdf:type rdfs:Property ;
+<DiagramObject.drawingOrder> rdf:type rdfs:Property ;
 	rdfs:label "drawingOrder"@en ;
-	rdfs:domain DiagramObject ;
+	rdfs:domain <DiagramObject> ;
 	rdfs:range xsd:integer ;
 	rdfs:comment "The drawing order of this element. The higher the number, the later the element is drawn in sequence. This is used to ensure that elements that overlap are rendered in the correct order."^^rdf:XMLLiteral .
-DiagramObject.isPolygon rdf:type rdfs:Property ;
+<DiagramObject.isPolygon> rdf:type rdfs:Property ;
 	rdfs:label "isPolygon"@en ;
-	rdfs:domain DiagramObject ;
+	rdfs:domain <DiagramObject> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Defines whether or not the diagram objects points define the boundaries of a polygon or the routing of a polyline. If this value is true then a receiving application should consider the first and last points to be connected."^^rdf:XMLLiteral .
-DiagramObject.offsetX rdf:type rdfs:Property ;
+<DiagramObject.offsetX> rdf:type rdfs:Property ;
 	rdfs:label "offsetX"@en ;
-	rdfs:domain DiagramObject ;
+	rdfs:domain <DiagramObject> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The offset in the X direction. This is used for defining the offset from centre for rendering an icon (the default is that a single point specifies the centre of the icon).\n\nThe offset is in per-unit with 0 indicating there is no offset from the horizontal centre of the icon.  -0.5 indicates it is offset by 50% to the left and 0.5 indicates an offset of 50% to the right."^^rdf:XMLLiteral .
-DiagramObject.offsetY rdf:type rdfs:Property ;
+<DiagramObject.offsetY> rdf:type rdfs:Property ;
 	rdfs:label "offsetY"@en ;
-	rdfs:domain DiagramObject ;
+	rdfs:domain <DiagramObject> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The offset in the Y direction. This is used for defining the offset from centre for rendering an icon (the default is that a single point specifies the centre of the icon).\n\nThe offset is in per-unit with 0 indicating there is no offset from the vertical centre of the icon.  The offset direction is dependent on the orientation of the diagram, with -0.5 and 0.5 indicating an offset of +/- 50% on the vertical axis."^^rdf:XMLLiteral .
-DiagramObject.rotation rdf:type rdfs:Property ;
+<DiagramObject.rotation> rdf:type rdfs:Property ;
 	rdfs:label "rotation"@en ;
-	rdfs:domain DiagramObject ;
+	rdfs:domain <DiagramObject> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Sets the angle of rotation of the diagram object.  Zero degrees is pointing to the top of the diagram.  Rotation is clockwise.  DiagramObject.rotation=0 has the following meaning: The connection point of an element which has one terminal is pointing to the top side of the diagram. The connection point \"From side\" of an element which has more than one terminal is pointing to the top side of the diagram.\nDiagramObject.rotation=90 has the following meaning: The connection point of an element which has one terminal is pointing to the right hand side of the diagram. The connection point \"From side\" of an element which has more than one terminal is pointing to the right hand side of the diagram."^^rdf:XMLLiteral .
-DiagramObject.DiagramObjectStyle rdf:type rdfs:Property ;
+<DiagramObject.DiagramObjectStyle> rdf:type rdfs:Property ;
 	rdfs:label "DiagramObjectStyle"@en ;
-	rdfs:domain DiagramObject ;
-	rdfs:range DiagramObjectStyle ;
+	rdfs:domain <DiagramObject> ;
+	rdfs:range <DiagramObjectStyle> ;
 	rdfs:comment "A diagram object has a style associated that provides a reference for the style used in the originating system."^^rdf:XMLLiteral .
-DiagramObject.IdentifiedObject rdf:type rdfs:Property ;
+<DiagramObject.IdentifiedObject> rdf:type rdfs:Property ;
 	rdfs:label "IdentifiedObject"@en ;
-	rdfs:domain DiagramObject ;
-	rdfs:range IdentifiedObject ;
+	rdfs:domain <DiagramObject> ;
+	rdfs:range <IdentifiedObject> ;
 	rdfs:comment "The domain object to which this diagram object is associated."^^rdf:XMLLiteral .
-DiagramObject.Diagram rdf:type rdfs:Property ;
+<DiagramObject.Diagram> rdf:type rdfs:Property ;
 	rdfs:label "Diagram"@en ;
-	rdfs:domain DiagramObject ;
-	rdfs:range Diagram ;
+	rdfs:domain <DiagramObject> ;
+	rdfs:range <Diagram> ;
 	rdfs:comment "A diagram object is part of a diagram."^^rdf:XMLLiteral .
 
-DiagramObjectPoint rdf:type rdfs:Class ;
+<DiagramObjectPoint> rdf:type rdfs:Class ;
 	rdfs:label "DiagramObjectPoint"@en ;
 	rdfs:comment "A point in a given space defined by 3 coordinates and associated to a diagram object.  The coordinates may be positive or negative as the origin does not have to be in the corner of a diagram.  "^^rdf:XMLLiteral .
-DiagramObjectPoint.sequenceNumber rdf:type rdfs:Property ;
+<DiagramObjectPoint.sequenceNumber> rdf:type rdfs:Property ;
 	rdfs:label "sequenceNumber"@en ;
-	rdfs:domain DiagramObjectPoint ;
+	rdfs:domain <DiagramObjectPoint> ;
 	rdfs:range xsd:integer ;
 	rdfs:comment "The sequence position of the point, used for defining the order of points for diagram objects acting as a polyline or polygon with more than one point. The attribute shall be a positive value."^^rdf:XMLLiteral .
-DiagramObjectPoint.xPosition rdf:type rdfs:Property ;
+<DiagramObjectPoint.xPosition> rdf:type rdfs:Property ;
 	rdfs:label "xPosition"@en ;
-	rdfs:domain DiagramObjectPoint ;
+	rdfs:domain <DiagramObjectPoint> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The X coordinate of this point."^^rdf:XMLLiteral .
-DiagramObjectPoint.yPosition rdf:type rdfs:Property ;
+<DiagramObjectPoint.yPosition> rdf:type rdfs:Property ;
 	rdfs:label "yPosition"@en ;
-	rdfs:domain DiagramObjectPoint ;
+	rdfs:domain <DiagramObjectPoint> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The Y coordinate of this point."^^rdf:XMLLiteral .
-DiagramObjectPoint.zPosition rdf:type rdfs:Property ;
+<DiagramObjectPoint.zPosition> rdf:type rdfs:Property ;
 	rdfs:label "zPosition"@en ;
-	rdfs:domain DiagramObjectPoint ;
+	rdfs:domain <DiagramObjectPoint> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The Z coordinate of this point."^^rdf:XMLLiteral .
-DiagramObjectPoint.DiagramObjectGluePoint rdf:type rdfs:Property ;
+<DiagramObjectPoint.DiagramObjectGluePoint> rdf:type rdfs:Property ;
 	rdfs:label "DiagramObjectGluePoint"@en ;
-	rdfs:domain DiagramObjectPoint ;
-	rdfs:range DiagramObjectGluePoint ;
+	rdfs:domain <DiagramObjectPoint> ;
+	rdfs:range <DiagramObjectGluePoint> ;
 	rdfs:comment "The 'glue' point to which this point is associated."^^rdf:XMLLiteral .
-DiagramObjectPoint.DiagramObject rdf:type rdfs:Property ;
+<DiagramObjectPoint.DiagramObject> rdf:type rdfs:Property ;
 	rdfs:label "DiagramObject"@en ;
-	rdfs:domain DiagramObjectPoint ;
-	rdfs:range DiagramObject ;
+	rdfs:domain <DiagramObjectPoint> ;
+	rdfs:range <DiagramObject> ;
 	rdfs:comment "The diagram object with which the points are associated."^^rdf:XMLLiteral .
 
-Diagram rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<Diagram> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "Diagram"@en ;
 	rdfs:comment "The diagram being exchanged. The coordinate system is a standard Cartesian coordinate system and the orientation attribute defines the orientation. The initial view related attributes can be used to specify an initial view with the x,y coordinates of the diagonal points."^^rdf:XMLLiteral .
-Diagram.orientation rdf:type rdfs:Property ;
+<Diagram.orientation> rdf:type rdfs:Property ;
 	rdfs:label "orientation"@en ;
-	rdfs:domain Diagram ;
+	rdfs:domain <Diagram> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Coordinate system orientation of the diagram. A positive orientation gives standard “right-hand” orientation, with negative orientation indicating a “left-hand” orientation. For 2D diagrams, a positive orientation will result in X values increasing from left to right and Y values increasing from bottom to top. A negative orientation gives the “left-hand” orientation (favoured by computer graphics displays) with X values increasing from left to right and Y values increasing from top to bottom."^^rdf:XMLLiteral .
-Diagram.x1InitialView rdf:type rdfs:Property ;
+<Diagram.x1InitialView> rdf:type rdfs:Property ;
 	rdfs:label "x1InitialView"@en ;
-	rdfs:domain Diagram ;
+	rdfs:domain <Diagram> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "X coordinate of the first corner of the initial view."^^rdf:XMLLiteral .
-Diagram.x2InitialView rdf:type rdfs:Property ;
+<Diagram.x2InitialView> rdf:type rdfs:Property ;
 	rdfs:label "x2InitialView"@en ;
-	rdfs:domain Diagram ;
+	rdfs:domain <Diagram> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "X coordinate of the second corner of the initial view."^^rdf:XMLLiteral .
-Diagram.y1InitialView rdf:type rdfs:Property ;
+<Diagram.y1InitialView> rdf:type rdfs:Property ;
 	rdfs:label "y1InitialView"@en ;
-	rdfs:domain Diagram ;
+	rdfs:domain <Diagram> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Y coordinate of the first corner of the initial view."^^rdf:XMLLiteral .
-Diagram.y2InitialView rdf:type rdfs:Property ;
+<Diagram.y2InitialView> rdf:type rdfs:Property ;
 	rdfs:label "y2InitialView"@en ;
-	rdfs:domain Diagram ;
+	rdfs:domain <Diagram> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Y coordinate of the second corner of the initial view."^^rdf:XMLLiteral .
-Diagram.DiagramStyle rdf:type rdfs:Property ;
+<Diagram.DiagramStyle> rdf:type rdfs:Property ;
 	rdfs:label "DiagramStyle"@en ;
-	rdfs:domain Diagram ;
-	rdfs:range DiagramStyle ;
+	rdfs:domain <Diagram> ;
+	rdfs:range <DiagramStyle> ;
 	rdfs:comment "A Diagram may have a DiagramStyle."^^rdf:XMLLiteral .
 
-VisibilityLayer rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<VisibilityLayer> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "VisibilityLayer"@en ;
 	rdfs:comment "Layers are typically used for grouping diagram objects according to themes and scales. Themes are used to display or hide certain information (e.g., lakes, borders), while scales are used for hiding or displaying information depending on the current zoom level (hide text when it is too small to be read, or when it exceeds the screen size). This is also called de-cluttering.\nCIM based graphics exchange supports an m:n relationship between diagram objects and layers. The importing system shall convert an m:n case into an appropriate 1:n representation if the importing system does not support m:n."^^rdf:XMLLiteral .
-VisibilityLayer.drawingOrder rdf:type rdfs:Property ;
+<VisibilityLayer.drawingOrder> rdf:type rdfs:Property ;
 	rdfs:label "drawingOrder"@en ;
-	rdfs:domain VisibilityLayer ;
+	rdfs:domain <VisibilityLayer> ;
 	rdfs:range xsd:integer ;
 	rdfs:comment "The drawing order for this layer.  The higher the number, the later the layer and the objects within it are rendered."^^rdf:XMLLiteral .
-VisibilityLayer.VisibleObjects rdf:type rdfs:Property ;
+<VisibilityLayer.VisibleObjects> rdf:type rdfs:Property ;
 	rdfs:label "VisibleObjects"@en ;
-	rdfs:domain VisibilityLayer ;
-	rdfs:range DiagramObject ;
+	rdfs:domain <VisibilityLayer> ;
+	rdfs:range <DiagramObject> ;
 	rdfs:comment "A visibility layer can contain one or more diagram objects."^^rdf:XMLLiteral .
 
-DiagramStyle rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<DiagramStyle> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "DiagramStyle"@en ;
 	rdfs:comment "The diagram style refers to a style used by the originating system for a diagram.  A diagram style describes information such as schematic, geographic, etc."^^rdf:XMLLiteral .
 
-DiagramObjectStyle rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<DiagramObjectStyle> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "DiagramObjectStyle"@en ;
 	rdfs:comment "A reference to a style used by the originating system for a diagram object.  A diagram object style describes information such as line thickness, shape such as circle or rectangle etc, and colour."^^rdf:XMLLiteral .
 
-TextDiagramObject rdf:type rdfs:Class ;
-	rdfs:subClassOf DiagramObject ;
+<TextDiagramObject> rdf:type rdfs:Class ;
+	rdfs:subClassOf <DiagramObject> ;
 	rdfs:label "TextDiagramObject"@en ;
 	rdfs:comment "A diagram object for placing free-text or text derived from an associated domain object."^^rdf:XMLLiteral .
-TextDiagramObject.text rdf:type rdfs:Property ;
+<TextDiagramObject.text> rdf:type rdfs:Property ;
 	rdfs:label "text"@en ;
-	rdfs:domain TextDiagramObject ;
+	rdfs:domain <TextDiagramObject> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The text that is displayed by this text diagram object."^^rdf:XMLLiteral .
 
-IdentifiedObject rdf:type rdfs:Class ;
+<IdentifiedObject> rdf:type rdfs:Class ;
 	rdfs:label "IdentifiedObject"@en ;
 	rdfs:comment "This is a root class to provide common identification for all classes needing identification and naming attributes."^^rdf:XMLLiteral .
-IdentifiedObject.description rdf:type rdfs:Property ;
+<IdentifiedObject.description> rdf:type rdfs:Property ;
 	rdfs:label "description"@en ;
-	rdfs:domain IdentifiedObject ;
+	rdfs:domain <IdentifiedObject> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy."^^rdf:XMLLiteral .
-IdentifiedObject.mRID rdf:type rdfs:Property ;
+<IdentifiedObject.mRID> rdf:type rdfs:Property ;
 	rdfs:label "mRID"@en ;
-	rdfs:domain IdentifiedObject ;
+	rdfs:domain <IdentifiedObject> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements."^^rdf:XMLLiteral .
-IdentifiedObject.name rdf:type rdfs:Property ;
+<IdentifiedObject.name> rdf:type rdfs:Property ;
 	rdfs:label "name"@en ;
-	rdfs:domain IdentifiedObject ;
+	rdfs:domain <IdentifiedObject> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The name is any free human readable and possibly non unique text naming the object."^^rdf:XMLLiteral .

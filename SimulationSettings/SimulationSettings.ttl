@@ -3,410 +3,410 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-FaultCauseType rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<FaultCauseType> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "FaultCauseType"@en ;
 	rdfs:comment "Type of cause of the fault."^^rdf:XMLLiteral .
 
-Equipment rdf:type rdfs:Class ;
+<Equipment> rdf:type rdfs:Class ;
 	rdfs:label "Equipment"@en ;
 	rdfs:comment "The parts of a power system that are physical devices, electronic or mechanical."^^rdf:XMLLiteral .
 
-Fault rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<Fault> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "Fault"@en ;
 	rdfs:comment "Abnormal condition causing current flow through conducting equipment, such as caused by equipment failure or short circuits from objects not typically modelled (for example, a tree falling on a line)."^^rdf:XMLLiteral .
-Fault.impedance rdf:type rdfs:Property ;
+<Fault.impedance> rdf:type rdfs:Property ;
 	rdfs:label "impedance"@en ;
-	rdfs:domain Fault ;
-	rdfs:range FaultImpedance ;
+	rdfs:domain <Fault> ;
+	rdfs:range <FaultImpedance> ;
 	rdfs:comment "Fault impedance. Its usage is described by 'kind'."^^rdf:XMLLiteral .
-Fault.kind rdf:type rdfs:Property ;
+<Fault.kind> rdf:type rdfs:Property ;
 	rdfs:label "kind"@en ;
-	rdfs:domain Fault ;
+	rdfs:domain <Fault> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The kind of phase fault."^^rdf:XMLLiteral .
-Fault.occurredDateTime rdf:type rdfs:Property ;
+<Fault.occurredDateTime> rdf:type rdfs:Property ;
 	rdfs:label "occurredDateTime"@en ;
-	rdfs:domain Fault ;
+	rdfs:domain <Fault> ;
 	rdfs:range <https://schema.org/DateTime> ;
 	rdfs:comment "The date and time at which the fault occurred."^^rdf:XMLLiteral .
-Fault.phases rdf:type rdfs:Property ;
+<Fault.phases> rdf:type rdfs:Property ;
 	rdfs:label "phases"@en ;
-	rdfs:domain Fault ;
+	rdfs:domain <Fault> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The phases participating in the fault. The fault connections into these phases are further specified by the type of fault."^^rdf:XMLLiteral .
-Fault.FaultCauseTypes rdf:type rdfs:Property ;
+<Fault.FaultCauseTypes> rdf:type rdfs:Property ;
 	rdfs:label "FaultCauseTypes"@en ;
-	rdfs:domain Fault ;
-	rdfs:range FaultCauseType ;
+	rdfs:domain <Fault> ;
+	rdfs:range <FaultCauseType> ;
 	rdfs:comment "All types of fault cause."^^rdf:XMLLiteral .
-Fault.FaultyEquipment rdf:type rdfs:Property ;
+<Fault.FaultyEquipment> rdf:type rdfs:Property ;
 	rdfs:label "FaultyEquipment"@en ;
-	rdfs:domain Fault ;
-	rdfs:range Equipment ;
+	rdfs:domain <Fault> ;
+	rdfs:range <Equipment> ;
 	rdfs:comment "Equipment carrying this fault."^^rdf:XMLLiteral .
-Fault.ClearSimulationEvent rdf:type rdfs:Property ;
+<Fault.ClearSimulationEvent> rdf:type rdfs:Property ;
 	rdfs:label "ClearSimulationEvent"@en ;
-	rdfs:domain Fault ;
-	rdfs:range ClearSimulationEvent ;
+	rdfs:domain <Fault> ;
+	rdfs:range <ClearSimulationEvent> ;
 	rdfs:comment "The event that clears this fault event."^^rdf:XMLLiteral .
-Fault.SimulationEvents rdf:type rdfs:Property ;
+<Fault.SimulationEvents> rdf:type rdfs:Property ;
 	rdfs:label "SimulationEvents"@en ;
-	rdfs:domain Fault ;
-	rdfs:range SimulationEvents ;
+	rdfs:domain <Fault> ;
+	rdfs:range <SimulationEvents> ;
 	rdfs:comment "The simulation events to which this simulation fault event belongs to."^^rdf:XMLLiteral .
 
-StringIRI rdf:type rdfs:Datatype ;
+<StringIRI> rdf:type rdfs:Datatype ;
 	rdfs:label "StringIRI"@en ;
 	rdfs:comment "An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.\nThe primitive is serialized as literal without language support.\nIRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.\nIRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.\nIRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names."^^rdf:XMLLiteral .
 
-ClearSimulationEvent rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<ClearSimulationEvent> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "ClearSimulationEvent"@en ;
 	rdfs:comment "Defines an event which clears another event such as ParemeterEvent or Fault."^^rdf:XMLLiteral .
-ClearSimulationEvent.eventTime rdf:type rdfs:Property ;
+<ClearSimulationEvent.eventTime> rdf:type rdfs:Property ;
 	rdfs:label "eventTime"@en ;
-	rdfs:domain ClearSimulationEvent ;
+	rdfs:domain <ClearSimulationEvent> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Execution time of the event. It is relative to the start of the simulation."^^rdf:XMLLiteral .
-ClearSimulationEvent.SimulationEvents rdf:type rdfs:Property ;
+<ClearSimulationEvent.SimulationEvents> rdf:type rdfs:Property ;
 	rdfs:label "SimulationEvents"@en ;
-	rdfs:domain ClearSimulationEvent ;
-	rdfs:range SimulationEvents ;
+	rdfs:domain <ClearSimulationEvent> ;
+	rdfs:range <SimulationEvents> ;
 	rdfs:comment "The simulation events to which this clear simulation event belongs to."^^rdf:XMLLiteral .
-ClearSimulationEvent.ClearedParameterEvent rdf:type rdfs:Property ;
+<ClearSimulationEvent.ClearedParameterEvent> rdf:type rdfs:Property ;
 	rdfs:label "ClearedParameterEvent"@en ;
-	rdfs:domain ClearSimulationEvent ;
-	rdfs:range ParameterEvent ;
+	rdfs:domain <ClearSimulationEvent> ;
+	rdfs:range <ParameterEvent> ;
 	rdfs:comment "The parameter event that is cleared by a ClearSimulationEvent."^^rdf:XMLLiteral .
 
-EquipmentFault rdf:type rdfs:Class ;
-	rdfs:subClassOf Fault ;
+<EquipmentFault> rdf:type rdfs:Class ;
+	rdfs:subClassOf <Fault> ;
 	rdfs:label "EquipmentFault"@en ;
 	rdfs:comment "A fault applied at the terminal, external to the equipment. This class is not used to specify faults internal to the equipment."^^rdf:XMLLiteral .
-EquipmentFault.Terminal rdf:type rdfs:Property ;
+<EquipmentFault.Terminal> rdf:type rdfs:Property ;
 	rdfs:label "Terminal"@en ;
-	rdfs:domain EquipmentFault ;
-	rdfs:range Terminal ;
+	rdfs:domain <EquipmentFault> ;
+	rdfs:range <Terminal> ;
 	rdfs:comment "The terminal connecting to the bus to which the fault is applied."^^rdf:XMLLiteral .
 
-PowerFlowSettings rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<PowerFlowSettings> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "PowerFlowSettings"@en ;
 	rdfs:comment "Provides information on power flow settings valid for the model they are assigned to.\nThe following attributes:\n- staticVarCompensatorControlPriority, \n- switchedShuntControlPriority,\n- transformerPhaseTapControlPriority, and\n- transformerPhaseTapControlPriority \n shall have different values in case they are enabled (i.e. value different than 0).  "^^rdf:XMLLiteral .
-PowerFlowSettings.activePowerTolerance rdf:type rdfs:Property ;
+<PowerFlowSettings.activePowerTolerance> rdf:type rdfs:Property ;
 	rdfs:label "activePowerTolerance"@en ;
-	rdfs:domain PowerFlowSettings ;
+	rdfs:domain <PowerFlowSettings> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The active power tolerance for a given power flow solution. SvInjection.pInjection shall not be greater than this tolerance."^^rdf:XMLLiteral .
-PowerFlowSettings.algorithmKind rdf:type rdfs:Property ;
+<PowerFlowSettings.algorithmKind> rdf:type rdfs:Property ;
 	rdfs:label "algorithmKind"@en ;
-	rdfs:domain PowerFlowSettings ;
+	rdfs:domain <PowerFlowSettings> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "It defines the power flow algorithm."^^rdf:XMLLiteral .
-PowerFlowSettings.flatStart rdf:type rdfs:Property ;
+<PowerFlowSettings.flatStart> rdf:type rdfs:Property ;
 	rdfs:label "flatStart"@en ;
-	rdfs:domain PowerFlowSettings ;
+	rdfs:domain <PowerFlowSettings> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "True means that power flow used a flat start."^^rdf:XMLLiteral .
-PowerFlowSettings.impedanceThreshold rdf:type rdfs:Property ;
+<PowerFlowSettings.impedanceThreshold> rdf:type rdfs:Property ;
 	rdfs:label "impedanceThreshold"@en ;
-	rdfs:domain PowerFlowSettings ;
+	rdfs:domain <PowerFlowSettings> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero impedance threshold used considered when calculating zero or low impendence branches. The per unit value is calculated with base power of 100 MW. If set to 0 the impedance threshold is not used. "^^rdf:XMLLiteral .
-PowerFlowSettings.interchangeControlEnabled rdf:type rdfs:Property ;
+<PowerFlowSettings.interchangeControlEnabled> rdf:type rdfs:Property ;
 	rdfs:label "interchangeControlEnabled"@en ;
-	rdfs:domain PowerFlowSettings ;
+	rdfs:domain <PowerFlowSettings> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Define if the interchange control is enabled during power flow calculation. True means area interchange control is enabled. False means it is disabled."^^rdf:XMLLiteral .
-PowerFlowSettings.loadVoltageDependency rdf:type rdfs:Property ;
+<PowerFlowSettings.loadVoltageDependency> rdf:type rdfs:Property ;
 	rdfs:label "loadVoltageDependency"@en ;
-	rdfs:domain PowerFlowSettings ;
+	rdfs:domain <PowerFlowSettings> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Defines if voltage dependency of loads is considered. True means voltage dependency is considered. False means it is not considered."^^rdf:XMLLiteral .
-PowerFlowSettings.reactivePowerTolerance rdf:type rdfs:Property ;
+<PowerFlowSettings.reactivePowerTolerance> rdf:type rdfs:Property ;
 	rdfs:label "reactivePowerTolerance"@en ;
-	rdfs:domain PowerFlowSettings ;
+	rdfs:domain <PowerFlowSettings> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The reactive power tolerance for a given power flow solution. SvInjection.qInjection shall not be greater than this tolerance."^^rdf:XMLLiteral .
-PowerFlowSettings.respectActivePowerLimits rdf:type rdfs:Property ;
+<PowerFlowSettings.respectActivePowerLimits> rdf:type rdfs:Property ;
 	rdfs:label "respectActivePowerLimits"@en ;
-	rdfs:domain PowerFlowSettings ;
+	rdfs:domain <PowerFlowSettings> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Indicates if active power limits of the equipment are respected during power flow calculation. True means limits are respected. False means limits are ignored."^^rdf:XMLLiteral .
-PowerFlowSettings.respectReactivePowerLimits rdf:type rdfs:Property ;
+<PowerFlowSettings.respectReactivePowerLimits> rdf:type rdfs:Property ;
 	rdfs:label "respectReactivePowerLimits"@en ;
-	rdfs:domain PowerFlowSettings ;
+	rdfs:domain <PowerFlowSettings> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Indicates if reactive power of limits of the equipment are respected during power flow calculation. True means limits are respected. False means limits are ignored."^^rdf:XMLLiteral .
-PowerFlowSettings.shiftKind rdf:type rdfs:Property ;
+<PowerFlowSettings.shiftKind> rdf:type rdfs:Property ;
 	rdfs:label "shiftKind"@en ;
-	rdfs:domain PowerFlowSettings ;
+	rdfs:domain <PowerFlowSettings> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Defines type of scaling used to reach defined net-position."^^rdf:XMLLiteral .
-PowerFlowSettings.slackDistributionKind rdf:type rdfs:Property ;
+<PowerFlowSettings.slackDistributionKind> rdf:type rdfs:Property ;
 	rdfs:label "slackDistributionKind"@en ;
-	rdfs:domain PowerFlowSettings ;
+	rdfs:domain <PowerFlowSettings> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Defines slack distribution used in power flow calculation."^^rdf:XMLLiteral .
-PowerFlowSettings.staticVarCompensatorControlPriority rdf:type rdfs:Property ;
+<PowerFlowSettings.staticVarCompensatorControlPriority> rdf:type rdfs:Property ;
 	rdfs:label "staticVarCompensatorControlPriority"@en ;
-	rdfs:domain PowerFlowSettings ;
+	rdfs:domain <PowerFlowSettings> ;
 	rdfs:range xsd:integer ;
 	rdfs:comment "Indicates if control is applied on static var compensators. 0 means it is not used, i.e. it is disabled. 1 means it is enabled and indicates it is the highest priority among the following control related settings: transformerRatioTapControlPriority, transformerPhaseTapControlPriority, switchedShuntControlPriority and staticVarCompensatorControlPriority.\nAllowed values are in the range [0,4]."^^rdf:XMLLiteral .
-PowerFlowSettings.switchedShuntControlPriority rdf:type rdfs:Property ;
+<PowerFlowSettings.switchedShuntControlPriority> rdf:type rdfs:Property ;
 	rdfs:label "switchedShuntControlPriority"@en ;
-	rdfs:domain PowerFlowSettings ;
+	rdfs:domain <PowerFlowSettings> ;
 	rdfs:range xsd:integer ;
 	rdfs:comment "Indicates if control is applied on switched shunts. 0 means it is not used, i.e. it is disabled. 1 means it is enabled and indicates it is the highest priority among the following control related settings: transformerRatioTapControlPriority, transformerPhaseTapControlPriority, switchedShuntControlPriority and staticVarCompensatorControlPriority.\nAllowed values are in the range [0,4]."^^rdf:XMLLiteral .
-PowerFlowSettings.transformerPhaseTapControlPriority rdf:type rdfs:Property ;
+<PowerFlowSettings.transformerPhaseTapControlPriority> rdf:type rdfs:Property ;
 	rdfs:label "transformerPhaseTapControlPriority"@en ;
-	rdfs:domain PowerFlowSettings ;
+	rdfs:domain <PowerFlowSettings> ;
 	rdfs:range xsd:integer ;
 	rdfs:comment "Indicates if phase tap change control is applied on transformers. 0 means it is not used, i.e. it is disabled. 1 means it is enabled and indicates it is the highest priority among the following control related settings: transformerRatioTapControlPriority, transformerPhaseTapControlPriority, switchedShuntControlPriority and staticVarCompensatorControlPriority.\nAllowed values are in the range [0,4]."^^rdf:XMLLiteral .
-PowerFlowSettings.transformerRatioTapControlPriority rdf:type rdfs:Property ;
+<PowerFlowSettings.transformerRatioTapControlPriority> rdf:type rdfs:Property ;
 	rdfs:label "transformerRatioTapControlPriority"@en ;
-	rdfs:domain PowerFlowSettings ;
+	rdfs:domain <PowerFlowSettings> ;
 	rdfs:range xsd:integer ;
 	rdfs:comment "Indicates if ratio tap change control is applied on transformers. 0 means it is not used, i.e. it is disabled. 1 means it is enabled and indicates it is the highest priority among the following control related settings: transformerRatioTapControlPriority, transformerPhaseTapControlPriority, switchedShuntControlPriority and staticVarCompensatorControlPriority.\nAllowed values are in the range [0,4]."^^rdf:XMLLiteral .
-PowerFlowSettings.voltageAngleLimit rdf:type rdfs:Property ;
+<PowerFlowSettings.voltageAngleLimit> rdf:type rdfs:Property ;
 	rdfs:label "voltageAngleLimit"@en ;
-	rdfs:domain PowerFlowSettings ;
+	rdfs:domain <PowerFlowSettings> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The maximum allowed voltage angle between two nodes for a given power flow solution."^^rdf:XMLLiteral .
-PowerFlowSettings.voltageTolerance rdf:type rdfs:Property ;
+<PowerFlowSettings.voltageTolerance> rdf:type rdfs:Property ;
 	rdfs:label "voltageTolerance"@en ;
-	rdfs:domain PowerFlowSettings ;
+	rdfs:domain <PowerFlowSettings> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The largest difference between actual and scheduled voltage magnitude for controlled node, in per unit of BaseVoltage, \n- at each node where voltage is subject to control to a set point, and \n- for which at least one of the devices participating in the control of bus voltage to its set point is not at a reactive power limit. \nIt shall be less than the controlled bus voltage error convergence tolerance. "^^rdf:XMLLiteral .
 
-ACDCTerminal rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<ACDCTerminal> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "ACDCTerminal"@en ;
 	rdfs:comment "An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^rdf:XMLLiteral .
 
-SimulationEvents rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<SimulationEvents> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "SimulationEvents"@en ;
 	rdfs:comment "A configuration or a set of events executed during a simulation."^^rdf:XMLLiteral .
 
-Terminal rdf:type rdfs:Class ;
-	rdfs:subClassOf ACDCTerminal ;
+<Terminal> rdf:type rdfs:Class ;
+	rdfs:subClassOf <ACDCTerminal> ;
 	rdfs:label "Terminal"@en ;
 	rdfs:comment "An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^rdf:XMLLiteral .
 
-SignalConfiguration rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<SignalConfiguration> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "SignalConfiguration"@en ;
 	rdfs:comment "A configuration or a set of signals selected for recording during a simulation."^^rdf:XMLLiteral .
 
-ParameterEvent rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<ParameterEvent> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "ParameterEvent"@en ;
 	rdfs:comment "Used to apply changes to particular parameter or signal. The parameter or signal could be any property from power flow part of the model or property/signal of standard, user defined or detailed model."^^rdf:XMLLiteral .
-ParameterEvent.booleanParameterValue rdf:type rdfs:Property ;
+<ParameterEvent.booleanParameterValue> rdf:type rdfs:Property ;
 	rdfs:label "booleanParameterValue"@en ;
-	rdfs:domain ParameterEvent ;
+	rdfs:domain <ParameterEvent> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Boolean parameter value. If this attribute is populated, integerParameterValue and floatParameterValue will not be."^^rdf:XMLLiteral .
-ParameterEvent.changeKind rdf:type rdfs:Property ;
+<ParameterEvent.changeKind> rdf:type rdfs:Property ;
 	rdfs:label "changeKind"@en ;
-	rdfs:domain ParameterEvent ;
+	rdfs:domain <ParameterEvent> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Defines if the change is done in one step or using ramp."^^rdf:XMLLiteral .
-ParameterEvent.eventTime rdf:type rdfs:Property ;
+<ParameterEvent.eventTime> rdf:type rdfs:Property ;
 	rdfs:label "eventTime"@en ;
-	rdfs:domain ParameterEvent ;
+	rdfs:domain <ParameterEvent> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Execution time of the event. It is relative to the start of the simulation."^^rdf:XMLLiteral .
-ParameterEvent.floatParementerValue rdf:type rdfs:Property ;
+<ParameterEvent.floatParementerValue> rdf:type rdfs:Property ;
 	rdfs:label "floatParementerValue"@en ;
-	rdfs:domain ParameterEvent ;
+	rdfs:domain <ParameterEvent> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Floating point parameter value. If this attribute is populated, booleanParameterValue and integerParameterValue will not be."^^rdf:XMLLiteral .
-ParameterEvent.integerParameterValue rdf:type rdfs:Property ;
+<ParameterEvent.integerParameterValue> rdf:type rdfs:Property ;
 	rdfs:label "integerParameterValue"@en ;
-	rdfs:domain ParameterEvent ;
+	rdfs:domain <ParameterEvent> ;
 	rdfs:range xsd:integer ;
 	rdfs:comment "Integer parameter value. If this attribute is populated, booleanParameterValue and floatParameterValue will not be."^^rdf:XMLLiteral .
-ParameterEvent.parameterIRI rdf:type rdfs:Property ;
+<ParameterEvent.parameterIRI> rdf:type rdfs:Property ;
 	rdfs:label "parameterIRI"@en ;
-	rdfs:domain ParameterEvent ;
+	rdfs:domain <ParameterEvent> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Identifies which parameter is changed during the event. It can be an attribute of a class that inherits from IdentifiedObject. The parameter IRI (Internationalized Resource Identifier) is a Unicode string that conforms to the syntax defined in RFC 3987. The string is serialized as literal without language support."^^rdf:XMLLiteral .
-ParameterEvent.parameterName rdf:type rdfs:Property ;
+<ParameterEvent.parameterName> rdf:type rdfs:Property ;
 	rdfs:label "parameterName"@en ;
-	rdfs:domain ParameterEvent ;
+	rdfs:domain <ParameterEvent> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Identifies which parameter is changed during the event. It is used only in cases where IRI is not defined, e.g. an internal quantity of a model. "^^rdf:XMLLiteral .
-ParameterEvent.rampDuration rdf:type rdfs:Property ;
+<ParameterEvent.rampDuration> rdf:type rdfs:Property ;
 	rdfs:label "rampDuration"@en ;
-	rdfs:domain ParameterEvent ;
+	rdfs:domain <ParameterEvent> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Defines the duration of the ramp in case. Only used in case attribute changeKind is set to ramp."^^rdf:XMLLiteral .
-ParameterEvent.SimulationEvents rdf:type rdfs:Property ;
+<ParameterEvent.SimulationEvents> rdf:type rdfs:Property ;
 	rdfs:label "SimulationEvents"@en ;
-	rdfs:domain ParameterEvent ;
-	rdfs:range SimulationEvents ;
+	rdfs:domain <ParameterEvent> ;
+	rdfs:range <SimulationEvents> ;
 	rdfs:comment "The simulation events to which this parameter event belongs to."^^rdf:XMLLiteral .
-ParameterEvent.UsesParameterOf rdf:type rdfs:Property ;
+<ParameterEvent.UsesParameterOf> rdf:type rdfs:Property ;
 	rdfs:label "UsesParameterOf"@en ;
-	rdfs:domain ParameterEvent ;
-	rdfs:range IdentifiedObject ;
+	rdfs:domain <ParameterEvent> ;
+	rdfs:range <IdentifiedObject> ;
 	rdfs:comment "The equipment, dynamics model or signal that is used to define the parameter event."^^rdf:XMLLiteral .
 
-StringFixedLanguage rdf:type rdfs:Datatype ;
+<StringFixedLanguage> rdf:type rdfs:Datatype ;
 	rdfs:label "StringFixedLanguage"@en ;
 	rdfs:comment "A string consisting of a sequence of characters. The character encoding is UTF-8. The string length is unspecified and unlimited.\nThe primitive is serialized as literal without language support."^^rdf:XMLLiteral .
 
-SignalRecorder rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<SignalRecorder> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "SignalRecorder"@en ;
 	rdfs:comment "A recorder for a given signal."^^rdf:XMLLiteral .
-SignalRecorder.signalKind rdf:type rdfs:Property ;
+<SignalRecorder.signalKind> rdf:type rdfs:Property ;
 	rdfs:label "signalKind"@en ;
-	rdfs:domain SignalRecorder ;
+	rdfs:domain <SignalRecorder> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Indicates the kind of the signal.  "^^rdf:XMLLiteral .
-SignalRecorder.RecordedSignalAt rdf:type rdfs:Property ;
+<SignalRecorder.RecordedSignalAt> rdf:type rdfs:Property ;
 	rdfs:label "RecordedSignalAt"@en ;
-	rdfs:domain SignalRecorder ;
-	rdfs:range ACDCTerminal ;
+	rdfs:domain <SignalRecorder> ;
+	rdfs:range <ACDCTerminal> ;
 	rdfs:comment "The terminal at which the signal is recorded."^^rdf:XMLLiteral .
-SignalRecorder.SimulationConfiguration rdf:type rdfs:Property ;
+<SignalRecorder.SimulationConfiguration> rdf:type rdfs:Property ;
 	rdfs:label "SimulationConfiguration"@en ;
-	rdfs:domain SignalRecorder ;
-	rdfs:range SignalConfiguration ;
+	rdfs:domain <SignalRecorder> ;
+	rdfs:range <SignalConfiguration> ;
 	rdfs:comment "The simulation configuration set for which this signal recorder is recording."^^rdf:XMLLiteral .
-SignalRecorder.RecordedSignalOf rdf:type rdfs:Property ;
+<SignalRecorder.RecordedSignalOf> rdf:type rdfs:Property ;
 	rdfs:label "RecordedSignalOf"@en ;
-	rdfs:domain SignalRecorder ;
-	rdfs:range DynamicsFunctionBlock ;
+	rdfs:domain <SignalRecorder> ;
+	rdfs:range <DynamicsFunctionBlock> ;
 	rdfs:comment "The dynamics function block to which the singal belongs to."^^rdf:XMLLiteral .
-SignalRecorder.RecordedSignal rdf:type rdfs:Property ;
+<SignalRecorder.RecordedSignal> rdf:type rdfs:Property ;
 	rdfs:label "RecordedSignal"@en ;
-	rdfs:domain SignalRecorder ;
-	rdfs:range SignalDescriptor ;
+	rdfs:domain <SignalRecorder> ;
+	rdfs:range <SignalDescriptor> ;
 	rdfs:comment "The signal that is recorded during the simulation."^^rdf:XMLLiteral .
 
-DetailedModelDescriptor rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<DetailedModelDescriptor> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "DetailedModelDescriptor"@en ;
 	rdfs:comment "Describes different components of a detailed model."^^rdf:XMLLiteral .
 
-DynamicsFunctionBlock rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<DynamicsFunctionBlock> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "DynamicsFunctionBlock"@en ;
 	rdfs:comment "Abstract parent class for all Dynamics function blocks."^^rdf:XMLLiteral .
 
-SimulationSettings rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<SimulationSettings> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "SimulationSettings"@en ;
 	rdfs:comment "Describes simulation settings necessary for a simulation."^^rdf:XMLLiteral .
-SimulationSettings.duration rdf:type rdfs:Property ;
+<SimulationSettings.duration> rdf:type rdfs:Property ;
 	rdfs:label "duration"@en ;
-	rdfs:domain SimulationSettings ;
+	rdfs:domain <SimulationSettings> ;
 	rdfs:range xsd:duration ;
 	rdfs:comment "Complete simulation duration relative to the start of the simulation. "^^rdf:XMLLiteral .
-SimulationSettings.integrationStepSize rdf:type rdfs:Property ;
+<SimulationSettings.integrationStepSize> rdf:type rdfs:Property ;
 	rdfs:label "integrationStepSize"@en ;
-	rdfs:domain SimulationSettings ;
+	rdfs:domain <SimulationSettings> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Indicates the integration step size. In case the integration step size is variable (i.e. isIntegrationStepSize=true), this value represents the initial integration step size used for the first iterations of the simulation prior activation of the adaptation os the step size. "^^rdf:XMLLiteral .
-SimulationSettings.isIntegrationStepSizeVariable rdf:type rdfs:Property ;
+<SimulationSettings.isIntegrationStepSizeVariable> rdf:type rdfs:Property ;
 	rdfs:label "isIntegrationStepSizeVariable"@en ;
-	rdfs:domain SimulationSettings ;
+	rdfs:domain <SimulationSettings> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Indicates if the integration step size is variable or fixed. True means the integration step is variable. False means - fixed."^^rdf:XMLLiteral .
-SimulationSettings.maximumIntegrationStepSize rdf:type rdfs:Property ;
+<SimulationSettings.maximumIntegrationStepSize> rdf:type rdfs:Property ;
 	rdfs:label "maximumIntegrationStepSize"@en ;
-	rdfs:domain SimulationSettings ;
+	rdfs:domain <SimulationSettings> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Maximum integration step size. Used in case of variable integration step size (i.e. inIntegrationStepSizeVariable=true). "^^rdf:XMLLiteral .
-SimulationSettings.minimumIntegrationStepSize rdf:type rdfs:Property ;
+<SimulationSettings.minimumIntegrationStepSize> rdf:type rdfs:Property ;
 	rdfs:label "minimumIntegrationStepSize"@en ;
-	rdfs:domain SimulationSettings ;
+	rdfs:domain <SimulationSettings> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Minimum integration step size. Used in case of variable integration step size (i.e. inIntegrationStepSizeVariable=true). "^^rdf:XMLLiteral .
-SimulationSettings.simulationResultsRecordedEvery rdf:type rdfs:Property ;
+<SimulationSettings.simulationResultsRecordedEvery> rdf:type rdfs:Property ;
 	rdfs:label "simulationResultsRecordedEvery"@en ;
-	rdfs:domain SimulationSettings ;
+	rdfs:domain <SimulationSettings> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Indicates the periodicity of recording of simulation results."^^rdf:XMLLiteral .
-SimulationSettings.PowerFlowSettings rdf:type rdfs:Property ;
+<SimulationSettings.PowerFlowSettings> rdf:type rdfs:Property ;
 	rdfs:label "PowerFlowSettings"@en ;
-	rdfs:domain SimulationSettings ;
-	rdfs:range PowerFlowSettings ;
+	rdfs:domain <SimulationSettings> ;
+	rdfs:range <PowerFlowSettings> ;
 	rdfs:comment "The power flow settings that are part of the simulation settings."^^rdf:XMLLiteral .
 
-IRI rdf:type rdfs:Datatype ;
+<IRI> rdf:type rdfs:Datatype ;
 	rdfs:label "IRI"@en ;
 	rdfs:comment "An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.\nThe primitive is serialized as rdf:resource in RDFXML.\nIRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.\nIRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.\nIRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names."^^rdf:XMLLiteral .
 
-FaultImpedance rdf:type rdfs:Class ;
+<FaultImpedance> rdf:type rdfs:Class ;
 	rdfs:label "FaultImpedance"@en ;
 	rdfs:comment "Impedance description for the fault."^^rdf:XMLLiteral .
-FaultImpedance.rGround rdf:type rdfs:Property ;
+<FaultImpedance.rGround> rdf:type rdfs:Property ;
 	rdfs:label "rGround"@en ;
-	rdfs:domain FaultImpedance ;
+	rdfs:domain <FaultImpedance> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The resistance of the fault between phases and ground."^^rdf:XMLLiteral .
-FaultImpedance.rLineToLine rdf:type rdfs:Property ;
+<FaultImpedance.rLineToLine> rdf:type rdfs:Property ;
 	rdfs:label "rLineToLine"@en ;
-	rdfs:domain FaultImpedance ;
+	rdfs:domain <FaultImpedance> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The resistance of the fault between phases."^^rdf:XMLLiteral .
-FaultImpedance.xGround rdf:type rdfs:Property ;
+<FaultImpedance.xGround> rdf:type rdfs:Property ;
 	rdfs:label "xGround"@en ;
-	rdfs:domain FaultImpedance ;
+	rdfs:domain <FaultImpedance> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The reactance of the fault between phases and ground."^^rdf:XMLLiteral .
-FaultImpedance.xLineToLine rdf:type rdfs:Property ;
+<FaultImpedance.xLineToLine> rdf:type rdfs:Property ;
 	rdfs:label "xLineToLine"@en ;
-	rdfs:domain FaultImpedance ;
+	rdfs:domain <FaultImpedance> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The reactance of the fault between phases."^^rdf:XMLLiteral .
 
-LineFault rdf:type rdfs:Class ;
-	rdfs:subClassOf Fault ;
+<LineFault> rdf:type rdfs:Class ;
+	rdfs:subClassOf <Fault> ;
 	rdfs:label "LineFault"@en ;
 	rdfs:comment "A fault that occurs on an AC line segment at some point along the length."^^rdf:XMLLiteral .
-LineFault.lengthFromTerminal1 rdf:type rdfs:Property ;
+<LineFault.lengthFromTerminal1> rdf:type rdfs:Property ;
 	rdfs:label "lengthFromTerminal1"@en ;
-	rdfs:domain LineFault ;
+	rdfs:domain <LineFault> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The length to the place where the fault is located starting from terminal with sequence number 1 of the faulted line segment."^^rdf:XMLLiteral .
-LineFault.ACLineSegment rdf:type rdfs:Property ;
+<LineFault.ACLineSegment> rdf:type rdfs:Property ;
 	rdfs:label "ACLineSegment"@en ;
-	rdfs:domain LineFault ;
-	rdfs:range ACLineSegment ;
+	rdfs:domain <LineFault> ;
+	rdfs:range <ACLineSegment> ;
 	rdfs:comment "The line segment of this line fault."^^rdf:XMLLiteral .
 
-ACLineSegment rdf:type rdfs:Class ;
+<ACLineSegment> rdf:type rdfs:Class ;
 	rdfs:label "ACLineSegment"@en ;
 	rdfs:comment "A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system.\nFor symmetrical, transposed three phase lines, it is sufficient to use attributes of the line segment, which describe impedances and admittances for the entire length of the segment.  Additionally impedances can be computed by using length and associated per length impedances.\nThe BaseVoltage at the two ends of ACLineSegments in a Line shall have the same BaseVoltage.nominalVoltage. However, boundary lines may have slightly different BaseVoltage.nominalVoltages and variation is allowed. Larger voltage difference in general requires use of an equivalent branch."^^rdf:XMLLiteral .
 
-SignalDescriptor rdf:type rdfs:Class ;
-	rdfs:subClassOf DetailedModelDescriptor ;
+<SignalDescriptor> rdf:type rdfs:Class ;
+	rdfs:subClassOf <DetailedModelDescriptor> ;
 	rdfs:label "SignalDescriptor"@en ;
 	rdfs:comment "Describes the signals both internal signals that connect different functions or external signals."^^rdf:XMLLiteral .
 
-IdentifiedObject rdf:type rdfs:Class ;
+<IdentifiedObject> rdf:type rdfs:Class ;
 	rdfs:label "IdentifiedObject"@en ;
 	rdfs:comment "This is a root class to provide common identification for all classes needing identification and naming attributes."^^rdf:XMLLiteral .
-IdentifiedObject.description rdf:type rdfs:Property ;
+<IdentifiedObject.description> rdf:type rdfs:Property ;
 	rdfs:label "description"@en ;
-	rdfs:domain IdentifiedObject ;
+	rdfs:domain <IdentifiedObject> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy."^^rdf:XMLLiteral .
-IdentifiedObject.mRID rdf:type rdfs:Property ;
+<IdentifiedObject.mRID> rdf:type rdfs:Property ;
 	rdfs:label "mRID"@en ;
-	rdfs:domain IdentifiedObject ;
+	rdfs:domain <IdentifiedObject> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements."^^rdf:XMLLiteral .
-IdentifiedObject.name rdf:type rdfs:Property ;
+<IdentifiedObject.name> rdf:type rdfs:Property ;
 	rdfs:label "name"@en ;
-	rdfs:domain IdentifiedObject ;
+	rdfs:domain <IdentifiedObject> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The name is any free human readable and possibly non unique text naming the object."^^rdf:XMLLiteral .

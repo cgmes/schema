@@ -3,248 +3,248 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-StringFixedLanguage rdf:type rdfs:Datatype ;
+<StringFixedLanguage> rdf:type rdfs:Datatype ;
 	rdfs:label "StringFixedLanguage"@en ;
 	rdfs:comment "A string consisting of a sequence of characters. The character encoding is UTF-8. The string length is unspecified and unlimited.\nThe primitive is serialized as literal without language support."^^rdf:XMLLiteral .
 
-ParameterDesctiptor rdf:type rdfs:Class ;
-	rdfs:subClassOf DetailedModelDescriptor ;
+<ParameterDesctiptor> rdf:type rdfs:Class ;
+	rdfs:subClassOf <DetailedModelDescriptor> ;
 	rdfs:label "ParameterDesctiptor"@en ;
 	rdfs:comment "Supports definition of one or more parameters of several different datatypes for use by the detailed model.  It describes the parameters used in the equations of the detailed model.\nThe name of the parameter shall be the same as the name used in the equations of the detailed model."^^rdf:XMLLiteral .
-ParameterDesctiptor.constraintKind rdf:type rdfs:Property ;
+<ParameterDesctiptor.constraintKind> rdf:type rdfs:Property ;
 	rdfs:label "constraintKind"@en ;
-	rdfs:domain ParameterDesctiptor ;
+	rdfs:domain <ParameterDesctiptor> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The kind for the constraint."^^rdf:XMLLiteral .
-ParameterDesctiptor.constraintValue rdf:type rdfs:Property ;
+<ParameterDesctiptor.constraintValue> rdf:type rdfs:Property ;
 	rdfs:label "constraintValue"@en ;
-	rdfs:domain ParameterDesctiptor ;
+	rdfs:domain <ParameterDesctiptor> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The value of the constraint. Used in all cases except when constraint kind is \"custom\"."^^rdf:XMLLiteral .
-ParameterDesctiptor.engineeringUnit rdf:type rdfs:Property ;
+<ParameterDesctiptor.engineeringUnit> rdf:type rdfs:Property ;
 	rdfs:label "engineeringUnit"@en ;
-	rdfs:domain ParameterDesctiptor ;
+	rdfs:domain <ParameterDesctiptor> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The engineering unit of the value."^^rdf:XMLLiteral .
-ParameterDesctiptor.kind rdf:type rdfs:Property ;
+<ParameterDesctiptor.kind> rdf:type rdfs:Property ;
 	rdfs:label "kind"@en ;
-	rdfs:domain ParameterDesctiptor ;
+	rdfs:domain <ParameterDesctiptor> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The kind of the parameter."^^rdf:XMLLiteral .
-ParameterDesctiptor.referenceCustomConstraint rdf:type rdfs:Property ;
+<ParameterDesctiptor.referenceCustomConstraint> rdf:type rdfs:Property ;
 	rdfs:label "referenceCustomConstraint"@en ;
-	rdfs:domain ParameterDesctiptor ;
-	rdfs:range IRI ;
+	rdfs:domain <ParameterDesctiptor> ;
+	rdfs:range <IRI> ;
 	rdfs:comment "Provides the reference to a custom constraint related to this parameter. It is used for more complex constraints that are not possible to express by attributes constraintKind and constraintValue. The reference is and IRI to a description of the constraint that conform to specific language for describing constraints, e.g. SHACL. "^^rdf:XMLLiteral .
-ParameterDesctiptor.sequenceNumber rdf:type rdfs:Property ;
+<ParameterDesctiptor.sequenceNumber> rdf:type rdfs:Property ;
 	rdfs:label "sequenceNumber"@en ;
-	rdfs:domain ParameterDesctiptor ;
+	rdfs:domain <ParameterDesctiptor> ;
 	rdfs:range xsd:integer ;
 	rdfs:comment "Sequence number of the parameter among the set of parameters associated with the related proprietary user-defined model."^^rdf:XMLLiteral .
-ParameterDesctiptor.typicalValue rdf:type rdfs:Property ;
+<ParameterDesctiptor.typicalValue> rdf:type rdfs:Property ;
 	rdfs:label "typicalValue"@en ;
-	rdfs:domain ParameterDesctiptor ;
+	rdfs:domain <ParameterDesctiptor> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Typical value for the parameter. The datatype is as specified in attribute valueXSDdatatype."^^rdf:XMLLiteral .
-ParameterDesctiptor.typicalValueRangeMax rdf:type rdfs:Property ;
+<ParameterDesctiptor.typicalValueRangeMax> rdf:type rdfs:Property ;
 	rdfs:label "typicalValueRangeMax"@en ;
-	rdfs:domain ParameterDesctiptor ;
+	rdfs:domain <ParameterDesctiptor> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Maximum value (upper end of the range) of the typical range. "^^rdf:XMLLiteral .
-ParameterDesctiptor.typicalValueRangeMin rdf:type rdfs:Property ;
+<ParameterDesctiptor.typicalValueRangeMin> rdf:type rdfs:Property ;
 	rdfs:label "typicalValueRangeMin"@en ;
-	rdfs:domain ParameterDesctiptor ;
+	rdfs:domain <ParameterDesctiptor> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Minimum value (lower end of the range) of the typical range. "^^rdf:XMLLiteral .
-ParameterDesctiptor.valueXSDdatatype rdf:type rdfs:Property ;
+<ParameterDesctiptor.valueXSDdatatype> rdf:type rdfs:Property ;
 	rdfs:label "valueXSDdatatype"@en ;
-	rdfs:domain ParameterDesctiptor ;
+	rdfs:domain <ParameterDesctiptor> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The XSD datatype of the value."^^rdf:XMLLiteral .
-ParameterDesctiptor.FunctionDescriptor rdf:type rdfs:Property ;
+<ParameterDesctiptor.FunctionDescriptor> rdf:type rdfs:Property ;
 	rdfs:label "FunctionDescriptor"@en ;
-	rdfs:domain ParameterDesctiptor ;
-	rdfs:range FunctionDescriptor ;
+	rdfs:domain <ParameterDesctiptor> ;
+	rdfs:range <FunctionDescriptor> ;
 	rdfs:comment "The function descriptor that has parameter descriptor."^^rdf:XMLLiteral .
 
-InputOutputDescriptor rdf:type rdfs:Class ;
-	rdfs:subClassOf DetailedModelDescriptor ;
+<InputOutputDescriptor> rdf:type rdfs:Class ;
+	rdfs:subClassOf <DetailedModelDescriptor> ;
 	rdfs:label "InputOutputDescriptor"@en ;
 	rdfs:comment "Describes the inputs and outputs of the functions that describe an detailed model."^^rdf:XMLLiteral .
-InputOutputDescriptor.InputSignal rdf:type rdfs:Property ;
+<InputOutputDescriptor.InputSignal> rdf:type rdfs:Property ;
 	rdfs:label "InputSignal"@en ;
-	rdfs:domain InputOutputDescriptor ;
-	rdfs:range SignalDescriptor ;
+	rdfs:domain <InputOutputDescriptor> ;
+	rdfs:range <SignalDescriptor> ;
 	rdfs:comment "The input signal for this input descriptor."^^rdf:XMLLiteral .
-InputOutputDescriptor.OutputSignal rdf:type rdfs:Property ;
+<InputOutputDescriptor.OutputSignal> rdf:type rdfs:Property ;
 	rdfs:label "OutputSignal"@en ;
-	rdfs:domain InputOutputDescriptor ;
-	rdfs:range SignalDescriptor ;
+	rdfs:domain <InputOutputDescriptor> ;
+	rdfs:range <SignalDescriptor> ;
 	rdfs:comment "The output signal for this output descriptor."^^rdf:XMLLiteral .
 
-ACDCTerminal rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<ACDCTerminal> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "ACDCTerminal"@en ;
 	rdfs:comment "An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^rdf:XMLLiteral .
 
-DetailedModelDescriptorArtifact rdf:type rdfs:Class ;
-	rdfs:subClassOf DetailedModelDescriptor ;
+<DetailedModelDescriptorArtifact> rdf:type rdfs:Class ;
+	rdfs:subClassOf <DetailedModelDescriptor> ;
 	rdfs:label "DetailedModelDescriptorArtifact"@en ;
 	rdfs:comment "An artifact (e.g. file) describing the model. In can be used when reusing existing modules or in the use case where detailed models are already part of a reference library and the DetailedModelDynamics will only need to refer to a model from that library instead of constructing the model in detail."^^rdf:XMLLiteral .
-DetailedModelDescriptorArtifact.equationLanguageKind rdf:type rdfs:Property ;
+<DetailedModelDescriptorArtifact.equationLanguageKind> rdf:type rdfs:Property ;
 	rdfs:label "equationLanguageKind"@en ;
-	rdfs:domain DetailedModelDescriptorArtifact ;
+	rdfs:domain <DetailedModelDescriptorArtifact> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Describes what kind of language is used to describe the equation."^^rdf:XMLLiteral .
-DetailedModelDescriptorArtifact.equationLanguageTypeOther rdf:type rdfs:Property ;
+<DetailedModelDescriptorArtifact.equationLanguageTypeOther> rdf:type rdfs:Property ;
 	rdfs:label "equationLanguageTypeOther"@en ;
-	rdfs:domain DetailedModelDescriptorArtifact ;
+	rdfs:domain <DetailedModelDescriptorArtifact> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Defines the language used to describe equations."^^rdf:XMLLiteral .
 
-SignalDescriptor rdf:type rdfs:Class ;
-	rdfs:subClassOf DetailedModelDescriptor ;
+<SignalDescriptor> rdf:type rdfs:Class ;
+	rdfs:subClassOf <DetailedModelDescriptor> ;
 	rdfs:label "SignalDescriptor"@en ;
 	rdfs:comment "Describes the signals both internal signals that connect different functions or external signals."^^rdf:XMLLiteral .
-SignalDescriptor.isSignalInverted rdf:type rdfs:Property ;
+<SignalDescriptor.isSignalInverted> rdf:type rdfs:Property ;
 	rdfs:label "isSignalInverted"@en ;
-	rdfs:domain SignalDescriptor ;
+	rdfs:domain <SignalDescriptor> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Indicates if the signal is inverted. True means the signal is inverted, i.e. multiplied by -1. False means the signal is not inverted."^^rdf:XMLLiteral .
-SignalDescriptor.ACDCTerminal rdf:type rdfs:Property ;
+<SignalDescriptor.ACDCTerminal> rdf:type rdfs:Property ;
 	rdfs:label "ACDCTerminal"@en ;
-	rdfs:domain SignalDescriptor ;
-	rdfs:range ACDCTerminal ;
+	rdfs:domain <SignalDescriptor> ;
+	rdfs:range <ACDCTerminal> ;
 	rdfs:comment "Th eterminal for this signal descriptor."^^rdf:XMLLiteral .
-SignalDescriptor.DynamicsFunctionBlock rdf:type rdfs:Property ;
+<SignalDescriptor.DynamicsFunctionBlock> rdf:type rdfs:Property ;
 	rdfs:label "DynamicsFunctionBlock"@en ;
-	rdfs:domain SignalDescriptor ;
-	rdfs:range DynamicsFunctionBlock ;
+	rdfs:domain <SignalDescriptor> ;
+	rdfs:range <DynamicsFunctionBlock> ;
 	rdfs:comment "The dynamics function block to which this signal belongs to."^^rdf:XMLLiteral .
 
-StringIRI rdf:type rdfs:Datatype ;
+<StringIRI> rdf:type rdfs:Datatype ;
 	rdfs:label "StringIRI"@en ;
 	rdfs:comment "An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.\nThe primitive is serialized as literal without language support.\nIRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.\nIRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.\nIRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names."^^rdf:XMLLiteral .
 
-DynamicsFunctionBlock rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<DynamicsFunctionBlock> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "DynamicsFunctionBlock"@en ;
 	rdfs:comment "Abstract parent class for all Dynamics function blocks."^^rdf:XMLLiteral .
 
-FunctionDescriptor rdf:type rdfs:Class ;
-	rdfs:subClassOf DetailedModelDescriptor ;
+<FunctionDescriptor> rdf:type rdfs:Class ;
+	rdfs:subClassOf <DetailedModelDescriptor> ;
 	rdfs:label "FunctionDescriptor"@en ;
 	rdfs:comment "Describes a function part of the detailed model."^^rdf:XMLLiteral .
-FunctionDescriptor.describedByArtifact rdf:type rdfs:Property ;
+<FunctionDescriptor.describedByArtifact> rdf:type rdfs:Property ;
 	rdfs:label "describedByArtifact"@en ;
-	rdfs:domain FunctionDescriptor ;
+	rdfs:domain <FunctionDescriptor> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Identifies if the function descriptor is described by an artifact. If true, the function is described by an artifact. If false the equation shall be described by the attribute equation."^^rdf:XMLLiteral .
-FunctionDescriptor.equation rdf:type rdfs:Property ;
+<FunctionDescriptor.equation> rdf:type rdfs:Property ;
 	rdfs:label "equation"@en ;
-	rdfs:domain FunctionDescriptor ;
+	rdfs:domain <FunctionDescriptor> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Mathematical expression of the function in the specified language. A function can be e.g. first-order lag element, more complex transfer function, etc."^^rdf:XMLLiteral .
-FunctionDescriptor.equationLanguageKind rdf:type rdfs:Property ;
+<FunctionDescriptor.equationLanguageKind> rdf:type rdfs:Property ;
 	rdfs:label "equationLanguageKind"@en ;
-	rdfs:domain FunctionDescriptor ;
+	rdfs:domain <FunctionDescriptor> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Describes what kind of language is used to describe the equation."^^rdf:XMLLiteral .
-FunctionDescriptor.initialConditionsEquation rdf:type rdfs:Property ;
+<FunctionDescriptor.initialConditionsEquation> rdf:type rdfs:Property ;
 	rdfs:label "initialConditionsEquation"@en ;
-	rdfs:domain FunctionDescriptor ;
+	rdfs:domain <FunctionDescriptor> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Mathematical expression (in the specified language) of the initial conditions of the function descriptor. "^^rdf:XMLLiteral .
-FunctionDescriptor.InputOutputDescriptor rdf:type rdfs:Property ;
+<FunctionDescriptor.InputOutputDescriptor> rdf:type rdfs:Property ;
 	rdfs:label "InputOutputDescriptor"@en ;
-	rdfs:domain FunctionDescriptor ;
-	rdfs:range InputOutputDescriptor ;
+	rdfs:domain <FunctionDescriptor> ;
+	rdfs:range <InputOutputDescriptor> ;
 	rdfs:comment "The input and output descriptor of this function descriptor."^^rdf:XMLLiteral .
-FunctionDescriptor.EquationDescriptorArtifact rdf:type rdfs:Property ;
+<FunctionDescriptor.EquationDescriptorArtifact> rdf:type rdfs:Property ;
 	rdfs:label "EquationDescriptorArtifact"@en ;
-	rdfs:domain FunctionDescriptor ;
-	rdfs:range DetailedModelDescriptorArtifact ;
+	rdfs:domain <FunctionDescriptor> ;
+	rdfs:range <DetailedModelDescriptorArtifact> ;
 	rdfs:comment "The equation descriptor artifact for this function descriptor."^^rdf:XMLLiteral .
 
-IRI rdf:type rdfs:Datatype ;
+<IRI> rdf:type rdfs:Datatype ;
 	rdfs:label "IRI"@en ;
 	rdfs:comment "An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.\nThe primitive is serialized as rdf:resource in RDFXML.\nIRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.\nIRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.\nIRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names."^^rdf:XMLLiteral .
 
-DetailedModelDocumentationArtifact rdf:type rdfs:Class ;
-	rdfs:subClassOf DetailedModelDescriptor ;
+<DetailedModelDocumentationArtifact> rdf:type rdfs:Class ;
+	rdfs:subClassOf <DetailedModelDescriptor> ;
 	rdfs:label "DetailedModelDocumentationArtifact"@en ;
 	rdfs:comment "An artifact describing the model. For instance documentation containing block diagrams, results from reference implementation, etc."^^rdf:XMLLiteral .
 
-IdentifiedObject rdf:type rdfs:Class ;
+<IdentifiedObject> rdf:type rdfs:Class ;
 	rdfs:label "IdentifiedObject"@en ;
 	rdfs:comment "This is a root class to provide common identification for all classes needing identification and naming attributes."^^rdf:XMLLiteral .
-IdentifiedObject.description rdf:type rdfs:Property ;
+<IdentifiedObject.description> rdf:type rdfs:Property ;
 	rdfs:label "description"@en ;
-	rdfs:domain IdentifiedObject ;
+	rdfs:domain <IdentifiedObject> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy."^^rdf:XMLLiteral .
-IdentifiedObject.mRID rdf:type rdfs:Property ;
+<IdentifiedObject.mRID> rdf:type rdfs:Property ;
 	rdfs:label "mRID"@en ;
-	rdfs:domain IdentifiedObject ;
+	rdfs:domain <IdentifiedObject> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements."^^rdf:XMLLiteral .
-IdentifiedObject.name rdf:type rdfs:Property ;
+<IdentifiedObject.name> rdf:type rdfs:Property ;
 	rdfs:label "name"@en ;
-	rdfs:domain IdentifiedObject ;
+	rdfs:domain <IdentifiedObject> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The name is any free human readable and possibly non unique text naming the object."^^rdf:XMLLiteral .
 
-OperatorDescriptor rdf:type rdfs:Class ;
-	rdfs:subClassOf DetailedModelDescriptor ;
+<OperatorDescriptor> rdf:type rdfs:Class ;
+	rdfs:subClassOf <DetailedModelDescriptor> ;
 	rdfs:label "OperatorDescriptor"@en ;
 	rdfs:comment "Describes the operator that connects different signals."^^rdf:XMLLiteral .
-OperatorDescriptor.logicalKind rdf:type rdfs:Property ;
+<OperatorDescriptor.logicalKind> rdf:type rdfs:Property ;
 	rdfs:label "logicalKind"@en ;
-	rdfs:domain OperatorDescriptor ;
+	rdfs:domain <OperatorDescriptor> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Logical kind of the operator. Used only if operatorKind is set to OperatorDescriptorKind.logical."^^rdf:XMLLiteral .
-OperatorDescriptor.operatorKind rdf:type rdfs:Property ;
+<OperatorDescriptor.operatorKind> rdf:type rdfs:Property ;
 	rdfs:label "operatorKind"@en ;
-	rdfs:domain OperatorDescriptor ;
+	rdfs:domain <OperatorDescriptor> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Kinds of operator."^^rdf:XMLLiteral .
-OperatorDescriptor.InputOutputDescriptor rdf:type rdfs:Property ;
+<OperatorDescriptor.InputOutputDescriptor> rdf:type rdfs:Property ;
 	rdfs:label "InputOutputDescriptor"@en ;
-	rdfs:domain OperatorDescriptor ;
-	rdfs:range InputOutputDescriptor ;
+	rdfs:domain <OperatorDescriptor> ;
+	rdfs:range <InputOutputDescriptor> ;
 	rdfs:comment "The input and otput descriptor that belongs to the  operator descriptor."^^rdf:XMLLiteral .
 
-DetailedModelDescriptor rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<DetailedModelDescriptor> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "DetailedModelDescriptor"@en ;
 	rdfs:comment "Describes different components of a detailed model."^^rdf:XMLLiteral .
-DetailedModelDescriptor.DetailedModelTypeDynamics rdf:type rdfs:Property ;
+<DetailedModelDescriptor.DetailedModelTypeDynamics> rdf:type rdfs:Property ;
 	rdfs:label "DetailedModelTypeDynamics"@en ;
-	rdfs:domain DetailedModelDescriptor ;
-	rdfs:range DetailedModelTypeDynamics ;
+	rdfs:domain <DetailedModelDescriptor> ;
+	rdfs:range <DetailedModelTypeDynamics> ;
 	rdfs:comment "The detailed model type dynamics that has detailed model descriptor."^^rdf:XMLLiteral .
 
-LimiterDescriptor rdf:type rdfs:Class ;
-	rdfs:subClassOf DetailedModelDescriptor ;
+<LimiterDescriptor> rdf:type rdfs:Class ;
+	rdfs:subClassOf <DetailedModelDescriptor> ;
 	rdfs:label "LimiterDescriptor"@en ;
 	rdfs:comment "Describes a limiter part of the detailed model."^^rdf:XMLLiteral .
-LimiterDescriptor.InputOutputDescriptor rdf:type rdfs:Property ;
+<LimiterDescriptor.InputOutputDescriptor> rdf:type rdfs:Property ;
 	rdfs:label "InputOutputDescriptor"@en ;
-	rdfs:domain LimiterDescriptor ;
-	rdfs:range InputOutputDescriptor ;
+	rdfs:domain <LimiterDescriptor> ;
+	rdfs:range <InputOutputDescriptor> ;
 	rdfs:comment "The input and output descriptor that belongs to the limiter descriptor."^^rdf:XMLLiteral .
-LimiterDescriptor.LowerLimitFunction rdf:type rdfs:Property ;
+<LimiterDescriptor.LowerLimitFunction> rdf:type rdfs:Property ;
 	rdfs:label "LowerLimitFunction"@en ;
-	rdfs:domain LimiterDescriptor ;
-	rdfs:range FunctionDescriptor ;
+	rdfs:domain <LimiterDescriptor> ;
+	rdfs:range <FunctionDescriptor> ;
 	rdfs:comment "The function fo the lower limit."^^rdf:XMLLiteral .
-LimiterDescriptor.UpperLimitFunction rdf:type rdfs:Property ;
+<LimiterDescriptor.UpperLimitFunction> rdf:type rdfs:Property ;
 	rdfs:label "UpperLimitFunction"@en ;
-	rdfs:domain LimiterDescriptor ;
-	rdfs:range FunctionDescriptor ;
+	rdfs:domain <LimiterDescriptor> ;
+	rdfs:range <FunctionDescriptor> ;
 	rdfs:comment "The function for the upper limit."^^rdf:XMLLiteral .
 
-DetailedModelTypeDynamics rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<DetailedModelTypeDynamics> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "DetailedModelTypeDynamics"@en ;
 	rdfs:comment "The main class that packages all related to this type of a detailed model. This includes all parameters, functions, signals, etc."^^rdf:XMLLiteral .

@@ -3,680 +3,680 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-Terminal rdf:type rdfs:Class ;
-	rdfs:subClassOf ACDCTerminal ;
+<Terminal> rdf:type rdfs:Class ;
+	rdfs:subClassOf <ACDCTerminal> ;
 	rdfs:label "Terminal"@en ;
 	rdfs:comment "An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^rdf:XMLLiteral .
 
-PowerTransformerEnd rdf:type rdfs:Class ;
-	rdfs:subClassOf TransformerEnd ;
+<PowerTransformerEnd> rdf:type rdfs:Class ;
+	rdfs:subClassOf <TransformerEnd> ;
 	rdfs:label "PowerTransformerEnd"@en ;
 	rdfs:comment "A PowerTransformerEnd is associated with each Terminal of a PowerTransformer.\nThe impedance values r, r0, x, and x0 of a PowerTransformerEnd represents a star equivalent as follows.\n1) for a two Terminal PowerTransformer the high voltage (TransformerEnd.endNumber=1) PowerTransformerEnd has non zero values on r, r0, x, and x0 while the low voltage (TransformerEnd.endNumber=2) PowerTransformerEnd has zero values for r, r0, x, and x0.  Parameters are always provided, even if the PowerTransformerEnds have the same rated voltage.  In this case, the parameters are provided at the PowerTransformerEnd which has TransformerEnd.endNumber equal to 1.\n2) for a three Terminal PowerTransformer the three PowerTransformerEnds represent a star equivalent with each leg in the star represented by r, r0, x, and x0 values.\n3) For a three Terminal transformer each PowerTransformerEnd shall have g, g0, b and b0 values corresponding to the no load losses distributed on the three PowerTransformerEnds. The total no load loss shunt impedances may also be placed at one of the PowerTransformerEnds, preferably the end numbered 1, having the shunt values on end 1.  This is the preferred way.\n4) for a PowerTransformer with more than three Terminals the PowerTransformerEnd impedance values cannot be used. Instead use the TransformerMeshImpedance or split the transformer into multiple PowerTransformers.\nEach PowerTransformerEnd must be contained by a PowerTransformer. Because a PowerTransformerEnd (or any other object) can not be contained by more than one parent, a PowerTransformerEnd can not have an association to an EquipmentContainer (Substation, VoltageLevel, etc)."^^rdf:XMLLiteral .
-PowerTransformerEnd.b0 rdf:type rdfs:Property ;
+<PowerTransformerEnd.b0> rdf:type rdfs:Property ;
 	rdfs:label "b0"@en ;
-	rdfs:domain PowerTransformerEnd ;
+	rdfs:domain <PowerTransformerEnd> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence magnetizing branch susceptance."^^rdf:XMLLiteral .
-PowerTransformerEnd.g0 rdf:type rdfs:Property ;
+<PowerTransformerEnd.g0> rdf:type rdfs:Property ;
 	rdfs:label "g0"@en ;
-	rdfs:domain PowerTransformerEnd ;
+	rdfs:domain <PowerTransformerEnd> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence magnetizing branch conductance (star-model)."^^rdf:XMLLiteral .
-PowerTransformerEnd.phaseAngleClock rdf:type rdfs:Property ;
+<PowerTransformerEnd.phaseAngleClock> rdf:type rdfs:Property ;
 	rdfs:label "phaseAngleClock"@en ;
-	rdfs:domain PowerTransformerEnd ;
+	rdfs:domain <PowerTransformerEnd> ;
 	rdfs:range xsd:integer ;
 	rdfs:comment "Terminal voltage phase angle displacement where 360 degrees are represented with clock hours. The valid values are 0 to 11. For example, for the secondary side end of a transformer with vector group code of 'Dyn11', specify the connection kind as wye with neutral and specify the phase angle of the clock as 11.  The clock value of the transformer end number specified as 1, is assumed to be zero.  Note the transformer end number is not assumed to be the same as the terminal sequence number."^^rdf:XMLLiteral .
-PowerTransformerEnd.r0 rdf:type rdfs:Property ;
+<PowerTransformerEnd.r0> rdf:type rdfs:Property ;
 	rdfs:label "r0"@en ;
-	rdfs:domain PowerTransformerEnd ;
+	rdfs:domain <PowerTransformerEnd> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence series resistance (star-model) of the transformer end."^^rdf:XMLLiteral .
-PowerTransformerEnd.x0 rdf:type rdfs:Property ;
+<PowerTransformerEnd.x0> rdf:type rdfs:Property ;
 	rdfs:label "x0"@en ;
-	rdfs:domain PowerTransformerEnd ;
+	rdfs:domain <PowerTransformerEnd> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence series reactance of the transformer end."^^rdf:XMLLiteral .
 
-EnergyConnection rdf:type rdfs:Class ;
-	rdfs:subClassOf ConductingEquipment ;
+<EnergyConnection> rdf:type rdfs:Class ;
+	rdfs:subClassOf <ConductingEquipment> ;
 	rdfs:label "EnergyConnection"@en ;
 	rdfs:comment "A connection of energy generation or consumption on the power system model."^^rdf:XMLLiteral .
 
-TransformerEnd rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<TransformerEnd> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "TransformerEnd"@en ;
 	rdfs:comment "A conducting connection point of a power transformer. It corresponds to a physical transformer winding terminal.  In earlier CIM versions, the TransformerWinding class served a similar purpose, but this class is more flexible because it associates to terminal but is not a specialization of ConductingEquipment."^^rdf:XMLLiteral .
-TransformerEnd.grounded rdf:type rdfs:Property ;
+<TransformerEnd.grounded> rdf:type rdfs:Property ;
 	rdfs:label "grounded"@en ;
-	rdfs:domain TransformerEnd ;
+	rdfs:domain <TransformerEnd> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "(for Yn and Zn connections) True if the neutral is solidly grounded."^^rdf:XMLLiteral .
-TransformerEnd.rground rdf:type rdfs:Property ;
+<TransformerEnd.rground> rdf:type rdfs:Property ;
 	rdfs:label "rground"@en ;
-	rdfs:domain TransformerEnd ;
+	rdfs:domain <TransformerEnd> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "(for Yn and Zn connections) Resistance part of neutral impedance where 'grounded' is true."^^rdf:XMLLiteral .
-TransformerEnd.xground rdf:type rdfs:Property ;
+<TransformerEnd.xground> rdf:type rdfs:Property ;
 	rdfs:label "xground"@en ;
-	rdfs:domain TransformerEnd ;
+	rdfs:domain <TransformerEnd> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "(for Yn and Zn connections) Reactive part of neutral impedance where 'grounded' is true."^^rdf:XMLLiteral .
 
-RegulatingCondEq rdf:type rdfs:Class ;
-	rdfs:subClassOf EnergyConnection ;
+<RegulatingCondEq> rdf:type rdfs:Class ;
+	rdfs:subClassOf <EnergyConnection> ;
 	rdfs:label "RegulatingCondEq"@en ;
 	rdfs:comment "A type of conducting equipment that can regulate a quantity (i.e. voltage or flow) at a specific point in the network. "^^rdf:XMLLiteral .
 
-SeriesCompensator rdf:type rdfs:Class ;
-	rdfs:subClassOf ConductingEquipment ;
+<SeriesCompensator> rdf:type rdfs:Class ;
+	rdfs:subClassOf <ConductingEquipment> ;
 	rdfs:label "SeriesCompensator"@en ;
 	rdfs:comment "A Series Compensator is a series capacitor or reactor or an AC transmission line without charging susceptance.  It is a two terminal device."^^rdf:XMLLiteral .
-SeriesCompensator.r0 rdf:type rdfs:Property ;
+<SeriesCompensator.r0> rdf:type rdfs:Property ;
 	rdfs:label "r0"@en ;
-	rdfs:domain SeriesCompensator ;
+	rdfs:domain <SeriesCompensator> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence resistance."^^rdf:XMLLiteral .
-SeriesCompensator.varistorPresent rdf:type rdfs:Property ;
+<SeriesCompensator.varistorPresent> rdf:type rdfs:Property ;
 	rdfs:label "varistorPresent"@en ;
-	rdfs:domain SeriesCompensator ;
+	rdfs:domain <SeriesCompensator> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Describe if a metal oxide varistor (mov) for over voltage protection is configured in parallel with the series compensator. It is used for short circuit calculations."^^rdf:XMLLiteral .
-SeriesCompensator.varistorRatedCurrent rdf:type rdfs:Property ;
+<SeriesCompensator.varistorRatedCurrent> rdf:type rdfs:Property ;
 	rdfs:label "varistorRatedCurrent"@en ;
-	rdfs:domain SeriesCompensator ;
+	rdfs:domain <SeriesCompensator> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The maximum current the varistor is designed to handle at specified duration. It is used for short circuit calculations and exchanged only if SeriesCompensator.varistorPresent is true.\nThe attribute shall be a positive value."^^rdf:XMLLiteral .
-SeriesCompensator.varistorVoltageThreshold rdf:type rdfs:Property ;
+<SeriesCompensator.varistorVoltageThreshold> rdf:type rdfs:Property ;
 	rdfs:label "varistorVoltageThreshold"@en ;
-	rdfs:domain SeriesCompensator ;
+	rdfs:domain <SeriesCompensator> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The dc voltage at which the varistor starts conducting. It is used for short circuit calculations and exchanged only if SeriesCompensator.varistorPresent is true."^^rdf:XMLLiteral .
-SeriesCompensator.x0 rdf:type rdfs:Property ;
+<SeriesCompensator.x0> rdf:type rdfs:Property ;
 	rdfs:label "x0"@en ;
-	rdfs:domain SeriesCompensator ;
+	rdfs:domain <SeriesCompensator> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence reactance."^^rdf:XMLLiteral .
 
-NonlinearShuntCompensatorPoint rdf:type rdfs:Class ;
+<NonlinearShuntCompensatorPoint> rdf:type rdfs:Class ;
 	rdfs:label "NonlinearShuntCompensatorPoint"@en ;
 	rdfs:comment "A non linear shunt compensator bank or section admittance value. The number of NonlinearShuntCompenstorPoint instances associated with a NonlinearShuntCompensator shall be equal to ShuntCompensator.maximumSections. ShuntCompensator.sections shall only be set to one of the NonlinearShuntCompenstorPoint.sectionNumber. There is no interpolation between NonlinearShuntCompenstorPoint-s."^^rdf:XMLLiteral .
-NonlinearShuntCompensatorPoint.b0 rdf:type rdfs:Property ;
+<NonlinearShuntCompensatorPoint.b0> rdf:type rdfs:Property ;
 	rdfs:label "b0"@en ;
-	rdfs:domain NonlinearShuntCompensatorPoint ;
+	rdfs:domain <NonlinearShuntCompensatorPoint> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence shunt (charging) susceptance per section."^^rdf:XMLLiteral .
-NonlinearShuntCompensatorPoint.g0 rdf:type rdfs:Property ;
+<NonlinearShuntCompensatorPoint.g0> rdf:type rdfs:Property ;
 	rdfs:label "g0"@en ;
-	rdfs:domain NonlinearShuntCompensatorPoint ;
+	rdfs:domain <NonlinearShuntCompensatorPoint> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence shunt (charging) conductance per section."^^rdf:XMLLiteral .
 
-GroundingImpedance rdf:type rdfs:Class ;
-	rdfs:subClassOf EarthFaultCompensator ;
+<GroundingImpedance> rdf:type rdfs:Class ;
+	rdfs:subClassOf <EarthFaultCompensator> ;
 	rdfs:label "GroundingImpedance"@en ;
 	rdfs:comment "A fixed impedance device used for grounding."^^rdf:XMLLiteral .
-GroundingImpedance.x rdf:type rdfs:Property ;
+<GroundingImpedance.x> rdf:type rdfs:Property ;
 	rdfs:label "x"@en ;
-	rdfs:domain GroundingImpedance ;
+	rdfs:domain <GroundingImpedance> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Reactance of device."^^rdf:XMLLiteral .
 
-MutualCoupling rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<MutualCoupling> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "MutualCoupling"@en ;
 	rdfs:comment "This class represents the zero sequence line mutual coupling."^^rdf:XMLLiteral .
-MutualCoupling.b0ch rdf:type rdfs:Property ;
+<MutualCoupling.b0ch> rdf:type rdfs:Property ;
 	rdfs:label "b0ch"@en ;
-	rdfs:domain MutualCoupling ;
+	rdfs:domain <MutualCoupling> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence mutual coupling shunt (charging) susceptance, uniformly distributed, of the entire line section."^^rdf:XMLLiteral .
-MutualCoupling.distance11 rdf:type rdfs:Property ;
+<MutualCoupling.distance11> rdf:type rdfs:Property ;
 	rdfs:label "distance11"@en ;
-	rdfs:domain MutualCoupling ;
+	rdfs:domain <MutualCoupling> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Distance to the start of the coupled region from the first line's terminal having sequence number equal to 1."^^rdf:XMLLiteral .
-MutualCoupling.distance12 rdf:type rdfs:Property ;
+<MutualCoupling.distance12> rdf:type rdfs:Property ;
 	rdfs:label "distance12"@en ;
-	rdfs:domain MutualCoupling ;
+	rdfs:domain <MutualCoupling> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Distance to the end of the coupled region from the first line's terminal with sequence number equal to 1."^^rdf:XMLLiteral .
-MutualCoupling.distance21 rdf:type rdfs:Property ;
+<MutualCoupling.distance21> rdf:type rdfs:Property ;
 	rdfs:label "distance21"@en ;
-	rdfs:domain MutualCoupling ;
+	rdfs:domain <MutualCoupling> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Distance to the start of coupled region from the second line's terminal with sequence number equal to 1."^^rdf:XMLLiteral .
-MutualCoupling.distance22 rdf:type rdfs:Property ;
+<MutualCoupling.distance22> rdf:type rdfs:Property ;
 	rdfs:label "distance22"@en ;
-	rdfs:domain MutualCoupling ;
+	rdfs:domain <MutualCoupling> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Distance to the end of coupled region from the second line's terminal with sequence number equal to 1."^^rdf:XMLLiteral .
-MutualCoupling.g0ch rdf:type rdfs:Property ;
+<MutualCoupling.g0ch> rdf:type rdfs:Property ;
 	rdfs:label "g0ch"@en ;
-	rdfs:domain MutualCoupling ;
+	rdfs:domain <MutualCoupling> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence mutual coupling shunt (charging) conductance, uniformly distributed, of the entire line section."^^rdf:XMLLiteral .
-MutualCoupling.r0 rdf:type rdfs:Property ;
+<MutualCoupling.r0> rdf:type rdfs:Property ;
 	rdfs:label "r0"@en ;
-	rdfs:domain MutualCoupling ;
+	rdfs:domain <MutualCoupling> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence branch-to-branch mutual impedance coupling, resistance."^^rdf:XMLLiteral .
-MutualCoupling.x0 rdf:type rdfs:Property ;
+<MutualCoupling.x0> rdf:type rdfs:Property ;
 	rdfs:label "x0"@en ;
-	rdfs:domain MutualCoupling ;
+	rdfs:domain <MutualCoupling> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence branch-to-branch mutual impedance coupling, reactance."^^rdf:XMLLiteral .
-MutualCoupling.First_Terminal rdf:type rdfs:Property ;
+<MutualCoupling.First_Terminal> rdf:type rdfs:Property ;
 	rdfs:label "First_Terminal"@en ;
-	rdfs:domain MutualCoupling ;
-	rdfs:range Terminal ;
+	rdfs:domain <MutualCoupling> ;
+	rdfs:range <Terminal> ;
 	rdfs:comment "The starting terminal for the calculation of distances along the first branch of the mutual coupling.  Normally MutualCoupling would only be used for terminals of AC line segments.  The first and second terminals of a mutual coupling should point to different AC line segments."^^rdf:XMLLiteral .
-MutualCoupling.Second_Terminal rdf:type rdfs:Property ;
+<MutualCoupling.Second_Terminal> rdf:type rdfs:Property ;
 	rdfs:label "Second_Terminal"@en ;
-	rdfs:domain MutualCoupling ;
-	rdfs:range Terminal ;
+	rdfs:domain <MutualCoupling> ;
+	rdfs:range <Terminal> ;
 	rdfs:comment "The starting terminal for the calculation of distances along the second branch of the mutual coupling."^^rdf:XMLLiteral .
 
-LinearShuntCompensator rdf:type rdfs:Class ;
-	rdfs:subClassOf ShuntCompensator ;
+<LinearShuntCompensator> rdf:type rdfs:Class ;
+	rdfs:subClassOf <ShuntCompensator> ;
 	rdfs:label "LinearShuntCompensator"@en ;
 	rdfs:comment "A linear shunt compensator has banks or sections with equal admittance values."^^rdf:XMLLiteral .
-LinearShuntCompensator.b0PerSection rdf:type rdfs:Property ;
+<LinearShuntCompensator.b0PerSection> rdf:type rdfs:Property ;
 	rdfs:label "b0PerSection"@en ;
-	rdfs:domain LinearShuntCompensator ;
+	rdfs:domain <LinearShuntCompensator> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence shunt (charging) susceptance per section."^^rdf:XMLLiteral .
-LinearShuntCompensator.g0PerSection rdf:type rdfs:Property ;
+<LinearShuntCompensator.g0PerSection> rdf:type rdfs:Property ;
 	rdfs:label "g0PerSection"@en ;
-	rdfs:domain LinearShuntCompensator ;
+	rdfs:domain <LinearShuntCompensator> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence shunt (charging) conductance per section."^^rdf:XMLLiteral .
 
-EquivalentEquipment rdf:type rdfs:Class ;
-	rdfs:subClassOf ConductingEquipment ;
+<EquivalentEquipment> rdf:type rdfs:Class ;
+	rdfs:subClassOf <ConductingEquipment> ;
 	rdfs:label "EquivalentEquipment"@en ;
 	rdfs:comment "The class represents equivalent objects that are the result of a network reduction. The class is the base for equivalent objects of different types."^^rdf:XMLLiteral .
 
-EnergySource rdf:type rdfs:Class ;
-	rdfs:subClassOf EnergyConnection ;
+<EnergySource> rdf:type rdfs:Class ;
+	rdfs:subClassOf <EnergyConnection> ;
 	rdfs:label "EnergySource"@en ;
 	rdfs:comment "A generic equivalent for an energy supplier on a transmission or distribution voltage level."^^rdf:XMLLiteral .
-EnergySource.r rdf:type rdfs:Property ;
+<EnergySource.r> rdf:type rdfs:Property ;
 	rdfs:label "r"@en ;
-	rdfs:domain EnergySource ;
+	rdfs:domain <EnergySource> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Positive sequence Thevenin resistance."^^rdf:XMLLiteral .
-EnergySource.r0 rdf:type rdfs:Property ;
+<EnergySource.r0> rdf:type rdfs:Property ;
 	rdfs:label "r0"@en ;
-	rdfs:domain EnergySource ;
+	rdfs:domain <EnergySource> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence Thevenin resistance."^^rdf:XMLLiteral .
-EnergySource.rn rdf:type rdfs:Property ;
+<EnergySource.rn> rdf:type rdfs:Property ;
 	rdfs:label "rn"@en ;
-	rdfs:domain EnergySource ;
+	rdfs:domain <EnergySource> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Negative sequence Thevenin resistance."^^rdf:XMLLiteral .
-EnergySource.x rdf:type rdfs:Property ;
+<EnergySource.x> rdf:type rdfs:Property ;
 	rdfs:label "x"@en ;
-	rdfs:domain EnergySource ;
+	rdfs:domain <EnergySource> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Positive sequence Thevenin reactance."^^rdf:XMLLiteral .
-EnergySource.x0 rdf:type rdfs:Property ;
+<EnergySource.x0> rdf:type rdfs:Property ;
 	rdfs:label "x0"@en ;
-	rdfs:domain EnergySource ;
+	rdfs:domain <EnergySource> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence Thevenin reactance."^^rdf:XMLLiteral .
-EnergySource.xn rdf:type rdfs:Property ;
+<EnergySource.xn> rdf:type rdfs:Property ;
 	rdfs:label "xn"@en ;
-	rdfs:domain EnergySource ;
+	rdfs:domain <EnergySource> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Negative sequence Thevenin reactance."^^rdf:XMLLiteral .
 
-Equipment rdf:type rdfs:Class ;
-	rdfs:subClassOf PowerSystemResource ;
+<Equipment> rdf:type rdfs:Class ;
+	rdfs:subClassOf <PowerSystemResource> ;
 	rdfs:label "Equipment"@en ;
 	rdfs:comment "The parts of a power system that are physical devices, electronic or mechanical."^^rdf:XMLLiteral .
 
-Connector rdf:type rdfs:Class ;
-	rdfs:subClassOf ConductingEquipment ;
+<Connector> rdf:type rdfs:Class ;
+	rdfs:subClassOf <ConductingEquipment> ;
 	rdfs:label "Connector"@en ;
 	rdfs:comment "A conductor, or group of conductors, with negligible impedance, that serve to connect other conducting equipment within a single substation and are modelled with a single logical terminal."^^rdf:XMLLiteral .
 
-ShuntCompensator rdf:type rdfs:Class ;
-	rdfs:subClassOf RegulatingCondEq ;
+<ShuntCompensator> rdf:type rdfs:Class ;
+	rdfs:subClassOf <RegulatingCondEq> ;
 	rdfs:label "ShuntCompensator"@en ;
 	rdfs:comment "A shunt capacitor or reactor or switchable bank of shunt capacitors or reactors. A section of a shunt compensator is an individual capacitor or reactor. A negative value for bPerSection indicates that the compensator is a reactor. ShuntCompensator is a single terminal device.  Ground is implied."^^rdf:XMLLiteral .
 
-PowerTransformer rdf:type rdfs:Class ;
-	rdfs:subClassOf ConductingEquipment ;
+<PowerTransformer> rdf:type rdfs:Class ;
+	rdfs:subClassOf <ConductingEquipment> ;
 	rdfs:label "PowerTransformer"@en ;
 	rdfs:comment "An electrical device consisting of  two or more coupled windings, with or without a magnetic core, for introducing mutual coupling between electric circuits. Transformers can be used to control voltage and phase shift (active power flow).\nA power transformer may be composed of separate transformer tanks that need not be identical.\nA power transformer can be modelled with or without tanks and is intended for use in both balanced and unbalanced representations.   A power transformer typically has two terminals, but may have one (grounding), three or more terminals.\nThe inherited association ConductingEquipment.BaseVoltage should not be used.  The association from TransformerEnd to BaseVoltage should be used instead."^^rdf:XMLLiteral .
-PowerTransformer.beforeShCircuitHighestOperatingCurrent rdf:type rdfs:Property ;
+<PowerTransformer.beforeShCircuitHighestOperatingCurrent> rdf:type rdfs:Property ;
 	rdfs:label "beforeShCircuitHighestOperatingCurrent"@en ;
-	rdfs:domain PowerTransformer ;
+	rdfs:domain <PowerTransformer> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The highest operating current (Ib in IEC 60909-0) before short circuit (depends on network configuration and relevant reliability philosophy). It is used for calculation of the impedance correction factor KT defined in IEC 60909-0."^^rdf:XMLLiteral .
-PowerTransformer.beforeShCircuitHighestOperatingVoltage rdf:type rdfs:Property ;
+<PowerTransformer.beforeShCircuitHighestOperatingVoltage> rdf:type rdfs:Property ;
 	rdfs:label "beforeShCircuitHighestOperatingVoltage"@en ;
-	rdfs:domain PowerTransformer ;
+	rdfs:domain <PowerTransformer> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The highest operating voltage (Ub in IEC 60909-0) before short circuit. It is used for calculation of the impedance correction factor KT defined in IEC 60909-0. This is worst case voltage on the low side winding (3.7.1 of IEC 60909:2001). Used to define operating conditions."^^rdf:XMLLiteral .
-PowerTransformer.beforeShortCircuitAnglePf rdf:type rdfs:Property ;
+<PowerTransformer.beforeShortCircuitAnglePf> rdf:type rdfs:Property ;
 	rdfs:label "beforeShortCircuitAnglePf"@en ;
-	rdfs:domain PowerTransformer ;
+	rdfs:domain <PowerTransformer> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The angle of power factor before short circuit (phib in IEC 60909-0). It is used for calculation of the impedance correction factor KT defined in IEC 60909-0. This is the worst case power factor. Used to define operating conditions."^^rdf:XMLLiteral .
-PowerTransformer.highSideMinOperatingU rdf:type rdfs:Property ;
+<PowerTransformer.highSideMinOperatingU> rdf:type rdfs:Property ;
 	rdfs:label "highSideMinOperatingU"@en ;
-	rdfs:domain PowerTransformer ;
+	rdfs:domain <PowerTransformer> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The minimum operating voltage (uQmin in IEC 60909-0) at the high voltage side (Q side) of the unit transformer of the power station unit. A value well established from long-term operating experience of the system. It is used for calculation of the impedance correction factor KG defined in IEC 60909-0."^^rdf:XMLLiteral .
-PowerTransformer.isPartOfGeneratorUnit rdf:type rdfs:Property ;
+<PowerTransformer.isPartOfGeneratorUnit> rdf:type rdfs:Property ;
 	rdfs:label "isPartOfGeneratorUnit"@en ;
-	rdfs:domain PowerTransformer ;
+	rdfs:domain <PowerTransformer> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Indicates whether the machine is part of a power station unit. Used for short circuit data exchange according to IEC 60909.  It has an impact on how the correction factors are calculated for transformers, since the transformer is not necessarily part of a synchronous machine and generating unit. It is not always possible to derive this information from the model. This is why the attribute is necessary."^^rdf:XMLLiteral .
-PowerTransformer.operationalValuesConsidered rdf:type rdfs:Property ;
+<PowerTransformer.operationalValuesConsidered> rdf:type rdfs:Property ;
 	rdfs:label "operationalValuesConsidered"@en ;
-	rdfs:domain PowerTransformer ;
+	rdfs:domain <PowerTransformer> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "It is used to define if the data (other attributes related to short circuit data exchange) defines long term operational conditions or not. Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
 
-RotatingMachine rdf:type rdfs:Class ;
-	rdfs:subClassOf RegulatingCondEq ;
+<RotatingMachine> rdf:type rdfs:Class ;
+	rdfs:subClassOf <RegulatingCondEq> ;
 	rdfs:label "RotatingMachine"@en ;
 	rdfs:comment "A rotating machine which may be used as a generator or motor."^^rdf:XMLLiteral .
 
-PetersenCoil rdf:type rdfs:Class ;
-	rdfs:subClassOf EarthFaultCompensator ;
+<PetersenCoil> rdf:type rdfs:Class ;
+	rdfs:subClassOf <EarthFaultCompensator> ;
 	rdfs:label "PetersenCoil"@en ;
 	rdfs:comment "A variable impedance device normally used to offset line charging during single line faults in an ungrounded section of network."^^rdf:XMLLiteral .
-PetersenCoil.mode rdf:type rdfs:Property ;
+<PetersenCoil.mode> rdf:type rdfs:Property ;
 	rdfs:label "mode"@en ;
-	rdfs:domain PetersenCoil ;
+	rdfs:domain <PetersenCoil> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The mode of operation of the Petersen coil."^^rdf:XMLLiteral .
-PetersenCoil.nominalU rdf:type rdfs:Property ;
+<PetersenCoil.nominalU> rdf:type rdfs:Property ;
 	rdfs:label "nominalU"@en ;
-	rdfs:domain PetersenCoil ;
+	rdfs:domain <PetersenCoil> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The nominal voltage for which the coil is designed."^^rdf:XMLLiteral .
-PetersenCoil.offsetCurrent rdf:type rdfs:Property ;
+<PetersenCoil.offsetCurrent> rdf:type rdfs:Property ;
 	rdfs:label "offsetCurrent"@en ;
-	rdfs:domain PetersenCoil ;
+	rdfs:domain <PetersenCoil> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The offset current that the Petersen coil controller is operating from the resonant point.  This is normally a fixed amount for which the controller is configured and could be positive or negative.  Typically 0 to 60 A depending on voltage and resonance conditions."^^rdf:XMLLiteral .
-PetersenCoil.positionCurrent rdf:type rdfs:Property ;
+<PetersenCoil.positionCurrent> rdf:type rdfs:Property ;
 	rdfs:label "positionCurrent"@en ;
-	rdfs:domain PetersenCoil ;
+	rdfs:domain <PetersenCoil> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The control current used to control the Petersen coil also known as the position current.  Typically in the range of 20 mA to 200 mA."^^rdf:XMLLiteral .
-PetersenCoil.xGroundMax rdf:type rdfs:Property ;
+<PetersenCoil.xGroundMax> rdf:type rdfs:Property ;
 	rdfs:label "xGroundMax"@en ;
-	rdfs:domain PetersenCoil ;
+	rdfs:domain <PetersenCoil> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The maximum reactance. "^^rdf:XMLLiteral .
-PetersenCoil.xGroundMin rdf:type rdfs:Property ;
+<PetersenCoil.xGroundMin> rdf:type rdfs:Property ;
 	rdfs:label "xGroundMin"@en ;
-	rdfs:domain PetersenCoil ;
+	rdfs:domain <PetersenCoil> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The minimum reactance."^^rdf:XMLLiteral .
-PetersenCoil.xGroundNominal rdf:type rdfs:Property ;
+<PetersenCoil.xGroundNominal> rdf:type rdfs:Property ;
 	rdfs:label "xGroundNominal"@en ;
-	rdfs:domain PetersenCoil ;
+	rdfs:domain <PetersenCoil> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The nominal reactance.  This is the operating point (normally over compensation) that is defined based on the resonance point in the healthy network condition.  The impedance is calculated based on nominal voltage divided by position current."^^rdf:XMLLiteral .
 
-EquivalentBranch rdf:type rdfs:Class ;
-	rdfs:subClassOf EquivalentEquipment ;
+<EquivalentBranch> rdf:type rdfs:Class ;
+	rdfs:subClassOf <EquivalentEquipment> ;
 	rdfs:label "EquivalentBranch"@en ;
 	rdfs:comment "The class represents equivalent branches. In cases where a transformer phase shift is modelled and the EquivalentBranch is spanning the same nodes, the impedance quantities for the EquivalentBranch shall consider the needed phase shift."^^rdf:XMLLiteral .
-EquivalentBranch.negativeR12 rdf:type rdfs:Property ;
+<EquivalentBranch.negativeR12> rdf:type rdfs:Property ;
 	rdfs:label "negativeR12"@en ;
-	rdfs:domain EquivalentBranch ;
+	rdfs:domain <EquivalentBranch> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Negative sequence series resistance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909.\nEquivalentBranch is a result of network reduction prior to the data exchange."^^rdf:XMLLiteral .
-EquivalentBranch.negativeR21 rdf:type rdfs:Property ;
+<EquivalentBranch.negativeR21> rdf:type rdfs:Property ;
 	rdfs:label "negativeR21"@en ;
-	rdfs:domain EquivalentBranch ;
+	rdfs:domain <EquivalentBranch> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Negative sequence series resistance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909.\nEquivalentBranch is a result of network reduction prior to the data exchange."^^rdf:XMLLiteral .
-EquivalentBranch.negativeX12 rdf:type rdfs:Property ;
+<EquivalentBranch.negativeX12> rdf:type rdfs:Property ;
 	rdfs:label "negativeX12"@en ;
-	rdfs:domain EquivalentBranch ;
+	rdfs:domain <EquivalentBranch> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Negative sequence series reactance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909.\nUsage : EquivalentBranch is a result of network reduction prior to the data exchange."^^rdf:XMLLiteral .
-EquivalentBranch.negativeX21 rdf:type rdfs:Property ;
+<EquivalentBranch.negativeX21> rdf:type rdfs:Property ;
 	rdfs:label "negativeX21"@en ;
-	rdfs:domain EquivalentBranch ;
+	rdfs:domain <EquivalentBranch> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Negative sequence series reactance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909.\nUsage: EquivalentBranch is a result of network reduction prior to the data exchange."^^rdf:XMLLiteral .
-EquivalentBranch.positiveR12 rdf:type rdfs:Property ;
+<EquivalentBranch.positiveR12> rdf:type rdfs:Property ;
 	rdfs:label "positiveR12"@en ;
-	rdfs:domain EquivalentBranch ;
+	rdfs:domain <EquivalentBranch> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Positive sequence series resistance from terminal sequence  1 to terminal sequence 2 . Used for short circuit data exchange according to IEC 60909. \nEquivalentBranch is a result of network reduction prior to the data exchange. "^^rdf:XMLLiteral .
-EquivalentBranch.positiveR21 rdf:type rdfs:Property ;
+<EquivalentBranch.positiveR21> rdf:type rdfs:Property ;
 	rdfs:label "positiveR21"@en ;
-	rdfs:domain EquivalentBranch ;
+	rdfs:domain <EquivalentBranch> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Positive sequence series resistance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909.\nEquivalentBranch is a result of network reduction prior to the data exchange."^^rdf:XMLLiteral .
-EquivalentBranch.positiveX12 rdf:type rdfs:Property ;
+<EquivalentBranch.positiveX12> rdf:type rdfs:Property ;
 	rdfs:label "positiveX12"@en ;
-	rdfs:domain EquivalentBranch ;
+	rdfs:domain <EquivalentBranch> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Positive sequence series reactance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909.\nUsage : EquivalentBranch is a result of network reduction prior to the data exchange."^^rdf:XMLLiteral .
-EquivalentBranch.positiveX21 rdf:type rdfs:Property ;
+<EquivalentBranch.positiveX21> rdf:type rdfs:Property ;
 	rdfs:label "positiveX21"@en ;
-	rdfs:domain EquivalentBranch ;
+	rdfs:domain <EquivalentBranch> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Positive sequence series reactance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909.\nUsage : EquivalentBranch is a result of network reduction prior to the data exchange."^^rdf:XMLLiteral .
-EquivalentBranch.zeroR12 rdf:type rdfs:Property ;
+<EquivalentBranch.zeroR12> rdf:type rdfs:Property ;
 	rdfs:label "zeroR12"@en ;
-	rdfs:domain EquivalentBranch ;
+	rdfs:domain <EquivalentBranch> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence series resistance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909.\nEquivalentBranch is a result of network reduction prior to the data exchange."^^rdf:XMLLiteral .
-EquivalentBranch.zeroR21 rdf:type rdfs:Property ;
+<EquivalentBranch.zeroR21> rdf:type rdfs:Property ;
 	rdfs:label "zeroR21"@en ;
-	rdfs:domain EquivalentBranch ;
+	rdfs:domain <EquivalentBranch> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence series resistance from terminal sequence  2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909.\nUsage : EquivalentBranch is a result of network reduction prior to the data exchange."^^rdf:XMLLiteral .
-EquivalentBranch.zeroX12 rdf:type rdfs:Property ;
+<EquivalentBranch.zeroX12> rdf:type rdfs:Property ;
 	rdfs:label "zeroX12"@en ;
-	rdfs:domain EquivalentBranch ;
+	rdfs:domain <EquivalentBranch> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence series reactance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909.\nUsage : EquivalentBranch is a result of network reduction prior to the data exchange."^^rdf:XMLLiteral .
-EquivalentBranch.zeroX21 rdf:type rdfs:Property ;
+<EquivalentBranch.zeroX21> rdf:type rdfs:Property ;
 	rdfs:label "zeroX21"@en ;
-	rdfs:domain EquivalentBranch ;
+	rdfs:domain <EquivalentBranch> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence series reactance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909.\nUsage : EquivalentBranch is a result of network reduction prior to the data exchange."^^rdf:XMLLiteral .
 
-ConductingEquipment rdf:type rdfs:Class ;
-	rdfs:subClassOf Equipment ;
+<ConductingEquipment> rdf:type rdfs:Class ;
+	rdfs:subClassOf <Equipment> ;
 	rdfs:label "ConductingEquipment"@en ;
 	rdfs:comment "The parts of the AC power system that are designed to carry current or that are conductively connected through terminals."^^rdf:XMLLiteral .
 
-Conductor rdf:type rdfs:Class ;
-	rdfs:subClassOf ConductingEquipment ;
+<Conductor> rdf:type rdfs:Class ;
+	rdfs:subClassOf <ConductingEquipment> ;
 	rdfs:label "Conductor"@en ;
 	rdfs:comment "Combination of conducting material with consistent electrical characteristics, building a single electrical system, used to carry current between points in the power system.  "^^rdf:XMLLiteral .
 
-EarthFaultCompensator rdf:type rdfs:Class ;
-	rdfs:subClassOf ConductingEquipment ;
+<EarthFaultCompensator> rdf:type rdfs:Class ;
+	rdfs:subClassOf <ConductingEquipment> ;
 	rdfs:label "EarthFaultCompensator"@en ;
 	rdfs:comment "A conducting equipment used to represent a connection to ground which is typically used to compensate earth faults.   An earth fault compensator device modelled with a single terminal implies a second terminal solidly connected to ground.  If two terminals are modelled, the ground is not assumed and normal connection rules apply."^^rdf:XMLLiteral .
-EarthFaultCompensator.r rdf:type rdfs:Property ;
+<EarthFaultCompensator.r> rdf:type rdfs:Property ;
 	rdfs:label "r"@en ;
-	rdfs:domain EarthFaultCompensator ;
+	rdfs:domain <EarthFaultCompensator> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Nominal resistance of device."^^rdf:XMLLiteral .
 
-ExternalNetworkInjection rdf:type rdfs:Class ;
-	rdfs:subClassOf RegulatingCondEq ;
+<ExternalNetworkInjection> rdf:type rdfs:Class ;
+	rdfs:subClassOf <RegulatingCondEq> ;
 	rdfs:label "ExternalNetworkInjection"@en ;
 	rdfs:comment "This class represents the external network and it is used for IEC 60909 calculations."^^rdf:XMLLiteral .
-ExternalNetworkInjection.ikSecond rdf:type rdfs:Property ;
+<ExternalNetworkInjection.ikSecond> rdf:type rdfs:Property ;
 	rdfs:label "ikSecond"@en ;
-	rdfs:domain ExternalNetworkInjection ;
+	rdfs:domain <ExternalNetworkInjection> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Indicates whether initial symmetrical short-circuit current and power have been calculated according to IEC (Ik\").  Used only if short circuit calculations are done according to superposition method."^^rdf:XMLLiteral .
-ExternalNetworkInjection.maxInitialSymShCCurrent rdf:type rdfs:Property ;
+<ExternalNetworkInjection.maxInitialSymShCCurrent> rdf:type rdfs:Property ;
 	rdfs:label "maxInitialSymShCCurrent"@en ;
-	rdfs:domain ExternalNetworkInjection ;
+	rdfs:domain <ExternalNetworkInjection> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "  Maximum initial symmetrical short-circuit currents (Ik\" max) in A (Ik\" = Sk\"/(SQRT(3) Un)). Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
-ExternalNetworkInjection.maxR0ToX0Ratio rdf:type rdfs:Property ;
+<ExternalNetworkInjection.maxR0ToX0Ratio> rdf:type rdfs:Property ;
 	rdfs:label "maxR0ToX0Ratio"@en ;
-	rdfs:domain ExternalNetworkInjection ;
+	rdfs:domain <ExternalNetworkInjection> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Maximum ratio of zero sequence resistance of Network Feeder to its zero sequence reactance (R(0)/X(0) max). Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
-ExternalNetworkInjection.maxR1ToX1Ratio rdf:type rdfs:Property ;
+<ExternalNetworkInjection.maxR1ToX1Ratio> rdf:type rdfs:Property ;
 	rdfs:label "maxR1ToX1Ratio"@en ;
-	rdfs:domain ExternalNetworkInjection ;
+	rdfs:domain <ExternalNetworkInjection> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Maximum ratio of positive sequence resistance of Network Feeder to its positive sequence reactance (R(1)/X(1) max). Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
-ExternalNetworkInjection.maxZ0ToZ1Ratio rdf:type rdfs:Property ;
+<ExternalNetworkInjection.maxZ0ToZ1Ratio> rdf:type rdfs:Property ;
 	rdfs:label "maxZ0ToZ1Ratio"@en ;
-	rdfs:domain ExternalNetworkInjection ;
+	rdfs:domain <ExternalNetworkInjection> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Maximum ratio of zero sequence impedance to its positive sequence impedance (Z(0)/Z(1) max). Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
-ExternalNetworkInjection.minInitialSymShCCurrent rdf:type rdfs:Property ;
+<ExternalNetworkInjection.minInitialSymShCCurrent> rdf:type rdfs:Property ;
 	rdfs:label "minInitialSymShCCurrent"@en ;
-	rdfs:domain ExternalNetworkInjection ;
+	rdfs:domain <ExternalNetworkInjection> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Minimum initial symmetrical short-circuit currents (Ik\" min) in A (Ik\" = Sk\"/(SQRT(3) Un)). Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
-ExternalNetworkInjection.minR0ToX0Ratio rdf:type rdfs:Property ;
+<ExternalNetworkInjection.minR0ToX0Ratio> rdf:type rdfs:Property ;
 	rdfs:label "minR0ToX0Ratio"@en ;
-	rdfs:domain ExternalNetworkInjection ;
+	rdfs:domain <ExternalNetworkInjection> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Indicates whether initial symmetrical short-circuit current and power have been calculated according to IEC (Ik\"). Used for short circuit data exchange according to IEC 6090."^^rdf:XMLLiteral .
-ExternalNetworkInjection.minR1ToX1Ratio rdf:type rdfs:Property ;
+<ExternalNetworkInjection.minR1ToX1Ratio> rdf:type rdfs:Property ;
 	rdfs:label "minR1ToX1Ratio"@en ;
-	rdfs:domain ExternalNetworkInjection ;
+	rdfs:domain <ExternalNetworkInjection> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Minimum ratio of positive sequence resistance of Network Feeder to its positive sequence reactance (R(1)/X(1) min). Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
-ExternalNetworkInjection.minZ0ToZ1Ratio rdf:type rdfs:Property ;
+<ExternalNetworkInjection.minZ0ToZ1Ratio> rdf:type rdfs:Property ;
 	rdfs:label "minZ0ToZ1Ratio"@en ;
-	rdfs:domain ExternalNetworkInjection ;
+	rdfs:domain <ExternalNetworkInjection> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Minimum ratio of zero sequence impedance to its positive sequence impedance (Z(0)/Z(1) min). Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
-ExternalNetworkInjection.voltageFactor rdf:type rdfs:Property ;
+<ExternalNetworkInjection.voltageFactor> rdf:type rdfs:Property ;
 	rdfs:label "voltageFactor"@en ;
-	rdfs:domain ExternalNetworkInjection ;
+	rdfs:domain <ExternalNetworkInjection> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Voltage factor in pu, which was used to calculate short-circuit current Ik\" and power Sk\".  Used only if short circuit calculations are done according to superposition method."^^rdf:XMLLiteral .
 
-PowerSystemResource rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<PowerSystemResource> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "PowerSystemResource"@en ;
 	rdfs:comment "A power system resource (PSR) can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated."^^rdf:XMLLiteral .
 
-ACDCTerminal rdf:type rdfs:Class ;
-	rdfs:subClassOf IdentifiedObject ;
+<ACDCTerminal> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "ACDCTerminal"@en ;
 	rdfs:comment "An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^rdf:XMLLiteral .
 
-ACLineSegment rdf:type rdfs:Class ;
-	rdfs:subClassOf Conductor ;
+<ACLineSegment> rdf:type rdfs:Class ;
+	rdfs:subClassOf <Conductor> ;
 	rdfs:label "ACLineSegment"@en ;
 	rdfs:comment "A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system.\nFor symmetrical, transposed three phase lines, it is sufficient to use attributes of the line segment, which describe impedances and admittances for the entire length of the segment.  Additionally impedances can be computed by using length and associated per length impedances.\nThe BaseVoltage at the two ends of ACLineSegments in a Line shall have the same BaseVoltage.nominalVoltage. However, boundary lines may have slightly different BaseVoltage.nominalVoltages and variation is allowed. Larger voltage difference in general requires use of an equivalent branch."^^rdf:XMLLiteral .
-ACLineSegment.b0ch rdf:type rdfs:Property ;
+<ACLineSegment.b0ch> rdf:type rdfs:Property ;
 	rdfs:label "b0ch"@en ;
-	rdfs:domain ACLineSegment ;
+	rdfs:domain <ACLineSegment> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence shunt (charging) susceptance, uniformly distributed, of the entire line section."^^rdf:XMLLiteral .
-ACLineSegment.g0ch rdf:type rdfs:Property ;
+<ACLineSegment.g0ch> rdf:type rdfs:Property ;
 	rdfs:label "g0ch"@en ;
-	rdfs:domain ACLineSegment ;
+	rdfs:domain <ACLineSegment> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence shunt (charging) conductance, uniformly distributed, of the entire line section."^^rdf:XMLLiteral .
-ACLineSegment.r0 rdf:type rdfs:Property ;
+<ACLineSegment.r0> rdf:type rdfs:Property ;
 	rdfs:label "r0"@en ;
-	rdfs:domain ACLineSegment ;
+	rdfs:domain <ACLineSegment> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence series resistance of the entire line section."^^rdf:XMLLiteral .
-ACLineSegment.shortCircuitEndTemperature rdf:type rdfs:Property ;
+<ACLineSegment.shortCircuitEndTemperature> rdf:type rdfs:Property ;
 	rdfs:label "shortCircuitEndTemperature"@en ;
-	rdfs:domain ACLineSegment ;
+	rdfs:domain <ACLineSegment> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Maximum permitted temperature at the end of SC for the calculation of minimum short-circuit currents. Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
-ACLineSegment.x0 rdf:type rdfs:Property ;
+<ACLineSegment.x0> rdf:type rdfs:Property ;
 	rdfs:label "x0"@en ;
-	rdfs:domain ACLineSegment ;
+	rdfs:domain <ACLineSegment> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence series reactance of the entire line section."^^rdf:XMLLiteral .
 
-BusbarSection rdf:type rdfs:Class ;
-	rdfs:subClassOf Connector ;
+<BusbarSection> rdf:type rdfs:Class ;
+	rdfs:subClassOf <Connector> ;
 	rdfs:label "BusbarSection"@en ;
 	rdfs:comment "A conductor, or group of conductors, with negligible impedance, that serve to connect other conducting equipment within a single substation. \nVoltage measurements are typically obtained from voltage transformers that are connected to busbar sections. A bus bar section may have many physical terminals but for analysis is modelled with exactly one logical terminal."^^rdf:XMLLiteral .
-BusbarSection.ipMax rdf:type rdfs:Property ;
+<BusbarSection.ipMax> rdf:type rdfs:Property ;
 	rdfs:label "ipMax"@en ;
-	rdfs:domain BusbarSection ;
+	rdfs:domain <BusbarSection> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Maximum allowable peak short-circuit current of busbar (Ipmax in IEC 60909-0). \nMechanical limit of the busbar in the substation itself. Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
 
-AsynchronousMachine rdf:type rdfs:Class ;
-	rdfs:subClassOf RotatingMachine ;
+<AsynchronousMachine> rdf:type rdfs:Class ;
+	rdfs:subClassOf <RotatingMachine> ;
 	rdfs:label "AsynchronousMachine"@en ;
 	rdfs:comment "A rotating machine whose shaft rotates asynchronously with the electrical field.  Also known as an induction machine with no external connection to the rotor windings, e.g. squirrel-cage induction machine."^^rdf:XMLLiteral .
-AsynchronousMachine.converterFedDrive rdf:type rdfs:Property ;
+<AsynchronousMachine.converterFedDrive> rdf:type rdfs:Property ;
 	rdfs:label "converterFedDrive"@en ;
-	rdfs:domain AsynchronousMachine ;
+	rdfs:domain <AsynchronousMachine> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Indicates whether the machine is a converter fed drive. Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
-AsynchronousMachine.efficiency rdf:type rdfs:Property ;
+<AsynchronousMachine.efficiency> rdf:type rdfs:Property ;
 	rdfs:label "efficiency"@en ;
-	rdfs:domain AsynchronousMachine ;
+	rdfs:domain <AsynchronousMachine> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Efficiency of the asynchronous machine at nominal operation as a percentage. Indicator for converter drive motors. Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
-AsynchronousMachine.iaIrRatio rdf:type rdfs:Property ;
+<AsynchronousMachine.iaIrRatio> rdf:type rdfs:Property ;
 	rdfs:label "iaIrRatio"@en ;
-	rdfs:domain AsynchronousMachine ;
+	rdfs:domain <AsynchronousMachine> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Ratio of locked-rotor current to the rated current of the motor (Ia/Ir). Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
-AsynchronousMachine.polePairNumber rdf:type rdfs:Property ;
+<AsynchronousMachine.polePairNumber> rdf:type rdfs:Property ;
 	rdfs:label "polePairNumber"@en ;
-	rdfs:domain AsynchronousMachine ;
+	rdfs:domain <AsynchronousMachine> ;
 	rdfs:range xsd:integer ;
 	rdfs:comment "Number of pole pairs of stator. Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
-AsynchronousMachine.ratedMechanicalPower rdf:type rdfs:Property ;
+<AsynchronousMachine.ratedMechanicalPower> rdf:type rdfs:Property ;
 	rdfs:label "ratedMechanicalPower"@en ;
-	rdfs:domain AsynchronousMachine ;
+	rdfs:domain <AsynchronousMachine> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Rated mechanical power (Pr in IEC 60909-0). Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
-AsynchronousMachine.reversible rdf:type rdfs:Property ;
+<AsynchronousMachine.reversible> rdf:type rdfs:Property ;
 	rdfs:label "reversible"@en ;
-	rdfs:domain AsynchronousMachine ;
+	rdfs:domain <AsynchronousMachine> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Indicates for converter drive motors if the power can be reversible. Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
-AsynchronousMachine.rxLockedRotorRatio rdf:type rdfs:Property ;
+<AsynchronousMachine.rxLockedRotorRatio> rdf:type rdfs:Property ;
 	rdfs:label "rxLockedRotorRatio"@en ;
-	rdfs:domain AsynchronousMachine ;
+	rdfs:domain <AsynchronousMachine> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Locked rotor ratio (R/X). Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
 
-SynchronousMachine rdf:type rdfs:Class ;
-	rdfs:subClassOf RotatingMachine ;
+<SynchronousMachine> rdf:type rdfs:Class ;
+	rdfs:subClassOf <RotatingMachine> ;
 	rdfs:label "SynchronousMachine"@en ;
 	rdfs:comment "An electromechanical device that operates with shaft rotating synchronously with the network. It is a single machine operating either as a generator or synchronous condenser or pump."^^rdf:XMLLiteral .
-SynchronousMachine.earthing rdf:type rdfs:Property ;
+<SynchronousMachine.earthing> rdf:type rdfs:Property ;
 	rdfs:label "earthing"@en ;
-	rdfs:domain SynchronousMachine ;
+	rdfs:domain <SynchronousMachine> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Indicates whether or not the generator is earthed. Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
-SynchronousMachine.earthingStarPointR rdf:type rdfs:Property ;
+<SynchronousMachine.earthingStarPointR> rdf:type rdfs:Property ;
 	rdfs:label "earthingStarPointR"@en ;
-	rdfs:domain SynchronousMachine ;
+	rdfs:domain <SynchronousMachine> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Generator star point earthing resistance (Re). Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
-SynchronousMachine.earthingStarPointX rdf:type rdfs:Property ;
+<SynchronousMachine.earthingStarPointX> rdf:type rdfs:Property ;
 	rdfs:label "earthingStarPointX"@en ;
-	rdfs:domain SynchronousMachine ;
+	rdfs:domain <SynchronousMachine> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Generator star point earthing reactance (Xe). Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
-SynchronousMachine.ikk rdf:type rdfs:Property ;
+<SynchronousMachine.ikk> rdf:type rdfs:Property ;
 	rdfs:label "ikk"@en ;
-	rdfs:domain SynchronousMachine ;
+	rdfs:domain <SynchronousMachine> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Steady-state short-circuit current (in A for the profile) of generator with compound excitation during 3-phase short circuit.\n- Ikk=0: Generator with no compound excitation.\n- Ikk&lt;&gt;0: Generator with compound excitation.\nIkk is used to calculate the minimum steady-state short-circuit current for generators with compound excitation.\n(4.6.1.2 in IEC 60909-0:2001).\nUsed only for single fed short circuit on a generator. (4.3.4.2. in IEC 60909-0:2001)."^^rdf:XMLLiteral .
-SynchronousMachine.mu rdf:type rdfs:Property ;
+<SynchronousMachine.mu> rdf:type rdfs:Property ;
 	rdfs:label "mu"@en ;
-	rdfs:domain SynchronousMachine ;
+	rdfs:domain <SynchronousMachine> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Factor to calculate the breaking current (Section 4.5.2.1 in IEC 60909-0).\nUsed only for single fed short circuit on a generator (Section 4.3.4.2. in IEC 60909-0)."^^rdf:XMLLiteral .
-SynchronousMachine.r rdf:type rdfs:Property ;
+<SynchronousMachine.r> rdf:type rdfs:Property ;
 	rdfs:label "r"@en ;
-	rdfs:domain SynchronousMachine ;
+	rdfs:domain <SynchronousMachine> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Equivalent resistance (RG) of generator. RG is considered for the calculation of all currents, except for the calculation of the peak current ip. Used for short circuit data exchange according to IEC 60909."^^rdf:XMLLiteral .
-SynchronousMachine.r0 rdf:type rdfs:Property ;
+<SynchronousMachine.r0> rdf:type rdfs:Property ;
 	rdfs:label "r0"@en ;
-	rdfs:domain SynchronousMachine ;
+	rdfs:domain <SynchronousMachine> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence resistance of the synchronous machine."^^rdf:XMLLiteral .
-SynchronousMachine.r2 rdf:type rdfs:Property ;
+<SynchronousMachine.r2> rdf:type rdfs:Property ;
 	rdfs:label "r2"@en ;
-	rdfs:domain SynchronousMachine ;
+	rdfs:domain <SynchronousMachine> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Negative sequence resistance."^^rdf:XMLLiteral .
-SynchronousMachine.satDirectSubtransX rdf:type rdfs:Property ;
+<SynchronousMachine.satDirectSubtransX> rdf:type rdfs:Property ;
 	rdfs:label "satDirectSubtransX"@en ;
-	rdfs:domain SynchronousMachine ;
+	rdfs:domain <SynchronousMachine> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Direct-axis subtransient reactance saturated, also known as Xd\"sat."^^rdf:XMLLiteral .
-SynchronousMachine.satDirectSyncX rdf:type rdfs:Property ;
+<SynchronousMachine.satDirectSyncX> rdf:type rdfs:Property ;
 	rdfs:label "satDirectSyncX"@en ;
-	rdfs:domain SynchronousMachine ;
+	rdfs:domain <SynchronousMachine> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Direct-axes saturated synchronous reactance (xdsat); reciprocal of short-circuit ration. Used for short circuit data exchange, only for single fed short circuit on a generator. (4.3.4.2. in IEC 60909-0:2001)."^^rdf:XMLLiteral .
-SynchronousMachine.satDirectTransX rdf:type rdfs:Property ;
+<SynchronousMachine.satDirectTransX> rdf:type rdfs:Property ;
 	rdfs:label "satDirectTransX"@en ;
-	rdfs:domain SynchronousMachine ;
+	rdfs:domain <SynchronousMachine> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Saturated Direct-axis transient reactance. The attribute is primarily used for short circuit calculations according to ANSI."^^rdf:XMLLiteral .
-SynchronousMachine.shortCircuitRotorType rdf:type rdfs:Property ;
+<SynchronousMachine.shortCircuitRotorType> rdf:type rdfs:Property ;
 	rdfs:label "shortCircuitRotorType"@en ;
-	rdfs:domain SynchronousMachine ;
+	rdfs:domain <SynchronousMachine> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Type of rotor, used by short circuit applications, only for single fed short circuit according to IEC 60909."^^rdf:XMLLiteral .
-SynchronousMachine.voltageRegulationRange rdf:type rdfs:Property ;
+<SynchronousMachine.voltageRegulationRange> rdf:type rdfs:Property ;
 	rdfs:label "voltageRegulationRange"@en ;
-	rdfs:domain SynchronousMachine ;
+	rdfs:domain <SynchronousMachine> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Range of generator voltage regulation (PG in IEC 60909-0) used for calculation of the impedance correction factor KG defined in IEC 60909-0.\nThis attribute is used to describe the operating voltage of the generating unit."^^rdf:XMLLiteral .
-SynchronousMachine.x0 rdf:type rdfs:Property ;
+<SynchronousMachine.x0> rdf:type rdfs:Property ;
 	rdfs:label "x0"@en ;
-	rdfs:domain SynchronousMachine ;
+	rdfs:domain <SynchronousMachine> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence reactance of the synchronous machine."^^rdf:XMLLiteral .
-SynchronousMachine.x2 rdf:type rdfs:Property ;
+<SynchronousMachine.x2> rdf:type rdfs:Property ;
 	rdfs:label "x2"@en ;
-	rdfs:domain SynchronousMachine ;
+	rdfs:domain <SynchronousMachine> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Negative sequence reactance."^^rdf:XMLLiteral .
 
-EquivalentInjection rdf:type rdfs:Class ;
-	rdfs:subClassOf EquivalentEquipment ;
+<EquivalentInjection> rdf:type rdfs:Class ;
+	rdfs:subClassOf <EquivalentEquipment> ;
 	rdfs:label "EquivalentInjection"@en ;
 	rdfs:comment "This class represents equivalent injections (generation or load).  Voltage regulation is allowed only at the point of connection."^^rdf:XMLLiteral .
-EquivalentInjection.r rdf:type rdfs:Property ;
+<EquivalentInjection.r> rdf:type rdfs:Property ;
 	rdfs:label "r"@en ;
-	rdfs:domain EquivalentInjection ;
+	rdfs:domain <EquivalentInjection> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Positive sequence resistance. Used to represent Extended-Ward (IEC 60909).\nUsage : Extended-Ward is a result of network reduction prior to the data exchange. "^^rdf:XMLLiteral .
-EquivalentInjection.r0 rdf:type rdfs:Property ;
+<EquivalentInjection.r0> rdf:type rdfs:Property ;
 	rdfs:label "r0"@en ;
-	rdfs:domain EquivalentInjection ;
+	rdfs:domain <EquivalentInjection> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence resistance. Used to represent Extended-Ward (IEC 60909).\nUsage : Extended-Ward is a result of network reduction prior to the data exchange. "^^rdf:XMLLiteral .
-EquivalentInjection.r2 rdf:type rdfs:Property ;
+<EquivalentInjection.r2> rdf:type rdfs:Property ;
 	rdfs:label "r2"@en ;
-	rdfs:domain EquivalentInjection ;
+	rdfs:domain <EquivalentInjection> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Negative sequence resistance. Used to represent Extended-Ward (IEC 60909).\nUsage : Extended-Ward is a result of network reduction prior to the data exchange. "^^rdf:XMLLiteral .
-EquivalentInjection.x rdf:type rdfs:Property ;
+<EquivalentInjection.x> rdf:type rdfs:Property ;
 	rdfs:label "x"@en ;
-	rdfs:domain EquivalentInjection ;
+	rdfs:domain <EquivalentInjection> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Positive sequence reactance. Used to represent Extended-Ward (IEC 60909).\nUsage : Extended-Ward is a result of network reduction prior to the data exchange. "^^rdf:XMLLiteral .
-EquivalentInjection.x0 rdf:type rdfs:Property ;
+<EquivalentInjection.x0> rdf:type rdfs:Property ;
 	rdfs:label "x0"@en ;
-	rdfs:domain EquivalentInjection ;
+	rdfs:domain <EquivalentInjection> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Zero sequence reactance. Used to represent Extended-Ward (IEC 60909).\nUsage : Extended-Ward is a result of network reduction prior to the data exchange. "^^rdf:XMLLiteral .
-EquivalentInjection.x2 rdf:type rdfs:Property ;
+<EquivalentInjection.x2> rdf:type rdfs:Property ;
 	rdfs:label "x2"@en ;
-	rdfs:domain EquivalentInjection ;
+	rdfs:domain <EquivalentInjection> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Negative sequence reactance. Used to represent Extended-Ward (IEC 60909).\nUsage : Extended-Ward is a result of network reduction prior to the data exchange. "^^rdf:XMLLiteral .
 
-IdentifiedObject rdf:type rdfs:Class ;
+<IdentifiedObject> rdf:type rdfs:Class ;
 	rdfs:label "IdentifiedObject"@en ;
 	rdfs:comment "This is a root class to provide common identification for all classes needing identification and naming attributes."^^rdf:XMLLiteral .
-IdentifiedObject.mRID rdf:type rdfs:Property ;
+<IdentifiedObject.mRID> rdf:type rdfs:Property ;
 	rdfs:label "mRID"@en ;
-	rdfs:domain IdentifiedObject ;
+	rdfs:domain <IdentifiedObject> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements."^^rdf:XMLLiteral .
