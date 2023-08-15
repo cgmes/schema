@@ -1,5 +1,5 @@
 class,super_class,label,comment
-http://iec.ch/TC57/2013/CIM-schema-cim16#Statements,,Statements,
 http://iec.ch/TC57/2013/CIM-schema-cim16#DifferenceModel,http://iec.ch/TC57/2013/CIM-schema-cim16#Model,DifferenceModel,"It represents the difference model header. The content is described by the Model class, the association role forwardDifferences and association role reverseDifferences. Both association roles may have one set of Statements."
-http://iec.ch/TC57/2013/CIM-schema-cim16#Model,,Model,
 http://iec.ch/TC57/2013/CIM-schema-cim16#FullModel,http://iec.ch/TC57/2013/CIM-schema-cim16#Model,FullModel,It represents the full model header and its contents is described by the Model class.
+http://iec.ch/TC57/2013/CIM-schema-cim16#Model,,Model,
+http://iec.ch/TC57/2013/CIM-schema-cim16#Statements,,Statements,

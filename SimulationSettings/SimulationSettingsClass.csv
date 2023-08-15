@@ -1,13 +1,16 @@
 class,super_class,label,comment
-http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,,IdentifiedObject,
-http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,SignalRecorder,A recorder for a given signal.
-http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,FaultCauseType,Type of cause of the fault.
-http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance,,FaultImpedance,
-http://iec.ch/TC57/2013/CIM-schema-cim16#Fault,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,Fault,"Abnormal condition causing current flow through conducting equipment, such as caused by equipment failure or short circuits from objects not typically modelled (for example, a tree falling on a line)."
-http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,DynamicsFunctionBlock,Abstract parent class for all Dynamics function blocks.
+http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,ACDCTerminal,An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.
 http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment,,ACLineSegment,
 http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,ClearSimulationEvent,Defines an event which clears another event such as ParemeterEvent or Fault.
-http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor,http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor,SignalDescriptor,Describes the signals both internal signals that connect different functions or external signals.
+http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,DetailedModelDescriptor,Describes different components of a detailed model.
+http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,DynamicsFunctionBlock,Abstract parent class for all Dynamics function blocks.
+http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment,,Equipment,
+http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault,http://iec.ch/TC57/2013/CIM-schema-cim16#Fault,EquipmentFault,"A fault applied at the terminal, external to the equipment. This class is not used to specify faults internal to the equipment."
+http://iec.ch/TC57/2013/CIM-schema-cim16#Fault,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,Fault,"Abnormal condition causing current flow through conducting equipment, such as caused by equipment failure or short circuits from objects not typically modelled (for example, a tree falling on a line)."
+http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,FaultCauseType,Type of cause of the fault.
+http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance,,FaultImpedance,
+http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,,IdentifiedObject,
+http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault,http://iec.ch/TC57/2013/CIM-schema-cim16#Fault,LineFault,A fault that occurs on an AC line segment at some point along the length.
 http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,ParameterEvent,"Used to apply changes to particular parameter or signal. The parameter or signal could be any property from power flow part of the model or property/signal of standard, user defined or detailed model."
 http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,PowerFlowSettings,"Provides information on power flow settings valid for the model they are assigned to.
 The following attributes:
@@ -16,12 +19,9 @@ The following attributes:
 - transformerPhaseTapControlPriority, and
 - transformerPhaseTapControlPriority 
  shall have different values in case they are enabled (i.e. value different than 0).  "
-http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault,http://iec.ch/TC57/2013/CIM-schema-cim16#Fault,EquipmentFault,"A fault applied at the terminal, external to the equipment. This class is not used to specify faults internal to the equipment."
-http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,DetailedModelDescriptor,Describes different components of a detailed model.
-http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,SimulationSettings,Describes simulation settings necessary for a simulation.
-http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment,,Equipment,
-http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,SimulationEvents,A configuration or a set of events executed during a simulation.
-http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,ACDCTerminal,An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.
-http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault,http://iec.ch/TC57/2013/CIM-schema-cim16#Fault,LineFault,A fault that occurs on an AC line segment at some point along the length.
-http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal,http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal,Terminal,An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.
 http://iec.ch/TC57/2013/CIM-schema-cim16#SignalConfiguration,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,SignalConfiguration,A configuration or a set of signals selected for recording during a simulation.
+http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor,http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor,SignalDescriptor,Describes the signals both internal signals that connect different functions or external signals.
+http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,SignalRecorder,A recorder for a given signal.
+http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,SimulationEvents,A configuration or a set of events executed during a simulation.
+http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,SimulationSettings,Describes simulation settings necessary for a simulation.
+http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal,http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal,Terminal,An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.

@@ -1,10 +1,10 @@
 class,super_class,label,comment
-http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,,IdentifiedObject,
-http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,SignalRecorder,A recorder for a given signal.
 http://iec.ch/TC57/2013/CIM-schema-cim16#Curve,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,Curve,A multi-purpose curve or functional relationship between an independent variable (X-axis) and dependent (Y-axis) variables. 
-http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResultCharacteristic,http://iec.ch/TC57/2013/CIM-schema-cim16#Curve,SimulationResultCharacteristic,Result characteristic. The xvalue of the curve is time.
 http://iec.ch/TC57/2013/CIM-schema-cim16#CurveData,,CurveData,
-http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,SimulationSettings,Describes simulation settings necessary for a simulation.
-http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResult,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,SimulationResult,Represents the simulation result.
-http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,SimulationEvents,A configuration or a set of events executed during a simulation.
+http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,,IdentifiedObject,
 http://iec.ch/TC57/2013/CIM-schema-cim16#SignalConfiguration,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,SignalConfiguration,A configuration or a set of signals selected for recording during a simulation.
+http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,SignalRecorder,A recorder for a given signal.
+http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,SimulationEvents,A configuration or a set of events executed during a simulation.
+http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResult,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,SimulationResult,Represents the simulation result.
+http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResultCharacteristic,http://iec.ch/TC57/2013/CIM-schema-cim16#Curve,SimulationResultCharacteristic,Result characteristic. The xvalue of the curve is time.
+http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings,http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject,SimulationSettings,Describes simulation settings necessary for a simulation.
