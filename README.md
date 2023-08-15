@@ -44,7 +44,11 @@ The UML is converted to [RDFS](https://www.w3.org/TR/rdf-schema/) in [RDF/XML](h
 
 ### Deprecated
 
- - [EquipmentBoundary](./EquipmentBoundary/README.md)
+ - [Equipment Boundary](./EquipmentBoundary/README.md)
+
+### Metadata
+
+ - [Document Header](./DocumentHeader/README.md)
 
 
 ## Legal
