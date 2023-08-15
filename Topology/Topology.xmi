@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="windows-1252" standalone="no" ?>
-<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2023-08-02 12:42:47">
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2023-08-03 08:36:32">
 	<XMI.header>
 		<XMI.documentation>
 			<XMI.exporter>Enterprise Architect</XMI.exporter>
@@ -13,732 +13,837 @@
 				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
 				<UML:Package name="TopologyProfile" xmi.id="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 					<UML:ModelElement.taggedValue>
-						<UML:TaggedValue tag="documentation" value="This profile has been built on the basis of the IEC 61970-456 document and adjusted to fit the purpose of the ENTSO-E CGMES."/>
+						<UML:TaggedValue tag="documentation" value="A topology dataset which conforms to the IEC 61970-456 topology profile contains all objects defined in a topology profile and includes data for topology information relating to a given exchange."/>
 					</UML:ModelElement.taggedValue>
 					<UML:Namespace.ownedElement>
-						<UML:Class name="TopologyVersion" xmi.id="EAID_4DE570DC_86F9_485b_B132_3F2DCDCBC35B" visibility="public" namespace="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
+						<UML:Class name="DCTerminal" xmi.id="EAID_06FB8F71_F888_4149_81D5_CD68EA0E33E4" visibility="public" namespace="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="Entsoe"/>
+								<UML:Stereotype name="Description"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
-								<UML:TaggedValue tag="documentation" value="Version details."/>
+								<UML:TaggedValue tag="documentation" value="An electrical connection point to generic DC conducting equipment."/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Generalization subtype="EAID_06FB8F71_F888_4149_81D5_CD68EA0E33E4" supertype="EAID_B6E91AF1_CC09_4706_8BF0_5B02991CE6F1" xmi.id="EAID_3D3517A2_CBC5_4a84_8CF8_5226C08D4C58" visibility="public">
+							<UML:ModelElement.taggedValue/>
+						</UML:Generalization>
+						<UML:Dependency xmi.id="EAID_90E1CC02_09EC_42ba_BCBB_546E57D204F2" visibility="public" client="EAID_06FB8F71_F888_4149_81D5_CD68EA0E33E4" supplier="EAID_6D3668E7_3378_46de_B0B6_9EB6724C8326">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="IsBasedOn"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue/>
+						</UML:Dependency>
+						<UML:Class name="DCEquipmentContainer" xmi.id="EAID_07053457_5D9C_415a_B30A_6D03450D4E85" visibility="public" namespace="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="A modelling construct to provide a root class for containment of DC as well as AC equipment. The class differ from the EquipmentContaner for AC in that it may also contain DCNode-s. Hence it can contain both AC and DC equipment."/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Association xmi.id="EAID_5419398E_0F3C_4463_96E8_F573699546E7" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="GUIDBasedOn" value="{B4C9C4A3-7B73-42b4-866B-ABC9504B8B53}" xmi.id="EAID_76CEEFC6_72DC_464d_B8E7_A2BA115D374A"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Association.connection>
+								<UML:AssociationEnd visibility="public" multiplicity="0..*" name="DCTopologicalNode" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_67566C6A_B9DB_4c28_983A_DEB3F7C1C9D2">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The topological nodes which belong to this connectivity node container."/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+								<UML:AssociationEnd visibility="public" multiplicity="1" name="DCEquipmentContainer" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_07053457_5D9C_415a_B30A_6D03450D4E85">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The connectivity node container to which the topological node belongs."/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+							</UML:Association.connection>
+						</UML:Association>
+						<UML:Dependency xmi.id="EAID_E7491706_5442_4a4d_9289_1DD78CBC7131" visibility="public" client="EAID_07053457_5D9C_415a_B30A_6D03450D4E85" supplier="EAID_B7EB57A9_3AD6_40e2_9D5D_F391283E63B3">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="IsBasedOn"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue/>
+						</UML:Dependency>
+						<UML:Class name="ACDCConverterDCTerminal" xmi.id="EAID_10C3CC4E_C377_4ab1_81ED_91429E0AD628" visibility="public" namespace="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="Description"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="A DC electrical connection point at the AC/DC converter. The AC/DC converter is electrically connected also to the AC side. The AC connection is inherited from the AC conducting equipment in the same way as any other AC equipment. The AC/DC converter DC terminal is separate from generic DC terminal to restrict the connection with the AC side to AC/DC converter and so that no other DC conducting equipment can be connected to the AC side."/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Dependency xmi.id="EAID_19CDF0F0_D0AB_43b5_BE16_4827B9C8E759" visibility="public" client="EAID_10C3CC4E_C377_4ab1_81ED_91429E0AD628" supplier="EAID_58B81D5E_10FF_4e21_A564_304AD5297BAE">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="IsBasedOn"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue/>
+						</UML:Dependency>
+						<UML:Generalization subtype="EAID_10C3CC4E_C377_4ab1_81ED_91429E0AD628" supertype="EAID_B6E91AF1_CC09_4706_8BF0_5B02991CE6F1" xmi.id="EAID_28335C87_4441_4bfa_B9AE_FA2F168E0815" visibility="public">
+							<UML:ModelElement.taggedValue/>
+						</UML:Generalization>
+						<UML:Class name="ReportingGroup" xmi.id="EAID_22ACEE6D_AF25_4de9_8AE4_7B6F5E89B52F" visibility="public" namespace="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="A reporting group is used for various ad-hoc groupings used for reporting.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Generalization subtype="EAID_22ACEE6D_AF25_4de9_8AE4_7B6F5E89B52F" supertype="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558" xmi.id="EAID_2404C225_6EB1_4e96_9ACD_F324CBDE5083" visibility="public">
+							<UML:ModelElement.taggedValue/>
+						</UML:Generalization>
+						<UML:Dependency xmi.id="EAID_3BEB218C_EDCA_4087_9AC0_B28BD7C35B11" visibility="public" client="EAID_22ACEE6D_AF25_4de9_8AE4_7B6F5E89B52F" supplier="EAID_EB1C81AA_89E4_44f4_8BA2_45FF36E88015">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="IsBasedOn"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue/>
+						</UML:Dependency>
+						<UML:Association xmi.id="EAID_CB4700AB_637C_48ad_915F_656790CB3564" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="GUIDBasedOn" value="{1134BB7B-6737-4184-A156-3E1FE506083D}" xmi.id="EAID_D7B64653_C25C_4ae6_89B8_8A085EBB67F1"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Association.connection>
+								<UML:AssociationEnd visibility="public" multiplicity="0..1" name="ReportingGroup" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_22ACEE6D_AF25_4de9_8AE4_7B6F5E89B52F">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The reporting group to which the topological node belongs."/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+								<UML:AssociationEnd visibility="public" multiplicity="0..*" name="TopologicalNode" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_373662F0_6F7D_4315_8559_CE7CE4C128F3">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The topological nodes that belong to the reporting group."/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+							</UML:Association.connection>
+						</UML:Association>
+						<UML:Class name="TopologicalNode" xmi.id="EAID_373662F0_6F7D_4315_8559_CE7CE4C128F3" visibility="public" namespace="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="For a detailed substation model a topological node is a set of connectivity nodes that, in the current network state, are connected together through any type of closed switches, including  jumpers. Topological nodes change as the current network state changes (i.e., switches, breakers, etc. change state).&#xA;For a planning model, switch statuses are not used to form topological nodes. Instead they are manually created or deleted in a model builder tool. Topological nodes maintained this way are also called &quot;busses&quot;."/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Generalization subtype="EAID_373662F0_6F7D_4315_8559_CE7CE4C128F3" supertype="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558" xmi.id="EAID_0CEB4324_956D_40ca_B626_53DAD80BD03A" visibility="public">
+							<UML:ModelElement.taggedValue/>
+						</UML:Generalization>
+						<UML:Association xmi.id="EAID_1C4C3D60_787C_4ba9_BB95_1C72D0CC7FE1" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="GUIDBasedOn" value="{F490BFCA-36A8-4fe2-B28B-66466134B41E}" xmi.id="EAID_79C8D6F9_5CC1_4c06_AD03_AC5B3D96DB33"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Association.connection>
+								<UML:AssociationEnd visibility="public" multiplicity="0..1" name="TopologicalNode" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_373662F0_6F7D_4315_8559_CE7CE4C128F3">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The topological node associated with the terminal.   This can be used as an alternative to the connectivity node path to topological node, thus making it unnecessary to model connectivity nodes in some cases.   Note that the if connectivity nodes are in the model, this association would probably not be used as an input specification."/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+								<UML:AssociationEnd visibility="public" multiplicity="1..*" name="Terminal" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_958398B6_E62B_40db_B17E_923AB4A2A669">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The terminals associated with the topological node.   This can be used as an alternative to the connectivity node path to terminal, thus making it unnecessary to model connectivity nodes in some cases.   Note that if connectivity nodes are in the model, this association would probably not be used as an input specification."/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+							</UML:Association.connection>
+						</UML:Association>
+						<UML:Association xmi.id="EAID_7B3EC3FA_41D7_4c02_A57B_D673533EE000" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="GUIDBasedOn" value="{6F37A2BE-FB37-4a6c-8BB1-CFC6690C1867}" xmi.id="EAID_797B31DC_1160_4011_9C1B_B7142BA998CC"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Association.connection>
+								<UML:AssociationEnd visibility="public" multiplicity="0..*" name="TopologicalNode" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_373662F0_6F7D_4315_8559_CE7CE4C128F3">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The topological nodes at the base voltage."/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+								<UML:AssociationEnd visibility="public" multiplicity="1..1" name="BaseVoltage" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_4CA054DE_E8EF_4dbd_8BA8_E024B7727044">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The base voltage of the topological node."/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+							</UML:Association.connection>
+						</UML:Association>
+						<UML:Dependency xmi.id="EAID_B3DF85E9_F543_4954_A861_651A11D3C559" visibility="public" client="EAID_373662F0_6F7D_4315_8559_CE7CE4C128F3" supplier="EAID_82489582_0ECB_4066_970D_A265B1065315">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="IsBasedOn"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue/>
+						</UML:Dependency>
+						<UML:Association xmi.id="EAID_D30F754D_31E5_43b5_8316_18066B33CA70" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="GUIDBasedOn" value="{ACD76E10-125A-4f7a-A20A-475AC4334414}" xmi.id="EAID_7F410BFA_4314_4e1f_9936_CBAFFACC0B22"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Association.connection>
+								<UML:AssociationEnd visibility="public" multiplicity="1" name="TopologicalNode" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_373662F0_6F7D_4315_8559_CE7CE4C128F3">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The topological node to which this connectivity node is assigned.  May depend on the current state of switches in the network."/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+								<UML:AssociationEnd visibility="public" multiplicity="0..*" name="ConnectivityNodes" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_F662B04D_CD3B_449c_80E8_D3BB7A70FD58">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The connectivity nodes combine together to form this topological node.  May depend on the current state of switches in the network."/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+							</UML:Association.connection>
+						</UML:Association>
+						<UML:Association xmi.id="EAID_F96C2F03_7AFB_4a34_A2C4_FD57E0A12C36" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="GUIDBasedOn" value="{88BD0C47-4CB3-44db-9A6B-20C783A24478}" xmi.id="EAID_7040C8BC_6625_44d1_BA49_8A3E46749859"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Association.connection>
+								<UML:AssociationEnd visibility="public" multiplicity="0..*" name="TopologicalNode" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_373662F0_6F7D_4315_8559_CE7CE4C128F3">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The topological nodes which belong to this connectivity node container."/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+								<UML:AssociationEnd visibility="public" multiplicity="1" name="ConnectivityNodeContainer" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_4C3E4290_7B18_4f1c_9BFD_93A40659CBF9">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The connectivity node container to which the topological node belongs."/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+							</UML:Association.connection>
+						</UML:Association>
+						<UML:Class name="ConnectivityNodeContainer" xmi.id="EAID_4C3E4290_7B18_4f1c_9BFD_93A40659CBF9" visibility="public" namespace="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="A base class for all objects that may contain connectivity nodes or topological nodes.&#xA;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Dependency xmi.id="EAID_220688F1_D48E_46a2_B953_F2A7FA7DF5A2" visibility="public" client="EAID_4C3E4290_7B18_4f1c_9BFD_93A40659CBF9" supplier="EAID_B985C03E_46A3_4aec_B5B6_FDD983EBE621">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="IsBasedOn"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue/>
+						</UML:Dependency>
+						<UML:Class name="BaseVoltage" xmi.id="EAID_4CA054DE_E8EF_4dbd_8BA8_E024B7727044" visibility="public" namespace="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Defines a system base voltage which is referenced. "/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Dependency xmi.id="EAID_F2A83FE1_9701_4847_856A_8080C16D87C4" visibility="public" client="EAID_4CA054DE_E8EF_4dbd_8BA8_E024B7727044" supplier="EAID_2E70DC9D_AEAE_46cc_B20A_C20A636AE9B0">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="IsBasedOn"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue/>
+						</UML:Dependency>
+						<UML:Class name="DCTopologicalNode" xmi.id="EAID_67566C6A_B9DB_4c28_983A_DEB3F7C1C9D2" visibility="public" namespace="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="DC bus."/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Dependency xmi.id="EAID_120027C1_7669_4bde_B2B8_6F193AF1925D" visibility="public" client="EAID_67566C6A_B9DB_4c28_983A_DEB3F7C1C9D2" supplier="EAID_36E96930_3FAF_4844_91D4_7103E3D68EAA">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="IsBasedOn"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue/>
+						</UML:Dependency>
+						<UML:Association xmi.id="EAID_4081E8EA_2D30_4a04_8D8B_63BF13C6A44B" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="GUIDBasedOn" value="{5A20F31D-14D7-4c51-B74F-DDC1C56849F3}" xmi.id="EAID_9000A9F3_75D1_4233_B4A4_F497A043A33D"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Association.connection>
+								<UML:AssociationEnd visibility="public" multiplicity="1" name="DCTopologicalNode" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_67566C6A_B9DB_4c28_983A_DEB3F7C1C9D2">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The DC topological node to which this DC connectivity node is assigned.  May depend on the current state of switches in the network."/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+								<UML:AssociationEnd visibility="public" multiplicity="0..*" name="DCNodes" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_A59E4169_130D_4b1e_A961_30CDFE2C721E">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The DC connectivity nodes combined together to form this DC topological node.  May depend on the current state of switches in the network."/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+							</UML:Association.connection>
+						</UML:Association>
+						<UML:Generalization subtype="EAID_67566C6A_B9DB_4c28_983A_DEB3F7C1C9D2" supertype="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558" xmi.id="EAID_820D99AE_B3EA_4b85_8A28_D78A1B5B47A5" visibility="public">
+							<UML:ModelElement.taggedValue/>
+						</UML:Generalization>
+						<UML:Association xmi.id="EAID_CC380268_C950_4097_A77E_CFA466119AC7" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="GUIDBasedOn" value="{B7808724-9A0B-430d-9271-410BC33226AB}" xmi.id="EAID_3CCDD7FC_5247_469e_BAFC_6FBD12F624ED"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Association.connection>
+								<UML:AssociationEnd visibility="public" multiplicity="1" name="DCTopologicalNode" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_67566C6A_B9DB_4c28_983A_DEB3F7C1C9D2">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="See association end Terminal.TopologicalNode."/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+								<UML:AssociationEnd visibility="public" multiplicity="0..*" name="DCTerminals" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_B6E91AF1_CC09_4706_8BF0_5B02991CE6F1">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="See association end TopologicalNode.Terminal."/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+							</UML:Association.connection>
+						</UML:Association>
+						<UML:Class name="String" xmi.id="EAID_82159E83_6BDD_4713_8B01_8FF652E923E0" visibility="public" namespace="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="Primitive"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="A string consisting of a sequence of characters. The character encoding is UTF-8. The string length is unspecified and unlimited."/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Dependency xmi.id="EAID_A0C331CC_16FF_4d4b_945E_BAE0276E500B" visibility="public" client="EAID_82159E83_6BDD_4713_8B01_8FF652E923E0" supplier="EAID_E50DF78B_84CE_42e9_A275_A956DEF45490">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="IsBasedOn"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue/>
+						</UML:Dependency>
+						<UML:Class name="Topology-EU_Ontology" xmi.id="EAID_8D8B3861_FE0D_427c_B393_9C3F67CEFF79" visibility="public" namespace="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="owl"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="The class of ontologies."/>
 							</UML:ModelElement.taggedValue>
 							<UML:Classifier.feature>
-								<UML:Attribute name="baseUML" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="backwardCompatibleWith" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
 									<UML:Attribute.initialValue>
-										<UML:Expression body="iec61970cim16v28_iec61968cim12v08_iec62325cim03v01a"/>
+										<UML:Expression/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+										<UML:Classifier xmi.idref="EAID_82159E83_6BDD_4713_8B01_8FF652E923E0"/>
 									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="owl"/>
+									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="description" value="Base UML provided by CIM model manager."/>
+										<UML:TaggedValue tag="description" value="The annotation property that indicates that a given ontology is backward compatible with another ontology."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{14C541BA-24F2-4b40-83BC-F26702EC4C26}" xmi.id="EAID_85F62FFD_CC05_4912_905E_79AB059880F9"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="baseURI" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="conformsTo" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
 									<UML:Attribute.initialValue>
-										<UML:Expression body="http://iec.ch/TC57/2013/61970-456/Topology/4"/>
+										<UML:Expression body="urn:iso:std:iec:61970-600-2:ed-1|urn:iso:std:iec:61970-301:ed-7:amd1|file://iec61970cim17v40_iec61968cim13v13a_iec62325cim03v17a.eap|urn:iso:std:iec:61970-401:draft:ed-1|urn:iso:std:iec:61970-501:draft:ed-2"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
 									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="dct"/>
+									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="description" value="Profile URI used in the Model Exchange header and defined in IEC standards.  It uniquely identifies the Profile and its version. It is given for information only and to identify the closest IEC profile to which this CGMES profile is based on."/>
+										<UML:TaggedValue tag="description" value="An established standard to which the described resource conforms."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{7053C681-F66D-4b79-9F2D-14B6AD0E1470}" xmi.id="EAID_85E65A0D_D6BC_45b2_BBF7_E650BAC4B905"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="date" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="creator" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
 									<UML:Attribute.initialValue>
-										<UML:Expression body="2014-08-07"/>
+										<UML:Expression body="IEC TC57 WG13"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_FF85CB9F_4A0C_4339_A3E4_06CE2EA1772F"/>
+										<UML:Classifier xmi.idref="eaxmiid1"/>
 									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="dct"/>
+									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="description" value="Profile creation date&#xA;Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05."/>
-										<UML:TaggedValue tag="GUIDBasedOn" value="{8DADB97F-283D-40c7-A25A-D75E4C0D8507}" xmi.id="EAID_EE79A054_78BB_4dca_B5CA_32A4B1D32D4E"/>
+										<UML:TaggedValue tag="description" value="An entity responsible for making the resource.&#xA;Recommended practice is to identify the creator with a URI. If this is not possible or feasible, a literal value that identifies the creator may be provided."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{ECBB9D07-6D2E-404b-8744-D4695F222BAA}" xmi.id="EAID_18CE60A1_74C4_4bd4_BC60_8359E815F57F"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="differenceModelURI" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="description" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
 									<UML:Attribute.initialValue>
-										<UML:Expression body="http://iec.ch/TC57/61970-552/DifferenceModel/1#"/>
+										<UML:Expression body="This vocabulary is describing the topology profile from IEC 61970-600-2."/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+										<UML:Classifier xmi.idref="eaxmiid1"/>
 									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="dct"/>
+									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="description" value="Difference model URI defined by IEC 61970-552. "/>
+										<UML:TaggedValue tag="description" value="An account of the resource.&#xA;Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{F8EADEEC-8B20-4978-9B51-53B4AEF5E874}" xmi.id="EAID_2497C545_89A6_4286_8F42_237749E603F7"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="entsoeUML" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="identifier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
 									<UML:Attribute.initialValue>
-										<UML:Expression body="entsoe_v2.4.15"/>
+										<UML:Expression body="urn:uuid:2c5559fa-12b4-445a-b92a-958c90628cee"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
 									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="dct"/>
+									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="description" value="UML provided by ENTSO-E."/>
+										<UML:TaggedValue tag="description" value="An unambiguous reference to the resource within a given context.&#xA;Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN). Persistent identifiers should be provided as HTTP URIs."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{D3189AD5-9626-4e74-B4C8-C9098107B928}" xmi.id="EAID_C2259113_5A59_4ff9_A214_88B3F40A6E28"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="entsoeURI" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="incompatibleWith" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
 									<UML:Attribute.initialValue>
-										<UML:Expression body="http://entsoe.eu/CIM/Topology/4/1"/>
+										<UML:Expression body="http://entsoe.eu/2009/profile1#"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+										<UML:Classifier xmi.idref="eaxmiid2"/>
 									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="owl"/>
+									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="description" value="Profile URI defined by ENTSO-E and used in the Model Exchange header.  It uniquely identifies the Profile and its version. The last two elements in the URI (http://entsoe.eu/CIM/Topology/yy/zzz) indicate major and minor versions where: &#xA;- yy - indicates a major version;&#xA;- zzz - indicates a minor version. "/>
+										<UML:TaggedValue tag="description" value="The annotation property that indicates that a given ontology is incompatible with another ontology."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{5A77D7A1-D006-4e46-903F-12D56756C12B}" xmi.id="EAID_94168F2E_3044_4a5b_96DE_02E5D00C943C"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="modelDescriptionURI" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="issued" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
 									<UML:Attribute.initialValue>
-										<UML:Expression body="http://iec.ch/TC57/61970-552/ModelDescription/1#"/>
+										<UML:Expression/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+										<UML:Classifier xmi.idref="eaxmiid3"/>
 									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="dct"/>
+									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="description" value="Model Description URI defined by IEC 61970-552. "/>
+										<UML:TaggedValue tag="description" value="Date of formal issuance of the resource.&#xA;Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{72A7E5CA-E495-4502-A989-C344D8AA3AAA}" xmi.id="EAID_9D532772_3960_4281_A060_CE4313747554"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="namespaceRDF" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
-									<UML:Attribute.initialValue>
-										<UML:Expression body="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-									</UML:Attribute.initialValue>
-									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
-									</UML:StructuralFeature.type>
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="description" value="RDF namespace. "/>
-									</UML:ModelElement.taggedValue>
-								</UML:Attribute>
-								<UML:Attribute name="namespaceUML" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
-									<UML:Attribute.initialValue>
-										<UML:Expression body="http://iec.ch/TC57/2013/CIM-schema-cim16#"/>
-									</UML:Attribute.initialValue>
-									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
-									</UML:StructuralFeature.type>
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="description" value="CIM UML namespace. "/>
-									</UML:ModelElement.taggedValue>
-								</UML:Attribute>
-								<UML:Attribute name="shortName" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="keyword" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
 									<UML:Attribute.initialValue>
 										<UML:Expression body="TP"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+										<UML:Classifier xmi.idref="eaxmiid4"/>
 									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="dcat"/>
+									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="description" value="The short name of the profile used in profile documentation."/>
+										<UML:TaggedValue tag="description" value="A keyword or tag describing a resource."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{2909FB8E-A0CA-43df-904C-259C2147E7D0}" xmi.id="EAID_2597633F_8768_420e_9F12_CB46539E42D2"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="landingPage" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="https://webstore.iec.ch/"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid5"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="dcat"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information.&#xA;&#xA;If the distribution(s) are accessible only through a landing page (i.e. direct download URLs are not known), then the landing page link should be duplicated as accessURL on a distribution."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{38988857-F824-4f78-A87D-108BE2CDDF2C}" xmi.id="EAID_BD86D7FD_DFD5_4fbc_8314_84679A199D86"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="language" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="en-GB"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid4"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="dct"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="A language of the item. This refers to the natural language used for textual metadata (i.e. titles, descriptions, etc) of a cataloged resource (i.e. dataset or service) or the textual values of a dataset distribution.&#xA;Recommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 [IETF-BCP47] language tag."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{89D2D947-9C25-4558-A7F2-EB6462EC855C}" xmi.id="EAID_FD6498E8_3581_43e3_9937_BDB28C110AF5"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="license" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="https://creativecommons.org/licenses/by/4.0/"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid1"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="dct"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="A legal document giving official permission to do something with the resource.&#xA;Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{1C3B5575-1163-40d0-AF84-34847DD5346A}" xmi.id="EAID_96CC5118_8B0C_43d8_9ED8_6B865404541F"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="modified" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="2020-10-12"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid6"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="dct"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Most recent date on which the item was changed, updated or modified.&#xA;Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{65B4A9BA-9079-491a-A021-45C2AC85C7F6}" xmi.id="EAID_792A18B8_CE2D_498f_94D9_14FA4A1D8CFD"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="priorVersion" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="http://entsoe.eu/CIM/Topology/4/1"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid2"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="owl"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The annotation property that indicates the predecessor ontology of a given ontology."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{2DB7A6F3-2A51-4b7f-ADF9-E1FBCA003EB4}" xmi.id="EAID_12ECFE93_9A44_4f7b_ACBE_FBD62B4A2954"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="publisher" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="IEC"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid1"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="dct"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="An entity responsible for making the resource available."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{EE0BC1A0-8840-42cc-8CE0-AD42BEB7B3C0}" xmi.id="EAID_061B3B94_07E0_4882_BED3_4A7798E0DCE4"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="rights" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="Copyright"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid1"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="dct"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="A statement that concerns all rights not addressed with dct:license or dct:accessRights, such as copyright statements."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{24625853-26A3-44fe-8181-0F87CF1C65B1}" xmi.id="EAID_D1246CA5_542A_4516_9BC7_7B1ED0EAFA0D"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="rightsHolder" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="IEC"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid1"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="dct"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Information about rights held in and over the resource.&#xA;Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. Recommended practice is to refer to a rights statement with a URI. If this is not possible or feasible, a literal value (name, label, or short text) may be provided."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{9AE99C5E-9F41-4cf5-BC4C-1AD60DDEE8C2}" xmi.id="EAID_1396AC49_3C10_42ae_A792_ECE6377D5C16"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="theme" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="vocabulary"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid1"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="dcat"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="A main category of the resource. A resource can have multiple themes."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{BA0F666F-074F-4309-9D2F-D20EC593B2B9}" xmi.id="EAID_7996CF5B_CFAE_40c3_B533_BAC4FFD02FD2"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="title" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="Topology Vocabulary"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid1"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="dct"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="A name given to the resource."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{55680243-9EF7-4a6f-B259-A34207D8FCE3}" xmi.id="EAID_7B743710_EAD4_41b8_A52D_E6A71089E7A3"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="versionInfo" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="3.0.0"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid1"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="owl"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The annotation property that provides version information for an ontology or another OWL construct."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{93331D96-1E7A-4461-AEB2-852800CE9915}" xmi.id="EAID_DE6F8A02_C76B_4b9f_91F3_1085FFF8997E"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="versionIRI" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression body="http://iec.ch/TC57/ns/CIM/Topology-EU/3.0"/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid2"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="owl"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The property that identifies the version IRI of an ontology."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{DDCD6029-D417-4895-948E-04849E2560E2}" xmi.id="EAID_E3D4FDD4_2814_43c8_9875_75DB8525893A"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
 							</UML:Classifier.feature>
 						</UML:Class>
-						<UML:Comment xmi.id="EAID_EB8E8CAC_6C4F_4d38_8145_CB05162B3B8D" visibility="public" namespace="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24">
-							<UML:ModelElement.taggedValue>
-								<UML:TaggedValue tag="documentation" value="IdentifiedObject.name is 32 characters maximum. It shall be consistent with the name of the object used in companies, in daily operation (e. g. in SCADA systems), in planning processes or in asset related systems and should allow inter-communicating of TSO, using general names.&#xA;IdentifiedObject.description is 256 characters maximum."/>
-							</UML:ModelElement.taggedValue>
-						</UML:Comment>
-						<UML:Package name="Core" xmi.id="EAPK_337FB03A_392D_4b20_BE1C_325DA948B7F2" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
-							<UML:ModelElement.taggedValue>
-								<UML:TaggedValue tag="documentation" value="Contains the core PowerSystemResource and ConductingEquipment entities &#xA;"/>
-							</UML:ModelElement.taggedValue>
-							<UML:Namespace.ownedElement>
-								<UML:Class name="ReportingGroup" xmi.id="EAID_22ACEE6D_AF25_4de9_8AE4_7B6F5E89B52F" visibility="public" namespace="EAPK_337FB03A_392D_4b20_BE1C_325DA948B7F2" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="A reporting group is used for various ad-hoc groupings used for reporting.&#xA;"/>
-									</UML:ModelElement.taggedValue>
-								</UML:Class>
-								<UML:Generalization subtype="EAID_22ACEE6D_AF25_4de9_8AE4_7B6F5E89B52F" supertype="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558" xmi.id="EAID_2404C225_6EB1_4e96_9ACD_F324CBDE5083" visibility="public">
-									<UML:ModelElement.taggedValue/>
-								</UML:Generalization>
-								<UML:Association xmi.id="EAID_CB4700AB_637C_48ad_915F_656790CB3564" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="GUIDBasedOn" value="{1134BB7B-6737-4184-A156-3E1FE506083D}" xmi.id="EAID_D7B64653_C25C_4ae6_89B8_8A085EBB67F1"/>
-									</UML:ModelElement.taggedValue>
-									<UML:Association.connection>
-										<UML:AssociationEnd visibility="public" multiplicity="0..1" name="ReportingGroup" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_22ACEE6D_AF25_4de9_8AE4_7B6F5E89B52F">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="The topological nodes that belong to the reporting group."/>
-											</UML:ModelElement.taggedValue>
-										</UML:AssociationEnd>
-										<UML:AssociationEnd visibility="public" multiplicity="0..*" name="TopologicalNode" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_373662F0_6F7D_4315_8559_CE7CE4C128F3">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="The reporting group to which the topological node belongs."/>
-											</UML:ModelElement.taggedValue>
-										</UML:AssociationEnd>
-									</UML:Association.connection>
-								</UML:Association>
-								<UML:Class name="ConnectivityNodeContainer" xmi.id="EAID_4C3E4290_7B18_4f1c_9BFD_93A40659CBF9" visibility="public" namespace="EAPK_337FB03A_392D_4b20_BE1C_325DA948B7F2" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="A base class for all objects that may contain connectivity nodes or topological nodes.&#xA;"/>
-									</UML:ModelElement.taggedValue>
-								</UML:Class>
-								<UML:Association xmi.id="EAID_F96C2F03_7AFB_4a34_A2C4_FD57E0A12C36" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="GUIDBasedOn" value="{88BD0C47-4CB3-44db-9A6B-20C783A24478}" xmi.id="EAID_7040C8BC_6625_44d1_BA49_8A3E46749859"/>
-									</UML:ModelElement.taggedValue>
-									<UML:Association.connection>
-										<UML:AssociationEnd visibility="public" multiplicity="0..*" name="TopologicalNode" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_373662F0_6F7D_4315_8559_CE7CE4C128F3">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="The topological nodes which belong to this connectivity node container."/>
-											</UML:ModelElement.taggedValue>
-										</UML:AssociationEnd>
-										<UML:AssociationEnd visibility="public" multiplicity="1" name="ConnectivityNodeContainer" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_4C3E4290_7B18_4f1c_9BFD_93A40659CBF9">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="The connectivity node container to which the toplogical node belongs."/>
-											</UML:ModelElement.taggedValue>
-										</UML:AssociationEnd>
-									</UML:Association.connection>
-								</UML:Association>
-								<UML:Class name="BaseVoltage" xmi.id="EAID_4CA054DE_E8EF_4dbd_8BA8_E024B7727044" visibility="public" namespace="EAPK_337FB03A_392D_4b20_BE1C_325DA948B7F2" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="Defines a system base voltage which is referenced. "/>
-									</UML:ModelElement.taggedValue>
-								</UML:Class>
-								<UML:Association xmi.id="EAID_7B3EC3FA_41D7_4c02_A57B_D673533EE000" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="GUIDBasedOn" value="{6F37A2BE-FB37-4a6c-8BB1-CFC6690C1867}" xmi.id="EAID_797B31DC_1160_4011_9C1B_B7142BA998CC"/>
-									</UML:ModelElement.taggedValue>
-									<UML:Association.connection>
-										<UML:AssociationEnd visibility="public" multiplicity="0..*" name="TopologicalNode" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_373662F0_6F7D_4315_8559_CE7CE4C128F3">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="The topological nodes at the base voltage."/>
-											</UML:ModelElement.taggedValue>
-										</UML:AssociationEnd>
-										<UML:AssociationEnd visibility="public" multiplicity="1..1" name="BaseVoltage" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_4CA054DE_E8EF_4dbd_8BA8_E024B7727044">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="The base voltage of the topologocial node."/>
-											</UML:ModelElement.taggedValue>
-										</UML:AssociationEnd>
-									</UML:Association.connection>
-								</UML:Association>
-								<UML:Comment xmi.id="EAID_5E400FA4_A9E3_4af0_A79B_E62DC8E57FF2" visibility="public" namespace="EAPK_337FB03A_392D_4b20_BE1C_325DA948B7F2">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="BaseVoltage is an abstract class. It is used here to generate the TopologicalNode.BaseVoltage association that is a pointer to BaseVoltage concrete class in the Equipment Profile&#xA;"/>
-									</UML:ModelElement.taggedValue>
-								</UML:Comment>
-								<UML:Class name="Terminal" xmi.id="EAID_958398B6_E62B_40db_B17E_923AB4A2A669" visibility="public" namespace="EAPK_337FB03A_392D_4b20_BE1C_325DA948B7F2" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="Description"/>
-									</UML:ModelElement.stereotype>
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."/>
-									</UML:ModelElement.taggedValue>
-								</UML:Class>
-								<UML:Generalization subtype="EAID_958398B6_E62B_40db_B17E_923AB4A2A669" supertype="EAID_EDDEF1DE_AE90_4151_9A4F_655B2690DF70" xmi.id="EAID_16746EBF_BEB6_41b0_9E16_1C92035C3CFF" visibility="public">
-									<UML:ModelElement.taggedValue/>
-								</UML:Generalization>
-								<UML:Association xmi.id="EAID_1C4C3D60_787C_4ba9_BB95_1C72D0CC7FE1" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="GUIDBasedOn" value="{F490BFCA-36A8-4fe2-B28B-66466134B41E}" xmi.id="EAID_79C8D6F9_5CC1_4c06_AD03_AC5B3D96DB33"/>
-									</UML:ModelElement.taggedValue>
-									<UML:Association.connection>
-										<UML:AssociationEnd visibility="public" multiplicity="1" name="TopologicalNode" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_373662F0_6F7D_4315_8559_CE7CE4C128F3">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="The terminals associated with the topological node.   This can be used as an alternative to the connectivity node path to terminal, thus making it unneccesary to model connectivity nodes in some cases.   Note that if connectivity nodes are in the model, this association would probably not be used as an input specification."/>
-											</UML:ModelElement.taggedValue>
-										</UML:AssociationEnd>
-										<UML:AssociationEnd visibility="public" multiplicity="0..*" name="Terminal" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_958398B6_E62B_40db_B17E_923AB4A2A669">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="The topological node associated with the terminal.   This can be used as an alternative to the connectivity node path to topological node, thus making it unneccesary to model connectivity nodes in some cases.   Note that the if connectivity nodes are in the model, this association would probably not be used as an input specification."/>
-											</UML:ModelElement.taggedValue>
-										</UML:AssociationEnd>
-									</UML:Association.connection>
-								</UML:Association>
-								<UML:Comment xmi.id="EAID_B91BE3A7_CBE9_4b60_AE4F_1658E431BC7F" visibility="public" namespace="EAPK_337FB03A_392D_4b20_BE1C_325DA948B7F2">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="The attribute &amp;ldquo;name&amp;rdquo; inherited by many classes from the abstract class IdentifiedObject is not required to be unique. Software developers should not count on this to link the power system model.&#xA;"/>
-									</UML:ModelElement.taggedValue>
-								</UML:Comment>
-								<UML:Comment xmi.id="EAID_BDF66F92_3B5E_408b_A6CB_AA69FA9B135F" visibility="public" namespace="EAPK_337FB03A_392D_4b20_BE1C_325DA948B7F2">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="ConnectivityodeContainer is an abstract class. It is used here to generate the TopologicalNode.ConnectivityNodeContainer association that is a pointer to ConnectivityNodeContainer concrete subclasses in the Equipment Profile&#xA;"/>
-									</UML:ModelElement.taggedValue>
-								</UML:Comment>
-								<UML:Class name="IdentifiedObject" xmi.id="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558" visibility="public" namespace="EAPK_337FB03A_392D_4b20_BE1C_325DA948B7F2" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="This is a root class to provide common identification for all classes needing identification and naming attributes."/>
-									</UML:ModelElement.taggedValue>
-									<UML:Classifier.feature>
-										<UML:Attribute name="description" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
-											<UML:Attribute.initialValue>
-												<UML:Expression/>
-											</UML:Attribute.initialValue>
-											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
-											</UML:StructuralFeature.type>
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy."/>
-												<UML:TaggedValue tag="GUIDBasedOn" value="{13104BE9-CB1E-4dde-9A52-D7EE95DF7B65}" xmi.id="EAID_CAA2E85E_2F6F_45e2_BA51_2ECF93E1301A"/>
-											</UML:ModelElement.taggedValue>
-										</UML:Attribute>
-										<UML:Attribute name="energyIdentCodeEic" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
-											<UML:Attribute.initialValue>
-												<UML:Expression/>
-											</UML:Attribute.initialValue>
-											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
-											</UML:StructuralFeature.type>
-											<UML:ModelElement.stereotype>
-												<UML:Stereotype name="Entsoe"/>
-											</UML:ModelElement.stereotype>
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="The attribute is used for an exchange of the EIC code (Energy identification Code). The length of the string is 16 characters as defined by the EIC code.&#xA;References: &#xA;&lt;ul&gt;&#xA; &lt;li&gt;Local issuing offices for EIC: &lt;a href=&quot;{???????????????????????????}???')&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;&lt;u&gt;https://www.entsoe.eu/publications/edi-library/links-to-eic-websites/&lt;/u&gt;&lt;/font&gt;&lt;/a&gt; &lt;/li&gt;&#xA; &lt;li&gt;EIC description: &lt;a href=&quot;{????????????????? ')&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;&lt;u&gt;https://www.entsoe.eu/index.php?id=73&amp;amp;libCat=eic&lt;/u&gt;&lt;/font&gt;&lt;/a&gt; .&lt;/li&gt;&#xA;&lt;/ul&gt;"/>
-												<UML:TaggedValue tag="GUIDBasedOn" value="{1D8E1417-DB69-48e1-894E-45D2FCA2C06F}" xmi.id="EAID_3457065E_2E17_4d22_9420_EDD06E963798"/>
-											</UML:ModelElement.taggedValue>
-										</UML:Attribute>
-										<UML:Attribute name="mRID" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
-											<UML:Attribute.initialValue>
-												<UML:Expression/>
-											</UML:Attribute.initialValue>
-											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
-											</UML:StructuralFeature.type>
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="Master resource identifier issued by a model authority. The mRID is globally unique within an exchange context. Global uniqueness is easily achieved by using a UUID,  as specified in RFC 4122, for the mRID.  The use of UUID is strongly recommended.&#xA;For CIMXML data files in RDF syntax conforming to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements."/>
-												<UML:TaggedValue tag="GUIDBasedOn" value="{C775F80A-A23D-4f38-AB9D-49D1FA882337}" xmi.id="EAID_16393800_B733_4e88_B344_D7B9A0B29B32"/>
-											</UML:ModelElement.taggedValue>
-										</UML:Attribute>
-										<UML:Attribute name="name" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
-											<UML:Attribute.initialValue>
-												<UML:Expression/>
-											</UML:Attribute.initialValue>
-											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
-											</UML:StructuralFeature.type>
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="The name is any free human readable and possibly non unique text naming the object.&#xA;"/>
-												<UML:TaggedValue tag="GUIDBasedOn" value="{870F033B-EDA6-4a32-A5AD-47DCBBFE2997}" xmi.id="EAID_C6DC8F53_1B09_4965_8082_F1A75630C491"/>
-											</UML:ModelElement.taggedValue>
-										</UML:Attribute>
-										<UML:Attribute name="shortName" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
-											<UML:Attribute.initialValue>
-												<UML:Expression/>
-											</UML:Attribute.initialValue>
-											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
-											</UML:StructuralFeature.type>
-											<UML:ModelElement.stereotype>
-												<UML:Stereotype name="Entsoe"/>
-											</UML:ModelElement.stereotype>
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="The attribute is used for an exchange of a human readable short name with length of the string 12 characters maximum."/>
-												<UML:TaggedValue tag="GUIDBasedOn" value="{2ADE284C-35EB-4009-AA99-98FCD8A47CD5}" xmi.id="EAID_697FC024_C76B_438b_B11F_4AD4A37D020A"/>
-											</UML:ModelElement.taggedValue>
-										</UML:Attribute>
-									</UML:Classifier.feature>
-									<UML:ModelElement.constraint>
-										<UML:Constraint name="R.4.10.11. Description length restriction (optional).">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="inv topologyDescriptionLength: self.description = null or self.description-&amp;gt;size() &amp;lt;= 256"/>
-												<UML:TaggedValue tag="type" value="OCL"/>
-												<UML:TaggedValue tag="weight" value="2.00"/>
-												<UML:TaggedValue tag="status" value="Approved"/>
-											</UML:ModelElement.taggedValue>
-										</UML:Constraint>
-										<UML:Constraint name="R.4.10.11. Energy Ident Code length restriction (optional).">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="inv topologyEnergyIdentCodeEicLength: self.energyIdentCodeEic = null or self.energyIdentCodeEic-&amp;gt;size() = 16"/>
-												<UML:TaggedValue tag="type" value="OCL"/>
-												<UML:TaggedValue tag="weight" value="2.00"/>
-												<UML:TaggedValue tag="status" value="Approved"/>
-											</UML:ModelElement.taggedValue>
-										</UML:Constraint>
-										<UML:Constraint name="R.4.10.11. Name length restriction.">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="inv topologyNameLength: self.name-&amp;gt;size() &amp;lt;= 32 or name = null"/>
-												<UML:TaggedValue tag="type" value="OCL"/>
-												<UML:TaggedValue tag="weight" value="0.00"/>
-												<UML:TaggedValue tag="status" value="Approved"/>
-											</UML:ModelElement.taggedValue>
-										</UML:Constraint>
-										<UML:Constraint name="R.4.10.11. ShortName length restriction (optional).">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="inv topologyShortNameLength: self.shortName = null or self.shortName-&amp;gt;size() &amp;lt;= 12"/>
-												<UML:TaggedValue tag="type" value="OCL"/>
-												<UML:TaggedValue tag="weight" value="2.00"/>
-												<UML:TaggedValue tag="status" value="Approved"/>
-											</UML:ModelElement.taggedValue>
-										</UML:Constraint>
-										<UML:Constraint name="R.4.10.13. Name is required for all classes excepted ACDCTerminal.">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="inv tpNameRequirement: if (not self.oclIsKindOf(ACDCTerminal)) then (self.name &amp;lt;&amp;gt; null) else (self.name = null or self.name &amp;lt;&amp;gt; null) endif"/>
-												<UML:TaggedValue tag="type" value="OCL"/>
-												<UML:TaggedValue tag="weight" value="4.00"/>
-												<UML:TaggedValue tag="status" value="Approved"/>
-											</UML:ModelElement.taggedValue>
-										</UML:Constraint>
-									</UML:ModelElement.constraint>
-								</UML:Class>
-								<UML:Generalization subtype="EAID_EDDEF1DE_AE90_4151_9A4F_655B2690DF70" supertype="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558" xmi.id="EAID_0275FCFA_8337_43c5_8F9A_DE0ECD37D26C" visibility="public">
-									<UML:ModelElement.taggedValue/>
-								</UML:Generalization>
-								<UML:Generalization subtype="EAID_373662F0_6F7D_4315_8559_CE7CE4C128F3" supertype="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558" xmi.id="EAID_0CEB4324_956D_40ca_B626_53DAD80BD03A" visibility="public">
-									<UML:ModelElement.taggedValue/>
-								</UML:Generalization>
-								<UML:Generalization subtype="EAID_A59E4169_130D_4b1e_A961_30CDFE2C721E" supertype="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558" xmi.id="EAID_1325425C_9C65_4c2e_8275_B07171186B17" visibility="public">
-									<UML:ModelElement.taggedValue/>
-								</UML:Generalization>
-								<UML:Generalization subtype="EAID_67566C6A_B9DB_4c28_983A_DEB3F7C1C9D2" supertype="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558" xmi.id="EAID_820D99AE_B3EA_4b85_8A28_D78A1B5B47A5" visibility="public">
-									<UML:ModelElement.taggedValue/>
-								</UML:Generalization>
-								<UML:Class name="ACDCTerminal" xmi.id="EAID_EDDEF1DE_AE90_4151_9A4F_655B2690DF70" visibility="public" namespace="EAPK_337FB03A_392D_4b20_BE1C_325DA948B7F2" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."/>
-									</UML:ModelElement.taggedValue>
-								</UML:Class>
-								<UML:Generalization subtype="EAID_B6E91AF1_CC09_4706_8BF0_5B02991CE6F1" supertype="EAID_EDDEF1DE_AE90_4151_9A4F_655B2690DF70" xmi.id="EAID_9C5BFC91_B39D_493e_AE64_BA8997F4479B" visibility="public">
-									<UML:ModelElement.taggedValue/>
-								</UML:Generalization>
-								<UML:Class name="ConnectivityNode" xmi.id="EAID_F662B04D_CD3B_449c_80E8_D3BB7A70FD58" visibility="public" namespace="EAPK_337FB03A_392D_4b20_BE1C_325DA948B7F2" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="Operation"/>
-									</UML:ModelElement.stereotype>
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="Connectivity nodes are points where terminals of AC conducting equipment are connected together with zero impedance."/>
-									</UML:ModelElement.taggedValue>
-								</UML:Class>
-								<UML:Association xmi.id="EAID_D30F754D_31E5_43b5_8316_18066B33CA70" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="GUIDBasedOn" value="{ACD76E10-125A-4f7a-A20A-475AC4334414}" xmi.id="EAID_7F410BFA_4314_4e1f_9936_CBAFFACC0B22"/>
-									</UML:ModelElement.taggedValue>
-									<UML:Association.connection>
-										<UML:AssociationEnd visibility="public" multiplicity="0..1" name="TopologicalNode" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_373662F0_6F7D_4315_8559_CE7CE4C128F3">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="The connectivity nodes combine together to form this topological node.  May depend on the current state of switches in the network."/>
-											</UML:ModelElement.taggedValue>
-										</UML:AssociationEnd>
-										<UML:AssociationEnd visibility="public" multiplicity="0..*" name="ConnectivityNodes" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_F662B04D_CD3B_449c_80E8_D3BB7A70FD58">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="The topological node to which this connectivity node is assigned.  May depend on the current state of switches in the network."/>
-											</UML:ModelElement.taggedValue>
-										</UML:AssociationEnd>
-									</UML:Association.connection>
-								</UML:Association>
-								<UML:Constraint xmi.id="EAID_OR000000_2B54_45b6_8AFA_B6871A403558" visibility="public" namespace="EAPK_337FB03A_392D_4b20_BE1C_325DA948B7F2">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="inv topologyDescriptionLength: self.description = null or self.description-&amp;gt;size() &amp;lt;= 256"/>
-									</UML:ModelElement.taggedValue>
-									<UML:ModelElement.constraint>
-										<UML:Constraint name="R.4.10.11. Description length restriction (optional)">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="inv topologyDescriptionLength: self.description = null or self.description-&amp;gt;size() &amp;lt;= 256"/>
-												<UML:TaggedValue tag="type" value="OCL"/>
-												<UML:TaggedValue tag="weight" value="1.00"/>
-												<UML:TaggedValue tag="status" value="Approved"/>
-											</UML:ModelElement.taggedValue>
-										</UML:Constraint>
-										<UML:Constraint name="R.4.10.11. Energy Ident Code length restriction (optional)">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="inv topologyEnergyIdentCodeEicLength: self.energyIdentCodeEic = null or self.energyIdentCodeEic-&amp;gt;size() = 16"/>
-												<UML:TaggedValue tag="type" value="OCL"/>
-												<UML:TaggedValue tag="weight" value="2.00"/>
-												<UML:TaggedValue tag="status" value="Approved"/>
-											</UML:ModelElement.taggedValue>
-										</UML:Constraint>
-										<UML:Constraint name="R.4.10.11. Name length restriction">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="inv topologyNameLength: self.name-&amp;gt;size() &amp;lt;= 32"/>
-												<UML:TaggedValue tag="type" value="OCL"/>
-												<UML:TaggedValue tag="weight" value="0.00"/>
-												<UML:TaggedValue tag="status" value="Approved"/>
-											</UML:ModelElement.taggedValue>
-										</UML:Constraint>
-										<UML:Constraint name="R.4.10.11. ShortName length restriction (optional)">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="inv topologyShortNameLength: self.shortName = null or self.shortName-&amp;gt;size() &amp;lt;= 12"/>
-												<UML:TaggedValue tag="type" value="OCL"/>
-												<UML:TaggedValue tag="weight" value="3.00"/>
-												<UML:TaggedValue tag="status" value="Approved"/>
-											</UML:ModelElement.taggedValue>
-										</UML:Constraint>
-									</UML:ModelElement.constraint>
-								</UML:Constraint>
-								<UML:Constraint xmi.id="EAID_OR000001_2B54_45b6_8AFA_B6871A403558" visibility="public" namespace="EAPK_337FB03A_392D_4b20_BE1C_325DA948B7F2">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="inv topologyEnergyIdentCodeEicLength: self.energyIdentCodeEic = null or self.energyIdentCodeEic-&amp;gt;size() = 16"/>
-									</UML:ModelElement.taggedValue>
-								</UML:Constraint>
-								<UML:Constraint xmi.id="EAID_OR000002_2B54_45b6_8AFA_B6871A403558" visibility="public" namespace="EAPK_337FB03A_392D_4b20_BE1C_325DA948B7F2">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="inv topologyNameLength: self.name-&amp;gt;size() &amp;lt;= 32"/>
-									</UML:ModelElement.taggedValue>
-								</UML:Constraint>
-								<UML:Constraint xmi.id="EAID_OR000003_2B54_45b6_8AFA_B6871A403558" visibility="public" namespace="EAPK_337FB03A_392D_4b20_BE1C_325DA948B7F2">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="inv topologyShortNameLength: self.shortName = null or self.shortName-&amp;gt;size() &amp;lt;= 12"/>
-									</UML:ModelElement.taggedValue>
-								</UML:Constraint>
-								<UML:Constraint name="R.4.10.13. Name is required for all classes excepted ACDCTerminal." xmi.id="EAID_OR000004_2B54_45b6_8AFA_B6871A403558" visibility="public" namespace="EAPK_337FB03A_392D_4b20_BE1C_325DA948B7F2">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="inv tpNameRequirement: if (not self.oclIsKindOf(ACDCTerminal)) then (self.name &amp;lt;&amp;gt; null) else (self.name = null or self.name &amp;lt;&amp;gt; null) endif"/>
-									</UML:ModelElement.taggedValue>
-								</UML:Constraint>
-							</UML:Namespace.ownedElement>
-						</UML:Package>
-						<UML:Package name="DC" xmi.id="EAPK_E291831A_286C_4cf8_B745_52466A84F8F2" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+						<UML:Generalization subtype="EAID_8D8B3861_FE0D_427c_B393_9C3F67CEFF79" supertype="EAID_DAC9EF48_0878_42d9_9A87_30DBE78A76A0" xmi.id="EAID_42B10519_7E64_442c_9B2D_E098ED23BF37" visibility="public">
 							<UML:ModelElement.taggedValue/>
-							<UML:Namespace.ownedElement>
-								<UML:Class name="DCTerminal" xmi.id="EAID_06FB8F71_F888_4149_81D5_CD68EA0E33E4" visibility="public" namespace="EAPK_E291831A_286C_4cf8_B745_52466A84F8F2" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="Description"/>
-									</UML:ModelElement.stereotype>
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="An electrical connection point to generic DC conducting equipment."/>
-									</UML:ModelElement.taggedValue>
-								</UML:Class>
-								<UML:Generalization subtype="EAID_06FB8F71_F888_4149_81D5_CD68EA0E33E4" supertype="EAID_B6E91AF1_CC09_4706_8BF0_5B02991CE6F1" xmi.id="EAID_3D3517A2_CBC5_4a84_8CF8_5226C08D4C58" visibility="public">
-									<UML:ModelElement.taggedValue/>
-								</UML:Generalization>
-								<UML:Class name="DCEquipmentContainer" xmi.id="EAID_07053457_5D9C_415a_B30A_6D03450D4E85" visibility="public" namespace="EAPK_E291831A_286C_4cf8_B745_52466A84F8F2" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="A modeling construct to provide a root class for containment of DC as well as AC equipment. The class differ from the EquipmentContaner for AC in that it may also contain DCNodes. Hence it can contain both AC and DC equipment."/>
-									</UML:ModelElement.taggedValue>
-								</UML:Class>
-								<UML:Association xmi.id="EAID_5419398E_0F3C_4463_96E8_F573699546E7" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="GUIDBasedOn" value="{B4C9C4A3-7B73-42b4-866B-ABC9504B8B53}" xmi.id="EAID_76CEEFC6_72DC_464d_B8E7_A2BA115D374A"/>
-									</UML:ModelElement.taggedValue>
-									<UML:Association.connection>
-										<UML:AssociationEnd visibility="public" multiplicity="0..*" name="DCTopologicalNode" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_67566C6A_B9DB_4c28_983A_DEB3F7C1C9D2">
-											<UML:ModelElement.taggedValue/>
-										</UML:AssociationEnd>
-										<UML:AssociationEnd visibility="public" multiplicity="0..1" name="DCEquipmentContainer" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_07053457_5D9C_415a_B30A_6D03450D4E85">
-											<UML:ModelElement.taggedValue/>
-										</UML:AssociationEnd>
-									</UML:Association.connection>
-								</UML:Association>
-								<UML:Class name="DCTopologicalNode" xmi.id="EAID_67566C6A_B9DB_4c28_983A_DEB3F7C1C9D2" visibility="public" namespace="EAPK_E291831A_286C_4cf8_B745_52466A84F8F2" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="DC bus."/>
-									</UML:ModelElement.taggedValue>
-								</UML:Class>
-								<UML:Association xmi.id="EAID_4081E8EA_2D30_4a04_8D8B_63BF13C6A44B" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="GUIDBasedOn" value="{5A20F31D-14D7-4c51-B74F-DDC1C56849F3}" xmi.id="EAID_9000A9F3_75D1_4233_B4A4_F497A043A33D"/>
-									</UML:ModelElement.taggedValue>
-									<UML:Association.connection>
-										<UML:AssociationEnd visibility="public" multiplicity="0..1" name="DCTopologicalNode" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_67566C6A_B9DB_4c28_983A_DEB3F7C1C9D2">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="See association end TopologicalNode.ConnectivityNodes."/>
-											</UML:ModelElement.taggedValue>
-										</UML:AssociationEnd>
-										<UML:AssociationEnd visibility="public" multiplicity="0..*" name="DCNodes" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_A59E4169_130D_4b1e_A961_30CDFE2C721E">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="See association end ConnectivityNode.TopologicalNode."/>
-											</UML:ModelElement.taggedValue>
-										</UML:AssociationEnd>
-									</UML:Association.connection>
-								</UML:Association>
-								<UML:Association xmi.id="EAID_CC380268_C950_4097_A77E_CFA466119AC7" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="GUIDBasedOn" value="{B7808724-9A0B-430d-9271-410BC33226AB}" xmi.id="EAID_3CCDD7FC_5247_469e_BAFC_6FBD12F624ED"/>
-									</UML:ModelElement.taggedValue>
-									<UML:Association.connection>
-										<UML:AssociationEnd visibility="public" multiplicity="1" name="DCTopologicalNode" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_67566C6A_B9DB_4c28_983A_DEB3F7C1C9D2">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="See association end TopologicalNode.Terminal."/>
-											</UML:ModelElement.taggedValue>
-										</UML:AssociationEnd>
-										<UML:AssociationEnd visibility="public" multiplicity="0..*" name="DCTerminals" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_B6E91AF1_CC09_4706_8BF0_5B02991CE6F1">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="See association end Terminal.TopologicalNode."/>
-											</UML:ModelElement.taggedValue>
-										</UML:AssociationEnd>
-									</UML:Association.connection>
-								</UML:Association>
-								<UML:Class name="DCNode" xmi.id="EAID_A59E4169_130D_4b1e_A961_30CDFE2C721E" visibility="public" namespace="EAPK_E291831A_286C_4cf8_B745_52466A84F8F2" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="Description"/>
-									</UML:ModelElement.stereotype>
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="DC nodes are points where terminals of DC conducting equipment are connected together with zero impedance."/>
-									</UML:ModelElement.taggedValue>
-								</UML:Class>
-								<UML:Class name="ACDCConverterDCTerminal" xmi.id="EAID_A6774717_0C9B_4033_A0B1_E72B1CD03742" visibility="public" namespace="EAPK_E291831A_286C_4cf8_B745_52466A84F8F2" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="Description"/>
-									</UML:ModelElement.stereotype>
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="A DC electrical connection point at the AC/DC converter. The AC/DC converter is electrically connected also to the AC side. The AC connection is inherited from the AC conducting equipment in the same way as any other AC equipment. The AC/DC converter DC terminal is separate from generic DC terminal to restrict the connection with the AC side to AC/DC converter and so that no other DC conducting equipment can be connected to the AC side."/>
-									</UML:ModelElement.taggedValue>
-								</UML:Class>
-								<UML:Generalization subtype="EAID_A6774717_0C9B_4033_A0B1_E72B1CD03742" supertype="EAID_B6E91AF1_CC09_4706_8BF0_5B02991CE6F1" xmi.id="EAID_8632E80C_6610_4c40_A997_E7A406652B7A" visibility="public">
-									<UML:ModelElement.taggedValue/>
-								</UML:Generalization>
-								<UML:Class name="DCBaseTerminal" xmi.id="EAID_B6E91AF1_CC09_4706_8BF0_5B02991CE6F1" visibility="public" namespace="EAPK_E291831A_286C_4cf8_B745_52466A84F8F2" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="An electrical connection point at a piece of DC conducting equipment. DC terminals are connected at one physical DC node that may have multiple DC terminals connected. A DC node is similar to an AC connectivity node. The model enforces that DC connections are distinct from AC connections. "/>
-									</UML:ModelElement.taggedValue>
-								</UML:Class>
-							</UML:Namespace.ownedElement>
-						</UML:Package>
-						<UML:Package name="Topology" xmi.id="EAPK_51D50CAF_ECDD_429e_90D7_713B0C95BA3E" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+						</UML:Generalization>
+						<UML:Dependency xmi.id="EAID_4574ABEA_494D_440e_B04A_4F09513012C2" visibility="public" client="EAID_03E0771B_F0FF_487e_8A5E_C6349BB017EF" supplier="EAID_8D8B3861_FE0D_427c_B393_9C3F67CEFF79">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="embed"/>
+							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue/>
-							<UML:Namespace.ownedElement>
-								<UML:Class name="TopologicalNode" xmi.id="EAID_373662F0_6F7D_4315_8559_CE7CE4C128F3" visibility="public" namespace="EAPK_51D50CAF_ECDD_429e_90D7_713B0C95BA3E" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+						</UML:Dependency>
+						<UML:Dependency xmi.id="EAID_4C78A825_6C28_41c1_A36E_78CC7D5DAD4A" visibility="public" client="EAID_8D8B3861_FE0D_427c_B393_9C3F67CEFF79" supplier="EAID_1EC49270_EB56_4f35_ABC1_8FEE5A84FAF0">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="IsBasedOn"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue/>
+						</UML:Dependency>
+						<UML:Class name="Terminal" xmi.id="EAID_958398B6_E62B_40db_B17E_923AB4A2A669" visibility="public" namespace="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="Description"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Generalization subtype="EAID_958398B6_E62B_40db_B17E_923AB4A2A669" supertype="EAID_EDDEF1DE_AE90_4151_9A4F_655B2690DF70" xmi.id="EAID_16746EBF_BEB6_41b0_9E16_1C92035C3CFF" visibility="public">
+							<UML:ModelElement.taggedValue/>
+						</UML:Generalization>
+						<UML:Dependency xmi.id="EAID_4CD42AD7_3252_43c7_99BB_9EE9E449E632" visibility="public" client="EAID_958398B6_E62B_40db_B17E_923AB4A2A669" supplier="EAID_1A0F8321_5E77_4d68_BE29_B36FA31549DC">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="IsBasedOn"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue/>
+						</UML:Dependency>
+						<UML:Class name="DCNode" xmi.id="EAID_A59E4169_130D_4b1e_A961_30CDFE2C721E" visibility="public" namespace="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="Description"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="DC nodes are points where terminals of DC conducting equipment are connected together with zero impedance."/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Generalization subtype="EAID_A59E4169_130D_4b1e_A961_30CDFE2C721E" supertype="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558" xmi.id="EAID_1325425C_9C65_4c2e_8275_B07171186B17" visibility="public">
+							<UML:ModelElement.taggedValue/>
+						</UML:Generalization>
+						<UML:Dependency xmi.id="EAID_2F4E5C91_49CE_46bc_996F_23082C5EA0F1" visibility="public" client="EAID_A59E4169_130D_4b1e_A961_30CDFE2C721E" supplier="EAID_203CCDC9_3887_4e57_8C59_B429AADB60F6">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="IsBasedOn"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue/>
+						</UML:Dependency>
+						<UML:Class name="Date" xmi.id="EAID_B26073BA_6F0D_4958_97DA_0A03CBCAC366" visibility="public" namespace="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="Primitive"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Date as &quot;yyyy-mm-dd&quot;, which conforms with ISO 8601. UTC time zone is specified as &quot;yyyy-mm-ddZ&quot;. A local timezone relative UTC is specified as &quot;yyyy-mm-dd(+/-)hh:mm&quot;."/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Dependency xmi.id="EAID_BC264363_6C82_4163_A71A_083CDB75A962" visibility="public" client="EAID_B26073BA_6F0D_4958_97DA_0A03CBCAC366" supplier="EAID_C724EF94_9D38_4673_A889_46E7C5C6321C">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="IsBasedOn"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue/>
+						</UML:Dependency>
+						<UML:Class name="DCBaseTerminal" xmi.id="EAID_B6E91AF1_CC09_4706_8BF0_5B02991CE6F1" visibility="public" namespace="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="An electrical connection point at a piece of DC conducting equipment. DC terminals are connected at one physical DC node that may have multiple DC terminals connected. A DC node is similar to an AC connectivity node. The model requires that DC connections are distinct from AC connections. "/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Generalization subtype="EAID_B6E91AF1_CC09_4706_8BF0_5B02991CE6F1" supertype="EAID_EDDEF1DE_AE90_4151_9A4F_655B2690DF70" xmi.id="EAID_9C5BFC91_B39D_493e_AE64_BA8997F4479B" visibility="public">
+							<UML:ModelElement.taggedValue/>
+						</UML:Generalization>
+						<UML:Dependency xmi.id="EAID_FEC0778B_9AF9_41f7_84EB_DC00D5D11440" visibility="public" client="EAID_B6E91AF1_CC09_4706_8BF0_5B02991CE6F1" supplier="EAID_F76397E4_74A4_4178_9434_E33C9EBC5E7C">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="IsBasedOn"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue/>
+						</UML:Dependency>
+						<UML:Class name="IdentifiedObject" xmi.id="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558" visibility="public" namespace="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="This is a root class to provide common identification for all classes needing identification and naming attributes."/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="description" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_82159E83_6BDD_4713_8B01_8FF652E923E0"/>
+									</UML:StructuralFeature.type>
 									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="For a detailed substation model a topological node is a set of connectivity nodes that, in the current network state, are connected together through any type of closed switches, including  jumpers. Topological nodes change as the current network state changes (i.e., switches, breakers, etc. change state).&#xA;For a planning model, switch statuses are not used to form topological nodes. Instead they are manually created or deleted in a model builder tool. Topological nodes maintained this way are also called &quot;busses&quot;."/>
+										<UML:TaggedValue tag="description" value="The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{13104BE9-CB1E-4dde-9A52-D7EE95DF7B65}" xmi.id="EAID_CAA2E85E_2F6F_45e2_BA51_2ECF93E1301A"/>
 									</UML:ModelElement.taggedValue>
-								</UML:Class>
-							</UML:Namespace.ownedElement>
-						</UML:Package>
+								</UML:Attribute>
+								<UML:Attribute name="energyIdentCodeEic" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_82159E83_6BDD_4713_8B01_8FF652E923E0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="European"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The attribute is used for an exchange of the EIC code (Energy identification Code). The length of the string is 16 characters as defined by the EIC code. For details on EIC scheme please refer to ENTSO-E web site."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{1D8E1417-DB69-48e1-894E-45D2FCA2C06F}" xmi.id="EAID_3457065E_2E17_4d22_9420_EDD06E963798"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="mRID" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_82159E83_6BDD_4713_8B01_8FF652E923E0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.&#xA;For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{C775F80A-A23D-4f38-AB9D-49D1FA882337}" xmi.id="EAID_16393800_B733_4e88_B344_D7B9A0B29B32"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="name" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_82159E83_6BDD_4713_8B01_8FF652E923E0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The name is any free human readable and possibly non unique text naming the object.&#xA;"/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{870F033B-EDA6-4a32-A5AD-47DCBBFE2997}" xmi.id="EAID_C6DC8F53_1B09_4965_8082_F1A75630C491"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="shortName" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_82159E83_6BDD_4713_8B01_8FF652E923E0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="European"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="The attribute is used for an exchange of a human readable short name with length of the string 12 characters maximum."/>
+										<UML:TaggedValue tag="GUIDBasedOn" value="{2ADE284C-35EB-4009-AA99-98FCD8A47CD5}" xmi.id="EAID_697FC024_C76B_438b_B11F_4AD4A37D020A"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Generalization subtype="EAID_EDDEF1DE_AE90_4151_9A4F_655B2690DF70" supertype="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558" xmi.id="EAID_0275FCFA_8337_43c5_8F9A_DE0ECD37D26C" visibility="public">
+							<UML:ModelElement.taggedValue/>
+						</UML:Generalization>
+						<UML:Dependency xmi.id="EAID_88325694_D6F2_4ed2_8EDB_E497CD5BD945" visibility="public" client="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558" supplier="EAID_055C5806_E9D8_4a7a_9307_DAF7C31763C7">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="IsBasedOn"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue/>
+						</UML:Dependency>
+						<UML:Class name="ACDCTerminal" xmi.id="EAID_EDDEF1DE_AE90_4151_9A4F_655B2690DF70" visibility="public" namespace="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Dependency xmi.id="EAID_BA6B3BEA_99FE_41de_8733_ADEF756E6A2C" visibility="public" client="EAID_EDDEF1DE_AE90_4151_9A4F_655B2690DF70" supplier="EAID_D37077B9_3B0C_4c16_8F5F_9A6F2C83A7F2">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="IsBasedOn"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue/>
+						</UML:Dependency>
+						<UML:Class name="ConnectivityNode" xmi.id="EAID_F662B04D_CD3B_449c_80E8_D3BB7A70FD58" visibility="public" namespace="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="Description"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Connectivity nodes are points where terminals of AC conducting equipment are connected together with zero impedance."/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Dependency xmi.id="EAID_24832AB3_0A57_4d68_BC32_BCB338F56449" visibility="public" client="EAID_F662B04D_CD3B_449c_80E8_D3BB7A70FD58" supplier="EAID_8BCACC36_B2DD_4c2a_A2AE_CFDF43731FC2">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="IsBasedOn"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue/>
+						</UML:Dependency>
+						<UML:Dependency xmi.id="EAID_17BB5615_247D_406e_BBB5_A0F4313080B3" visibility="public" client="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" supplier="EAPK_21D32832_FF64_4213_B81C_55ACE35EEBFF">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="IsBasedOn"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue/>
+						</UML:Dependency>
+						<UML:Dependency xmi.id="EAID_BA806BD5_437A_4eae_97D3_B3708C871224" visibility="public" client="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" supplier="EAPK_F98BD9A1_D05C_43ed_BB33_B476E4B34588">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="IsBasedOn"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue/>
+						</UML:Dependency>
+						<UML:Dependency xmi.id="EAID_D0217C1D_D40D_4179_9566_B45C9BF57B9E" visibility="public" client="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" supplier="EAPK_6A503B72_6E15_4cd1_B92D_DDF6D14DBE29">
+							<UML:ModelElement.taggedValue/>
+						</UML:Dependency>
 					</UML:Namespace.ownedElement>
 				</UML:Package>
+				<UML:DataType xmi.id="eaxmiid1" name="String" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid0" name="StringIRI" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid3" name="DateTime" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid6" name="Date" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid2" name="IRI" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid5" name="URL" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid4" name="StringFixedLanguage" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
 			</UML:Namespace.ownedElement>
 		</UML:Model>
-		<UML:Diagram name="TopologyProfile" xmi.id="EAID_001109E7_2946_46be_808A_8CEB6BD80910" diagramType="ClassDiagram" owner="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" toolName="Enterprise Architect 2.5">
-			<UML:ModelElement.taggedValue/>
-			<UML:Diagram.element>
-				<UML:DiagramElement geometry="Left=597;Top=38;Right=721;Bottom=108;imgL=622;imgT=68;imgR=746;imgB=138;" subject="EAID_EDDEF1DE_AE90_4151_9A4F_655B2690DF70" seqno="1" style="DUID=DFA8DF82;NSL=0;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;LCol=0;BCol=14745599;BFol=0;"/>
-				<UML:DiagramElement geometry="Left=460;Top=102;Right=559;Bottom=172;imgL=485;imgT=132;imgR=584;imgB=202;" subject="EAID_22ACEE6D_AF25_4de9_8AE4_7B6F5E89B52F" seqno="2" style="DUID=4F79FC30;LCol=0;BCol=14745599;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=24;Top=97;Right=168;Bottom=160;imgL=49;imgT=127;imgR=193;imgB=190;" subject="EAID_F662B04D_CD3B_449c_80E8_D3BB7A70FD58" seqno="3" style="DUID=4D77EA10;NSL=0;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;LCol=0;BFol=0;black=0;BCol=14938876;"/>
-				<UML:DiagramElement geometry="Left=237;Top=13;Right=427;Bottom=138;imgL=262;imgT=43;imgR=452;imgB=168;" subject="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558" seqno="4" style="DUID=F77E6E0B;LCol=0;BCol=14745599;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=53;Top=455;Right=367;Bottom=657;imgL=78;imgT=485;imgR=392;imgB=687;" subject="EAID_4DE570DC_86F9_485b_B132_3F2DCDCBC35B" seqno="5" style="DUID=98E4109C;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;BCol=13434828;"/>
-				<UML:DiagramElement geometry="Left=264;Top=361;Right=431;Bottom=414;imgL=289;imgT=391;imgR=456;imgB=444;" subject="EAID_4C3E4290_7B18_4f1c_9BFD_93A40659CBF9" seqno="6" style="DUID=825797AB;LCol=0;BCol=14745599;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=11;Top=225;Right=93;Bottom=277;imgL=36;imgT=255;imgR=118;imgB=307;" subject="EAID_4CA054DE_E8EF_4dbd_8BA8_E024B7727044" seqno="7" style="DUID=A7B79486;LCol=0;BCol=14745599;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=574;Top=233;Right=745;Bottom=295;imgL=599;imgT=263;imgR=770;imgB=325;" subject="EAID_958398B6_E62B_40db_B17E_923AB4A2A669" seqno="8" style="DUID=08565EC0;LCol=0;BCol=14938876;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=272;Top=230;Right=418;Bottom=292;imgL=297;imgT=260;imgR=443;imgB=322;" subject="EAID_373662F0_6F7D_4315_8559_CE7CE4C128F3" seqno="9" style="DUID=EBF7CF0F;LCol=0;BCol=14938876;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="EDGE=4;SX=0;SY=5;EX=0;EY=7;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_0275FCFA_8337_43c5_8F9A_DE0ECD37D26C" style="Mode=3;EOID=F77E6E0B;SOID=DFA8DF82;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="SX=29;SY=-5;EX=29;EY=-5;EDGE=3;$LLB=CX=18:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=85:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=88:CY=14:OX=-16:OY=-13:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=17:CY=14:OX=3:OY=-13:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_CB4700AB_637C_48ad_915F_656790CB3564" style="Mode=3;EOID=EBF7CF0F;SOID=4F79FC30;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="SX=-48;SY=19;EX=94;EY=-43;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_2404C225_6EB1_4e96_9ACD_F324CBDE5083" style="Mode=3;EOID=F77E6E0B;SOID=4F79FC30;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_16746EBF_BEB6_41b0_9E16_1C92035C3CFF" style="Mode=3;EOID=DFA8DF82;SOID=08565EC0;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;SX=15;SY=30;EX=28;EY=-1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_0CEB4324_956D_40ca_B626_53DAD80BD03A" style="Mode=3;EOID=F77E6E0B;SOID=EBF7CF0F;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=2;SX=-1;SY=-4;EX=-84;EY=-2;$LLB=CX=6:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=88:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=50:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=17:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_1C4C3D60_787C_4ba9_BB95_1C72D0CC7FE1" style="Mode=3;EOID=08565EC0;SOID=EBF7CF0F;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=3;SX=-4;SY=1;EX=-6;EY=25;$LLB=CX=17:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=88:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=141:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=6:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_F96C2F03_7AFB_4a34_A2C4_FD57E0A12C36" style="Mode=3;EOID=825797AB;SOID=EBF7CF0F;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;SX=-13;SY=26;EX=-13;EY=26;$LLB=CX=18:CY=14:OX=-42:OY=-4:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=88:CY=14:OX=16:OY=-23:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=98:CY=14:OX=-9:OY=39:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=17:CY=14:OX=11:OY=-12:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_D30F754D_31E5_43b5_8316_18066B33CA70" style="Mode=3;EOID=4D77EA10;SOID=EBF7CF0F;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="SX=-72;SY=7;EDGE=4;EX=9;EY=-2;$LLB=CX=17:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=88:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=67:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=18:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_7B3EC3FA_41D7_4c02_A57B_D673533EE000" style="Mode=3;EOID=A7B79486;SOID=EBF7CF0F;Color=-1;LWidth=0;Hidden=0;"/>
-			</UML:Diagram.element>
-		</UML:Diagram>
-		<UML:Diagram name="TopologyProfileNotes" xmi.id="EAID_CFE58386_8BEF_4aa2_8A99_762CE21DEB26" diagramType="ClassDiagram" owner="EAPK_B2F5BB89_2808_40c8_99CF_E193FB21DE24" toolName="Enterprise Architect 2.5">
-			<UML:ModelElement.taggedValue/>
-			<UML:Diagram.element>
-				<UML:DiagramElement geometry="Left=251;Top=94;Right=588;Bottom=197;imgL=276;imgT=124;imgR=613;imgB=227;" subject="EAID_EB8E8CAC_6C4F_4d38_8145_CB05162B3B8D" seqno="1" style="DUID=8EF52A59;"/>
-				<UML:DiagramElement geometry="Left=238;Top=20;Right=680;Bottom=81;imgL=263;imgT=50;imgR=705;imgB=111;" subject="EAID_B91BE3A7_CBE9_4b60_AE4F_1658E431BC7F" seqno="2" style="DUID=418D3FEB;"/>
-				<UML:DiagramElement geometry="Left=74;Top=404;Right=385;Bottom=592;imgL=99;imgT=434;imgR=410;imgB=622;" subject="EAID_4DE570DC_86F9_485b_B132_3F2DCDCBC35B" seqno="3" style="NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;DUID=746CCEA2;BCol=13434828;"/>
-				<UML:DiagramElement geometry="Left=254;Top=306;Right=685;Bottom=367;imgL=279;imgT=336;imgR=710;imgB=397;" subject="EAID_BDF66F92_3B5E_408b_A6CB_AA69FA9B135F" seqno="4" style="DUID=E3B8C5D0;"/>
-				<UML:DiagramElement geometry="Left=250;Top=219;Right=689;Bottom=280;imgL=275;imgT=249;imgR=714;imgB=310;" subject="EAID_5E400FA4_A9E3_4af0_A79B_E62DC8E57FF2" seqno="5" style="DUID=6866AA37;"/>
-				<UML:DiagramElement geometry="Left=17;Top=301;Right=184;Bottom=354;imgL=42;imgT=331;imgR=209;imgB=384;" subject="EAID_4C3E4290_7B18_4f1c_9BFD_93A40659CBF9" seqno="6" style="DUID=81D6A550;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;BCol=14745599;"/>
-				<UML:DiagramElement geometry="Left=26;Top=58;Right=216;Bottom=183;imgL=51;imgT=88;imgR=241;imgB=213;" subject="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558" seqno="7" style="DUID=EE885E8A;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;BCol=14745599;"/>
-				<UML:DiagramElement geometry="Left=73;Top=207;Right=155;Bottom=259;imgL=98;imgT=237;imgR=180;imgB=289;" subject="EAID_4CA054DE_E8EF_4dbd_8BA8_E024B7727044" seqno="8" style="DUID=90ABD40A;BCol=14745599;"/>
-				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_578539A3_6517_4573_990D_50C53A84E189" style="Mode=3;EOID=EE885E8A;SOID=8EF52A59;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_B6B3C09B_2CAD_40e2_BAAE_085ED2D807EC" style="Mode=3;EOID=EE885E8A;SOID=418D3FEB;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_1B4ED256_C87E_4eeb_A058_884026BB5F1D" style="Mode=3;EOID=81D6A550;SOID=E3B8C5D0;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_585DBF4A_7533_412a_885B_450252188578" style="Mode=3;EOID=90ABD40A;SOID=6866AA37;Color=-1;LWidth=0;Hidden=0;"/>
-			</UML:Diagram.element>
-		</UML:Diagram>
+		<UML:TaggedValue tag="Copyright" xmi.id="EAID_684AD017_E525_4e79_BD4F_8546DA498B41" value="Copyright 2022 ENTSO-E" modelElement="MX_EAID_B2F5BB89_2808_40c8_99CF_E193FB21DE24"/>
+		<UML:TaggedValue tag="License" xmi.id="EAID_189F035D_C637_4747_8A3B_41C4EF642F76" value="Apache 2.0." modelElement="MX_EAID_B2F5BB89_2808_40c8_99CF_E193FB21DE24"/>
+		<UML:TaggedValue tag="CIM:IsRdfAbout" xmi.id="EAID_13EA7591_537F_41f9_8C07_D00C90F046E4" value="True" modelElement="EAID_06FB8F71_F888_4149_81D5_CD68EA0E33E4"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_F6F9B26E_BC3D_4441_99BD_953AE9C25CA2" value="{6D3668E7-3378-46de-B0B6-9EB6724C8326}" modelElement="EAID_06FB8F71_F888_4149_81D5_CD68EA0E33E4"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_D0FBDEA0_7506_451a_8C79_BDCA2A29C2A7" value="{B7EB57A9-3AD6-40e2-9D5D-F391283E63B3}" modelElement="EAID_07053457_5D9C_415a_B30A_6D03450D4E85"/>
+		<UML:TaggedValue tag="CIM:IsRdfAbout" xmi.id="EAID_463EF0BF_11A8_4e90_A98D_1768D5A51572" value="True" modelElement="EAID_10C3CC4E_C377_4ab1_81ED_91429E0AD628"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_55EB9049_B713_4e20_A5B0_AB2B027546C4" value="{58B81D5E-10FF-4e21-A564-304AD5297BAE}" modelElement="EAID_10C3CC4E_C377_4ab1_81ED_91429E0AD628"/>
 		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_BFF6DDF5_3255_43f0_B837_004A533A80D0" value="{EB1C81AA-89E4-44f4-8BA2-45FF36E88015}" modelElement="EAID_22ACEE6D_AF25_4de9_8AE4_7B6F5E89B52F"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_BBE1CB95_0DC0_4c7c_B21A_A55C0A010197" value="{82489582-0ECB-4066-970D-A265B1065315}" modelElement="EAID_373662F0_6F7D_4315_8559_CE7CE4C128F3"/>
 		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_2D2996DD_96FE_4ac9_9B4E_96B5107D0B72" value="{B985C03E-46A3-4aec-B5B6-FDD983EBE621}" modelElement="EAID_4C3E4290_7B18_4f1c_9BFD_93A40659CBF9"/>
 		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_CFDE45C8_2AC4_4e94_8F7E_BE9EDB15CD4A" value="{2E70DC9D-AEAE-46cc-B20A-C20A636AE9B0}" modelElement="EAID_4CA054DE_E8EF_4dbd_8BA8_E024B7727044"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_319D4A2A_4E02_417f_BB9E_7D012D03ADC2" value="{36E96930-3FAF-4844-91D4-7103E3D68EAA}" modelElement="EAID_67566C6A_B9DB_4c28_983A_DEB3F7C1C9D2"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_6C51B5DF_30FF_485d_B944_A2FFFA544234" value="{E50DF78B-84CE-42e9-A275-A956DEF45490}" modelElement="EAID_82159E83_6BDD_4713_8B01_8FF652E923E0"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_009ABA53_4D92_4569_889E_E559BABFF6B5" modelElement="EAID_8D8B3861_FE0D_427c_B393_9C3F67CEFF79"/>
 		<UML:TaggedValue tag="CIM:IsRdfAbout" xmi.id="EAID_AD3E4AB3_20E5_440f_9115_887D404556E5" value="True" modelElement="EAID_958398B6_E62B_40db_B17E_923AB4A2A669"/>
 		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_112A7545_15CD_41bf_A016_E8901B9E94FC" value="{1A0F8321-5E77-4d68-BE29-B36FA31549DC}" modelElement="EAID_958398B6_E62B_40db_B17E_923AB4A2A669"/>
+		<UML:TaggedValue tag="CIM:IsRdfAbout" xmi.id="EAID_33363D97_FFF2_46d2_B0C0_D30318928931" value="True" modelElement="EAID_A59E4169_130D_4b1e_A961_30CDFE2C721E"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_EF4D3650_EDCD_46c0_AED7_4A46FB7B661B" value="{203CCDC9-3887-4e57-8C59-B429AADB60F6}" modelElement="EAID_A59E4169_130D_4b1e_A961_30CDFE2C721E"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_E88BA53C_B49F_4e1e_83FE_7BE7575A13FC" value="{C724EF94-9D38-4673-A889-46E7C5C6321C}" modelElement="EAID_B26073BA_6F0D_4958_97DA_0A03CBCAC366"/>
+		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_83A62B2B_3E90_4541_BF58_9F3E43665F34" value="{F76397E4-74A4-4178-9434-E33C9EBC5E7C}" modelElement="EAID_B6E91AF1_CC09_4706_8BF0_5B02991CE6F1"/>
 		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_5EDBC256_61B9_486f_A35C_74E158CD0372" value="{055C5806-E9D8-4a7a-9307-DAF7C31763C7}" modelElement="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558"/>
 		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_7518435B_F4B4_4794_88D8_0391A05CB4A2" value="{D37077B9-3B0C-4c16-8F5F-9A6F2C83A7F2}" modelElement="EAID_EDDEF1DE_AE90_4151_9A4F_655B2690DF70"/>
 		<UML:TaggedValue tag="CIM:IsRdfAbout" xmi.id="EAID_635B2C40_73A0_4d61_9F58_C5645C5F9F57" value="True" modelElement="EAID_F662B04D_CD3B_449c_80E8_D3BB7A70FD58"/>
 		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_2466FF33_1535_4574_BE36_4CDFF2B706CA" value="{8BCACC36-B2DD-4c2a-A2AE-CFDF43731FC2}" modelElement="EAID_F662B04D_CD3B_449c_80E8_D3BB7A70FD58"/>
-		<UML:Diagram name="Core" xmi.id="EAID_765BF41E_AC89_4131_8D8E_24C3F4910DBF" diagramType="ClassDiagram" owner="EAPK_337FB03A_392D_4b20_BE1C_325DA948B7F2" toolName="Enterprise Architect 2.5">
-			<UML:ModelElement.taggedValue/>
-			<UML:Diagram.element>
-				<UML:DiagramElement geometry="Left=64;Top=144;Right=257;Bottom=214;imgL=89;imgT=174;imgR=282;imgB=244;" subject="EAID_EDDEF1DE_AE90_4151_9A4F_655B2690DF70" seqno="1" style="DUID=8ED387E9;LCol=0;BCol=14745599;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=309;Top=353;Right=660;Bottom=418;imgL=334;imgT=383;imgR=685;imgB=448;" subject="EAID_B91BE3A7_CBE9_4b60_AE4F_1658E431BC7F" seqno="2" style="DUID=20AD93C1;"/>
-				<UML:DiagramElement geometry="Left=491;Top=149;Right=600;Bottom=209;imgL=516;imgT=179;imgR=625;imgB=239;" subject="EAID_F662B04D_CD3B_449c_80E8_D3BB7A70FD58" seqno="3" style="DUID=1D2CF1FF;LCol=0;BCol=14745599;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=316;Top=144;Right=467;Bottom=206;imgL=341;imgT=174;imgR=492;imgB=236;" subject="EAID_958398B6_E62B_40db_B17E_923AB4A2A669" seqno="4" style="DUID=CC9D681B;NSL=0;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;LCol=0;BCol=14938876;BFol=0;black=0;"/>
-				<UML:DiagramElement geometry="Left=73;Top=327;Right=260;Bottom=452;imgL=98;imgT=357;imgR=285;imgB=482;" subject="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558" seqno="5" style="DUID=EC1ED4A2;NSL=0;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;LCol=0;BCol=14745599;BFol=0;black=0;"/>
-				<UML:DiagramElement geometry="Left=282;Top=66;Right=449;Bottom=110;imgL=307;imgT=96;imgR=474;imgB=140;" subject="EAID_4C3E4290_7B18_4f1c_9BFD_93A40659CBF9" seqno="6" style="DUID=D6905E46;NSL=0;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;LCol=0;BCol=14745599;BFol=0;black=0;"/>
-				<UML:DiagramElement geometry="Left=143;Top=60;Right=225;Bottom=102;imgL=168;imgT=90;imgR=250;imgB=132;" subject="EAID_4CA054DE_E8EF_4dbd_8BA8_E024B7727044" seqno="7" style="DUID=E3C76511;NSL=0;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;LCol=0;BCol=14745599;BFol=0;black=0;"/>
-				<UML:DiagramElement geometry="SX=6;SY=-34;EX=0;EY=0;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_0275FCFA_8337_43c5_8F9A_DE0ECD37D26C" style="Mode=3;EOID=EC1ED4A2;SOID=8ED387E9;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_B6B3C09B_2CAD_40e2_BAAE_085ED2D807EC" style="Mode=3;EOID=EC1ED4A2;SOID=20AD93C1;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_16746EBF_BEB6_41b0_9E16_1C92035C3CFF" style="Mode=3;EOID=8ED387E9;SOID=CC9D681B;Color=-1;LWidth=0;Hidden=0;"/>
-			</UML:Diagram.element>
-		</UML:Diagram>
-		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_F6F9B26E_BC3D_4441_99BD_953AE9C25CA2" value="{6D3668E7-3378-46de-B0B6-9EB6724C8326}" modelElement="EAID_06FB8F71_F888_4149_81D5_CD68EA0E33E4"/>
-		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_D0FBDEA0_7506_451a_8C79_BDCA2A29C2A7" value="{B7EB57A9-3AD6-40e2-9D5D-F391283E63B3}" modelElement="EAID_07053457_5D9C_415a_B30A_6D03450D4E85"/>
-		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_319D4A2A_4E02_417f_BB9E_7D012D03ADC2" value="{36E96930-3FAF-4844-91D4-7103E3D68EAA}" modelElement="EAID_67566C6A_B9DB_4c28_983A_DEB3F7C1C9D2"/>
-		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_EF4D3650_EDCD_46c0_AED7_4A46FB7B661B" value="{203CCDC9-3887-4e57-8C59-B429AADB60F6}" modelElement="EAID_A59E4169_130D_4b1e_A961_30CDFE2C721E"/>
-		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_0B98DC40_AE3F_4b1c_96D9_D86C9C575D5E" value="{58B81D5E-10FF-4e21-A564-304AD5297BAE}" modelElement="EAID_A6774717_0C9B_4033_A0B1_E72B1CD03742"/>
-		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_83A62B2B_3E90_4541_BF58_9F3E43665F34" value="{F76397E4-74A4-4178-9434-E33C9EBC5E7C}" modelElement="EAID_B6E91AF1_CC09_4706_8BF0_5B02991CE6F1"/>
-		<UML:Diagram name="DC" xmi.id="EAID_F6EC7351_C3BD_4730_ACDC_FEB59FFF2473" diagramType="ClassDiagram" owner="EAPK_E291831A_286C_4cf8_B745_52466A84F8F2" toolName="Enterprise Architect 2.5">
-			<UML:ModelElement.taggedValue/>
-			<UML:Diagram.element>
-				<UML:DiagramElement geometry="Left=491;Top=286;Right=591;Bottom=330;imgL=516;imgT=316;imgR=616;imgB=360;" subject="EAID_B6E91AF1_CC09_4706_8BF0_5B02991CE6F1" seqno="1" style="DUID=53149AF4;LCol=0;BCol=14745599;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=483;Top=62;Right=602;Bottom=107;imgL=508;imgT=92;imgR=627;imgB=137;" subject="EAID_67566C6A_B9DB_4c28_983A_DEB3F7C1C9D2" seqno="2" style="DUID=B55C1B8E;LCol=0;BCol=14938876;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=44;Top=270;Right=134;Bottom=340;imgL=69;imgT=300;imgR=159;imgB=370;" subject="EAID_A59E4169_130D_4b1e_A961_30CDFE2C721E" seqno="3" style="DUID=81676F22;LCol=0;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;BCol=14938876;"/>
-				<UML:DiagramElement geometry="Left=33;Top=60;Right=172;Bottom=103;imgL=58;imgT=90;imgR=197;imgB=133;" subject="EAID_07053457_5D9C_415a_B30A_6D03450D4E85" seqno="4" style="DUID=6BCF0E4E;LCol=0;BCol=14745599;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=474;Top=393;Right=605;Bottom=426;imgL=499;imgT=423;imgR=630;imgB=456;" subject="EAID_06FB8F71_F888_4149_81D5_CD68EA0E33E4" seqno="5" style="DUID=5B8FF5BE;LCol=0;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;BCol=14938876;"/>
-				<UML:DiagramElement geometry="Left=618;Top=204;Right=742;Bottom=248;imgL=643;imgT=234;imgR=767;imgB=278;" subject="EAID_EDDEF1DE_AE90_4151_9A4F_655B2690DF70" seqno="6" style="DUID=ECC270F6;LCol=0;BCol=14745599;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=264;Top=390;Right=440;Bottom=428;imgL=289;imgT=420;imgR=465;imgB=458;" subject="EAID_A6774717_0C9B_4033_A0B1_E72B1CD03742" seqno="7" style="DUID=88816A3B;LCol=0;BCol=14938876;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_9C5BFC91_B39D_493e_AE64_BA8997F4479B" style="Mode=3;EOID=ECC270F6;SOID=53149AF4;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=4;SX=-44;SY=-14;EX=-40;EY=0;$LLB=CX=18:CY=14:OX=0:OY=8:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=102:CY=14:OX=-23:OY=43:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=51:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=17:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_4081E8EA_2D30_4a04_8D8B_63BF13C6A44B" style="Mode=3;EOID=81676F22;SOID=B55C1B8E;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=4;SX=5;SY=4;EX=5;EY=2;$LLB=CX=17:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=102:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=119:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=18:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_5419398E_0F3C_4463_96E8_F573699546E7" style="Mode=3;EOID=6BCF0E4E;SOID=B55C1B8E;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=3;SX=5;SY=-1;EX=6;EY=-1;$LLB=CX=6:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=102:CY=14:OX=49:OY=22:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=69:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=17:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_CC380268_C950_4097_A77E_CFA466119AC7" style="Mode=3;EOID=53149AF4;SOID=B55C1B8E;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;SX=1;SY=0;EX=-1;EY=0;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_3D3517A2_CBC5_4a84_8CF8_5226C08D4C58" style="Mode=3;EOID=53149AF4;SOID=5B8FF5BE;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_8632E80C_6610_4c40_A997_E7A406652B7A" style="Mode=3;EOID=53149AF4;SOID=88816A3B;Color=-1;LWidth=0;Hidden=0;"/>
-			</UML:Diagram.element>
-		</UML:Diagram>
-		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_BBE1CB95_0DC0_4c7c_B21A_A55C0A010197" value="{82489582-0ECB-4066-970D-A265B1065315}" modelElement="EAID_373662F0_6F7D_4315_8559_CE7CE4C128F3"/>
 	</XMI.content>
 	<XMI.difference/>
 	<XMI.extensions xmi.extender="Enterprise Architect 2.5">
-		<EANoteLink xmi.id="EAID_578539A3_6517_4573_990D_50C53A84E189" source="EAID_EB8E8CAC_6C4F_4d38_8145_CB05162B3B8D" target="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558">
-			<UML:ModelElement.taggedValue>
-				<UML:TaggedValue tag="linecolor" value="-1"/>
-				<UML:TaggedValue tag="linewidth" value="0"/>
-			</UML:ModelElement.taggedValue>
-		</EANoteLink>
 		<EAModel.paramSub/>
-		<EANoteLink xmi.id="EAID_1B4ED256_C87E_4eeb_A058_884026BB5F1D" source="EAID_BDF66F92_3B5E_408b_A6CB_AA69FA9B135F" target="EAID_4C3E4290_7B18_4f1c_9BFD_93A40659CBF9">
-			<UML:ModelElement.taggedValue>
-				<UML:TaggedValue tag="linecolor" value="0"/>
-				<UML:TaggedValue tag="linewidth" value="0"/>
-			</UML:ModelElement.taggedValue>
-		</EANoteLink>
-		<EANoteLink xmi.id="EAID_585DBF4A_7533_412a_885B_450252188578" source="EAID_5E400FA4_A9E3_4af0_A79B_E62DC8E57FF2" target="EAID_4CA054DE_E8EF_4dbd_8BA8_E024B7727044">
-			<UML:ModelElement.taggedValue>
-				<UML:TaggedValue tag="linecolor" value="0"/>
-				<UML:TaggedValue tag="linewidth" value="0"/>
-			</UML:ModelElement.taggedValue>
-		</EANoteLink>
-		<EANoteLink xmi.id="EAID_B6B3C09B_2CAD_40e2_BAAE_085ED2D807EC" source="EAID_B91BE3A7_CBE9_4b60_AE4F_1658E431BC7F" target="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558">
-			<UML:ModelElement.taggedValue>
-				<UML:TaggedValue tag="linecolor" value="0"/>
-				<UML:TaggedValue tag="linewidth" value="0"/>
-			</UML:ModelElement.taggedValue>
-		</EANoteLink>
-		<EANoteLink xmi.id="EAID_2F0FE203_25CA_41e0_90AF_60D2CC3EF7AF" source="EAID_OR000002_2B54_45b6_8AFA_B6871A403558" target="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558">
-			<UML:ModelElement.taggedValue>
-				<UML:TaggedValue tag="linecolor" value="0"/>
-				<UML:TaggedValue tag="linewidth" value="0"/>
-			</UML:ModelElement.taggedValue>
-		</EANoteLink>
-		<EANoteLink xmi.id="EAID_5CEC5F35_F6D5_4b64_AE55_687EA3FDD541" source="EAID_OR000004_2B54_45b6_8AFA_B6871A403558" target="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558">
-			<UML:ModelElement.taggedValue>
-				<UML:TaggedValue tag="linecolor" value="0"/>
-				<UML:TaggedValue tag="linewidth" value="0"/>
-			</UML:ModelElement.taggedValue>
-		</EANoteLink>
-		<EANoteLink xmi.id="EAID_5F1C87CE_BE53_4035_911C_4FD8531972C4" source="EAID_OR000003_2B54_45b6_8AFA_B6871A403558" target="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558">
-			<UML:ModelElement.taggedValue>
-				<UML:TaggedValue tag="linecolor" value="0"/>
-				<UML:TaggedValue tag="linewidth" value="0"/>
-			</UML:ModelElement.taggedValue>
-		</EANoteLink>
-		<EANoteLink xmi.id="EAID_9BCCB041_39B1_4d8c_829C_AD52AC0ABE6A" source="EAID_OR000000_2B54_45b6_8AFA_B6871A403558" target="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558">
-			<UML:ModelElement.taggedValue>
-				<UML:TaggedValue tag="linecolor" value="0"/>
-				<UML:TaggedValue tag="linewidth" value="0"/>
-			</UML:ModelElement.taggedValue>
-		</EANoteLink>
-		<EANoteLink xmi.id="EAID_F3D791F7_99E2_4e04_8F4F_0C4A91956A15" source="EAID_OR000001_2B54_45b6_8AFA_B6871A403558" target="EAID_D38A3953_2B54_45b6_8AFA_B6871A403558">
-			<UML:ModelElement.taggedValue>
-				<UML:TaggedValue tag="linecolor" value="0"/>
-				<UML:TaggedValue tag="linewidth" value="0"/>
-			</UML:ModelElement.taggedValue>
-		</EANoteLink>
-		<EAStub xmi.id="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E" name="String" UMLType="Class"/>
-		<EAStub xmi.id="EAID_FF85CB9F_4A0C_4339_A3E4_06CE2EA1772F" name="Date" UMLType="Class"/>
+		<EAStub xmi.id="EAID_6D3668E7_3378_46de_B0B6_9EB6724C8326" name="DCTerminal" UMLType="Class"/>
+		<EAStub xmi.id="EAID_B7EB57A9_3AD6_40e2_9D5D_F391283E63B3" name="DCEquipmentContainer" UMLType="Class"/>
+		<EAStub xmi.id="EAID_58B81D5E_10FF_4e21_A564_304AD5297BAE" name="ACDCConverterDCTerminal" UMLType="Class"/>
+		<EAStub xmi.id="EAID_EB1C81AA_89E4_44f4_8BA2_45FF36E88015" name="ReportingGroup" UMLType="Class"/>
+		<EAStub xmi.id="EAID_82489582_0ECB_4066_970D_A265B1065315" name="TopologicalNode" UMLType="Class"/>
+		<EAStub xmi.id="EAID_B985C03E_46A3_4aec_B5B6_FDD983EBE621" name="ConnectivityNodeContainer" UMLType="Class"/>
+		<EAStub xmi.id="EAID_2E70DC9D_AEAE_46cc_B20A_C20A636AE9B0" name="BaseVoltage" UMLType="Class"/>
+		<EAStub xmi.id="EAID_36E96930_3FAF_4844_91D4_7103E3D68EAA" name="DCTopologicalNode" UMLType="Class"/>
+		<EAStub xmi.id="EAID_E50DF78B_84CE_42e9_A275_A956DEF45490" name="String" UMLType="Class"/>
+		<EAStub xmi.id="EAID_DAC9EF48_0878_42d9_9A87_30DBE78A76A0" name="Configuration_Dataset" UMLType="Class"/>
+		<EAStub xmi.id="EAID_03E0771B_F0FF_487e_8A5E_C6349BB017EF" name="Topology-EU_Artifact" UMLType="Class"/>
+		<EAStub xmi.id="EAID_1EC49270_EB56_4f35_ABC1_8FEE5A84FAF0" name="Ontology" UMLType="Class"/>
+		<EAStub xmi.id="EAID_1A0F8321_5E77_4d68_BE29_B36FA31549DC" name="Terminal" UMLType="Class"/>
+		<EAStub xmi.id="EAID_203CCDC9_3887_4e57_8C59_B429AADB60F6" name="DCNode" UMLType="Class"/>
+		<EAStub xmi.id="EAID_C724EF94_9D38_4673_A889_46E7C5C6321C" name="Date" UMLType="Class"/>
+		<EAStub xmi.id="EAID_F76397E4_74A4_4178_9434_E33C9EBC5E7C" name="DCBaseTerminal" UMLType="Class"/>
+		<EAStub xmi.id="EAID_055C5806_E9D8_4a7a_9307_DAF7C31763C7" name="IdentifiedObject" UMLType="Class"/>
+		<EAStub xmi.id="EAID_D37077B9_3B0C_4c16_8F5F_9A6F2C83A7F2" name="ACDCTerminal" UMLType="Class"/>
+		<EAStub xmi.id="EAID_8BCACC36_B2DD_4c2a_A2AE_CFDF43731FC2" name="ConnectivityNode" UMLType="Class"/>
+		<EAStub xmi.id="EAPK_21D32832_FF64_4213_B81C_55ACE35EEBFF" name="IEC61970" UMLType="Package"/>
+		<EAStub xmi.id="EAPK_F98BD9A1_D05C_43ed_BB33_B476E4B34588" name="ExtIEC61970" UMLType="Package"/>
+		<EAStub xmi.id="EAPK_6A503B72_6E15_4cd1_B92D_DDF6D14DBE29" name="Core" UMLType="Package"/>
 	</XMI.extensions>
 </XMI>

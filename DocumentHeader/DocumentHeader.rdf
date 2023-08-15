@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#DifferenceModel">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">DifferenceModel</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">It represents the difference model header. The content is described by the Model class, the association role forwardDifferences and association role reverseDifferences. Both association roles may have one set of Statements.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#DifferenceModel.forwardDifferences">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">forwardDifferences</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#DifferenceModel"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Statements"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A property of the difference model whose value is a collection of statements (i.e., resources of type rdf:Statement) representing the forward difference statements. </comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#DifferenceModel.preconditions">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">preconditions</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#DifferenceModel"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Statements"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A property of the difference model whose value is the collection of precondition statements.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#DifferenceModel.reverseDifferences">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">reverseDifferences</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#DifferenceModel"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Statements"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A property of the difference model whose value is the collection of reverse difference statements.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#IRI">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">IRI</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.
+The primitive is serialized as rdf:resource in RDFXML.
+IRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.
+IRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.
+IRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#FullModel">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">FullModel</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">It represents the full model header and its contents is described by the Model class.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#StringFixedLanguage">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">StringFixedLanguage</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A string consisting of a sequence of characters. The character encoding is UTF-8. The string length is unspecified and unlimited.
+The primitive is serialized as literal without language support.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Model</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A Model is a collection of data describing instances, objects or entities, real or computed. In the context of CIM the semantics of the data is defined by profiles. Hence a model can contain equipment data, power flow initial values, power flow results etc.
+The Model class describes the header content that is the same for the FullModel and the DifferenceModel. A Model is identified by an rdf:about attribute. The rdf:about attribute uniquely describes the model data and not the CIMXML document. A new rdf:about identification is generated for created documents only when the model data has changed. A repeated creation of documents from unchanged model data shall have the same rdf:about identification as previous document generated from the same model data.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.accessRights">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">accessRights</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IRI"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Information about who access the resource or an indication of its security status. Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.
+[CIM context:
+Reference to the confidentiality level that shall be applied when handling this model.].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.accrualPeriodicity">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">accrualPeriodicity</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IRI"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The frequency with which items are added to a collection.
+[CIM context:
+Reference to the time frame.].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.applicationSoftware">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">applicationSoftware</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Identifies the application software which generated this instance file. The application software term is defined in ISO/IEC/IEEE 24765:2017. The application software can be identified either:
+- as a string which contains information on the software name and version, e.g. &amp;lt;tool_name&amp;gt;-&amp;lt;major_version&amp;gt;.&amp;lt;minor_version&amp;gt;.&amp;lt;patch&amp;gt;, or
+- as a reference to a software identification tag as defined by ISO/IEC 19770-2:2015 and ISO/IEC/IEEE 24765:2017.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.atLocation">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">atLocation</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IRI"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A location can be an identifiable geographic place (ISO 19112), but it can also be a non-geographic place such as a directory, row, or column. As such, there are numerous ways in which location can be expressed, such as by a coordinate, address, landmark, and so forth.
+[CIM context:
+Reference to a region or a domain for which this model is provided.].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.conformsTo">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">conformsTo</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#StringIRI"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An established standard to which the described resource conforms.
+[CIM context:
+An IRI describing the profile that governs this model. It uniquely identifies the profile and its version. Multiple instances of the property describe all standards or specifications to which the model and the document representing this model conform to.
+A document would normally conform to profile definitions, the constraints that relate to the profile and/or the set of business specific constrains. A reference to a machine- readable constraints or specification indicates that the document was tested against these constraints and it conforms to them.].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.created">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">created</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://schema.org/DateTime"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The date and time when the model was created. It is the time of the serialization. The format is an extended format according to the ISO 8601-2005. European exchanges shall refer to UTC, e.g. &amp;lt;md:Model.created&amp;gt;2014-05-15T17:48:31.474Z&amp;lt;/md:Model.created&amp;gt;.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.creator">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">creator</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#StringIRI"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An entity responsible for making the resource.
+Recommended practice is to identify the creator with a URI. If this is not possible or feasible, a literal value that identifies the creator may be provided.
+[CIM context:
+The name of the agent (Modeling Authority) from which the model originates].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.description">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">description</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A free-text account of the item.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.generatedAtTime">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">generatedAtTime</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://schema.org/DateTime"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.
+[CIM context:
+The date and time when the model was serialized in the document where the header is located. The format is an extended format according to the ISO 8601-2005. European exchanges shall refer to UTC.].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.hadPrimarySource">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">hadPrimarySource</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IRI"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A primary source for a topic refers to something produced by some agent with direct experience and knowledge about the topic, at the time of the topic&apos;s study, without benefit from hindsight. Because of the directness of primary sources, they &apos;speak for themselves&apos; in ways that cannot be captured through the filter of secondary sources. As such, it is important for secondary sources to reference those primary sources from which they were derived, so that their reliability can be investigated. A primary source relation is a particular case of derivation of secondary materials from their primary sources. It is recognized that the determination of primary sources can be up to interpretation, and should be done according to conventions accepted within the application&apos;s domain.
+[CIM context:
+Reference to a modelling authority set version sourcing the model. It is only used in cases where a model is modified by an agent which has different version of modelling authority set. The agent that makes a revision of a model indicates the primary source using this property and also refers to its own version of modelling authority set using prov:specializationOf.].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.hasCurrentVersion">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">hasCurrentVersion</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">This resource has a more specific, versioned resource with equivalent content.
+This property is intended for relating a non-versioned or abstract resource to a single snapshot that can be used as a permalink to indicate the current version of the content.
+
+The notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.hasVersion">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">hasVersion</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">This resource has a more specific, versioned resource.
+This property is intended for relating a non-versioned or abstract resource to several versioned resources, e.g. snapshots [PAV].
+
+The notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle. Therefore, its semantics is more specific than its super-property dcterms:hasVersion, which makes use of a broader notion of version, including editions and adaptations.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.hasXSDDuration">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">hasXSDDuration</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Extent of a temporal entity, expressed using xsd:duration.
+[CIM context:
+The duration of the validity period of the model that it is serialized in the document where the header is located. It is only used in relation to the inXSDDateTimeStamp property which indicates the beginning of the validity period of the model. The end of the validity period is derived from both inXSDDateTimeStamp and hasXSDDuration.].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.identifier">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">identifier</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#StringIRI"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An unambiguous reference to the resource within a given context. Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN). Persistent identifiers should be provided as HTTP URIs.
+[CIM context:
+A unique identifier of the model which is serialised in the document where the header is located. The identifier is persistent for a given version of the model and shall change when the model changes.
+If a model is serialized as complete (full) model or as difference model exchange the identifier shall be the same. The identifier shall not be used as an identifier of the document which can be different for a given version of a model.].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.inXSDDateTimeStamp">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">inXSDDateTimeStamp</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Position of an instant, expressed using xsd:dateTimeStamp, in which the time-zone field is mandatory.
+[CIM context:
+The date and time that this model represents, i.e. for which the model is (or was) valid. If used in relation with hasXSDDuration it indicates the beginning of the validity period.
+It is indicating either an instant (in cases where the model is only valid for a point in time) or the start time of a period. If not provided the model is considered valid for any time stamp. The format is an extended format according to the ISO 8601-2005. European exchanges shall refer to UTC.].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.isVersionOf">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">isVersionOf</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">This resource is a version of a non-versioned or abstract resource.
+This property is intended for relating a versioned resource to a non-versioned or abstract resource.
+
+The notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle. Therefore, its semantics is more specific than its super-property dcterms:isVersionOf, which makes use of a broader notion of version, including editions and adaptations.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.keyword">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">keyword</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#StringFixedLanguage"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A keyword or tag describing a resource.
+[CIM context:
+The intended content type of the model, usually the profile keyword. Used to identify what profiles and content is expected in the document, e.g., Equipment, Boundary, SSH, AE, etc. The same keyword is used for different versions of same profile. It can be also used to identify different content based on the same profile.
+For instance, as the equipment profile can be used for both boundary data and equipment not related to boundary, the keyword is different to indicate that boundary data is exchanged. In order to avoid ambiguity the property is not exchanged in cases where the document contains multiple profiles referenced by dct:conformsTo.].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.license">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">license</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A legal document giving official permission to do something with the resource. Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided.
+[CIM context:
+Reference to the license under which the data is made available. If no license holder is defined, then the original data provider holds the license.].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.modelingAuthoritySet">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">modelingAuthoritySet</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A URN/URI referring to the organisation role / model authority set reference. The organization role is the source of the model. It is the same for all profiles part of a model exchange. </comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.previousVersion">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">previousVersion</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The previous version of a resource in a lineage.
+This property is meant to be used to specify a version chain, consisting of snapshots of a resource.
+
+The notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle. One of the typical cases here is representing the history of the versions of a dataset that have been released over time.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.processType">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">processType</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IRI"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The exact business nature. Reference to Business Process configurations.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.profile">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">profile</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">URN/URI describing the profiles that governs this model. It uniquely identifies the profiles and its version, e.g. http://iec.ch/TC57/61970-456/SteadyStateHypothesis/2/0. </comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.rights">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">rights</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A statement that concerns all rights not addressed with dct:license or dct:accessRights, such as copyright statements.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.rightsHolder">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">rightsHolder</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Information about rights held in and over the resource. Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. Recommended practice is to refer to a rights statement with a URI. If this is not possible or feasible, a literal value (name, label, or short text) may be provided.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.scenarioTime">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">scenarioTime</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://schema.org/DateTime"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The date and time that this model represents, i.e. for which the model is valid. The format is an extended format according to the ISO 8601-2005. European exchanges shall refer to UTC, e.g. &amp;lt;md:Model.scenarioTime&amp;gt;2030-01-15T17:00:00.000Z&amp;lt;/md:Model.scenarioTime&amp;gt;.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.serviceLocation">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">serviceLocation</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IRI"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Reference to a service location (region or a domain).</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.specializationOf">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">specializationOf</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IRI"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An entity that is a specialization of another shares all aspects of the latter, and additionally presents more specific aspects of the same thing as the latter. In particular, the lifetime of the entity being specialized contains that of any specialization. Examples of aspects include a time period, an abstraction, and a context associated with the entity.
+[CIM context:
+Reference to modelling authority set version sourcing the model. The agent that makes a revision of a model indicates the primary source using prov:hadPrimarySource and refers to its own version of modelling authority set using this property.].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.status">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">status</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IRI"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Indicates the status of a skos:Concept or a skosxl:Label, or any resource related to controlled vocabulary management.
+[CIM context:
+The condition or position of an object with regard to its standing. (Validated, Primary, Backup etc.)].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.type">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">type</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The nature or genre of the resource. Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE]. To describe the file format, physical medium, or dimensions of the resource, use the property Format.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.usedSettings">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">usedSettings</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IRI"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Reference to a set of parameters describing used settings (e.g. power flow settings, process settings, etc.) applied to the model prior its serialisation.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.version">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">version</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The version number of a resource.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.versionNotes">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">versionNotes</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A description of changes between this version and the previous version of the resource.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.wasAttributedTo">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">wasAttributedTo</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IRI"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Attribution is the ascribing of an entity to an agent.
+[CIM context:
+Reference to the agent (or service provider) from which the model originates.].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.wasGeneratedBy">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">wasGeneratedBy</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IRI"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.
+[CIM context:
+Reference to an activity or the exact business nature (process, configuration) which produced or uses the model.].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.wasInfluencedBy">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">wasInfluencedBy</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IRI"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation.
+[CIM context:
+A reference to the model on which the model serialised in this document depends on. The references are maintained by the producer of the model. Minimum requirements for the dependency are specified and can be restricted within a business process as long as they do not contradict requirements by standards. For instance, IEC 61970-600-1 defines minimum requirements for the profiles defined in that standard.].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.wasRevisionOf">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">wasRevisionOf</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IRI"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A revision is a derivation for which the resulting entity is a revised version of some original. The implication here is that the resulting entity contains substantial content from the original. Revision is a particular case of derivation. 
+[CIM context:
+When a model is updated the resulting model supersedes the models that were used as basis for the update. Hence this is a reference to the model which are superseded by this model. A model can supersede 1 or more models, e.g. a difference model or a full model supersede multiple models (difference or full). In this case, multiple properties are included in the header. The referenced document(s) is (are) identified by the URN/MRID/UUID in the FullModel rdf:about attribute when full model(s) is (are) referenced and by the URN/MRID/UUID in the DifferenceModel rdf:about attribute when difference model(s) is (are) referenced.].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.Supersedes">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Supersedes</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">When a model is updated the resulting model supersedes the models that were used as basis for the update. Hence this is a reference to the CIMXML documents which are superseded by this model. A model (or instance file) can supersede 1 or more models, e.g. a difference model or a full model supersede multiple models (difference or full). In this case more than one Model.Supersedes are included in the header. The referenced document(s) is (are) identified by the URN/MRID/UUID in the FullModel rdf:about attribute when full model(s) is (are) referenced and by the URN/MRID/UUID in the DifferenceModel rdf:about attribute when difference model(s) is (are) referenced.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Model.DependentOn">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">DependentOn</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Model"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A reference to the model documents that the model described by this document depends on. In general there can be 0 or many Model.DependentOn depending on the profile and the content of the instance file.
+For instance:
+– A load flow solution depends on the topology model it was computed from
+– A topology model computed by a topology processor depends on the network model it was computed from.
+The referenced models are identified by the FullModel rdf:about attribute for full model documents and by DifferenceModel rdf:about attribute for difference model documents.
+The references are maintained by the producer of the CIMXML document and the references are valid for the model with version and identifier for which the document was created.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#StringIRI">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">StringIRI</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.
+The primitive is serialized as literal without language support.
+IRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.
+IRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.
+IRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Statements">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Statements</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">It represent a set of Definition and/or Description elements.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Statements.object">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">object</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Statements"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Statement object.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Statements.predicate">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">predicate</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Statements"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Statement predicate.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Statements.subject">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">subject</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Statements"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Statement subject.</comment>
+    </rdf:Description>
+</rdf:RDF>

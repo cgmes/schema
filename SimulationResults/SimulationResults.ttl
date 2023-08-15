@@ -1,0 +1,184 @@
+@base <http://iec.ch/TC57/2013/CIM-schema-cim16#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+IdentifiedObject rdf:type rdfs:Class ;
+	rdfs:label "IdentifiedObject"@en ;
+	rdfs:comment "This is a root class to provide common identification for all classes needing identification and naming attributes."^^rdf:XMLLiteral .
+IdentifiedObject.description rdf:type rdfs:Property ;
+	rdfs:label "description"@en ;
+	rdfs:domain IdentifiedObject ;
+	rdfs:range xsd:string ;
+	rdfs:comment "The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy."^^rdf:XMLLiteral .
+IdentifiedObject.mRID rdf:type rdfs:Property ;
+	rdfs:label "mRID"@en ;
+	rdfs:domain IdentifiedObject ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements."^^rdf:XMLLiteral .
+IdentifiedObject.name rdf:type rdfs:Property ;
+	rdfs:label "name"@en ;
+	rdfs:domain IdentifiedObject ;
+	rdfs:range xsd:string ;
+	rdfs:comment "The name is any free human readable and possibly non unique text naming the object."^^rdf:XMLLiteral .
+
+Curve rdf:type rdfs:Class ;
+	rdfs:subClassOf IdentifiedObject ;
+	rdfs:label "Curve"@en ;
+	rdfs:comment "A multi-purpose curve or functional relationship between an independent variable (X-axis) and dependent (Y-axis) variables. "^^rdf:XMLLiteral .
+Curve.curveStyle rdf:type rdfs:Property ;
+	rdfs:label "curveStyle"@en ;
+	rdfs:domain Curve ;
+	rdfs:range xsd:string ;
+	rdfs:comment "The style or shape of the curve."^^rdf:XMLLiteral .
+Curve.xMultiplier rdf:type rdfs:Property ;
+	rdfs:label "xMultiplier"@en ;
+	rdfs:domain Curve ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Multiplier for X-axis."^^rdf:XMLLiteral .
+Curve.xUnit rdf:type rdfs:Property ;
+	rdfs:label "xUnit"@en ;
+	rdfs:domain Curve ;
+	rdfs:range xsd:string ;
+	rdfs:comment "The X-axis units of measure."^^rdf:XMLLiteral .
+Curve.y1Multiplier rdf:type rdfs:Property ;
+	rdfs:label "y1Multiplier"@en ;
+	rdfs:domain Curve ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Multiplier for Y1-axis."^^rdf:XMLLiteral .
+Curve.y1Unit rdf:type rdfs:Property ;
+	rdfs:label "y1Unit"@en ;
+	rdfs:domain Curve ;
+	rdfs:range xsd:string ;
+	rdfs:comment "The Y1-axis units of measure."^^rdf:XMLLiteral .
+Curve.y2Multiplier rdf:type rdfs:Property ;
+	rdfs:label "y2Multiplier"@en ;
+	rdfs:domain Curve ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Multiplier for Y2-axis."^^rdf:XMLLiteral .
+Curve.y2Unit rdf:type rdfs:Property ;
+	rdfs:label "y2Unit"@en ;
+	rdfs:domain Curve ;
+	rdfs:range xsd:string ;
+	rdfs:comment "The Y2-axis units of measure."^^rdf:XMLLiteral .
+Curve.y3Multiplier rdf:type rdfs:Property ;
+	rdfs:label "y3Multiplier"@en ;
+	rdfs:domain Curve ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Multiplier for Y3-axis."^^rdf:XMLLiteral .
+Curve.y3Unit rdf:type rdfs:Property ;
+	rdfs:label "y3Unit"@en ;
+	rdfs:domain Curve ;
+	rdfs:range xsd:string ;
+	rdfs:comment "The Y3-axis units of measure."^^rdf:XMLLiteral .
+
+StringFixedLanguage rdf:type rdfs:Datatype ;
+	rdfs:label "StringFixedLanguage"@en ;
+	rdfs:comment "A string consisting of a sequence of characters. The character encoding is UTF-8. The string length is unspecified and unlimited.\nThe primitive is serialized as literal without language support."^^rdf:XMLLiteral .
+
+SimulationSettings rdf:type rdfs:Class ;
+	rdfs:subClassOf IdentifiedObject ;
+	rdfs:label "SimulationSettings"@en ;
+	rdfs:comment "Describes simulation settings necessary for a simulation."^^rdf:XMLLiteral .
+
+SignalConfiguration rdf:type rdfs:Class ;
+	rdfs:subClassOf IdentifiedObject ;
+	rdfs:label "SignalConfiguration"@en ;
+	rdfs:comment "A configuration or a set of signals selected for recording during a simulation."^^rdf:XMLLiteral .
+
+SimulationEvents rdf:type rdfs:Class ;
+	rdfs:subClassOf IdentifiedObject ;
+	rdfs:label "SimulationEvents"@en ;
+	rdfs:comment "A configuration or a set of events executed during a simulation."^^rdf:XMLLiteral .
+
+CurveData rdf:type rdfs:Class ;
+	rdfs:label "CurveData"@en ;
+	rdfs:comment "Multi-purpose data points for defining a curve.  The use of this generic class is discouraged if a more specific class can be used to specify the X and Y axis values along with their specific data types."^^rdf:XMLLiteral .
+CurveData.xvalue rdf:type rdfs:Property ;
+	rdfs:label "xvalue"@en ;
+	rdfs:domain CurveData ;
+	rdfs:range xsd:double ;
+	rdfs:comment "The data value of the X-axis variable,  depending on the X-axis units."^^rdf:XMLLiteral .
+CurveData.y1value rdf:type rdfs:Property ;
+	rdfs:label "y1value"@en ;
+	rdfs:domain CurveData ;
+	rdfs:range xsd:double ;
+	rdfs:comment "The data value of the  first Y-axis variable, depending on the Y-axis units."^^rdf:XMLLiteral .
+CurveData.y2value rdf:type rdfs:Property ;
+	rdfs:label "y2value"@en ;
+	rdfs:domain CurveData ;
+	rdfs:range xsd:double ;
+	rdfs:comment "The data value of the second Y-axis variable (if present), depending on the Y-axis units."^^rdf:XMLLiteral .
+CurveData.y3value rdf:type rdfs:Property ;
+	rdfs:label "y3value"@en ;
+	rdfs:domain CurveData ;
+	rdfs:range xsd:double ;
+	rdfs:comment "The data value of the third Y-axis variable (if present), depending on the Y-axis units."^^rdf:XMLLiteral .
+CurveData.Curve rdf:type rdfs:Property ;
+	rdfs:label "Curve"@en ;
+	rdfs:domain CurveData ;
+	rdfs:range Curve ;
+	rdfs:comment "The curve of  this curve data point."^^rdf:XMLLiteral .
+
+SimulationResultCharacteristic rdf:type rdfs:Class ;
+	rdfs:subClassOf Curve ;
+	rdfs:label "SimulationResultCharacteristic"@en ;
+	rdfs:comment "Result characteristic. The xvalue of the curve is time."^^rdf:XMLLiteral .
+SimulationResultCharacteristic.resultReference rdf:type rdfs:Property ;
+	rdfs:label "resultReference"@en ;
+	rdfs:domain SimulationResultCharacteristic ;
+	rdfs:range IRI ;
+	rdfs:comment "Reference to an artifact containing the data for the characteristic. This can be a reference to comma separated file or other serialization."^^rdf:XMLLiteral .
+SimulationResultCharacteristic.y2valueSignal rdf:type rdfs:Property ;
+	rdfs:label "y2valueSignal"@en ;
+	rdfs:domain SimulationResultCharacteristic ;
+	rdfs:range SignalRecorder ;
+	rdfs:comment "The signal for y2value of the characteristic."^^rdf:XMLLiteral .
+SimulationResultCharacteristic.y1valueSignal rdf:type rdfs:Property ;
+	rdfs:label "y1valueSignal"@en ;
+	rdfs:domain SimulationResultCharacteristic ;
+	rdfs:range SignalRecorder ;
+	rdfs:comment "The signal for y1value of the characteristic."^^rdf:XMLLiteral .
+SimulationResultCharacteristic.SimulationResult rdf:type rdfs:Property ;
+	rdfs:label "SimulationResult"@en ;
+	rdfs:domain SimulationResultCharacteristic ;
+	rdfs:range SimulationResult ;
+	rdfs:comment "The simulation reslut to which this simulation result characteristic belongs to."^^rdf:XMLLiteral .
+SimulationResultCharacteristic.y3valueSignal rdf:type rdfs:Property ;
+	rdfs:label "y3valueSignal"@en ;
+	rdfs:domain SimulationResultCharacteristic ;
+	rdfs:range SignalRecorder ;
+	rdfs:comment "The signal for y3value of the characteristic."^^rdf:XMLLiteral .
+
+SignalRecorder rdf:type rdfs:Class ;
+	rdfs:subClassOf IdentifiedObject ;
+	rdfs:label "SignalRecorder"@en ;
+	rdfs:comment "A recorder for a given signal."^^rdf:XMLLiteral .
+
+SimulationResult rdf:type rdfs:Class ;
+	rdfs:subClassOf IdentifiedObject ;
+	rdfs:label "SimulationResult"@en ;
+	rdfs:comment "Represents the simulation result."^^rdf:XMLLiteral .
+SimulationResult.SimulationSettings rdf:type rdfs:Property ;
+	rdfs:label "SimulationSettings"@en ;
+	rdfs:domain SimulationResult ;
+	rdfs:range SimulationSettings ;
+	rdfs:comment "The simulation settings that are part of the simulation result."^^rdf:XMLLiteral .
+SimulationResult.SignalConfiguration rdf:type rdfs:Property ;
+	rdfs:label "SignalConfiguration"@en ;
+	rdfs:domain SimulationResult ;
+	rdfs:range SignalConfiguration ;
+	rdfs:comment "The simulation configuration that is part of the simulation result."^^rdf:XMLLiteral .
+SimulationResult.SimulationEvents rdf:type rdfs:Property ;
+	rdfs:label "SimulationEvents"@en ;
+	rdfs:domain SimulationResult ;
+	rdfs:range SimulationEvents ;
+	rdfs:comment "The simulation events that are part of the simulation result."^^rdf:XMLLiteral .
+
+IRI rdf:type rdfs:Datatype ;
+	rdfs:label "IRI"@en ;
+	rdfs:comment "An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.\nThe primitive is serialized as rdf:resource in RDFXML.\nIRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.\nIRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.\nIRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names."^^rdf:XMLLiteral .
+
+StringIRI rdf:type rdfs:Datatype ;
+	rdfs:label "StringIRI"@en ;
+	rdfs:comment "An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.\nThe primitive is serialized as literal without language support.\nIRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.\nIRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.\nIRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names."^^rdf:XMLLiteral .

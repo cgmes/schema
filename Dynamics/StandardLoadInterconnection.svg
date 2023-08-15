@@ -5,13 +5,13 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   id="svg34679"
+   id="svg54711"
    version="1.1"
-   viewBox="0 0 876 420"
-   height="11.11cm"
+   viewBox="0 0 876 463"
+   height="12.25cm"
    width="23.18cm">
   <metadata
-     id="metadata34685">
+     id="metadata54717">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -23,42 +23,42 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs34683" />
+     id="defs54715" />
   <desc
-     id="desc34219">Created with Enterprise Architect (Build: 1627) 1</desc>
+     id="desc54227">Created with Enterprise Architect (Build: 1627) 1</desc>
   <g
-     id="g34223"
+     id="g54231"
      style="fill:#FFFFFF;fill-opacity:1.00;">
     <rect
-       id="rect34221"
+       id="rect54229"
        shape-rendering="auto"
-       height="420"
+       height="463"
        width="876"
        y="0"
        x="0" />
   </g>
   <g
-     id="g34227"
+     id="g54235"
      style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
     <path
-       id="path34225"
+       id="path54233"
        shape-rendering="auto"
-       d="M 6 6 L 6 414 L 870 414 L 870 6 L 6 6" />
+       d="M 6 6 L 6 457 L 870 457 L 870 6 L 6 6" />
   </g>
   <g
-     id="g34231"
+     id="g54239"
      style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#FFFFFF;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
     <polygon
-       id="polygon34229"
+       id="polygon54237"
        style="fill-rule:evenodd;"
        shape-rendering="auto"
        points="6 24 187 24 200 10 200 6 6 6 6 24" />
   </g>
   <g
-     id="g34235"
+     id="g54243"
      style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
     <text
-       id="text34233"
+       id="text54241"
        transform="rotate(-0.00 11.00 18.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
@@ -67,11 +67,11 @@
        x="11.00">class StandardLoadInterconnection</text>
   </g>
   <g
-     id="g34625"
+     id="g54657"
      stroke-dasharray="6,3"
      style="stroke-width:1;stroke-linecap:square;stroke-linejoin:round; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
     <rect
-       id="rect34623"
+       id="rect54655"
        stroke-dasharray="6,3"
        shape-rendering="auto"
        rx="0.00"
@@ -81,10 +81,10 @@
        x="35" />
   </g>
   <g
-     id="g34629"
+     id="g54661"
      style="stroke-width:1;stroke-linecap:square;stroke-linejoin:round; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
     <text
-       id="text34627"
+       id="text54659"
        transform="rotate(-0.00 383.00 272.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:12px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
@@ -93,50 +93,50 @@
        x="383.00">dynamics model</text>
   </g>
   <g
-     id="g34633"
+     id="g54665"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
     <rect
-       id="rect34631"
+       id="rect54663"
        shape-rendering="auto"
        rx="0.00"
-       height="55"
+       height="85"
        width="176"
        y="154"
        x="371" />
   </g>
   <g
-     id="g34641"
+     id="g54673"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
     <text
-       id="text34635"
-       transform="rotate(-0.00 441.00 166.00)"
+       id="text54667"
+       transform="rotate(-0.00 458.00 166.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:0; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
-       textLength="103"
+       textLength="86"
        y="166.00"
-       x="441.00">ConductingEquipment</text>
+       x="458.00">EnergyConnection</text>
     <text
-       id="text34637"
-       transform="rotate(-0.00 407.00 183.00)"
+       id="text54669"
+       transform="rotate(-0.00 427.00 183.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
-       textLength="103"
+       textLength="63"
        y="183.00"
-       x="407.00">«abstract,Description»</text>
+       x="427.00">«Description»</text>
     <text
-       id="text34639"
-       transform="rotate(-0.00 399.00 194.00)"
+       id="text54671"
+       transform="rotate(-0.00 376.00 194.00)"
        xml:space="preserve"
-       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
-       textLength="119"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="165"
        y="194.00"
-       x="399.00">Wires::EnergyConsumer</text>
+       x="376.00">DynamicsBase::EnergyConsumer</text>
   </g>
   <g
-     id="g34645"
+     id="g54677"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
     <rect
-       id="rect34643"
+       id="rect54675"
        shape-rendering="auto"
        rx="0.00"
        height="67"
@@ -145,39 +145,31 @@
        x="158" />
   </g>
   <g
-     id="g34653"
+     id="g54683"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
     <text
-       id="text34647"
-       transform="rotate(-0.00 279.00 309.00)"
+       id="text54679"
+       transform="rotate(-0.00 243.00 309.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:0; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
-       textLength="73"
+       textLength="109"
        y="309.00"
-       x="279.00">IdentifiedObject</text>
+       x="243.00">DynamicsFunctionBlock</text>
     <text
-       id="text34649"
-       transform="rotate(-0.00 232.00 326.00)"
-       xml:space="preserve"
-       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
-       textLength="49"
-       y="326.00"
-       x="232.00">«abstract»</text>
-    <text
-       id="text34651"
-       transform="rotate(-0.00 180.00 337.00)"
+       id="text54681"
+       transform="rotate(-0.00 180.00 323.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
        textLength="152"
-       y="337.00"
+       y="323.00"
        x="180.00">LoadDynamics::LoadDynamics</text>
   </g>
   <g
-     id="g34657"
+     id="g54687"
      stroke-dasharray="6,3"
      style="stroke-width:1;stroke-linecap:square;stroke-linejoin:round; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
     <rect
-       id="rect34655"
+       id="rect54685"
        stroke-dasharray="6,3"
        shape-rendering="auto"
        rx="0.00"
@@ -187,63 +179,71 @@
        x="35" />
   </g>
   <g
-     id="g34661"
+     id="g54693"
      style="stroke-width:1;stroke-linecap:square;stroke-linejoin:round; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
     <text
-       id="text34659"
+       id="text54689"
        transform="rotate(-0.00 353.00 53.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:12px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
        textLength="154"
        y="53.00"
        x="353.00">static power system model</text>
+    <text
+       id="text54691"
+       transform="rotate(-0.00 204.00 415.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:400; font-style:normal; font-size:16px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="311"
+       y="415.00"
+       x="204.00">Reproduced with the permission of UCAIug.</text>
   </g>
   <g
-     id="g34667"
+     id="g54699"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
     <path
-       id="path34663"
+       id="path54695"
        shape-rendering="auto"
-       d="M 300 297 L 420 209" />
+       d="M 307 297 L 395 239" />
     <path
-       id="path34665"
+       id="path54697"
        shape-rendering="auto"
-       d="M 316 293 L 300 297 L 309 283" />
+       d="M 323 294 L 307 297 L 316 284" />
   </g>
   <g
-     id="g34677"
+     id="g54709"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
     <text
-       id="text34669"
-       transform="rotate(-0.00 223.00 291.00)"
+       id="text54701"
+       transform="rotate(-0.00 230.00 291.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
        textLength="74"
        y="291.00"
-       x="223.00">+LoadDynamics</text>
+       x="230.00">+LoadDynamics</text>
     <text
-       id="text34671"
-       transform="rotate(-0.00 303.00 291.00)"
+       id="text54703"
+       transform="rotate(-0.00 310.00 291.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
        textLength="18"
        y="291.00"
-       x="303.00">0..1</text>
+       x="310.00">0..1</text>
     <text
-       id="text34673"
-       transform="rotate(-0.00 326.00 223.00)"
+       id="text54705"
+       transform="rotate(-0.00 301.00 253.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
        textLength="86"
-       y="223.00"
-       x="326.00">+EnergyConsumer</text>
+       y="253.00"
+       x="301.00">+EnergyConsumer</text>
     <text
-       id="text34675"
-       transform="rotate(-0.00 432.00 223.00)"
+       id="text54707"
+       transform="rotate(-0.00 407.00 253.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
        textLength="16"
-       y="223.00"
-       x="432.00">0..*</text>
+       y="253.00"
+       x="407.00">0..*</text>
   </g>
 </svg>

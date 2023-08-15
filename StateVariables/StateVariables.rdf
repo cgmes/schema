@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">TopologicalNode</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">For a detailed substation model a topological node is a set of connectivity nodes that, in the current network state, are connected together through any type of closed switches, including  jumpers. Topological nodes change as the current network state changes (i.e., switches, breakers, etc. change state).
+For a planning model, switch statuses are not used to form topological nodes. Instead they are manually created or deleted in a model builder tool. Topological nodes maintained this way are also called &quot;busses&quot;.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#VsConverter">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">VsConverter</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">DC side of the voltage source converter (VSC).</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#VsConverter.delta">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">delta</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#VsConverter"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Angle between VsConverter.uv and ACDCConverter.uc. It is converter’s state variable used in power flow. The attribute shall be a positive value or zero.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#VsConverter.uv">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">uv</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#VsConverter"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Line-to-line voltage on the valve side of the converter transformer. It is converter’s state variable, result from power flow. The attribute shall be a positive value.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvShuntCompensatorSections">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SvShuntCompensatorSections</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">State variable for the number of sections in service for a shunt compensator.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvShuntCompensatorSections.sections">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">sections</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SvShuntCompensatorSections"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The number of sections in service as a continuous variable. The attribute shall be a positive value or zero. To get integer value scale with ShuntCompensator.bPerSection.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvShuntCompensatorSections.ShuntCompensator">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ShuntCompensator</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SvShuntCompensatorSections"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ShuntCompensator"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The shunt compensator for which the state applies.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvTapStep">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SvTapStep</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">State variable for transformer tap step. </comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvTapStep.position">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">position</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SvTapStep"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The floating point tap position.   This is not the tap ratio, but rather the tap step position as defined by the related tap changer model and normally is constrained to be within the range of minimum and maximum tap positions.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvTapStep.TapChanger">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">TapChanger</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SvTapStep"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The tap changer associated with the tap step state.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvStatus">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SvStatus</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">State variable for status.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvStatus.inService">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">inService</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SvStatus"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The in service status as a result of topology processing.  It indicates if the equipment is considered as energized by the power flow. It reflects if the equipment is connected within a solvable island.  It does not necessarily reflect whether or not the island was solved by the power flow.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvStatus.ConductingEquipment">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ConductingEquipment</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SvStatus"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The conducting equipment associated with the status state variable.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">DCTopologicalNode</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">DC bus.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvPowerFlow">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SvPowerFlow</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">State variable for power flow. Load convention is used for flow direction. This means flow out from the TopologicalNode into the equipment is positive.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvPowerFlow.p">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">p</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SvPowerFlow"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The active power flow. Load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvPowerFlow.q">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">q</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SvPowerFlow"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The reactive power flow. Load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvPowerFlow.Terminal">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Terminal</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SvPowerFlow"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The terminal associated with the power flow state variable.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Terminal</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvVoltage">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SvVoltage</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">State variable for voltage.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvVoltage.angle">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">angle</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SvVoltage"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The voltage angle of the topological node complex voltage with respect to system reference.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvVoltage.v">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">v</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SvVoltage"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The voltage magnitude at the topological node. The attribute shall be a positive value.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvVoltage.TopologicalNode">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">TopologicalNode</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SvVoltage"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The topological node associated with the voltage state.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvSwitch">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SvSwitch</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">State variable for switch. </comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvSwitch.open">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">open</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SvSwitch"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The attribute tells if the computed state of the switch is considered open.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvSwitch.Switch">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Switch</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SvSwitch"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Switch"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The switch associated with the switch state.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">IdentifiedObject</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">This is a root class to provide common identification for all classes needing identification and naming attributes.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">mRID</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.
+For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">name</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The name is any free human readable and possibly non unique text naming the object.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Switch">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Switch</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A generic device designed to close, or open, or both, one or more electric circuits.  All switches are two terminal devices including grounding switches. The ACDCTerminal.connected at the two sides of the switch shall not be considered for assessing switch connectivity, i.e. only Switch.open, .normalOpen and .locked are relevant.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ACDCConverter</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A unit with valves for three phases, together with unit control equipment, essential protective and switching devices, DC storage capacitors, phase reactors and auxiliaries, if any, used for conversion.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter.idc">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">idc</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Converter DC current, also called Id. It is converter’s state variable, result from power flow.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter.poleLossP">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">poleLossP</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The active power loss at a DC Pole 
+= idleLoss + switchingLoss*|Idc| + resitiveLoss*Idc^2.
+For lossless operation Pdc=Pac.
+For rectifier operation with losses Pdc=Pac-lossP.
+For inverter operation with losses Pdc=Pac+lossP.
+It is converter’s state variable used in power flow. The attribute shall be a positive value.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter.uc">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">uc</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Line-to-line converter voltage, the voltage at the AC side of the valve. It is converter’s state variable, result from power flow. The attribute shall be a positive value.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter.udc">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">udc</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Converter voltage at the DC side, also called Ud. It is converter’s state variable, result from power flow. The attribute shall be a positive value.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">TapChanger</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Mechanism for changing transformer winding tap positions.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalIsland">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">TopologicalIsland</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An electrically connected subset of the network. Topological islands can change as the current network state changes, e.g. due to: 
+- disconnect switches or breakers changing state in a SCADA/EMS.
+- manual creation, change or deletion of topological nodes in a planning tool.
+Only energised TopologicalNode-s shall be part of the topological island.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalIsland.TopologicalNodes">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">TopologicalNodes</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalIsland"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A topological node belongs to a topological island.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalIsland.AngleRefTopologicalNode">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">AngleRefTopologicalNode</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalIsland"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The angle reference for the island.   Normally there is one TopologicalNode that is selected as the angle reference for each island.   Other reference schemes exist, so the association is typically optional.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ACDCTerminal</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalIsland">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">DCTopologicalIsland</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An electrically connected subset of the network. DC topological islands can change as the current network state changes, e.g. due to: 
+- disconnect switches or breakers changing state in a SCADA/EMS.
+- manual creation, change or deletion of topological nodes in a planning tool.
+Only energised TopologicalNode-s shall be part of the topological island.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalIsland.DCTopologicalNodes">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">DCTopologicalNodes</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalIsland"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The DC topological nodes in a DC topological island.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ShuntCompensator">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ShuntCompensator</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A shunt capacitor or reactor or switchable bank of shunt capacitors or reactors. A section of a shunt compensator is an individual capacitor or reactor. A negative value for bPerSection indicates that the compensator is a reactor. ShuntCompensator is a single terminal device.  Ground is implied.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvInjection">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SvInjection</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The SvInjection reports the calculated bus injection minus the sum of the terminal flows. The terminal flow is positive out from the bus (load sign convention) and bus injection has positive flow into the bus. SvInjection may have the remainder after state estimation or slack after power flow calculation.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvInjection.pInjection">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">pInjection</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SvInjection"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The active power mismatch between calculated injection and initial injection.  Positive sign means injection into the TopologicalNode (bus).</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvInjection.qInjection">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">qInjection</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SvInjection"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The reactive power mismatch between calculated injection and initial injection.  Positive sign means injection into the TopologicalNode (bus).</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SvInjection.TopologicalNode">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">TopologicalNode</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SvInjection"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The topological node associated with the flow injection state variable.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ConductingEquipment</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The parts of the AC power system that are designed to carry current or that are conductively connected through terminals.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#CsConverter">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">CsConverter</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">DC side of the current source converter (CSC).
+The firing angle controls the dc voltage at the converter, both for rectifier and inverter. The difference between the dc voltages of the rectifier and inverter determines the dc current. The extinction angle is used to limit the dc voltage at the inverter, if needed, and is not used in active power control. The firing angle, transformer tap position and number of connected filters are the primary means to control a current source dc line. Higher level controls are built on top, e.g. dc voltage, dc current and active power. From a steady state perspective it is sufficient to specify the wanted active power transfer (ACDCConverter.targetPpcc) and the control functions will set the dc voltage, dc current, firing angle, transformer tap position and number of connected filters to meet this. Therefore attributes targetAlpha and targetGamma are not applicable in this case.
+The reactive power consumed by the converter is a function of the firing angle, transformer tap position and number of connected filter, which can be approximated with half of the active power. The losses is a function of the dc voltage and dc current.
+The attributes minAlpha and maxAlpha define the range of firing angles for rectifier operation between which no discrete tap changer action takes place. The range is typically 10-18 degrees.
+The attributes minGamma and maxGamma define the range of extinction angles for inverter operation between which no discrete tap changer action takes place. The range is typically 17-20 degrees.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#CsConverter.alpha">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">alpha</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#CsConverter"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Firing angle that determines the dc voltage at the converter dc terminal. Typical value between 10 degrees and 18 degrees for a rectifier. It is converter’s state variable, result from power flow. The attribute shall be a positive value.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#CsConverter.gamma">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">gamma</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#CsConverter"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Extinction angle. It is used to limit the dc voltage at the inverter if needed. Typical value between 17 degrees and 20 degrees for an inverter. It is converter’s state variable, result from power flow. The attribute shall be a positive value.</comment>
+    </rdf:Description>
+</rdf:RDF>

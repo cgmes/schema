@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">FaultCauseType</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Type of cause of the fault.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Equipment</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The parts of a power system that are physical devices, electronic or mechanical.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Fault">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Fault</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Abnormal condition causing current flow through conducting equipment, such as caused by equipment failure or short circuits from objects not typically modelled (for example, a tree falling on a line).</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Fault.impedance">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">impedance</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Fault"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Fault impedance. Its usage is described by &apos;kind&apos;.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Fault.kind">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">kind</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Fault"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The kind of phase fault.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Fault.occurredDateTime">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">occurredDateTime</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Fault"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://schema.org/DateTime"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The date and time at which the fault occurred.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Fault.phases">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">phases</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Fault"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The phases participating in the fault. The fault connections into these phases are further specified by the type of fault.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Fault.FaultCauseTypes">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">FaultCauseTypes</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Fault"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">All types of fault cause.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Fault.FaultyEquipment">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">FaultyEquipment</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Fault"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Equipment carrying this fault.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Fault.ClearSimulationEvent">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ClearSimulationEvent</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Fault"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The event that clears this fault event.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Fault.SimulationEvents">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SimulationEvents</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Fault"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The simulation events to which this simulation fault event belongs to.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#StringIRI">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">StringIRI</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.
+The primitive is serialized as literal without language support.
+IRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.
+IRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.
+IRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ClearSimulationEvent</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Defines an event which clears another event such as ParemeterEvent or Fault.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.eventTime">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">eventTime</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Execution time of the event. It is relative to the start of the simulation.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.SimulationEvents">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SimulationEvents</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The simulation events to which this clear simulation event belongs to.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedParameterEvent">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ClearedParameterEvent</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The parameter event that is cleared by a ClearSimulationEvent.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Fault"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">EquipmentFault</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A fault applied at the terminal, external to the equipment. This class is not used to specify faults internal to the equipment.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault.Terminal">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Terminal</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The terminal connecting to the bus to which the fault is applied.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">PowerFlowSettings</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Provides information on power flow settings valid for the model they are assigned to.
+The following attributes:
+- staticVarCompensatorControlPriority, 
+- switchedShuntControlPriority,
+- transformerPhaseTapControlPriority, and
+- transformerPhaseTapControlPriority 
+ shall have different values in case they are enabled (i.e. value different than 0).  </comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings.activePowerTolerance">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">activePowerTolerance</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The active power tolerance for a given power flow solution. SvInjection.pInjection shall not be greater than this tolerance.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings.algorithmKind">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">algorithmKind</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">It defines the power flow algorithm.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings.flatStart">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">flatStart</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">True means that power flow used a flat start.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings.impedanceThreshold">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">impedanceThreshold</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Zero impedance threshold used considered when calculating zero or low impendence branches. The per unit value is calculated with base power of 100 MW. If set to 0 the impedance threshold is not used. </comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings.interchangeControlEnabled">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">interchangeControlEnabled</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Define if the interchange control is enabled during power flow calculation. True means area interchange control is enabled. False means it is disabled.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings.loadVoltageDependency">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">loadVoltageDependency</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Defines if voltage dependency of loads is considered. True means voltage dependency is considered. False means it is not considered.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings.reactivePowerTolerance">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">reactivePowerTolerance</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The reactive power tolerance for a given power flow solution. SvInjection.qInjection shall not be greater than this tolerance.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings.respectActivePowerLimits">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">respectActivePowerLimits</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Indicates if active power limits of the equipment are respected during power flow calculation. True means limits are respected. False means limits are ignored.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings.respectReactivePowerLimits">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">respectReactivePowerLimits</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Indicates if reactive power of limits of the equipment are respected during power flow calculation. True means limits are respected. False means limits are ignored.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings.shiftKind">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">shiftKind</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Defines type of scaling used to reach defined net-position.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings.slackDistributionKind">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">slackDistributionKind</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Defines slack distribution used in power flow calculation.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings.staticVarCompensatorControlPriority">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">staticVarCompensatorControlPriority</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Indicates if control is applied on static var compensators. 0 means it is not used, i.e. it is disabled. 1 means it is enabled and indicates it is the highest priority among the following control related settings: transformerRatioTapControlPriority, transformerPhaseTapControlPriority, switchedShuntControlPriority and staticVarCompensatorControlPriority.
+Allowed values are in the range [0,4].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings.switchedShuntControlPriority">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">switchedShuntControlPriority</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Indicates if control is applied on switched shunts. 0 means it is not used, i.e. it is disabled. 1 means it is enabled and indicates it is the highest priority among the following control related settings: transformerRatioTapControlPriority, transformerPhaseTapControlPriority, switchedShuntControlPriority and staticVarCompensatorControlPriority.
+Allowed values are in the range [0,4].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings.transformerPhaseTapControlPriority">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">transformerPhaseTapControlPriority</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Indicates if phase tap change control is applied on transformers. 0 means it is not used, i.e. it is disabled. 1 means it is enabled and indicates it is the highest priority among the following control related settings: transformerRatioTapControlPriority, transformerPhaseTapControlPriority, switchedShuntControlPriority and staticVarCompensatorControlPriority.
+Allowed values are in the range [0,4].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings.transformerRatioTapControlPriority">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">transformerRatioTapControlPriority</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Indicates if ratio tap change control is applied on transformers. 0 means it is not used, i.e. it is disabled. 1 means it is enabled and indicates it is the highest priority among the following control related settings: transformerRatioTapControlPriority, transformerPhaseTapControlPriority, switchedShuntControlPriority and staticVarCompensatorControlPriority.
+Allowed values are in the range [0,4].</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings.voltageAngleLimit">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">voltageAngleLimit</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The maximum allowed voltage angle between two nodes for a given power flow solution.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings.voltageTolerance">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">voltageTolerance</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The largest difference between actual and scheduled voltage magnitude for controlled node, in per unit of BaseVoltage, 
+- at each node where voltage is subject to control to a set point, and 
+- for which at least one of the devices participating in the control of bus voltage to its set point is not at a reactive power limit. 
+It shall be less than the controlled bus voltage error convergence tolerance. </comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ACDCTerminal</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SimulationEvents</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A configuration or a set of events executed during a simulation.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Terminal</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalConfiguration">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SignalConfiguration</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A configuration or a set of signals selected for recording during a simulation.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ParameterEvent</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Used to apply changes to particular parameter or signal. The parameter or signal could be any property from power flow part of the model or property/signal of standard, user defined or detailed model.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.booleanParameterValue">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">booleanParameterValue</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Boolean parameter value. If this attribute is populated, integerParameterValue and floatParameterValue will not be.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.changeKind">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">changeKind</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Defines if the change is done in one step or using ramp.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.eventTime">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">eventTime</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Execution time of the event. It is relative to the start of the simulation.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.floatParementerValue">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">floatParementerValue</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Floating point parameter value. If this attribute is populated, booleanParameterValue and integerParameterValue will not be.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.integerParameterValue">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">integerParameterValue</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Integer parameter value. If this attribute is populated, booleanParameterValue and floatParameterValue will not be.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterIRI">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">parameterIRI</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Identifies which parameter is changed during the event. It can be an attribute of a class that inherits from IdentifiedObject. The parameter IRI (Internationalized Resource Identifier) is a Unicode string that conforms to the syntax defined in RFC 3987. The string is serialized as literal without language support.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterName">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">parameterName</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Identifies which parameter is changed during the event. It is used only in cases where IRI is not defined, e.g. an internal quantity of a model. </comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.rampDuration">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">rampDuration</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Defines the duration of the ramp in case. Only used in case attribute changeKind is set to ramp.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.SimulationEvents">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SimulationEvents</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The simulation events to which this parameter event belongs to.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.UsesParameterOf">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">UsesParameterOf</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The equipment, dynamics model or signal that is used to define the parameter event.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#StringFixedLanguage">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">StringFixedLanguage</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A string consisting of a sequence of characters. The character encoding is UTF-8. The string length is unspecified and unlimited.
+The primitive is serialized as literal without language support.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SignalRecorder</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A recorder for a given signal.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder.signalKind">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">signalKind</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Indicates the kind of the signal.  </comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder.RecordedSignalAt">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">RecordedSignalAt</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The terminal at which the signal is recorded.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder.SimulationConfiguration">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SimulationConfiguration</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalConfiguration"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The simulation configuration set for which this signal recorder is recording.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder.RecordedSignalOf">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">RecordedSignalOf</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The dynamics function block to which the singal belongs to.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder.RecordedSignal">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">RecordedSignal</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The signal that is recorded during the simulation.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">DetailedModelDescriptor</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Describes different components of a detailed model.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">DynamicsFunctionBlock</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Abstract parent class for all Dynamics function blocks.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SimulationSettings</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Describes simulation settings necessary for a simulation.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings.duration">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">duration</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Complete simulation duration relative to the start of the simulation. </comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings.integrationStepSize">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">integrationStepSize</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Indicates the integration step size. In case the integration step size is variable (i.e. isIntegrationStepSize=true), this value represents the initial integration step size used for the first iterations of the simulation prior activation of the adaptation os the step size. </comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings.isIntegrationStepSizeVariable">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">isIntegrationStepSizeVariable</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Indicates if the integration step size is variable or fixed. True means the integration step is variable. False means - fixed.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings.maximumIntegrationStepSize">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">maximumIntegrationStepSize</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Maximum integration step size. Used in case of variable integration step size (i.e. inIntegrationStepSizeVariable=true). </comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings.minimumIntegrationStepSize">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">minimumIntegrationStepSize</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Minimum integration step size. Used in case of variable integration step size (i.e. inIntegrationStepSizeVariable=true). </comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings.simulationResultsRecordedEvery">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">simulationResultsRecordedEvery</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Indicates the periodicity of recording of simulation results.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings.PowerFlowSettings">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">PowerFlowSettings</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The power flow settings that are part of the simulation settings.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#IRI">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">IRI</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.
+The primitive is serialized as rdf:resource in RDFXML.
+IRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.
+IRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.
+IRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">FaultImpedance</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Impedance description for the fault.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rGround">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">rGround</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The resistance of the fault between phases and ground.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rLineToLine">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">rLineToLine</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The resistance of the fault between phases.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xGround">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">xGround</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The reactance of the fault between phases and ground.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xLineToLine">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">xLineToLine</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The reactance of the fault between phases.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Fault"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">LineFault</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A fault that occurs on an AC line segment at some point along the length.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.lengthFromTerminal1">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">lengthFromTerminal1</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The length to the place where the fault is located starting from terminal with sequence number 1 of the faulted line segment.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.ACLineSegment">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ACLineSegment</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The line segment of this line fault.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ACLineSegment</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system.
+For symmetrical, transposed three phase lines, it is sufficient to use attributes of the line segment, which describe impedances and admittances for the entire length of the segment.  Additionally impedances can be computed by using length and associated per length impedances.
+The BaseVoltage at the two ends of ACLineSegments in a Line shall have the same BaseVoltage.nominalVoltage. However, boundary lines may have slightly different BaseVoltage.nominalVoltages and variation is allowed. Larger voltage difference in general requires use of an equivalent branch.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SignalDescriptor</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Describes the signals both internal signals that connect different functions or external signals.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">IdentifiedObject</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">This is a root class to provide common identification for all classes needing identification and naming attributes.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.description">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">description</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">mRID</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.
+For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">name</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The name is any free human readable and possibly non unique text naming the object.</comment>
+    </rdf:Description>
+</rdf:RDF>

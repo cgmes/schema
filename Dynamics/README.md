@@ -4,7 +4,7 @@ The CIM dynamic model definitions reflect the most common IEEE or, in the case o
 
 These dynamic models are intended to ensure interoperability between different vendors’ software products currently in use by electric utility energy companies, utilities, TSOs and RTO/ISOs.  It is important to note that each vendor is free to select its own internal implementation of these models.  Differences in vendor results, as long as they are within accepted engineering practice, caused by different internal representations, are acceptable.
 
-![Wires](./Wires.svg)
+![Dynamics Base](./DynamicsBase.svg)
 
 ## Standard Interconnections
 
@@ -21,6 +21,7 @@ In the interconnection diagrams, boxes which are black in colour represent funct
 ## Standard Models
 
 This section contains standard dynamic model specifications grouped into packages by standard function block (type of equipment being modelled).
+
 In the CIM, standard dynamic models are expressed by means of a class named with the standard model name and attributes reflecting each of the parameters necessary to describe the behaviour of an instance of the standard model.
 
 ## User Defined Models
@@ -31,4 +32,6 @@ Proprietary models have behavior which, while not defined by a standard model cl
 
 Explicitly defined models describe dynamic behavior in detail in terms of control blocks and their input and output signals.
 
-NOTE: The classes to support explicitly defined modeling are not currently defined - it is future work.  They are described here to document the current thinking on where they would be added.
+## Note
+
+The information in this clause is reproduced from the UML with the permission of UCAIug.

@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#RaiseLowerCommand">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogControl"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">RaiseLowerCommand</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An analog control that increases or decreases a set point value with pulses. Unless otherwise specified, one pulse moves the set point by one. </comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#RaiseLowerCommand.ValueAliasSet">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ValueAliasSet</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RaiseLowerCommand"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ValueAliasSet"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The ValueAliasSet used for translation of a Control value to a name.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">IdentifiedObject</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">This is a root class to provide common identification for all classes needing identification and naming attributes.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.description">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">description</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">mRID</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.
+For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">name</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The name is any free human readable and possibly non unique text naming the object.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Limit">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Limit</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Specifies one limit value for a Measurement. A Measurement typically has several limits that are kept together by the LimitSet class. The actual meaning and use of a Limit instance (i.e., if it is an alarm or warning limit or if it is a high or low limit) is not captured in the Limit class. However the name of a Limit instance may indicate both meaning and use.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#LimitSet">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">LimitSet</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Specifies a set of Limits that are associated with a Measurement. A Measurement may have several LimitSets corresponding to seasonal or other changing conditions. The condition is captured in the name and description attributes. The same LimitSet may be used for several Measurements. In particular percentage limits are used this way.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#LimitSet.isPercentageLimits">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">isPercentageLimits</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#LimitSet"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Tells if the limit values are in percentage of normalValue or the specified Unit for Measurements and Controls.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#DiscreteValue">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#MeasurementValue"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">DiscreteValue</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">DiscreteValue represents a discrete MeasurementValue.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#DiscreteValue.Discrete">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Discrete</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#DiscreteValue"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Discrete"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Measurement to which this value is connected.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ValueAliasSet">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ValueAliasSet</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Describes the translation of a set of values into a name and is intendend to facilitate custom translations. Each ValueAliasSet has a name, description etc. A specific Measurement may represent a discrete state like Open, Closed, Intermediate etc. This requires a translation from the MeasurementValue.value number to a string, e.g. 0-&amp;gt;&quot;Invalid&quot;, 1-&amp;gt;&quot;Open&quot;, 2-&amp;gt;&quot;Closed&quot;, 3-&amp;gt;&quot;Intermediate&quot;. Each ValueToAlias member in ValueAliasSet.Value describe a mapping for one particular value to a name.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#AccumulatorLimitSet">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#LimitSet"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">AccumulatorLimitSet</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An AccumulatorLimitSet specifies a set of Limits that are associated with an Accumulator measurement.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#AccumulatorLimitSet.Measurements">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Measurements</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#AccumulatorLimitSet"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Accumulator"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The Measurements using the LimitSet.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Control">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IOPoint"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Control</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Control is used for supervisory/device control. It represents control outputs that are used to change the state in a process, e.g. close or open breaker, a set point value or a raise lower command.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Control.controlType">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">controlType</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Control"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Specifies the type of Control. For example, this specifies if the Control represents BreakerOpen, BreakerClose, GeneratorVoltageSetPoint, GeneratorRaise, GeneratorLower, etc.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Control.operationInProgress">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">operationInProgress</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Control"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Indicates that a client is currently sending control commands that has not completed.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Control.timeStamp">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">timeStamp</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Control"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://schema.org/DateTime"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The last time a control output was sent.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Control.unitMultiplier">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">unitMultiplier</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Control"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The unit multiplier of the controlled quantity.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Control.unitSymbol">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">unitSymbol</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Control"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The unit of measure of the controlled quantity.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Control.PowerSystemResource">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">PowerSystemResource</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Control"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Regulating device governed by this control output.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#AccumulatorLimit">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Limit"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">AccumulatorLimit</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Limit values for Accumulator measurements.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#AccumulatorLimit.value">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">value</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#AccumulatorLimit"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The value to supervise against. The value is positive.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#AccumulatorLimit.LimitSet">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">LimitSet</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#AccumulatorLimit"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#AccumulatorLimitSet"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The set of limits.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogControl">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Control"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">AnalogControl</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An analog control used for supervisory control.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogControl.maxValue">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">maxValue</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogControl"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Normal value range maximum for any of the Control.value. Used for scaling, e.g. in bar graphs.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogControl.minValue">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">minValue</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogControl"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Normal value range minimum for any of the Control.value. Used for scaling, e.g. in bar graphs.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogControl.AnalogValue">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">AnalogValue</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogControl"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogValue"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The MeasurementValue that is controlled.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ACDCTerminal</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#AccumulatorValue">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#MeasurementValue"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">AccumulatorValue</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">AccumulatorValue represents an accumulated (counted) MeasurementValue.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#AccumulatorValue.Accumulator">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Accumulator</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#AccumulatorValue"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Accumulator"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Measurement to which this value is connected.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Discrete">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Measurement"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Discrete</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Discrete represents a discrete Measurement, i.e. a Measurement representing discrete values, e.g. a Breaker position.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Discrete.ValueAliasSet">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ValueAliasSet</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Discrete"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ValueAliasSet"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The ValueAliasSet used for translation of a MeasurementValue.value to a name.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#MeasurementValueSource">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">MeasurementValueSource</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">MeasurementValueSource describes the alternative sources updating a MeasurementValue. User conventions for how to use the MeasurementValueSource attributes are defined in IEC 61970-301.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#MeasurementValueQuality">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">MeasurementValueQuality</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Measurement quality flags. Bits 0-10 are defined for substation automation in IEC 61850-7-3. Bits 11-15 are reserved for future expansion by that document. Bits 16-31 are reserved for EMS applications.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#MeasurementValueQuality.MeasurementValue">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">MeasurementValue</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#MeasurementValueQuality"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#MeasurementValue"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A MeasurementValue has a MeasurementValueQuality associated with it.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogValue">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#MeasurementValue"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">AnalogValue</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">AnalogValue represents an analog MeasurementValue.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogValue.Analog">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Analog</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogValue"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Analog"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Measurement to which this value is connected.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogLimitSet">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#LimitSet"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">AnalogLimitSet</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An AnalogLimitSet specifies a set of Limits that are associated with an Analog measurement.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogLimitSet.Measurements">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Measurements</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogLimitSet"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Analog"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The Measurements using the LimitSet.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Command">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Control"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Command</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A Command is a discrete control used for supervisory control.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Command.normalValue">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">normalValue</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Command"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Normal value for Control.value e.g. used for percentage scaling.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Command.value">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">value</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Command"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The value representing the actuator output.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Command.DiscreteValue">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">DiscreteValue</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Command"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#DiscreteValue"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The MeasurementValue that is controlled.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Command.ValueAliasSet">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ValueAliasSet</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Command"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ValueAliasSet"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The ValueAliasSet used for translation of a Control value to a name.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogLimit">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Limit"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">AnalogLimit</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Limit values for Analog measurements.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogLimit.value">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">value</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogLimit"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The value to supervise against.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogLimit.LimitSet">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">LimitSet</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogLimit"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogLimitSet"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The set of limits.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#IOPoint">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">IOPoint</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The class describe a measurement or control value. The purpose is to enable having attributes and associations common for measurement and control.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">PowerSystemResource</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A power system resource (PSR) can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Measurement">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Measurement</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A Measurement represents any measured, calculated or non-measured non-calculated quantity. Any piece of equipment may contain Measurements, e.g. a substation may have temperature measurements and door open indications, a transformer may have oil temperature and tank pressure measurements, a bay may contain a number of power flow measurements and a Breaker may contain a switch status measurement. 
+The PSR - Measurement association is intended to capture this use of Measurement and is included in the naming hierarchy based on EquipmentContainer. The naming hierarchy typically has Measurements as leaves, e.g. Substation-VoltageLevel-Bay-Switch-Measurement.
+Some Measurements represent quantities related to a particular sensor location in the network, e.g. a voltage transformer (VT) or potential transformer (PT) at a busbar or a current transformer (CT) at the bar between a breaker and an isolator. The sensing position is not captured in the PSR - Measurement association. Instead it is captured by the Measurement - Terminal association that is used to define the sensing location in the network topology. The location is defined by the connection of the Terminal to ConductingEquipment. 
+If both a Terminal and PSR are associated, and the PSR is of type ConductingEquipment, the associated Terminal should belong to that ConductingEquipment instance.
+When the sensor location is needed both Measurement-PSR and Measurement-Terminal are used. The Measurement-Terminal association is never used alone.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Measurement.measurementType">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">measurementType</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Measurement"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Specifies the type of measurement.  For example, this specifies if the measurement represents an indoor temperature, outdoor temperature, bus voltage, line flow, etc.
+When the measurementType is set to &quot;Specialization&quot;, the type of Measurement is defined in more detail by the specialized class which inherits from Measurement.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Measurement.phases">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">phases</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Measurement"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Indicates to which phases the measurement applies and avoids the need to use &apos;measurementType&apos; to also encode phase information (which would explode the types). The phase information in Measurement, along with &apos;measurementType&apos; and &apos;phases&apos; uniquely defines a Measurement for a device, based on normal network phase. Their meaning will not change when the computed energizing phasing is changed due to jumpers or other reasons.
+If the attribute is missing three phases (ABC) shall be assumed.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Measurement.unitMultiplier">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">unitMultiplier</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Measurement"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The unit multiplier of the measured quantity.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Measurement.unitSymbol">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">unitSymbol</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Measurement"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The unit of measure of the measured quantity.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Measurement.Terminal">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Terminal</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Measurement"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">One or more measurements may be associated with a terminal in the network.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Measurement.PowerSystemResource">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">PowerSystemResource</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Measurement"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The power system resource that contains the measurement.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#AccumulatorReset">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Control"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">AccumulatorReset</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">This command resets the counter value to zero.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#AccumulatorReset.AccumulatorValue">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">AccumulatorValue</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#AccumulatorReset"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#AccumulatorValue"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The accumulator value that is reset by the command.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SetPoint">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#AnalogControl"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SetPoint</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An analog control that issues a set point value.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SetPoint.normalValue">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">normalValue</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SetPoint"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Normal value for Control.value e.g. used for percentage scaling.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SetPoint.value">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">value</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SetPoint"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The value representing the actuator output.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#StringMeasurementValue">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#MeasurementValue"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">StringMeasurementValue</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">StringMeasurementValue represents a measurement value of type string.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#StringMeasurementValue.StringMeasurement">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">StringMeasurement</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#StringMeasurementValue"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#StringMeasurement"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Measurement to which this value is connected.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ValueToAlias">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ValueToAlias</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Describes the translation of one particular value into a name, e.g. 1 as &quot;Open&quot;.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ValueToAlias.value">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">value</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ValueToAlias"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The value that is mapped.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ValueToAlias.ValueAliasSet">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ValueAliasSet</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ValueToAlias"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ValueAliasSet"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The ValueAliasSet having the ValueToAlias mappings.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#StringMeasurement">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Measurement"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">StringMeasurement</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">StringMeasurement represents a measurement with values of type string.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Accumulator">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Measurement"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Accumulator</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Accumulator represents an accumulated (counted) Measurement, e.g. an energy value.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Terminal</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#MeasurementValue">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IOPoint"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">MeasurementValue</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The current state for a measurement. A state value is an instance of a measurement from a specific source. Measurements can be associated with many state values, each representing a different source for the measurement.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#MeasurementValue.sensorAccuracy">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">sensorAccuracy</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#MeasurementValue"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The limit, expressed as a percentage of the sensor maximum, that errors will not exceed when the sensor is used under  reference conditions.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#MeasurementValue.timeStamp">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">timeStamp</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#MeasurementValue"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://schema.org/DateTime"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The time when the value was last updated.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#MeasurementValue.MeasurementValueSource">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">MeasurementValueSource</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#MeasurementValue"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#MeasurementValueSource"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A reference to the type of source that updates the MeasurementValue, e.g. SCADA, CCLink, manual, etc. User conventions for the names of sources are contained in the introduction to IEC 61970-301.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Analog">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Measurement"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Analog</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Analog represents an analog Measurement.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Analog.positiveFlowIn">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">positiveFlowIn</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Analog"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">If true then this measurement is an active power, reactive power or current with the convention that a positive value measured at the Terminal means power is flowing into the related PowerSystemResource.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Quality61850</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Quality flags in this class are as defined in IEC 61850, except for estimatorReplaced, which has been included in this class for convenience.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850.badReference">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">badReference</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Measurement value may be incorrect due to a reference being out of calibration.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850.estimatorReplaced">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">estimatorReplaced</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Value has been replaced by State Estimator. estimatorReplaced is not an IEC61850 quality bit but has been put in this class for convenience.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850.failure">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">failure</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">This identifier indicates that a supervision function has detected an internal or external failure, e.g. communication failure.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850.oldData">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">oldData</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Measurement value is old and possibly invalid, as it has not been successfully updated during a specified time interval.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850.operatorBlocked">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">operatorBlocked</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Measurement value is blocked and hence unavailable for transmission. </comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850.oscillatory">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">oscillatory</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">To prevent some overload of the communication it is sensible to detect and suppress oscillating (fast changing) binary inputs. If a signal changes in a defined time twice in the same direction (from 0 to 1 or from 1 to 0) then oscillation is detected and the detail quality identifier &quot;oscillatory&quot; is set. If it is detected a configured numbers of transient changes could be passed by. In this time the validity status &quot;questionable&quot; is set. If after this defined numbers of changes the signal is still in the oscillating state the value shall be set either to the opposite state of the previous stable value or to a defined default value. In this case the validity status &quot;questionable&quot; is reset and &quot;invalid&quot; is set as long as the signal is oscillating. If it is configured such that no transient changes should be passed by then the validity status &quot;invalid&quot; is set immediately in addition to the detail quality identifier &quot;oscillatory&quot; (used for status information only).</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850.outOfRange">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">outOfRange</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Measurement value is beyond a predefined range of value.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850.overFlow">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">overFlow</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Measurement value is beyond the capability of being  represented properly. For example, a counter value overflows from maximum count back to a value of zero. </comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850.source">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">source</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Source gives information related to the origin of a value. The value may be acquired from the process, defaulted or substituted.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850.suspect">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">suspect</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A correlation function has detected that the value is not consistent with other values. Typically set by a network State Estimator.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850.test">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">test</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Measurement value is transmitted for test purposes.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850.validity">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">validity</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Quality61850"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Validity of the measurement value.</comment>
+    </rdf:Description>
+</rdf:RDF>

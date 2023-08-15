@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg86460"
+   version="1.1"
+   viewBox="0 0 457 513"
+   height="13.57cm"
+   width="12.09cm">
+  <metadata
+     id="metadata86466">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs86464" />
+  <desc
+     id="desc86132">Created with Enterprise Architect (Build: 1627) 1</desc>
+  <g
+     id="g86136"
+     style="fill:#FFFFFF;fill-opacity:1.00;">
+    <rect
+       id="rect86134"
+       shape-rendering="auto"
+       height="513"
+       width="457"
+       y="0"
+       x="0" />
+  </g>
+  <g
+     id="g86140"
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+    <path
+       id="path86138"
+       shape-rendering="auto"
+       d="M 6 6 L 6 507 L 451 507 L 451 6 L 6 6" />
+  </g>
+  <g
+     id="g86144"
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#FFFFFF;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <polygon
+       id="polygon86142"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="6 24 185 24 198 10 198 6 6 6 6 24" />
+  </g>
+  <g
+     id="g86148"
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text86146"
+       transform="rotate(-0.00 11.00 18.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="172"
+       y="18.00"
+       x="11.00">class ShuntCompensatorDynamics</text>
+  </g>
+  <g
+     id="g86364"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect86362"
+       shape-rendering="auto"
+       rx="0.00"
+       height="93"
+       width="145"
+       y="40"
+       x="67" />
+  </g>
+  <g
+     id="g86368"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text86366"
+       transform="rotate(-0.00 101.00 58.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="77"
+       y="58.00"
+       x="101.00">IdentifiedObject</text>
+  </g>
+  <g
+     id="g86372"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path86370"
+       shape-rendering="auto"
+       d="M 67 65 L 211 65" />
+  </g>
+  <g
+     id="g86386"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text86374"
+       transform="rotate(-0.00 72.00 78.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="78.00"
+       x="72.00">+ </text>
+    <text
+       id="text86376"
+       transform="rotate(-0.00 89.00 78.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="110"
+       y="78.00"
+       x="89.00">description: String [0..1]</text>
+    <text
+       id="text86378"
+       transform="rotate(-0.00 72.00 89.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="89.00"
+       x="72.00">+ </text>
+    <text
+       id="text86380"
+       transform="rotate(-0.00 89.00 89.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="58"
+       y="89.00"
+       x="89.00">mRID: String</text>
+    <text
+       id="text86382"
+       transform="rotate(-0.00 72.00 100.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="100.00"
+       x="72.00">+ </text>
+    <text
+       id="text86384"
+       transform="rotate(-0.00 89.00 100.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="86"
+       y="100.00"
+       x="89.00">name: String [0..1]</text>
+  </g>
+  <g
+     id="g86390"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect86388"
+       shape-rendering="auto"
+       rx="0.00"
+       height="70"
+       width="169"
+       y="252"
+       x="56" />
+  </g>
+  <g
+     id="g86394"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text86392"
+       transform="rotate(-0.00 69.00 270.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="142"
+       y="270.00"
+       x="69.00">ShuntCompensatorDynamics</text>
+  </g>
+  <g
+     id="g86398"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect86396"
+       shape-rendering="auto"
+       rx="0.00"
+       height="69"
+       width="142"
+       y="153"
+       x="70" />
+  </g>
+  <g
+     id="g86402"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text86400"
+       transform="rotate(-0.00 81.00 171.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="119"
+       y="171.00"
+       x="81.00">DynamicsFunctionBlock</text>
+  </g>
+  <g
+     id="g86406"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path86404"
+       shape-rendering="auto"
+       d="M 70 178 L 211 178" />
+  </g>
+  <g
+     id="g86412"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text86408"
+       transform="rotate(-0.00 75.00 191.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="191.00"
+       x="75.00">+ </text>
+    <text
+       id="text86410"
+       transform="rotate(-0.00 92.00 191.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="83"
+       y="191.00"
+       x="92.00">enabled: Boolean</text>
+  </g>
+  <g
+     id="g86416"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect86414"
+       shape-rendering="auto"
+       rx="0.00"
+       height="69"
+       width="184"
+       y="348"
+       x="48" />
+  </g>
+  <g
+     id="g86420"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text86418"
+       transform="rotate(-0.00 63.00 366.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="153"
+       y="366.00"
+       x="63.00">ShuntCompensatorUserDefined</text>
+  </g>
+  <g
+     id="g86424"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path86422"
+       shape-rendering="auto"
+       d="M 48 373 L 231 373" />
+  </g>
+  <g
+     id="g86430"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text86426"
+       transform="rotate(-0.00 53.00 386.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="386.00"
+       x="53.00">+ </text>
+    <text
+       id="text86428"
+       transform="rotate(-0.00 70.00 386.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="94"
+       y="386.00"
+       x="70.00">proprietary: Boolean</text>
+  </g>
+  <g
+     id="g86434"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text86432"
+       transform="rotate(-0.00 40.00 465.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:400; font-style:normal; font-size:16px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="311"
+       y="465.00"
+       x="40.00">Reproduced with the permission of UCAIug.</text>
+  </g>
+  <g
+     id="g86438"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path86436"
+       shape-rendering="auto"
+       d="M 140 348 L 140 322" />
+  </g>
+  <g
+     id="g86442"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon86440"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="146 338 134 338 140 322" />
+  </g>
+  <g
+     id="g86446"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path86444"
+       shape-rendering="auto"
+       d="M 140 153 L 139 133" />
+  </g>
+  <g
+     id="g86450"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon86448"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="146 149 134 149 139 133" />
+  </g>
+  <g
+     id="g86454"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path86452"
+       shape-rendering="auto"
+       d="M 140 252 L 140 222" />
+  </g>
+  <g
+     id="g86458"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon86456"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="146 238 134 238 140 222" />
+  </g>
+</svg>

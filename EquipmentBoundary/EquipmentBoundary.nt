@@ -1,0 +1,214 @@
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> <http://www.w3.org/2000/01/rdf-schema#label> "ACDCTerminal"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> <http://www.w3.org/2000/01/rdf-schema#comment> "An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> <http://www.w3.org/2000/01/rdf-schema#label> "Terminal"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> <http://www.w3.org/2000/01/rdf-schema#comment> "An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConductingEquipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConductingEquipment> <http://www.w3.org/2000/01/rdf-schema#label> "ConductingEquipment"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConductingEquipment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConductingEquipment> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConductingEquipment> <http://www.w3.org/2000/01/rdf-schema#comment> "The conducting equipment of the terminal.  Conducting equipment have  terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConnectivityNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConnectivityNode> <http://www.w3.org/2000/01/rdf-schema#label> "ConnectivityNode"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConnectivityNode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConnectivityNode> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConnectivityNode> <http://www.w3.org/2000/01/rdf-schema#comment> "The connectivity node to which this terminal connects with zero impedance."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage> <http://www.w3.org/2000/01/rdf-schema#label> "BaseVoltage"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines a system base voltage which is referenced. "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.nominalVoltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.nominalVoltage> <http://www.w3.org/2000/01/rdf-schema#label> "nominalVoltage"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.nominalVoltage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.nominalVoltage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.nominalVoltage> <http://www.w3.org/2000/01/rdf-schema#comment> "The power system resource's base voltage.  Shall be a positive value and not zero."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> <http://www.w3.org/2000/01/rdf-schema#label> "PowerSystemResource"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> <http://www.w3.org/2000/01/rdf-schema#comment> "A power system resource (PSR) can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode> <http://www.w3.org/2000/01/rdf-schema#label> "ConnectivityNode"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode> <http://www.w3.org/2000/01/rdf-schema#comment> "Connectivity nodes are points where terminals of AC conducting equipment are connected together with zero impedance."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode.ConnectivityNodeContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode.ConnectivityNodeContainer> <http://www.w3.org/2000/01/rdf-schema#label> "ConnectivityNodeContainer"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode.ConnectivityNodeContainer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode.ConnectivityNodeContainer> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode.ConnectivityNodeContainer> <http://www.w3.org/2000/01/rdf-schema#comment> "Container of this connectivity node."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeographicalRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeographicalRegion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeographicalRegion> <http://www.w3.org/2000/01/rdf-schema#label> "GeographicalRegion"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeographicalRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "A geographical region of a power system network model."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment> <http://www.w3.org/2000/01/rdf-schema#label> "ConductingEquipment"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment> <http://www.w3.org/2000/01/rdf-schema#comment> "The parts of the AC power system that are designed to carry current or that are conductively connected through terminals."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel> <http://www.w3.org/2000/01/rdf-schema#label> "VoltageLevel"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of equipment at one common system voltage forming a switchgear. The equipment typically consists of breakers, busbars, instrumentation, control, regulation and protection devices as well as assemblies of all these."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.highVoltageLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.highVoltageLimit> <http://www.w3.org/2000/01/rdf-schema#label> "highVoltageLimit"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.highVoltageLimit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.highVoltageLimit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.highVoltageLimit> <http://www.w3.org/2000/01/rdf-schema#comment> "The bus bar's high voltage limit.\nThe limit applies to all equipment and nodes contained in a given VoltageLevel. It is not required that it is exchanged in pair with lowVoltageLimit. It is preferable to use operational VoltageLimit, which prevails, if present."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.lowVoltageLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.lowVoltageLimit> <http://www.w3.org/2000/01/rdf-schema#label> "lowVoltageLimit"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.lowVoltageLimit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.lowVoltageLimit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.lowVoltageLimit> <http://www.w3.org/2000/01/rdf-schema#comment> "The bus bar's low voltage limit.\nThe limit applies to all equipment and nodes contained in a given VoltageLevel. It is not required that it is exchanged in pair with highVoltageLimit. It is preferable to use operational VoltageLimit, which prevails, if present."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.BaseVoltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.BaseVoltage> <http://www.w3.org/2000/01/rdf-schema#label> "BaseVoltage"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.BaseVoltage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.BaseVoltage> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.BaseVoltage> <http://www.w3.org/2000/01/rdf-schema#comment> "The base voltage used for all equipment within the voltage level."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.Substation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.Substation> <http://www.w3.org/2000/01/rdf-schema#label> "Substation"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.Substation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.Substation> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Substation> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.Substation> <http://www.w3.org/2000/01/rdf-schema#comment> "The substation of the voltage level."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Junction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Junction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#Connector> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Junction> <http://www.w3.org/2000/01/rdf-schema#label> "Junction"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Junction> <http://www.w3.org/2000/01/rdf-schema#comment> "A point where one or more conducting equipments are connected with zero resistance."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#label> "EquipmentContainer"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#comment> "A modelling construct to provide a root class for containing equipment. "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Line> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Line> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Line> <http://www.w3.org/2000/01/rdf-schema#label> "Line"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Line> <http://www.w3.org/2000/01/rdf-schema#comment> "Contains equipment beyond a substation belonging to a power transmission line. "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Line.Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Line.Region> <http://www.w3.org/2000/01/rdf-schema#label> "Region"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Line.Region> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Line> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Line.Region> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Line.Region> <http://www.w3.org/2000/01/rdf-schema#comment> "The sub-geographical region of the line."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Connector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Connector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Connector> <http://www.w3.org/2000/01/rdf-schema#label> "Connector"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Connector> <http://www.w3.org/2000/01/rdf-schema#comment> "A conductor, or group of conductors, with negligible impedance, that serve to connect other conducting equipment within a single substation and are modelled with a single logical terminal."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Bay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Bay> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Bay> <http://www.w3.org/2000/01/rdf-schema#label> "Bay"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Bay> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of power system resources (within a given substation) including conducting equipment, protection relays, measurements, and telemetry.  A bay typically represents a physical grouping related to modularization of equipment."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Bay.VoltageLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Bay.VoltageLevel> <http://www.w3.org/2000/01/rdf-schema#label> "VoltageLevel"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Bay.VoltageLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Bay> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Bay.VoltageLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Bay.VoltageLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "The voltage level containing this bay."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Substation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Substation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Substation> <http://www.w3.org/2000/01/rdf-schema#label> "Substation"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Substation> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of equipment for purposes other than generation or utilization, through which electric energy in bulk is passed for the purposes of switching or modifying its characteristics. "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Substation.Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Substation.Region> <http://www.w3.org/2000/01/rdf-schema#label> "Region"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Substation.Region> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Substation> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Substation.Region> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Substation.Region> <http://www.w3.org/2000/01/rdf-schema#comment> "The SubGeographicalRegion containing the substation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> <http://www.w3.org/2000/01/rdf-schema#label> "Equipment"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> <http://www.w3.org/2000/01/rdf-schema#comment> "The parts of a power system that are physical devices, electronic or mechanical."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.EquipmentContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.EquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#label> "EquipmentContainer"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.EquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.EquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.EquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#comment> "Container of this equipment."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion> <http://www.w3.org/2000/01/rdf-schema#label> "SubGeographicalRegion"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "A subset of a geographical region of a power system network model."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.Region> <http://www.w3.org/2000/01/rdf-schema#label> "Region"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.Region> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.Region> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#GeographicalRegion> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.Region> <http://www.w3.org/2000/01/rdf-schema#comment> "The geographical region which this sub-geographical region is within."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer> <http://www.w3.org/2000/01/rdf-schema#label> "ConnectivityNodeContainer"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer> <http://www.w3.org/2000/01/rdf-schema#comment> "A base class for all objects that may contain connectivity nodes or topological nodes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint> <http://www.w3.org/2000/01/rdf-schema#label> "BoundaryPoint"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Designates a connection point at which one or more model authority sets shall connect to. The location of the connection point as well as other properties are agreed between organisations responsible for the interconnection, hence all attributes of the class represent this agreement.  It is primarily used in a boundary model authority set which can contain one or many BoundaryPoint-s among other Equipment-s and their connections."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.fromEndIsoCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.fromEndIsoCode> <http://www.w3.org/2000/01/rdf-schema#label> "fromEndIsoCode"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.fromEndIsoCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.fromEndIsoCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.fromEndIsoCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The ISO code of the region which the \"From\" side of the Boundary point belongs to or it is connected to.\nThe ISO code is a two-character country code as defined by ISO 3166 (http://www.iso.org/iso/country_codes). The length of the string is 2 characters maximum."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.fromEndName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.fromEndName> <http://www.w3.org/2000/01/rdf-schema#label> "fromEndName"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.fromEndName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.fromEndName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.fromEndName> <http://www.w3.org/2000/01/rdf-schema#comment> "A human readable name with length of the string 64 characters maximum. It covers the following two cases:\n-if the Boundary point is placed on a tie-line, it is the name (IdentifiedObject.name) of the substation at which the \"From\" side of the tie-line is connected to.\n-if the Boundary point is placed in a substation, it is the name (IdentifiedObject.name) of the element (e.g. PowerTransformer, ACLineSegment, Switch, etc.) at which the \"From\" side of the Boundary point is connected to."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.fromEndNameTso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.fromEndNameTso> <http://www.w3.org/2000/01/rdf-schema#label> "fromEndNameTso"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.fromEndNameTso> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.fromEndNameTso> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.fromEndNameTso> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies the name of the transmission system operator, distribution system operator or other entity at which the \"From\" side of the interconnection is connected to. The length of the string is 64 characters maximum."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.isDirectCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.isDirectCurrent> <http://www.w3.org/2000/01/rdf-schema#label> "isDirectCurrent"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.isDirectCurrent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.isDirectCurrent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.isDirectCurrent> <http://www.w3.org/2000/01/rdf-schema#comment> "If true, this boundary point is a point of common coupling (PCC) of a direct current (DC) interconnection, otherwise the interconnection is AC (default)."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.isExcludedFromAreaInterchange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.isExcludedFromAreaInterchange> <http://www.w3.org/2000/01/rdf-schema#label> "isExcludedFromAreaInterchange"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.isExcludedFromAreaInterchange> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.isExcludedFromAreaInterchange> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.isExcludedFromAreaInterchange> <http://www.w3.org/2000/01/rdf-schema#comment> "If true, this boundary point is on the interconnection that is excluded from control area interchange calculation and consequently has no related tie flows. Otherwise, the interconnection is included in control area interchange and a TieFlow is required at all sides of the boundary point (default)."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.toEndIsoCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.toEndIsoCode> <http://www.w3.org/2000/01/rdf-schema#label> "toEndIsoCode"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.toEndIsoCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.toEndIsoCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.toEndIsoCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The ISO code of the region which the \"To\" side of the Boundary point belongs to or is connected to.\nThe ISO code is a two-character country code as defined by ISO 3166 (http://www.iso.org/iso/country_codes). The length of the string is 2 characters maximum."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.toEndName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.toEndName> <http://www.w3.org/2000/01/rdf-schema#label> "toEndName"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.toEndName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.toEndName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.toEndName> <http://www.w3.org/2000/01/rdf-schema#comment> "A human readable name with length of the string 64 characters maximum. It covers the following two cases:\n-if the Boundary point is placed on a tie-line, it is the name (IdentifiedObject.name) of the substation at which the \"To\" side of the tie-line is connected to.\n-if the Boundary point is placed in a substation, it is the name (IdentifiedObject.name) of the element (e.g. PowerTransformer, ACLineSegment, Switch, etc.) at which the \"To\" side of the Boundary point is connected to."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.toEndNameTso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.toEndNameTso> <http://www.w3.org/2000/01/rdf-schema#label> "toEndNameTso"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.toEndNameTso> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.toEndNameTso> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.toEndNameTso> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies the name of the transmission system operator, distribution system operator or other entity at which the \"To\" side of the interconnection is connected to. The length of the string is 64 characters maximum."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.ConnectivityNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.ConnectivityNode> <http://www.w3.org/2000/01/rdf-schema#label> "ConnectivityNode"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.ConnectivityNode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.ConnectivityNode> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint.ConnectivityNode> <http://www.w3.org/2000/01/rdf-schema#comment> "The connectivity node that is designated as a boundary point."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EnergySchedulingType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EnergySchedulingType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EnergySchedulingType> <http://www.w3.org/2000/01/rdf-schema#label> "EnergySchedulingType"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EnergySchedulingType> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to define the type of generation for scheduling purposes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> <http://www.w3.org/2000/01/rdf-schema#label> "IdentifiedObject"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a root class to provide common identification for all classes needing identification and naming attributes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.description> <http://www.w3.org/2000/01/rdf-schema#label> "description"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.description> <http://www.w3.org/2000/01/rdf-schema#comment> "The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.energyIdentCodeEic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.energyIdentCodeEic> <http://www.w3.org/2000/01/rdf-schema#label> "energyIdentCodeEic"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.energyIdentCodeEic> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.energyIdentCodeEic> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.energyIdentCodeEic> <http://www.w3.org/2000/01/rdf-schema#comment> "The attribute is used for an exchange of the EIC code (Energy identification Code). The length of the string is 16 characters as defined by the EIC code. For details on EIC scheme please refer to ENTSO-E web site."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/2000/01/rdf-schema#label> "mRID"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/2000/01/rdf-schema#comment> "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name is any free human readable and possibly non unique text naming the object."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.shortName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.shortName> <http://www.w3.org/2000/01/rdf-schema#label> "shortName"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.shortName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.shortName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.shortName> <http://www.w3.org/2000/01/rdf-schema#comment> "The attribute is used for an exchange of a human readable short name with length of the string 12 characters maximum."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">IdentifiedObject</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">This is a root class to provide common identification for all classes needing identification and naming attributes.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.description">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">description</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">mRID</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.
+For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">name</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The name is any free human readable and possibly non unique text naming the object.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Curve</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A multi-purpose curve or functional relationship between an independent variable (X-axis) and dependent (Y-axis) variables. </comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve.curveStyle">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">curveStyle</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The style or shape of the curve.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve.xMultiplier">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">xMultiplier</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Multiplier for X-axis.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve.xUnit">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">xUnit</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The X-axis units of measure.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve.y1Multiplier">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">y1Multiplier</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Multiplier for Y1-axis.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve.y1Unit">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">y1Unit</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The Y1-axis units of measure.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve.y2Multiplier">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">y2Multiplier</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Multiplier for Y2-axis.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve.y2Unit">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">y2Unit</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The Y2-axis units of measure.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve.y3Multiplier">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">y3Multiplier</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Multiplier for Y3-axis.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve.y3Unit">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">y3Unit</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The Y3-axis units of measure.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#StringFixedLanguage">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">StringFixedLanguage</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A string consisting of a sequence of characters. The character encoding is UTF-8. The string length is unspecified and unlimited.
+The primitive is serialized as literal without language support.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SimulationSettings</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Describes simulation settings necessary for a simulation.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalConfiguration">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SignalConfiguration</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A configuration or a set of signals selected for recording during a simulation.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SimulationEvents</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A configuration or a set of events executed during a simulation.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#CurveData">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">CurveData</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Multi-purpose data points for defining a curve.  The use of this generic class is discouraged if a more specific class can be used to specify the X and Y axis values along with their specific data types.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#CurveData.xvalue">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">xvalue</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#CurveData"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The data value of the X-axis variable,  depending on the X-axis units.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#CurveData.y1value">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">y1value</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#CurveData"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The data value of the  first Y-axis variable, depending on the Y-axis units.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#CurveData.y2value">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">y2value</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#CurveData"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The data value of the second Y-axis variable (if present), depending on the Y-axis units.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#CurveData.y3value">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">y3value</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#CurveData"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The data value of the third Y-axis variable (if present), depending on the Y-axis units.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#CurveData.Curve">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Curve</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#CurveData"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The curve of  this curve data point.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResultCharacteristic">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Curve"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SimulationResultCharacteristic</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Result characteristic. The xvalue of the curve is time.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResultCharacteristic.resultReference">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">resultReference</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResultCharacteristic"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IRI"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Reference to an artifact containing the data for the characteristic. This can be a reference to comma separated file or other serialization.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResultCharacteristic.y2valueSignal">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">y2valueSignal</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResultCharacteristic"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The signal for y2value of the characteristic.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResultCharacteristic.y1valueSignal">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">y1valueSignal</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResultCharacteristic"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The signal for y1value of the characteristic.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResultCharacteristic.SimulationResult">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SimulationResult</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResultCharacteristic"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResult"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The simulation reslut to which this simulation result characteristic belongs to.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResultCharacteristic.y3valueSignal">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">y3valueSignal</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResultCharacteristic"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The signal for y3value of the characteristic.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SignalRecorder</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">A recorder for a given signal.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResult">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SimulationResult</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Represents the simulation result.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResult.SimulationSettings">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SimulationSettings</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResult"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The simulation settings that are part of the simulation result.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResult.SignalConfiguration">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SignalConfiguration</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResult"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SignalConfiguration"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The simulation configuration that is part of the simulation result.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResult.SimulationEvents">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">SimulationEvents</label>
+        <domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationResult"/>
+        <range xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents"/>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The simulation events that are part of the simulation result.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#IRI">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">IRI</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.
+The primitive is serialized as rdf:resource in RDFXML.
+IRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.
+IRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.
+IRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names.</comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#StringIRI">
+        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">StringIRI</label>
+        <comment xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.
+The primitive is serialized as literal without language support.
+IRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.
+IRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.
+IRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names.</comment>
+    </rdf:Description>
+</rdf:RDF>

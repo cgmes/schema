@@ -5,13 +5,13 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   id="svg49475"
+   id="svg66474"
    version="1.1"
-   viewBox="0 0 504 358"
-   height="9.47cm"
-   width="13.34cm">
+   viewBox="0 0 549 378"
+   height="10.00cm"
+   width="14.53cm">
   <metadata
-     id="metadata49481">
+     id="metadata66480">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -23,42 +23,42 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs49479" />
+     id="defs66478" />
   <desc
-     id="desc49193">Created with Enterprise Architect (Build: 1627) 1</desc>
+     id="desc66192">Created with Enterprise Architect (Build: 1627) 1</desc>
   <g
-     id="g49197"
+     id="g66196"
      style="fill:#FFFFFF;fill-opacity:1.00;">
     <rect
-       id="rect49195"
+       id="rect66194"
        shape-rendering="auto"
-       height="358"
-       width="504"
+       height="378"
+       width="549"
        y="0"
        x="0" />
   </g>
   <g
-     id="g49201"
+     id="g66200"
      style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
     <path
-       id="path49199"
+       id="path66198"
        shape-rendering="auto"
-       d="M 6 6 L 6 352 L 498 352 L 498 6 L 6 6" />
+       d="M 6 6 L 6 372 L 543 372 L 543 6 L 6 6" />
   </g>
   <g
-     id="g49205"
+     id="g66204"
      style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#FFFFFF;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
     <polygon
-       id="polygon49203"
+       id="polygon66202"
        style="fill-rule:evenodd;"
        shape-rendering="auto"
        points="6 24 201 24 214 10 214 6 6 6 6 24" />
   </g>
   <g
-     id="g49209"
+     id="g66208"
      style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
     <text
-       id="text49207"
+       id="text66206"
        transform="rotate(-0.00 11.00 18.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
@@ -67,10 +67,10 @@
        x="11.00">class TurbineLoadControllerDynamics</text>
   </g>
   <g
-     id="g49401"
+     id="g66400"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
     <rect
-       id="rect49399"
+       id="rect66398"
        shape-rendering="auto"
        rx="0.00"
        height="37"
@@ -79,30 +79,22 @@
        x="261" />
   </g>
   <g
-     id="g49407"
+     id="g66404"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
     <text
-       id="text49403"
-       transform="rotate(-0.00 333.00 178.00)"
-       xml:space="preserve"
-       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
-       textLength="49"
-       y="178.00"
-       x="333.00">«abstract»</text>
-    <text
-       id="text49405"
-       transform="rotate(-0.00 278.00 189.00)"
+       id="text66402"
+       transform="rotate(-0.00 278.00 181.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
        textLength="158"
-       y="189.00"
+       y="181.00"
        x="278.00">TurbineLoadControllerDynamics</text>
   </g>
   <g
-     id="g49411"
+     id="g66408"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
     <rect
-       id="rect49409"
+       id="rect66406"
        shape-rendering="auto"
        rx="0.00"
        height="28"
@@ -111,10 +103,10 @@
        x="299" />
   </g>
   <g
-     id="g49415"
+     id="g66412"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
     <text
-       id="text49413"
+       id="text66410"
        transform="rotate(-0.00 331.00 281.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
@@ -123,10 +115,10 @@
        x="331.00">TurbLCFB1</text>
   </g>
   <g
-     id="g49419"
+     id="g66416"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
     <rect
-       id="rect49417"
+       id="rect66414"
        shape-rendering="auto"
        rx="0.00"
        height="43"
@@ -135,10 +127,10 @@
        x="35" />
   </g>
   <g
-     id="g49425"
+     id="g66422"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
     <text
-       id="text49421"
+       id="text66418"
        transform="rotate(-0.00 88.00 280.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
@@ -146,7 +138,7 @@
        y="280.00"
        x="88.00">UserDefinedModels::</text>
     <text
-       id="text49423"
+       id="text66420"
        transform="rotate(-0.00 54.00 291.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
@@ -155,10 +147,10 @@
        x="54.00">TurbineLoadControllerUserDefined</text>
   </g>
   <g
-     id="g49429"
+     id="g66426"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
     <rect
-       id="rect49427"
+       id="rect66424"
        shape-rendering="auto"
        rx="0.00"
        height="93"
@@ -167,10 +159,10 @@
        x="286" />
   </g>
   <g
-     id="g49439"
+     id="g66434"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
     <text
-       id="text49431"
+       id="text66428"
        transform="rotate(-0.00 352.00 52.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:0; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
@@ -178,105 +170,109 @@
        y="52.00"
        x="352.00">IdentifiedObject</text>
     <text
-       id="text49433"
-       transform="rotate(-0.00 332.00 69.00)"
-       xml:space="preserve"
-       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
-       textLength="49"
-       y="69.00"
-       x="332.00">«abstract»</text>
-    <text
-       id="text49435"
-       transform="rotate(-0.00 314.00 80.00)"
+       id="text66430"
+       transform="rotate(-0.00 314.00 66.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
        textLength="85"
-       y="80.00"
+       y="66.00"
        x="314.00">StandardModels::</text>
     <text
-       id="text49437"
-       transform="rotate(-0.00 297.00 91.00)"
+       id="text66432"
+       transform="rotate(-0.00 297.00 77.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
        textLength="119"
-       y="91.00"
+       y="77.00"
        x="297.00">DynamicsFunctionBlock</text>
   </g>
   <g
-     id="g49443"
+     id="g66438"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
     <path
-       id="path49441"
+       id="path66436"
        shape-rendering="auto"
-       d="M 286 98 L 427 98" />
+       d="M 286 84 L 427 84" />
   </g>
   <g
-     id="g49449"
+     id="g66444"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
     <text
-       id="text49445"
-       transform="rotate(-0.00 291.00 111.00)"
+       id="text66440"
+       transform="rotate(-0.00 291.00 97.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
        textLength="9"
-       y="111.00"
+       y="97.00"
        x="291.00">+ </text>
     <text
-       id="text49447"
-       transform="rotate(-0.00 308.00 111.00)"
+       id="text66442"
+       transform="rotate(-0.00 308.00 97.00)"
        xml:space="preserve"
        style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
        textLength="83"
-       y="111.00"
+       y="97.00"
        x="308.00">enabled: Boolean</text>
   </g>
   <g
-     id="g49453"
+     id="g66448"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text66446"
+       transform="rotate(-0.00 132.00 330.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:400; font-style:normal; font-size:16px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="311"
+       y="330.00"
+       x="132.00">Reproduced with the permission of UCAIug.</text>
+  </g>
+  <g
+     id="g66452"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
     <path
-       id="path49451"
+       id="path66450"
        shape-rendering="auto"
        d="M 183 262 L 316 200" />
   </g>
   <g
-     id="g49457"
+     id="g66456"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
     <polygon
-       id="polygon49455"
+       id="polygon66454"
        style="fill-rule:evenodd;"
        shape-rendering="auto"
        points="304 212 299 201 316 200" />
   </g>
   <g
-     id="g49461"
+     id="g66460"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
     <path
-       id="path49459"
+       id="path66458"
        shape-rendering="auto"
        d="M 357 263 L 357 200" />
   </g>
   <g
-     id="g49465"
+     id="g66464"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
     <polygon
-       id="polygon49463"
+       id="polygon66462"
        style="fill-rule:evenodd;"
        shape-rendering="auto"
        points="363 216 351 216 357 200" />
   </g>
   <g
-     id="g49469"
+     id="g66468"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
     <path
-       id="path49467"
+       id="path66466"
        shape-rendering="auto"
        d="M 357 163 L 357 133" />
   </g>
   <g
-     id="g49473"
+     id="g66472"
      style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
     <polygon
-       id="polygon49471"
+       id="polygon66470"
        style="fill-rule:evenodd;"
        shape-rendering="auto"
        points="363 149 351 149 357 133" />

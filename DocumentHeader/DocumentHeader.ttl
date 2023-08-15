@@ -1,0 +1,254 @@
+@base <http://iec.ch/TC57/2013/CIM-schema-cim16#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+DifferenceModel rdf:type rdfs:Class ;
+	rdfs:subClassOf Model ;
+	rdfs:label "DifferenceModel"@en ;
+	rdfs:comment "It represents the difference model header. The content is described by the Model class, the association role forwardDifferences and association role reverseDifferences. Both association roles may have one set of Statements."^^rdf:XMLLiteral .
+DifferenceModel.forwardDifferences rdf:type rdfs:Property ;
+	rdfs:label "forwardDifferences"@en ;
+	rdfs:domain DifferenceModel ;
+	rdfs:range Statements ;
+	rdfs:comment "A property of the difference model whose value is a collection of statements (i.e., resources of type rdf:Statement) representing the forward difference statements. "^^rdf:XMLLiteral .
+DifferenceModel.preconditions rdf:type rdfs:Property ;
+	rdfs:label "preconditions"@en ;
+	rdfs:domain DifferenceModel ;
+	rdfs:range Statements ;
+	rdfs:comment "A property of the difference model whose value is the collection of precondition statements."^^rdf:XMLLiteral .
+DifferenceModel.reverseDifferences rdf:type rdfs:Property ;
+	rdfs:label "reverseDifferences"@en ;
+	rdfs:domain DifferenceModel ;
+	rdfs:range Statements ;
+	rdfs:comment "A property of the difference model whose value is the collection of reverse difference statements."^^rdf:XMLLiteral .
+
+IRI rdf:type rdfs:Datatype ;
+	rdfs:label "IRI"@en ;
+	rdfs:comment "An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.\nThe primitive is serialized as rdf:resource in RDFXML.\nIRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.\nIRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.\nIRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names."^^rdf:XMLLiteral .
+
+FullModel rdf:type rdfs:Class ;
+	rdfs:subClassOf Model ;
+	rdfs:label "FullModel"@en ;
+	rdfs:comment "It represents the full model header and its contents is described by the Model class."^^rdf:XMLLiteral .
+
+StringFixedLanguage rdf:type rdfs:Datatype ;
+	rdfs:label "StringFixedLanguage"@en ;
+	rdfs:comment "A string consisting of a sequence of characters. The character encoding is UTF-8. The string length is unspecified and unlimited.\nThe primitive is serialized as literal without language support."^^rdf:XMLLiteral .
+
+Model rdf:type rdfs:Class ;
+	rdfs:label "Model"@en ;
+	rdfs:comment "A Model is a collection of data describing instances, objects or entities, real or computed. In the context of CIM the semantics of the data is defined by profiles. Hence a model can contain equipment data, power flow initial values, power flow results etc.\nThe Model class describes the header content that is the same for the FullModel and the DifferenceModel. A Model is identified by an rdf:about attribute. The rdf:about attribute uniquely describes the model data and not the CIMXML document. A new rdf:about identification is generated for created documents only when the model data has changed. A repeated creation of documents from unchanged model data shall have the same rdf:about identification as previous document generated from the same model data."^^rdf:XMLLiteral .
+Model.accessRights rdf:type rdfs:Property ;
+	rdfs:label "accessRights"@en ;
+	rdfs:domain Model ;
+	rdfs:range IRI ;
+	rdfs:comment "Information about who access the resource or an indication of its security status. Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.\n[CIM context:\nReference to the confidentiality level that shall be applied when handling this model.]."^^rdf:XMLLiteral .
+Model.accrualPeriodicity rdf:type rdfs:Property ;
+	rdfs:label "accrualPeriodicity"@en ;
+	rdfs:domain Model ;
+	rdfs:range IRI ;
+	rdfs:comment "The frequency with which items are added to a collection.\n[CIM context:\nReference to the time frame.]."^^rdf:XMLLiteral .
+Model.applicationSoftware rdf:type rdfs:Property ;
+	rdfs:label "applicationSoftware"@en ;
+	rdfs:domain Model ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Identifies the application software which generated this instance file. The application software term is defined in ISO/IEC/IEEE 24765:2017. The application software can be identified either:\n- as a string which contains information on the software name and version, e.g. &lt;tool_name&gt;-&lt;major_version&gt;.&lt;minor_version&gt;.&lt;patch&gt;, or\n- as a reference to a software identification tag as defined by ISO/IEC 19770-2:2015 and ISO/IEC/IEEE 24765:2017."^^rdf:XMLLiteral .
+Model.atLocation rdf:type rdfs:Property ;
+	rdfs:label "atLocation"@en ;
+	rdfs:domain Model ;
+	rdfs:range IRI ;
+	rdfs:comment "A location can be an identifiable geographic place (ISO 19112), but it can also be a non-geographic place such as a directory, row, or column. As such, there are numerous ways in which location can be expressed, such as by a coordinate, address, landmark, and so forth.\n[CIM context:\nReference to a region or a domain for which this model is provided.]."^^rdf:XMLLiteral .
+Model.conformsTo rdf:type rdfs:Property ;
+	rdfs:label "conformsTo"@en ;
+	rdfs:domain Model ;
+	rdfs:range StringIRI ;
+	rdfs:comment "An established standard to which the described resource conforms.\n[CIM context:\nAn IRI describing the profile that governs this model. It uniquely identifies the profile and its version. Multiple instances of the property describe all standards or specifications to which the model and the document representing this model conform to.\nA document would normally conform to profile definitions, the constraints that relate to the profile and/or the set of business specific constrains. A reference to a machine- readable constraints or specification indicates that the document was tested against these constraints and it conforms to them.]."^^rdf:XMLLiteral .
+Model.created rdf:type rdfs:Property ;
+	rdfs:label "created"@en ;
+	rdfs:domain Model ;
+	rdfs:range <https://schema.org/DateTime> ;
+	rdfs:comment "The date and time when the model was created. It is the time of the serialization. The format is an extended format according to the ISO 8601-2005. European exchanges shall refer to UTC, e.g. &lt;md:Model.created&gt;2014-05-15T17:48:31.474Z&lt;/md:Model.created&gt;."^^rdf:XMLLiteral .
+Model.creator rdf:type rdfs:Property ;
+	rdfs:label "creator"@en ;
+	rdfs:domain Model ;
+	rdfs:range StringIRI ;
+	rdfs:comment "An entity responsible for making the resource.\nRecommended practice is to identify the creator with a URI. If this is not possible or feasible, a literal value that identifies the creator may be provided.\n[CIM context:\nThe name of the agent (Modeling Authority) from which the model originates]."^^rdf:XMLLiteral .
+Model.description rdf:type rdfs:Property ;
+	rdfs:label "description"@en ;
+	rdfs:domain Model ;
+	rdfs:range xsd:string ;
+	rdfs:comment "A free-text account of the item."^^rdf:XMLLiteral .
+Model.generatedAtTime rdf:type rdfs:Property ;
+	rdfs:label "generatedAtTime"@en ;
+	rdfs:domain Model ;
+	rdfs:range <https://schema.org/DateTime> ;
+	rdfs:comment "Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.\n[CIM context:\nThe date and time when the model was serialized in the document where the header is located. The format is an extended format according to the ISO 8601-2005. European exchanges shall refer to UTC.]."^^rdf:XMLLiteral .
+Model.hadPrimarySource rdf:type rdfs:Property ;
+	rdfs:label "hadPrimarySource"@en ;
+	rdfs:domain Model ;
+	rdfs:range IRI ;
+	rdfs:comment "A primary source for a topic refers to something produced by some agent with direct experience and knowledge about the topic, at the time of the topic's study, without benefit from hindsight. Because of the directness of primary sources, they 'speak for themselves' in ways that cannot be captured through the filter of secondary sources. As such, it is important for secondary sources to reference those primary sources from which they were derived, so that their reliability can be investigated. A primary source relation is a particular case of derivation of secondary materials from their primary sources. It is recognized that the determination of primary sources can be up to interpretation, and should be done according to conventions accepted within the application's domain.\n[CIM context:\nReference to a modelling authority set version sourcing the model. It is only used in cases where a model is modified by an agent which has different version of modelling authority set. The agent that makes a revision of a model indicates the primary source using this property and also refers to its own version of modelling authority set using prov:specializationOf.]."^^rdf:XMLLiteral .
+Model.hasCurrentVersion rdf:type rdfs:Property ;
+	rdfs:label "hasCurrentVersion"@en ;
+	rdfs:domain Model ;
+	rdfs:range xsd:string ;
+	rdfs:comment "This resource has a more specific, versioned resource with equivalent content.\nThis property is intended for relating a non-versioned or abstract resource to a single snapshot that can be used as a permalink to indicate the current version of the content.\n\nThe notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle."^^rdf:XMLLiteral .
+Model.hasVersion rdf:type rdfs:Property ;
+	rdfs:label "hasVersion"@en ;
+	rdfs:domain Model ;
+	rdfs:range xsd:string ;
+	rdfs:comment "This resource has a more specific, versioned resource.\nThis property is intended for relating a non-versioned or abstract resource to several versioned resources, e.g. snapshots [PAV].\n\nThe notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle. Therefore, its semantics is more specific than its super-property dcterms:hasVersion, which makes use of a broader notion of version, including editions and adaptations."^^rdf:XMLLiteral .
+Model.hasXSDDuration rdf:type rdfs:Property ;
+	rdfs:label "hasXSDDuration"@en ;
+	rdfs:domain Model ;
+	rdfs:range xsd:duration ;
+	rdfs:comment "Extent of a temporal entity, expressed using xsd:duration.\n[CIM context:\nThe duration of the validity period of the model that it is serialized in the document where the header is located. It is only used in relation to the inXSDDateTimeStamp property which indicates the beginning of the validity period of the model. The end of the validity period is derived from both inXSDDateTimeStamp and hasXSDDuration.]."^^rdf:XMLLiteral .
+Model.identifier rdf:type rdfs:Property ;
+	rdfs:label "identifier"@en ;
+	rdfs:domain Model ;
+	rdfs:range StringIRI ;
+	rdfs:comment "An unambiguous reference to the resource within a given context. Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN). Persistent identifiers should be provided as HTTP URIs.\n[CIM context:\nA unique identifier of the model which is serialised in the document where the header is located. The identifier is persistent for a given version of the model and shall change when the model changes.\nIf a model is serialized as complete (full) model or as difference model exchange the identifier shall be the same. The identifier shall not be used as an identifier of the document which can be different for a given version of a model.]."^^rdf:XMLLiteral .
+Model.inXSDDateTimeStamp rdf:type rdfs:Property ;
+	rdfs:label "inXSDDateTimeStamp"@en ;
+	rdfs:domain Model ;
+	rdfs:range xsd:dateTimeStamp ;
+	rdfs:comment "Position of an instant, expressed using xsd:dateTimeStamp, in which the time-zone field is mandatory.\n[CIM context:\nThe date and time that this model represents, i.e. for which the model is (or was) valid. If used in relation with hasXSDDuration it indicates the beginning of the validity period.\nIt is indicating either an instant (in cases where the model is only valid for a point in time) or the start time of a period. If not provided the model is considered valid for any time stamp. The format is an extended format according to the ISO 8601-2005. European exchanges shall refer to UTC.]."^^rdf:XMLLiteral .
+Model.isVersionOf rdf:type rdfs:Property ;
+	rdfs:label "isVersionOf"@en ;
+	rdfs:domain Model ;
+	rdfs:range xsd:string ;
+	rdfs:comment "This resource is a version of a non-versioned or abstract resource.\nThis property is intended for relating a versioned resource to a non-versioned or abstract resource.\n\nThe notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle. Therefore, its semantics is more specific than its super-property dcterms:isVersionOf, which makes use of a broader notion of version, including editions and adaptations."^^rdf:XMLLiteral .
+Model.keyword rdf:type rdfs:Property ;
+	rdfs:label "keyword"@en ;
+	rdfs:domain Model ;
+	rdfs:range StringFixedLanguage ;
+	rdfs:comment "A keyword or tag describing a resource.\n[CIM context:\nThe intended content type of the model, usually the profile keyword. Used to identify what profiles and content is expected in the document, e.g., Equipment, Boundary, SSH, AE, etc. The same keyword is used for different versions of same profile. It can be also used to identify different content based on the same profile.\nFor instance, as the equipment profile can be used for both boundary data and equipment not related to boundary, the keyword is different to indicate that boundary data is exchanged. In order to avoid ambiguity the property is not exchanged in cases where the document contains multiple profiles referenced by dct:conformsTo.]."^^rdf:XMLLiteral .
+Model.license rdf:type rdfs:Property ;
+	rdfs:label "license"@en ;
+	rdfs:domain Model ;
+	rdfs:range xsd:string ;
+	rdfs:comment "A legal document giving official permission to do something with the resource. Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided.\n[CIM context:\nReference to the license under which the data is made available. If no license holder is defined, then the original data provider holds the license.]."^^rdf:XMLLiteral .
+Model.modelingAuthoritySet rdf:type rdfs:Property ;
+	rdfs:label "modelingAuthoritySet"@en ;
+	rdfs:domain Model ;
+	rdfs:range xsd:anyURI ;
+	rdfs:comment "A URN/URI referring to the organisation role / model authority set reference. The organization role is the source of the model. It is the same for all profiles part of a model exchange. "^^rdf:XMLLiteral .
+Model.previousVersion rdf:type rdfs:Property ;
+	rdfs:label "previousVersion"@en ;
+	rdfs:domain Model ;
+	rdfs:range xsd:string ;
+	rdfs:comment "The previous version of a resource in a lineage.\nThis property is meant to be used to specify a version chain, consisting of snapshots of a resource.\n\nThe notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle. One of the typical cases here is representing the history of the versions of a dataset that have been released over time."^^rdf:XMLLiteral .
+Model.processType rdf:type rdfs:Property ;
+	rdfs:label "processType"@en ;
+	rdfs:domain Model ;
+	rdfs:range IRI ;
+	rdfs:comment "The exact business nature. Reference to Business Process configurations."^^rdf:XMLLiteral .
+Model.profile rdf:type rdfs:Property ;
+	rdfs:label "profile"@en ;
+	rdfs:domain Model ;
+	rdfs:range xsd:anyURI ;
+	rdfs:comment "URN/URI describing the profiles that governs this model. It uniquely identifies the profiles and its version, e.g. http://iec.ch/TC57/61970-456/SteadyStateHypothesis/2/0. "^^rdf:XMLLiteral .
+Model.rights rdf:type rdfs:Property ;
+	rdfs:label "rights"@en ;
+	rdfs:domain Model ;
+	rdfs:range xsd:string ;
+	rdfs:comment "A statement that concerns all rights not addressed with dct:license or dct:accessRights, such as copyright statements."^^rdf:XMLLiteral .
+Model.rightsHolder rdf:type rdfs:Property ;
+	rdfs:label "rightsHolder"@en ;
+	rdfs:domain Model ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Information about rights held in and over the resource. Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. Recommended practice is to refer to a rights statement with a URI. If this is not possible or feasible, a literal value (name, label, or short text) may be provided."^^rdf:XMLLiteral .
+Model.scenarioTime rdf:type rdfs:Property ;
+	rdfs:label "scenarioTime"@en ;
+	rdfs:domain Model ;
+	rdfs:range <https://schema.org/DateTime> ;
+	rdfs:comment "The date and time that this model represents, i.e. for which the model is valid. The format is an extended format according to the ISO 8601-2005. European exchanges shall refer to UTC, e.g. &lt;md:Model.scenarioTime&gt;2030-01-15T17:00:00.000Z&lt;/md:Model.scenarioTime&gt;."^^rdf:XMLLiteral .
+Model.serviceLocation rdf:type rdfs:Property ;
+	rdfs:label "serviceLocation"@en ;
+	rdfs:domain Model ;
+	rdfs:range IRI ;
+	rdfs:comment "Reference to a service location (region or a domain)."^^rdf:XMLLiteral .
+Model.specializationOf rdf:type rdfs:Property ;
+	rdfs:label "specializationOf"@en ;
+	rdfs:domain Model ;
+	rdfs:range IRI ;
+	rdfs:comment "An entity that is a specialization of another shares all aspects of the latter, and additionally presents more specific aspects of the same thing as the latter. In particular, the lifetime of the entity being specialized contains that of any specialization. Examples of aspects include a time period, an abstraction, and a context associated with the entity.\n[CIM context:\nReference to modelling authority set version sourcing the model. The agent that makes a revision of a model indicates the primary source using prov:hadPrimarySource and refers to its own version of modelling authority set using this property.]."^^rdf:XMLLiteral .
+Model.status rdf:type rdfs:Property ;
+	rdfs:label "status"@en ;
+	rdfs:domain Model ;
+	rdfs:range IRI ;
+	rdfs:comment "Indicates the status of a skos:Concept or a skosxl:Label, or any resource related to controlled vocabulary management.\n[CIM context:\nThe condition or position of an object with regard to its standing. (Validated, Primary, Backup etc.)]."^^rdf:XMLLiteral .
+Model.type rdf:type rdfs:Property ;
+	rdfs:label "type"@en ;
+	rdfs:domain Model ;
+	rdfs:range xsd:string ;
+	rdfs:comment "The nature or genre of the resource. Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE]. To describe the file format, physical medium, or dimensions of the resource, use the property Format."^^rdf:XMLLiteral .
+Model.usedSettings rdf:type rdfs:Property ;
+	rdfs:label "usedSettings"@en ;
+	rdfs:domain Model ;
+	rdfs:range IRI ;
+	rdfs:comment "Reference to a set of parameters describing used settings (e.g. power flow settings, process settings, etc.) applied to the model prior its serialisation."^^rdf:XMLLiteral .
+Model.version rdf:type rdfs:Property ;
+	rdfs:label "version"@en ;
+	rdfs:domain Model ;
+	rdfs:range xsd:string ;
+	rdfs:comment "The version number of a resource."^^rdf:XMLLiteral .
+Model.versionNotes rdf:type rdfs:Property ;
+	rdfs:label "versionNotes"@en ;
+	rdfs:domain Model ;
+	rdfs:range xsd:string ;
+	rdfs:comment "A description of changes between this version and the previous version of the resource."^^rdf:XMLLiteral .
+Model.wasAttributedTo rdf:type rdfs:Property ;
+	rdfs:label "wasAttributedTo"@en ;
+	rdfs:domain Model ;
+	rdfs:range IRI ;
+	rdfs:comment "Attribution is the ascribing of an entity to an agent.\n[CIM context:\nReference to the agent (or service provider) from which the model originates.]."^^rdf:XMLLiteral .
+Model.wasGeneratedBy rdf:type rdfs:Property ;
+	rdfs:label "wasGeneratedBy"@en ;
+	rdfs:domain Model ;
+	rdfs:range IRI ;
+	rdfs:comment "Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.\n[CIM context:\nReference to an activity or the exact business nature (process, configuration) which produced or uses the model.]."^^rdf:XMLLiteral .
+Model.wasInfluencedBy rdf:type rdfs:Property ;
+	rdfs:label "wasInfluencedBy"@en ;
+	rdfs:domain Model ;
+	rdfs:range IRI ;
+	rdfs:comment "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation.\n[CIM context:\nA reference to the model on which the model serialised in this document depends on. The references are maintained by the producer of the model. Minimum requirements for the dependency are specified and can be restricted within a business process as long as they do not contradict requirements by standards. For instance, IEC 61970-600-1 defines minimum requirements for the profiles defined in that standard.]."^^rdf:XMLLiteral .
+Model.wasRevisionOf rdf:type rdfs:Property ;
+	rdfs:label "wasRevisionOf"@en ;
+	rdfs:domain Model ;
+	rdfs:range IRI ;
+	rdfs:comment "A revision is a derivation for which the resulting entity is a revised version of some original. The implication here is that the resulting entity contains substantial content from the original. Revision is a particular case of derivation. \n[CIM context:\nWhen a model is updated the resulting model supersedes the models that were used as basis for the update. Hence this is a reference to the model which are superseded by this model. A model can supersede 1 or more models, e.g. a difference model or a full model supersede multiple models (difference or full). In this case, multiple properties are included in the header. The referenced document(s) is (are) identified by the URN/MRID/UUID in the FullModel rdf:about attribute when full model(s) is (are) referenced and by the URN/MRID/UUID in the DifferenceModel rdf:about attribute when difference model(s) is (are) referenced.]."^^rdf:XMLLiteral .
+Model.Supersedes rdf:type rdfs:Property ;
+	rdfs:label "Supersedes"@en ;
+	rdfs:domain Model ;
+	rdfs:range Model ;
+	rdfs:comment "When a model is updated the resulting model supersedes the models that were used as basis for the update. Hence this is a reference to the CIMXML documents which are superseded by this model. A model (or instance file) can supersede 1 or more models, e.g. a difference model or a full model supersede multiple models (difference or full). In this case more than one Model.Supersedes are included in the header. The referenced document(s) is (are) identified by the URN/MRID/UUID in the FullModel rdf:about attribute when full model(s) is (are) referenced and by the URN/MRID/UUID in the DifferenceModel rdf:about attribute when difference model(s) is (are) referenced."^^rdf:XMLLiteral .
+Model.DependentOn rdf:type rdfs:Property ;
+	rdfs:label "DependentOn"@en ;
+	rdfs:domain Model ;
+	rdfs:range Model ;
+	rdfs:comment "A reference to the model documents that the model described by this document depends on. In general there can be 0 or many Model.DependentOn depending on the profile and the content of the instance file.\nFor instance:\n– A load flow solution depends on the topology model it was computed from\n– A topology model computed by a topology processor depends on the network model it was computed from.\nThe referenced models are identified by the FullModel rdf:about attribute for full model documents and by DifferenceModel rdf:about attribute for difference model documents.\nThe references are maintained by the producer of the CIMXML document and the references are valid for the model with version and identifier for which the document was created."^^rdf:XMLLiteral .
+
+StringIRI rdf:type rdfs:Datatype ;
+	rdfs:label "StringIRI"@en ;
+	rdfs:comment "An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.\nThe primitive is serialized as literal without language support.\nIRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.\nIRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.\nIRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names."^^rdf:XMLLiteral .
+
+Statements rdf:type rdfs:Class ;
+	rdfs:label "Statements"@en ;
+	rdfs:comment "It represent a set of Definition and/or Description elements."^^rdf:XMLLiteral .
+Statements.object rdf:type rdfs:Property ;
+	rdfs:label "object"@en ;
+	rdfs:domain Statements ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Statement object."^^rdf:XMLLiteral .
+Statements.predicate rdf:type rdfs:Property ;
+	rdfs:label "predicate"@en ;
+	rdfs:domain Statements ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Statement predicate."^^rdf:XMLLiteral .
+Statements.subject rdf:type rdfs:Property ;
+	rdfs:label "subject"@en ;
+	rdfs:domain Statements ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Statement subject."^^rdf:XMLLiteral .

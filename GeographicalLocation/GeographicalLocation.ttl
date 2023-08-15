@@ -1,0 +1,248 @@
+@base <http://iec.ch/TC57/2013/CIM-schema-cim16#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Location rdf:type rdfs:Class ;
+	rdfs:subClassOf IdentifiedObject ;
+	rdfs:label "Location"@en ;
+	rdfs:comment "The place, scene, or point of something where someone or something has been, is, and/or will be at a given moment in time. It can be defined with one or more position points (coordinates) in a given coordinate system."^^rdf:XMLLiteral .
+Location.mainAddress rdf:type rdfs:Property ;
+	rdfs:label "mainAddress"@en ;
+	rdfs:domain Location ;
+	rdfs:range StreetAddress ;
+	rdfs:comment "Main address of the location."^^rdf:XMLLiteral .
+Location.PowerSystemResources rdf:type rdfs:Property ;
+	rdfs:label "PowerSystemResources"@en ;
+	rdfs:domain Location ;
+	rdfs:range PowerSystemResource ;
+	rdfs:comment "All power system resources at this location."^^rdf:XMLLiteral .
+Location.CoordinateSystem rdf:type rdfs:Property ;
+	rdfs:label "CoordinateSystem"@en ;
+	rdfs:domain Location ;
+	rdfs:range CoordinateSystem ;
+	rdfs:comment "Coordinate system used to describe position points of this location."^^rdf:XMLLiteral .
+
+WorkLocation rdf:type rdfs:Class ;
+	rdfs:subClassOf Location ;
+	rdfs:label "WorkLocation"@en ;
+	rdfs:comment "Information about a particular location for various forms of work."^^rdf:XMLLiteral .
+
+IdentifiedObject rdf:type rdfs:Class ;
+	rdfs:label "IdentifiedObject"@en ;
+	rdfs:comment "This is a root class to provide common identification for all classes needing identification and naming attributes."^^rdf:XMLLiteral .
+IdentifiedObject.mRID rdf:type rdfs:Property ;
+	rdfs:label "mRID"@en ;
+	rdfs:domain IdentifiedObject ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements."^^rdf:XMLLiteral .
+IdentifiedObject.name rdf:type rdfs:Property ;
+	rdfs:label "name"@en ;
+	rdfs:domain IdentifiedObject ;
+	rdfs:range xsd:string ;
+	rdfs:comment "The name is any free human readable and possibly non unique text naming the object."^^rdf:XMLLiteral .
+
+ServiceLocation rdf:type rdfs:Class ;
+	rdfs:subClassOf WorkLocation ;
+	rdfs:label "ServiceLocation"@en ;
+	rdfs:comment "A real estate location, commonly referred to as premises."^^rdf:XMLLiteral .
+
+StreetAddress rdf:type rdfs:Class ;
+	rdfs:label "StreetAddress"@en ;
+	rdfs:comment "General purpose street and postal address information."^^rdf:XMLLiteral .
+StreetAddress.language rdf:type rdfs:Property ;
+	rdfs:label "language"@en ;
+	rdfs:domain StreetAddress ;
+	rdfs:range xsd:string ;
+	rdfs:comment "The language in which the address is specified, using ISO 639-1 two digit language code."^^rdf:XMLLiteral .
+StreetAddress.poBox rdf:type rdfs:Property ;
+	rdfs:label "poBox"@en ;
+	rdfs:domain StreetAddress ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Post office box."^^rdf:XMLLiteral .
+StreetAddress.postalCode rdf:type rdfs:Property ;
+	rdfs:label "postalCode"@en ;
+	rdfs:domain StreetAddress ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Postal code for the address."^^rdf:XMLLiteral .
+StreetAddress.status rdf:type rdfs:Property ;
+	rdfs:label "status"@en ;
+	rdfs:domain StreetAddress ;
+	rdfs:range Status ;
+	rdfs:comment "Status of this address."^^rdf:XMLLiteral .
+StreetAddress.streetDetail rdf:type rdfs:Property ;
+	rdfs:label "streetDetail"@en ;
+	rdfs:domain StreetAddress ;
+	rdfs:range StreetDetail ;
+	rdfs:comment "Street detail."^^rdf:XMLLiteral .
+StreetAddress.townDetail rdf:type rdfs:Property ;
+	rdfs:label "townDetail"@en ;
+	rdfs:domain StreetAddress ;
+	rdfs:range TownDetail ;
+	rdfs:comment "Town detail."^^rdf:XMLLiteral .
+
+StreetDetail rdf:type rdfs:Class ;
+	rdfs:label "StreetDetail"@en ;
+	rdfs:comment "Street details, in the context of address."^^rdf:XMLLiteral .
+StreetDetail.addressGeneral rdf:type rdfs:Property ;
+	rdfs:label "addressGeneral"@en ;
+	rdfs:domain StreetDetail ;
+	rdfs:range xsd:string ;
+	rdfs:comment "First line of a free form address or some additional address information (for example a mail stop)."^^rdf:XMLLiteral .
+StreetDetail.addressGeneral2 rdf:type rdfs:Property ;
+	rdfs:label "addressGeneral2"@en ;
+	rdfs:domain StreetDetail ;
+	rdfs:range xsd:string ;
+	rdfs:comment "(if applicable) Second line of a free form address."^^rdf:XMLLiteral .
+StreetDetail.addressGeneral3 rdf:type rdfs:Property ;
+	rdfs:label "addressGeneral3"@en ;
+	rdfs:domain StreetDetail ;
+	rdfs:range xsd:string ;
+	rdfs:comment "(if applicable) Third line of a free form address."^^rdf:XMLLiteral .
+StreetDetail.buildingName rdf:type rdfs:Property ;
+	rdfs:label "buildingName"@en ;
+	rdfs:domain StreetDetail ;
+	rdfs:range xsd:string ;
+	rdfs:comment "(if applicable) In certain cases the physical location of the place of interest does not have a direct point of entry from the street, but may be located inside a larger structure such as a building, complex, office block, apartment, etc."^^rdf:XMLLiteral .
+StreetDetail.code rdf:type rdfs:Property ;
+	rdfs:label "code"@en ;
+	rdfs:domain StreetDetail ;
+	rdfs:range xsd:string ;
+	rdfs:comment "(if applicable) Utilities often make use of external reference systems, such as those of the town-planner's department or surveyor general's mapping system, that allocate global reference codes to streets."^^rdf:XMLLiteral .
+StreetDetail.floorIdentification rdf:type rdfs:Property ;
+	rdfs:label "floorIdentification"@en ;
+	rdfs:domain StreetDetail ;
+	rdfs:range xsd:string ;
+	rdfs:comment "The identification by name or number, expressed as text, of the floor in the building as part of this address."^^rdf:XMLLiteral .
+StreetDetail.name rdf:type rdfs:Property ;
+	rdfs:label "name"@en ;
+	rdfs:domain StreetDetail ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Name of the street."^^rdf:XMLLiteral .
+StreetDetail.number rdf:type rdfs:Property ;
+	rdfs:label "number"@en ;
+	rdfs:domain StreetDetail ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Designator of the specific location on the street."^^rdf:XMLLiteral .
+StreetDetail.prefix rdf:type rdfs:Property ;
+	rdfs:label "prefix"@en ;
+	rdfs:domain StreetDetail ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Prefix to the street name. For example: North, South, East, West."^^rdf:XMLLiteral .
+StreetDetail.suffix rdf:type rdfs:Property ;
+	rdfs:label "suffix"@en ;
+	rdfs:domain StreetDetail ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Suffix to the street name. For example: North, South, East, West."^^rdf:XMLLiteral .
+StreetDetail.suiteNumber rdf:type rdfs:Property ;
+	rdfs:label "suiteNumber"@en ;
+	rdfs:domain StreetDetail ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Number of the apartment or suite."^^rdf:XMLLiteral .
+StreetDetail.type rdf:type rdfs:Property ;
+	rdfs:label "type"@en ;
+	rdfs:domain StreetDetail ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Type of street. Examples include: street, circle, boulevard, avenue, road, drive, etc."^^rdf:XMLLiteral .
+StreetDetail.withinTownLimits rdf:type rdfs:Property ;
+	rdfs:label "withinTownLimits"@en ;
+	rdfs:domain StreetDetail ;
+	rdfs:range xsd:boolean ;
+	rdfs:comment "True if this street is within the legal geographical boundaries of the specified town (default)."^^rdf:XMLLiteral .
+
+PowerSystemResource rdf:type rdfs:Class ;
+	rdfs:subClassOf IdentifiedObject ;
+	rdfs:label "PowerSystemResource"@en ;
+	rdfs:comment "A power system resource (PSR) can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated."^^rdf:XMLLiteral .
+
+Status rdf:type rdfs:Class ;
+	rdfs:label "Status"@en ;
+	rdfs:comment "Current status information relevant to an entity."^^rdf:XMLLiteral .
+Status.dateTime rdf:type rdfs:Property ;
+	rdfs:label "dateTime"@en ;
+	rdfs:domain Status ;
+	rdfs:range <https://schema.org/DateTime> ;
+	rdfs:comment "Date and time for which status 'value' applies."^^rdf:XMLLiteral .
+Status.reason rdf:type rdfs:Property ;
+	rdfs:label "reason"@en ;
+	rdfs:domain Status ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Reason code or explanation for why an object went to the current status 'value'."^^rdf:XMLLiteral .
+Status.remark rdf:type rdfs:Property ;
+	rdfs:label "remark"@en ;
+	rdfs:domain Status ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Pertinent information regarding the current 'value', as free form text."^^rdf:XMLLiteral .
+Status.value rdf:type rdfs:Property ;
+	rdfs:label "value"@en ;
+	rdfs:domain Status ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Status value at 'dateTime'; prior status changes may have been kept in instances of activity records associated with the object to which this status applies."^^rdf:XMLLiteral .
+
+CoordinateSystem rdf:type rdfs:Class ;
+	rdfs:subClassOf IdentifiedObject ;
+	rdfs:label "CoordinateSystem"@en ;
+	rdfs:comment "Coordinate reference system."^^rdf:XMLLiteral .
+CoordinateSystem.crsUrn rdf:type rdfs:Property ;
+	rdfs:label "crsUrn"@en ;
+	rdfs:domain CoordinateSystem ;
+	rdfs:range xsd:string ;
+	rdfs:comment "A Uniform Resource Name (URN) for the coordinate reference system (crs) used to define 'Location.PositionPoints'.\nAn example would be the European Petroleum Survey Group (EPSG) code for a coordinate reference system, defined in URN under the Open Geospatial Consortium (OGC) namespace as: urn:ogc:def:crs:EPSG::XXXX, where XXXX is an EPSG code (a full list of codes can be found at the EPSG Registry web site http://www.epsg-registry.org/). To define the coordinate system as being WGS84 (latitude, longitude) using an EPSG OGC, this attribute would be urn:ogc:def:crs:EPSG::4236.\nA profile should limit this code to a set of allowed URNs agreed to by all sending and receiving parties."^^rdf:XMLLiteral .
+
+TownDetail rdf:type rdfs:Class ;
+	rdfs:label "TownDetail"@en ;
+	rdfs:comment "Town details, in the context of address."^^rdf:XMLLiteral .
+TownDetail.code rdf:type rdfs:Property ;
+	rdfs:label "code"@en ;
+	rdfs:domain TownDetail ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Town code."^^rdf:XMLLiteral .
+TownDetail.country rdf:type rdfs:Property ;
+	rdfs:label "country"@en ;
+	rdfs:domain TownDetail ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Name of the country."^^rdf:XMLLiteral .
+TownDetail.name rdf:type rdfs:Property ;
+	rdfs:label "name"@en ;
+	rdfs:domain TownDetail ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Town name."^^rdf:XMLLiteral .
+TownDetail.section rdf:type rdfs:Property ;
+	rdfs:label "section"@en ;
+	rdfs:domain TownDetail ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Town section. For example, it is common for there to be 36 sections per township."^^rdf:XMLLiteral .
+TownDetail.stateOrProvince rdf:type rdfs:Property ;
+	rdfs:label "stateOrProvince"@en ;
+	rdfs:domain TownDetail ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Name of the state or province."^^rdf:XMLLiteral .
+
+PositionPoint rdf:type rdfs:Class ;
+	rdfs:label "PositionPoint"@en ;
+	rdfs:comment "Set of spatial coordinates that determine a point, defined in the coordinate system specified in 'Location.CoordinateSystem'. Use a single position point instance to describe a point-oriented location. Use a sequence of position points to describe a line-oriented object (physical location of non-point oriented objects like cables or lines), or area of an object (like a substation or a geographical zone - in this case, have first and last position point with the same values)."^^rdf:XMLLiteral .
+PositionPoint.sequenceNumber rdf:type rdfs:Property ;
+	rdfs:label "sequenceNumber"@en ;
+	rdfs:domain PositionPoint ;
+	rdfs:range xsd:integer ;
+	rdfs:comment "Zero-relative sequence number of this point within a series of points."^^rdf:XMLLiteral .
+PositionPoint.xPosition rdf:type rdfs:Property ;
+	rdfs:label "xPosition"@en ;
+	rdfs:domain PositionPoint ;
+	rdfs:range xsd:string ;
+	rdfs:comment "X axis position."^^rdf:XMLLiteral .
+PositionPoint.yPosition rdf:type rdfs:Property ;
+	rdfs:label "yPosition"@en ;
+	rdfs:domain PositionPoint ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Y axis position."^^rdf:XMLLiteral .
+PositionPoint.zPosition rdf:type rdfs:Property ;
+	rdfs:label "zPosition"@en ;
+	rdfs:domain PositionPoint ;
+	rdfs:range xsd:string ;
+	rdfs:comment "(if applicable) Z axis position."^^rdf:XMLLiteral .
+PositionPoint.Location rdf:type rdfs:Property ;
+	rdfs:label "Location"@en ;
+	rdfs:domain PositionPoint ;
+	rdfs:range Location ;
+	rdfs:comment "Location described by this position point."^^rdf:XMLLiteral .

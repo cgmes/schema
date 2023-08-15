@@ -1,0 +1,2689 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg57701"
+   version="1.1"
+   viewBox="0 0 901 1178"
+   height="31.17cm"
+   width="23.84cm">
+  <metadata
+     id="metadata57707">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs57705" />
+  <desc
+     id="desc56241">Created with Enterprise Architect (Build: 1627) 1</desc>
+  <g
+     id="g56245"
+     style="fill:#FFFFFF;fill-opacity:1.00;">
+    <rect
+       id="rect56243"
+       shape-rendering="auto"
+       height="1178"
+       width="901"
+       y="0"
+       x="0" />
+  </g>
+  <g
+     id="g56249"
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+    <path
+       id="path56247"
+       shape-rendering="auto"
+       d="M 6 6 L 6 1172 L 895 1172 L 895 6 L 6 6" />
+  </g>
+  <g
+     id="g56253"
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#FFFFFF;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <polygon
+       id="polygon56251"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="6 24 92 24 105 10 105 6 6 6 6 24" />
+  </g>
+  <g
+     id="g56257"
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text56255"
+       transform="rotate(-0.00 11.00 18.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="79"
+       y="18.00"
+       x="11.00">class Datatypes</text>
+  </g>
+  <g
+     id="g56875"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect56873"
+       shape-rendering="auto"
+       rx="0.00"
+       height="104"
+       width="252"
+       y="963"
+       x="345" />
+  </g>
+  <g
+     id="g56881"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text56877"
+       transform="rotate(-0.00 435.00 978.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="72"
+       y="978.00"
+       x="435.00">«CIMDatatype»</text>
+    <text
+       id="text56879"
+       transform="rotate(-0.00 442.00 989.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="57"
+       y="989.00"
+       x="442.00">RealEnergy</text>
+  </g>
+  <g
+     id="g56885"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path56883"
+       shape-rendering="auto"
+       d="M 345 996 L 596 996" />
+  </g>
+  <g
+     id="g56891"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text56887"
+       transform="rotate(-0.00 350.00 1009.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="1009.00"
+       x="350.00">+ </text>
+    <text
+       id="text56889"
+       transform="rotate(-0.00 367.00 1009.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="202"
+       y="1009.00"
+       x="367.00">multiplier: UnitMultiplier [0..1] = M {readOnly}</text>
+  </g>
+  <g
+     id="g56895"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path56893"
+       shape-rendering="auto"
+       d="M 367 1010 L 569 1010" />
+  </g>
+  <g
+     id="g56901"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text56897"
+       transform="rotate(-0.00 350.00 1020.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="1020.00"
+       x="350.00">+ </text>
+    <text
+       id="text56899"
+       transform="rotate(-0.00 367.00 1020.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="180"
+       y="1020.00"
+       x="367.00">unit: UnitSymbol [0..1] = Wh {readOnly}</text>
+  </g>
+  <g
+     id="g56905"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path56903"
+       shape-rendering="auto"
+       d="M 367 1021 L 547 1021" />
+  </g>
+  <g
+     id="g56911"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text56907"
+       transform="rotate(-0.00 350.00 1031.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="1031.00"
+       x="350.00">+ </text>
+    <text
+       id="text56909"
+       transform="rotate(-0.00 367.00 1031.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="81"
+       y="1031.00"
+       x="367.00">value: Float [0..1]</text>
+  </g>
+  <g
+     id="g56915"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#E8FDE3;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect56913"
+       shape-rendering="auto"
+       rx="0.00"
+       height="146"
+       width="100"
+       y="880"
+       x="205" />
+  </g>
+  <g
+     id="g56921"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text56917"
+       transform="rotate(-0.00 220.00 895.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="70"
+       y="895.00"
+       x="220.00">«enumeration»</text>
+    <text
+       id="text56919"
+       transform="rotate(-0.00 214.00 906.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="82"
+       y="906.00"
+       x="214.00">BatteryStateKind</text>
+  </g>
+  <g
+     id="g56925"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path56923"
+       shape-rendering="auto"
+       d="M 205 913 L 304 913" />
+  </g>
+  <g
+     id="g56949"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text56927"
+       transform="rotate(-0.00 240.00 926.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:italic; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="29"
+       y="926.00"
+       x="240.00">literals</text>
+    <text
+       id="text56929"
+       transform="rotate(-0.00 210.00 937.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="937.00"
+       x="210.00"> </text>
+    <text
+       id="text56931"
+       transform="rotate(-0.00 227.00 937.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="53"
+       y="937.00"
+       x="227.00">discharging</text>
+    <text
+       id="text56933"
+       transform="rotate(-0.00 210.00 948.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="948.00"
+       x="210.00"> </text>
+    <text
+       id="text56935"
+       transform="rotate(-0.00 227.00 948.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="13"
+       y="948.00"
+       x="227.00">full</text>
+    <text
+       id="text56937"
+       transform="rotate(-0.00 210.00 959.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="959.00"
+       x="210.00"> </text>
+    <text
+       id="text56939"
+       transform="rotate(-0.00 227.00 959.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="32"
+       y="959.00"
+       x="227.00">waiting</text>
+    <text
+       id="text56941"
+       transform="rotate(-0.00 210.00 970.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="970.00"
+       x="210.00"> </text>
+    <text
+       id="text56943"
+       transform="rotate(-0.00 227.00 970.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="40"
+       y="970.00"
+       x="227.00">charging</text>
+    <text
+       id="text56945"
+       transform="rotate(-0.00 210.00 981.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="981.00"
+       x="210.00"> </text>
+    <text
+       id="text56947"
+       transform="rotate(-0.00 227.00 981.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="28"
+       y="981.00"
+       x="227.00">empty</text>
+  </g>
+  <g
+     id="g56953"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect56951"
+       shape-rendering="auto"
+       rx="0.00"
+       height="90"
+       width="266"
+       y="40"
+       x="35" />
+  </g>
+  <g
+     id="g56959"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text56955"
+       transform="rotate(-0.00 132.00 55.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="72"
+       y="55.00"
+       x="132.00">«CIMDatatype»</text>
+    <text
+       id="text56957"
+       transform="rotate(-0.00 140.00 66.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="55"
+       y="66.00"
+       x="140.00">Resistance</text>
+  </g>
+  <g
+     id="g56963"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path56961"
+       shape-rendering="auto"
+       d="M 35 73 L 300 73" />
+  </g>
+  <g
+     id="g56969"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text56965"
+       transform="rotate(-0.00 40.00 86.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="86.00"
+       x="40.00">+ </text>
+    <text
+       id="text56967"
+       transform="rotate(-0.00 57.00 86.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="218"
+       y="86.00"
+       x="57.00">multiplier: UnitMultiplier [0..1] = none {readOnly}</text>
+  </g>
+  <g
+     id="g56973"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path56971"
+       shape-rendering="auto"
+       d="M 57 87 L 275 87" />
+  </g>
+  <g
+     id="g56979"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text56975"
+       transform="rotate(-0.00 40.00 97.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="97.00"
+       x="40.00">+ </text>
+    <text
+       id="text56977"
+       transform="rotate(-0.00 57.00 97.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="185"
+       y="97.00"
+       x="57.00">unit: UnitSymbol [0..1] = ohm {readOnly}</text>
+  </g>
+  <g
+     id="g56983"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path56981"
+       shape-rendering="auto"
+       d="M 57 98 L 242 98" />
+  </g>
+  <g
+     id="g56989"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text56985"
+       transform="rotate(-0.00 40.00 108.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="108.00"
+       x="40.00">+ </text>
+    <text
+       id="text56987"
+       transform="rotate(-0.00 57.00 108.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="81"
+       y="108.00"
+       x="57.00">value: Float [0..1]</text>
+  </g>
+  <g
+     id="g56993"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect56991"
+       shape-rendering="auto"
+       rx="0.00"
+       height="104"
+       width="252"
+       y="40"
+       x="315" />
+  </g>
+  <g
+     id="g56999"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text56995"
+       transform="rotate(-0.00 405.00 55.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="72"
+       y="55.00"
+       x="405.00">«CIMDatatype»</text>
+    <text
+       id="text56997"
+       transform="rotate(-0.00 410.00 66.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="62"
+       y="66.00"
+       x="410.00">ActivePower</text>
+  </g>
+  <g
+     id="g57003"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path57001"
+       shape-rendering="auto"
+       d="M 315 73 L 566 73" />
+  </g>
+  <g
+     id="g57009"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57005"
+       transform="rotate(-0.00 320.00 86.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="86.00"
+       x="320.00">+ </text>
+    <text
+       id="text57007"
+       transform="rotate(-0.00 337.00 86.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="202"
+       y="86.00"
+       x="337.00">multiplier: UnitMultiplier [0..1] = M {readOnly}</text>
+  </g>
+  <g
+     id="g57013"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path57011"
+       shape-rendering="auto"
+       d="M 337 87 L 539 87" />
+  </g>
+  <g
+     id="g57019"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57015"
+       transform="rotate(-0.00 320.00 97.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="97.00"
+       x="320.00">+ </text>
+    <text
+       id="text57017"
+       transform="rotate(-0.00 337.00 97.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="174"
+       y="97.00"
+       x="337.00">unit: UnitSymbol [0..1] = W {readOnly}</text>
+  </g>
+  <g
+     id="g57023"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path57021"
+       shape-rendering="auto"
+       d="M 337 98 L 511 98" />
+  </g>
+  <g
+     id="g57029"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57025"
+       transform="rotate(-0.00 320.00 108.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="108.00"
+       x="320.00">+ </text>
+    <text
+       id="text57027"
+       transform="rotate(-0.00 337.00 108.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="81"
+       y="108.00"
+       x="337.00">value: Float [0..1]</text>
+  </g>
+  <g
+     id="g57033"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57031"
+       shape-rendering="auto"
+       rx="0.00"
+       height="90"
+       width="266"
+       y="50"
+       x="585" />
+  </g>
+  <g
+     id="g57039"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57035"
+       transform="rotate(-0.00 682.00 65.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="72"
+       y="65.00"
+       x="682.00">«CIMDatatype»</text>
+    <text
+       id="text57037"
+       transform="rotate(-0.00 683.00 76.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="69"
+       y="76.00"
+       x="683.00">AngleDegrees</text>
+  </g>
+  <g
+     id="g57043"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path57041"
+       shape-rendering="auto"
+       d="M 585 83 L 850 83" />
+  </g>
+  <g
+     id="g57049"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57045"
+       transform="rotate(-0.00 590.00 96.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="96.00"
+       x="590.00">+ </text>
+    <text
+       id="text57047"
+       transform="rotate(-0.00 607.00 96.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="218"
+       y="96.00"
+       x="607.00">multiplier: UnitMultiplier [0..1] = none {readOnly}</text>
+  </g>
+  <g
+     id="g57053"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path57051"
+       shape-rendering="auto"
+       d="M 607 97 L 825 97" />
+  </g>
+  <g
+     id="g57059"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57055"
+       transform="rotate(-0.00 590.00 107.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="107.00"
+       x="590.00">+ </text>
+    <text
+       id="text57057"
+       transform="rotate(-0.00 607.00 107.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="183"
+       y="107.00"
+       x="607.00">unit: UnitSymbol [0..1] = deg {readOnly}</text>
+  </g>
+  <g
+     id="g57063"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path57061"
+       shape-rendering="auto"
+       d="M 607 108 L 790 108" />
+  </g>
+  <g
+     id="g57069"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57065"
+       transform="rotate(-0.00 590.00 118.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="118.00"
+       x="590.00">+ </text>
+    <text
+       id="text57067"
+       transform="rotate(-0.00 607.00 118.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="81"
+       y="118.00"
+       x="607.00">value: Float [0..1]</text>
+  </g>
+  <g
+     id="g57073"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57071"
+       shape-rendering="auto"
+       rx="0.00"
+       height="90"
+       width="266"
+       y="170"
+       x="35" />
+  </g>
+  <g
+     id="g57079"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57075"
+       transform="rotate(-0.00 132.00 185.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="72"
+       y="185.00"
+       x="132.00">«CIMDatatype»</text>
+    <text
+       id="text57077"
+       transform="rotate(-0.00 134.00 196.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="68"
+       y="196.00"
+       x="134.00">AngleRadians</text>
+  </g>
+  <g
+     id="g57083"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path57081"
+       shape-rendering="auto"
+       d="M 35 203 L 300 203" />
+  </g>
+  <g
+     id="g57089"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57085"
+       transform="rotate(-0.00 40.00 216.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="216.00"
+       x="40.00">+ </text>
+    <text
+       id="text57087"
+       transform="rotate(-0.00 57.00 216.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="218"
+       y="216.00"
+       x="57.00">multiplier: UnitMultiplier [0..1] = none {readOnly}</text>
+  </g>
+  <g
+     id="g57093"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path57091"
+       shape-rendering="auto"
+       d="M 57 217 L 275 217" />
+  </g>
+  <g
+     id="g57099"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57095"
+       transform="rotate(-0.00 40.00 227.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="227.00"
+       x="40.00">+ </text>
+    <text
+       id="text57097"
+       transform="rotate(-0.00 57.00 227.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="180"
+       y="227.00"
+       x="57.00">unit: UnitSymbol [0..1] = rad {readOnly}</text>
+  </g>
+  <g
+     id="g57103"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path57101"
+       shape-rendering="auto"
+       d="M 57 228 L 237 228" />
+  </g>
+  <g
+     id="g57109"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57105"
+       transform="rotate(-0.00 40.00 238.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="238.00"
+       x="40.00">+ </text>
+    <text
+       id="text57107"
+       transform="rotate(-0.00 57.00 238.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="81"
+       y="238.00"
+       x="57.00">value: Float [0..1]</text>
+  </g>
+  <g
+     id="g57113"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57111"
+       shape-rendering="auto"
+       rx="0.00"
+       height="104"
+       width="252"
+       y="170"
+       x="315" />
+  </g>
+  <g
+     id="g57119"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57115"
+       transform="rotate(-0.00 405.00 185.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="72"
+       y="185.00"
+       x="405.00">«CIMDatatype»</text>
+    <text
+       id="text57117"
+       transform="rotate(-0.00 403.00 196.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="75"
+       y="196.00"
+       x="403.00">ApparentPower</text>
+  </g>
+  <g
+     id="g57123"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path57121"
+       shape-rendering="auto"
+       d="M 315 203 L 566 203" />
+  </g>
+  <g
+     id="g57129"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57125"
+       transform="rotate(-0.00 320.00 216.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="216.00"
+       x="320.00">+ </text>
+    <text
+       id="text57127"
+       transform="rotate(-0.00 337.00 216.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="202"
+       y="216.00"
+       x="337.00">multiplier: UnitMultiplier [0..1] = M {readOnly}</text>
+  </g>
+  <g
+     id="g57133"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path57131"
+       shape-rendering="auto"
+       d="M 337 217 L 539 217" />
+  </g>
+  <g
+     id="g57139"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57135"
+       transform="rotate(-0.00 320.00 227.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="227.00"
+       x="320.00">+ </text>
+    <text
+       id="text57137"
+       transform="rotate(-0.00 337.00 227.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="179"
+       y="227.00"
+       x="337.00">unit: UnitSymbol [0..1] = VA {readOnly}</text>
+  </g>
+  <g
+     id="g57143"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path57141"
+       shape-rendering="auto"
+       d="M 337 228 L 516 228" />
+  </g>
+  <g
+     id="g57149"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57145"
+       transform="rotate(-0.00 320.00 238.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="238.00"
+       x="320.00">+ </text>
+    <text
+       id="text57147"
+       transform="rotate(-0.00 337.00 238.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="81"
+       y="238.00"
+       x="337.00">value: Float [0..1]</text>
+  </g>
+  <g
+     id="g57153"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#E8FDE3;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57151"
+       shape-rendering="auto"
+       rx="0.00"
+       height="80"
+       width="162"
+       y="180"
+       x="605" />
+  </g>
+  <g
+     id="g57159"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57155"
+       transform="rotate(-0.00 651.00 195.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="70"
+       y="195.00"
+       x="651.00">«enumeration»</text>
+    <text
+       id="text57157"
+       transform="rotate(-0.00 619.00 206.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="134"
+       y="206.00"
+       x="619.00">AsynchronousMachineKind</text>
+  </g>
+  <g
+     id="g57163"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path57161"
+       shape-rendering="auto"
+       d="M 605 213 L 766 213" />
+  </g>
+  <g
+     id="g57175"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57165"
+       transform="rotate(-0.00 671.00 226.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:italic; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="29"
+       y="226.00"
+       x="671.00">literals</text>
+    <text
+       id="text57167"
+       transform="rotate(-0.00 610.00 237.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="237.00"
+       x="610.00"> </text>
+    <text
+       id="text57169"
+       transform="rotate(-0.00 627.00 237.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="45"
+       y="237.00"
+       x="627.00">generator</text>
+    <text
+       id="text57171"
+       transform="rotate(-0.00 610.00 248.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="248.00"
+       x="610.00"> </text>
+    <text
+       id="text57173"
+       transform="rotate(-0.00 627.00 248.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="26"
+       y="248.00"
+       x="627.00">motor</text>
+  </g>
+  <g
+     id="g57179"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57177"
+       shape-rendering="auto"
+       rx="0.00"
+       height="80"
+       width="100"
+       y="290"
+       x="35" />
+  </g>
+  <g
+     id="g57185"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57181"
+       transform="rotate(-0.00 60.00 305.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="50"
+       y="305.00"
+       x="60.00">«Primitive»</text>
+    <text
+       id="text57183"
+       transform="rotate(-0.00 65.00 316.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="40"
+       y="316.00"
+       x="65.00">Boolean</text>
+  </g>
+  <g
+     id="g57189"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57187"
+       shape-rendering="auto"
+       rx="0.00"
+       height="141"
+       width="266"
+       y="290"
+       x="495" />
+  </g>
+  <g
+     id="g57195"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57191"
+       transform="rotate(-0.00 592.00 305.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="72"
+       y="305.00"
+       x="592.00">«CIMDatatype»</text>
+    <text
+       id="text57193"
+       transform="rotate(-0.00 598.00 316.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="59"
+       y="316.00"
+       x="598.00">CurrentFlow</text>
+  </g>
+  <g
+     id="g57199"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path57197"
+       shape-rendering="auto"
+       d="M 495 323 L 760 323" />
+  </g>
+  <g
+     id="g57205"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57201"
+       transform="rotate(-0.00 500.00 336.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="336.00"
+       x="500.00">+ </text>
+    <text
+       id="text57203"
+       transform="rotate(-0.00 517.00 336.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="218"
+       y="336.00"
+       x="517.00">multiplier: UnitMultiplier [0..1] = none {readOnly}</text>
+  </g>
+  <g
+     id="g57209"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path57207"
+       shape-rendering="auto"
+       d="M 517 337 L 735 337" />
+  </g>
+  <g
+     id="g57215"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57211"
+       transform="rotate(-0.00 500.00 347.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="347.00"
+       x="500.00">+ </text>
+    <text
+       id="text57213"
+       transform="rotate(-0.00 517.00 347.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="172"
+       y="347.00"
+       x="517.00">unit: UnitSymbol [0..1] = A {readOnly}</text>
+  </g>
+  <g
+     id="g57219"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path57217"
+       shape-rendering="auto"
+       d="M 517 348 L 689 348" />
+  </g>
+  <g
+     id="g57225"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57221"
+       transform="rotate(-0.00 500.00 358.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="358.00"
+       x="500.00">+ </text>
+    <text
+       id="text57223"
+       transform="rotate(-0.00 517.00 358.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="81"
+       y="358.00"
+       x="517.00">value: Float [0..1]</text>
+  </g>
+  <g
+     id="g57229"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57227"
+       shape-rendering="auto"
+       rx="0.00"
+       height="80"
+       width="100"
+       y="410"
+       x="35" />
+  </g>
+  <g
+     id="g57235"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57231"
+       transform="rotate(-0.00 60.00 425.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="50"
+       y="425.00"
+       x="60.00">«Primitive»</text>
+    <text
+       id="text57233"
+       transform="rotate(-0.00 74.00 436.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="22"
+       y="436.00"
+       x="74.00">Date</text>
+  </g>
+  <g
+     id="g57239"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57237"
+       shape-rendering="auto"
+       rx="0.00"
+       height="50"
+       width="80"
+       y="410"
+       x="215" />
+  </g>
+  <g
+     id="g57245"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57241"
+       transform="rotate(-0.00 230.00 425.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="50"
+       y="425.00"
+       x="230.00">«Primitive»</text>
+    <text
+       id="text57243"
+       transform="rotate(-0.00 243.00 436.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="24"
+       y="436.00"
+       x="243.00">Float</text>
+  </g>
+  <g
+     id="g57249"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57247"
+       shape-rendering="auto"
+       rx="0.00"
+       height="80"
+       width="100"
+       y="410"
+       x="345" />
+  </g>
+  <g
+     id="g57255"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57251"
+       transform="rotate(-0.00 370.00 425.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="50"
+       y="425.00"
+       x="370.00">«Primitive»</text>
+    <text
+       id="text57253"
+       transform="rotate(-0.00 378.00 436.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="34"
+       y="436.00"
+       x="378.00">Integer</text>
+  </g>
+  <g
+     id="g57259"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57257"
+       shape-rendering="auto"
+       rx="0.00"
+       height="90"
+       width="266"
+       y="450"
+       x="495" />
+  </g>
+  <g
+     id="g57265"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57261"
+       transform="rotate(-0.00 592.00 465.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="72"
+       y="465.00"
+       x="592.00">«CIMDatatype»</text>
+    <text
+       id="text57263"
+       transform="rotate(-0.00 608.00 476.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="39"
+       y="476.00"
+       x="608.00">PerCent</text>
+  </g>
+  <g
+     id="g57269"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path57267"
+       shape-rendering="auto"
+       d="M 495 483 L 760 483" />
+  </g>
+  <g
+     id="g57275"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57271"
+       transform="rotate(-0.00 500.00 496.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="496.00"
+       x="500.00">+ </text>
+    <text
+       id="text57273"
+       transform="rotate(-0.00 517.00 496.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="218"
+       y="496.00"
+       x="517.00">multiplier: UnitMultiplier [0..1] = none {readOnly}</text>
+  </g>
+  <g
+     id="g57279"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path57277"
+       shape-rendering="auto"
+       d="M 517 497 L 735 497" />
+  </g>
+  <g
+     id="g57285"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57281"
+       transform="rotate(-0.00 500.00 507.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="507.00"
+       x="500.00">+ </text>
+    <text
+       id="text57283"
+       transform="rotate(-0.00 517.00 507.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="189"
+       y="507.00"
+       x="517.00">unit: UnitSymbol [0..1] = none {readOnly}</text>
+  </g>
+  <g
+     id="g57289"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path57287"
+       shape-rendering="auto"
+       d="M 517 508 L 706 508" />
+  </g>
+  <g
+     id="g57295"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57291"
+       transform="rotate(-0.00 500.00 518.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="518.00"
+       x="500.00">+ </text>
+    <text
+       id="text57293"
+       transform="rotate(-0.00 517.00 518.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="81"
+       y="518.00"
+       x="517.00">value: Float [0..1]</text>
+  </g>
+  <g
+     id="g57299"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57297"
+       shape-rendering="auto"
+       rx="0.00"
+       height="90"
+       width="266"
+       y="551"
+       x="35" />
+  </g>
+  <g
+     id="g57305"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57301"
+       transform="rotate(-0.00 132.00 566.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="72"
+       y="566.00"
+       x="132.00">«CIMDatatype»</text>
+    <text
+       id="text57303"
+       transform="rotate(-0.00 161.00 577.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="14"
+       y="577.00"
+       x="161.00">PU</text>
+  </g>
+  <g
+     id="g57309"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path57307"
+       shape-rendering="auto"
+       d="M 35 584 L 300 584" />
+  </g>
+  <g
+     id="g57315"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57311"
+       transform="rotate(-0.00 40.00 597.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="597.00"
+       x="40.00">+ </text>
+    <text
+       id="text57313"
+       transform="rotate(-0.00 57.00 597.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="218"
+       y="597.00"
+       x="57.00">multiplier: UnitMultiplier [0..1] = none {readOnly}</text>
+  </g>
+  <g
+     id="g57319"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path57317"
+       shape-rendering="auto"
+       d="M 57 598 L 275 598" />
+  </g>
+  <g
+     id="g57325"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57321"
+       transform="rotate(-0.00 40.00 608.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="608.00"
+       x="40.00">+ </text>
+    <text
+       id="text57323"
+       transform="rotate(-0.00 57.00 608.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="189"
+       y="608.00"
+       x="57.00">unit: UnitSymbol [0..1] = none {readOnly}</text>
+  </g>
+  <g
+     id="g57329"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path57327"
+       shape-rendering="auto"
+       d="M 57 609 L 246 609" />
+  </g>
+  <g
+     id="g57335"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57331"
+       transform="rotate(-0.00 40.00 619.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="619.00"
+       x="40.00">+ </text>
+    <text
+       id="text57333"
+       transform="rotate(-0.00 57.00 619.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="81"
+       y="619.00"
+       x="57.00">value: Float [0..1]</text>
+  </g>
+  <g
+     id="g57339"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57337"
+       shape-rendering="auto"
+       rx="0.00"
+       height="90"
+       width="252"
+       y="551"
+       x="325" />
+  </g>
+  <g
+     id="g57345"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57341"
+       transform="rotate(-0.00 415.00 566.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="72"
+       y="566.00"
+       x="415.00">«CIMDatatype»</text>
+    <text
+       id="text57343"
+       transform="rotate(-0.00 414.00 577.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="74"
+       y="577.00"
+       x="414.00">ReactivePower</text>
+  </g>
+  <g
+     id="g57349"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path57347"
+       shape-rendering="auto"
+       d="M 325 584 L 576 584" />
+  </g>
+  <g
+     id="g57355"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57351"
+       transform="rotate(-0.00 330.00 597.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="597.00"
+       x="330.00">+ </text>
+    <text
+       id="text57353"
+       transform="rotate(-0.00 347.00 597.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="202"
+       y="597.00"
+       x="347.00">multiplier: UnitMultiplier [0..1] = M {readOnly}</text>
+  </g>
+  <g
+     id="g57359"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path57357"
+       shape-rendering="auto"
+       d="M 347 598 L 549 598" />
+  </g>
+  <g
+     id="g57365"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57361"
+       transform="rotate(-0.00 330.00 608.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="608.00"
+       x="330.00">+ </text>
+    <text
+       id="text57363"
+       transform="rotate(-0.00 347.00 608.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="182"
+       y="608.00"
+       x="347.00">unit: UnitSymbol [0..1] = VAr {readOnly}</text>
+  </g>
+  <g
+     id="g57369"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path57367"
+       shape-rendering="auto"
+       d="M 347 609 L 529 609" />
+  </g>
+  <g
+     id="g57375"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57371"
+       transform="rotate(-0.00 330.00 619.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="619.00"
+       x="330.00">+ </text>
+    <text
+       id="text57373"
+       transform="rotate(-0.00 347.00 619.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="81"
+       y="619.00"
+       x="347.00">value: Float [0..1]</text>
+  </g>
+  <g
+     id="g57379"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57377"
+       shape-rendering="auto"
+       rx="0.00"
+       height="80"
+       width="100"
+       y="671"
+       x="45" />
+  </g>
+  <g
+     id="g57385"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57381"
+       transform="rotate(-0.00 70.00 686.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="50"
+       y="686.00"
+       x="70.00">«Primitive»</text>
+    <text
+       id="text57383"
+       transform="rotate(-0.00 80.00 697.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="29"
+       y="697.00"
+       x="80.00">String</text>
+  </g>
+  <g
+     id="g57389"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#E8FDE3;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57387"
+       shape-rendering="auto"
+       rx="0.00"
+       height="90"
+       width="120"
+       y="290"
+       x="345" />
+  </g>
+  <g
+     id="g57395"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57391"
+       transform="rotate(-0.00 370.00 305.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="70"
+       y="305.00"
+       x="370.00">«enumeration»</text>
+    <text
+       id="text57393"
+       transform="rotate(-0.00 357.00 316.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="95"
+       y="316.00"
+       x="357.00">CsPpccControlKind</text>
+  </g>
+  <g
+     id="g57399"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path57397"
+       shape-rendering="auto"
+       d="M 345 323 L 464 323" />
+  </g>
+  <g
+     id="g57415"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57401"
+       transform="rotate(-0.00 390.00 336.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:italic; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="29"
+       y="336.00"
+       x="390.00">literals</text>
+    <text
+       id="text57403"
+       transform="rotate(-0.00 350.00 347.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="347.00"
+       x="350.00"> </text>
+    <text
+       id="text57405"
+       transform="rotate(-0.00 367.00 347.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="56"
+       y="347.00"
+       x="367.00">activePower</text>
+    <text
+       id="text57407"
+       transform="rotate(-0.00 350.00 358.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="358.00"
+       x="350.00"> </text>
+    <text
+       id="text57409"
+       transform="rotate(-0.00 367.00 358.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="47"
+       y="358.00"
+       x="367.00">dcVoltage</text>
+    <text
+       id="text57411"
+       transform="rotate(-0.00 350.00 369.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="369.00"
+       x="350.00"> </text>
+    <text
+       id="text57413"
+       transform="rotate(-0.00 367.00 369.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="45"
+       y="369.00"
+       x="367.00">dcCurrent</text>
+  </g>
+  <g
+     id="g57419"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#E8FDE3;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57417"
+       shape-rendering="auto"
+       rx="0.00"
+       height="80"
+       width="136"
+       y="290"
+       x="185" />
+  </g>
+  <g
+     id="g57425"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57421"
+       transform="rotate(-0.00 218.00 305.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="70"
+       y="305.00"
+       x="218.00">«enumeration»</text>
+    <text
+       id="text57423"
+       transform="rotate(-0.00 198.00 316.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="109"
+       y="316.00"
+       x="198.00">CsOperatingModeKind</text>
+  </g>
+  <g
+     id="g57429"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path57427"
+       shape-rendering="auto"
+       d="M 185 323 L 320 323" />
+  </g>
+  <g
+     id="g57441"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57431"
+       transform="rotate(-0.00 238.00 336.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:italic; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="29"
+       y="336.00"
+       x="238.00">literals</text>
+    <text
+       id="text57433"
+       transform="rotate(-0.00 190.00 347.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="347.00"
+       x="190.00"> </text>
+    <text
+       id="text57435"
+       transform="rotate(-0.00 207.00 347.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="34"
+       y="347.00"
+       x="207.00">inverter</text>
+    <text
+       id="text57437"
+       transform="rotate(-0.00 190.00 358.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="358.00"
+       x="190.00"> </text>
+    <text
+       id="text57439"
+       transform="rotate(-0.00 207.00 358.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="33"
+       y="358.00"
+       x="207.00">rectifier</text>
+  </g>
+  <g
+     id="g57445"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#E8FDE3;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57443"
+       shape-rendering="auto"
+       rx="0.00"
+       height="94"
+       width="216"
+       y="671"
+       x="185" />
+  </g>
+  <g
+     id="g57451"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57447"
+       transform="rotate(-0.00 258.00 686.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="70"
+       y="686.00"
+       x="258.00">«enumeration»</text>
+    <text
+       id="text57449"
+       transform="rotate(-0.00 203.00 697.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="180"
+       y="697.00"
+       x="203.00">SynchronousMachineOperatingMode</text>
+  </g>
+  <g
+     id="g57455"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path57453"
+       shape-rendering="auto"
+       d="M 185 704 L 400 704" />
+  </g>
+  <g
+     id="g57471"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57457"
+       transform="rotate(-0.00 278.00 717.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:italic; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="29"
+       y="717.00"
+       x="278.00">literals</text>
+    <text
+       id="text57459"
+       transform="rotate(-0.00 190.00 728.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="728.00"
+       x="190.00"> </text>
+    <text
+       id="text57461"
+       transform="rotate(-0.00 207.00 728.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="45"
+       y="728.00"
+       x="207.00">generator</text>
+    <text
+       id="text57463"
+       transform="rotate(-0.00 190.00 739.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="739.00"
+       x="190.00"> </text>
+    <text
+       id="text57465"
+       transform="rotate(-0.00 207.00 739.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="49"
+       y="739.00"
+       x="207.00">condenser</text>
+    <text
+       id="text57467"
+       transform="rotate(-0.00 190.00 750.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="750.00"
+       x="190.00"> </text>
+    <text
+       id="text57469"
+       transform="rotate(-0.00 207.00 750.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="26"
+       y="750.00"
+       x="207.00">motor</text>
+  </g>
+  <g
+     id="g57475"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#E8FDE3;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57473"
+       shape-rendering="auto"
+       rx="0.00"
+       height="342"
+       width="120"
+       y="800"
+       x="45" />
+  </g>
+  <g
+     id="g57481"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57477"
+       transform="rotate(-0.00 70.00 815.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="70"
+       y="815.00"
+       x="70.00">«enumeration»</text>
+    <text
+       id="text57479"
+       transform="rotate(-0.00 73.00 826.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="64"
+       y="826.00"
+       x="73.00">UnitMultiplier</text>
+  </g>
+  <g
+     id="g57485"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path57483"
+       shape-rendering="auto"
+       d="M 45 833 L 164 833" />
+  </g>
+  <g
+     id="g57573"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57487"
+       transform="rotate(-0.00 90.00 846.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:italic; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="29"
+       y="846.00"
+       x="90.00">literals</text>
+    <text
+       id="text57489"
+       transform="rotate(-0.00 50.00 857.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="857.00"
+       x="50.00"> </text>
+    <text
+       id="text57491"
+       transform="rotate(-0.00 67.00 857.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="32"
+       y="857.00"
+       x="67.00">y = -24</text>
+    <text
+       id="text57493"
+       transform="rotate(-0.00 50.00 868.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="868.00"
+       x="50.00"> </text>
+    <text
+       id="text57495"
+       transform="rotate(-0.00 67.00 868.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="32"
+       y="868.00"
+       x="67.00">z = -21</text>
+    <text
+       id="text57497"
+       transform="rotate(-0.00 50.00 879.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="879.00"
+       x="50.00"> </text>
+    <text
+       id="text57499"
+       transform="rotate(-0.00 67.00 879.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="33"
+       y="879.00"
+       x="67.00">a = -18</text>
+    <text
+       id="text57501"
+       transform="rotate(-0.00 50.00 890.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="890.00"
+       x="50.00"> </text>
+    <text
+       id="text57503"
+       transform="rotate(-0.00 67.00 890.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="30"
+       y="890.00"
+       x="67.00">f = -15</text>
+    <text
+       id="text57505"
+       transform="rotate(-0.00 50.00 901.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="901.00"
+       x="50.00"> </text>
+    <text
+       id="text57507"
+       transform="rotate(-0.00 67.00 901.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="33"
+       y="901.00"
+       x="67.00">p = -12</text>
+    <text
+       id="text57509"
+       transform="rotate(-0.00 50.00 912.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="912.00"
+       x="50.00"> </text>
+    <text
+       id="text57511"
+       transform="rotate(-0.00 67.00 912.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="27"
+       y="912.00"
+       x="67.00">n = -9</text>
+    <text
+       id="text57513"
+       transform="rotate(-0.00 50.00 923.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="923.00"
+       x="50.00"> </text>
+    <text
+       id="text57515"
+       transform="rotate(-0.00 67.00 923.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="45"
+       y="923.00"
+       x="67.00">micro = -6</text>
+    <text
+       id="text57517"
+       transform="rotate(-0.00 50.00 934.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="934.00"
+       x="50.00"> </text>
+    <text
+       id="text57519"
+       transform="rotate(-0.00 67.00 934.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="29"
+       y="934.00"
+       x="67.00">m = -3</text>
+    <text
+       id="text57521"
+       transform="rotate(-0.00 50.00 945.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="945.00"
+       x="50.00"> </text>
+    <text
+       id="text57523"
+       transform="rotate(-0.00 67.00 945.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="26"
+       y="945.00"
+       x="67.00">c = -2</text>
+    <text
+       id="text57525"
+       transform="rotate(-0.00 50.00 956.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="956.00"
+       x="50.00"> </text>
+    <text
+       id="text57527"
+       transform="rotate(-0.00 67.00 956.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="27"
+       y="956.00"
+       x="67.00">d = -1</text>
+    <text
+       id="text57529"
+       transform="rotate(-0.00 50.00 967.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="967.00"
+       x="50.00"> </text>
+    <text
+       id="text57531"
+       transform="rotate(-0.00 67.00 967.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="42"
+       y="967.00"
+       x="67.00">none = 0</text>
+    <text
+       id="text57533"
+       transform="rotate(-0.00 50.00 978.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="978.00"
+       x="50.00"> </text>
+    <text
+       id="text57535"
+       transform="rotate(-0.00 67.00 978.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="30"
+       y="978.00"
+       x="67.00">da = 1</text>
+    <text
+       id="text57537"
+       transform="rotate(-0.00 50.00 989.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="989.00"
+       x="50.00"> </text>
+    <text
+       id="text57539"
+       transform="rotate(-0.00 67.00 989.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="24"
+       y="989.00"
+       x="67.00">h = 2</text>
+    <text
+       id="text57541"
+       transform="rotate(-0.00 50.00 1000.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="1000.00"
+       x="50.00"> </text>
+    <text
+       id="text57543"
+       transform="rotate(-0.00 67.00 1000.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="23"
+       y="1000.00"
+       x="67.00">k = 3</text>
+    <text
+       id="text57545"
+       transform="rotate(-0.00 50.00 1011.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="1011.00"
+       x="50.00"> </text>
+    <text
+       id="text57547"
+       transform="rotate(-0.00 67.00 1011.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="26"
+       y="1011.00"
+       x="67.00">M = 6</text>
+    <text
+       id="text57549"
+       transform="rotate(-0.00 50.00 1022.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="1022.00"
+       x="50.00"> </text>
+    <text
+       id="text57551"
+       transform="rotate(-0.00 67.00 1022.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="26"
+       y="1022.00"
+       x="67.00">G = 9</text>
+    <text
+       id="text57553"
+       transform="rotate(-0.00 50.00 1033.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="1033.00"
+       x="50.00"> </text>
+    <text
+       id="text57555"
+       transform="rotate(-0.00 67.00 1033.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="30"
+       y="1033.00"
+       x="67.00">T = 12</text>
+    <text
+       id="text57557"
+       transform="rotate(-0.00 50.00 1044.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="1044.00"
+       x="50.00"> </text>
+    <text
+       id="text57559"
+       transform="rotate(-0.00 67.00 1044.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="31"
+       y="1044.00"
+       x="67.00">P = 15</text>
+    <text
+       id="text57561"
+       transform="rotate(-0.00 50.00 1055.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="1055.00"
+       x="50.00"> </text>
+    <text
+       id="text57563"
+       transform="rotate(-0.00 67.00 1055.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="31"
+       y="1055.00"
+       x="67.00">E = 18</text>
+    <text
+       id="text57565"
+       transform="rotate(-0.00 50.00 1066.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="1066.00"
+       x="50.00"> </text>
+    <text
+       id="text57567"
+       transform="rotate(-0.00 67.00 1066.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="30"
+       y="1066.00"
+       x="67.00">Z = 21</text>
+    <text
+       id="text57569"
+       transform="rotate(-0.00 50.00 1077.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="1077.00"
+       x="50.00"> </text>
+    <text
+       id="text57571"
+       transform="rotate(-0.00 67.00 1077.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="31"
+       y="1077.00"
+       x="67.00">Y = 24</text>
+  </g>
+  <g
+     id="g57577"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#E8FDE3;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57575"
+       shape-rendering="auto"
+       rx="0.00"
+       height="60"
+       width="150"
+       y="800"
+       x="215" />
+  </g>
+  <g
+     id="g57583"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57579"
+       transform="rotate(-0.00 255.00 815.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="70"
+       y="815.00"
+       x="255.00">«enumeration»</text>
+    <text
+       id="text57581"
+       transform="rotate(-0.00 262.00 826.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="56"
+       y="826.00"
+       x="262.00">UnitSymbol</text>
+  </g>
+  <g
+     id="g57587"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57585"
+       shape-rendering="auto"
+       rx="0.00"
+       height="104"
+       width="249"
+       y="680"
+       x="585" />
+  </g>
+  <g
+     id="g57593"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57589"
+       transform="rotate(-0.00 673.00 695.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="72"
+       y="695.00"
+       x="673.00">«CIMDatatype»</text>
+    <text
+       id="text57591"
+       transform="rotate(-0.00 691.00 706.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="37"
+       y="706.00"
+       x="691.00">Voltage</text>
+  </g>
+  <g
+     id="g57597"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path57595"
+       shape-rendering="auto"
+       d="M 585 713 L 833 713" />
+  </g>
+  <g
+     id="g57603"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57599"
+       transform="rotate(-0.00 590.00 726.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="726.00"
+       x="590.00">+ </text>
+    <text
+       id="text57601"
+       transform="rotate(-0.00 607.00 726.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="199"
+       y="726.00"
+       x="607.00">multiplier: UnitMultiplier [0..1] = k {readOnly}</text>
+  </g>
+  <g
+     id="g57607"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path57605"
+       shape-rendering="auto"
+       d="M 607 727 L 806 727" />
+  </g>
+  <g
+     id="g57613"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57609"
+       transform="rotate(-0.00 590.00 737.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="737.00"
+       x="590.00">+ </text>
+    <text
+       id="text57611"
+       transform="rotate(-0.00 607.00 737.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="172"
+       y="737.00"
+       x="607.00">unit: UnitSymbol [0..1] = V {readOnly}</text>
+  </g>
+  <g
+     id="g57617"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#66413F; stroke-opacity:1.00">
+    <path
+       id="path57615"
+       shape-rendering="auto"
+       d="M 607 738 L 779 738" />
+  </g>
+  <g
+     id="g57623"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57619"
+       transform="rotate(-0.00 590.00 748.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="748.00"
+       x="590.00">+ </text>
+    <text
+       id="text57621"
+       transform="rotate(-0.00 607.00 748.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="81"
+       y="748.00"
+       x="607.00">value: Float [0..1]</text>
+  </g>
+  <g
+     id="g57627"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#E8FDE3;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57625"
+       shape-rendering="auto"
+       rx="0.00"
+       height="132"
+       width="208"
+       y="800"
+       x="405" />
+  </g>
+  <g
+     id="g57633"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57629"
+       transform="rotate(-0.00 474.00 815.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="70"
+       y="815.00"
+       x="474.00">«enumeration»</text>
+    <text
+       id="text57631"
+       transform="rotate(-0.00 461.00 826.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="95"
+       y="826.00"
+       x="461.00">VsPpccControlKind</text>
+  </g>
+  <g
+     id="g57637"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path57635"
+       shape-rendering="auto"
+       d="M 405 833 L 612 833" />
+  </g>
+  <g
+     id="g57665"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57639"
+       transform="rotate(-0.00 494.00 846.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:italic; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="29"
+       y="846.00"
+       x="494.00">literals</text>
+    <text
+       id="text57641"
+       transform="rotate(-0.00 410.00 857.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="857.00"
+       x="410.00"> </text>
+    <text
+       id="text57643"
+       transform="rotate(-0.00 427.00 857.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="23"
+       y="857.00"
+       x="427.00">pPcc</text>
+    <text
+       id="text57645"
+       transform="rotate(-0.00 410.00 868.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="868.00"
+       x="410.00"> </text>
+    <text
+       id="text57647"
+       transform="rotate(-0.00 427.00 868.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="17"
+       y="868.00"
+       x="427.00">udc</text>
+    <text
+       id="text57649"
+       transform="rotate(-0.00 410.00 879.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="879.00"
+       x="410.00"> </text>
+    <text
+       id="text57651"
+       transform="rotate(-0.00 427.00 879.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="88"
+       y="879.00"
+       x="427.00">pPccAndUdcDroop</text>
+    <text
+       id="text57653"
+       transform="rotate(-0.00 410.00 890.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="890.00"
+       x="410.00"> </text>
+    <text
+       id="text57655"
+       transform="rotate(-0.00 427.00 890.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="175"
+       y="890.00"
+       x="427.00">pPccAndUdcDroopWithCompensation</text>
+    <text
+       id="text57657"
+       transform="rotate(-0.00 410.00 901.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="901.00"
+       x="410.00"> </text>
+    <text
+       id="text57659"
+       transform="rotate(-0.00 427.00 901.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="108"
+       y="901.00"
+       x="427.00">pPccAndUdcDroopPilot</text>
+    <text
+       id="text57661"
+       transform="rotate(-0.00 410.00 912.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="912.00"
+       x="410.00"> </text>
+    <text
+       id="text57663"
+       transform="rotate(-0.00 427.00 912.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="46"
+       y="912.00"
+       x="427.00">phasePcc</text>
+  </g>
+  <g
+     id="g57669"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#E8FDE3;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect57667"
+       shape-rendering="auto"
+       rx="0.00"
+       height="97"
+       width="129"
+       y="560"
+       x="615" />
+  </g>
+  <g
+     id="g57675"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57671"
+       transform="rotate(-0.00 644.00 575.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="70"
+       y="575.00"
+       x="644.00">«enumeration»</text>
+    <text
+       id="text57673"
+       transform="rotate(-0.00 631.00 586.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="96"
+       y="586.00"
+       x="631.00">VsQpccControlKind</text>
+  </g>
+  <g
+     id="g57679"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+    <path
+       id="path57677"
+       shape-rendering="auto"
+       d="M 615 593 L 743 593" />
+  </g>
+  <g
+     id="g57699"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text57681"
+       transform="rotate(-0.00 665.00 606.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:italic; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="29"
+       y="606.00"
+       x="665.00">literals</text>
+    <text
+       id="text57683"
+       transform="rotate(-0.00 620.00 617.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="617.00"
+       x="620.00"> </text>
+    <text
+       id="text57685"
+       transform="rotate(-0.00 637.00 617.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="53"
+       y="617.00"
+       x="637.00">reactivePcc</text>
+    <text
+       id="text57687"
+       transform="rotate(-0.00 620.00 628.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="628.00"
+       x="620.00"> </text>
+    <text
+       id="text57689"
+       transform="rotate(-0.00 637.00 628.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="51"
+       y="628.00"
+       x="637.00">voltagePcc</text>
+    <text
+       id="text57691"
+       transform="rotate(-0.00 620.00 639.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="639.00"
+       x="620.00"> </text>
+    <text
+       id="text57693"
+       transform="rotate(-0.00 637.00 639.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="74"
+       y="639.00"
+       x="637.00">powerFactorPcc</text>
+    <text
+       id="text57695"
+       transform="rotate(-0.00 620.00 650.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="3"
+       y="650.00"
+       x="620.00"> </text>
+    <text
+       id="text57697"
+       transform="rotate(-0.00 637.00 650.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="650.00"
+       x="637.00">pulseWidthModulation</text>
+  </g>
+</svg>

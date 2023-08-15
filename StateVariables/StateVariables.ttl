@@ -1,0 +1,247 @@
+@base <http://iec.ch/TC57/2013/CIM-schema-cim16#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+TopologicalNode rdf:type rdfs:Class ;
+	rdfs:label "TopologicalNode"@en ;
+	rdfs:comment "For a detailed substation model a topological node is a set of connectivity nodes that, in the current network state, are connected together through any type of closed switches, including  jumpers. Topological nodes change as the current network state changes (i.e., switches, breakers, etc. change state).\nFor a planning model, switch statuses are not used to form topological nodes. Instead they are manually created or deleted in a model builder tool. Topological nodes maintained this way are also called \"busses\"."^^rdf:XMLLiteral .
+
+VsConverter rdf:type rdfs:Class ;
+	rdfs:subClassOf ACDCConverter ;
+	rdfs:label "VsConverter"@en ;
+	rdfs:comment "DC side of the voltage source converter (VSC)."^^rdf:XMLLiteral .
+VsConverter.delta rdf:type rdfs:Property ;
+	rdfs:label "delta"@en ;
+	rdfs:domain VsConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Angle between VsConverter.uv and ACDCConverter.uc. It is converter’s state variable used in power flow. The attribute shall be a positive value or zero."^^rdf:XMLLiteral .
+VsConverter.uv rdf:type rdfs:Property ;
+	rdfs:label "uv"@en ;
+	rdfs:domain VsConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Line-to-line voltage on the valve side of the converter transformer. It is converter’s state variable, result from power flow. The attribute shall be a positive value."^^rdf:XMLLiteral .
+
+SvShuntCompensatorSections rdf:type rdfs:Class ;
+	rdfs:label "SvShuntCompensatorSections"@en ;
+	rdfs:comment "State variable for the number of sections in service for a shunt compensator."^^rdf:XMLLiteral .
+SvShuntCompensatorSections.sections rdf:type rdfs:Property ;
+	rdfs:label "sections"@en ;
+	rdfs:domain SvShuntCompensatorSections ;
+	rdfs:range xsd:double ;
+	rdfs:comment "The number of sections in service as a continuous variable. The attribute shall be a positive value or zero. To get integer value scale with ShuntCompensator.bPerSection."^^rdf:XMLLiteral .
+SvShuntCompensatorSections.ShuntCompensator rdf:type rdfs:Property ;
+	rdfs:label "ShuntCompensator"@en ;
+	rdfs:domain SvShuntCompensatorSections ;
+	rdfs:range ShuntCompensator ;
+	rdfs:comment "The shunt compensator for which the state applies."^^rdf:XMLLiteral .
+
+SvTapStep rdf:type rdfs:Class ;
+	rdfs:label "SvTapStep"@en ;
+	rdfs:comment "State variable for transformer tap step. "^^rdf:XMLLiteral .
+SvTapStep.position rdf:type rdfs:Property ;
+	rdfs:label "position"@en ;
+	rdfs:domain SvTapStep ;
+	rdfs:range xsd:double ;
+	rdfs:comment "The floating point tap position.   This is not the tap ratio, but rather the tap step position as defined by the related tap changer model and normally is constrained to be within the range of minimum and maximum tap positions."^^rdf:XMLLiteral .
+SvTapStep.TapChanger rdf:type rdfs:Property ;
+	rdfs:label "TapChanger"@en ;
+	rdfs:domain SvTapStep ;
+	rdfs:range TapChanger ;
+	rdfs:comment "The tap changer associated with the tap step state."^^rdf:XMLLiteral .
+
+SvStatus rdf:type rdfs:Class ;
+	rdfs:label "SvStatus"@en ;
+	rdfs:comment "State variable for status."^^rdf:XMLLiteral .
+SvStatus.inService rdf:type rdfs:Property ;
+	rdfs:label "inService"@en ;
+	rdfs:domain SvStatus ;
+	rdfs:range xsd:boolean ;
+	rdfs:comment "The in service status as a result of topology processing.  It indicates if the equipment is considered as energized by the power flow. It reflects if the equipment is connected within a solvable island.  It does not necessarily reflect whether or not the island was solved by the power flow."^^rdf:XMLLiteral .
+SvStatus.ConductingEquipment rdf:type rdfs:Property ;
+	rdfs:label "ConductingEquipment"@en ;
+	rdfs:domain SvStatus ;
+	rdfs:range ConductingEquipment ;
+	rdfs:comment "The conducting equipment associated with the status state variable."^^rdf:XMLLiteral .
+
+DCTopologicalNode rdf:type rdfs:Class ;
+	rdfs:subClassOf IdentifiedObject ;
+	rdfs:label "DCTopologicalNode"@en ;
+	rdfs:comment "DC bus."^^rdf:XMLLiteral .
+
+SvPowerFlow rdf:type rdfs:Class ;
+	rdfs:label "SvPowerFlow"@en ;
+	rdfs:comment "State variable for power flow. Load convention is used for flow direction. This means flow out from the TopologicalNode into the equipment is positive."^^rdf:XMLLiteral .
+SvPowerFlow.p rdf:type rdfs:Property ;
+	rdfs:label "p"@en ;
+	rdfs:domain SvPowerFlow ;
+	rdfs:range xsd:double ;
+	rdfs:comment "The active power flow. Load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment."^^rdf:XMLLiteral .
+SvPowerFlow.q rdf:type rdfs:Property ;
+	rdfs:label "q"@en ;
+	rdfs:domain SvPowerFlow ;
+	rdfs:range xsd:double ;
+	rdfs:comment "The reactive power flow. Load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment."^^rdf:XMLLiteral .
+SvPowerFlow.Terminal rdf:type rdfs:Property ;
+	rdfs:label "Terminal"@en ;
+	rdfs:domain SvPowerFlow ;
+	rdfs:range Terminal ;
+	rdfs:comment "The terminal associated with the power flow state variable."^^rdf:XMLLiteral .
+
+Terminal rdf:type rdfs:Class ;
+	rdfs:subClassOf ACDCTerminal ;
+	rdfs:label "Terminal"@en ;
+	rdfs:comment "An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^rdf:XMLLiteral .
+
+SvVoltage rdf:type rdfs:Class ;
+	rdfs:label "SvVoltage"@en ;
+	rdfs:comment "State variable for voltage."^^rdf:XMLLiteral .
+SvVoltage.angle rdf:type rdfs:Property ;
+	rdfs:label "angle"@en ;
+	rdfs:domain SvVoltage ;
+	rdfs:range xsd:double ;
+	rdfs:comment "The voltage angle of the topological node complex voltage with respect to system reference."^^rdf:XMLLiteral .
+SvVoltage.v rdf:type rdfs:Property ;
+	rdfs:label "v"@en ;
+	rdfs:domain SvVoltage ;
+	rdfs:range xsd:double ;
+	rdfs:comment "The voltage magnitude at the topological node. The attribute shall be a positive value."^^rdf:XMLLiteral .
+SvVoltage.TopologicalNode rdf:type rdfs:Property ;
+	rdfs:label "TopologicalNode"@en ;
+	rdfs:domain SvVoltage ;
+	rdfs:range TopologicalNode ;
+	rdfs:comment "The topological node associated with the voltage state."^^rdf:XMLLiteral .
+
+SvSwitch rdf:type rdfs:Class ;
+	rdfs:label "SvSwitch"@en ;
+	rdfs:comment "State variable for switch. "^^rdf:XMLLiteral .
+SvSwitch.open rdf:type rdfs:Property ;
+	rdfs:label "open"@en ;
+	rdfs:domain SvSwitch ;
+	rdfs:range xsd:boolean ;
+	rdfs:comment "The attribute tells if the computed state of the switch is considered open."^^rdf:XMLLiteral .
+SvSwitch.Switch rdf:type rdfs:Property ;
+	rdfs:label "Switch"@en ;
+	rdfs:domain SvSwitch ;
+	rdfs:range Switch ;
+	rdfs:comment "The switch associated with the switch state."^^rdf:XMLLiteral .
+
+IdentifiedObject rdf:type rdfs:Class ;
+	rdfs:label "IdentifiedObject"@en ;
+	rdfs:comment "This is a root class to provide common identification for all classes needing identification and naming attributes."^^rdf:XMLLiteral .
+IdentifiedObject.mRID rdf:type rdfs:Property ;
+	rdfs:label "mRID"@en ;
+	rdfs:domain IdentifiedObject ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements."^^rdf:XMLLiteral .
+IdentifiedObject.name rdf:type rdfs:Property ;
+	rdfs:label "name"@en ;
+	rdfs:domain IdentifiedObject ;
+	rdfs:range xsd:string ;
+	rdfs:comment "The name is any free human readable and possibly non unique text naming the object."^^rdf:XMLLiteral .
+
+Switch rdf:type rdfs:Class ;
+	rdfs:subClassOf ConductingEquipment ;
+	rdfs:label "Switch"@en ;
+	rdfs:comment "A generic device designed to close, or open, or both, one or more electric circuits.  All switches are two terminal devices including grounding switches. The ACDCTerminal.connected at the two sides of the switch shall not be considered for assessing switch connectivity, i.e. only Switch.open, .normalOpen and .locked are relevant."^^rdf:XMLLiteral .
+
+ACDCConverter rdf:type rdfs:Class ;
+	rdfs:subClassOf ConductingEquipment ;
+	rdfs:label "ACDCConverter"@en ;
+	rdfs:comment "A unit with valves for three phases, together with unit control equipment, essential protective and switching devices, DC storage capacitors, phase reactors and auxiliaries, if any, used for conversion."^^rdf:XMLLiteral .
+ACDCConverter.idc rdf:type rdfs:Property ;
+	rdfs:label "idc"@en ;
+	rdfs:domain ACDCConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Converter DC current, also called Id. It is converter’s state variable, result from power flow."^^rdf:XMLLiteral .
+ACDCConverter.poleLossP rdf:type rdfs:Property ;
+	rdfs:label "poleLossP"@en ;
+	rdfs:domain ACDCConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "The active power loss at a DC Pole \n= idleLoss + switchingLoss*|Idc| + resitiveLoss*Idc^2.\nFor lossless operation Pdc=Pac.\nFor rectifier operation with losses Pdc=Pac-lossP.\nFor inverter operation with losses Pdc=Pac+lossP.\nIt is converter’s state variable used in power flow. The attribute shall be a positive value."^^rdf:XMLLiteral .
+ACDCConverter.uc rdf:type rdfs:Property ;
+	rdfs:label "uc"@en ;
+	rdfs:domain ACDCConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Line-to-line converter voltage, the voltage at the AC side of the valve. It is converter’s state variable, result from power flow. The attribute shall be a positive value."^^rdf:XMLLiteral .
+ACDCConverter.udc rdf:type rdfs:Property ;
+	rdfs:label "udc"@en ;
+	rdfs:domain ACDCConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Converter voltage at the DC side, also called Ud. It is converter’s state variable, result from power flow. The attribute shall be a positive value."^^rdf:XMLLiteral .
+
+TapChanger rdf:type rdfs:Class ;
+	rdfs:label "TapChanger"@en ;
+	rdfs:comment "Mechanism for changing transformer winding tap positions."^^rdf:XMLLiteral .
+
+TopologicalIsland rdf:type rdfs:Class ;
+	rdfs:subClassOf IdentifiedObject ;
+	rdfs:label "TopologicalIsland"@en ;
+	rdfs:comment "An electrically connected subset of the network. Topological islands can change as the current network state changes, e.g. due to: \n- disconnect switches or breakers changing state in a SCADA/EMS.\n- manual creation, change or deletion of topological nodes in a planning tool.\nOnly energised TopologicalNode-s shall be part of the topological island."^^rdf:XMLLiteral .
+TopologicalIsland.TopologicalNodes rdf:type rdfs:Property ;
+	rdfs:label "TopologicalNodes"@en ;
+	rdfs:domain TopologicalIsland ;
+	rdfs:range TopologicalNode ;
+	rdfs:comment "A topological node belongs to a topological island."^^rdf:XMLLiteral .
+TopologicalIsland.AngleRefTopologicalNode rdf:type rdfs:Property ;
+	rdfs:label "AngleRefTopologicalNode"@en ;
+	rdfs:domain TopologicalIsland ;
+	rdfs:range TopologicalNode ;
+	rdfs:comment "The angle reference for the island.   Normally there is one TopologicalNode that is selected as the angle reference for each island.   Other reference schemes exist, so the association is typically optional."^^rdf:XMLLiteral .
+
+ACDCTerminal rdf:type rdfs:Class ;
+	rdfs:subClassOf IdentifiedObject ;
+	rdfs:label "ACDCTerminal"@en ;
+	rdfs:comment "An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^rdf:XMLLiteral .
+
+DCTopologicalIsland rdf:type rdfs:Class ;
+	rdfs:subClassOf IdentifiedObject ;
+	rdfs:label "DCTopologicalIsland"@en ;
+	rdfs:comment "An electrically connected subset of the network. DC topological islands can change as the current network state changes, e.g. due to: \n- disconnect switches or breakers changing state in a SCADA/EMS.\n- manual creation, change or deletion of topological nodes in a planning tool.\nOnly energised TopologicalNode-s shall be part of the topological island."^^rdf:XMLLiteral .
+DCTopologicalIsland.DCTopologicalNodes rdf:type rdfs:Property ;
+	rdfs:label "DCTopologicalNodes"@en ;
+	rdfs:domain DCTopologicalIsland ;
+	rdfs:range DCTopologicalNode ;
+	rdfs:comment "The DC topological nodes in a DC topological island."^^rdf:XMLLiteral .
+
+ShuntCompensator rdf:type rdfs:Class ;
+	rdfs:label "ShuntCompensator"@en ;
+	rdfs:comment "A shunt capacitor or reactor or switchable bank of shunt capacitors or reactors. A section of a shunt compensator is an individual capacitor or reactor. A negative value for bPerSection indicates that the compensator is a reactor. ShuntCompensator is a single terminal device.  Ground is implied."^^rdf:XMLLiteral .
+
+SvInjection rdf:type rdfs:Class ;
+	rdfs:label "SvInjection"@en ;
+	rdfs:comment "The SvInjection reports the calculated bus injection minus the sum of the terminal flows. The terminal flow is positive out from the bus (load sign convention) and bus injection has positive flow into the bus. SvInjection may have the remainder after state estimation or slack after power flow calculation."^^rdf:XMLLiteral .
+SvInjection.pInjection rdf:type rdfs:Property ;
+	rdfs:label "pInjection"@en ;
+	rdfs:domain SvInjection ;
+	rdfs:range xsd:double ;
+	rdfs:comment "The active power mismatch between calculated injection and initial injection.  Positive sign means injection into the TopologicalNode (bus)."^^rdf:XMLLiteral .
+SvInjection.qInjection rdf:type rdfs:Property ;
+	rdfs:label "qInjection"@en ;
+	rdfs:domain SvInjection ;
+	rdfs:range xsd:double ;
+	rdfs:comment "The reactive power mismatch between calculated injection and initial injection.  Positive sign means injection into the TopologicalNode (bus)."^^rdf:XMLLiteral .
+SvInjection.TopologicalNode rdf:type rdfs:Property ;
+	rdfs:label "TopologicalNode"@en ;
+	rdfs:domain SvInjection ;
+	rdfs:range TopologicalNode ;
+	rdfs:comment "The topological node associated with the flow injection state variable."^^rdf:XMLLiteral .
+
+ConductingEquipment rdf:type rdfs:Class ;
+	rdfs:label "ConductingEquipment"@en ;
+	rdfs:comment "The parts of the AC power system that are designed to carry current or that are conductively connected through terminals."^^rdf:XMLLiteral .
+
+CsConverter rdf:type rdfs:Class ;
+	rdfs:subClassOf ACDCConverter ;
+	rdfs:label "CsConverter"@en ;
+	rdfs:comment "DC side of the current source converter (CSC).\nThe firing angle controls the dc voltage at the converter, both for rectifier and inverter. The difference between the dc voltages of the rectifier and inverter determines the dc current. The extinction angle is used to limit the dc voltage at the inverter, if needed, and is not used in active power control. The firing angle, transformer tap position and number of connected filters are the primary means to control a current source dc line. Higher level controls are built on top, e.g. dc voltage, dc current and active power. From a steady state perspective it is sufficient to specify the wanted active power transfer (ACDCConverter.targetPpcc) and the control functions will set the dc voltage, dc current, firing angle, transformer tap position and number of connected filters to meet this. Therefore attributes targetAlpha and targetGamma are not applicable in this case.\nThe reactive power consumed by the converter is a function of the firing angle, transformer tap position and number of connected filter, which can be approximated with half of the active power. The losses is a function of the dc voltage and dc current.\nThe attributes minAlpha and maxAlpha define the range of firing angles for rectifier operation between which no discrete tap changer action takes place. The range is typically 10-18 degrees.\nThe attributes minGamma and maxGamma define the range of extinction angles for inverter operation between which no discrete tap changer action takes place. The range is typically 17-20 degrees."^^rdf:XMLLiteral .
+CsConverter.alpha rdf:type rdfs:Property ;
+	rdfs:label "alpha"@en ;
+	rdfs:domain CsConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Firing angle that determines the dc voltage at the converter dc terminal. Typical value between 10 degrees and 18 degrees for a rectifier. It is converter’s state variable, result from power flow. The attribute shall be a positive value."^^rdf:XMLLiteral .
+CsConverter.gamma rdf:type rdfs:Property ;
+	rdfs:label "gamma"@en ;
+	rdfs:domain CsConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Extinction angle. It is used to limit the dc voltage at the inverter if needed. Typical value between 17 degrees and 20 degrees for an inverter. It is converter’s state variable, result from power flow. The attribute shall be a positive value."^^rdf:XMLLiteral .

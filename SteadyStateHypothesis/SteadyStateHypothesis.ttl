@@ -1,0 +1,643 @@
+@base <http://iec.ch/TC57/2013/CIM-schema-cim16#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+RotatingMachine rdf:type rdfs:Class ;
+	rdfs:subClassOf RegulatingCondEq ;
+	rdfs:label "RotatingMachine"@en ;
+	rdfs:comment "A rotating machine which may be used as a generator or motor."^^rdf:XMLLiteral .
+RotatingMachine.p rdf:type rdfs:Property ;
+	rdfs:label "p"@en ;
+	rdfs:domain RotatingMachine ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Active power injection. Load sign convention is used, i.e. positive sign means flow out from a node.\nStarting value for a steady state solution."^^rdf:XMLLiteral .
+RotatingMachine.q rdf:type rdfs:Property ;
+	rdfs:label "q"@en ;
+	rdfs:domain RotatingMachine ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node.\nStarting value for a steady state solution."^^rdf:XMLLiteral .
+
+NonConformLoad rdf:type rdfs:Class ;
+	rdfs:subClassOf EnergyConsumer ;
+	rdfs:label "NonConformLoad"@en ;
+	rdfs:comment "NonConformLoad represents loads that do not follow a daily load change pattern and whose changes are not correlated with the daily load change pattern."^^rdf:XMLLiteral .
+
+ACDCTerminal rdf:type rdfs:Class ;
+	rdfs:subClassOf IdentifiedObject ;
+	rdfs:label "ACDCTerminal"@en ;
+	rdfs:comment "An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^rdf:XMLLiteral .
+ACDCTerminal.connected rdf:type rdfs:Property ;
+	rdfs:label "connected"@en ;
+	rdfs:domain ACDCTerminal ;
+	rdfs:range xsd:boolean ;
+	rdfs:comment "The connected status is related to a bus-branch model and the topological node to terminal relation.  True implies the terminal is connected to the related topological node and false implies it is not. \nIn a bus-branch model, the connected status is used to tell if equipment is disconnected without having to change the connectivity described by the topological node to terminal relation. A valid case is that conducting equipment can be connected in one end and open in the other. In particular for an AC line segment, where the reactive line charging can be significant, this is a relevant case."^^rdf:XMLLiteral .
+
+CsConverter rdf:type rdfs:Class ;
+	rdfs:subClassOf ACDCConverter ;
+	rdfs:label "CsConverter"@en ;
+	rdfs:comment "DC side of the current source converter (CSC).\nThe firing angle controls the dc voltage at the converter, both for rectifier and inverter. The difference between the dc voltages of the rectifier and inverter determines the dc current. The extinction angle is used to limit the dc voltage at the inverter, if needed, and is not used in active power control. The firing angle, transformer tap position and number of connected filters are the primary means to control a current source dc line. Higher level controls are built on top, e.g. dc voltage, dc current and active power. From a steady state perspective it is sufficient to specify the wanted active power transfer (ACDCConverter.targetPpcc) and the control functions will set the dc voltage, dc current, firing angle, transformer tap position and number of connected filters to meet this. Therefore attributes targetAlpha and targetGamma are not applicable in this case.\nThe reactive power consumed by the converter is a function of the firing angle, transformer tap position and number of connected filter, which can be approximated with half of the active power. The losses is a function of the dc voltage and dc current.\nThe attributes minAlpha and maxAlpha define the range of firing angles for rectifier operation between which no discrete tap changer action takes place. The range is typically 10-18 degrees.\nThe attributes minGamma and maxGamma define the range of extinction angles for inverter operation between which no discrete tap changer action takes place. The range is typically 17-20 degrees."^^rdf:XMLLiteral .
+CsConverter.operatingMode rdf:type rdfs:Property ;
+	rdfs:label "operatingMode"@en ;
+	rdfs:domain CsConverter ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Indicates whether the DC pole is operating as an inverter or as a rectifier. It is converter’s control variable used in power flow."^^rdf:XMLLiteral .
+CsConverter.pPccControl rdf:type rdfs:Property ;
+	rdfs:label "pPccControl"@en ;
+	rdfs:domain CsConverter ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Kind of active power control."^^rdf:XMLLiteral .
+CsConverter.targetAlpha rdf:type rdfs:Property ;
+	rdfs:label "targetAlpha"@en ;
+	rdfs:domain CsConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Target firing angle. It is converter’s control variable used in power flow. It is only applicable for rectifier if continuous tap changer control is used. Allowed values are within the range minAlpha&lt;=targetAlpha&lt;=maxAlpha. The attribute shall be a positive value."^^rdf:XMLLiteral .
+CsConverter.targetGamma rdf:type rdfs:Property ;
+	rdfs:label "targetGamma"@en ;
+	rdfs:domain CsConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Target extinction angle. It is converter’s control variable used in power flow. It is only applicable for inverter if continuous tap changer control is used. Allowed values are within the range minGamma&lt;=targetGamma&lt;=maxGamma. The attribute shall be a positive value."^^rdf:XMLLiteral .
+CsConverter.targetIdc rdf:type rdfs:Property ;
+	rdfs:label "targetIdc"@en ;
+	rdfs:domain CsConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "DC current target value. It is converter’s control variable used in power flow. The attribute shall be a positive value."^^rdf:XMLLiteral .
+
+EnergyConsumer rdf:type rdfs:Class ;
+	rdfs:subClassOf EnergyConnection ;
+	rdfs:label "EnergyConsumer"@en ;
+	rdfs:comment "Generic user of energy - a  point of consumption on the power system model.\nEnergyConsumer.pfixed, .qfixed, .pfixedPct and .qfixedPct have meaning only if there is no LoadResponseCharacteristic associated with EnergyConsumer or if LoadResponseCharacteristic.exponentModel is set to False."^^rdf:XMLLiteral .
+EnergyConsumer.p rdf:type rdfs:Property ;
+	rdfs:label "p"@en ;
+	rdfs:domain EnergyConsumer ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Active power of the load. Load sign convention is used, i.e. positive sign means flow out from a node.\nFor voltage dependent loads the value is at rated voltage.\nStarting value for a steady state solution."^^rdf:XMLLiteral .
+EnergyConsumer.q rdf:type rdfs:Property ;
+	rdfs:label "q"@en ;
+	rdfs:domain EnergyConsumer ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Reactive power of the load. Load sign convention is used, i.e. positive sign means flow out from a node.\nFor voltage dependent loads the value is at rated voltage.\nStarting value for a steady state solution."^^rdf:XMLLiteral .
+
+Terminal rdf:type rdfs:Class ;
+	rdfs:subClassOf ACDCTerminal ;
+	rdfs:label "Terminal"@en ;
+	rdfs:comment "An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^rdf:XMLLiteral .
+
+ControlArea rdf:type rdfs:Class ;
+	rdfs:subClassOf PowerSystemResource ;
+	rdfs:label "ControlArea"@en ;
+	rdfs:comment "A control area is a grouping of generating units and/or loads and a cutset of tie lines (as terminals) which may be used for a variety of purposes including automatic generation control, power flow solution area interchange control specification, and input to load forecasting. All generation and load within the area defined by the terminals on the border are considered in the area interchange control. Note that any number of overlapping control area specifications can be superimposed on the physical model. The following general principles apply to ControlArea:\n1.  The control area orientation for net interchange is positive for an import, negative for an export.\n2.  The control area net interchange is determined by summing flows in Terminals. The Terminals are identified by creating a set of TieFlow objects associated with a ControlArea object. Each TieFlow object identifies one Terminal.\n3.  In a single network model, a tie between two control areas must be modelled in both control area specifications, such that the two representations of the tie flow sum to zero.\n4.  The normal orientation of Terminal flow is positive for flow into the conducting equipment that owns the Terminal. (i.e. flow from a bus into a device is positive.) However, the orientation of each flow in the control area specification must align with the control area convention, i.e. import is positive. If the orientation of the Terminal flow referenced by a TieFlow is positive into the control area, then this is confirmed by setting TieFlow.positiveFlowIn flag TRUE. If not, the orientation must be reversed by setting the TieFlow.positiveFlowIn flag FALSE."^^rdf:XMLLiteral .
+ControlArea.netInterchange rdf:type rdfs:Property ;
+	rdfs:label "netInterchange"@en ;
+	rdfs:domain ControlArea ;
+	rdfs:range xsd:double ;
+	rdfs:comment "The specified positive net interchange into the control area, i.e. positive sign means flow into the area."^^rdf:XMLLiteral .
+ControlArea.pTolerance rdf:type rdfs:Property ;
+	rdfs:label "pTolerance"@en ;
+	rdfs:domain ControlArea ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Active power net interchange tolerance. The attribute shall be a positive value or zero."^^rdf:XMLLiteral .
+
+StationSupply rdf:type rdfs:Class ;
+	rdfs:subClassOf EnergyConsumer ;
+	rdfs:label "StationSupply"@en ;
+	rdfs:comment "Station supply with load derived from the station output."^^rdf:XMLLiteral .
+
+ACDCConverter rdf:type rdfs:Class ;
+	rdfs:subClassOf ConductingEquipment ;
+	rdfs:label "ACDCConverter"@en ;
+	rdfs:comment "A unit with valves for three phases, together with unit control equipment, essential protective and switching devices, DC storage capacitors, phase reactors and auxiliaries, if any, used for conversion."^^rdf:XMLLiteral .
+ACDCConverter.p rdf:type rdfs:Property ;
+	rdfs:label "p"@en ;
+	rdfs:domain ACDCConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Active power at the point of common coupling. Load sign convention is used, i.e. positive sign means flow out from a node.\nStarting value for a steady state solution in the case a simplified power flow model is used."^^rdf:XMLLiteral .
+ACDCConverter.q rdf:type rdfs:Property ;
+	rdfs:label "q"@en ;
+	rdfs:domain ACDCConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Reactive power at the point of common coupling. Load sign convention is used, i.e. positive sign means flow out from a node.\nStarting value for a steady state solution in the case a simplified power flow model is used."^^rdf:XMLLiteral .
+ACDCConverter.targetPpcc rdf:type rdfs:Property ;
+	rdfs:label "targetPpcc"@en ;
+	rdfs:domain ACDCConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Real power injection target in AC grid, at point of common coupling.  Load sign convention is used, i.e. positive sign means flow out from a node."^^rdf:XMLLiteral .
+ACDCConverter.targetUdc rdf:type rdfs:Property ;
+	rdfs:label "targetUdc"@en ;
+	rdfs:domain ACDCConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Target value for DC voltage magnitude. The attribute shall be a positive value."^^rdf:XMLLiteral .
+
+EnergySource rdf:type rdfs:Class ;
+	rdfs:subClassOf EnergyConnection ;
+	rdfs:label "EnergySource"@en ;
+	rdfs:comment "A generic equivalent for an energy supplier on a transmission or distribution voltage level."^^rdf:XMLLiteral .
+EnergySource.activePower rdf:type rdfs:Property ;
+	rdfs:label "activePower"@en ;
+	rdfs:domain EnergySource ;
+	rdfs:range xsd:double ;
+	rdfs:comment "High voltage source active injection. Load sign convention is used, i.e. positive sign means flow out from a node.\nStarting value for steady state solutions."^^rdf:XMLLiteral .
+EnergySource.reactivePower rdf:type rdfs:Property ;
+	rdfs:label "reactivePower"@en ;
+	rdfs:domain EnergySource ;
+	rdfs:range xsd:double ;
+	rdfs:comment "High voltage source reactive injection. Load sign convention is used, i.e. positive sign means flow out from a node.\nStarting value for steady state solutions."^^rdf:XMLLiteral .
+EnergySource.voltageAngle rdf:type rdfs:Property ;
+	rdfs:label "voltageAngle"@en ;
+	rdfs:domain EnergySource ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Phase angle of a-phase open circuit used when voltage characteristics need to be imposed at the node associated with the terminal of the energy source, such as when voltages and angles from the transmission level are used as input to the distribution network. The attribute shall be a positive value or zero."^^rdf:XMLLiteral .
+EnergySource.voltageMagnitude rdf:type rdfs:Property ;
+	rdfs:label "voltageMagnitude"@en ;
+	rdfs:domain EnergySource ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Phase-to-phase open circuit voltage magnitude used when voltage characteristics need to be imposed at the node associated with the terminal of the energy source, such as when voltages and angles from the transmission level are used as input to the distribution network. The attribute shall be a positive value or zero."^^rdf:XMLLiteral .
+
+PhaseTapChangerSymmetrical rdf:type rdfs:Class ;
+	rdfs:subClassOf PhaseTapChangerNonLinear ;
+	rdfs:label "PhaseTapChangerSymmetrical"@en ;
+	rdfs:comment "Describes a symmetrical phase shifting transformer tap model in which the voltage magnitude of both sides is the same. The difference voltage magnitude is the base in an equal-sided triangle where the sides corresponds to the primary and secondary voltages. The phase angle difference corresponds to the top angle and can be expressed as twice the arctangent of half the total difference voltage."^^rdf:XMLLiteral .
+
+ConformLoad rdf:type rdfs:Class ;
+	rdfs:subClassOf EnergyConsumer ;
+	rdfs:label "ConformLoad"@en ;
+	rdfs:comment "ConformLoad represent loads that follow a daily load change pattern where the pattern can be used to scale the load with a system load."^^rdf:XMLLiteral .
+
+GeneratingUnit rdf:type rdfs:Class ;
+	rdfs:subClassOf Equipment ;
+	rdfs:label "GeneratingUnit"@en ;
+	rdfs:comment "A single or set of synchronous machines for converting mechanical power into alternating-current power. For example, individual machines within a set may be defined for scheduling purposes while a single control signal is derived for the set. In this case there would be a GeneratingUnit for each member of the set and an additional GeneratingUnit corresponding to the set."^^rdf:XMLLiteral .
+GeneratingUnit.normalPF rdf:type rdfs:Property ;
+	rdfs:label "normalPF"@en ;
+	rdfs:domain GeneratingUnit ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Generating unit economic participation factor.  The sum of the participation factors across generating units does not have to sum to one.  It is used for representing distributed slack participation factor. The attribute shall be a positive value or zero."^^rdf:XMLLiteral .
+
+NuclearGeneratingUnit rdf:type rdfs:Class ;
+	rdfs:subClassOf GeneratingUnit ;
+	rdfs:label "NuclearGeneratingUnit"@en ;
+	rdfs:comment "A nuclear generating unit."^^rdf:XMLLiteral .
+
+PhaseTapChangerAsymmetrical rdf:type rdfs:Class ;
+	rdfs:subClassOf PhaseTapChangerNonLinear ;
+	rdfs:label "PhaseTapChangerAsymmetrical"@en ;
+	rdfs:comment "Describes the tap model for an asymmetrical phase shifting transformer in which the difference voltage vector adds to the in-phase winding. The out-of-phase winding is the transformer end where the tap changer is located.  The angle between the in-phase and out-of-phase windings is named the winding connection angle. The phase shift depends on both the difference voltage magnitude and the winding connection angle."^^rdf:XMLLiteral .
+
+DCTerminal rdf:type rdfs:Class ;
+	rdfs:subClassOf DCBaseTerminal ;
+	rdfs:label "DCTerminal"@en ;
+	rdfs:comment "An electrical connection point to generic DC conducting equipment."^^rdf:XMLLiteral .
+
+TapChanger rdf:type rdfs:Class ;
+	rdfs:subClassOf PowerSystemResource ;
+	rdfs:label "TapChanger"@en ;
+	rdfs:comment "Mechanism for changing transformer winding tap positions."^^rdf:XMLLiteral .
+TapChanger.controlEnabled rdf:type rdfs:Property ;
+	rdfs:label "controlEnabled"@en ;
+	rdfs:domain TapChanger ;
+	rdfs:range xsd:boolean ;
+	rdfs:comment "Specifies the regulation status of the equipment.  True is regulating, false is not regulating."^^rdf:XMLLiteral .
+TapChanger.step rdf:type rdfs:Property ;
+	rdfs:label "step"@en ;
+	rdfs:domain TapChanger ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Tap changer position.\nStarting step for a steady state solution. Non integer values are allowed to support continuous tap variables. The reasons for continuous value are to support study cases where no discrete tap changer has yet been designed, a solution where a narrow voltage band forces the tap step to oscillate or to accommodate for a continuous solution as input.\nThe attribute shall be equal to or greater than lowStep and equal to or less than highStep."^^rdf:XMLLiteral .
+
+AsynchronousMachine rdf:type rdfs:Class ;
+	rdfs:subClassOf RotatingMachine ;
+	rdfs:label "AsynchronousMachine"@en ;
+	rdfs:comment "A rotating machine whose shaft rotates asynchronously with the electrical field.  Also known as an induction machine with no external connection to the rotor windings, e.g. squirrel-cage induction machine."^^rdf:XMLLiteral .
+AsynchronousMachine.asynchronousMachineType rdf:type rdfs:Property ;
+	rdfs:label "asynchronousMachineType"@en ;
+	rdfs:domain AsynchronousMachine ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Indicates the type of Asynchronous Machine (motor or generator)."^^rdf:XMLLiteral .
+
+Fuse rdf:type rdfs:Class ;
+	rdfs:subClassOf Switch ;
+	rdfs:label "Fuse"@en ;
+	rdfs:comment "An overcurrent protective device with a circuit opening fusible part that is heated and severed by the passage of overcurrent through it. A fuse is considered a switching device because it breaks current."^^rdf:XMLLiteral .
+
+DisconnectingCircuitBreaker rdf:type rdfs:Class ;
+	rdfs:subClassOf Breaker ;
+	rdfs:label "DisconnectingCircuitBreaker"@en ;
+	rdfs:comment "A circuit breaking device including disconnecting function, eliminating the need for separate disconnectors."^^rdf:XMLLiteral .
+
+OperationalLimit rdf:type rdfs:Class ;
+	rdfs:subClassOf IdentifiedObject ;
+	rdfs:label "OperationalLimit"@en ;
+	rdfs:comment "A value and normal value associated with a specific kind of limit. \nThe sub class value and normalValue attributes vary inversely to the associated OperationalLimitType.acceptableDuration (acceptableDuration for short).  \nIf a particular piece of equipment has multiple operational limits of the same kind (apparent power, current, etc.), the limit with the greatest acceptableDuration shall have the smallest limit value and the limit with the smallest acceptableDuration shall have the largest limit value.  Note: A large current can only be allowed to flow through a piece of equipment for a short duration without causing damage, but a lesser current can be allowed to flow for a longer duration. "^^rdf:XMLLiteral .
+
+EquivalentEquipment rdf:type rdfs:Class ;
+	rdfs:subClassOf ConductingEquipment ;
+	rdfs:label "EquivalentEquipment"@en ;
+	rdfs:comment "The class represents equivalent objects that are the result of a network reduction. The class is the base for equivalent objects of different types."^^rdf:XMLLiteral .
+
+VoltageLimit rdf:type rdfs:Class ;
+	rdfs:subClassOf OperationalLimit ;
+	rdfs:label "VoltageLimit"@en ;
+	rdfs:comment "Operational limit applied to voltage.\nThe use of operational VoltageLimit is preferred instead of limits defined at VoltageLevel. The operational VoltageLimits are used, if present."^^rdf:XMLLiteral .
+VoltageLimit.value rdf:type rdfs:Property ;
+	rdfs:label "value"@en ;
+	rdfs:domain VoltageLimit ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Limit on voltage. High or low limit nature of the limit depends upon the properties of the operational limit type. The attribute shall be a positive value or zero."^^rdf:XMLLiteral .
+
+Switch rdf:type rdfs:Class ;
+	rdfs:subClassOf ConductingEquipment ;
+	rdfs:label "Switch"@en ;
+	rdfs:comment "A generic device designed to close, or open, or both, one or more electric circuits.  All switches are two terminal devices including grounding switches. The ACDCTerminal.connected at the two sides of the switch shall not be considered for assessing switch connectivity, i.e. only Switch.open, .normalOpen and .locked are relevant."^^rdf:XMLLiteral .
+Switch.locked rdf:type rdfs:Property ;
+	rdfs:label "locked"@en ;
+	rdfs:domain Switch ;
+	rdfs:range xsd:boolean ;
+	rdfs:comment "If true, the switch is locked. The resulting switch state is a combination of locked and Switch.open attributes as follows:\n<ul>\n	<li>locked=true and Switch.open=true. The resulting state is open and locked;</li>\n	<li>locked=false and Switch.open=true. The resulting state is open;</li>\n	<li>locked=false and Switch.open=false. The resulting state is closed.</li>\n</ul>"^^rdf:XMLLiteral .
+Switch.open rdf:type rdfs:Property ;
+	rdfs:label "open"@en ;
+	rdfs:domain Switch ;
+	rdfs:range xsd:boolean ;
+	rdfs:comment "The attribute tells if the switch is considered open when used as input to topology processing."^^rdf:XMLLiteral .
+
+StaticVarCompensator rdf:type rdfs:Class ;
+	rdfs:subClassOf RegulatingCondEq ;
+	rdfs:label "StaticVarCompensator"@en ;
+	rdfs:comment "A facility for providing variable and controllable shunt reactive power. The SVC typically consists of a stepdown transformer, filter, thyristor-controlled reactor, and thyristor-switched capacitor arms.\n\nThe SVC may operate in fixed MVar output mode or in voltage control mode. When in voltage control mode, the output of the SVC will be proportional to the deviation of voltage at the controlled bus from the voltage setpoint.  The SVC characteristic slope defines the proportion.  If the voltage at the controlled bus is equal to the voltage setpoint, the SVC MVar output is zero."^^rdf:XMLLiteral .
+StaticVarCompensator.q rdf:type rdfs:Property ;
+	rdfs:label "q"@en ;
+	rdfs:domain StaticVarCompensator ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node.\nStarting value for a steady state solution."^^rdf:XMLLiteral .
+
+DCBaseTerminal rdf:type rdfs:Class ;
+	rdfs:subClassOf ACDCTerminal ;
+	rdfs:label "DCBaseTerminal"@en ;
+	rdfs:comment "An electrical connection point at a piece of DC conducting equipment. DC terminals are connected at one physical DC node that may have multiple DC terminals connected. A DC node is similar to an AC connectivity node. The model requires that DC connections are distinct from AC connections. "^^rdf:XMLLiteral .
+
+ThermalGeneratingUnit rdf:type rdfs:Class ;
+	rdfs:subClassOf GeneratingUnit ;
+	rdfs:label "ThermalGeneratingUnit"@en ;
+	rdfs:comment "A generating unit whose prime mover could be a steam turbine, combustion turbine, or diesel engine."^^rdf:XMLLiteral .
+
+Jumper rdf:type rdfs:Class ;
+	rdfs:subClassOf Switch ;
+	rdfs:label "Jumper"@en ;
+	rdfs:comment "A short section of conductor with negligible impedance which can be manually removed and replaced if the circuit is de-energized. Note that zero-impedance branches can potentially be modelled by other equipment types."^^rdf:XMLLiteral .
+
+HydroGeneratingUnit rdf:type rdfs:Class ;
+	rdfs:subClassOf GeneratingUnit ;
+	rdfs:label "HydroGeneratingUnit"@en ;
+	rdfs:comment "A generating unit whose prime mover is a hydraulic turbine (e.g., Francis, Pelton, Kaplan)."^^rdf:XMLLiteral .
+
+LoadBreakSwitch rdf:type rdfs:Class ;
+	rdfs:subClassOf ProtectedSwitch ;
+	rdfs:label "LoadBreakSwitch"@en ;
+	rdfs:comment "A mechanical switching device capable of making, carrying, and breaking currents under normal operating conditions."^^rdf:XMLLiteral .
+
+VsConverter rdf:type rdfs:Class ;
+	rdfs:subClassOf ACDCConverter ;
+	rdfs:label "VsConverter"@en ;
+	rdfs:comment "DC side of the voltage source converter (VSC)."^^rdf:XMLLiteral .
+VsConverter.droop rdf:type rdfs:Property ;
+	rdfs:label "droop"@en ;
+	rdfs:domain VsConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Droop constant. The pu value is obtained as D [kV/MW] x Sb / Ubdc. The attribute shall be a positive value."^^rdf:XMLLiteral .
+VsConverter.droopCompensation rdf:type rdfs:Property ;
+	rdfs:label "droopCompensation"@en ;
+	rdfs:domain VsConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Compensation constant. Used to compensate for voltage drop when controlling voltage at a distant bus. The attribute shall be a positive value."^^rdf:XMLLiteral .
+VsConverter.pPccControl rdf:type rdfs:Property ;
+	rdfs:label "pPccControl"@en ;
+	rdfs:domain VsConverter ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Kind of control of real power and/or DC voltage."^^rdf:XMLLiteral .
+VsConverter.qPccControl rdf:type rdfs:Property ;
+	rdfs:label "qPccControl"@en ;
+	rdfs:domain VsConverter ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Kind of reactive power control."^^rdf:XMLLiteral .
+VsConverter.qShare rdf:type rdfs:Property ;
+	rdfs:label "qShare"@en ;
+	rdfs:domain VsConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Reactive power sharing factor among parallel converters on Uac control. The attribute shall be a positive value or zero."^^rdf:XMLLiteral .
+VsConverter.targetPhasePcc rdf:type rdfs:Property ;
+	rdfs:label "targetPhasePcc"@en ;
+	rdfs:domain VsConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Phase target at AC side, at point of common coupling. The attribute shall be a positive value."^^rdf:XMLLiteral .
+VsConverter.targetPowerFactorPcc rdf:type rdfs:Property ;
+	rdfs:label "targetPowerFactorPcc"@en ;
+	rdfs:domain VsConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Power factor target at the AC side, at point of common coupling. The attribute shall be a positive value."^^rdf:XMLLiteral .
+VsConverter.targetPWMfactor rdf:type rdfs:Property ;
+	rdfs:label "targetPWMfactor"@en ;
+	rdfs:domain VsConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Magnitude of pulse-modulation factor. The attribute shall be a positive value."^^rdf:XMLLiteral .
+VsConverter.targetQpcc rdf:type rdfs:Property ;
+	rdfs:label "targetQpcc"@en ;
+	rdfs:domain VsConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Reactive power injection target in AC grid, at point of common coupling.  Load sign convention is used, i.e. positive sign means flow out from a node."^^rdf:XMLLiteral .
+VsConverter.targetUpcc rdf:type rdfs:Property ;
+	rdfs:label "targetUpcc"@en ;
+	rdfs:domain VsConverter ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Voltage target in AC grid, at point of common coupling. The attribute shall be a positive value."^^rdf:XMLLiteral .
+
+EquivalentInjection rdf:type rdfs:Class ;
+	rdfs:subClassOf EquivalentEquipment ;
+	rdfs:label "EquivalentInjection"@en ;
+	rdfs:comment "This class represents equivalent injections (generation or load).  Voltage regulation is allowed only at the point of connection."^^rdf:XMLLiteral .
+EquivalentInjection.p rdf:type rdfs:Property ;
+	rdfs:label "p"@en ;
+	rdfs:domain EquivalentInjection ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Equivalent active power injection. Load sign convention is used, i.e. positive sign means flow out from a node.\nStarting value for steady state solutions."^^rdf:XMLLiteral .
+EquivalentInjection.q rdf:type rdfs:Property ;
+	rdfs:label "q"@en ;
+	rdfs:domain EquivalentInjection ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Equivalent reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node.\nStarting value for steady state solutions."^^rdf:XMLLiteral .
+EquivalentInjection.regulationStatus rdf:type rdfs:Property ;
+	rdfs:label "regulationStatus"@en ;
+	rdfs:domain EquivalentInjection ;
+	rdfs:range xsd:boolean ;
+	rdfs:comment "Specifies the regulation status of the EquivalentInjection.  True is regulating.  False is not regulating."^^rdf:XMLLiteral .
+EquivalentInjection.regulationTarget rdf:type rdfs:Property ;
+	rdfs:label "regulationTarget"@en ;
+	rdfs:domain EquivalentInjection ;
+	rdfs:range xsd:double ;
+	rdfs:comment "The target voltage for voltage regulation. The attribute shall be a positive value."^^rdf:XMLLiteral .
+
+Equipment rdf:type rdfs:Class ;
+	rdfs:subClassOf PowerSystemResource ;
+	rdfs:label "Equipment"@en ;
+	rdfs:comment "The parts of a power system that are physical devices, electronic or mechanical."^^rdf:XMLLiteral .
+Equipment.inService rdf:type rdfs:Property ;
+	rdfs:label "inService"@en ;
+	rdfs:domain Equipment ;
+	rdfs:range xsd:boolean ;
+	rdfs:comment "Specifies the availability of the equipment. True means the equipment is available for topology processing, which determines if the equipment is energized or not. False means that the equipment is treated by network applications as if it is not in the model."^^rdf:XMLLiteral .
+
+RegulatingCondEq rdf:type rdfs:Class ;
+	rdfs:subClassOf EnergyConnection ;
+	rdfs:label "RegulatingCondEq"@en ;
+	rdfs:comment "A type of conducting equipment that can regulate a quantity (i.e. voltage or flow) at a specific point in the network. "^^rdf:XMLLiteral .
+RegulatingCondEq.controlEnabled rdf:type rdfs:Property ;
+	rdfs:label "controlEnabled"@en ;
+	rdfs:domain RegulatingCondEq ;
+	rdfs:range xsd:boolean ;
+	rdfs:comment "Specifies the regulation status of the equipment.  True is regulating, false is not regulating."^^rdf:XMLLiteral .
+
+PowerElectronicsConnection rdf:type rdfs:Class ;
+	rdfs:subClassOf RegulatingCondEq ;
+	rdfs:label "PowerElectronicsConnection"@en ;
+	rdfs:comment "A connection to the AC network for energy production or consumption that uses power electronics rather than rotating machines."^^rdf:XMLLiteral .
+PowerElectronicsConnection.p rdf:type rdfs:Property ;
+	rdfs:label "p"@en ;
+	rdfs:domain PowerElectronicsConnection ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Active power injection. Load sign convention is used, i.e. positive sign means flow out from a node.\nStarting value for a steady state solution."^^rdf:XMLLiteral .
+PowerElectronicsConnection.q rdf:type rdfs:Property ;
+	rdfs:label "q"@en ;
+	rdfs:domain PowerElectronicsConnection ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node.\nStarting value for a steady state solution."^^rdf:XMLLiteral .
+
+PhaseTapChangerNonLinear rdf:type rdfs:Class ;
+	rdfs:subClassOf PhaseTapChanger ;
+	rdfs:label "PhaseTapChangerNonLinear"@en ;
+	rdfs:comment "The non-linear phase tap changer describes the non-linear behaviour of a phase tap changer. This is a base class for the symmetrical and asymmetrical phase tap changer models. The details of these models can be found in IEC 61970-301."^^rdf:XMLLiteral .
+
+RatioTapChanger rdf:type rdfs:Class ;
+	rdfs:subClassOf TapChanger ;
+	rdfs:label "RatioTapChanger"@en ;
+	rdfs:comment "A tap changer that changes the voltage ratio impacting the voltage magnitude but not the phase angle across the transformer.\n\nAngle sign convention (general): Positive value indicates a positive phase shift from the winding where the tap is located to the other winding (for a two-winding transformer)."^^rdf:XMLLiteral .
+
+EnergyConnection rdf:type rdfs:Class ;
+	rdfs:subClassOf ConductingEquipment ;
+	rdfs:label "EnergyConnection"@en ;
+	rdfs:comment "A connection of energy generation or consumption on the power system model."^^rdf:XMLLiteral .
+
+IdentifiedObject rdf:type rdfs:Class ;
+	rdfs:label "IdentifiedObject"@en ;
+	rdfs:comment "This is a root class to provide common identification for all classes needing identification and naming attributes."^^rdf:XMLLiteral .
+IdentifiedObject.mRID rdf:type rdfs:Property ;
+	rdfs:label "mRID"@en ;
+	rdfs:domain IdentifiedObject ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements."^^rdf:XMLLiteral .
+
+NonlinearShuntCompensator rdf:type rdfs:Class ;
+	rdfs:subClassOf ShuntCompensator ;
+	rdfs:label "NonlinearShuntCompensator"@en ;
+	rdfs:comment "A non linear shunt compensator has bank or section admittance values that differ. The attributes g, b, g0 and b0 of the associated NonlinearShuntCompensatorPoint describe the total conductance and admittance of a NonlinearShuntCompensatorPoint at a section number specified by NonlinearShuntCompensatorPoint.sectionNumber."^^rdf:XMLLiteral .
+
+ACDCConverterDCTerminal rdf:type rdfs:Class ;
+	rdfs:subClassOf DCBaseTerminal ;
+	rdfs:label "ACDCConverterDCTerminal"@en ;
+	rdfs:comment "A DC electrical connection point at the AC/DC converter. The AC/DC converter is electrically connected also to the AC side. The AC connection is inherited from the AC conducting equipment in the same way as any other AC equipment. The AC/DC converter DC terminal is separate from generic DC terminal to restrict the connection with the AC side to AC/DC converter and so that no other DC conducting equipment can be connected to the AC side."^^rdf:XMLLiteral .
+
+ShuntCompensator rdf:type rdfs:Class ;
+	rdfs:subClassOf RegulatingCondEq ;
+	rdfs:label "ShuntCompensator"@en ;
+	rdfs:comment "A shunt capacitor or reactor or switchable bank of shunt capacitors or reactors. A section of a shunt compensator is an individual capacitor or reactor. A negative value for bPerSection indicates that the compensator is a reactor. ShuntCompensator is a single terminal device.  Ground is implied."^^rdf:XMLLiteral .
+ShuntCompensator.sections rdf:type rdfs:Property ;
+	rdfs:label "sections"@en ;
+	rdfs:domain ShuntCompensator ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Shunt compensator sections in use. Starting value for steady state solution. The attribute shall be a positive value or zero. Non integer values are allowed to support continuous variables. The reasons for continuous value are to support study cases where no discrete shunt compensators has yet been designed, a solutions where a narrow voltage band force the sections to oscillate or accommodate for a continuous solution as input. \nFor LinearShuntConpensator the value shall be between zero and ShuntCompensator.maximumSections. At value zero the shunt compensator conductance and admittance is zero. Linear interpolation of conductance and admittance between the previous and next integer section is applied in case of non-integer values.\nFor NonlinearShuntCompensator-s shall only be set to one of the NonlinearShuntCompenstorPoint.sectionNumber. There is no interpolation between NonlinearShuntCompenstorPoint-s."^^rdf:XMLLiteral .
+
+SolarGeneratingUnit rdf:type rdfs:Class ;
+	rdfs:subClassOf GeneratingUnit ;
+	rdfs:label "SolarGeneratingUnit"@en ;
+	rdfs:comment "A solar thermal generating unit, connected to the grid by means of a rotating machine.  This class does not represent photovoltaic (PV) generation."^^rdf:XMLLiteral .
+
+BatteryUnit rdf:type rdfs:Class ;
+	rdfs:subClassOf PowerElectronicsUnit ;
+	rdfs:label "BatteryUnit"@en ;
+	rdfs:comment "An electrochemical energy storage device."^^rdf:XMLLiteral .
+BatteryUnit.batteryState rdf:type rdfs:Property ;
+	rdfs:label "batteryState"@en ;
+	rdfs:domain BatteryUnit ;
+	rdfs:range xsd:string ;
+	rdfs:comment "The current state of the battery (charging, full, etc.)."^^rdf:XMLLiteral .
+BatteryUnit.storedE rdf:type rdfs:Property ;
+	rdfs:label "storedE"@en ;
+	rdfs:domain BatteryUnit ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Amount of energy currently stored. The attribute shall be a positive value or zero and lower than BatteryUnit.ratedE."^^rdf:XMLLiteral .
+
+ConductingEquipment rdf:type rdfs:Class ;
+	rdfs:subClassOf Equipment ;
+	rdfs:label "ConductingEquipment"@en ;
+	rdfs:comment "The parts of the AC power system that are designed to carry current or that are conductively connected through terminals."^^rdf:XMLLiteral .
+
+PhaseTapChangerTabular rdf:type rdfs:Class ;
+	rdfs:subClassOf PhaseTapChanger ;
+	rdfs:label "PhaseTapChangerTabular"@en ;
+	rdfs:comment "Describes a tap changer with a table defining the relation between the tap step and the phase angle difference across the transformer. "^^rdf:XMLLiteral .
+
+LinearShuntCompensator rdf:type rdfs:Class ;
+	rdfs:subClassOf ShuntCompensator ;
+	rdfs:label "LinearShuntCompensator"@en ;
+	rdfs:comment "A linear shunt compensator has banks or sections with equal admittance values."^^rdf:XMLLiteral .
+
+ApparentPowerLimit rdf:type rdfs:Class ;
+	rdfs:subClassOf OperationalLimit ;
+	rdfs:label "ApparentPowerLimit"@en ;
+	rdfs:comment "Apparent power limit."^^rdf:XMLLiteral .
+ApparentPowerLimit.value rdf:type rdfs:Property ;
+	rdfs:label "value"@en ;
+	rdfs:domain ApparentPowerLimit ;
+	rdfs:range xsd:double ;
+	rdfs:comment "The apparent power limit. The attribute shall be a positive value or zero."^^rdf:XMLLiteral .
+
+Disconnector rdf:type rdfs:Class ;
+	rdfs:subClassOf Switch ;
+	rdfs:label "Disconnector"@en ;
+	rdfs:comment "A manually operated or motor operated mechanical switching device used for changing the connections in a circuit, or for isolating a circuit or equipment from a source of power. It is required to open or close circuits when negligible current is broken or made. "^^rdf:XMLLiteral .
+
+WindGeneratingUnit rdf:type rdfs:Class ;
+	rdfs:subClassOf GeneratingUnit ;
+	rdfs:label "WindGeneratingUnit"@en ;
+	rdfs:comment "A wind driven generating unit, connected to the grid by means of a rotating machine.  May be used to represent a single turbine or an aggregation.    "^^rdf:XMLLiteral .
+
+PhaseTapChangerLinear rdf:type rdfs:Class ;
+	rdfs:subClassOf PhaseTapChanger ;
+	rdfs:label "PhaseTapChangerLinear"@en ;
+	rdfs:comment "Describes a tap changer with a linear relation between the tap step and the phase angle difference across the transformer. This is a mathematical model that is an approximation of a real phase tap changer.\nThe phase angle is computed as stepPhaseShiftIncrement times the tap position.\nThe voltage magnitude of both sides is the same."^^rdf:XMLLiteral .
+
+GroundDisconnector rdf:type rdfs:Class ;
+	rdfs:subClassOf Switch ;
+	rdfs:label "GroundDisconnector"@en ;
+	rdfs:comment "A manually operated or motor operated mechanical switching device used for isolating a circuit or equipment from ground."^^rdf:XMLLiteral .
+
+SynchronousMachine rdf:type rdfs:Class ;
+	rdfs:subClassOf RotatingMachine ;
+	rdfs:label "SynchronousMachine"@en ;
+	rdfs:comment "An electromechanical device that operates with shaft rotating synchronously with the network. It is a single machine operating either as a generator or synchronous condenser or pump."^^rdf:XMLLiteral .
+SynchronousMachine.operatingMode rdf:type rdfs:Property ;
+	rdfs:label "operatingMode"@en ;
+	rdfs:domain SynchronousMachine ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Current mode of operation."^^rdf:XMLLiteral .
+SynchronousMachine.referencePriority rdf:type rdfs:Property ;
+	rdfs:label "referencePriority"@en ;
+	rdfs:domain SynchronousMachine ;
+	rdfs:range xsd:integer ;
+	rdfs:comment "Priority of unit for use as powerflow voltage phase angle reference bus selection. 0 = don t care (default) 1 = highest priority. 2 is less than 1 and so on."^^rdf:XMLLiteral .
+
+RegulatingControl rdf:type rdfs:Class ;
+	rdfs:subClassOf PowerSystemResource ;
+	rdfs:label "RegulatingControl"@en ;
+	rdfs:comment "Specifies a set of equipment that works together to control a power system quantity such as voltage or flow. \nRemote bus voltage control is possible by specifying the controlled terminal located at some place remote from the controlling equipment.\nThe specified terminal shall be associated with the connectivity node of the controlled point.  The most specific subtype of RegulatingControl shall be used in case such equipment participate in the control, e.g. TapChangerControl for tap changers.\nFor flow control, load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment.\nThe attribute minAllowedTargetValue and maxAllowedTargetValue are required in the following cases:\n- For a power generating module operated in power factor control mode to specify maximum and minimum power factor values;\n- Whenever it is necessary to have an off center target voltage for the tap changer regulator. For instance, due to long cables to off shore wind farms and the need to have a simpler setup at the off shore transformer platform, the voltage is controlled from the land at the connection point for the off shore wind farm. Since there usually is a voltage rise along the cable, there is typical and overvoltage of up 3-4 kV compared to the on shore station. Thus in normal operation the tap changer on the on shore station is operated with a target set point, which is in the lower parts of the dead band.\nThe attributes minAllowedTargetValue and maxAllowedTargetValue are not related to the attribute targetDeadband and thus they are not treated as an alternative of the targetDeadband. They are needed due to limitations in the local substation controller. The attribute targetDeadband is used to prevent the power flow from move the tap position in circles (hunting) that is to be used regardless of the attributes minAllowedTargetValue and maxAllowedTargetValue."^^rdf:XMLLiteral .
+RegulatingControl.discrete rdf:type rdfs:Property ;
+	rdfs:label "discrete"@en ;
+	rdfs:domain RegulatingControl ;
+	rdfs:range xsd:boolean ;
+	rdfs:comment "The regulation is performed in a discrete mode. This applies to equipment with discrete controls, e.g. tap changers and shunt compensators."^^rdf:XMLLiteral .
+RegulatingControl.enabled rdf:type rdfs:Property ;
+	rdfs:label "enabled"@en ;
+	rdfs:domain RegulatingControl ;
+	rdfs:range xsd:boolean ;
+	rdfs:comment "The flag tells if regulation is enabled."^^rdf:XMLLiteral .
+RegulatingControl.maxAllowedTargetValue rdf:type rdfs:Property ;
+	rdfs:label "maxAllowedTargetValue"@en ;
+	rdfs:domain RegulatingControl ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Maximum allowed target value (RegulatingControl.targetValue)."^^rdf:XMLLiteral .
+RegulatingControl.minAllowedTargetValue rdf:type rdfs:Property ;
+	rdfs:label "minAllowedTargetValue"@en ;
+	rdfs:domain RegulatingControl ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Minimum allowed target value (RegulatingControl.targetValue)."^^rdf:XMLLiteral .
+RegulatingControl.targetDeadband rdf:type rdfs:Property ;
+	rdfs:label "targetDeadband"@en ;
+	rdfs:domain RegulatingControl ;
+	rdfs:range xsd:double ;
+	rdfs:comment "This is a deadband used with discrete control to avoid excessive update of controls like tap changers and shunt compensator banks while regulating.  The units of those appropriate for the mode. The attribute shall be a positive value or zero. If RegulatingControl.discrete is set to \"false\", the RegulatingControl.targetDeadband is to be ignored.\nNote that for instance, if the targetValue is 100 kV and the targetDeadband is 2 kV the range is from 99 to 101 kV."^^rdf:XMLLiteral .
+RegulatingControl.targetValue rdf:type rdfs:Property ;
+	rdfs:label "targetValue"@en ;
+	rdfs:domain RegulatingControl ;
+	rdfs:range xsd:double ;
+	rdfs:comment "The target value specified for case input.   This value can be used for the target value without the use of schedules. The value has the units appropriate to the mode attribute."^^rdf:XMLLiteral .
+RegulatingControl.targetValueUnitMultiplier rdf:type rdfs:Property ;
+	rdfs:label "targetValueUnitMultiplier"@en ;
+	rdfs:domain RegulatingControl ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Specify the multiplier for used for the targetValue."^^rdf:XMLLiteral .
+
+PowerElectronicsUnit rdf:type rdfs:Class ;
+	rdfs:subClassOf Equipment ;
+	rdfs:label "PowerElectronicsUnit"@en ;
+	rdfs:comment "A generating unit or battery or aggregation that connects to the AC network using power electronics rather than rotating machines."^^rdf:XMLLiteral .
+
+PowerSystemResource rdf:type rdfs:Class ;
+	rdfs:subClassOf IdentifiedObject ;
+	rdfs:label "PowerSystemResource"@en ;
+	rdfs:comment "A power system resource (PSR) can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated."^^rdf:XMLLiteral .
+
+ExternalNetworkInjection rdf:type rdfs:Class ;
+	rdfs:subClassOf RegulatingCondEq ;
+	rdfs:label "ExternalNetworkInjection"@en ;
+	rdfs:comment "This class represents the external network and it is used for IEC 60909 calculations."^^rdf:XMLLiteral .
+ExternalNetworkInjection.p rdf:type rdfs:Property ;
+	rdfs:label "p"@en ;
+	rdfs:domain ExternalNetworkInjection ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Active power injection. Load sign convention is used, i.e. positive sign means flow out from a node.\nStarting value for steady state solutions."^^rdf:XMLLiteral .
+ExternalNetworkInjection.q rdf:type rdfs:Property ;
+	rdfs:label "q"@en ;
+	rdfs:domain ExternalNetworkInjection ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node.\nStarting value for steady state solutions."^^rdf:XMLLiteral .
+ExternalNetworkInjection.referencePriority rdf:type rdfs:Property ;
+	rdfs:label "referencePriority"@en ;
+	rdfs:domain ExternalNetworkInjection ;
+	rdfs:range xsd:integer ;
+	rdfs:comment "Priority of unit for use as powerflow voltage phase angle reference bus selection. 0 = don t care (default) 1 = highest priority. 2 is less than 1 and so on."^^rdf:XMLLiteral .
+
+Breaker rdf:type rdfs:Class ;
+	rdfs:subClassOf ProtectedSwitch ;
+	rdfs:label "Breaker"@en ;
+	rdfs:comment "A mechanical switching device capable of making, carrying, and breaking currents under normal circuit conditions and also making, carrying for a specified time, and breaking currents under specified abnormal circuit conditions e.g.  those of short circuit."^^rdf:XMLLiteral .
+
+ProtectedSwitch rdf:type rdfs:Class ;
+	rdfs:subClassOf Switch ;
+	rdfs:label "ProtectedSwitch"@en ;
+	rdfs:comment "A ProtectedSwitch is a switching device that can be operated by ProtectionEquipment."^^rdf:XMLLiteral .
+
+ActivePowerLimit rdf:type rdfs:Class ;
+	rdfs:subClassOf OperationalLimit ;
+	rdfs:label "ActivePowerLimit"@en ;
+	rdfs:comment "Limit on active power flow."^^rdf:XMLLiteral .
+ActivePowerLimit.value rdf:type rdfs:Property ;
+	rdfs:label "value"@en ;
+	rdfs:domain ActivePowerLimit ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Value of active power limit. The attribute shall be a positive value or zero."^^rdf:XMLLiteral .
+
+PhaseTapChanger rdf:type rdfs:Class ;
+	rdfs:subClassOf TapChanger ;
+	rdfs:label "PhaseTapChanger"@en ;
+	rdfs:comment "A transformer phase shifting tap model that controls the phase angle difference across the power transformer and potentially the active power flow through the power transformer.  This phase tap model may also impact the voltage magnitude."^^rdf:XMLLiteral .
+
+TapChangerControl rdf:type rdfs:Class ;
+	rdfs:subClassOf RegulatingControl ;
+	rdfs:label "TapChangerControl"@en ;
+	rdfs:comment "Describes behaviour specific to tap changers, e.g. how the voltage at the end of a line varies with the load level and compensation of the voltage drop by tap adjustment."^^rdf:XMLLiteral .
+
+CurrentLimit rdf:type rdfs:Class ;
+	rdfs:subClassOf OperationalLimit ;
+	rdfs:label "CurrentLimit"@en ;
+	rdfs:comment "Operational limit on current. "^^rdf:XMLLiteral .
+CurrentLimit.value rdf:type rdfs:Property ;
+	rdfs:label "value"@en ;
+	rdfs:domain CurrentLimit ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Limit on current flow. The attribute shall be a positive value or zero."^^rdf:XMLLiteral .

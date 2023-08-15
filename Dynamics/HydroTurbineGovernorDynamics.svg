@@ -1,0 +1,1510 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg151008"
+   version="1.1"
+   viewBox="0 0 1050 617"
+   height="16.32cm"
+   width="27.78cm">
+  <metadata
+     id="metadata151014">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs151012" />
+  <desc
+     id="desc149930">Created with Enterprise Architect (Build: 1627) 1</desc>
+  <g
+     id="g149934"
+     style="fill:#FFFFFF;fill-opacity:1.00;">
+    <rect
+       id="rect149932"
+       shape-rendering="auto"
+       height="617"
+       width="1050"
+       y="0"
+       x="0" />
+  </g>
+  <g
+     id="g149938"
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+    <path
+       id="path149936"
+       shape-rendering="auto"
+       d="M 6 6 L 6 611 L 1044 611 L 1044 6 L 6 6" />
+  </g>
+  <g
+     id="g149942"
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#FFFFFF;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <polygon
+       id="polygon149940"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="6 24 204 24 217 10 217 6 6 6 6 24" />
+  </g>
+  <g
+     id="g149946"
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text149944"
+       transform="rotate(-0.00 11.00 18.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="191"
+       y="18.00"
+       x="11.00">class HydroTurbineGovernorDynamics</text>
+  </g>
+  <g
+     id="g150470"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect150468"
+       shape-rendering="auto"
+       rx="0.00"
+       height="43"
+       width="186"
+       y="57"
+       x="51" />
+  </g>
+  <g
+     id="g150476"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150472"
+       transform="rotate(-0.00 112.00 69.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="122"
+       y="69.00"
+       x="112.00">RotatingMachineDynamics</text>
+    <text
+       id="text150474"
+       transform="rotate(-0.00 66.00 83.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="155"
+       y="83.00"
+       x="66.00">SynchronousMachineDynamics</text>
+  </g>
+  <g
+     id="g150480"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect150478"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="83"
+       y="370"
+       x="105" />
+  </g>
+  <g
+     id="g150484"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150482"
+       transform="rotate(-0.00 119.00 388.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="55"
+       y="388.00"
+       x="119.00">GovHydro1</text>
+  </g>
+  <g
+     id="g150488"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect150486"
+       shape-rendering="auto"
+       rx="0.00"
+       height="36"
+       width="310"
+       y="230"
+       x="235" />
+  </g>
+  <g
+     id="g150492"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150490"
+       transform="rotate(-0.00 324.00 248.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="132"
+       y="248.00"
+       x="324.00">TurbineGovernorDynamics</text>
+  </g>
+  <g
+     id="g150496"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect150494"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="120"
+       y="290"
+       x="45" />
+  </g>
+  <g
+     id="g150500"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150498"
+       transform="rotate(-0.00 65.00 308.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="79"
+       y="308.00"
+       x="65.00">GovHydroIEEE0</text>
+  </g>
+  <g
+     id="g150504"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect150502"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="78"
+       y="410"
+       x="125" />
+  </g>
+  <g
+     id="g150508"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150506"
+       transform="rotate(-0.00 136.00 428.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="55"
+       y="428.00"
+       x="136.00">GovHydro2</text>
+  </g>
+  <g
+     id="g150512"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect150510"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="80"
+       y="450"
+       x="155" />
+  </g>
+  <g
+     id="g150516"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150514"
+       transform="rotate(-0.00 167.00 468.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="55"
+       y="468.00"
+       x="167.00">GovHydro3</text>
+  </g>
+  <g
+     id="g150520"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect150518"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="80"
+       y="491"
+       x="195" />
+  </g>
+  <g
+     id="g150524"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150522"
+       transform="rotate(-0.00 207.00 509.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="55"
+       y="509.00"
+       x="207.00">GovHydro4</text>
+  </g>
+  <g
+     id="g150528"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect150526"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="78"
+       y="420"
+       x="515" />
+  </g>
+  <g
+     id="g150532"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150530"
+       transform="rotate(-0.00 526.00 438.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="56"
+       y="438.00"
+       x="526.00">GovHydroR</text>
+  </g>
+  <g
+     id="g150536"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect150534"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="92"
+       y="460"
+       x="265" />
+  </g>
+  <g
+     id="g150540"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150538"
+       transform="rotate(-0.00 279.00 478.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="63"
+       y="478.00"
+       x="279.00">GovHydroDD</text>
+  </g>
+  <g
+     id="g150544"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect150542"
+       shape-rendering="auto"
+       rx="0.00"
+       height="33"
+       width="88"
+       y="460"
+       x="495" />
+  </g>
+  <g
+     id="g150548"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150546"
+       transform="rotate(-0.00 506.00 478.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="66"
+       y="478.00"
+       x="506.00">GovHydroPID</text>
+  </g>
+  <g
+     id="g150552"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect150550"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="90"
+       y="500"
+       x="435" />
+  </g>
+  <g
+     id="g150556"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150554"
+       transform="rotate(-0.00 444.00 518.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="72"
+       y="518.00"
+       x="444.00">GovHydroPID2</text>
+  </g>
+  <g
+     id="g150560"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect150558"
+       shape-rendering="auto"
+       rx="0.00"
+       height="30"
+       width="97"
+       y="380"
+       x="525" />
+  </g>
+  <g
+     id="g150564"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150562"
+       transform="rotate(-0.00 536.00 398.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="75"
+       y="398.00"
+       x="536.00">GovHydroWPID</text>
+  </g>
+  <g
+     id="g150568"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect150566"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="90"
+       y="420"
+       x="385" />
+  </g>
+  <g
+     id="g150572"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150570"
+       transform="rotate(-0.00 394.00 438.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="72"
+       y="438.00"
+       x="394.00">GovHydroWEH</text>
+  </g>
+  <g
+     id="g150576"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect150574"
+       shape-rendering="auto"
+       rx="0.00"
+       height="40"
+       width="143"
+       y="50"
+       x="285" />
+  </g>
+  <g
+     id="g150580"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150578"
+       transform="rotate(-0.00 318.00 68.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="77"
+       y="68.00"
+       x="318.00">IdentifiedObject</text>
+  </g>
+  <g
+     id="g150584"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect150582"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="107"
+       y="500"
+       x="305" />
+  </g>
+  <g
+     id="g150588"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150586"
+       transform="rotate(-0.00 315.00 518.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="86"
+       y="518.00"
+       x="315.00">GovHydroFrancis</text>
+  </g>
+  <g
+     id="g150592"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect150590"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="101"
+       y="460"
+       x="375" />
+  </g>
+  <g
+     id="g150596"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150594"
+       transform="rotate(-0.00 385.00 478.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="80"
+       y="478.00"
+       x="385.00">GovHydroPelton</text>
+  </g>
+  <g
+     id="g150600"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect150598"
+       shape-rendering="auto"
+       rx="0.00"
+       height="41"
+       width="175"
+       y="230"
+       x="35" />
+  </g>
+  <g
+     id="g150604"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150602"
+       transform="rotate(-0.00 51.00 248.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="143"
+       y="248.00"
+       x="51.00">TurbineGovernorUserDefined</text>
+  </g>
+  <g
+     id="g150608"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect150606"
+       shape-rendering="auto"
+       rx="0.00"
+       height="60"
+       width="174"
+       y="120"
+       x="265" />
+  </g>
+  <g
+     id="g150612"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150610"
+       transform="rotate(-0.00 292.00 138.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="119"
+       y="138.00"
+       x="292.00">DynamicsFunctionBlock</text>
+  </g>
+  <g
+     id="g150616"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+    <path
+       id="path150614"
+       shape-rendering="auto"
+       d="M 265 145 L 438 145" />
+  </g>
+  <g
+     id="g150622"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150618"
+       transform="rotate(-0.00 270.00 158.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="9"
+       y="158.00"
+       x="270.00">+ </text>
+    <text
+       id="text150620"
+       transform="rotate(-0.00 287.00 158.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="83"
+       y="158.00"
+       x="287.00">enabled: Boolean</text>
+  </g>
+  <g
+     id="g150626"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+    <rect
+       id="rect150624"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="136"
+       y="330"
+       x="45" />
+  </g>
+  <g
+     id="g150630"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150628"
+       transform="rotate(-0.00 73.00 348.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="79"
+       y="348.00"
+       x="73.00">GovHydroIEEE2</text>
+  </g>
+  <g
+     id="g150634"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect150632"
+       shape-rendering="auto"
+       rx="0.00"
+       height="37"
+       width="151"
+       y="370"
+       x="635" />
+  </g>
+  <g
+     id="g150638"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150636"
+       transform="rotate(-0.00 648.00 388.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="124"
+       y="388.00"
+       x="648.00">HydroGovernorDynamics</text>
+  </g>
+  <g
+     id="g150642"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect150640"
+       shape-rendering="auto"
+       rx="0.00"
+       height="30"
+       width="173"
+       y="90"
+       x="645" />
+  </g>
+  <g
+     id="g150646"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150644"
+       transform="rotate(-0.00 660.00 108.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="143"
+       y="108.00"
+       x="660.00">HydroWaterColumnDynamics</text>
+  </g>
+  <g
+     id="g150650"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect150648"
+       shape-rendering="auto"
+       rx="0.00"
+       height="29"
+       width="131"
+       y="40"
+       x="526" />
+  </g>
+  <g
+     id="g150654"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150652"
+       transform="rotate(-0.00 537.00 58.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="109"
+       y="58.00"
+       x="537.00">TurbIEEEHydroWCgen</text>
+  </g>
+  <g
+     id="g150658"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect150656"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="143"
+       y="90"
+       x="845" />
+  </g>
+  <g
+     id="g150662"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150660"
+       transform="rotate(-0.00 857.00 108.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="119"
+       y="108.00"
+       x="857.00">TurbIEEEHydroWClinear</text>
+  </g>
+  <g
+     id="g150666"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect150664"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="167"
+       y="40"
+       x="676" />
+  </g>
+  <g
+     id="g150670"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150668"
+       transform="rotate(-0.00 689.00 58.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="141"
+       y="58.00"
+       x="689.00">TurbIEEEHydroWCNonLinear</text>
+  </g>
+  <g
+     id="g150674"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect150672"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="176"
+       y="190"
+       x="755" />
+  </g>
+  <g
+     id="g150678"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150676"
+       transform="rotate(-0.00 769.00 208.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="148"
+       y="208.00"
+       x="769.00">TurbIEEEHydroWCNonLinearA</text>
+  </g>
+  <g
+     id="g150682"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect150680"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="174"
+       y="150"
+       x="826" />
+  </g>
+  <g
+     id="g150686"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150684"
+       transform="rotate(-0.00 839.00 168.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="148"
+       y="168.00"
+       x="839.00">TurbIEEEHydroWCNonLinearB</text>
+  </g>
+  <g
+     id="g150690"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect150688"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="100"
+       y="440"
+       x="625" />
+  </g>
+  <g
+     id="g150694"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150692"
+       transform="rotate(-0.00 631.00 458.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="87"
+       y="458.00"
+       x="631.00">GovIEEEHydroDD</text>
+  </g>
+  <g
+     id="g150698"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect150696"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="100"
+       y="280"
+       x="815" />
+  </g>
+  <g
+     id="g150702"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150700"
+       transform="rotate(-0.00 822.00 298.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="85"
+       y="298.00"
+       x="822.00">GovIEEEHydroLL</text>
+  </g>
+  <g
+     id="g150706"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect150704"
+       shape-rendering="auto"
+       rx="0.00"
+       height="30"
+       width="116"
+       y="280"
+       x="685" />
+  </g>
+  <g
+     id="g150710"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150708"
+       transform="rotate(-0.00 693.00 298.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="99"
+       y="298.00"
+       x="693.00">GovIEEEHydroMech</text>
+  </g>
+  <g
+     id="g150714"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect150712"
+       shape-rendering="auto"
+       rx="0.00"
+       height="28"
+       width="100"
+       y="440"
+       x="735" />
+  </g>
+  <g
+     id="g150718"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150716"
+       transform="rotate(-0.00 740.00 458.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="90"
+       y="458.00"
+       x="740.00">GovIEEEHydroPID</text>
+  </g>
+  <g
+     id="g150722"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+    <rect
+       id="rect150720"
+       shape-rendering="auto"
+       rx="0.00"
+       height="30"
+       width="124"
+       y="370"
+       x="815" />
+  </g>
+  <g
+     id="g150726"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150724"
+       transform="rotate(-0.00 824.00 388.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="105"
+       y="388.00"
+       x="824.00">GovIEEEHydroPIDspt</text>
+  </g>
+  <g
+     id="g150730"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150728"
+       transform="rotate(-0.00 255.00 569.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:400; font-style:normal; font-size:16px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="311"
+       y="569.00"
+       x="255.00">Reproduced with the permission of UCAIug.</text>
+  </g>
+  <g
+     id="g150734"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150732"
+       shape-rendering="auto"
+       d="M 815 386 L 786 386" />
+  </g>
+  <g
+     id="g150738"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150736"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="802 380 802 392 786 386" />
+  </g>
+  <g
+     id="g150742"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150740"
+       shape-rendering="auto"
+       d="M 769 440 L 731 407" />
+  </g>
+  <g
+     id="g150746"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150744"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="747 413 739 422 731 407" />
+  </g>
+  <g
+     id="g150750"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150748"
+       shape-rendering="auto"
+       d="M 737 310 L 716 370" />
+  </g>
+  <g
+     id="g150754"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150752"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="716 353 727 357 716 370" />
+  </g>
+  <g
+     id="g150758"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150756"
+       shape-rendering="auto"
+       d="M 850 308 L 784 370" />
+  </g>
+  <g
+     id="g150762"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150760"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="792 355 800 363 784 370" />
+  </g>
+  <g
+     id="g150766"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150764"
+       shape-rendering="auto"
+       d="M 682 440 L 699 407" />
+  </g>
+  <g
+     id="g150770"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150768"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="697 424 686 418 699 407" />
+  </g>
+  <g
+     id="g150774"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150772"
+       shape-rendering="auto"
+       d="M 869 150 L 777 120" />
+  </g>
+  <g
+     id="g150778"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150776"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="794 119 790 131 777 120" />
+  </g>
+  <g
+     id="g150782"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150780"
+       shape-rendering="auto"
+       d="M 827 190 L 747 120" />
+  </g>
+  <g
+     id="g150786"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150784"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="763 126 755 135 747 120" />
+  </g>
+  <g
+     id="g150790"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150788"
+       shape-rendering="auto"
+       d="M 751 68 L 739 90" />
+  </g>
+  <g
+     id="g150794"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150792"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="741 73 752 79 739 90" />
+  </g>
+  <g
+     id="g150798"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150796"
+       shape-rendering="auto"
+       d="M 845 104 L 818 104" />
+  </g>
+  <g
+     id="g150802"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150800"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="834 98 834 110 818 104" />
+  </g>
+  <g
+     id="g150806"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150804"
+       shape-rendering="auto"
+       d="M 632 69 L 689 90" />
+  </g>
+  <g
+     id="g150810"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150808"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="672 90 676 79 689 90" />
+  </g>
+  <g
+     id="g150814"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150812"
+       shape-rendering="auto"
+       d="M 646 120 L 542 230" />
+  </g>
+  <g
+     id="g150818"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150816"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="549 214 557 222 542 230" />
+  </g>
+  <g
+     id="g150826"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150820"
+       shape-rendering="auto"
+       d="M 669 370 L 669 120" />
+    <path
+       id="path150822"
+       shape-rendering="auto"
+       d="M 675 355 L 669 370 L 663 355" />
+    <path
+       id="path150824"
+       shape-rendering="auto"
+       d="M 639 370 L 543 266" />
+  </g>
+  <g
+     id="g150830"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150828"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="558 274 549 282 543 266" />
+  </g>
+  <g
+     id="g150834"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150832"
+       shape-rendering="auto"
+       d="M 167 330 L 317 266" />
+  </g>
+  <g
+     id="g150838"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150836"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="305 278 300 267 317 266" />
+  </g>
+  <g
+     id="g150842"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150840"
+       shape-rendering="auto"
+       d="M 353 120 L 355 90" />
+  </g>
+  <g
+     id="g150846"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150844"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="360 106 348 106 355 90" />
+  </g>
+  <g
+     id="g150850"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150848"
+       shape-rendering="auto"
+       d="M 210 247 L 235 247" />
+  </g>
+  <g
+     id="g150854"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150852"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="219 253 219 241 235 247" />
+  </g>
+  <g
+     id="g150858"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150856"
+       shape-rendering="auto"
+       d="M 422 460 L 392 266" />
+  </g>
+  <g
+     id="g150862"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150860"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="400 281 389 283 392 266" />
+  </g>
+  <g
+     id="g150866"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150864"
+       shape-rendering="auto"
+       d="M 359 500 L 387 266" />
+  </g>
+  <g
+     id="g150870"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150868"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="391 283 379 281 387 266" />
+  </g>
+  <g
+     id="g150874"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150872"
+       shape-rendering="auto"
+       d="M 407 420 L 407 369 A 6.00 -6.00 180.00 0 0 407 357 L 407 266" />
+  </g>
+  <g
+     id="g150878"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150876"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="413 282 401 282 407 266" />
+  </g>
+  <g
+     id="g150882"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150880"
+       shape-rendering="auto"
+       d="M 535 380 L 535 266" />
+  </g>
+  <g
+     id="g150886"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150884"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="541 282 529 282 535 266" />
+  </g>
+  <g
+     id="g150890"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150888"
+       shape-rendering="auto"
+       d="M 475 500 L 409 304 A 6.00 -6.00 180.00 0 0 405 292 L 396 266" />
+  </g>
+  <g
+     id="g150894"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150892"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="407 279 395 283 396 266" />
+  </g>
+  <g
+     id="g150898"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150896"
+       shape-rendering="auto"
+       d="M 499 460 L 499 266" />
+  </g>
+  <g
+     id="g150902"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150900"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="505 282 493 282 499 266" />
+  </g>
+  <g
+     id="g150906"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150904"
+       shape-rendering="auto"
+       d="M 327 460 L 356 266" />
+  </g>
+  <g
+     id="g150910"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150908"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="360 283 348 281 356 266" />
+  </g>
+  <g
+     id="g150914"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150912"
+       shape-rendering="auto"
+       d="M 517 420 L 517 266" />
+  </g>
+  <g
+     id="g150918"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150916"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="523 282 511 282 517 266" />
+  </g>
+  <g
+     id="g150922"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150920"
+       shape-rendering="auto"
+       d="M 241 491 L 350 266" />
+  </g>
+  <g
+     id="g150926"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150924"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="348 283 338 278 350 266" />
+  </g>
+  <g
+     id="g150930"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150928"
+       shape-rendering="auto"
+       d="M 218 450 L 342 266" />
+  </g>
+  <g
+     id="g150934"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150932"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="338 283 328 276 342 266" />
+  </g>
+  <g
+     id="g150938"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150936"
+       shape-rendering="auto"
+       d="M 203 424 L 334 266" />
+  </g>
+  <g
+     id="g150942"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150940"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="328 282 319 274 334 266" />
+  </g>
+  <g
+     id="g150946"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150944"
+       shape-rendering="auto"
+       d="M 165 304 L 299 266" />
+  </g>
+  <g
+     id="g150950"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150948"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="285 276 282 265 299 266" />
+  </g>
+  <g
+     id="g150954"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150952"
+       shape-rendering="auto"
+       d="M 352 230 L 352 180" />
+  </g>
+  <g
+     id="g150958"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150956"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="358 196 346 196 352 180" />
+  </g>
+  <g
+     id="g150966"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+    <path
+       id="path150960"
+       shape-rendering="auto"
+       d="M 270 230 L 146 100" />
+    <path
+       id="path150962"
+       shape-rendering="auto"
+       d="M 161 107 L 146 100 L 152 115" />
+    <path
+       id="path150964"
+       shape-rendering="auto"
+       d="M 188 387 L 324 266" />
+  </g>
+  <g
+     id="g150970"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+    <polygon
+       id="polygon150968"
+       style="fill-rule:evenodd;"
+       shape-rendering="auto"
+       points="316 281 308 272 324 266" />
+  </g>
+  <g
+     id="g151006"
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+    <text
+       id="text150972"
+       transform="rotate(-0.00 217.00 356.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="356.00"
+       x="217.00">{isSubstitutable=false}</text>
+    <text
+       id="text150974"
+       transform="rotate(-0.00 484.00 334.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="334.00"
+       x="484.00">{isSubstitutable=false}</text>
+    <text
+       id="text150976"
+       transform="rotate(-0.00 134.00 211.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="128"
+       y="211.00"
+       x="134.00">+TurbineGovernorDynamics</text>
+    <text
+       id="text150978"
+       transform="rotate(-0.00 273.00 224.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="16"
+       y="224.00"
+       x="273.00">0..*</text>
+    <text
+       id="text150980"
+       transform="rotate(-0.00 59.00 135.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="150"
+       y="135.00"
+       x="59.00">+SynchronousMachineDynamics</text>
+    <text
+       id="text150982"
+       transform="rotate(-0.00 158.00 114.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="18"
+       y="114.00"
+       x="158.00">0..1</text>
+    <text
+       id="text150984"
+       transform="rotate(-0.00 466.00 354.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="354.00"
+       x="466.00">{isSubstitutable=false}</text>
+    <text
+       id="text150986"
+       transform="rotate(-0.00 229.00 369.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="369.00"
+       x="229.00">{isSubstitutable=false}</text>
+    <text
+       id="text150988"
+       transform="rotate(-0.00 356.00 354.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="354.00"
+       x="356.00">{isSubstitutable=false}</text>
+    <text
+       id="text150990"
+       transform="rotate(-0.00 448.00 374.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="374.00"
+       x="448.00">{isSubstitutable=false}</text>
+    <text
+       id="text150992"
+       transform="rotate(-0.00 290.00 374.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="374.00"
+       x="290.00">{isSubstitutable=false}</text>
+    <text
+       id="text150994"
+       transform="rotate(-0.00 181.00 296.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="296.00"
+       x="181.00">{isSubstitutable=false}</text>
+    <text
+       id="text150996"
+       transform="rotate(-0.00 639.00 351.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="120"
+       y="351.00"
+       x="639.00">+HydroGovernorDynamics</text>
+    <text
+       id="text150998"
+       transform="rotate(-0.00 683.00 364.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="6"
+       y="364.00"
+       x="683.00">1</text>
+    <text
+       id="text151000"
+       transform="rotate(-0.00 633.00 155.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="139"
+       y="155.00"
+       x="633.00">+HydroWaterColumnDynamics</text>
+    <text
+       id="text151002"
+       transform="rotate(-0.00 681.00 134.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="6"
+       y="134.00"
+       x="681.00">1</text>
+    <text
+       id="text151004"
+       transform="rotate(-0.00 205.00 337.00)"
+       xml:space="preserve"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       textLength="102"
+       y="337.00"
+       x="205.00">{isSubstitutable=false}</text>
+  </g>
+</svg>
