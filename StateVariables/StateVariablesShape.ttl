@@ -1,0 +1,386 @@
+@base <http://iec.ch/TC57/2013/CIM-schema-cim16#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+<ACDCConverterShape> rdf:type sh:NodeShape ;
+	sh:targetClass <ACDCConverter> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <ConductingEquipmentShape.SvStatus> .
+
+<ACDCConverterShape.idc> rdf:type sh:PropertyShape ;
+	sh:path <ACDCConverter.idc> ;
+	sh:datatype xsd:double ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Idc"@en ;
+	sh:description "Converter DC current, also called Id."^^rdf:XMLLiteral .
+<ACDCConverterShape.poleLossP> rdf:type sh:PropertyShape ;
+	sh:path <ACDCConverter.poleLossP> ;
+	sh:datatype xsd:double ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Pole Loss P"@en .
+<ACDCConverterShape.uc> rdf:type sh:PropertyShape ;
+	sh:path <ACDCConverter.uc> ;
+	sh:datatype xsd:double ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Uc"@en ;
+	sh:description "Line-to-line converter voltage, the voltage at the AC side of the valve."^^rdf:XMLLiteral .
+<ACDCConverterShape.udc> rdf:type sh:PropertyShape ;
+	sh:path <ACDCConverter.udc> ;
+	sh:datatype xsd:double ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Udc"@en ;
+	sh:description "Converter voltage at the DC side, also called Ud."^^rdf:XMLLiteral .
+
+<ACDCTerminalShape> rdf:type sh:NodeShape ;
+	sh:targetClass <ACDCTerminal> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+
+<ConductingEquipmentShape> rdf:type sh:NodeShape ;
+	sh:targetClass <ConductingEquipment> ;
+	sh:closed "true"^^xsd:boolean .
+
+<ConductingEquipmentShape.SvStatus> rdf:type sh:PropertyShape ;
+	sh:path <ConductingEquipment.SvStatus> ;
+	sh:class <SvStatus> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Sv Status"@en ;
+	sh:description "The status state variable associated with this conducting equipment."^^rdf:XMLLiteral .
+
+<CsConverterShape> rdf:type sh:NodeShape ;
+	sh:targetClass <CsConverter> ;
+	sh:property <CsConverterShape.alpha> , <CsConverterShape.gamma> , <ACDCConverterShape.idc> , <ACDCConverterShape.poleLossP> , <ACDCConverterShape.uc> , <ACDCConverterShape.udc> , <ConductingEquipmentShape.SvStatus> .
+
+<CsConverterShape.alpha> rdf:type sh:PropertyShape ;
+	sh:path <CsConverter.alpha> ;
+	sh:datatype xsd:double ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Alpha"@en ;
+	sh:description "Firing angle that determines the dc voltage at the converter dc terminal."^^rdf:XMLLiteral .
+<CsConverterShape.gamma> rdf:type sh:PropertyShape ;
+	sh:path <CsConverter.gamma> ;
+	sh:datatype xsd:double ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Gamma"@en ;
+	sh:description "Extinction angle."^^rdf:XMLLiteral .
+
+<DCTopologicalIslandShape> rdf:type sh:NodeShape ;
+	sh:targetClass <DCTopologicalIsland> ;
+	sh:property <DCTopologicalIslandShape.DCTopologicalNodes> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+
+<DCTopologicalIslandShape.DCTopologicalNodes> rdf:type sh:PropertyShape ;
+	sh:path <DCTopologicalIsland.DCTopologicalNodes> ;
+	sh:class <DCTopologicalNode> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:name "Dc Topological Nodes"@en ;
+	sh:description "The DC topological nodes in a DC topological island."^^rdf:XMLLiteral .
+
+<DCTopologicalNodeShape> rdf:type sh:NodeShape ;
+	sh:targetClass <DCTopologicalNode> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+
+<DCTopologicalNodeShape.DCTopologicalIsland> rdf:type sh:PropertyShape ;
+	sh:path <DCTopologicalNode.DCTopologicalIsland> ;
+	sh:class <DCTopologicalIsland> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Dc Topological Island"@en ;
+	sh:description "A DC topological node belongs to a DC topological island."^^rdf:XMLLiteral .
+
+<IdentifiedObjectShape> rdf:type sh:NodeShape ;
+	sh:targetClass <IdentifiedObject> ;
+	sh:closed "true"^^xsd:boolean .
+
+<IdentifiedObjectShape.mRID> rdf:type sh:PropertyShape ;
+	sh:path <IdentifiedObject.mRID> ;
+	sh:datatype xsd:string ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "MRID"@en ;
+	sh:description "Master resource identifier issued by a model authority."^^rdf:XMLLiteral .
+<IdentifiedObjectShape.name> rdf:type sh:PropertyShape ;
+	sh:path <IdentifiedObject.name> ;
+	sh:datatype xsd:string ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Name"@en ;
+	sh:description "The name is any free human readable and possibly non unique text naming the object."^^rdf:XMLLiteral .
+
+<ShuntCompensatorShape> rdf:type sh:NodeShape ;
+	sh:targetClass <ShuntCompensator> ;
+	sh:closed "true"^^xsd:boolean .
+
+<ShuntCompensatorShape.SvShuntCompensatorSections> rdf:type sh:PropertyShape ;
+	sh:path <ShuntCompensator.SvShuntCompensatorSections> ;
+	sh:class <SvShuntCompensatorSections> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Sv Shunt Compensator Sections"@en ;
+	sh:description "The state for the number of shunt compensator sections in service."^^rdf:XMLLiteral .
+
+<SvInjectionShape> rdf:type sh:NodeShape ;
+	sh:targetClass <SvInjection> ;
+	sh:property <SvInjectionShape.pInjection> , <SvInjectionShape.qInjection> , <SvInjectionShape.TopologicalNode> .
+
+<SvInjectionShape.pInjection> rdf:type sh:PropertyShape ;
+	sh:path <SvInjection.pInjection> ;
+	sh:datatype xsd:double ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "P Injection"@en ;
+	sh:description "The active power mismatch between calculated injection and initial injection."^^rdf:XMLLiteral .
+<SvInjectionShape.qInjection> rdf:type sh:PropertyShape ;
+	sh:path <SvInjection.qInjection> ;
+	sh:datatype xsd:double ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Q Injection"@en ;
+	sh:description "The reactive power mismatch between calculated injection and initial injection."^^rdf:XMLLiteral .
+
+<SvInjectionShape.TopologicalNode> rdf:type sh:PropertyShape ;
+	sh:path <SvInjection.TopologicalNode> ;
+	sh:class <TopologicalNode> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Topological Node"@en ;
+	sh:description "The topological node associated with the flow injection state variable."^^rdf:XMLLiteral .
+
+<SvPowerFlowShape> rdf:type sh:NodeShape ;
+	sh:targetClass <SvPowerFlow> ;
+	sh:property <SvPowerFlowShape.p> , <SvPowerFlowShape.q> , <SvPowerFlowShape.Terminal> .
+
+<SvPowerFlowShape.p> rdf:type sh:PropertyShape ;
+	sh:path <SvPowerFlow.p> ;
+	sh:datatype xsd:double ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "P"@en ;
+	sh:description "The active power flow."^^rdf:XMLLiteral .
+<SvPowerFlowShape.q> rdf:type sh:PropertyShape ;
+	sh:path <SvPowerFlow.q> ;
+	sh:datatype xsd:double ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Q"@en ;
+	sh:description "The reactive power flow."^^rdf:XMLLiteral .
+
+<SvPowerFlowShape.Terminal> rdf:type sh:PropertyShape ;
+	sh:path <SvPowerFlow.Terminal> ;
+	sh:class <Terminal> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Terminal"@en ;
+	sh:description "The terminal associated with the power flow state variable."^^rdf:XMLLiteral .
+
+<SvShuntCompensatorSectionsShape> rdf:type sh:NodeShape ;
+	sh:targetClass <SvShuntCompensatorSections> ;
+	sh:property <SvShuntCompensatorSectionsShape.sections> , <SvShuntCompensatorSectionsShape.ShuntCompensator> .
+
+<SvShuntCompensatorSectionsShape.sections> rdf:type sh:PropertyShape ;
+	sh:path <SvShuntCompensatorSections.sections> ;
+	sh:datatype xsd:double ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Sections"@en ;
+	sh:description "The number of sections in service as a continuous variable."^^rdf:XMLLiteral .
+
+<SvShuntCompensatorSectionsShape.ShuntCompensator> rdf:type sh:PropertyShape ;
+	sh:path <SvShuntCompensatorSections.ShuntCompensator> ;
+	sh:class <ShuntCompensator> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Shunt Compensator"@en ;
+	sh:description "The shunt compensator for which the state applies."^^rdf:XMLLiteral .
+
+<SvStatusShape> rdf:type sh:NodeShape ;
+	sh:targetClass <SvStatus> ;
+	sh:property <SvStatusShape.inService> , <SvStatusShape.ConductingEquipment> .
+
+<SvStatusShape.inService> rdf:type sh:PropertyShape ;
+	sh:path <SvStatus.inService> ;
+	sh:datatype xsd:boolean ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "In Service"@en ;
+	sh:description "The in service status as a result of topology processing."^^rdf:XMLLiteral .
+
+<SvStatusShape.ConductingEquipment> rdf:type sh:PropertyShape ;
+	sh:path <SvStatus.ConductingEquipment> ;
+	sh:class <ConductingEquipment> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Conducting Equipment"@en ;
+	sh:description "The conducting equipment associated with the status state variable."^^rdf:XMLLiteral .
+
+<SvSwitchShape> rdf:type sh:NodeShape ;
+	sh:targetClass <SvSwitch> ;
+	sh:property <SvSwitchShape.open> , <SvSwitchShape.Switch> .
+
+<SvSwitchShape.open> rdf:type sh:PropertyShape ;
+	sh:path <SvSwitch.open> ;
+	sh:datatype xsd:boolean ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Open"@en ;
+	sh:description "The attribute tells if the computed state of the switch is considered open."^^rdf:XMLLiteral .
+
+<SvSwitchShape.Switch> rdf:type sh:PropertyShape ;
+	sh:path <SvSwitch.Switch> ;
+	sh:class <Switch> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Switch"@en ;
+	sh:description "The switch associated with the switch state."^^rdf:XMLLiteral .
+
+<SvTapStepShape> rdf:type sh:NodeShape ;
+	sh:targetClass <SvTapStep> ;
+	sh:property <SvTapStepShape.position> , <SvTapStepShape.TapChanger> .
+
+<SvTapStepShape.position> rdf:type sh:PropertyShape ;
+	sh:path <SvTapStep.position> ;
+	sh:datatype xsd:double ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Position"@en ;
+	sh:description "The floating point tap position."^^rdf:XMLLiteral .
+
+<SvTapStepShape.TapChanger> rdf:type sh:PropertyShape ;
+	sh:path <SvTapStep.TapChanger> ;
+	sh:class <TapChanger> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Tap Changer"@en ;
+	sh:description "The tap changer associated with the tap step state."^^rdf:XMLLiteral .
+
+<SvVoltageShape> rdf:type sh:NodeShape ;
+	sh:targetClass <SvVoltage> ;
+	sh:property <SvVoltageShape.angle> , <SvVoltageShape.v> , <SvVoltageShape.TopologicalNode> .
+
+<SvVoltageShape.angle> rdf:type sh:PropertyShape ;
+	sh:path <SvVoltage.angle> ;
+	sh:datatype xsd:double ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Angle"@en ;
+	sh:description "The voltage angle of the topological node complex voltage with respect to system reference."^^rdf:XMLLiteral .
+<SvVoltageShape.v> rdf:type sh:PropertyShape ;
+	sh:path <SvVoltage.v> ;
+	sh:datatype xsd:double ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "V"@en ;
+	sh:description "The voltage magnitude at the topological node."^^rdf:XMLLiteral .
+
+<SvVoltageShape.TopologicalNode> rdf:type sh:PropertyShape ;
+	sh:path <SvVoltage.TopologicalNode> ;
+	sh:class <TopologicalNode> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Topological Node"@en ;
+	sh:description "The topological node associated with the voltage state."^^rdf:XMLLiteral .
+
+<SwitchShape> rdf:type sh:NodeShape ;
+	sh:targetClass <Switch> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <ConductingEquipmentShape.SvStatus> .
+
+<SwitchShape.SvSwitch> rdf:type sh:PropertyShape ;
+	sh:path <Switch.SvSwitch> ;
+	sh:class <SvSwitch> ;
+	sh:name "Sv Switch"@en ;
+	sh:description "The switch state associated with the switch."^^rdf:XMLLiteral .
+
+<TapChangerShape> rdf:type sh:NodeShape ;
+	sh:targetClass <TapChanger> ;
+	sh:closed "true"^^xsd:boolean .
+
+<TapChangerShape.SvTapStep> rdf:type sh:PropertyShape ;
+	sh:path <TapChanger.SvTapStep> ;
+	sh:class <SvTapStep> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Sv Tap Step"@en ;
+	sh:description "The tap step state associated with the tap changer."^^rdf:XMLLiteral .
+
+<TerminalShape> rdf:type sh:NodeShape ;
+	sh:targetClass <Terminal> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+
+<TerminalShape.SvPowerFlow> rdf:type sh:PropertyShape ;
+	sh:path <Terminal.SvPowerFlow> ;
+	sh:class <SvPowerFlow> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Sv Power Flow"@en ;
+	sh:description "The power flow state variable associated with the terminal."^^rdf:XMLLiteral .
+
+<TopologicalIslandShape> rdf:type sh:NodeShape ;
+	sh:targetClass <TopologicalIsland> ;
+	sh:property <TopologicalIslandShape.TopologicalNodes> , <TopologicalIslandShape.AngleRefTopologicalNode> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+
+<TopologicalIslandShape.TopologicalNodes> rdf:type sh:PropertyShape ;
+	sh:path <TopologicalIsland.TopologicalNodes> ;
+	sh:class <TopologicalNode> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:name "Topological Nodes"@en ;
+	sh:description "A topological node belongs to a topological island."^^rdf:XMLLiteral .
+<TopologicalIslandShape.AngleRefTopologicalNode> rdf:type sh:PropertyShape ;
+	sh:path <TopologicalIsland.AngleRefTopologicalNode> ;
+	sh:class <TopologicalNode> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Angle Ref Topological Node"@en ;
+	sh:description "The angle reference for the island."^^rdf:XMLLiteral .
+
+<TopologicalNodeShape> rdf:type sh:NodeShape ;
+	sh:targetClass <TopologicalNode> ;
+	sh:closed "true"^^xsd:boolean .
+
+<TopologicalNodeShape.SvVoltage> rdf:type sh:PropertyShape ;
+	sh:path <TopologicalNode.SvVoltage> ;
+	sh:class <SvVoltage> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Sv Voltage"@en ;
+	sh:description "The state voltage associated with the topological node."^^rdf:XMLLiteral .
+<TopologicalNodeShape.SvInjection> rdf:type sh:PropertyShape ;
+	sh:path <TopologicalNode.SvInjection> ;
+	sh:class <SvInjection> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Sv Injection"@en ;
+	sh:description "The injection flows state variables associated with the topological node."^^rdf:XMLLiteral .
+<TopologicalNodeShape.TopologicalIsland> rdf:type sh:PropertyShape ;
+	sh:path <TopologicalNode.TopologicalIsland> ;
+	sh:class <TopologicalIsland> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Topological Island"@en ;
+	sh:description "A topological node belongs to a topological island."^^rdf:XMLLiteral .
+<TopologicalNodeShape.AngleRefTopologicalIsland> rdf:type sh:PropertyShape ;
+	sh:path <TopologicalNode.AngleRefTopologicalIsland> ;
+	sh:class <TopologicalIsland> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Angle Ref Topological Island"@en ;
+	sh:description "The island for which the node is an angle reference."^^rdf:XMLLiteral .
+
+<VsConverterShape> rdf:type sh:NodeShape ;
+	sh:targetClass <VsConverter> ;
+	sh:property <VsConverterShape.delta> , <VsConverterShape.uv> , <ACDCConverterShape.idc> , <ACDCConverterShape.poleLossP> , <ACDCConverterShape.uc> , <ACDCConverterShape.udc> , <ConductingEquipmentShape.SvStatus> .
+
+<VsConverterShape.delta> rdf:type sh:PropertyShape ;
+	sh:path <VsConverter.delta> ;
+	sh:datatype xsd:double ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Delta"@en ;
+	sh:description "Angle between VsConverter.uv and ACDCConverter.uc."^^rdf:XMLLiteral .
+<VsConverterShape.uv> rdf:type sh:PropertyShape ;
+	sh:path <VsConverter.uv> ;
+	sh:datatype xsd:double ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Uv"@en ;
+	sh:description "Line-to-line voltage on the valve side of the converter transformer."^^rdf:XMLLiteral .

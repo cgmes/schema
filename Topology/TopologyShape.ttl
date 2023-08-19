@@ -1,0 +1,201 @@
+@base <http://iec.ch/TC57/2013/CIM-schema-cim16#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+<ACDCConverterDCTerminalShape> rdf:type sh:NodeShape ;
+	sh:targetClass <ACDCConverterDCTerminal> ;
+	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> , <DCBaseTerminalShape.DCTopologicalNode> .
+
+<ACDCTerminalShape> rdf:type sh:NodeShape ;
+	sh:targetClass <ACDCTerminal> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> .
+
+<BaseVoltageShape> rdf:type sh:NodeShape ;
+	sh:targetClass <BaseVoltage> ;
+	sh:closed "true"^^xsd:boolean .
+
+<BaseVoltageShape.TopologicalNode> rdf:type sh:PropertyShape ;
+	sh:path <BaseVoltage.TopologicalNode> ;
+	sh:class <TopologicalNode> ;
+	sh:name "Topological Node"@en ;
+	sh:description "The topological nodes at the base voltage."^^rdf:XMLLiteral .
+
+<ConnectivityNodeShape> rdf:type sh:NodeShape ;
+	sh:targetClass <ConnectivityNode> ;
+	sh:property <ConnectivityNodeShape.TopologicalNode> .
+
+<ConnectivityNodeShape.TopologicalNode> rdf:type sh:PropertyShape ;
+	sh:path <ConnectivityNode.TopologicalNode> ;
+	sh:class <TopologicalNode> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Topological Node"@en ;
+	sh:description "The topological node to which this connectivity node is assigned."^^rdf:XMLLiteral .
+
+<ConnectivityNodeContainerShape> rdf:type sh:NodeShape ;
+	sh:targetClass <ConnectivityNodeContainer> ;
+	sh:closed "true"^^xsd:boolean .
+
+<ConnectivityNodeContainerShape.TopologicalNode> rdf:type sh:PropertyShape ;
+	sh:path <ConnectivityNodeContainer.TopologicalNode> ;
+	sh:class <TopologicalNode> ;
+	sh:name "Topological Node"@en ;
+	sh:description "The topological nodes which belong to this connectivity node container."^^rdf:XMLLiteral .
+
+<DCBaseTerminalShape> rdf:type sh:NodeShape ;
+	sh:targetClass <DCBaseTerminal> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> .
+
+<DCBaseTerminalShape.DCTopologicalNode> rdf:type sh:PropertyShape ;
+	sh:path <DCBaseTerminal.DCTopologicalNode> ;
+	sh:class <DCTopologicalNode> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Dc Topological Node"@en ;
+	sh:description "See association end Terminal.TopologicalNode."^^rdf:XMLLiteral .
+
+<DCEquipmentContainerShape> rdf:type sh:NodeShape ;
+	sh:targetClass <DCEquipmentContainer> ;
+	sh:closed "true"^^xsd:boolean .
+
+<DCEquipmentContainerShape.DCTopologicalNode> rdf:type sh:PropertyShape ;
+	sh:path <DCEquipmentContainer.DCTopologicalNode> ;
+	sh:class <DCTopologicalNode> ;
+	sh:name "Dc Topological Node"@en ;
+	sh:description "The topological nodes which belong to this connectivity node container."^^rdf:XMLLiteral .
+
+<DCNodeShape> rdf:type sh:NodeShape ;
+	sh:targetClass <DCNode> ;
+	sh:property <DCNodeShape.DCTopologicalNode> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> .
+
+<DCNodeShape.DCTopologicalNode> rdf:type sh:PropertyShape ;
+	sh:path <DCNode.DCTopologicalNode> ;
+	sh:class <DCTopologicalNode> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Dc Topological Node"@en ;
+	sh:description "The DC topological node to which this DC connectivity node is assigned."^^rdf:XMLLiteral .
+
+<DCTerminalShape> rdf:type sh:NodeShape ;
+	sh:targetClass <DCTerminal> ;
+	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> , <DCBaseTerminalShape.DCTopologicalNode> .
+
+<DCTopologicalNodeShape> rdf:type sh:NodeShape ;
+	sh:targetClass <DCTopologicalNode> ;
+	sh:property <DCTopologicalNodeShape.DCEquipmentContainer> , <DCTopologicalNodeShape.DCNodes> , <DCTopologicalNodeShape.DCTerminals> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> .
+
+<DCTopologicalNodeShape.DCEquipmentContainer> rdf:type sh:PropertyShape ;
+	sh:path <DCTopologicalNode.DCEquipmentContainer> ;
+	sh:class <DCEquipmentContainer> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Dc Equipment Container"@en ;
+	sh:description "The connectivity node container to which the topological node belongs."^^rdf:XMLLiteral .
+<DCTopologicalNodeShape.DCNodes> rdf:type sh:PropertyShape ;
+	sh:path <DCTopologicalNode.DCNodes> ;
+	sh:class <DCNode> ;
+	sh:name "Dc Nodes"@en ;
+	sh:description "The DC connectivity nodes combined together to form this DC topological node."^^rdf:XMLLiteral .
+<DCTopologicalNodeShape.DCTerminals> rdf:type sh:PropertyShape ;
+	sh:path <DCTopologicalNode.DCTerminals> ;
+	sh:class <DCBaseTerminal> ;
+	sh:name "Dc Terminals"@en ;
+	sh:description "See association end TopologicalNode.Terminal."^^rdf:XMLLiteral .
+
+<IdentifiedObjectShape> rdf:type sh:NodeShape ;
+	sh:targetClass <IdentifiedObject> ;
+	sh:closed "true"^^xsd:boolean .
+
+<IdentifiedObjectShape.description> rdf:type sh:PropertyShape ;
+	sh:path <IdentifiedObject.description> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Description"@en ;
+	sh:description "The description is a free human readable text describing or naming the object."^^rdf:XMLLiteral .
+<IdentifiedObjectShape.energyIdentCodeEic> rdf:type sh:PropertyShape ;
+	sh:path <IdentifiedObject.energyIdentCodeEic> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Energy Ident Code Eic"@en ;
+	sh:description "The attribute is used for an exchange of the EIC code (Energy identification Code)."^^rdf:XMLLiteral .
+<IdentifiedObjectShape.mRID> rdf:type sh:PropertyShape ;
+	sh:path <IdentifiedObject.mRID> ;
+	sh:datatype xsd:string ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "MRID"@en ;
+	sh:description "Master resource identifier issued by a model authority."^^rdf:XMLLiteral .
+<IdentifiedObjectShape.name> rdf:type sh:PropertyShape ;
+	sh:path <IdentifiedObject.name> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Name"@en ;
+	sh:description "The name is any free human readable and possibly non unique text naming the object."^^rdf:XMLLiteral .
+<IdentifiedObjectShape.shortName> rdf:type sh:PropertyShape ;
+	sh:path <IdentifiedObject.shortName> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Short Name"@en ;
+	sh:description "The attribute is used for an exchange of a human readable short name with length of the string 12 characters maximum."^^rdf:XMLLiteral .
+
+<ReportingGroupShape> rdf:type sh:NodeShape ;
+	sh:targetClass <ReportingGroup> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> .
+
+<ReportingGroupShape.TopologicalNode> rdf:type sh:PropertyShape ;
+	sh:path <ReportingGroup.TopologicalNode> ;
+	sh:class <TopologicalNode> ;
+	sh:name "Topological Node"@en ;
+	sh:description "The topological nodes that belong to the reporting group."^^rdf:XMLLiteral .
+
+<TerminalShape> rdf:type sh:NodeShape ;
+	sh:targetClass <Terminal> ;
+	sh:property <TerminalShape.TopologicalNode> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> .
+
+<TerminalShape.TopologicalNode> rdf:type sh:PropertyShape ;
+	sh:path <Terminal.TopologicalNode> ;
+	sh:class <TopologicalNode> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Topological Node"@en ;
+	sh:description "The topological node associated with the terminal."^^rdf:XMLLiteral .
+
+<TopologicalNodeShape> rdf:type sh:NodeShape ;
+	sh:targetClass <TopologicalNode> ;
+	sh:property <TopologicalNodeShape.ReportingGroup> , <TopologicalNodeShape.Terminal> , <TopologicalNodeShape.BaseVoltage> , <TopologicalNodeShape.ConnectivityNodes> , <TopologicalNodeShape.ConnectivityNodeContainer> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> .
+
+<TopologicalNodeShape.ReportingGroup> rdf:type sh:PropertyShape ;
+	sh:path <TopologicalNode.ReportingGroup> ;
+	sh:class <ReportingGroup> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Reporting Group"@en ;
+	sh:description "The reporting group to which the topological node belongs."^^rdf:XMLLiteral .
+<TopologicalNodeShape.Terminal> rdf:type sh:PropertyShape ;
+	sh:path <TopologicalNode.Terminal> ;
+	sh:class <Terminal> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:name "Terminal"@en ;
+	sh:description "The terminals associated with the topological node."^^rdf:XMLLiteral .
+<TopologicalNodeShape.BaseVoltage> rdf:type sh:PropertyShape ;
+	sh:path <TopologicalNode.BaseVoltage> ;
+	sh:class <BaseVoltage> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Base Voltage"@en ;
+	sh:description "The base voltage of the topological node."^^rdf:XMLLiteral .
+<TopologicalNodeShape.ConnectivityNodes> rdf:type sh:PropertyShape ;
+	sh:path <TopologicalNode.ConnectivityNodes> ;
+	sh:class <ConnectivityNode> ;
+	sh:name "Connectivity Nodes"@en ;
+	sh:description "The connectivity nodes combine together to form this topological node."^^rdf:XMLLiteral .
+<TopologicalNodeShape.ConnectivityNodeContainer> rdf:type sh:PropertyShape ;
+	sh:path <TopologicalNode.ConnectivityNodeContainer> ;
+	sh:class <ConnectivityNodeContainer> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Connectivity Node Container"@en ;
+	sh:description "The connectivity node container to which the topological node belongs."^^rdf:XMLLiteral .

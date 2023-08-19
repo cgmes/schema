@@ -1,0 +1,147 @@
+@base <http://iec.ch/TC57/2013/CIM-schema-cim16#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+<DetailedModelDescriptorShape> rdf:type sh:NodeShape ;
+	sh:targetClass <DetailedModelDescriptor> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+
+<DetailedModelDynamicsShape> rdf:type sh:NodeShape ;
+	sh:targetClass <DetailedModelDynamics> ;
+	sh:property <DetailedModelDynamicsShape.DetailedModelTypeDynamics> , <DetailedModelDynamicsShape.ParameterValue> , <DetailedModelDynamicsShape.DynamicsFunctionBlock> , <DetailedModelDynamicsShape.Equipment> , <DynamicsFunctionBlockShape.enabled> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <DynamicsFunctionBlockShape.DetailedModelDynamics> .
+
+<DetailedModelDynamicsShape.DetailedModelTypeDynamics> rdf:type sh:PropertyShape ;
+	sh:path <DetailedModelDynamics.DetailedModelTypeDynamics> ;
+	sh:class <DetailedModelTypeDynamics> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Detailed Model Type Dynamics"@en ;
+	sh:description "The type of detailed model dynamics that is applied to the detailed model dynamics."^^rdf:XMLLiteral .
+<DetailedModelDynamicsShape.ParameterValue> rdf:type sh:PropertyShape ;
+	sh:path <DetailedModelDynamics.ParameterValue> ;
+	sh:class <ParameterValue> ;
+	sh:name "Parameter Value"@en ;
+	sh:description "The value of the parameter for this detailed model dynamics."^^rdf:XMLLiteral .
+<DetailedModelDynamicsShape.DynamicsFunctionBlock> rdf:type sh:PropertyShape ;
+	sh:path <DetailedModelDynamics.DynamicsFunctionBlock> ;
+	sh:class <DynamicsFunctionBlock> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Dynamics Function Block"@en ;
+	sh:description "The dynamics function block for this detailed model dynamics."^^rdf:XMLLiteral .
+<DetailedModelDynamicsShape.Equipment> rdf:type sh:PropertyShape ;
+	sh:path <DetailedModelDynamics.Equipment> ;
+	sh:class <Equipment> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Equipment"@en ;
+	sh:description "The equipment which behaviour this detailed model dynamics represents."^^rdf:XMLLiteral .
+
+<DetailedModelTypeDynamicsShape> rdf:type sh:NodeShape ;
+	sh:targetClass <DetailedModelTypeDynamics> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+
+<DetailedModelTypeDynamicsShape.DetailedModelDynamics> rdf:type sh:PropertyShape ;
+	sh:path <DetailedModelTypeDynamics.DetailedModelDynamics> ;
+	sh:class <DetailedModelDynamics> ;
+	sh:name "Detailed Model Dynamics"@en ;
+	sh:description "The detailed model dynamics that has this type of detailed model dynamics."^^rdf:XMLLiteral .
+
+<DynamicsFunctionBlockShape> rdf:type sh:NodeShape ;
+	sh:targetClass <DynamicsFunctionBlock> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+
+<DynamicsFunctionBlockShape.enabled> rdf:type sh:PropertyShape ;
+	sh:path <DynamicsFunctionBlock.enabled> ;
+	sh:datatype xsd:boolean ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Enabled"@en ;
+	sh:description "Function block used indicator.\ntrue = use of function block is enabled\nfalse = use of function block is disabled."^^rdf:XMLLiteral .
+
+<DynamicsFunctionBlockShape.DetailedModelDynamics> rdf:type sh:PropertyShape ;
+	sh:path <DynamicsFunctionBlock.DetailedModelDynamics> ;
+	sh:class <DetailedModelDynamics> ;
+	sh:name "Detailed Model Dynamics"@en ;
+	sh:description "The detailed model dynamics that has this dynamics function block."^^rdf:XMLLiteral .
+
+<EquipmentShape> rdf:type sh:NodeShape ;
+	sh:targetClass <Equipment> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+
+<EquipmentShape.DetailedModelDynamics> rdf:type sh:PropertyShape ;
+	sh:path <Equipment.DetailedModelDynamics> ;
+	sh:class <DetailedModelDynamics> ;
+	sh:name "Detailed Model Dynamics"@en ;
+	sh:description "The detailed model dynamics this models this equipment."^^rdf:XMLLiteral .
+
+<IdentifiedObjectShape> rdf:type sh:NodeShape ;
+	sh:targetClass <IdentifiedObject> ;
+	sh:closed "true"^^xsd:boolean .
+
+<IdentifiedObjectShape.description> rdf:type sh:PropertyShape ;
+	sh:path <IdentifiedObject.description> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Description"@en ;
+	sh:description "The description is a free human readable text describing or naming the object."^^rdf:XMLLiteral .
+<IdentifiedObjectShape.mRID> rdf:type sh:PropertyShape ;
+	sh:path <IdentifiedObject.mRID> ;
+	sh:datatype xsd:string ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "MRID"@en ;
+	sh:description "Master resource identifier issued by a model authority."^^rdf:XMLLiteral .
+<IdentifiedObjectShape.name> rdf:type sh:PropertyShape ;
+	sh:path <IdentifiedObject.name> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Name"@en ;
+	sh:description "The name is any free human readable and possibly non unique text naming the object."^^rdf:XMLLiteral .
+
+<ParameterDesctiptorShape> rdf:type sh:NodeShape ;
+	sh:targetClass <ParameterDesctiptor> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+
+<ParameterDesctiptorShape.ParameterValue> rdf:type sh:PropertyShape ;
+	sh:path <ParameterDesctiptor.ParameterValue> ;
+	sh:class <ParameterValue> ;
+	sh:name "Parameter Value"@en ;
+	sh:description "The value of the parameter descriptor."^^rdf:XMLLiteral .
+
+<ParameterValueShape> rdf:type sh:NodeShape ;
+	sh:targetClass <ParameterValue> ;
+	sh:property <ParameterValueShape.value> , <ParameterValueShape.ParameterDescriptor> , <ParameterValueShape.DetailedModelDynamics> .
+
+<ParameterValueShape.value> rdf:type sh:PropertyShape ;
+	sh:path <ParameterValue.value> ;
+	sh:datatype xsd:string ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Value"@en ;
+	sh:description "The value of the parameter."^^rdf:XMLLiteral .
+
+<ParameterValueShape.ParameterDescriptor> rdf:type sh:PropertyShape ;
+	sh:path <ParameterValue.ParameterDescriptor> ;
+	sh:class <ParameterDesctiptor> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Parameter Descriptor"@en ;
+	sh:description "The parameter descriptor that has this value."^^rdf:XMLLiteral .
+<ParameterValueShape.DetailedModelDynamics> rdf:type sh:PropertyShape ;
+	sh:path <ParameterValue.DetailedModelDynamics> ;
+	sh:class <DetailedModelDynamics> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Detailed Model Dynamics"@en ;
+	sh:description "The detailed model to which this parameter value applies."^^rdf:XMLLiteral .
+
+<PowerSystemResourceShape> rdf:type sh:NodeShape ;
+	sh:targetClass <PowerSystemResource> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .

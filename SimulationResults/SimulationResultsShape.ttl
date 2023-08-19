@@ -1,0 +1,268 @@
+@base <http://iec.ch/TC57/2013/CIM-schema-cim16#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+<CurveShape> rdf:type sh:NodeShape ;
+	sh:targetClass <Curve> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+
+<CurveShape.curveStyle> rdf:type sh:PropertyShape ;
+	sh:path <Curve.curveStyle> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:in "constantYValue" , "straightLineYValues" ;
+	sh:name "Curve Style"@en ;
+	sh:description "The style or shape of the curve."^^rdf:XMLLiteral .
+<CurveShape.xMultiplier> rdf:type sh:PropertyShape ;
+	sh:path <Curve.xMultiplier> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:in "y" , "z" , "a" , "f" , "p" , "n" , "micro" , "m" , "c" , "d" , "none" , "da" , "h" , "k" , "M" , "G" , "T" , "P" , "E" , "Z" , "Y" ;
+	sh:name "X Multiplier"@en ;
+	sh:description "Multiplier for X-axis."^^rdf:XMLLiteral .
+<CurveShape.xUnit> rdf:type sh:PropertyShape ;
+	sh:path <Curve.xUnit> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:in "none" , "m" , "kg" , "s" , "A" , "K" , "mol" , "cd" , "deg" , "rad" , "sr" , "Gy" , "Bq" , "degC" , "Sv" , "F" , "C" , "S" , "H" , "V" , "ohm" , "J" , "N" , "Hz" , "lx" , "lm" , "Wb" , "T" , "W" , "Pa" , "m2" , "m3" , "mPers" , "mPers2" , "m3Pers" , "mPerm3" , "kgm" , "kgPerm3" , "m2Pers" , "WPermK" , "JPerK" , "ppm" , "rotPers" , "radPers" , "WPerm2" , "JPerm2" , "SPerm" , "KPers" , "PaPers" , "JPerkgK" , "VA" , "VAr" , "cosPhi" , "Vs" , "V2" , "As" , "A2" , "A2s" , "VAh" , "Wh" , "VArh" , "VPerHz" , "HzPers" , "character" , "charPers" , "kgm2" , "dB" , "WPers" , "lPers" , "dBm" , "h" , "min" , "Q" , "Qh" , "ohmm" , "APerm" , "V2h" , "A2h" , "Ah" , "count" , "ft3" , "m3Perh" , "gal" , "Btu" , "l" , "lPerh" , "lPerl" , "gPerg" , "molPerm3" , "molPermol" , "molPerkg" , "sPers" , "HzPerHz" , "VPerV" , "APerA" , "VPerVA" , "rev" , "kat" , "JPerkg" , "m3Uncompensated" , "m3Compensated" , "WPerW" , "therm" , "onePerm" , "m3Perkg" , "Pas" , "Nm" , "NPerm" , "radPers2" , "JPerm3" , "VPerm" , "CPerm3" , "CPerm2" , "FPerm" , "HPerm" , "JPermol" , "JPermolK" , "CPerkg" , "GyPers" , "WPersr" , "WPerm2sr" , "katPerm3" , "d" , "anglemin" , "anglesec" , "ha" , "tonne" , "bar" , "mmHg" , "M" , "kn" , "Mx" , "G" , "Oe" , "Vh" , "WPerA" , "onePerHz" , "VPerVAr" , "ohmPerm" , "kgPerJ" , "JPers" ;
+	sh:name "X Unit"@en ;
+	sh:description "The X-axis units of measure."^^rdf:XMLLiteral .
+<CurveShape.y1Multiplier> rdf:type sh:PropertyShape ;
+	sh:path <Curve.y1Multiplier> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:in "y" , "z" , "a" , "f" , "p" , "n" , "micro" , "m" , "c" , "d" , "none" , "da" , "h" , "k" , "M" , "G" , "T" , "P" , "E" , "Z" , "Y" ;
+	sh:name "Y1 Multiplier"@en ;
+	sh:description "Multiplier for Y1-axis."^^rdf:XMLLiteral .
+<CurveShape.y1Unit> rdf:type sh:PropertyShape ;
+	sh:path <Curve.y1Unit> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:in "none" , "m" , "kg" , "s" , "A" , "K" , "mol" , "cd" , "deg" , "rad" , "sr" , "Gy" , "Bq" , "degC" , "Sv" , "F" , "C" , "S" , "H" , "V" , "ohm" , "J" , "N" , "Hz" , "lx" , "lm" , "Wb" , "T" , "W" , "Pa" , "m2" , "m3" , "mPers" , "mPers2" , "m3Pers" , "mPerm3" , "kgm" , "kgPerm3" , "m2Pers" , "WPermK" , "JPerK" , "ppm" , "rotPers" , "radPers" , "WPerm2" , "JPerm2" , "SPerm" , "KPers" , "PaPers" , "JPerkgK" , "VA" , "VAr" , "cosPhi" , "Vs" , "V2" , "As" , "A2" , "A2s" , "VAh" , "Wh" , "VArh" , "VPerHz" , "HzPers" , "character" , "charPers" , "kgm2" , "dB" , "WPers" , "lPers" , "dBm" , "h" , "min" , "Q" , "Qh" , "ohmm" , "APerm" , "V2h" , "A2h" , "Ah" , "count" , "ft3" , "m3Perh" , "gal" , "Btu" , "l" , "lPerh" , "lPerl" , "gPerg" , "molPerm3" , "molPermol" , "molPerkg" , "sPers" , "HzPerHz" , "VPerV" , "APerA" , "VPerVA" , "rev" , "kat" , "JPerkg" , "m3Uncompensated" , "m3Compensated" , "WPerW" , "therm" , "onePerm" , "m3Perkg" , "Pas" , "Nm" , "NPerm" , "radPers2" , "JPerm3" , "VPerm" , "CPerm3" , "CPerm2" , "FPerm" , "HPerm" , "JPermol" , "JPermolK" , "CPerkg" , "GyPers" , "WPersr" , "WPerm2sr" , "katPerm3" , "d" , "anglemin" , "anglesec" , "ha" , "tonne" , "bar" , "mmHg" , "M" , "kn" , "Mx" , "G" , "Oe" , "Vh" , "WPerA" , "onePerHz" , "VPerVAr" , "ohmPerm" , "kgPerJ" , "JPers" ;
+	sh:name "Y1 Unit"@en ;
+	sh:description "The Y1-axis units of measure."^^rdf:XMLLiteral .
+<CurveShape.y2Multiplier> rdf:type sh:PropertyShape ;
+	sh:path <Curve.y2Multiplier> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:in "y" , "z" , "a" , "f" , "p" , "n" , "micro" , "m" , "c" , "d" , "none" , "da" , "h" , "k" , "M" , "G" , "T" , "P" , "E" , "Z" , "Y" ;
+	sh:name "Y2 Multiplier"@en ;
+	sh:description "Multiplier for Y2-axis."^^rdf:XMLLiteral .
+<CurveShape.y2Unit> rdf:type sh:PropertyShape ;
+	sh:path <Curve.y2Unit> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:in "none" , "m" , "kg" , "s" , "A" , "K" , "mol" , "cd" , "deg" , "rad" , "sr" , "Gy" , "Bq" , "degC" , "Sv" , "F" , "C" , "S" , "H" , "V" , "ohm" , "J" , "N" , "Hz" , "lx" , "lm" , "Wb" , "T" , "W" , "Pa" , "m2" , "m3" , "mPers" , "mPers2" , "m3Pers" , "mPerm3" , "kgm" , "kgPerm3" , "m2Pers" , "WPermK" , "JPerK" , "ppm" , "rotPers" , "radPers" , "WPerm2" , "JPerm2" , "SPerm" , "KPers" , "PaPers" , "JPerkgK" , "VA" , "VAr" , "cosPhi" , "Vs" , "V2" , "As" , "A2" , "A2s" , "VAh" , "Wh" , "VArh" , "VPerHz" , "HzPers" , "character" , "charPers" , "kgm2" , "dB" , "WPers" , "lPers" , "dBm" , "h" , "min" , "Q" , "Qh" , "ohmm" , "APerm" , "V2h" , "A2h" , "Ah" , "count" , "ft3" , "m3Perh" , "gal" , "Btu" , "l" , "lPerh" , "lPerl" , "gPerg" , "molPerm3" , "molPermol" , "molPerkg" , "sPers" , "HzPerHz" , "VPerV" , "APerA" , "VPerVA" , "rev" , "kat" , "JPerkg" , "m3Uncompensated" , "m3Compensated" , "WPerW" , "therm" , "onePerm" , "m3Perkg" , "Pas" , "Nm" , "NPerm" , "radPers2" , "JPerm3" , "VPerm" , "CPerm3" , "CPerm2" , "FPerm" , "HPerm" , "JPermol" , "JPermolK" , "CPerkg" , "GyPers" , "WPersr" , "WPerm2sr" , "katPerm3" , "d" , "anglemin" , "anglesec" , "ha" , "tonne" , "bar" , "mmHg" , "M" , "kn" , "Mx" , "G" , "Oe" , "Vh" , "WPerA" , "onePerHz" , "VPerVAr" , "ohmPerm" , "kgPerJ" , "JPers" ;
+	sh:name "Y2 Unit"@en ;
+	sh:description "The Y2-axis units of measure."^^rdf:XMLLiteral .
+<CurveShape.y3Multiplier> rdf:type sh:PropertyShape ;
+	sh:path <Curve.y3Multiplier> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:in "y" , "z" , "a" , "f" , "p" , "n" , "micro" , "m" , "c" , "d" , "none" , "da" , "h" , "k" , "M" , "G" , "T" , "P" , "E" , "Z" , "Y" ;
+	sh:name "Y3 Multiplier"@en ;
+	sh:description "Multiplier for Y3-axis."^^rdf:XMLLiteral .
+<CurveShape.y3Unit> rdf:type sh:PropertyShape ;
+	sh:path <Curve.y3Unit> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:in "none" , "m" , "kg" , "s" , "A" , "K" , "mol" , "cd" , "deg" , "rad" , "sr" , "Gy" , "Bq" , "degC" , "Sv" , "F" , "C" , "S" , "H" , "V" , "ohm" , "J" , "N" , "Hz" , "lx" , "lm" , "Wb" , "T" , "W" , "Pa" , "m2" , "m3" , "mPers" , "mPers2" , "m3Pers" , "mPerm3" , "kgm" , "kgPerm3" , "m2Pers" , "WPermK" , "JPerK" , "ppm" , "rotPers" , "radPers" , "WPerm2" , "JPerm2" , "SPerm" , "KPers" , "PaPers" , "JPerkgK" , "VA" , "VAr" , "cosPhi" , "Vs" , "V2" , "As" , "A2" , "A2s" , "VAh" , "Wh" , "VArh" , "VPerHz" , "HzPers" , "character" , "charPers" , "kgm2" , "dB" , "WPers" , "lPers" , "dBm" , "h" , "min" , "Q" , "Qh" , "ohmm" , "APerm" , "V2h" , "A2h" , "Ah" , "count" , "ft3" , "m3Perh" , "gal" , "Btu" , "l" , "lPerh" , "lPerl" , "gPerg" , "molPerm3" , "molPermol" , "molPerkg" , "sPers" , "HzPerHz" , "VPerV" , "APerA" , "VPerVA" , "rev" , "kat" , "JPerkg" , "m3Uncompensated" , "m3Compensated" , "WPerW" , "therm" , "onePerm" , "m3Perkg" , "Pas" , "Nm" , "NPerm" , "radPers2" , "JPerm3" , "VPerm" , "CPerm3" , "CPerm2" , "FPerm" , "HPerm" , "JPermol" , "JPermolK" , "CPerkg" , "GyPers" , "WPersr" , "WPerm2sr" , "katPerm3" , "d" , "anglemin" , "anglesec" , "ha" , "tonne" , "bar" , "mmHg" , "M" , "kn" , "Mx" , "G" , "Oe" , "Vh" , "WPerA" , "onePerHz" , "VPerVAr" , "ohmPerm" , "kgPerJ" , "JPers" ;
+	sh:name "Y3 Unit"@en ;
+	sh:description "The Y3-axis units of measure."^^rdf:XMLLiteral .
+
+<CurveShape.CurveDatas> rdf:type sh:PropertyShape ;
+	sh:path <Curve.CurveDatas> ;
+	sh:class <CurveData> ;
+	sh:name "Curve Datas"@en ;
+	sh:description "The point data values that define this curve."^^rdf:XMLLiteral .
+
+<CurveDataShape> rdf:type sh:NodeShape ;
+	sh:targetClass <CurveData> ;
+	sh:property <CurveDataShape.xvalue> , <CurveDataShape.y1value> , <CurveDataShape.y2value> , <CurveDataShape.y3value> , <CurveDataShape.Curve> .
+
+<CurveDataShape.xvalue> rdf:type sh:PropertyShape ;
+	sh:path <CurveData.xvalue> ;
+	sh:datatype xsd:double ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Xvalue"@en ;
+	sh:description "The data value of the X-axis variable,  depending on the X-axis units."^^rdf:XMLLiteral .
+<CurveDataShape.y1value> rdf:type sh:PropertyShape ;
+	sh:path <CurveData.y1value> ;
+	sh:datatype xsd:double ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Y1value"@en ;
+	sh:description "The data value of the  first Y-axis variable, depending on the Y-axis units."^^rdf:XMLLiteral .
+<CurveDataShape.y2value> rdf:type sh:PropertyShape ;
+	sh:path <CurveData.y2value> ;
+	sh:datatype xsd:double ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Y2value"@en ;
+	sh:description "The data value of the second Y-axis variable (if present), depending on the Y-axis units."^^rdf:XMLLiteral .
+<CurveDataShape.y3value> rdf:type sh:PropertyShape ;
+	sh:path <CurveData.y3value> ;
+	sh:datatype xsd:double ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Y3value"@en ;
+	sh:description "The data value of the third Y-axis variable (if present), depending on the Y-axis units."^^rdf:XMLLiteral .
+
+<CurveDataShape.Curve> rdf:type sh:PropertyShape ;
+	sh:path <CurveData.Curve> ;
+	sh:class <Curve> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Curve"@en ;
+	sh:description "The curve of  this curve data point."^^rdf:XMLLiteral .
+
+<IdentifiedObjectShape> rdf:type sh:NodeShape ;
+	sh:targetClass <IdentifiedObject> ;
+	sh:closed "true"^^xsd:boolean .
+
+<IdentifiedObjectShape.description> rdf:type sh:PropertyShape ;
+	sh:path <IdentifiedObject.description> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Description"@en ;
+	sh:description "The description is a free human readable text describing or naming the object."^^rdf:XMLLiteral .
+<IdentifiedObjectShape.mRID> rdf:type sh:PropertyShape ;
+	sh:path <IdentifiedObject.mRID> ;
+	sh:datatype xsd:string ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "MRID"@en ;
+	sh:description "Master resource identifier issued by a model authority."^^rdf:XMLLiteral .
+<IdentifiedObjectShape.name> rdf:type sh:PropertyShape ;
+	sh:path <IdentifiedObject.name> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Name"@en ;
+	sh:description "The name is any free human readable and possibly non unique text naming the object."^^rdf:XMLLiteral .
+
+<SignalConfigurationShape> rdf:type sh:NodeShape ;
+	sh:targetClass <SignalConfiguration> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+
+<SignalConfigurationShape.SimulationResult> rdf:type sh:PropertyShape ;
+	sh:path <SignalConfiguration.SimulationResult> ;
+	sh:class <SimulationResult> ;
+	sh:name "Simulation Result"@en ;
+	sh:description "The simulation reslut to which this simulation configuration belongs to."^^rdf:XMLLiteral .
+
+<SignalRecorderShape> rdf:type sh:NodeShape ;
+	sh:targetClass <SignalRecorder> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+
+<SignalRecorderShape.SimulationChacteristic2> rdf:type sh:PropertyShape ;
+	sh:path <SignalRecorder.SimulationChacteristic2> ;
+	sh:class <SimulationResultCharacteristic> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Simulation Chacteristic2"@en ;
+	sh:description "The characteristic where this signal is plotted."^^rdf:XMLLiteral .
+<SignalRecorderShape.SimulationCharacteristic1> rdf:type sh:PropertyShape ;
+	sh:path <SignalRecorder.SimulationCharacteristic1> ;
+	sh:class <SimulationResultCharacteristic> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Simulation Characteristic1"@en ;
+	sh:description "The characteristic where this signal is plotted."^^rdf:XMLLiteral .
+<SignalRecorderShape.SimulationCharacteristic3> rdf:type sh:PropertyShape ;
+	sh:path <SignalRecorder.SimulationCharacteristic3> ;
+	sh:class <SimulationResultCharacteristic> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Simulation Characteristic3"@en ;
+	sh:description "The characteristic where this signal is plotted."^^rdf:XMLLiteral .
+
+<SimulationEventsShape> rdf:type sh:NodeShape ;
+	sh:targetClass <SimulationEvents> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+
+<SimulationEventsShape.SimulationResult> rdf:type sh:PropertyShape ;
+	sh:path <SimulationEvents.SimulationResult> ;
+	sh:class <SimulationResult> ;
+	sh:name "Simulation Result"@en ;
+	sh:description "The simulation reslut to which this simulation events belong to."^^rdf:XMLLiteral .
+
+<SimulationResultShape> rdf:type sh:NodeShape ;
+	sh:targetClass <SimulationResult> ;
+	sh:property <SimulationResultShape.SimulationSettings> , <SimulationResultShape.SignalConfiguration> , <SimulationResultShape.SimulationEvents> , <SimulationResultShape.SimulationResultCharacteristic> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+
+<SimulationResultShape.SimulationSettings> rdf:type sh:PropertyShape ;
+	sh:path <SimulationResult.SimulationSettings> ;
+	sh:class <SimulationSettings> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Simulation Settings"@en ;
+	sh:description "The simulation settings that are part of the simulation result."^^rdf:XMLLiteral .
+<SimulationResultShape.SignalConfiguration> rdf:type sh:PropertyShape ;
+	sh:path <SimulationResult.SignalConfiguration> ;
+	sh:class <SignalConfiguration> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Signal Configuration"@en ;
+	sh:description "The simulation configuration that is part of the simulation result."^^rdf:XMLLiteral .
+<SimulationResultShape.SimulationEvents> rdf:type sh:PropertyShape ;
+	sh:path <SimulationResult.SimulationEvents> ;
+	sh:class <SimulationEvents> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Simulation Events"@en ;
+	sh:description "The simulation events that are part of the simulation result."^^rdf:XMLLiteral .
+<SimulationResultShape.SimulationResultCharacteristic> rdf:type sh:PropertyShape ;
+	sh:path <SimulationResult.SimulationResultCharacteristic> ;
+	sh:class <SimulationResultCharacteristic> ;
+	sh:name "Simulation Result Characteristic"@en ;
+	sh:description "The simulation result characteristic that is part of the simulation result."^^rdf:XMLLiteral .
+
+<SimulationResultCharacteristicShape> rdf:type sh:NodeShape ;
+	sh:targetClass <SimulationResultCharacteristic> ;
+	sh:property <SimulationResultCharacteristicShape.resultReference> , <SimulationResultCharacteristicShape.y2valueSignal> , <SimulationResultCharacteristicShape.y1valueSignal> , <SimulationResultCharacteristicShape.SimulationResult> , <SimulationResultCharacteristicShape.y3valueSignal> , <CurveShape.curveStyle> , <CurveShape.xMultiplier> , <CurveShape.xUnit> , <CurveShape.y1Multiplier> , <CurveShape.y1Unit> , <CurveShape.y2Multiplier> , <CurveShape.y2Unit> , <CurveShape.y3Multiplier> , <CurveShape.y3Unit> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <CurveShape.CurveDatas> .
+
+<SimulationResultCharacteristicShape.resultReference> rdf:type sh:PropertyShape ;
+	sh:path <SimulationResultCharacteristic.resultReference> ;
+	sh:class <IRI> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Result Reference"@en ;
+	sh:description "Reference to an artifact containing the data for the characteristic."^^rdf:XMLLiteral .
+
+<SimulationResultCharacteristicShape.y2valueSignal> rdf:type sh:PropertyShape ;
+	sh:path <SimulationResultCharacteristic.y2valueSignal> ;
+	sh:class <SignalRecorder> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Y2value Signal"@en ;
+	sh:description "The signal for y2value of the characteristic."^^rdf:XMLLiteral .
+<SimulationResultCharacteristicShape.y1valueSignal> rdf:type sh:PropertyShape ;
+	sh:path <SimulationResultCharacteristic.y1valueSignal> ;
+	sh:class <SignalRecorder> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Y1value Signal"@en ;
+	sh:description "The signal for y1value of the characteristic."^^rdf:XMLLiteral .
+<SimulationResultCharacteristicShape.SimulationResult> rdf:type sh:PropertyShape ;
+	sh:path <SimulationResultCharacteristic.SimulationResult> ;
+	sh:class <SimulationResult> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Simulation Result"@en ;
+	sh:description "The simulation reslut to which this simulation result characteristic belongs to."^^rdf:XMLLiteral .
+<SimulationResultCharacteristicShape.y3valueSignal> rdf:type sh:PropertyShape ;
+	sh:path <SimulationResultCharacteristic.y3valueSignal> ;
+	sh:class <SignalRecorder> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Y3value Signal"@en ;
+	sh:description "The signal for y3value of the characteristic."^^rdf:XMLLiteral .
+
+<SimulationSettingsShape> rdf:type sh:NodeShape ;
+	sh:targetClass <SimulationSettings> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+
+<SimulationSettingsShape.SimulationResult> rdf:type sh:PropertyShape ;
+	sh:path <SimulationSettings.SimulationResult> ;
+	sh:class <SimulationResult> ;
+	sh:name "Simulation Result"@en ;
+	sh:description "The simulation reslut to which this simulation settings belong to."^^rdf:XMLLiteral .

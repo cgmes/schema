@@ -1,0 +1,316 @@
+@base <http://iec.ch/TC57/2013/CIM-schema-cim16#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+<CoordinateSystemShape> rdf:type sh:NodeShape ;
+	sh:targetClass <CoordinateSystem> ;
+	sh:property <CoordinateSystemShape.crsUrn> , <CoordinateSystemShape.Locations> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+
+<CoordinateSystemShape.crsUrn> rdf:type sh:PropertyShape ;
+	sh:path <CoordinateSystem.crsUrn> ;
+	sh:datatype xsd:string ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "CRS URN"@en .
+
+<CoordinateSystemShape.Locations> rdf:type sh:PropertyShape ;
+	sh:path <CoordinateSystem.Locations> ;
+	sh:class <Location> ;
+	sh:name "Locations"@en ;
+	sh:description "All locations described with position points in this coordinate system."^^rdf:XMLLiteral .
+
+<IdentifiedObjectShape> rdf:type sh:NodeShape ;
+	sh:targetClass <IdentifiedObject> ;
+	sh:closed "true"^^xsd:boolean .
+
+<IdentifiedObjectShape.mRID> rdf:type sh:PropertyShape ;
+	sh:path <IdentifiedObject.mRID> ;
+	sh:datatype xsd:string ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "MRID"@en ;
+	sh:description "Master resource identifier issued by a model authority."^^rdf:XMLLiteral .
+<IdentifiedObjectShape.name> rdf:type sh:PropertyShape ;
+	sh:path <IdentifiedObject.name> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Name"@en ;
+	sh:description "The name is any free human readable and possibly non unique text naming the object."^^rdf:XMLLiteral .
+
+<LocationShape> rdf:type sh:NodeShape ;
+	sh:targetClass <Location> ;
+	sh:property <LocationShape.mainAddress> , <LocationShape.PositionPoints> , <LocationShape.PowerSystemResources> , <LocationShape.CoordinateSystem> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+
+<LocationShape.mainAddress> rdf:type sh:PropertyShape ;
+	sh:path <Location.mainAddress> ;
+	sh:class <StreetAddress> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Main Address"@en ;
+	sh:description "Main address of the location."^^rdf:XMLLiteral .
+
+<LocationShape.PositionPoints> rdf:type sh:PropertyShape ;
+	sh:path <Location.PositionPoints> ;
+	sh:class <PositionPoint> ;
+	sh:name "Position Points"@en ;
+	sh:description "Sequence of position points describing this location, expressed in coordinate system 'Location.CoordinateSystem'."^^rdf:XMLLiteral .
+<LocationShape.PowerSystemResources> rdf:type sh:PropertyShape ;
+	sh:path <Location.PowerSystemResources> ;
+	sh:class <PowerSystemResource> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Power System Resources"@en ;
+	sh:description "All power system resources at this location."^^rdf:XMLLiteral .
+<LocationShape.CoordinateSystem> rdf:type sh:PropertyShape ;
+	sh:path <Location.CoordinateSystem> ;
+	sh:class <CoordinateSystem> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Coordinate System"@en ;
+	sh:description "Coordinate system used to describe position points of this location."^^rdf:XMLLiteral .
+
+<PositionPointShape> rdf:type sh:NodeShape ;
+	sh:targetClass <PositionPoint> ;
+	sh:property <PositionPointShape.sequenceNumber> , <PositionPointShape.xPosition> , <PositionPointShape.yPosition> , <PositionPointShape.zPosition> , <PositionPointShape.Location> .
+
+<PositionPointShape.sequenceNumber> rdf:type sh:PropertyShape ;
+	sh:path <PositionPoint.sequenceNumber> ;
+	sh:datatype xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Sequence Number"@en ;
+	sh:description "Zero-relative sequence number of this point within a series of points."^^rdf:XMLLiteral .
+<PositionPointShape.xPosition> rdf:type sh:PropertyShape ;
+	sh:path <PositionPoint.xPosition> ;
+	sh:datatype xsd:string ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "X Position"@en ;
+	sh:description "X axis position."^^rdf:XMLLiteral .
+<PositionPointShape.yPosition> rdf:type sh:PropertyShape ;
+	sh:path <PositionPoint.yPosition> ;
+	sh:datatype xsd:string ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Y Position"@en ;
+	sh:description "Y axis position."^^rdf:XMLLiteral .
+<PositionPointShape.zPosition> rdf:type sh:PropertyShape ;
+	sh:path <PositionPoint.zPosition> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Z Position"@en ;
+	sh:description "(if applicable) Z axis position."^^rdf:XMLLiteral .
+
+<PositionPointShape.Location> rdf:type sh:PropertyShape ;
+	sh:path <PositionPoint.Location> ;
+	sh:class <Location> ;
+	sh:minCount "1"^^xsd:integer ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Location"@en ;
+	sh:description "Location described by this position point."^^rdf:XMLLiteral .
+
+<PowerSystemResourceShape> rdf:type sh:NodeShape ;
+	sh:targetClass <PowerSystemResource> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+
+<PowerSystemResourceShape.Location> rdf:type sh:PropertyShape ;
+	sh:path <PowerSystemResource.Location> ;
+	sh:class <Location> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Location"@en ;
+	sh:description "Location of this power system resource."^^rdf:XMLLiteral .
+
+<ServiceLocationShape> rdf:type sh:NodeShape ;
+	sh:targetClass <ServiceLocation> ;
+	sh:property <LocationShape.mainAddress> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <LocationShape.PositionPoints> , <LocationShape.PowerSystemResources> , <LocationShape.CoordinateSystem> .
+
+<StatusShape> rdf:type sh:NodeShape ;
+	sh:targetClass <Status> ;
+	sh:property <StatusShape.dateTime> , <StatusShape.reason> , <StatusShape.remark> , <StatusShape.value> .
+
+<StatusShape.dateTime> rdf:type sh:PropertyShape ;
+	sh:path <Status.dateTime> ;
+	sh:datatype <https://schema.org/DateTime> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Date Time"@en ;
+	sh:description "Date and time for which status 'value' applies."^^rdf:XMLLiteral .
+<StatusShape.reason> rdf:type sh:PropertyShape ;
+	sh:path <Status.reason> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Reason"@en ;
+	sh:description "Reason code or explanation for why an object went to the current status 'value'."^^rdf:XMLLiteral .
+<StatusShape.remark> rdf:type sh:PropertyShape ;
+	sh:path <Status.remark> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Remark"@en ;
+	sh:description "Pertinent information regarding the current 'value', as free form text."^^rdf:XMLLiteral .
+<StatusShape.value> rdf:type sh:PropertyShape ;
+	sh:path <Status.value> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Value"@en .
+
+<StreetAddressShape> rdf:type sh:NodeShape ;
+	sh:targetClass <StreetAddress> ;
+	sh:property <StreetAddressShape.language> , <StreetAddressShape.poBox> , <StreetAddressShape.postalCode> , <StreetAddressShape.status> , <StreetAddressShape.streetDetail> , <StreetAddressShape.townDetail> .
+
+<StreetAddressShape.language> rdf:type sh:PropertyShape ;
+	sh:path <StreetAddress.language> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Language"@en ;
+	sh:description "The language in which the address is specified, using ISO 639-1 two digit language code."^^rdf:XMLLiteral .
+<StreetAddressShape.poBox> rdf:type sh:PropertyShape ;
+	sh:path <StreetAddress.poBox> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "PO Box"@en ;
+	sh:description "Post office box."^^rdf:XMLLiteral .
+<StreetAddressShape.postalCode> rdf:type sh:PropertyShape ;
+	sh:path <StreetAddress.postalCode> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Postal Code"@en ;
+	sh:description "Postal code for the address."^^rdf:XMLLiteral .
+<StreetAddressShape.status> rdf:type sh:PropertyShape ;
+	sh:path <StreetAddress.status> ;
+	sh:class <Status> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Status"@en ;
+	sh:description "Status of this address."^^rdf:XMLLiteral .
+<StreetAddressShape.streetDetail> rdf:type sh:PropertyShape ;
+	sh:path <StreetAddress.streetDetail> ;
+	sh:class <StreetDetail> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Street Detail"@en ;
+	sh:description "Street detail."^^rdf:XMLLiteral .
+<StreetAddressShape.townDetail> rdf:type sh:PropertyShape ;
+	sh:path <StreetAddress.townDetail> ;
+	sh:class <TownDetail> ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Town Detail"@en ;
+	sh:description "Town detail."^^rdf:XMLLiteral .
+
+<StreetDetailShape> rdf:type sh:NodeShape ;
+	sh:targetClass <StreetDetail> ;
+	sh:property <StreetDetailShape.addressGeneral> , <StreetDetailShape.addressGeneral2> , <StreetDetailShape.addressGeneral3> , <StreetDetailShape.buildingName> , <StreetDetailShape.code> , <StreetDetailShape.floorIdentification> , <StreetDetailShape.name> , <StreetDetailShape.number> , <StreetDetailShape.prefix> , <StreetDetailShape.suffix> , <StreetDetailShape.suiteNumber> , <StreetDetailShape.type> , <StreetDetailShape.withinTownLimits> .
+
+<StreetDetailShape.addressGeneral> rdf:type sh:PropertyShape ;
+	sh:path <StreetDetail.addressGeneral> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Address General"@en ;
+	sh:description "First line of a free form address or some additional address information (for example a mail stop)."^^rdf:XMLLiteral .
+<StreetDetailShape.addressGeneral2> rdf:type sh:PropertyShape ;
+	sh:path <StreetDetail.addressGeneral2> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Address General2"@en ;
+	sh:description "(if applicable) Second line of a free form address."^^rdf:XMLLiteral .
+<StreetDetailShape.addressGeneral3> rdf:type sh:PropertyShape ;
+	sh:path <StreetDetail.addressGeneral3> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Address General3"@en ;
+	sh:description "(if applicable) Third line of a free form address."^^rdf:XMLLiteral .
+<StreetDetailShape.buildingName> rdf:type sh:PropertyShape ;
+	sh:path <StreetDetail.buildingName> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Building Name"@en .
+<StreetDetailShape.code> rdf:type sh:PropertyShape ;
+	sh:path <StreetDetail.code> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Code"@en .
+<StreetDetailShape.floorIdentification> rdf:type sh:PropertyShape ;
+	sh:path <StreetDetail.floorIdentification> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Floor Identification"@en ;
+	sh:description "The identification by name or number, expressed as text, of the floor in the building as part of this address."^^rdf:XMLLiteral .
+<StreetDetailShape.name> rdf:type sh:PropertyShape ;
+	sh:path <StreetDetail.name> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Name"@en ;
+	sh:description "Name of the street."^^rdf:XMLLiteral .
+<StreetDetailShape.number> rdf:type sh:PropertyShape ;
+	sh:path <StreetDetail.number> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Number"@en ;
+	sh:description "Designator of the specific location on the street."^^rdf:XMLLiteral .
+<StreetDetailShape.prefix> rdf:type sh:PropertyShape ;
+	sh:path <StreetDetail.prefix> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Prefix"@en ;
+	sh:description "Prefix to the street name."^^rdf:XMLLiteral .
+<StreetDetailShape.suffix> rdf:type sh:PropertyShape ;
+	sh:path <StreetDetail.suffix> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Suffix"@en ;
+	sh:description "Suffix to the street name."^^rdf:XMLLiteral .
+<StreetDetailShape.suiteNumber> rdf:type sh:PropertyShape ;
+	sh:path <StreetDetail.suiteNumber> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Suite Number"@en ;
+	sh:description "Number of the apartment or suite."^^rdf:XMLLiteral .
+<StreetDetailShape.type> rdf:type sh:PropertyShape ;
+	sh:path <StreetDetail.type> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Type"@en ;
+	sh:description "Type of street."^^rdf:XMLLiteral .
+<StreetDetailShape.withinTownLimits> rdf:type sh:PropertyShape ;
+	sh:path <StreetDetail.withinTownLimits> ;
+	sh:datatype xsd:boolean ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Within Town Limits"@en ;
+	sh:description "True if this street is within the legal geographical boundaries of the specified town (default)."^^rdf:XMLLiteral .
+
+<TownDetailShape> rdf:type sh:NodeShape ;
+	sh:targetClass <TownDetail> ;
+	sh:property <TownDetailShape.code> , <TownDetailShape.country> , <TownDetailShape.name> , <TownDetailShape.section> , <TownDetailShape.stateOrProvince> .
+
+<TownDetailShape.code> rdf:type sh:PropertyShape ;
+	sh:path <TownDetail.code> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Code"@en ;
+	sh:description "Town code."^^rdf:XMLLiteral .
+<TownDetailShape.country> rdf:type sh:PropertyShape ;
+	sh:path <TownDetail.country> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Country"@en ;
+	sh:description "Name of the country."^^rdf:XMLLiteral .
+<TownDetailShape.name> rdf:type sh:PropertyShape ;
+	sh:path <TownDetail.name> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Name"@en ;
+	sh:description "Town name."^^rdf:XMLLiteral .
+<TownDetailShape.section> rdf:type sh:PropertyShape ;
+	sh:path <TownDetail.section> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "Section"@en ;
+	sh:description "Town section."^^rdf:XMLLiteral .
+<TownDetailShape.stateOrProvince> rdf:type sh:PropertyShape ;
+	sh:path <TownDetail.stateOrProvince> ;
+	sh:datatype xsd:string ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:name "State Or Province"@en ;
+	sh:description "Name of the state or province."^^rdf:XMLLiteral .
+
+<WorkLocationShape> rdf:type sh:NodeShape ;
+	sh:targetClass <WorkLocation> ;
+	sh:closed "true"^^xsd:boolean ;
+	sh:property <LocationShape.mainAddress> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <LocationShape.PositionPoints> , <LocationShape.PowerSystemResources> , <LocationShape.CoordinateSystem> .
