@@ -11,6 +11,8 @@ them in standardized formats, serialized in well estabished syntaxes.
 
 The profiles are exported as UML v1.3 in XMI v1.1 format.
 The UML is converted to [RDFS](https://www.w3.org/TR/rdf-schema/) in [RDF/XML](https://www.w3.org/TR/rdf-syntax-grammar/), [Turtle](https://www.w3.org/TR/turtle/) and [N-Triples](https://www.w3.org/TR/n-triples/) format.
+For convenience the RDFS classes and properties are also provided in CSV format.
+The UML is also converted to [SHACL](https://www.w3.org/TR/shacl/) shape constraints that include enumeration and multiplicity information.
 
 ## Profiles
 

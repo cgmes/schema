@@ -2,6 +2,7 @@
 
 - UML: [[XMI]](./Dynamics.xmi)
 - RDFS: [[Turtle]](./Dynamics.ttl) [[RDF/XML]](./Dynamics.rdf) [[N-Triples]](./Dynamics.nt)
+- SHACL: [[Turtle]](./DynamicsShape.ttl)
 - CSV: [[Class]](./DynamicsClass.csv) [[Property]](./DynamicsProperty.csv)
 
 The CIM dynamic model definitions reflect the most common IEEE or, in the case of wind models, IEC, representations of models as well as models included in some of the transient stability software widely used by utilities.
