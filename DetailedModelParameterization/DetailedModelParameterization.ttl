@@ -7,6 +7,11 @@
 	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "DetailedModelTypeDynamics"@en ;
 	rdfs:comment "The main class that packages all related to this type of a detailed model. This includes all parameters, functions, signals, etc."^^rdf:XMLLiteral .
+<DetailedModelTypeDynamics.DetailedModelDynamics> rdf:type rdfs:Property ;
+	rdfs:label "DetailedModelDynamics"@en ;
+	rdfs:domain <DetailedModelTypeDynamics> ;
+	rdfs:range <DetailedModelDynamics> ;
+	rdfs:comment "The detailed model dynamics that has this type of detailed model dynamics."^^rdf:XMLLiteral .
 
 <DetailedModelDescriptor> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -69,6 +74,11 @@
 	rdfs:domain <DynamicsFunctionBlock> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Function block used indicator.\ntrue = use of function block is enabled\nfalse = use of function block is disabled."^^rdf:XMLLiteral .
+<DynamicsFunctionBlock.DetailedModelDynamics> rdf:type rdfs:Property ;
+	rdfs:label "DetailedModelDynamics"@en ;
+	rdfs:domain <DynamicsFunctionBlock> ;
+	rdfs:range <DetailedModelDynamics> ;
+	rdfs:comment "The detailed model dynamics that has this dynamics function block."^^rdf:XMLLiteral .
 
 <StringFixedLanguage> rdf:type rdfs:Datatype ;
 	rdfs:label "StringFixedLanguage"@en ;
@@ -82,11 +92,21 @@
 	rdfs:subClassOf <PowerSystemResource> ;
 	rdfs:label "Equipment"@en ;
 	rdfs:comment "The parts of a power system that are physical devices, electronic or mechanical."^^rdf:XMLLiteral .
+<Equipment.DetailedModelDynamics> rdf:type rdfs:Property ;
+	rdfs:label "DetailedModelDynamics"@en ;
+	rdfs:domain <Equipment> ;
+	rdfs:range <DetailedModelDynamics> ;
+	rdfs:comment "The detailed model dynamics this models this equipment."^^rdf:XMLLiteral .
 
 <ParameterDesctiptor> rdf:type rdfs:Class ;
 	rdfs:subClassOf <DetailedModelDescriptor> ;
 	rdfs:label "ParameterDesctiptor"@en ;
 	rdfs:comment "Supports definition of one or more parameters of several different datatypes for use by the detailed model.  It describes the parameters used in the equations of the detailed model.\nThe name of the parameter shall be the same as the name used in the equations of the detailed model."^^rdf:XMLLiteral .
+<ParameterDesctiptor.ParameterValue> rdf:type rdfs:Property ;
+	rdfs:label "ParameterValue"@en ;
+	rdfs:domain <ParameterDesctiptor> ;
+	rdfs:range <ParameterValue> ;
+	rdfs:comment "The value of the parameter descriptor."^^rdf:XMLLiteral .
 
 <DetailedModelDynamics> rdf:type rdfs:Class ;
 	rdfs:subClassOf <DynamicsFunctionBlock> ;
@@ -97,6 +117,11 @@
 	rdfs:domain <DetailedModelDynamics> ;
 	rdfs:range <DetailedModelTypeDynamics> ;
 	rdfs:comment "The type of detailed model dynamics that is applied to the detailed model dynamics."^^rdf:XMLLiteral .
+<DetailedModelDynamics.ParameterValue> rdf:type rdfs:Property ;
+	rdfs:label "ParameterValue"@en ;
+	rdfs:domain <DetailedModelDynamics> ;
+	rdfs:range <ParameterValue> ;
+	rdfs:comment "The value of the parameter for this detailed model dynamics."^^rdf:XMLLiteral .
 <DetailedModelDynamics.DynamicsFunctionBlock> rdf:type rdfs:Property ;
 	rdfs:label "DynamicsFunctionBlock"@en ;
 	rdfs:domain <DetailedModelDynamics> ;

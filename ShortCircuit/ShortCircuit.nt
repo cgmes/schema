@@ -2,6 +2,16 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> <http://www.w3.org/2000/01/rdf-schema#label> "Terminal"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> <http://www.w3.org/2000/01/rdf-schema#comment> "An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.HasFirstMutualCoupling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.HasFirstMutualCoupling> <http://www.w3.org/2000/01/rdf-schema#label> "HasFirstMutualCoupling"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.HasFirstMutualCoupling> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.HasFirstMutualCoupling> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#MutualCoupling> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.HasFirstMutualCoupling> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutual couplings associated with the branch as the first branch."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.HasSecondMutualCoupling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.HasSecondMutualCoupling> <http://www.w3.org/2000/01/rdf-schema#label> "HasSecondMutualCoupling"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.HasSecondMutualCoupling> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.HasSecondMutualCoupling> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#MutualCoupling> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.HasSecondMutualCoupling> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutual couplings with the branch associated as the first branch."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerTransformerEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerTransformerEnd> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerTransformerEnd> <http://www.w3.org/2000/01/rdf-schema#label> "PowerTransformerEnd"@en .

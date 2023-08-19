@@ -224,11 +224,21 @@
 	rdfs:domain <Model> ;
 	rdfs:range <Model> ;
 	rdfs:comment "When a model is updated the resulting model supersedes the models that were used as basis for the update. Hence this is a reference to the CIMXML documents which are superseded by this model. A model (or instance file) can supersede 1 or more models, e.g. a difference model or a full model supersede multiple models (difference or full). In this case more than one Model.Supersedes are included in the header. The referenced document(s) is (are) identified by the URN/MRID/UUID in the FullModel rdf:about attribute when full model(s) is (are) referenced and by the URN/MRID/UUID in the DifferenceModel rdf:about attribute when difference model(s) is (are) referenced."^^rdf:XMLLiteral .
+<Model.SupersededBy> rdf:type rdfs:Property ;
+	rdfs:label "SupersededBy"@en ;
+	rdfs:domain <Model> ;
+	rdfs:range <Model> ;
+	rdfs:comment "All models superseding this model. This role is not intended to be included in any document exchanging instance data."^^rdf:XMLLiteral .
 <Model.DependentOn> rdf:type rdfs:Property ;
 	rdfs:label "DependentOn"@en ;
 	rdfs:domain <Model> ;
 	rdfs:range <Model> ;
 	rdfs:comment "A reference to the model documents that the model described by this document depends on. In general there can be 0 or many Model.DependentOn depending on the profile and the content of the instance file.\nFor instance:\n– A load flow solution depends on the topology model it was computed from\n– A topology model computed by a topology processor depends on the network model it was computed from.\nThe referenced models are identified by the FullModel rdf:about attribute for full model documents and by DifferenceModel rdf:about attribute for difference model documents.\nThe references are maintained by the producer of the CIMXML document and the references are valid for the model with version and identifier for which the document was created."^^rdf:XMLLiteral .
+<Model.Depending> rdf:type rdfs:Property ;
+	rdfs:label "Depending"@en ;
+	rdfs:domain <Model> ;
+	rdfs:range <Model> ;
+	rdfs:comment "All documents depending on the model described by this document. This role is not intended to be included in any document exchanging instance data."^^rdf:XMLLiteral .
 
 <StringIRI> rdf:type rdfs:Datatype ;
 	rdfs:label "StringIRI"@en ;

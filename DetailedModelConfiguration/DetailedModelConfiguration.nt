@@ -69,15 +69,35 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.InputSignal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.InputSignal> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.InputSignal> <http://www.w3.org/2000/01/rdf-schema#comment> "The input signal for this input descriptor."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.LimiterDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.LimiterDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "LimiterDescriptor"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.LimiterDescriptor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.LimiterDescriptor> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#LimiterDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.LimiterDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "The limiter descriptor that has input and output descriptor."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.OutputSignal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.OutputSignal> <http://www.w3.org/2000/01/rdf-schema#label> "OutputSignal"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.OutputSignal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.OutputSignal> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.OutputSignal> <http://www.w3.org/2000/01/rdf-schema#comment> "The output signal for this output descriptor."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.OperatorDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.OperatorDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "OperatorDescriptor"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.OperatorDescriptor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.OperatorDescriptor> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#OperatorDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.OperatorDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "The operator descriptor that has input and output descriptor."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.FunctionDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.FunctionDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "FunctionDescriptor"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.FunctionDescriptor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.FunctionDescriptor> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor.FunctionDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "The function descriptor that has this input and output descriptor."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> <http://www.w3.org/2000/01/rdf-schema#label> "ACDCTerminal"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> <http://www.w3.org/2000/01/rdf-schema#comment> "An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.SignalDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.SignalDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "SignalDescriptor"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.SignalDescriptor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.SignalDescriptor> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.SignalDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "The signal descriptor that has a terminal."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptorArtifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptorArtifact> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptorArtifact> <http://www.w3.org/2000/01/rdf-schema#label> "DetailedModelDescriptorArtifact"@en .
@@ -92,6 +112,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptorArtifact.equationLanguageTypeOther> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptorArtifact> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptorArtifact.equationLanguageTypeOther> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptorArtifact.equationLanguageTypeOther> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the language used to describe equations."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptorArtifact.FunctionDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptorArtifact.FunctionDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "FunctionDescriptor"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptorArtifact.FunctionDescriptor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptorArtifact> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptorArtifact.FunctionDescriptor> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptorArtifact.FunctionDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "The functional descriptor that has equation descriptor artifact."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "SignalDescriptor"@en .
@@ -101,6 +126,16 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.isSignalInverted> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.isSignalInverted> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.isSignalInverted> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if the signal is inverted. True means the signal is inverted, i.e. multiplied by -1. False means the signal is not inverted."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.InputDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.InputDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "InputDescriptor"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.InputDescriptor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.InputDescriptor> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.InputDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "The input of the input descriptor that has this signal descriptor."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.OutputDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.OutputDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "OutputDescriptor"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.OutputDescriptor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.OutputDescriptor> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#InputOutputDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.OutputDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "The output of this input and output desciptor that has a signal descriptor."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.ACDCTerminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.ACDCTerminal> <http://www.w3.org/2000/01/rdf-schema#label> "ACDCTerminal"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.ACDCTerminal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> .
@@ -118,6 +153,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock> <http://www.w3.org/2000/01/rdf-schema#label> "DynamicsFunctionBlock"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract parent class for all Dynamics function blocks."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.SignalDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.SignalDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "SignalDescriptor"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.SignalDescriptor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.SignalDescriptor> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.SignalDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "The signal which relates to this dynamics function block."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "FunctionDescriptor"@en .
@@ -142,6 +182,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.initialConditionsEquation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.initialConditionsEquation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.initialConditionsEquation> <http://www.w3.org/2000/01/rdf-schema#comment> "Mathematical expression (in the specified language) of the initial conditions of the function descriptor. "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.ParameterDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.ParameterDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "ParameterDescriptor"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.ParameterDescriptor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.ParameterDescriptor> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterDesctiptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.ParameterDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "The parameter descriptor for this function descriptor."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.InputOutputDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.InputOutputDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "InputOutputDescriptor"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.InputOutputDescriptor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor> .
@@ -152,6 +197,16 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.EquationDescriptorArtifact> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.EquationDescriptorArtifact> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptorArtifact> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.EquationDescriptorArtifact> <http://www.w3.org/2000/01/rdf-schema#comment> "The equation descriptor artifact for this function descriptor."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.LowerLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.LowerLimit> <http://www.w3.org/2000/01/rdf-schema#label> "LowerLimit"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.LowerLimit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.LowerLimit> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#LimiterDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.LowerLimit> <http://www.w3.org/2000/01/rdf-schema#comment> "The lower limit of the limiter descriptor."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.UpperLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.UpperLimit> <http://www.w3.org/2000/01/rdf-schema#label> "UpperLimit"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.UpperLimit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.UpperLimit> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#LimiterDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FunctionDescriptor.UpperLimit> <http://www.w3.org/2000/01/rdf-schema#comment> "The upper limit of the limiter descriptor."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#IRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#IRI> <http://www.w3.org/2000/01/rdf-schema#label> "IRI"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#IRI> <http://www.w3.org/2000/01/rdf-schema#comment> "An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.\nThe primitive is serialized as rdf:resource in RDFXML.\nIRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.\nIRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.\nIRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
@@ -228,3 +283,8 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelTypeDynamics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelTypeDynamics> <http://www.w3.org/2000/01/rdf-schema#label> "DetailedModelTypeDynamics"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelTypeDynamics> <http://www.w3.org/2000/01/rdf-schema#comment> "The main class that packages all related to this type of a detailed model. This includes all parameters, functions, signals, etc."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelTypeDynamics.DetailedModelDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelTypeDynamics.DetailedModelDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "DetailedModelDescriptor"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelTypeDynamics.DetailedModelDescriptor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelTypeDynamics> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelTypeDynamics.DetailedModelDescriptor> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelTypeDynamics.DetailedModelDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "The detailed model descriptor that is part of the detailed model type dynamics."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .

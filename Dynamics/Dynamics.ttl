@@ -22,6 +22,26 @@
 	rdfs:subClassOf <RegulatingCondEq> ;
 	rdfs:label "PowerElectronicsConnection"@en ;
 	rdfs:comment "A connection to the AC network for energy production or consumption that uses power electronics rather than rotating machines."^^rdf:XMLLiteral .
+<PowerElectronicsConnection.StatcomDynamics> rdf:type rdfs:Property ;
+	rdfs:label "StatcomDynamics"@en ;
+	rdfs:domain <PowerElectronicsConnection> ;
+	rdfs:range <StatcomDynamics> ;
+	rdfs:comment "The statcom dynamics model associated with this power electronics connection."^^rdf:XMLLiteral .
+<PowerElectronicsConnection.DERDynamics> rdf:type rdfs:Property ;
+	rdfs:label "DERDynamics"@en ;
+	rdfs:domain <PowerElectronicsConnection> ;
+	rdfs:range <DERDynamics> ;
+	rdfs:comment "DER dynamics model associated with this power electronics connection model."^^rdf:XMLLiteral .
+<PowerElectronicsConnection.WeccDynamics> rdf:type rdfs:Property ;
+	rdfs:label "WeccDynamics"@en ;
+	rdfs:domain <PowerElectronicsConnection> ;
+	rdfs:range <WeccDynamics> ;
+	rdfs:comment "WECC dynamics model associated with this Power electronics connection model."^^rdf:XMLLiteral .
+<PowerElectronicsConnection.WindTurbineType3or4Dynamics> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3or4Dynamics"@en ;
+	rdfs:domain <PowerElectronicsConnection> ;
+	rdfs:range <WindTurbineType3or4Dynamics> ;
+	rdfs:comment "The wind turbine type 3 or type 4 dynamics model associated with this power electronics connection."^^rdf:XMLLiteral .
 
 <DCLine> rdf:type rdfs:Class ;
 	rdfs:subClassOf <DCEquipmentContainer> ;
@@ -37,6 +57,11 @@
 	rdfs:subClassOf <Equipment> ;
 	rdfs:label "ConductingEquipment"@en ;
 	rdfs:comment "The parts of the AC power system that are designed to carry current or that are conductively connected through terminals."^^rdf:XMLLiteral .
+<ConductingEquipment.RelayDynamics> rdf:type rdfs:Property ;
+	rdfs:label "RelayDynamics"@en ;
+	rdfs:domain <ConductingEquipment> ;
+	rdfs:range <RelayDynamics> ;
+	rdfs:comment "Relay dynamics model used to describe dynamic behaviour of this protected equipment."^^rdf:XMLLiteral .
 
 <ACDCConverter> rdf:type rdfs:Class ;
 	rdfs:subClassOf <ConductingEquipment> ;
@@ -52,6 +77,21 @@
 	rdfs:subClassOf <RotatingMachine> ;
 	rdfs:label "AsynchronousMachine"@en ;
 	rdfs:comment "A rotating machine whose shaft rotates asynchronously with the electrical field.  Also known as an induction machine with no external connection to the rotor windings, e.g. squirrel-cage induction machine."^^rdf:XMLLiteral .
+<AsynchronousMachine.DERDynamics> rdf:type rdfs:Property ;
+	rdfs:label "DERDynamics"@en ;
+	rdfs:domain <AsynchronousMachine> ;
+	rdfs:range <DERDynamics> ;
+	rdfs:comment "DER dynamics model associated with this asynchronous machine model."^^rdf:XMLLiteral .
+<AsynchronousMachine.WeccDynamics> rdf:type rdfs:Property ;
+	rdfs:label "WeccDynamics"@en ;
+	rdfs:domain <AsynchronousMachine> ;
+	rdfs:range <WeccDynamics> ;
+	rdfs:comment "WECC dynamics model associated with this asynchronous machine model."^^rdf:XMLLiteral .
+<AsynchronousMachine.AsynchronousMachineDynamics> rdf:type rdfs:Property ;
+	rdfs:label "AsynchronousMachineDynamics"@en ;
+	rdfs:domain <AsynchronousMachine> ;
+	rdfs:range <AsynchronousMachineDynamics> ;
+	rdfs:comment "Asynchronous machine dynamics model used to describe dynamic behaviour of this asynchronous machine."^^rdf:XMLLiteral .
 
 <DCEquipmentContainer> rdf:type rdfs:Class ;
 	rdfs:subClassOf <EquipmentContainer> ;
@@ -72,16 +112,56 @@
 	rdfs:subClassOf <ACDCTerminal> ;
 	rdfs:label "Terminal"@en ;
 	rdfs:comment "An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^rdf:XMLLiteral .
+<Terminal.WeccWTGIBFFRA> rdf:type rdfs:Property ;
+	rdfs:label "WeccWTGIBFFRA"@en ;
+	rdfs:domain <Terminal> ;
+	rdfs:range <WeccWTGIBFFRA> ;
+	rdfs:comment "The WECC WTGIBFFRA model that has frequency measured at this Terminal."^^rdf:XMLLiteral .
+<Terminal.HasToTerminalSVSMO4> rdf:type rdfs:Property ;
+	rdfs:label "HasToTerminalSVSMO4"@en ;
+	rdfs:domain <Terminal> ;
+	rdfs:range <SVSMO4> ;
+	rdfs:comment "The SVSMO4 model that has this ToTerminal."^^rdf:XMLLiteral .
+<Terminal.RemoteInputSignal> rdf:type rdfs:Property ;
+	rdfs:label "RemoteInputSignal"@en ;
+	rdfs:domain <Terminal> ;
+	rdfs:range <RemoteInputSignal> ;
+	rdfs:comment "Input signal coming from this terminal."^^rdf:XMLLiteral .
+<Terminal.HasFromTerminalSVSMO4> rdf:type rdfs:Property ;
+	rdfs:label "HasFromTerminalSVSMO4"@en ;
+	rdfs:domain <Terminal> ;
+	rdfs:range <SVSMO4> ;
+	rdfs:comment "The SVSMO4 model that has this FromTerminal."^^rdf:XMLLiteral .
+<Terminal.RelayDynamics> rdf:type rdfs:Property ;
+	rdfs:label "RelayDynamics"@en ;
+	rdfs:domain <Terminal> ;
+	rdfs:range <RelayDynamics> ;
+	rdfs:comment "Relay dynamics model that has monitored terminal."^^rdf:XMLLiteral .
+<Terminal.WeccREPCC> rdf:type rdfs:Property ;
+	rdfs:label "WeccREPCC"@en ;
+	rdfs:domain <Terminal> ;
+	rdfs:range <WeccREPCC> ;
+	rdfs:comment "The WECC REPCC model that has frequency measured at this Terminal."^^rdf:XMLLiteral .
 
 <StaticVarCompensator> rdf:type rdfs:Class ;
 	rdfs:subClassOf <RegulatingCondEq> ;
 	rdfs:label "StaticVarCompensator"@en ;
 	rdfs:comment "A facility for providing variable and controllable shunt reactive power. The SVC typically consists of a stepdown transformer, filter, thyristor-controlled reactor, and thyristor-switched capacitor arms.\n\nThe SVC may operate in fixed MVar output mode or in voltage control mode. When in voltage control mode, the output of the SVC will be proportional to the deviation of voltage at the controlled bus from the voltage setpoint.  The SVC characteristic slope defines the proportion.  If the voltage at the controlled bus is equal to the voltage setpoint, the SVC MVar output is zero."^^rdf:XMLLiteral .
+<StaticVarCompensator.StaticVarCompensatorDynamics> rdf:type rdfs:Property ;
+	rdfs:label "StaticVarCompensatorDynamics"@en ;
+	rdfs:domain <StaticVarCompensator> ;
+	rdfs:range <StaticVarCompensatorDynamics> ;
+	rdfs:comment "Static Var Compensator dynamics model used to describe dynamic behaviour of this Static Var Compensator."^^rdf:XMLLiteral .
 
 <VsConverter> rdf:type rdfs:Class ;
 	rdfs:subClassOf <ACDCConverter> ;
 	rdfs:label "VsConverter"@en ;
 	rdfs:comment "DC side of the voltage source converter (VSC)."^^rdf:XMLLiteral .
+<VsConverter.VSCDynamics> rdf:type rdfs:Property ;
+	rdfs:label "VSCDynamics"@en ;
+	rdfs:domain <VsConverter> ;
+	rdfs:range <VSCDynamics> ;
+	rdfs:comment "Voltage source converter dynamics model used to describe dynamic behaviour of this converter."^^rdf:XMLLiteral .
 
 <RegulatingCondEq> rdf:type rdfs:Class ;
 	rdfs:subClassOf <EnergyConnection> ;
@@ -116,6 +196,11 @@
 	rdfs:subClassOf <Equipment> ;
 	rdfs:label "ProtectionEquipment"@en ;
 	rdfs:comment "An electrical device designed to respond to input conditions in a prescribed manner and after specified conditions are met to cause contact operation or similar abrupt change in associated electric control circuits, or simply to display the detected condition. Protection equipment is associated with conducting equipment and usually operate circuit breakers."^^rdf:XMLLiteral .
+<ProtectionEquipment.RelayDynamics> rdf:type rdfs:Property ;
+	rdfs:label "RelayDynamics"@en ;
+	rdfs:domain <ProtectionEquipment> ;
+	rdfs:range <RelayDynamics> ;
+	rdfs:comment "Relay dynamics model used to describe dynamic behaviour of this protected equipment."^^rdf:XMLLiteral .
 
 <EquipmentContainer> rdf:type rdfs:Class ;
 	rdfs:subClassOf <ConnectivityNodeContainer> ;
@@ -126,16 +211,41 @@
 	rdfs:subClassOf <RegulatingCondEq> ;
 	rdfs:label "ShuntCompensator"@en ;
 	rdfs:comment "A shunt capacitor or reactor or switchable bank of shunt capacitors or reactors. A section of a shunt compensator is an individual capacitor or reactor. A negative value for bPerSection indicates that the compensator is a reactor. ShuntCompensator is a single terminal device.  Ground is implied."^^rdf:XMLLiteral .
+<ShuntCompensator.ShuntCompensatorDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ShuntCompensatorDynamics"@en ;
+	rdfs:domain <ShuntCompensator> ;
+	rdfs:range <ShuntCompensatorDynamics> ;
+	rdfs:comment "Shunt compensator dynamics model used to describe dynamic behaviour of this shunt compensator."^^rdf:XMLLiteral .
+<ShuntCompensator.StaticVarCompensatorSystemDynamics> rdf:type rdfs:Property ;
+	rdfs:label "StaticVarCompensatorSystemDynamics"@en ;
+	rdfs:domain <ShuntCompensator> ;
+	rdfs:range <StaticVarCompensatorSystemDynamics> ;
+	rdfs:comment "Static Var Compensator system dynamics model used to describe dynamic behaviour of this Static Var Compensator system."^^rdf:XMLLiteral .
 
 <SynchronousMachine> rdf:type rdfs:Class ;
 	rdfs:subClassOf <RotatingMachine> ;
 	rdfs:label "SynchronousMachine"@en ;
 	rdfs:comment "An electromechanical device that operates with shaft rotating synchronously with the network. It is a single machine operating either as a generator or synchronous condenser or pump."^^rdf:XMLLiteral .
+<SynchronousMachine.DERDynamics> rdf:type rdfs:Property ;
+	rdfs:label "DERDynamics"@en ;
+	rdfs:domain <SynchronousMachine> ;
+	rdfs:range <DERDynamics> ;
+	rdfs:comment "DER dynamics model associated with this synchronous machine model."^^rdf:XMLLiteral .
+<SynchronousMachine.SynchronousMachineDynamics> rdf:type rdfs:Property ;
+	rdfs:label "SynchronousMachineDynamics"@en ;
+	rdfs:domain <SynchronousMachine> ;
+	rdfs:range <SynchronousMachineDynamics> ;
+	rdfs:comment "Synchronous machine dynamics model used to describe dynamic behaviour of this synchronous machine."^^rdf:XMLLiteral .
 
 <CsConverter> rdf:type rdfs:Class ;
 	rdfs:subClassOf <ACDCConverter> ;
 	rdfs:label "CsConverter"@en ;
 	rdfs:comment "DC side of the current source converter (CSC).\nThe firing angle controls the dc voltage at the converter, both for rectifier and inverter. The difference between the dc voltages of the rectifier and inverter determines the dc current. The extinction angle is used to limit the dc voltage at the inverter, if needed, and is not used in active power control. The firing angle, transformer tap position and number of connected filters are the primary means to control a current source dc line. Higher level controls are built on top, e.g. dc voltage, dc current and active power. From a steady state perspective it is sufficient to specify the wanted active power transfer (ACDCConverter.targetPpcc) and the control functions will set the dc voltage, dc current, firing angle, transformer tap position and number of connected filters to meet this. Therefore attributes targetAlpha and targetGamma are not applicable in this case.\nThe reactive power consumed by the converter is a function of the firing angle, transformer tap position and number of connected filter, which can be approximated with half of the active power. The losses is a function of the dc voltage and dc current.\nThe attributes minAlpha and maxAlpha define the range of firing angles for rectifier operation between which no discrete tap changer action takes place. The range is typically 10-18 degrees.\nThe attributes minGamma and maxGamma define the range of extinction angles for inverter operation between which no discrete tap changer action takes place. The range is typically 17-20 degrees."^^rdf:XMLLiteral .
+<CsConverter.CSCDynamics> rdf:type rdfs:Property ;
+	rdfs:label "CSCDynamics"@en ;
+	rdfs:domain <CsConverter> ;
+	rdfs:range <CSCDynamics> ;
+	rdfs:comment "Current source converter dynamics model used to describe dynamic behaviour of this converter."^^rdf:XMLLiteral .
 
 <EnergyConsumer> rdf:type rdfs:Class ;
 	rdfs:subClassOf <EnergyConnection> ;
@@ -186,11 +296,31 @@
 	rdfs:domain <RemoteInputSignal> ;
 	rdfs:range <PowerSystemStabilizerDynamics> ;
 	rdfs:comment "Power system stabilizer model using this remote input signal."^^rdf:XMLLiteral .
+<RemoteInputSignal.DERDynamics> rdf:type rdfs:Property ;
+	rdfs:label "DERDynamics"@en ;
+	rdfs:domain <RemoteInputSignal> ;
+	rdfs:range <DERDynamics> ;
+	rdfs:comment "DER dynamics model which has a remote input signal."^^rdf:XMLLiteral .
+<RemoteInputSignal.WindTurbineType1or2Dynamics> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType1or2Dynamics"@en ;
+	rdfs:domain <RemoteInputSignal> ;
+	rdfs:range <WindTurbineType1or2Dynamics> ;
+	rdfs:comment "Wind generator type 1 or type 2 model using this remote input signal."^^rdf:XMLLiteral .
 <RemoteInputSignal.DiscontinuousExcitationControlDynamics> rdf:type rdfs:Property ;
 	rdfs:label "DiscontinuousExcitationControlDynamics"@en ;
 	rdfs:domain <RemoteInputSignal> ;
 	rdfs:range <DiscontinuousExcitationControlDynamics> ;
 	rdfs:comment "Discontinuous excitation control model using this remote input signal."^^rdf:XMLLiteral .
+<RemoteInputSignal.WindTurbineType3or4Dynamics> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3or4Dynamics"@en ;
+	rdfs:domain <RemoteInputSignal> ;
+	rdfs:range <WindTurbineType3or4Dynamics> ;
+	rdfs:comment "Wind turbine type 3 or type 4 models using this remote input signal."^^rdf:XMLLiteral .
+<RemoteInputSignal.WindPlantDynamics> rdf:type rdfs:Property ;
+	rdfs:label "WindPlantDynamics"@en ;
+	rdfs:domain <RemoteInputSignal> ;
+	rdfs:range <WindPlantDynamics> ;
+	rdfs:comment "The wind plant using the remote signal."^^rdf:XMLLiteral .
 
 <RotatingMachineDynamics> rdf:type rdfs:Class ;
 	rdfs:subClassOf <DynamicsFunctionBlock> ;
@@ -341,6 +471,36 @@
 	rdfs:domain <SynchronousMachineDynamics> ;
 	rdfs:range <SynchronousMachine> ;
 	rdfs:comment "Synchronous machine to which synchronous machine dynamics model applies."^^rdf:XMLLiteral .
+<SynchronousMachineDynamics.GenICompensationForGenJ> rdf:type rdfs:Property ;
+	rdfs:label "GenICompensationForGenJ"@en ;
+	rdfs:domain <SynchronousMachineDynamics> ;
+	rdfs:range <GenICompensationForGenJ> ;
+	rdfs:comment "Compensation of voltage compensator's generator for current flow out of this  generator."^^rdf:XMLLiteral .
+<SynchronousMachineDynamics.TurbineGovernorDynamics> rdf:type rdfs:Property ;
+	rdfs:label "TurbineGovernorDynamics"@en ;
+	rdfs:domain <SynchronousMachineDynamics> ;
+	rdfs:range <TurbineGovernorDynamics> ;
+	rdfs:comment "Turbine-governor model associated with this synchronous machine model. Multiplicity of greater than one is intended to support hydro units that have multiple turbines on one generator."^^rdf:XMLLiteral .
+<SynchronousMachineDynamics.ExcitationSystemDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ExcitationSystemDynamics"@en ;
+	rdfs:domain <SynchronousMachineDynamics> ;
+	rdfs:range <ExcitationSystemDynamics> ;
+	rdfs:comment "Excitation system model associated with this synchronous machine model."^^rdf:XMLLiteral .
+<SynchronousMachineDynamics.MechanicalLoadDynamics> rdf:type rdfs:Property ;
+	rdfs:label "MechanicalLoadDynamics"@en ;
+	rdfs:domain <SynchronousMachineDynamics> ;
+	rdfs:range <MechanicalLoadDynamics> ;
+	rdfs:comment "Mechanical load model associated with this synchronous machine model."^^rdf:XMLLiteral .
+<SynchronousMachineDynamics.CrossCompoundTurbineGovernorDynamics> rdf:type rdfs:Property ;
+	rdfs:label "CrossCompoundTurbineGovernorDynamics"@en ;
+	rdfs:domain <SynchronousMachineDynamics> ;
+	rdfs:range <CrossCompoundTurbineGovernorDynamics> ;
+	rdfs:comment "The cross-compound turbine governor with which this low-pressure synchronous machine is associated."^^rdf:XMLLiteral ;
+	rdf:type rdfs:Property ;
+	rdfs:label "CrossCompoundTurbineGovernorDynamics"@en ;
+	rdfs:domain <SynchronousMachineDynamics> ;
+	rdfs:range <CrossCompoundTurbineGovernorDynamics> ;
+	rdfs:comment "The cross-compound turbine governor with which this high-pressure synchronous machine is associated."^^rdf:XMLLiteral .
 
 <SynchronousMachineTimeConstantReactance> rdf:type rdfs:Class ;
 	rdfs:subClassOf <SynchronousMachineDetailed> ;
@@ -456,6 +616,21 @@
 	rdfs:domain <AsynchronousMachineDynamics> ;
 	rdfs:range <AsynchronousMachine> ;
 	rdfs:comment "Asynchronous machine to which this asynchronous machine dynamics model applies."^^rdf:XMLLiteral .
+<AsynchronousMachineDynamics.WindTurbineType1or2Dynamics> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType1or2Dynamics"@en ;
+	rdfs:domain <AsynchronousMachineDynamics> ;
+	rdfs:range <WindTurbineType1or2Dynamics> ;
+	rdfs:comment "Wind generator type 1 or type 2 model associated with this asynchronous machine model."^^rdf:XMLLiteral .
+<AsynchronousMachineDynamics.MechanicalLoadDynamics> rdf:type rdfs:Property ;
+	rdfs:label "MechanicalLoadDynamics"@en ;
+	rdfs:domain <AsynchronousMachineDynamics> ;
+	rdfs:range <MechanicalLoadDynamics> ;
+	rdfs:comment "Mechanical load model associated with this asynchronous machine model."^^rdf:XMLLiteral .
+<AsynchronousMachineDynamics.TurbineGovernorDynamics> rdf:type rdfs:Property ;
+	rdfs:label "TurbineGovernorDynamics"@en ;
+	rdfs:domain <AsynchronousMachineDynamics> ;
+	rdfs:range <TurbineGovernorDynamics> ;
+	rdfs:comment "Turbine-governor model associated with this asynchronous machine model."^^rdf:XMLLiteral .
 
 <AsynchronousMachineTimeConstantReactance> rdf:type rdfs:Class ;
 	rdfs:subClassOf <AsynchronousMachineDynamics> ;
@@ -501,6 +676,11 @@
 	rdfs:domain <TurbineGovernorDynamics> ;
 	rdfs:range <AsynchronousMachineDynamics> ;
 	rdfs:comment "Asynchronous machine model with which this turbine-governor model is associated. TurbineGovernorDynamics shall have either an association to SynchronousMachineDynamics or to AsynchronousMachineDynamics."^^rdf:XMLLiteral .
+<TurbineGovernorDynamics.TurbineLoadControllerDynamics> rdf:type rdfs:Property ;
+	rdfs:label "TurbineLoadControllerDynamics"@en ;
+	rdfs:domain <TurbineGovernorDynamics> ;
+	rdfs:range <TurbineLoadControllerDynamics> ;
+	rdfs:comment "Turbine load controller providing input to this turbine-governor."^^rdf:XMLLiteral .
 
 <GovCT2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <TurbineGovernorDynamics> ;
@@ -796,6 +976,11 @@
 	rdfs:subClassOf <TurbineGovernorDynamics> ;
 	rdfs:label "HydroGovernorDynamics"@en ;
 	rdfs:comment "Hydro governor function block whose behaviour is described by reference to a standard model <font color=\"#0f0f0f\">or by definition of a user-defined model.</font>"^^rdf:XMLLiteral .
+<HydroGovernorDynamics.HydroWaterColumnDynamics> rdf:type rdfs:Property ;
+	rdfs:label "HydroWaterColumnDynamics"@en ;
+	rdfs:domain <HydroGovernorDynamics> ;
+	rdfs:range <HydroWaterColumnDynamics> ;
+	rdfs:comment "The hydro water model of this hydro governor model."^^rdf:XMLLiteral .
 
 <GovSteamEU> rdf:type rdfs:Class ;
 	rdfs:subClassOf <TurbineGovernorDynamics> ;
@@ -3206,6 +3391,11 @@
 	rdfs:subClassOf <TurbineGovernorDynamics> ;
 	rdfs:label "SteamTurbineGeneratorDynamics"@en ;
 	rdfs:comment "Steam turbine (ST) and a heat-recovery steam generator (HRSG) function block<font color=\"#0f0f0f\">.</font>"^^rdf:XMLLiteral .
+<SteamTurbineGeneratorDynamics.CombinedCycleGasTurbineDynamics> rdf:type rdfs:Property ;
+	rdfs:label "CombinedCycleGasTurbineDynamics"@en ;
+	rdfs:domain <SteamTurbineGeneratorDynamics> ;
+	rdfs:range <CombinedCycleGasTurbineDynamics> ;
+	rdfs:comment "The gas turbine dynamics model part of a combined cycle power plant."^^rdf:XMLLiteral .
 
 <GovHydro1> rdf:type rdfs:Class ;
 	rdfs:subClassOf <TurbineGovernorDynamics> ;
@@ -8111,6 +8301,41 @@
 	rdfs:domain <ExcitationSystemDynamics> ;
 	rdfs:range <SynchronousMachineDynamics> ;
 	rdfs:comment "Synchronous machine model with which this excitation system model is associated."^^rdf:XMLLiteral .
+<ExcitationSystemDynamics.PFVArControllerType1Dynamics> rdf:type rdfs:Property ;
+	rdfs:label "PFVArControllerType1Dynamics"@en ;
+	rdfs:domain <ExcitationSystemDynamics> ;
+	rdfs:range <PFVArControllerType1Dynamics> ;
+	rdfs:comment "Power factor or VAr controller type 1 model associated with this excitation system model."^^rdf:XMLLiteral .
+<ExcitationSystemDynamics.UnderexcitationLimiterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "UnderexcitationLimiterDynamics"@en ;
+	rdfs:domain <ExcitationSystemDynamics> ;
+	rdfs:range <UnderexcitationLimiterDynamics> ;
+	rdfs:comment "Undrexcitation limiter model associated with this excitation system model."^^rdf:XMLLiteral .
+<ExcitationSystemDynamics.PowerSystemStabilizerDynamics> rdf:type rdfs:Property ;
+	rdfs:label "PowerSystemStabilizerDynamics"@en ;
+	rdfs:domain <ExcitationSystemDynamics> ;
+	rdfs:range <PowerSystemStabilizerDynamics> ;
+	rdfs:comment "Power system stabilizer model associated with this excitation system model."^^rdf:XMLLiteral .
+<ExcitationSystemDynamics.DiscontinuousExcitationControlDynamics> rdf:type rdfs:Property ;
+	rdfs:label "DiscontinuousExcitationControlDynamics"@en ;
+	rdfs:domain <ExcitationSystemDynamics> ;
+	rdfs:range <DiscontinuousExcitationControlDynamics> ;
+	rdfs:comment "Discontinuous excitation control model associated with this excitation system model."^^rdf:XMLLiteral .
+<ExcitationSystemDynamics.PFVArControllerType2Dynamics> rdf:type rdfs:Property ;
+	rdfs:label "PFVArControllerType2Dynamics"@en ;
+	rdfs:domain <ExcitationSystemDynamics> ;
+	rdfs:range <PFVArControllerType2Dynamics> ;
+	rdfs:comment "Power factor or VAr controller type 2 model associated with this excitation system model."^^rdf:XMLLiteral .
+<ExcitationSystemDynamics.OverexcitationLimiterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "OverexcitationLimiterDynamics"@en ;
+	rdfs:domain <ExcitationSystemDynamics> ;
+	rdfs:range <OverexcitationLimiterDynamics> ;
+	rdfs:comment "Overexcitation limiter model associated with this excitation system model."^^rdf:XMLLiteral .
+<ExcitationSystemDynamics.VoltageCompensatorDynamics> rdf:type rdfs:Property ;
+	rdfs:label "VoltageCompensatorDynamics"@en ;
+	rdfs:domain <ExcitationSystemDynamics> ;
+	rdfs:range <VoltageCompensatorDynamics> ;
+	rdfs:comment "Voltage compensator model associated with this excitation system model."^^rdf:XMLLiteral .
 
 <ExcRQB> rdf:type rdfs:Class ;
 	rdfs:subClassOf <ExcitationSystemDynamics> ;
@@ -16461,6 +16686,11 @@
 	rdfs:subClassOf <DynamicsFunctionBlock> ;
 	rdfs:label "UnderexcitationLimiterDynamics"@en ;
 	rdfs:comment "Underexcitation limiter function block whose behaviour is described by reference to a standard model <font color=\"#0f0f0f\">or by definition of a user-defined model.</font>"^^rdf:XMLLiteral .
+<UnderexcitationLimiterDynamics.RemoteInputSignal> rdf:type rdfs:Property ;
+	rdfs:label "RemoteInputSignal"@en ;
+	rdfs:domain <UnderexcitationLimiterDynamics> ;
+	rdfs:range <RemoteInputSignal> ;
+	rdfs:comment "Remote input signal used by this underexcitation limiter model."^^rdf:XMLLiteral .
 <UnderexcitationLimiterDynamics.ExcitationSystemDynamics> rdf:type rdfs:Property ;
 	rdfs:label "ExcitationSystemDynamics"@en ;
 	rdfs:domain <UnderexcitationLimiterDynamics> ;
@@ -18036,6 +18266,11 @@
 	rdfs:subClassOf <DynamicsFunctionBlock> ;
 	rdfs:label "PowerSystemStabilizerDynamics"@en ;
 	rdfs:comment "Power system stabilizer function block whose behaviour is described by reference to a standard model <font color=\"#0f0f0f\">or by definition of a user-defined model.</font>"^^rdf:XMLLiteral .
+<PowerSystemStabilizerDynamics.RemoteInputSignal> rdf:type rdfs:Property ;
+	rdfs:label "RemoteInputSignal"@en ;
+	rdfs:domain <PowerSystemStabilizerDynamics> ;
+	rdfs:range <RemoteInputSignal> ;
+	rdfs:comment "Remote input signal used by this power system stabilizer model."^^rdf:XMLLiteral .
 <PowerSystemStabilizerDynamics.ExcitationSystemDynamics> rdf:type rdfs:Property ;
 	rdfs:label "ExcitationSystemDynamics"@en ;
 	rdfs:domain <PowerSystemStabilizerDynamics> ;
@@ -19686,6 +19921,11 @@
 	rdfs:subClassOf <DynamicsFunctionBlock> ;
 	rdfs:label "DiscontinuousExcitationControlDynamics"@en ;
 	rdfs:comment "Discontinuous excitation control function block whose behaviour is described by reference to a standard model <font color=\"#0f0f0f\">or by definition of a user-defined model</font>."^^rdf:XMLLiteral .
+<DiscontinuousExcitationControlDynamics.RemoteInputSignal> rdf:type rdfs:Property ;
+	rdfs:label "RemoteInputSignal"@en ;
+	rdfs:domain <DiscontinuousExcitationControlDynamics> ;
+	rdfs:range <RemoteInputSignal> ;
+	rdfs:comment "Remote input signal used by this discontinuous excitation control system model."^^rdf:XMLLiteral .
 <DiscontinuousExcitationControlDynamics.ExcitationSystemDynamics> rdf:type rdfs:Property ;
 	rdfs:label "ExcitationSystemDynamics"@en ;
 	rdfs:domain <DiscontinuousExcitationControlDynamics> ;
@@ -19901,11 +20141,21 @@
 	rdfs:subClassOf <DynamicsFunctionBlock> ;
 	rdfs:label "PFVArControllerType1Dynamics"@en ;
 	rdfs:comment "Power factor or VAr controller type 1 function block whose behaviour is described by reference to a standard model <font color=\"#0f0f0f\">or by definition of a user-defined model.</font>"^^rdf:XMLLiteral .
+<PFVArControllerType1Dynamics.RemoteInputSignal> rdf:type rdfs:Property ;
+	rdfs:label "RemoteInputSignal"@en ;
+	rdfs:domain <PFVArControllerType1Dynamics> ;
+	rdfs:range <RemoteInputSignal> ;
+	rdfs:comment "Remote input signal used by this power factor or VAr controller type 1 model."^^rdf:XMLLiteral .
 <PFVArControllerType1Dynamics.ExcitationSystemDynamics> rdf:type rdfs:Property ;
 	rdfs:label "ExcitationSystemDynamics"@en ;
 	rdfs:domain <PFVArControllerType1Dynamics> ;
 	rdfs:range <ExcitationSystemDynamics> ;
 	rdfs:comment "Excitation system model with which this power actor or VAr controller type 1 model is associated."^^rdf:XMLLiteral .
+<PFVArControllerType1Dynamics.VoltageAdjusterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "VoltageAdjusterDynamics"@en ;
+	rdfs:domain <PFVArControllerType1Dynamics> ;
+	rdfs:range <VoltageAdjusterDynamics> ;
+	rdfs:comment "Voltage adjuster model associated with this power factor or VAr controller type 1 model."^^rdf:XMLLiteral .
 
 <PFVArType1IEEEPFController> rdf:type rdfs:Class ;
 	rdfs:subClassOf <PFVArControllerType1Dynamics> ;
@@ -20206,6 +20456,11 @@
 	rdfs:subClassOf <DynamicsFunctionBlock> ;
 	rdfs:label "VoltageCompensatorDynamics"@en ;
 	rdfs:comment "Voltage compensator function block whose behaviour is described by reference to a standard model <font color=\"#0f0f0f\">or by definition of a user-defined model.</font>"^^rdf:XMLLiteral .
+<VoltageCompensatorDynamics.RemoteInputSignal> rdf:type rdfs:Property ;
+	rdfs:label "RemoteInputSignal"@en ;
+	rdfs:domain <VoltageCompensatorDynamics> ;
+	rdfs:range <RemoteInputSignal> ;
+	rdfs:comment "Remote input signal used by this voltage compensator model."^^rdf:XMLLiteral .
 <VoltageCompensatorDynamics.ExcitationSystemDynamics> rdf:type rdfs:Property ;
 	rdfs:label "ExcitationSystemDynamics"@en ;
 	rdfs:domain <VoltageCompensatorDynamics> ;
@@ -20266,6 +20521,11 @@
 	rdfs:domain <VCompIEEEType2> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "<font color=\"#0f0f0f\">Time constant which is used for the combined voltage sensing and compensation signal (<i>Tr</i>) (&gt;= 0).</font>"^^rdf:XMLLiteral .
+<VCompIEEEType2.GenICompensationForGenJ> rdf:type rdfs:Property ;
+	rdfs:label "GenICompensationForGenJ"@en ;
+	rdfs:domain <VCompIEEEType2> ;
+	rdfs:range <GenICompensationForGenJ> ;
+	rdfs:comment "Compensation of this voltage compensator's generator for current flow out of another generator."^^rdf:XMLLiteral .
 
 <WindTurbineType4IEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WindTurbineType3or4IEC> ;
@@ -20406,6 +20666,16 @@
 	rdfs:domain <WindContPType3IEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Coefficient for active drive train damping (<i>zeta</i>). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindContPType3IEC.WindDynamicsLookupTable> rdf:type rdfs:Property ;
+	rdfs:label "WindDynamicsLookupTable"@en ;
+	rdfs:domain <WindContPType3IEC> ;
+	rdfs:range <WindDynamicsLookupTable> ;
+	rdfs:comment "The wind dynamics lookup table associated with this P control type 3 model."^^rdf:XMLLiteral .
+<WindContPType3IEC.WindTurbineType3IEC> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3IEC"@en ;
+	rdfs:domain <WindContPType3IEC> ;
+	rdfs:range <WindTurbineType3IEC> ;
+	rdfs:comment "Wind turbine type 3 model with which this wind control P type 3 model is associated."^^rdf:XMLLiteral .
 
 <WindContQLimIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -20421,6 +20691,11 @@
 	rdfs:domain <WindContQLimIEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Minimum reactive power (<i>q</i><i><sub>min</sub></i>) (&lt; WindContQLimIEC.qmax). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindContQLimIEC.WindTurbineType3or4IEC> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3or4IEC"@en ;
+	rdfs:domain <WindContQLimIEC> ;
+	rdfs:range <WindTurbineType3or4IEC> ;
+	rdfs:comment "Wind generator type 3 or type 4 model with which this constant Q limitation model is associated."^^rdf:XMLLiteral .
 
 <WindGenType4IEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -20446,6 +20721,16 @@
 	rdfs:domain <WindGenType4IEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Time constant (<i>T</i><i><sub>g</sub></i>) (&gt;= 0). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindGenType4IEC.WindTurbineType4bIEC> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType4bIEC"@en ;
+	rdfs:domain <WindGenType4IEC> ;
+	rdfs:range <WindTurbineType4bIEC> ;
+	rdfs:comment "Wind turbine type 4B model with which this wind generator type 4 model is associated."^^rdf:XMLLiteral .
+<WindGenType4IEC.WindTurbineType4aIEC> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType4aIEC"@en ;
+	rdfs:domain <WindGenType4IEC> ;
+	rdfs:range <WindTurbineType4aIEC> ;
+	rdfs:comment "Wind turbine type 4A model with which this wind generator type 4 model is associated."^^rdf:XMLLiteral .
 
 <WindAeroTwoDimIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -20486,6 +20771,11 @@
 	rdfs:domain <WindAeroTwoDimIEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Pitch angle if the wind turbine is not derated (<i>theta</i><i><sub>0</sub></i>). It is a case-dependent parameter."^^rdf:XMLLiteral .
+<WindAeroTwoDimIEC.WindTurbineType3IEC> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3IEC"@en ;
+	rdfs:domain <WindAeroTwoDimIEC> ;
+	rdfs:range <WindTurbineType3IEC> ;
+	rdfs:comment "Wind turbine type 3 model with which this wind aerodynamic model is associated."^^rdf:XMLLiteral .
 
 <WindRefFrameRotIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -20506,6 +20796,11 @@
 	rdfs:domain <WindRefFrameRotIEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Voltage (<i>u</i><i><sub>PLL2</sub></i>) below which the angle of the voltage is frozen if <i>u</i><i><sub>PLL2</sub></i><sub> </sub>is smaller or equal to <i>u</i><i><sub>PLL1</sub></i> . It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindRefFrameRotIEC.WindTurbineType3or4IEC> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3or4IEC"@en ;
+	rdfs:domain <WindRefFrameRotIEC> ;
+	rdfs:range <WindTurbineType3or4IEC> ;
+	rdfs:comment "Wind turbine type 3 or type 4 model with which this reference frame rotation model is associated."^^rdf:XMLLiteral .
 
 <WindContPType4aIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -20526,6 +20821,11 @@
 	rdfs:domain <WindContPType4aIEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Voltage measurement filter time constant (<i>T</i><i><sub>ufiltp4A</sub></i>) (&gt;= 0). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindContPType4aIEC.WindTurbineType4aIEC> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType4aIEC"@en ;
+	rdfs:domain <WindContPType4aIEC> ;
+	rdfs:range <WindTurbineType4aIEC> ;
+	rdfs:comment " Wind turbine type 4A model with which this wind control P type 4A model is associated."^^rdf:XMLLiteral .
 
 <WindTurbineType4aIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WindTurbineType4IEC> ;
@@ -20551,6 +20851,16 @@
 	rdfs:domain <WindPlantDynamics> ;
 	rdfs:range <RemoteInputSignal> ;
 	rdfs:comment "The remote signal with which this power plant is associated."^^rdf:XMLLiteral .
+<WindPlantDynamics.WindTurbineType1or2Dynamics> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType1or2Dynamics"@en ;
+	rdfs:domain <WindPlantDynamics> ;
+	rdfs:range <WindTurbineType1or2Dynamics> ;
+	rdfs:comment "The wind turbine type 1 or type 2 associated with this wind plant."^^rdf:XMLLiteral .
+<WindPlantDynamics.WindTurbineType3or4Dynamics> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3or4Dynamics"@en ;
+	rdfs:domain <WindPlantDynamics> ;
+	rdfs:range <WindTurbineType3or4Dynamics> ;
+	rdfs:comment "The wind turbine type 3 or type 4 associated with this wind plant."^^rdf:XMLLiteral .
 
 <WindProtectionIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -20591,6 +20901,21 @@
 	rdfs:domain <WindProtectionIEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Wind turbine under voltage protection activation threshold (<i>u</i><i><sub>under</sub></i>). It is a project-dependent parameter."^^rdf:XMLLiteral .
+<WindProtectionIEC.WindTurbineType1or2IEC> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType1or2IEC"@en ;
+	rdfs:domain <WindProtectionIEC> ;
+	rdfs:range <WindTurbineType1or2IEC> ;
+	rdfs:comment "Wind generator type 1 or type 2 model with which this wind turbine protection model is associated."^^rdf:XMLLiteral .
+<WindProtectionIEC.WindTurbineType3or4IEC> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3or4IEC"@en ;
+	rdfs:domain <WindProtectionIEC> ;
+	rdfs:range <WindTurbineType3or4IEC> ;
+	rdfs:comment "Wind generator type 3 or type 4 model with which this wind turbine protection model is associated."^^rdf:XMLLiteral .
+<WindProtectionIEC.WindDynamicsLookupTable> rdf:type rdfs:Property ;
+	rdfs:label "WindDynamicsLookupTable"@en ;
+	rdfs:domain <WindProtectionIEC> ;
+	rdfs:range <WindDynamicsLookupTable> ;
+	rdfs:comment "The wind dynamics lookup table associated with this grid protection model."^^rdf:XMLLiteral .
 
 <WindContPType4bIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -20616,6 +20941,11 @@
 	rdfs:domain <WindContPType4bIEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Voltage measurement filter time constant (<i>T</i><i><sub>ufiltp4B</sub></i>) (&gt;= 0). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindContPType4bIEC.WindTurbineType4bIEC> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType4bIEC"@en ;
+	rdfs:domain <WindContPType4bIEC> ;
+	rdfs:range <WindTurbineType4bIEC> ;
+	rdfs:comment "Wind turbine type 4B model with which this wind control P type 4B model is associated."^^rdf:XMLLiteral .
 
 <WindGenType3bIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WindGenType3IEC> ;
@@ -20636,6 +20966,11 @@
 	rdfs:domain <WindGenType3bIEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Time constant for crowbar washout filter (<i>T</i><i><sub>wo</sub></i>) (&gt;= 0). It is a case-dependent parameter."^^rdf:XMLLiteral .
+<WindGenType3bIEC.WindDynamicsLookupTable> rdf:type rdfs:Property ;
+	rdfs:label "WindDynamicsLookupTable"@en ;
+	rdfs:domain <WindGenType3bIEC> ;
+	rdfs:range <WindDynamicsLookupTable> ;
+	rdfs:comment "The wind dynamics lookup table associated with this generator type 3B model."^^rdf:XMLLiteral .
 
 <WindPlantIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WindPlantDynamics> ;
@@ -20666,6 +21001,11 @@
 	rdfs:domain <WindGenType3aIEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Current PI controller integration time constant (<i>T</i><i><sub>Ic</sub></i>) (&gt;= 0). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindGenType3aIEC.WindTurbineType4IEC> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType4IEC"@en ;
+	rdfs:domain <WindGenType3aIEC> ;
+	rdfs:range <WindTurbineType4IEC> ;
+	rdfs:comment "Wind turbine type 4 model with which this wind generator type 3A model is associated."^^rdf:XMLLiteral .
 
 <WindGenTurbineType1bIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WindTurbineType1or2IEC> ;
@@ -20696,6 +21036,11 @@
 	rdfs:domain <WindGenType3IEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Electromagnetic transient reactance (<i>x</i><i><sub>S</sub></i>). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindGenType3IEC.WindTurbineType3IEC> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3IEC"@en ;
+	rdfs:domain <WindGenType3IEC> ;
+	rdfs:range <WindTurbineType3IEC> ;
+	rdfs:comment "Wind turbine type 3 model with which this wind generator type 3 is associated. "^^rdf:XMLLiteral .
 
 <WindContQIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -20816,6 +21161,11 @@
 	rdfs:domain <WindContQIEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Inductive component of voltage drop impedance (<i>x</i><i><sub>droop</sub></i>) (&gt;= 0). It is a project-dependent parameter."^^rdf:XMLLiteral .
+<WindContQIEC.WindTurbineType3or4IEC> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3or4IEC"@en ;
+	rdfs:domain <WindContQIEC> ;
+	rdfs:range <WindTurbineType3or4IEC> ;
+	rdfs:comment "Wind turbine type 3 or type 4 model with which this reactive control model is associated."^^rdf:XMLLiteral .
 
 <WindAeroOneDimIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -20831,6 +21181,11 @@
 	rdfs:domain <WindAeroOneDimIEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Initial pitch angle (<i>theta</i><i><sub>omega0</sub></i>). It is a case-dependent parameter."^^rdf:XMLLiteral .
+<WindAeroOneDimIEC.WindTurbineType3IEC> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3IEC"@en ;
+	rdfs:domain <WindAeroOneDimIEC> ;
+	rdfs:range <WindTurbineType3IEC> ;
+	rdfs:comment "Wind turbine type 3 model with which this wind aerodynamic model is associated."^^rdf:XMLLiteral .
 
 <WindContCurrLimIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -20871,6 +21226,16 @@
 	rdfs:domain <WindContCurrLimIEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Wind turbine voltage in the operation point where zero reactive current can be delivered (<i>u</i><i><sub>pqumax</sub></i>). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindContCurrLimIEC.WindDynamicsLookupTable> rdf:type rdfs:Property ;
+	rdfs:label "WindDynamicsLookupTable"@en ;
+	rdfs:domain <WindContCurrLimIEC> ;
+	rdfs:range <WindDynamicsLookupTable> ;
+	rdfs:comment "The wind dynamics lookup table associated with this current control limitation model."^^rdf:XMLLiteral .
+<WindContCurrLimIEC.WindTurbineType3or4IEC> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3or4IEC"@en ;
+	rdfs:domain <WindContCurrLimIEC> ;
+	rdfs:range <WindTurbineType3or4IEC> ;
+	rdfs:comment "Wind turbine type 3 or type 4 model with which this wind control current limitation model is associated."^^rdf:XMLLiteral .
 
 <WindTurbineType1or2Dynamics> rdf:type rdfs:Class ;
 	rdfs:subClassOf <DynamicsFunctionBlock> ;
@@ -21006,6 +21371,16 @@
 	rdfs:domain <WindPlantFreqPcontrolIEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Filter time constant for active power measurement (<i>T</i><i><sub>WPpfiltp</sub></i>) (&gt;= 0). It is a project-dependent parameter."^^rdf:XMLLiteral .
+<WindPlantFreqPcontrolIEC.WindPlantIEC> rdf:type rdfs:Property ;
+	rdfs:label "WindPlantIEC"@en ;
+	rdfs:domain <WindPlantFreqPcontrolIEC> ;
+	rdfs:range <WindPlantIEC> ;
+	rdfs:comment "Wind plant model with which this wind plant frequency and active power control is associated."^^rdf:XMLLiteral .
+<WindPlantFreqPcontrolIEC.WindDynamicsLookupTable> rdf:type rdfs:Property ;
+	rdfs:label "WindDynamicsLookupTable"@en ;
+	rdfs:domain <WindPlantFreqPcontrolIEC> ;
+	rdfs:range <WindDynamicsLookupTable> ;
+	rdfs:comment "The wind dynamics lookup table associated with this frequency and active power wind plant model."^^rdf:XMLLiteral .
 
 <WindTurbineType3or4Dynamics> rdf:type rdfs:Class ;
 	rdfs:subClassOf <DynamicsFunctionBlock> ;
@@ -21156,6 +21531,16 @@
 	rdfs:domain <WindPlantReactiveControlIEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Minimum <i>x</i><i><sub>WTref</sub></i> (<i>q</i><i><sub>WTref</sub></i> or delta <i>u</i><i><sub>WTref</sub></i>) request from the plant controller (<i>x</i><i><sub>refmin</sub></i>) (&lt; WindPlantReactiveControlIEC.xrefmax). It is a project-dependent parameter."^^rdf:XMLLiteral .
+<WindPlantReactiveControlIEC.WindPlantIEC> rdf:type rdfs:Property ;
+	rdfs:label "WindPlantIEC"@en ;
+	rdfs:domain <WindPlantReactiveControlIEC> ;
+	rdfs:range <WindPlantIEC> ;
+	rdfs:comment "Wind plant reactive control model associated with this wind plant."^^rdf:XMLLiteral .
+<WindPlantReactiveControlIEC.WindDynamicsLookupTable> rdf:type rdfs:Property ;
+	rdfs:label "WindDynamicsLookupTable"@en ;
+	rdfs:domain <WindPlantReactiveControlIEC> ;
+	rdfs:range <WindDynamicsLookupTable> ;
+	rdfs:comment "The wind dynamics lookup table associated with this voltage and reactive power wind plant model."^^rdf:XMLLiteral .
 
 <WindPitchContPowerIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -21196,6 +21581,21 @@
 	rdfs:domain <WindPitchContPowerIEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Dip detection threshold (<i>u</i><i><sub>UVRT</sub></i>). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindPitchContPowerIEC.WindGenTurbineType1bIEC> rdf:type rdfs:Property ;
+	rdfs:label "WindGenTurbineType1bIEC"@en ;
+	rdfs:domain <WindPitchContPowerIEC> ;
+	rdfs:range <WindGenTurbineType1bIEC> ;
+	rdfs:comment "Wind turbine type 1B model with which this pitch control power model is associated."^^rdf:XMLLiteral .
+<WindPitchContPowerIEC.WindGenTurbineType2IEC> rdf:type rdfs:Property ;
+	rdfs:label "WindGenTurbineType2IEC"@en ;
+	rdfs:domain <WindPitchContPowerIEC> ;
+	rdfs:range <WindGenTurbineType2IEC> ;
+	rdfs:comment "Wind turbine type 2 model with which this pitch control power model is associated."^^rdf:XMLLiteral .
+<WindPitchContPowerIEC.WindDynamicsLookupTable> rdf:type rdfs:Property ;
+	rdfs:label "WindDynamicsLookupTable"@en ;
+	rdfs:domain <WindPitchContPowerIEC> ;
+	rdfs:range <WindDynamicsLookupTable> ;
+	rdfs:comment "The wind dynamics lookup table associated with this pitch control power model."^^rdf:XMLLiteral .
 
 <WindContQPQULimIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -21211,6 +21611,16 @@
 	rdfs:domain <WindContQPQULimIEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Voltage measurement filter time constant for Q capacity (<i>T</i><i><sub>ufiltql</sub></i>) (&gt;= 0). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindContQPQULimIEC.WindTurbineType3or4IEC> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3or4IEC"@en ;
+	rdfs:domain <WindContQPQULimIEC> ;
+	rdfs:range <WindTurbineType3or4IEC> ;
+	rdfs:comment "Wind generator type 3 or type 4 model with which this QP and QU limitation model is associated."^^rdf:XMLLiteral .
+<WindContQPQULimIEC.WindDynamicsLookupTable> rdf:type rdfs:Property ;
+	rdfs:label "WindDynamicsLookupTable"@en ;
+	rdfs:domain <WindContQPQULimIEC> ;
+	rdfs:range <WindDynamicsLookupTable> ;
+	rdfs:comment "The wind dynamics lookup table associated with this QP and QU limitation model."^^rdf:XMLLiteral .
 
 <WindTurbineType4bIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WindTurbineType4IEC> ;
@@ -21286,11 +21696,31 @@
 	rdfs:domain <WindMechIEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Drive train stiffness (<i>k</i><i><sub>drt</sub></i>). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindMechIEC.WindTurbineType3IEC> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3IEC"@en ;
+	rdfs:domain <WindMechIEC> ;
+	rdfs:range <WindTurbineType3IEC> ;
+	rdfs:comment "Wind turbine type 3 model with which this wind mechanical model is associated."^^rdf:XMLLiteral .
+<WindMechIEC.WindTurbineType4bIEC> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType4bIEC"@en ;
+	rdfs:domain <WindMechIEC> ;
+	rdfs:range <WindTurbineType4bIEC> ;
+	rdfs:comment "Wind turbine type 4B model with which this wind mechanical model is associated."^^rdf:XMLLiteral .
+<WindMechIEC.WindTurbineType1or2IEC> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType1or2IEC"@en ;
+	rdfs:domain <WindMechIEC> ;
+	rdfs:range <WindTurbineType1or2IEC> ;
+	rdfs:comment "Wind generator type 1 or type 2 model with which this wind mechanical model is associated."^^rdf:XMLLiteral .
 
 <WindAeroConstIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "WindAeroConstIEC"@en ;
 	rdfs:comment "Constant aerodynamic torque model which assumes that the aerodynamic torque is constant.\nReference: IEC 61400-27-1:2015, 5.6.1.1."^^rdf:XMLLiteral .
+<WindAeroConstIEC.WindGenTurbineType1aIEC> rdf:type rdfs:Property ;
+	rdfs:label "WindGenTurbineType1aIEC"@en ;
+	rdfs:domain <WindAeroConstIEC> ;
+	rdfs:range <WindGenTurbineType1aIEC> ;
+	rdfs:comment "Wind turbine type 1A model with which this wind aerodynamic model is associated."^^rdf:XMLLiteral .
 
 <WindContRotorRIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -21336,6 +21766,16 @@
 	rdfs:domain <WindContRotorRIEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Filter time constant for power measurement (<i>T</i><i><sub>pfiltrr</sub></i>) (&gt;= 0). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindContRotorRIEC.WindGenTurbineType2IEC> rdf:type rdfs:Property ;
+	rdfs:label "WindGenTurbineType2IEC"@en ;
+	rdfs:domain <WindContRotorRIEC> ;
+	rdfs:range <WindGenTurbineType2IEC> ;
+	rdfs:comment "Wind turbine type 2 model with whitch this wind control rotor resistance model is associated."^^rdf:XMLLiteral .
+<WindContRotorRIEC.WindDynamicsLookupTable> rdf:type rdfs:Property ;
+	rdfs:label "WindDynamicsLookupTable"@en ;
+	rdfs:domain <WindContRotorRIEC> ;
+	rdfs:range <WindDynamicsLookupTable> ;
+	rdfs:comment "The wind dynamics lookup table associated with this rotor resistance control model."^^rdf:XMLLiteral .
 
 <WindContPitchAngleIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -21391,6 +21831,11 @@
 	rdfs:domain <WindContPitchAngleIEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Pitch time constant (<i>ttheta</i>) (&gt;= 0). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindContPitchAngleIEC.WindTurbineType3IEC> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3IEC"@en ;
+	rdfs:domain <WindContPitchAngleIEC> ;
+	rdfs:range <WindTurbineType3IEC> ;
+	rdfs:comment "Wind turbine type 3 model with which this pitch control model is associated."^^rdf:XMLLiteral .
 
 <WindDynamicsLookupTable> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -21476,6 +21921,11 @@
 	rdfs:domain <WindPlantControlCommIEC> ;
 	rdfs:range <WindPlantQControlIEC> ;
 	rdfs:comment "Wind plant reactive control module associated with the wind plant control and comminication module."^^rdf:XMLLiteral .
+<WindPlantControlCommIEC.WindPlantDynamics> rdf:type rdfs:Property ;
+	rdfs:label "WindPlantDynamics"@en ;
+	rdfs:domain <WindPlantControlCommIEC> ;
+	rdfs:range <WindPlantDynamics2> ;
+	rdfs:comment "The wind plant with which the wind plant control and communication module is associated."^^rdf:XMLLiteral .
 <WindPlantControlCommIEC.WindPlantPControlIEC> rdf:type rdfs:Property ;
 	rdfs:label "WindPlantPControlIEC"@en ;
 	rdfs:domain <WindPlantControlCommIEC> ;
@@ -21516,6 +21966,26 @@
 	rdfs:domain <WindProtectionIEC2> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Wind turbine under voltage protection activation threshold (<i>u</i><i><sub>under</sub></i>). It is a project-dependent parameter."^^rdf:XMLLiteral .
+<WindProtectionIEC2.WindTurbineType1or2IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType1or2IEC2"@en ;
+	rdfs:domain <WindProtectionIEC2> ;
+	rdfs:range <WindTurbineType1or2IEC2> ;
+	rdfs:comment "Wind generator type 1 or type 2 model with which this wind turbine protection module is associated."^^rdf:XMLLiteral .
+<WindProtectionIEC2.StatcomIEC> rdf:type rdfs:Property ;
+	rdfs:label "StatcomIEC"@en ;
+	rdfs:domain <WindProtectionIEC2> ;
+	rdfs:range <StatcomIEC> ;
+	rdfs:comment "The statcom model associated with this wind protection module."^^rdf:XMLLiteral .
+<WindProtectionIEC2.WindTurbineType3or4IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3or4IEC2"@en ;
+	rdfs:domain <WindProtectionIEC2> ;
+	rdfs:range <WindTurbineType3or4IEC2> ;
+	rdfs:comment "Wind generator type 3 or type 4 model with which this wind turbine protection module is associated."^^rdf:XMLLiteral .
+<WindProtectionIEC2.WindDynamicsLookupTable2> rdf:type rdfs:Property ;
+	rdfs:label "WindDynamicsLookupTable2"@en ;
+	rdfs:domain <WindProtectionIEC2> ;
+	rdfs:range <WindDynamicsLookupTable2> ;
+	rdfs:comment "All wind dynamics lookup tables associated with this grid protection module."^^rdf:XMLLiteral .
 
 <WindGenType3bIEC2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WindGenType3IEC2> ;
@@ -21536,6 +22006,11 @@
 	rdfs:domain <WindGenType3bIEC2> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Time constant for crowbar washout filter (<i>T</i><i><sub>wo</sub></i>) (&gt;= 0). It is a use case-dependent parameter."^^rdf:XMLLiteral .
+<WindGenType3bIEC2.WindDynamicsLookupTable2> rdf:type rdfs:Property ;
+	rdfs:label "WindDynamicsLookupTable2"@en ;
+	rdfs:domain <WindGenType3bIEC2> ;
+	rdfs:range <WindDynamicsLookupTable2> ;
+	rdfs:comment "All wind dynamics lookup tables associated with this generator type 3B model."^^rdf:XMLLiteral .
 
 <WindTurbineType4IEC2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WindTurbineType3or4IEC2> ;
@@ -21581,6 +22056,21 @@
 	rdfs:domain <WindGridMeasForProtection> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Time constant in voltage measurement filter (<i>T</i><i><sub>ufilt</sub></i>) (&gt;= 0). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindGridMeasForProtection.WindTurbineType1or2IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType1or2IEC2"@en ;
+	rdfs:domain <WindGridMeasForProtection> ;
+	rdfs:range <WindTurbineType1or2IEC2> ;
+	rdfs:comment "Wind generator type 1 or type 2 model with which this wind turbine grid measurement (for protection) module is associated."^^rdf:XMLLiteral .
+<WindGridMeasForProtection.StatcomIEC> rdf:type rdfs:Property ;
+	rdfs:label "StatcomIEC"@en ;
+	rdfs:domain <WindGridMeasForProtection> ;
+	rdfs:range <StatcomIEC> ;
+	rdfs:comment "The statcom model associated with this wind grid measurement for protection module."^^rdf:XMLLiteral .
+<WindGridMeasForProtection.WindTurbineType3or4IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3or4IEC2"@en ;
+	rdfs:domain <WindGridMeasForProtection> ;
+	rdfs:range <WindTurbineType3or4IEC2> ;
+	rdfs:comment "Wind generator type 3 or type 4 model with which this wind turbine grid measurement (for protection) module is associated."^^rdf:XMLLiteral .
 
 <WindContQIEC2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -21706,6 +22196,16 @@
 	rdfs:domain <WindContQIEC2> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Inductive component of voltage drop impedance (<i>x</i><i><sub>droop</sub></i>) (&gt;= 0). It is a project-dependent parameter."^^rdf:XMLLiteral .
+<WindContQIEC2.StatcomIEC> rdf:type rdfs:Property ;
+	rdfs:label "StatcomIEC"@en ;
+	rdfs:domain <WindContQIEC2> ;
+	rdfs:range <StatcomIEC> ;
+	rdfs:comment "The statcom model associated with this wind Q control module."^^rdf:XMLLiteral .
+<WindContQIEC2.WindTurbineType3or4IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3or4IEC2"@en ;
+	rdfs:domain <WindContQIEC2> ;
+	rdfs:range <WindTurbineType3or4IEC2> ;
+	rdfs:comment "Wind turbine type 3 or type 4 model with which this reactive control module is associated."^^rdf:XMLLiteral .
 
 <WindRefFrameRotIEC2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -21726,6 +22226,11 @@
 	rdfs:domain <WindRefFrameRotIEC2> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Voltage (<i>u</i><i><sub>PLL2</sub></i>) below which the angle of the voltage is frozen if <i>u</i><i><sub>PLL2</sub></i><sub> </sub>is smaller or equal to <i>u</i><i><sub>PLL1</sub></i> . It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindRefFrameRotIEC2.WindTurbineType3or4IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3or4IEC2"@en ;
+	rdfs:domain <WindRefFrameRotIEC2> ;
+	rdfs:range <WindTurbineType3or4IEC2> ;
+	rdfs:comment "Wind turbine type 3 or type 4 model with which this reference frame rotation module is associated."^^rdf:XMLLiteral .
 
 <WindGenTurbineType2IEC2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WindTurbineType1or2IEC2> ;
@@ -21786,6 +22291,11 @@
 	rdfs:domain <WindContPType4aIEC2> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Voltage dip threshold for P-control (<i>u</i><sub>Pdip</sub>).  Part of wind turbine control, often different from converter thresholds. It is a project-dependent parameter."^^rdf:XMLLiteral .
+<WindContPType4aIEC2.WindTurbineType4aIEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType4aIEC2"@en ;
+	rdfs:domain <WindContPType4aIEC2> ;
+	rdfs:range <WindTurbineType4aIEC2> ;
+	rdfs:comment " Wind turbine type 4A model with which this wind control P type 4A module is associated."^^rdf:XMLLiteral .
 
 <WindContPType3IEC2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -21921,6 +22431,16 @@
 	rdfs:domain <WindContPType3IEC2> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Coefficient for active drive train damping (<i>zeta</i>). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindContPType3IEC2.WindDynamicsLookupTable2> rdf:type rdfs:Property ;
+	rdfs:label "WindDynamicsLookupTable2"@en ;
+	rdfs:domain <WindContPType3IEC2> ;
+	rdfs:range <WindDynamicsLookupTable2> ;
+	rdfs:comment "All wind dynamics lookup tables associated with this P control type 3 module."^^rdf:XMLLiteral .
+<WindContPType3IEC2.WindTurbineType3IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3IEC2"@en ;
+	rdfs:domain <WindContPType3IEC2> ;
+	rdfs:range <WindTurbineType3IEC2> ;
+	rdfs:comment "Wind turbine type 3 model with which this wind control P type 3 module is associated."^^rdf:XMLLiteral .
 
 <WindPlantQControlIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -22026,6 +22546,16 @@
 	rdfs:domain <WindPlantQControlIEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Inductive component of wind plant voltage drop impedance (<i>x</i><i><sub>WPdrop</sub></i>). It is a project-dependent parameter."^^rdf:XMLLiteral .
+<WindPlantQControlIEC.WindPlantControlCommIEC> rdf:type rdfs:Property ;
+	rdfs:label "WindPlantControlCommIEC"@en ;
+	rdfs:domain <WindPlantQControlIEC> ;
+	rdfs:range <WindPlantControlCommIEC> ;
+	rdfs:comment "Wind plant control and comminication module with which this wind reactive control module is associated."^^rdf:XMLLiteral .
+<WindPlantQControlIEC.WindDynamicsLookupTable2> rdf:type rdfs:Property ;
+	rdfs:label "WindDynamicsLookupTable2"@en ;
+	rdfs:domain <WindPlantQControlIEC> ;
+	rdfs:range <WindDynamicsLookupTable2> ;
+	rdfs:comment "All wind dynamics lookup tables associated with this wind plant reactive power control  module."^^rdf:XMLLiteral .
 
 <WindContQLimIEC2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -22041,6 +22571,16 @@
 	rdfs:domain <WindContQLimIEC2> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Minimum reactive power (<i>q</i><i><sub>min</sub></i>) (&lt; WindContQLimIEC2.qmax). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindContQLimIEC2.StatcomIEC> rdf:type rdfs:Property ;
+	rdfs:label "StatcomIEC"@en ;
+	rdfs:domain <WindContQLimIEC2> ;
+	rdfs:range <StatcomIEC> ;
+	rdfs:comment "The statcom model associated with this costant Q limitation module."^^rdf:XMLLiteral .
+<WindContQLimIEC2.WindTurbineType3or4IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3or4IEC2"@en ;
+	rdfs:domain <WindContQLimIEC2> ;
+	rdfs:range <WindTurbineType3or4IEC2> ;
+	rdfs:comment "Wind generator type 3 or type 4 model with which this constant Q limitation module is associated."^^rdf:XMLLiteral .
 
 <WindGenType3IEC2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -22061,6 +22601,11 @@
 	rdfs:domain <WindGenType3IEC2> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Transient reactance (<i>x</i><i><sub>eqv</sub></i>). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindGenType3IEC2.WindTurbineType3IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3IEC2"@en ;
+	rdfs:domain <WindGenType3IEC2> ;
+	rdfs:range <WindTurbineType3IEC2> ;
+	rdfs:comment "Wind turbine type 3 model with which this wind generator system module type 3 is associated. "^^rdf:XMLLiteral .
 
 <WindPlantBasicIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WindPlantDynamics2> ;
@@ -22131,6 +22676,21 @@
 	rdfs:domain <WindMechIEC2> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Drive train stiffness (<i>k</i><i><sub>drt</sub></i>). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindMechIEC2.WindTurbineType3IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3IEC2"@en ;
+	rdfs:domain <WindMechIEC2> ;
+	rdfs:range <WindTurbineType3IEC2> ;
+	rdfs:comment "Wind turbine type 3 model with which this wind mechanical two mass module is associated."^^rdf:XMLLiteral .
+<WindMechIEC2.WindTurbineType4bIEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType4bIEC2"@en ;
+	rdfs:domain <WindMechIEC2> ;
+	rdfs:range <WindTurbineType4bIEC2> ;
+	rdfs:comment "Wind turbine type 4B model with which this wind mechanical module is associated."^^rdf:XMLLiteral .
+<WindMechIEC2.WindTurbineType1or2IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType1or2IEC2"@en ;
+	rdfs:domain <WindMechIEC2> ;
+	rdfs:range <WindTurbineType1or2IEC2> ;
+	rdfs:comment "Wind generator type 1 or type 2 model with which this wind mechanical two mass module is associated."^^rdf:XMLLiteral .
 
 <WindGridMeasForControl> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -22166,6 +22726,31 @@
 	rdfs:domain <WindGridMeasForControl> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Time constant in voltage measurement filter (<i>T</i><i><sub>ufilt</sub></i>) (&gt;= 0). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindGridMeasForControl.WindPlantControlCommIEC> rdf:type rdfs:Property ;
+	rdfs:label "WindPlantControlCommIEC"@en ;
+	rdfs:domain <WindGridMeasForControl> ;
+	rdfs:range <WindPlantControlCommIEC> ;
+	rdfs:comment "Wind plant control and comminication module with which this grid measurement module is associated."^^rdf:XMLLiteral .
+<WindGridMeasForControl.WindGenTurbineType2IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindGenTurbineType2IEC2"@en ;
+	rdfs:domain <WindGridMeasForControl> ;
+	rdfs:range <WindGenTurbineType2IEC2> ;
+	rdfs:comment "Wind turbine type 2 model with which this grid measurement (for control) module is associated."^^rdf:XMLLiteral .
+<WindGridMeasForControl.StatcomIEC> rdf:type rdfs:Property ;
+	rdfs:label "StatcomIEC"@en ;
+	rdfs:domain <WindGridMeasForControl> ;
+	rdfs:range <StatcomIEC> ;
+	rdfs:comment "The statcom model associated with this wind grid measurement for control module."^^rdf:XMLLiteral .
+<WindGridMeasForControl.WindGenTurbineType1bIEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindGenTurbineType1bIEC2"@en ;
+	rdfs:domain <WindGridMeasForControl> ;
+	rdfs:range <WindGenTurbineType1bIEC2> ;
+	rdfs:comment "Wind turbine type 2 model with which this grid measurement (for control) module is associated."^^rdf:XMLLiteral .
+<WindGridMeasForControl.WindTurbineType3or4IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3or4IEC2"@en ;
+	rdfs:domain <WindGridMeasForControl> ;
+	rdfs:range <WindTurbineType3or4IEC2> ;
+	rdfs:comment "Wind generator type 3 or type 4 model with which this wind turbine grid measurement (for control) module is associated."^^rdf:XMLLiteral .
 
 <WindAeroOneDimIEC2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -22181,11 +22766,21 @@
 	rdfs:domain <WindAeroOneDimIEC2> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Initial pitch angle (<i>theta</i><i><sub>omega0</sub></i>). It is a use case-dependent parameter."^^rdf:XMLLiteral .
+<WindAeroOneDimIEC2.WindTurbineType3IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3IEC2"@en ;
+	rdfs:domain <WindAeroOneDimIEC2> ;
+	rdfs:range <WindTurbineType3IEC2> ;
+	rdfs:comment "Wind turbine type 3 model with which this wind aerodynamic module is associated."^^rdf:XMLLiteral .
 
 <WindAeroConstIEC2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "WindAeroConstIEC2"@en ;
 	rdfs:comment "Constant aerodynamic torque module which assumes that the aerodynamic torque is constant.\nReference: IEC 61400-27-1:2020, 7.2.1."^^rdf:XMLLiteral .
+<WindAeroConstIEC2.WindGenTurbineType1aIEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindGenTurbineType1aIEC2"@en ;
+	rdfs:domain <WindAeroConstIEC2> ;
+	rdfs:range <WindGenTurbineType1aIEC2> ;
+	rdfs:comment "Wind turbine type 1A model with which this wind aerodynamic module is associated."^^rdf:XMLLiteral .
 
 <WindTurbineType3IEC2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WindTurbineType3or4IEC2> ;
@@ -22341,6 +22936,11 @@
 	rdfs:domain <WindGenType3aIEC2> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Current PI controller integration time constant (<i>T</i><i><sub>Ic</sub></i>) (&gt;= 0). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindGenType3aIEC2.WindTurbineType4IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType4IEC2"@en ;
+	rdfs:domain <WindGenType3aIEC2> ;
+	rdfs:range <WindTurbineType4IEC2> ;
+	rdfs:comment "Wind turbine type 4 model with which this wind generator system type 3A module is associated."^^rdf:XMLLiteral .
 
 <WindTurbineType4aIEC2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WindTurbineType4IEC2> ;
@@ -22381,11 +22981,36 @@
 	rdfs:domain <WindElectricalSystemGamma> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Serial reactance (<i>x</i><i><sub>es</sub></i>). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindElectricalSystemGamma.WindTurbinaType2or4IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbinaType2or4IEC2"@en ;
+	rdfs:domain <WindElectricalSystemGamma> ;
+	rdfs:range <WindTurbineType3or4IEC2> ;
+	rdfs:comment "Wind generator type 3 or type 4 model with which this wind turbine electrical system gamma module is associated."^^rdf:XMLLiteral .
+<WindElectricalSystemGamma.WindTurbineType1or2IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType1or2IEC2"@en ;
+	rdfs:domain <WindElectricalSystemGamma> ;
+	rdfs:range <WindTurbineType1or2IEC2> ;
+	rdfs:comment "Wind generator type 1 or type 2 model with which this wind turbine electrical system gamma module is associated."^^rdf:XMLLiteral .
+<WindElectricalSystemGamma.StatcomIEC> rdf:type rdfs:Property ;
+	rdfs:label "StatcomIEC"@en ;
+	rdfs:domain <WindElectricalSystemGamma> ;
+	rdfs:range <StatcomIEC> ;
+	rdfs:comment "The statcom model associated with this wind electrical system gamma module."^^rdf:XMLLiteral .
 
 <WindContQPQULimIEC2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "WindContQPQULimIEC2"@en ;
 	rdfs:comment "QP and QU limitation module.\nReference: IEC 61400-27-1:2020, 7.7.8."^^rdf:XMLLiteral .
+<WindContQPQULimIEC2.WindDynamicsLookupTable2> rdf:type rdfs:Property ;
+	rdfs:label "WindDynamicsLookupTable2"@en ;
+	rdfs:domain <WindContQPQULimIEC2> ;
+	rdfs:range <WindDynamicsLookupTable2> ;
+	rdfs:comment "All wind dynamics lookup tables associated with this QP and QU limitation module."^^rdf:XMLLiteral .
+<WindContQPQULimIEC2.WindTurbineType3or4IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3or4IEC2"@en ;
+	rdfs:domain <WindContQPQULimIEC2> ;
+	rdfs:range <WindTurbineType3or4IEC2> ;
+	rdfs:comment "Wind generator type 3 or type 4 model with which this QP and QU limitation module is associated."^^rdf:XMLLiteral .
 
 <WindContCurrLimIEC2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -22421,6 +23046,21 @@
 	rdfs:domain <WindContCurrLimIEC2> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Wind turbine voltage in the operation point where zero reactive current can be delivered (<i>u</i><i><sub>pqumax</sub></i>). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindContCurrLimIEC2.WindDynamicsLookupTable2> rdf:type rdfs:Property ;
+	rdfs:label "WindDynamicsLookupTable2"@en ;
+	rdfs:domain <WindContCurrLimIEC2> ;
+	rdfs:range <WindDynamicsLookupTable2> ;
+	rdfs:comment "All wind dynamics lookup tables associated with this current control limitation module."^^rdf:XMLLiteral .
+<WindContCurrLimIEC2.StatcomIEC> rdf:type rdfs:Property ;
+	rdfs:label "StatcomIEC"@en ;
+	rdfs:domain <WindContCurrLimIEC2> ;
+	rdfs:range <StatcomIEC> ;
+	rdfs:comment "The statcom model associated with this wind current limitation module."^^rdf:XMLLiteral .
+<WindContCurrLimIEC2.WindTurbineType3or4IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3or4IEC2"@en ;
+	rdfs:domain <WindContCurrLimIEC2> ;
+	rdfs:range <WindTurbineType3or4IEC2> ;
+	rdfs:comment "Wind turbine type 3 or type 4 model with which this wind control current limitation module is associated."^^rdf:XMLLiteral .
 
 <WindGenType4IEC2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -22446,6 +23086,21 @@
 	rdfs:domain <WindGenType4IEC2> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Time constant (<i>T</i><i><sub>g</sub></i>) (&gt;= 0). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindGenType4IEC2.WindTurbineType4bIEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType4bIEC2"@en ;
+	rdfs:domain <WindGenType4IEC2> ;
+	rdfs:range <WindTurbineType4bIEC2> ;
+	rdfs:comment "Wind turbine type 4B model with which this wind generator system type 4 module is associated."^^rdf:XMLLiteral .
+<WindGenType4IEC2.WindTurbineType4aIEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType4aIEC2"@en ;
+	rdfs:domain <WindGenType4IEC2> ;
+	rdfs:range <WindTurbineType4aIEC2> ;
+	rdfs:comment "Wind turbine type 4A model with which this wind generator system type 4 module is associated."^^rdf:XMLLiteral .
+<WindGenType4IEC2.StatcomIEC> rdf:type rdfs:Property ;
+	rdfs:label "StatcomIEC"@en ;
+	rdfs:domain <WindGenType4IEC2> ;
+	rdfs:range <StatcomIEC> ;
+	rdfs:comment "The statcom model associated with this wind generator type 4 module."^^rdf:XMLLiteral .
 
 <CommunicationIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -22456,6 +23111,11 @@
 	rdfs:domain <CommunicationIEC> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Kind of communication."^^rdf:XMLLiteral .
+<CommunicationIEC.WindPlantControlCommIEC> rdf:type rdfs:Property ;
+	rdfs:label "WindPlantControlCommIEC"@en ;
+	rdfs:domain <CommunicationIEC> ;
+	rdfs:range <WindPlantControlCommIEC> ;
+	rdfs:comment "Wind plant control and comminication model with which this communication module is associated."^^rdf:XMLLiteral .
 
 <WindContPitchAngleIEC2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -22551,6 +23211,11 @@
 	rdfs:domain <WindContPitchAngleIEC2> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Pitch time constant (<i>ttheta</i>) (&gt;= 0). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindContPitchAngleIEC2.WindTurbineType3IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3IEC2"@en ;
+	rdfs:domain <WindContPitchAngleIEC2> ;
+	rdfs:range <WindTurbineType3IEC2> ;
+	rdfs:comment "Wind turbine type 3 model with which this pitch control module is associated."^^rdf:XMLLiteral .
 
 <CommunicationDelayIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <CommunicationIEC> ;
@@ -22601,6 +23266,11 @@
 	rdfs:domain <WindAeroTwoDimIEC2> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Pitch angle if the wind turbine is not derated (<i>theta</i><i><sub>0</sub></i>). It is a use case-dependent parameter."^^rdf:XMLLiteral .
+<WindAeroTwoDimIEC2.WindTurbineType3IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType3IEC2"@en ;
+	rdfs:domain <WindAeroTwoDimIEC2> ;
+	rdfs:range <WindTurbineType3IEC2> ;
+	rdfs:comment "Wind turbine type 3 model with which this wind two dimensional aerodynamic module is associated."^^rdf:XMLLiteral .
 
 <WindPitchContPowerIEC2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -22636,6 +23306,21 @@
 	rdfs:domain <WindPitchContPowerIEC2> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Dip detection threshold (<i>u</i><i><sub>UVRT</sub></i>). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindPitchContPowerIEC2.WindGenTurbineType2IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindGenTurbineType2IEC2"@en ;
+	rdfs:domain <WindPitchContPowerIEC2> ;
+	rdfs:range <WindGenTurbineType2IEC2> ;
+	rdfs:comment "Wind turbine type 2 model with which this pitch control power module is associated."^^rdf:XMLLiteral .
+<WindPitchContPowerIEC2.WindGenTurbineType1bIEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindGenTurbineType1bIEC2"@en ;
+	rdfs:domain <WindPitchContPowerIEC2> ;
+	rdfs:range <WindGenTurbineType1bIEC2> ;
+	rdfs:comment "Wind turbine type 1B model with which this pitch control power module is associated."^^rdf:XMLLiteral .
+<WindPitchContPowerIEC2.WindDynamicsLookupTable2> rdf:type rdfs:Property ;
+	rdfs:label "WindDynamicsLookupTable2"@en ;
+	rdfs:domain <WindPitchContPowerIEC2> ;
+	rdfs:range <WindDynamicsLookupTable2> ;
+	rdfs:comment "All wind dynamics lookup tables associated with this pitch control power module."^^rdf:XMLLiteral .
 
 <WindContPType4bIEC2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -22676,6 +23361,11 @@
 	rdfs:domain <WindContPType4bIEC2> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Voltage dip threshold for P-control (<i>u</i><sub>Pdip</sub>).  Part of wind turbine control, often different from converter thresholds. It is a project-dependent parameter."^^rdf:XMLLiteral .
+<WindContPType4bIEC2.WindTurbineType4bIEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindTurbineType4bIEC2"@en ;
+	rdfs:domain <WindContPType4bIEC2> ;
+	rdfs:range <WindTurbineType4bIEC2> ;
+	rdfs:comment "Wind turbine type 4B model with which this wind control P type 4B module is associated."^^rdf:XMLLiteral .
 
 <WindTurbineType3or4IEC2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WindTurbineType3or4Dynamics> ;
@@ -22756,6 +23446,16 @@
 	rdfs:domain <WindContRotorRIEC2> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Filter time constant for generator speed measurement (<i>T</i><i><sub>omegafiltrr</sub></i>) (&gt;= 0). It is a type-dependent parameter."^^rdf:XMLLiteral .
+<WindContRotorRIEC2.WindGenTurbineType2IEC2> rdf:type rdfs:Property ;
+	rdfs:label "WindGenTurbineType2IEC2"@en ;
+	rdfs:domain <WindContRotorRIEC2> ;
+	rdfs:range <WindGenTurbineType2IEC2> ;
+	rdfs:comment "Wind turbine type 2 model with whitch this wind control rotor resistance module is associated."^^rdf:XMLLiteral .
+<WindContRotorRIEC2.WindDynamicsLookupTable2> rdf:type rdfs:Property ;
+	rdfs:label "WindDynamicsLookupTable2"@en ;
+	rdfs:domain <WindContRotorRIEC2> ;
+	rdfs:range <WindDynamicsLookupTable2> ;
+	rdfs:comment "All wind dynamics lookup tables associated with this rotor resistance control module."^^rdf:XMLLiteral .
 
 <WindPlantPControlIEC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -22826,6 +23526,16 @@
 	rdfs:domain <WindPlantPControlIEC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Minimum PD power reference (<i>p</i><i><sub>refmin</sub></i>) (&lt; WindPlantPControlIEC.prefmax). It is a project-dependent parameter."^^rdf:XMLLiteral .
+<WindPlantPControlIEC.WindPlantControlCommIEC> rdf:type rdfs:Property ;
+	rdfs:label "WindPlantControlCommIEC"@en ;
+	rdfs:domain <WindPlantPControlIEC> ;
+	rdfs:range <WindPlantControlCommIEC> ;
+	rdfs:comment "Wind plant control and communication module model with which this wind plant active power control module is associated."^^rdf:XMLLiteral .
+<WindPlantPControlIEC.WindDynamicsLookupTable2> rdf:type rdfs:Property ;
+	rdfs:label "WindDynamicsLookupTable2"@en ;
+	rdfs:domain <WindPlantPControlIEC> ;
+	rdfs:range <WindDynamicsLookupTable2> ;
+	rdfs:comment "All wind dynamics lookup tables associated with this wind plant active power control module."^^rdf:XMLLiteral .
 
 <WindTurbineType1or2IEC2> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WindTurbineType1or2Dynamics> ;
@@ -23031,6 +23741,16 @@
 	rdfs:subClassOf <LoadDynamics> ;
 	rdfs:label "LoadAggregate"@en ;
 	rdfs:comment "Aggregate loads are used to represent all or part of the real and reactive load from one or more loads in the static (power flow) data. This load is usually the aggregation of many individual load devices and the load model is an approximate representation of the aggregate response of the load devices to system disturbances.\nStandard aggregate load model comprised of static and/or dynamic components.  A static load model represents the sensitivity of the real and reactive power consumed by the load to the amplitude and frequency of the bus voltage. A dynamic load model can be used to represent the aggregate response of the motor components of the load."^^rdf:XMLLiteral .
+<LoadAggregate.LoadMotor> rdf:type rdfs:Property ;
+	rdfs:label "LoadMotor"@en ;
+	rdfs:domain <LoadAggregate> ;
+	rdfs:range <LoadMotor> ;
+	rdfs:comment "Aggregate motor (dynamic) load associated with this aggregate load."^^rdf:XMLLiteral .
+<LoadAggregate.LoadStatic> rdf:type rdfs:Property ;
+	rdfs:label "LoadStatic"@en ;
+	rdfs:domain <LoadAggregate> ;
+	rdfs:range <LoadStatic> ;
+	rdfs:comment "Aggregate static load associated with this aggregate load."^^rdf:XMLLiteral .
 
 <LoadStatic> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -23131,6 +23851,11 @@
 	rdfs:subClassOf <DynamicsFunctionBlock> ;
 	rdfs:label "LoadDynamics"@en ;
 	rdfs:comment "Load whose behaviour is described by reference to a standard model <font color=\"#0f0f0f\">or by definition of a user-defined model.</font>\nA standard feature of dynamic load behaviour modelling is the ability to associate the same behaviour to multiple energy consumers by means of a single load definition.  The load model is always applied to individual bus loads (energy consumers)."^^rdf:XMLLiteral .
+<LoadDynamics.EnergyConsumer> rdf:type rdfs:Property ;
+	rdfs:label "EnergyConsumer"@en ;
+	rdfs:domain <LoadDynamics> ;
+	rdfs:range <EnergyConsumer> ;
+	rdfs:comment "Energy consumer to which this dynamics load model applies."^^rdf:XMLLiteral .
 
 <LoadAirCoWECC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -23456,6 +24181,26 @@
 	rdfs:domain <LoadCompositeWECC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Transformer reactance in p.u. of transformer MVA base (Xxf). If Xxf = 0, transformer is omitted.  (Note: transformer R = 0.)."^^rdf:XMLLiteral .
+<LoadCompositeWECC.LoadAirCoWECC> rdf:type rdfs:Property ;
+	rdfs:label "LoadAirCoWECC"@en ;
+	rdfs:domain <LoadCompositeWECC> ;
+	rdfs:range <LoadAirCoWECC> ;
+	rdfs:comment "Load air conditioner module with which this load composite model is associated."^^rdf:XMLLiteral .
+<LoadCompositeWECC.LoadStaticWECC> rdf:type rdfs:Property ;
+	rdfs:label "LoadStaticWECC"@en ;
+	rdfs:domain <LoadCompositeWECC> ;
+	rdfs:range <LoadStaticWECC> ;
+	rdfs:comment "Load static module with which this load composite model is associated."^^rdf:XMLLiteral .
+<LoadCompositeWECC.LoadElectronicWECC> rdf:type rdfs:Property ;
+	rdfs:label "LoadElectronicWECC"@en ;
+	rdfs:domain <LoadCompositeWECC> ;
+	rdfs:range <LoadElectronicWECC> ;
+	rdfs:comment "Load electronic module with which this load composite model is associated."^^rdf:XMLLiteral .
+<LoadCompositeWECC.LoadMotorWECC> rdf:type rdfs:Property ;
+	rdfs:label "LoadMotorWECC"@en ;
+	rdfs:domain <LoadCompositeWECC> ;
+	rdfs:range <LoadMotorWECC> ;
+	rdfs:comment "Load motor module with which this load composite model is associated."^^rdf:XMLLiteral .
 
 <LoadElectronicWECC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -23606,6 +24351,11 @@
 	rdfs:subClassOf <HVDCDynamics> ;
 	rdfs:label "HVDCInterconnectionDynamics"@en ;
 	rdfs:comment "HVDC interconnection function block whose behaviour is described by reference to a standard model <font color=\"#0f0f0f\">or by definition of a user-defined model.</font>"^^rdf:XMLLiteral .
+<HVDCInterconnectionDynamics.DCEquipmentContainer> rdf:type rdfs:Property ;
+	rdfs:label "DCEquipmentContainer"@en ;
+	rdfs:domain <HVDCInterconnectionDynamics> ;
+	rdfs:range <DCEquipmentContainer> ;
+	rdfs:comment "DC equipment container to which HVDC interconnection dynamics model applies."^^rdf:XMLLiteral .
 
 <CSCDynamics> rdf:type rdfs:Class ;
 	rdfs:subClassOf <HVDCDynamics> ;
@@ -25320,6 +26070,11 @@
 	rdfs:domain <WeccREGCA> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "LVPL zero crossing (zerox). Typical value = 0,4."^^rdf:XMLLiteral .
+<WeccREGCA.WeccBESS> rdf:type rdfs:Property ;
+	rdfs:label "WeccBESS"@en ;
+	rdfs:domain <WeccREGCA> ;
+	rdfs:range <WeccBESS> ;
+	rdfs:comment "The baterry storage system that has this WeccREGCA model."^^rdf:XMLLiteral .
 
 <WeccREGCC> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WeccDynamics> ;
@@ -25755,6 +26510,11 @@
 	rdfs:domain <WeccREECC> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Overvoltage condition trigger voltage (Vup). Typical value = 1,1."^^rdf:XMLLiteral .
+<WeccREECC.WeccBESS> rdf:type rdfs:Property ;
+	rdfs:label "WeccBESS"@en ;
+	rdfs:domain <WeccREECC> ;
+	rdfs:range <WeccBESS> ;
+	rdfs:comment "The baterry storage system that has this WeccREECC model."^^rdf:XMLLiteral .
 
 <WeccWT12T> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WeccDynamics> ;
@@ -26370,6 +27130,11 @@
 	rdfs:domain <WeccWT2E> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Generator speed measurement filter time constant (Tsp) (>=0). Typical value = 0,01."^^rdf:XMLLiteral .
+<WeccWT2E.WeccDynamicsLookupTable> rdf:type rdfs:Property ;
+	rdfs:label "WeccDynamicsLookupTable"@en ;
+	rdfs:domain <WeccWT2E> ;
+	rdfs:range <WeccDynamicsLookupTable> ;
+	rdfs:comment "Dynamics lookup table associated with this external resistence controller."^^rdf:XMLLiteral .
 
 <WeccDERApvmod> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WeccDynamics> ;
@@ -26435,6 +27200,11 @@
 	rdfs:domain <WeccWTGTRQA> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Speed reference time constant (Twref) (>=0). Typical value = 0."^^rdf:XMLLiteral .
+<WeccWTGTRQA.WeccDynamicsLookupTable> rdf:type rdfs:Property ;
+	rdfs:label "WeccDynamicsLookupTable"@en ;
+	rdfs:domain <WeccWTGTRQA> ;
+	rdfs:range <WeccDynamicsLookupTable> ;
+	rdfs:comment "Dynamics lookup table associated with this torque controller."^^rdf:XMLLiteral .
 
 <WeccDERA> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WeccDynamics> ;
@@ -27410,6 +28180,11 @@
 	rdfs:subClassOf <WeccDynamics> ;
 	rdfs:label "WeccREEC"@en ;
 	rdfs:comment "WECC PQ Controller and Current Limit Logic."^^rdf:XMLLiteral .
+<WeccREEC.SVSMO4> rdf:type rdfs:Property ;
+	rdfs:label "SVSMO4"@en ;
+	rdfs:domain <WeccREEC> ;
+	rdfs:range <SVSMO4> ;
+	rdfs:comment "Hybrid STATCOM model which acts as the master control for this renewable power plant by sending reactive current commands to the inverters in the plant."^^rdf:XMLLiteral .
 
 <WeccWTGARA> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WeccDynamics> ;
@@ -27465,6 +28240,11 @@
 	rdfs:domain <WeccWT1PB> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Dip detection threshold (vt4). Typical value = 0,8."^^rdf:XMLLiteral .
+<WeccWT1PB.WeccDynamicsLookupTable> rdf:type rdfs:Property ;
+	rdfs:label "WeccDynamicsLookupTable"@en ;
+	rdfs:domain <WeccWT1PB> ;
+	rdfs:range <WeccDynamicsLookupTable> ;
+	rdfs:comment "Dynamics lookup table associated with this pitch controller."^^rdf:XMLLiteral .
 
 <WeccDynamics> rdf:type rdfs:Class ;
 	rdfs:subClassOf <DynamicsFunctionBlock> ;
@@ -27630,6 +28410,11 @@
 	rdfs:domain <WeccREPCA> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Line drop compensation reactance (Xc). Typical value = 0."^^rdf:XMLLiteral .
+<WeccREPCA.WeccBESS> rdf:type rdfs:Property ;
+	rdfs:label "WeccBESS"@en ;
+	rdfs:domain <WeccREPCA> ;
+	rdfs:range <WeccBESS> ;
+	rdfs:comment "The baterry storage system that has this WeccREPCA model."^^rdf:XMLLiteral .
 
 <WeccWTGIBFFRA> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WeccDynamics> ;
@@ -28159,6 +28944,16 @@
 	rdfs:domain <DERNameplateData> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "If true mode QV according to IEEE 1547-2018 is supported."^^rdf:XMLLiteral .
+<DERNameplateData.DERIEEEType1> rdf:type rdfs:Property ;
+	rdfs:label "DERIEEEType1"@en ;
+	rdfs:domain <DERNameplateData> ;
+	rdfs:range <DERIEEEType1> ;
+	rdfs:comment "DER IEEE type 1 model associated with this DER nameplate data model."^^rdf:XMLLiteral .
+<DERNameplateData.DERNameplateDataApplied> rdf:type rdfs:Property ;
+	rdfs:label "DERNameplateDataApplied"@en ;
+	rdfs:domain <DERNameplateData> ;
+	rdfs:range <DERNameplateDataApplied> ;
+	rdfs:comment "The applied DER nameplate data."^^rdf:XMLLiteral .
 
 <DERDynamics> rdf:type rdfs:Class ;
 	rdfs:subClassOf <DynamicsFunctionBlock> ;
@@ -28309,6 +29104,11 @@
 	rdfs:domain <MomentaryCessationSettings> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Low-voltage momentary cessation voltage (MC_LVRT_V2). Per unit value based on NP_AC_V_NOM (voltage base). Typical value = 0."^^rdf:XMLLiteral .
+<MomentaryCessationSettings.DERIEEEType1> rdf:type rdfs:Property ;
+	rdfs:label "DERIEEEType1"@en ;
+	rdfs:domain <MomentaryCessationSettings> ;
+	rdfs:range <DERIEEEType1> ;
+	rdfs:comment "DER IEEE type 1 model associated with this momentary cessation settings model."^^rdf:XMLLiteral .
 
 <VoltageTripSettings> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -28354,6 +29154,11 @@
 	rdfs:domain <VoltageTripSettings> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Must trip magnitude (UV2_TRIP_V). Per unit value based on NP_AC_V_NOM (voltage base). Typical value = 0,5."^^rdf:XMLLiteral .
+<VoltageTripSettings.DERIEEEType1> rdf:type rdfs:Property ;
+	rdfs:label "DERIEEEType1"@en ;
+	rdfs:domain <VoltageTripSettings> ;
+	rdfs:range <DERIEEEType1> ;
+	rdfs:comment "DER IEEE type 1 model associated with this voltage trip settings model."^^rdf:XMLLiteral .
 
 <VoltWattSettings> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -28394,6 +29199,11 @@
 	rdfs:domain <VoltWattSettings> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "P(V) open loop response time setting (PV_OLRT) (>=0). Typical value = 10."^^rdf:XMLLiteral .
+<VoltWattSettings.DERIEEEType1> rdf:type rdfs:Property ;
+	rdfs:label "DERIEEEType1"@en ;
+	rdfs:domain <VoltWattSettings> ;
+	rdfs:range <DERIEEEType1> ;
+	rdfs:comment "DER IEEE type 1 model associated with this volt watt settings model."^^rdf:XMLLiteral .
 
 <WattVarSettings> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -28464,6 +29274,11 @@
 	rdfs:domain <WattVarSettings> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "This function is deactivated by request from the area electric power system operator (QP_MODE_ENABLE). True means enabled. False means disabled. Typical value = false."^^rdf:XMLLiteral .
+<WattVarSettings.DERIEEEType1> rdf:type rdfs:Property ;
+	rdfs:label "DERIEEEType1"@en ;
+	rdfs:domain <WattVarSettings> ;
+	rdfs:range <DERIEEEType1> ;
+	rdfs:comment "DER IEEE type 1 model associated with this watt var settings model."^^rdf:XMLLiteral .
 
 <ConstantPowerFactorSettings> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -28484,6 +29299,11 @@
 	rdfs:domain <ConstantPowerFactorSettings> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Power factor setting (CONST_PF). Typical value = 1."^^rdf:XMLLiteral .
+<ConstantPowerFactorSettings.DERIEEEType1> rdf:type rdfs:Property ;
+	rdfs:label "DERIEEEType1"@en ;
+	rdfs:domain <ConstantPowerFactorSettings> ;
+	rdfs:range <DERIEEEType1> ;
+	rdfs:comment "DER IEEE type 1 model associated with this constant power factor settings model."^^rdf:XMLLiteral .
 
 <ConstantReactivePowerSettings> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -28499,6 +29319,11 @@
 	rdfs:domain <ConstantReactivePowerSettings> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Injecting reactive power setting (CONST_Q). Per unit value based on NP_Q_MAX_INJ. Negative signs should not be used but if present, indicates absorbing VAr based on NP_Q_MAX_ABS. Typical value = 0."^^rdf:XMLLiteral .
+<ConstantReactivePowerSettings.DERIEEEType1> rdf:type rdfs:Property ;
+	rdfs:label "DERIEEEType1"@en ;
+	rdfs:domain <ConstantReactivePowerSettings> ;
+	rdfs:range <DERIEEEType1> ;
+	rdfs:comment "DER IEEE type 1 model associated with this constant reactive power settings  model."^^rdf:XMLLiteral .
 
 <DERNameplateDataApplied> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -28609,6 +29434,11 @@
 	rdfs:domain <ServiceSettings> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Enter service radomized delay is an optional feature in IEEE Std 1547-2018 (ES_RANDOMIZED_DELAY) (>=0). Typical value = 300."^^rdf:XMLLiteral .
+<ServiceSettings.DERIEEEType1> rdf:type rdfs:Property ;
+	rdfs:label "DERIEEEType1"@en ;
+	rdfs:domain <ServiceSettings> ;
+	rdfs:range <DERIEEEType1> ;
+	rdfs:comment "DER IEEE type 1 model associated with this service settings model."^^rdf:XMLLiteral .
 
 <FrequencyDroopSettings> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -28639,6 +29469,11 @@
 	rdfs:domain <FrequencyDroopSettings> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Frequency droop open loop response time (PF_OLRT) (>=0). The duration from a step change in control signal input until the output changes by 90% of its final change, before any overshoot. Typical value = 5."^^rdf:XMLLiteral .
+<FrequencyDroopSettings.DERIEEEType1> rdf:type rdfs:Property ;
+	rdfs:label "DERIEEEType1"@en ;
+	rdfs:domain <FrequencyDroopSettings> ;
+	rdfs:range <DERIEEEType1> ;
+	rdfs:comment "DER IEEE type 1 model associated with this frequency droop settings model."^^rdf:XMLLiteral .
 
 <FrequencyTripSettings> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -28684,6 +29519,11 @@
 	rdfs:domain <FrequencyTripSettings> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Must trip duration (UF2_TRIP_T) (>=0). Typical value = 0,16."^^rdf:XMLLiteral .
+<FrequencyTripSettings.DERIEEEType1> rdf:type rdfs:Property ;
+	rdfs:label "DERIEEEType1"@en ;
+	rdfs:domain <FrequencyTripSettings> ;
+	rdfs:range <DERIEEEType1> ;
+	rdfs:comment "DER IEEE type 1 model associated with this frequency trip settings model."^^rdf:XMLLiteral .
 
 <PowerLimitSettings> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -28699,6 +29539,11 @@
 	rdfs:domain <PowerLimitSettings> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Maximum active power setting (AP_MAX_P). Typical value = 100."^^rdf:XMLLiteral .
+<PowerLimitSettings.DERIEEEType1> rdf:type rdfs:Property ;
+	rdfs:label "DERIEEEType1"@en ;
+	rdfs:domain <PowerLimitSettings> ;
+	rdfs:range <DERIEEEType1> ;
+	rdfs:comment "DER IEEE type 1 model associated with this power limit settings model."^^rdf:XMLLiteral .
 
 <VoltVarSettings> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -28769,6 +29614,11 @@
 	rdfs:domain <VoltVarSettings> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Vref time constant in seconds as specified by the area EPS operator (QV_VREF_OLRT) (>=0)."^^rdf:XMLLiteral .
+<VoltVarSettings.DERIEEEType1> rdf:type rdfs:Property ;
+	rdfs:label "DERIEEEType1"@en ;
+	rdfs:domain <VoltVarSettings> ;
+	rdfs:range <DERIEEEType1> ;
+	rdfs:comment "DER IEEE type 1 model associated with this volt var settings model."^^rdf:XMLLiteral .
 
 <VoltageCompensatorUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <VoltageCompensatorDynamics> ;
@@ -28779,6 +29629,11 @@
 	rdfs:domain <VoltageCompensatorUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<VoltageCompensatorUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <VoltageCompensatorUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <PFVArControllerType1UserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <PFVArControllerType1Dynamics> ;
@@ -28789,6 +29644,11 @@
 	rdfs:domain <PFVArControllerType1UserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<PFVArControllerType1UserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <PFVArControllerType1UserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <WindType1or2UserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WindTurbineType1or2Dynamics> ;
@@ -28799,6 +29659,11 @@
 	rdfs:domain <WindType1or2UserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<WindType1or2UserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <WindType1or2UserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <SVCUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <StaticVarCompensatorDynamics> ;
@@ -28809,6 +29674,11 @@
 	rdfs:domain <SVCUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<SVCUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <SVCUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <VSCUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <VSCDynamics> ;
@@ -28819,6 +29689,11 @@
 	rdfs:domain <VSCUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<VSCUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <VSCUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <AsynchronousMachineUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <AsynchronousMachineDynamics> ;
@@ -28829,6 +29704,11 @@
 	rdfs:domain <AsynchronousMachineUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<AsynchronousMachineUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <AsynchronousMachineUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <DiscontinuousExcitationControlUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <DiscontinuousExcitationControlDynamics> ;
@@ -28839,6 +29719,11 @@
 	rdfs:domain <DiscontinuousExcitationControlUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<DiscontinuousExcitationControlUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <DiscontinuousExcitationControlUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <TurbineLoadControllerUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <TurbineLoadControllerDynamics> ;
@@ -28849,6 +29734,11 @@
 	rdfs:domain <TurbineLoadControllerUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<TurbineLoadControllerUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <TurbineLoadControllerUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <ExcitationSystemUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <ExcitationSystemDynamics> ;
@@ -28859,6 +29749,11 @@
 	rdfs:domain <ExcitationSystemUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<ExcitationSystemUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <ExcitationSystemUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <PowerSystemStabilizerUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <PowerSystemStabilizerDynamics> ;
@@ -28869,6 +29764,11 @@
 	rdfs:domain <PowerSystemStabilizerUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<PowerSystemStabilizerUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <PowerSystemStabilizerUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <SynchronousMachineUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <SynchronousMachineDynamics> ;
@@ -28879,6 +29779,11 @@
 	rdfs:domain <SynchronousMachineUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<SynchronousMachineUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <SynchronousMachineUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <HVDCInterconnectionUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <HVDCInterconnectionDynamics> ;
@@ -28889,6 +29794,11 @@
 	rdfs:domain <HVDCInterconnectionUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<HVDCInterconnectionUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <HVDCInterconnectionUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <CSCUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <CSCDynamics> ;
@@ -28899,6 +29809,11 @@
 	rdfs:domain <CSCUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<CSCUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <CSCUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <MechanicalLoadUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <MechanicalLoadDynamics> ;
@@ -28909,6 +29824,11 @@
 	rdfs:domain <MechanicalLoadUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<MechanicalLoadUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <MechanicalLoadUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <LoadUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <LoadDynamics> ;
@@ -28919,6 +29839,11 @@
 	rdfs:domain <LoadUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<LoadUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <LoadUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <VoltageAdjusterUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <VoltageAdjusterDynamics> ;
@@ -28929,6 +29854,11 @@
 	rdfs:domain <VoltageAdjusterUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<VoltageAdjusterUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <VoltageAdjusterUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <StatcomUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <StatcomDynamics> ;
@@ -28939,6 +29869,11 @@
 	rdfs:domain <StatcomUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<StatcomUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <StatcomUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <ShuntCompensatorUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <ShuntCompensatorDynamics> ;
@@ -28959,6 +29894,11 @@
 	rdfs:domain <WindType3or4UserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<WindType3or4UserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <WindType3or4UserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <WindPlantUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <WindPlantDynamics> ;
@@ -28969,6 +29909,11 @@
 	rdfs:domain <WindPlantUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<WindPlantUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <WindPlantUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <PFVArControllerType2UserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <PFVArControllerType2Dynamics> ;
@@ -28979,6 +29924,11 @@
 	rdfs:domain <PFVArControllerType2UserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<PFVArControllerType2UserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <PFVArControllerType2UserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <UnderexcitationLimiterUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <UnderexcitationLimiterDynamics> ;
@@ -28989,6 +29939,11 @@
 	rdfs:domain <UnderexcitationLimiterUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<UnderexcitationLimiterUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <UnderexcitationLimiterUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <ProprietaryParameterDynamics> rdf:type rdfs:Class ;
 	rdfs:label "ProprietaryParameterDynamics"@en ;
@@ -29148,6 +30103,11 @@
 	rdfs:domain <OverexcitationLimiterUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<OverexcitationLimiterUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <OverexcitationLimiterUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <RelayUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <RelayDynamics> ;
@@ -29158,6 +30118,11 @@
 	rdfs:domain <RelayUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<RelayUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <RelayUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <StatorCurrentLimiterUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <StatorCurrentLimiterDynamics> ;
@@ -29168,6 +30133,11 @@
 	rdfs:domain <StatorCurrentLimiterUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<StatorCurrentLimiterUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <StatorCurrentLimiterUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <TurbineGovernorUserDefined> rdf:type rdfs:Class ;
 	rdfs:subClassOf <TurbineGovernorDynamics> ;
@@ -29178,6 +30148,11 @@
 	rdfs:domain <TurbineGovernorUserDefined> ;
 	rdfs:range xsd:boolean ;
 	rdfs:comment "Behaviour is based on a proprietary model as opposed to a detailed model.\ntrue = user-defined model is proprietary with behaviour mutually understood by sending and receiving applications and parameters passed as general attributes\nfalse = user-defined model is explicitly defined in terms of control blocks and their input and output signals."^^rdf:XMLLiteral .
+<TurbineGovernorUserDefined.ProprietaryParameterDynamics> rdf:type rdfs:Property ;
+	rdfs:label "ProprietaryParameterDynamics"@en ;
+	rdfs:domain <TurbineGovernorUserDefined> ;
+	rdfs:range <ProprietaryParameterDynamics> ;
+	rdfs:comment "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
 
 <StringIRI> rdf:type rdfs:Datatype ;
 	rdfs:label "StringIRI"@en ;

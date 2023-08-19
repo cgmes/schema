@@ -12,6 +12,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#BusNameMarker.ReportingGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#BusNameMarker> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#BusNameMarker.ReportingGroup> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#BusNameMarker.ReportingGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "The reporting group to which this bus name marker belongs."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BusNameMarker.Terminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BusNameMarker.Terminal> <http://www.w3.org/2000/01/rdf-schema#label> "Terminal"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BusNameMarker.Terminal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#BusNameMarker> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BusNameMarker.Terminal> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BusNameMarker.Terminal> <http://www.w3.org/2000/01/rdf-schema#comment> "The terminals associated with this bus name marker."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#GroundingImpedance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#GroundingImpedance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#EarthFaultCompensator> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#GroundingImpedance> <http://www.w3.org/2000/01/rdf-schema#label> "GroundingImpedance"@en .
@@ -25,6 +30,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitSet.Equipment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitSet> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitSet.Equipment> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitSet.Equipment> <http://www.w3.org/2000/01/rdf-schema#comment> "The equipment to which the limit set applies."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitSet.OperationalLimitValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitSet.OperationalLimitValue> <http://www.w3.org/2000/01/rdf-schema#label> "OperationalLimitValue"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitSet.OperationalLimitValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitSet> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitSet.OperationalLimitValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimit> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitSet.OperationalLimitValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Values of equipment limits."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitSet.Terminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitSet.Terminal> <http://www.w3.org/2000/01/rdf-schema#label> "Terminal"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitSet.Terminal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitSet> .
@@ -166,6 +176,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#LoadResponseCharacteristic.qVoltageExponent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#LoadResponseCharacteristic> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#LoadResponseCharacteristic.qVoltageExponent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#LoadResponseCharacteristic.qVoltageExponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Exponent of per unit voltage effecting reactive power."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LoadResponseCharacteristic.EnergyConsumer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LoadResponseCharacteristic.EnergyConsumer> <http://www.w3.org/2000/01/rdf-schema#label> "EnergyConsumer"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LoadResponseCharacteristic.EnergyConsumer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#LoadResponseCharacteristic> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LoadResponseCharacteristic.EnergyConsumer> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyConsumer> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LoadResponseCharacteristic.EnergyConsumer> <http://www.w3.org/2000/01/rdf-schema#comment> "The set of loads that have the response characteristics."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#StationSupply> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#StationSupply> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyConsumer> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#StationSupply> <http://www.w3.org/2000/01/rdf-schema#label> "StationSupply"@en .
@@ -174,6 +189,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer> <http://www.w3.org/2000/01/rdf-schema#label> "ConnectivityNodeContainer"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer> <http://www.w3.org/2000/01/rdf-schema#comment> "A base class for all objects that may contain connectivity nodes or topological nodes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer.ConnectivityNodes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer.ConnectivityNodes> <http://www.w3.org/2000/01/rdf-schema#label> "ConnectivityNodes"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer.ConnectivityNodes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer.ConnectivityNodes> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer.ConnectivityNodes> <http://www.w3.org/2000/01/rdf-schema#comment> "Connectivity nodes which belong to this connectivity node container."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCLine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCLine> <http://www.w3.org/2000/01/rdf-schema#label> "DCLine"@en .
@@ -201,10 +221,25 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#GeographicalRegion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#GeographicalRegion> <http://www.w3.org/2000/01/rdf-schema#label> "GeographicalRegion"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#GeographicalRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "A geographical region of a power system network model."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeographicalRegion.Regions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeographicalRegion.Regions> <http://www.w3.org/2000/01/rdf-schema#label> "Regions"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeographicalRegion.Regions> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#GeographicalRegion> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeographicalRegion.Regions> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeographicalRegion.Regions> <http://www.w3.org/2000/01/rdf-schema#comment> "All sub-geographical regions within this geographical region."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ConformLoadGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ConformLoadGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#LoadGroup> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ConformLoadGroup> <http://www.w3.org/2000/01/rdf-schema#label> "ConformLoadGroup"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ConformLoadGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of loads conforming to an allocation pattern. "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConformLoadGroup.ConformLoadSchedules> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConformLoadGroup.ConformLoadSchedules> <http://www.w3.org/2000/01/rdf-schema#label> "ConformLoadSchedules"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConformLoadGroup.ConformLoadSchedules> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConformLoadGroup> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConformLoadGroup.ConformLoadSchedules> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConformLoadSchedule> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConformLoadGroup.ConformLoadSchedules> <http://www.w3.org/2000/01/rdf-schema#comment> "The ConformLoadSchedules in the ConformLoadGroup."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConformLoadGroup.EnergyConsumers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConformLoadGroup.EnergyConsumers> <http://www.w3.org/2000/01/rdf-schema#label> "EnergyConsumers"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConformLoadGroup.EnergyConsumers> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConformLoadGroup> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConformLoadGroup.EnergyConsumers> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConformLoad> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConformLoadGroup.EnergyConsumers> <http://www.w3.org/2000/01/rdf-schema#comment> "Conform loads assigned to this ConformLoadGroup."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TapSchedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TapSchedule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#SeasonDayTypeSchedule> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TapSchedule> <http://www.w3.org/2000/01/rdf-schema#label> "TapSchedule"@en .
@@ -227,6 +262,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentNetwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentNetwork> <http://www.w3.org/2000/01/rdf-schema#label> "EquivalentNetwork"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentNetwork> <http://www.w3.org/2000/01/rdf-schema#comment> "A class that groups electrical equivalents, including internal nodes, of a network that has been reduced. The ConnectivityNodes contained in the equivalent are intended to reflect internal nodes of the equivalent. The boundary Connectivity nodes where the equivalent connects outside itself are not contained by the equivalent."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentNetwork.EquivalentEquipments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentNetwork.EquivalentEquipments> <http://www.w3.org/2000/01/rdf-schema#label> "EquivalentEquipments"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentNetwork.EquivalentEquipments> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentNetwork> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentNetwork.EquivalentEquipments> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentEquipment> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentNetwork.EquivalentEquipments> <http://www.w3.org/2000/01/rdf-schema#comment> "The associated reduced equivalents."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerAsymmetrical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerAsymmetrical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerNonLinear> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerAsymmetrical> <http://www.w3.org/2000/01/rdf-schema#label> "PhaseTapChangerAsymmetrical"@en .
@@ -262,6 +302,16 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChangerTable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChangerTable> <http://www.w3.org/2000/01/rdf-schema#label> "RatioTapChangerTable"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChangerTable> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes a curve for how the voltage magnitude and impedance varies with the tap step. "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChangerTable.RatioTapChangerTablePoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChangerTable.RatioTapChangerTablePoint> <http://www.w3.org/2000/01/rdf-schema#label> "RatioTapChangerTablePoint"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChangerTable.RatioTapChangerTablePoint> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChangerTable> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChangerTable.RatioTapChangerTablePoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChangerTablePoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChangerTable.RatioTapChangerTablePoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Points of this table."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChangerTable.RatioTapChanger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChangerTable.RatioTapChanger> <http://www.w3.org/2000/01/rdf-schema#label> "RatioTapChanger"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChangerTable.RatioTapChanger> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChangerTable> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChangerTable.RatioTapChanger> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChanger> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChangerTable.RatioTapChanger> <http://www.w3.org/2000/01/rdf-schema#comment> "The ratio tap changer of this tap ratio table."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerNonLinear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerNonLinear> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChanger> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerNonLinear> <http://www.w3.org/2000/01/rdf-schema#label> "PhaseTapChangerNonLinear"@en .
@@ -285,6 +335,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#CombinedCyclePlant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#CombinedCyclePlant> <http://www.w3.org/2000/01/rdf-schema#label> "CombinedCyclePlant"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#CombinedCyclePlant> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of combustion turbines and steam turbines where the exhaust heat from the combustion turbines is recovered to make steam for the steam turbines, resulting in greater overall plant efficiency."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CombinedCyclePlant.ThermalGeneratingUnits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CombinedCyclePlant.ThermalGeneratingUnits> <http://www.w3.org/2000/01/rdf-schema#label> "ThermalGeneratingUnits"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CombinedCyclePlant.ThermalGeneratingUnits> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#CombinedCyclePlant> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CombinedCyclePlant.ThermalGeneratingUnits> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ThermalGeneratingUnit> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CombinedCyclePlant.ThermalGeneratingUnits> <http://www.w3.org/2000/01/rdf-schema#comment> "A thermal generating unit may be a member of a combined cycle plant."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PotentialTransformer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PotentialTransformer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#Sensor> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PotentialTransformer> <http://www.w3.org/2000/01/rdf-schema#label> "PotentialTransformer"@en .
@@ -340,6 +395,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerElectronicsUnit.minP> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerElectronicsUnit> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerElectronicsUnit.minP> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerElectronicsUnit.minP> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum active power limit. This is the minimum (nameplate) limit for the unit."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerElectronicsUnit.PowerElectronicsConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerElectronicsUnit.PowerElectronicsConnection> <http://www.w3.org/2000/01/rdf-schema#label> "PowerElectronicsConnection"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerElectronicsUnit.PowerElectronicsConnection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerElectronicsUnit> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerElectronicsUnit.PowerElectronicsConnection> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerElectronicsConnection> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerElectronicsUnit.PowerElectronicsConnection> <http://www.w3.org/2000/01/rdf-schema#comment> "A power electronics unit has a connection to the AC network."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DisconnectingCircuitBreaker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DisconnectingCircuitBreaker> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#Breaker> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DisconnectingCircuitBreaker> <http://www.w3.org/2000/01/rdf-schema#label> "DisconnectingCircuitBreaker"@en .
@@ -380,10 +440,20 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerTransformer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerTransformer> <http://www.w3.org/2000/01/rdf-schema#label> "PowerTransformer"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerTransformer> <http://www.w3.org/2000/01/rdf-schema#comment> "An electrical device consisting of  two or more coupled windings, with or without a magnetic core, for introducing mutual coupling between electric circuits. Transformers can be used to control voltage and phase shift (active power flow).\nA power transformer may be composed of separate transformer tanks that need not be identical.\nA power transformer can be modelled with or without tanks and is intended for use in both balanced and unbalanced representations.   A power transformer typically has two terminals, but may have one (grounding), three or more terminals.\nThe inherited association ConductingEquipment.BaseVoltage should not be used.  The association from TransformerEnd to BaseVoltage should be used instead."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerTransformer.PowerTransformerEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerTransformer.PowerTransformerEnd> <http://www.w3.org/2000/01/rdf-schema#label> "PowerTransformerEnd"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerTransformer.PowerTransformerEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerTransformer> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerTransformer.PowerTransformerEnd> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerTransformerEnd> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerTransformer.PowerTransformerEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "The ends of this power transformer."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup> <http://www.w3.org/2000/01/rdf-schema#label> "ReportingGroup"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "A reporting group is used for various ad-hoc groupings used for reporting."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup.BusNameMarker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup.BusNameMarker> <http://www.w3.org/2000/01/rdf-schema#label> "BusNameMarker"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup.BusNameMarker> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup.BusNameMarker> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#BusNameMarker> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup.BusNameMarker> <http://www.w3.org/2000/01/rdf-schema#comment> "The bus name markers that belong to this reporting group."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Fuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Fuse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#Switch> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Fuse> <http://www.w3.org/2000/01/rdf-schema#label> "Fuse"@en .
@@ -392,15 +462,35 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ReactiveCapabilityCurve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#Curve> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ReactiveCapabilityCurve> <http://www.w3.org/2000/01/rdf-schema#label> "ReactiveCapabilityCurve"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ReactiveCapabilityCurve> <http://www.w3.org/2000/01/rdf-schema#comment> "Reactive power rating envelope versus the synchronous machine's active power, in both the generating and motoring modes. For each active power value there is a corresponding high and low reactive power limit  value. Typically there will be a separate curve for each coolant condition, such as hydrogen pressure.  The Y1 axis values represent reactive minimum and the Y2 axis values represent reactive maximum."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ReactiveCapabilityCurve.EquivalentInjection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ReactiveCapabilityCurve.EquivalentInjection> <http://www.w3.org/2000/01/rdf-schema#label> "EquivalentInjection"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ReactiveCapabilityCurve.EquivalentInjection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ReactiveCapabilityCurve> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ReactiveCapabilityCurve.EquivalentInjection> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentInjection> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ReactiveCapabilityCurve.EquivalentInjection> <http://www.w3.org/2000/01/rdf-schema#comment> "The equivalent injection using this reactive capability curve."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ReactiveCapabilityCurve.InitiallyUsedBySynchronousMachines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ReactiveCapabilityCurve.InitiallyUsedBySynchronousMachines> <http://www.w3.org/2000/01/rdf-schema#label> "InitiallyUsedBySynchronousMachines"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ReactiveCapabilityCurve.InitiallyUsedBySynchronousMachines> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ReactiveCapabilityCurve> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ReactiveCapabilityCurve.InitiallyUsedBySynchronousMachines> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachine> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ReactiveCapabilityCurve.InitiallyUsedBySynchronousMachines> <http://www.w3.org/2000/01/rdf-schema#comment> "Synchronous machines using this curve as default."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Substation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Substation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Substation> <http://www.w3.org/2000/01/rdf-schema#label> "Substation"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Substation> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of equipment for purposes other than generation or utilization, through which electric energy in bulk is passed for the purposes of switching or modifying its characteristics. "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Substation.DCConverterUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Substation.DCConverterUnit> <http://www.w3.org/2000/01/rdf-schema#label> "DCConverterUnit"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Substation.DCConverterUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Substation> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Substation.DCConverterUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCConverterUnit> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Substation.DCConverterUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "The DC converter unit belonging of the substation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Substation.Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Substation.Region> <http://www.w3.org/2000/01/rdf-schema#label> "Region"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Substation.Region> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Substation> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Substation.Region> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Substation.Region> <http://www.w3.org/2000/01/rdf-schema#comment> "The SubGeographicalRegion containing the substation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Substation.VoltageLevels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Substation.VoltageLevels> <http://www.w3.org/2000/01/rdf-schema#label> "VoltageLevels"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Substation.VoltageLevels> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Substation> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Substation.VoltageLevels> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Substation.VoltageLevels> <http://www.w3.org/2000/01/rdf-schema#comment> "The voltage levels within this substation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RotatingMachine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RotatingMachine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingCondEq> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RotatingMachine> <http://www.w3.org/2000/01/rdf-schema#label> "RotatingMachine"@en .
@@ -420,6 +510,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RotatingMachine.ratedU> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#RotatingMachine> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RotatingMachine.ratedU> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RotatingMachine.ratedU> <http://www.w3.org/2000/01/rdf-schema#comment> "Rated voltage (nameplate data, Ur in IEC 60909-0). It is primarily used for short circuit data exchange according to IEC 60909.\nThe attribute shall be a positive value."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RotatingMachine.HydroPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RotatingMachine.HydroPump> <http://www.w3.org/2000/01/rdf-schema#label> "HydroPump"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RotatingMachine.HydroPump> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#RotatingMachine> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RotatingMachine.HydroPump> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPump> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RotatingMachine.HydroPump> <http://www.w3.org/2000/01/rdf-schema#comment> "The synchronous machine drives the turbine which moves the water from a low elevation to a higher elevation. The direction of machine rotation for pumping may or may not be the same as for generating."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RotatingMachine.GeneratingUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RotatingMachine.GeneratingUnit> <http://www.w3.org/2000/01/rdf-schema#label> "GeneratingUnit"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RotatingMachine.GeneratingUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#RotatingMachine> .
@@ -439,6 +534,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ThermalGeneratingUnit.CogenerationPlant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ThermalGeneratingUnit> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ThermalGeneratingUnit.CogenerationPlant> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#CogenerationPlant> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ThermalGeneratingUnit.CogenerationPlant> <http://www.w3.org/2000/01/rdf-schema#comment> "A thermal generating unit may be a member of a cogeneration plant."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ThermalGeneratingUnit.FossilFuels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ThermalGeneratingUnit.FossilFuels> <http://www.w3.org/2000/01/rdf-schema#label> "FossilFuels"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ThermalGeneratingUnit.FossilFuels> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ThermalGeneratingUnit> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ThermalGeneratingUnit.FossilFuels> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#FossilFuel> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ThermalGeneratingUnit.FossilFuels> <http://www.w3.org/2000/01/rdf-schema#comment> "A thermal generating unit may have one or more fossil fuels."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ThermalGeneratingUnit.CAESPlant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ThermalGeneratingUnit.CAESPlant> <http://www.w3.org/2000/01/rdf-schema#label> "CAESPlant"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ThermalGeneratingUnit.CAESPlant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ThermalGeneratingUnit> .
@@ -457,6 +557,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#CogenerationPlant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#CogenerationPlant> <http://www.w3.org/2000/01/rdf-schema#label> "CogenerationPlant"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#CogenerationPlant> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of thermal generating units for the production of electrical energy and process steam (usually from the output of the steam turbines). The steam sendout is typically used for industrial purposes or for municipal heating and cooling."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CogenerationPlant.ThermalGeneratingUnits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CogenerationPlant.ThermalGeneratingUnits> <http://www.w3.org/2000/01/rdf-schema#label> "ThermalGeneratingUnits"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CogenerationPlant.ThermalGeneratingUnits> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#CogenerationPlant> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CogenerationPlant.ThermalGeneratingUnits> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ThermalGeneratingUnit> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CogenerationPlant.ThermalGeneratingUnits> <http://www.w3.org/2000/01/rdf-schema#comment> "A thermal generating unit may be a member of a cogeneration plant."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimit> <http://www.w3.org/2000/01/rdf-schema#label> "OperationalLimit"@en .
@@ -590,11 +695,26 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion> <http://www.w3.org/2000/01/rdf-schema#label> "SubGeographicalRegion"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "A subset of a geographical region of a power system network model."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.DCLines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.DCLines> <http://www.w3.org/2000/01/rdf-schema#label> "DCLines"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.DCLines> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.DCLines> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCLine> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.DCLines> <http://www.w3.org/2000/01/rdf-schema#comment> "The DC lines in this sub-geographical region."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.Region> <http://www.w3.org/2000/01/rdf-schema#label> "Region"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.Region> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.Region> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#GeographicalRegion> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.Region> <http://www.w3.org/2000/01/rdf-schema#comment> "The geographical region which this sub-geographical region is within."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.Substations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.Substations> <http://www.w3.org/2000/01/rdf-schema#label> "Substations"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.Substations> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.Substations> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Substation> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.Substations> <http://www.w3.org/2000/01/rdf-schema#comment> "The substations in this sub-geographical region."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.Lines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.Lines> <http://www.w3.org/2000/01/rdf-schema#label> "Lines"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.Lines> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.Lines> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Line> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion.Lines> <http://www.w3.org/2000/01/rdf-schema#comment> "The lines within the sub-geographical region."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoadSchedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoadSchedule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#SeasonDayTypeSchedule> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoadSchedule> <http://www.w3.org/2000/01/rdf-schema#label> "NonConformLoadSchedule"@en .
@@ -683,6 +803,21 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit.variableCost> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit.variableCost> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit.variableCost> <http://www.w3.org/2000/01/rdf-schema#comment> "The variable cost component of production per unit of ActivePower."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit.GrossToNetActivePowerCurves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit.GrossToNetActivePowerCurves> <http://www.w3.org/2000/01/rdf-schema#label> "GrossToNetActivePowerCurves"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit.GrossToNetActivePowerCurves> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit.GrossToNetActivePowerCurves> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#GrossToNetActivePowerCurve> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit.GrossToNetActivePowerCurves> <http://www.w3.org/2000/01/rdf-schema#comment> "A generating unit may have a gross active power to net active power curve, describing the losses and auxiliary power requirements of the unit."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit.RotatingMachine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit.RotatingMachine> <http://www.w3.org/2000/01/rdf-schema#label> "RotatingMachine"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit.RotatingMachine> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit.RotatingMachine> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#RotatingMachine> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit.RotatingMachine> <http://www.w3.org/2000/01/rdf-schema#comment> "A synchronous machine may operate as a generator and as such becomes a member of a generating unit."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit.ControlAreaGeneratingUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit.ControlAreaGeneratingUnit> <http://www.w3.org/2000/01/rdf-schema#label> "ControlAreaGeneratingUnit"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit.ControlAreaGeneratingUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit.ControlAreaGeneratingUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ControlAreaGeneratingUnit> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit.ControlAreaGeneratingUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "ControlArea specifications for this generating unit."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ControlArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ControlArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ControlArea> <http://www.w3.org/2000/01/rdf-schema#label> "ControlArea"@en .
@@ -697,10 +832,25 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ControlArea.EnergyArea> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ControlArea> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ControlArea.EnergyArea> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyArea> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ControlArea.EnergyArea> <http://www.w3.org/2000/01/rdf-schema#comment> "The energy area that is forecast from this control area specification."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ControlArea.ControlAreaGeneratingUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ControlArea.ControlAreaGeneratingUnit> <http://www.w3.org/2000/01/rdf-schema#label> "ControlAreaGeneratingUnit"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ControlArea.ControlAreaGeneratingUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ControlArea> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ControlArea.ControlAreaGeneratingUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ControlAreaGeneratingUnit> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ControlArea.ControlAreaGeneratingUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "The generating unit specifications for the control area."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ControlArea.TieFlow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ControlArea.TieFlow> <http://www.w3.org/2000/01/rdf-schema#label> "TieFlow"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ControlArea.TieFlow> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ControlArea> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ControlArea.TieFlow> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#TieFlow> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ControlArea.TieFlow> <http://www.w3.org/2000/01/rdf-schema#comment> "The tie flows associated with the control area."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SubLoadArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SubLoadArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyArea> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SubLoadArea> <http://www.w3.org/2000/01/rdf-schema#label> "SubLoadArea"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SubLoadArea> <http://www.w3.org/2000/01/rdf-schema#comment> "The class is the second level in a hierarchical structure for grouping of loads for the purpose of load flow load scaling."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubLoadArea.LoadGroups> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubLoadArea.LoadGroups> <http://www.w3.org/2000/01/rdf-schema#label> "LoadGroups"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubLoadArea.LoadGroups> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SubLoadArea> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubLoadArea.LoadGroups> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#LoadGroup> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SubLoadArea.LoadGroups> <http://www.w3.org/2000/01/rdf-schema#comment> "The Loadgroups in the SubLoadArea."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SubLoadArea.LoadArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SubLoadArea.LoadArea> <http://www.w3.org/2000/01/rdf-schema#label> "LoadArea"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SubLoadArea.LoadArea> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SubLoadArea> .
@@ -769,6 +919,16 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoadGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#LoadGroup> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoadGroup> <http://www.w3.org/2000/01/rdf-schema#label> "NonConformLoadGroup"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoadGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Loads that do not follow a daily and seasonal load variation pattern."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoadGroup.NonConformLoadSchedules> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoadGroup.NonConformLoadSchedules> <http://www.w3.org/2000/01/rdf-schema#label> "NonConformLoadSchedules"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoadGroup.NonConformLoadSchedules> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoadGroup> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoadGroup.NonConformLoadSchedules> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoadSchedule> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoadGroup.NonConformLoadSchedules> <http://www.w3.org/2000/01/rdf-schema#comment> "The NonConformLoadSchedules in the NonConformLoadGroup."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoadGroup.EnergyConsumers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoadGroup.EnergyConsumers> <http://www.w3.org/2000/01/rdf-schema#label> "EnergyConsumers"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoadGroup.EnergyConsumers> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoadGroup> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoadGroup.EnergyConsumers> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoad> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#NonConformLoadGroup.EnergyConsumers> <http://www.w3.org/2000/01/rdf-schema#comment> "Conform loads assigned to this ConformLoadGroup."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Curve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Curve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Curve> <http://www.w3.org/2000/01/rdf-schema#label> "Curve"@en .
@@ -793,6 +953,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Curve.y2Unit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Curve> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Curve.y2Unit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Curve.y2Unit> <http://www.w3.org/2000/01/rdf-schema#comment> "The Y2-axis units of measure."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Curve.CurveDatas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Curve.CurveDatas> <http://www.w3.org/2000/01/rdf-schema#label> "CurveDatas"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Curve.CurveDatas> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Curve> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Curve.CurveDatas> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#CurveData> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Curve.CurveDatas> <http://www.w3.org/2000/01/rdf-schema#comment> "The point data values that define this curve."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPowerPlant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPowerPlant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPowerPlant> <http://www.w3.org/2000/01/rdf-schema#label> "HydroPowerPlant"@en .
@@ -802,6 +967,16 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPowerPlant.hydroPlantStorageType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPowerPlant> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPowerPlant.hydroPlantStorageType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPowerPlant.hydroPlantStorageType> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of hydro power plant water storage."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPowerPlant.HydroPumps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPowerPlant.HydroPumps> <http://www.w3.org/2000/01/rdf-schema#label> "HydroPumps"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPowerPlant.HydroPumps> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPowerPlant> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPowerPlant.HydroPumps> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPump> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPowerPlant.HydroPumps> <http://www.w3.org/2000/01/rdf-schema#comment> "The hydro pump may be a member of a pumped storage plant or a pump for distributing water."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPowerPlant.HydroGeneratingUnits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPowerPlant.HydroGeneratingUnits> <http://www.w3.org/2000/01/rdf-schema#label> "HydroGeneratingUnits"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPowerPlant.HydroGeneratingUnits> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPowerPlant> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPowerPlant.HydroGeneratingUnits> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#HydroGeneratingUnit> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#HydroPowerPlant.HydroGeneratingUnits> <http://www.w3.org/2000/01/rdf-schema#comment> "The hydro generating unit belongs to a hydro power plant."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChanger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChanger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChanger> <http://www.w3.org/2000/01/rdf-schema#label> "RatioTapChanger"@en .
@@ -829,6 +1004,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChangerControl> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChangerControl> <http://www.w3.org/2000/01/rdf-schema#label> "TapChangerControl"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChangerControl> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes behaviour specific to tap changers, e.g. how the voltage at the end of a line varies with the load level and compensation of the voltage drop by tap adjustment."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TapChangerControl.TapChanger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TapChangerControl.TapChanger> <http://www.w3.org/2000/01/rdf-schema#label> "TapChanger"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TapChangerControl.TapChanger> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChangerControl> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TapChangerControl.TapChanger> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TapChangerControl.TapChanger> <http://www.w3.org/2000/01/rdf-schema#comment> "The tap changers that participates in this regulating tap control scheme."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#CurveData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#CurveData> <http://www.w3.org/2000/01/rdf-schema#label> "CurveData"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#CurveData> <http://www.w3.org/2000/01/rdf-schema#comment> "Multi-purpose data points for defining a curve.  The use of this generic class is discouraged if a more specific class can be used to specify the X and Y axis values along with their specific data types."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
@@ -870,6 +1050,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#label> "DCEquipmentContainer"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#comment> "A modelling construct to provide a root class for containment of DC as well as AC equipment. The class differ from the EquipmentContaner for AC in that it may also contain DCNode-s. Hence it can contain both AC and DC equipment."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer.DCNodes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer.DCNodes> <http://www.w3.org/2000/01/rdf-schema#label> "DCNodes"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer.DCNodes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer.DCNodes> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCNode> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer.DCNodes> <http://www.w3.org/2000/01/rdf-schema#comment> "The DC nodes contained in the DC equipment container."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#WindGeneratingUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#WindGeneratingUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#WindGeneratingUnit> <http://www.w3.org/2000/01/rdf-schema#label> "WindGeneratingUnit"@en .
@@ -912,6 +1097,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Switch.retained> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Switch> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Switch.retained> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Switch.retained> <http://www.w3.org/2000/01/rdf-schema#comment> "Branch is retained in the topological solution.  The flow through retained switches will normally be calculated in power flow."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Switch.SwitchSchedules> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Switch.SwitchSchedules> <http://www.w3.org/2000/01/rdf-schema#label> "SwitchSchedules"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Switch.SwitchSchedules> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Switch> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Switch.SwitchSchedules> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SwitchSchedule> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Switch.SwitchSchedules> <http://www.w3.org/2000/01/rdf-schema#comment> "A Switch can be associated with SwitchSchedules."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#HydroGeneratingUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#HydroGeneratingUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#GeneratingUnit> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#HydroGeneratingUnit> <http://www.w3.org/2000/01/rdf-schema#label> "HydroGeneratingUnit"@en .
@@ -1011,6 +1201,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#label> "EquipmentContainer"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#comment> "A modelling construct to provide a root class for containing equipment. "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer.Equipments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer.Equipments> <http://www.w3.org/2000/01/rdf-schema#label> "Equipments"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer.Equipments> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer.Equipments> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer.Equipments> <http://www.w3.org/2000/01/rdf-schema#comment> "Contained equipment."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentBranch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentBranch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentEquipment> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentBranch> <http://www.w3.org/2000/01/rdf-schema#label> "EquivalentBranch"@en .
@@ -1054,6 +1249,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.Substation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.Substation> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Substation> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.Substation> <http://www.w3.org/2000/01/rdf-schema#comment> "The substation of the voltage level."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.Bays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.Bays> <http://www.w3.org/2000/01/rdf-schema#label> "Bays"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.Bays> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.Bays> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Bay> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.Bays> <http://www.w3.org/2000/01/rdf-schema#comment> "The bays within this voltage level."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.BaseVoltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.BaseVoltage> <http://www.w3.org/2000/01/rdf-schema#label> "BaseVoltage"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel.BaseVoltage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel> .
@@ -1068,6 +1268,16 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl.mode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl.mode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl.mode> <http://www.w3.org/2000/01/rdf-schema#comment> "The regulating control mode presently available.  This specification allows for determining the kind of regulation without need for obtaining the units from a schedule."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl.RegulationSchedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl.RegulationSchedule> <http://www.w3.org/2000/01/rdf-schema#label> "RegulationSchedule"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl.RegulationSchedule> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl.RegulationSchedule> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#RegulationSchedule> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl.RegulationSchedule> <http://www.w3.org/2000/01/rdf-schema#comment> "Schedule for this regulating control."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl.RegulatingCondEq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl.RegulatingCondEq> <http://www.w3.org/2000/01/rdf-schema#label> "RegulatingCondEq"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl.RegulatingCondEq> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl.RegulatingCondEq> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingCondEq> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl.RegulatingCondEq> <http://www.w3.org/2000/01/rdf-schema#comment> "The equipment that participates in this regulating control scheme."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl.Terminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl.Terminal> <http://www.w3.org/2000/01/rdf-schema#label> "Terminal"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl.Terminal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl> .
@@ -1082,6 +1292,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCConductingEquipment.ratedUdc> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCConductingEquipment> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCConductingEquipment.ratedUdc> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCConductingEquipment.ratedUdc> <http://www.w3.org/2000/01/rdf-schema#comment> "Rated DC device voltage. The attribute shall be a positive value. It is configuration data used in power flow."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCConductingEquipment.DCTerminals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCConductingEquipment.DCTerminals> <http://www.w3.org/2000/01/rdf-schema#label> "DCTerminals"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCConductingEquipment.DCTerminals> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCConductingEquipment> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCConductingEquipment.DCTerminals> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCTerminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCConductingEquipment.DCTerminals> <http://www.w3.org/2000/01/rdf-schema#comment> "A DC conducting equipment has DC terminals."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChangerTablePoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChangerTablePoint> <http://www.w3.org/2000/01/rdf-schema#label> "TapChangerTablePoint"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChangerTablePoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes each tap step in the tabular curve."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
@@ -1344,6 +1559,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RegularIntervalSchedule.timeStep> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#RegularIntervalSchedule> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RegularIntervalSchedule.timeStep> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RegularIntervalSchedule.timeStep> <http://www.w3.org/2000/01/rdf-schema#comment> "The time between each pair of subsequent regular time points in sequence order."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RegularIntervalSchedule.TimePoints> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RegularIntervalSchedule.TimePoints> <http://www.w3.org/2000/01/rdf-schema#label> "TimePoints"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RegularIntervalSchedule.TimePoints> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#RegularIntervalSchedule> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RegularIntervalSchedule.TimePoints> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#RegularTimePoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#RegularIntervalSchedule.TimePoints> <http://www.w3.org/2000/01/rdf-schema#comment> "The regular interval time point data values that define this schedule."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd> <http://www.w3.org/2000/01/rdf-schema#label> "TransformerEnd"@en .
@@ -1353,6 +1573,16 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd.endNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd.endNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd.endNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Number for this transformer end, corresponding to the end's order in the power transformer vector group or phase angle clock number.  Highest voltage winding should be 1.  Each end within a power transformer should have a unique subsequent end number.   Note the transformer end number need not match the terminal sequence number."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd.PhaseTapChanger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd.PhaseTapChanger> <http://www.w3.org/2000/01/rdf-schema#label> "PhaseTapChanger"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd.PhaseTapChanger> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd.PhaseTapChanger> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChanger> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd.PhaseTapChanger> <http://www.w3.org/2000/01/rdf-schema#comment> "Phase tap changer associated with this transformer end."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd.RatioTapChanger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd.RatioTapChanger> <http://www.w3.org/2000/01/rdf-schema#label> "RatioTapChanger"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd.RatioTapChanger> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd.RatioTapChanger> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#RatioTapChanger> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd.RatioTapChanger> <http://www.w3.org/2000/01/rdf-schema#comment> "Ratio tap changer associated with this transformer end."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd.BaseVoltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd.BaseVoltage> <http://www.w3.org/2000/01/rdf-schema#label> "BaseVoltage"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd.BaseVoltage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd> .
@@ -1367,6 +1597,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergySchedulingType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergySchedulingType> <http://www.w3.org/2000/01/rdf-schema#label> "EnergySchedulingType"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergySchedulingType> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to define the type of generation for scheduling purposes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EnergySchedulingType.EnergySource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EnergySchedulingType.EnergySource> <http://www.w3.org/2000/01/rdf-schema#label> "EnergySource"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EnergySchedulingType.EnergySource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergySchedulingType> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EnergySchedulingType.EnergySource> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergySource> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EnergySchedulingType.EnergySource> <http://www.w3.org/2000/01/rdf-schema#comment> "Energy Source of a particular Energy Scheduling Type."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TieFlow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TieFlow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TieFlow> <http://www.w3.org/2000/01/rdf-schema#label> "TieFlow"@en .
@@ -1395,6 +1630,21 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.nominalVoltage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.nominalVoltage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.nominalVoltage> <http://www.w3.org/2000/01/rdf-schema#comment> "The power system resource's base voltage.  Shall be a positive value and not zero."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.VoltageLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.VoltageLevel> <http://www.w3.org/2000/01/rdf-schema#label> "VoltageLevel"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.VoltageLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.VoltageLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#VoltageLevel> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.VoltageLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "The voltage levels having this base voltage."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.TransformerEnds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.TransformerEnds> <http://www.w3.org/2000/01/rdf-schema#label> "TransformerEnds"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.TransformerEnds> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.TransformerEnds> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.TransformerEnds> <http://www.w3.org/2000/01/rdf-schema#comment> "Transformer ends at the base voltage.  This is essential for PU calculation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.ConductingEquipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.ConductingEquipment> <http://www.w3.org/2000/01/rdf-schema#label> "ConductingEquipment"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.ConductingEquipment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.ConductingEquipment> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.ConductingEquipment> <http://www.w3.org/2000/01/rdf-schema#comment> "All conducting equipment with this base voltage.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#FossilFuel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#FossilFuel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#FossilFuel> <http://www.w3.org/2000/01/rdf-schema#label> "FossilFuel"@en .
@@ -1505,6 +1755,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#LoadArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyArea> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#LoadArea> <http://www.w3.org/2000/01/rdf-schema#label> "LoadArea"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#LoadArea> <http://www.w3.org/2000/01/rdf-schema#comment> "The class is the root or first level in a hierarchical structure for grouping of loads for the purpose of load flow load scaling."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LoadArea.SubLoadAreas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LoadArea.SubLoadAreas> <http://www.w3.org/2000/01/rdf-schema#label> "SubLoadAreas"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LoadArea.SubLoadAreas> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#LoadArea> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LoadArea.SubLoadAreas> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SubLoadArea> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LoadArea.SubLoadAreas> <http://www.w3.org/2000/01/rdf-schema#comment> "The SubLoadAreas in the LoadArea."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitType> <http://www.w3.org/2000/01/rdf-schema#label> "OperationalLimitType"@en .
@@ -1529,10 +1784,20 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitType.kind> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitType> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitType.kind> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitType.kind> <http://www.w3.org/2000/01/rdf-schema#comment> "Types of limits defined in the ENTSO-E Operational Handbook Policy 3."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitType.OperationalLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitType.OperationalLimit> <http://www.w3.org/2000/01/rdf-schema#label> "OperationalLimit"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitType.OperationalLimit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitType> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitType.OperationalLimit> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimit> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitType.OperationalLimit> <http://www.w3.org/2000/01/rdf-schema#comment> "The operational limits associated with this type of limit."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DayType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DayType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DayType> <http://www.w3.org/2000/01/rdf-schema#label> "DayType"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DayType> <http://www.w3.org/2000/01/rdf-schema#comment> "Group of similar days.   For example it could be used to represent weekdays, weekend, or holidays."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DayType.SeasonDayTypeSchedules> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DayType.SeasonDayTypeSchedules> <http://www.w3.org/2000/01/rdf-schema#label> "SeasonDayTypeSchedules"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DayType.SeasonDayTypeSchedules> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DayType> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DayType.SeasonDayTypeSchedules> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SeasonDayTypeSchedule> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DayType.SeasonDayTypeSchedules> <http://www.w3.org/2000/01/rdf-schema#comment> "Schedules that use this DayType."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingCondEq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingCondEq> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyConnection> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingCondEq> <http://www.w3.org/2000/01/rdf-schema#label> "RegulatingCondEq"@en .
@@ -1579,11 +1844,36 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.phases> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.phases> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.phases> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the normal network phasing condition. If the attribute is missing, three phases (ABC) shall be assumed, except for terminals of grounding classes (specializations of EarthFaultCompensator, GroundDisconnector, and Ground) which will be assumed to be N. Therefore, phase code ABCN is explicitly declared when needed, e.g. for star point grounding equipment.\nThe phase code on terminals connecting same ConnectivityNode or same TopologicalNode as well as for equipment between two terminals shall be consistent."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.RegulatingControl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.RegulatingControl> <http://www.w3.org/2000/01/rdf-schema#label> "RegulatingControl"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.RegulatingControl> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.RegulatingControl> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControl> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.RegulatingControl> <http://www.w3.org/2000/01/rdf-schema#comment> "The controls regulating this terminal."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.TransformerEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.TransformerEnd> <http://www.w3.org/2000/01/rdf-schema#label> "TransformerEnd"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.TransformerEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.TransformerEnd> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.TransformerEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "All transformer ends connected at this terminal."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.TieFlow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.TieFlow> <http://www.w3.org/2000/01/rdf-schema#label> "TieFlow"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.TieFlow> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.TieFlow> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#TieFlow> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.TieFlow> <http://www.w3.org/2000/01/rdf-schema#comment> "The control area tie flows to which this terminal associates."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConductingEquipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConductingEquipment> <http://www.w3.org/2000/01/rdf-schema#label> "ConductingEquipment"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConductingEquipment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConductingEquipment> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConductingEquipment> <http://www.w3.org/2000/01/rdf-schema#comment> "The conducting equipment of the terminal.  Conducting equipment have  terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.AuxiliaryEquipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.AuxiliaryEquipment> <http://www.w3.org/2000/01/rdf-schema#label> "AuxiliaryEquipment"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.AuxiliaryEquipment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.AuxiliaryEquipment> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#AuxiliaryEquipment> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.AuxiliaryEquipment> <http://www.w3.org/2000/01/rdf-schema#comment> "The auxiliary equipment connected to the terminal."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConverterDCSides> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConverterDCSides> <http://www.w3.org/2000/01/rdf-schema#label> "ConverterDCSides"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConverterDCSides> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConverterDCSides> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConverterDCSides> <http://www.w3.org/2000/01/rdf-schema#comment> "All converters' DC sides linked to this point of common coupling terminal."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConnectivityNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConnectivityNode> <http://www.w3.org/2000/01/rdf-schema#label> "ConnectivityNode"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.ConnectivityNode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> .
@@ -1597,14 +1887,34 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#CAESPlant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#CAESPlant> <http://www.w3.org/2000/01/rdf-schema#label> "CAESPlant"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#CAESPlant> <http://www.w3.org/2000/01/rdf-schema#comment> "Compressed air energy storage plant."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CAESPlant.ThermalGeneratingUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CAESPlant.ThermalGeneratingUnit> <http://www.w3.org/2000/01/rdf-schema#label> "ThermalGeneratingUnit"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CAESPlant.ThermalGeneratingUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#CAESPlant> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CAESPlant.ThermalGeneratingUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ThermalGeneratingUnit> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CAESPlant.ThermalGeneratingUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "A thermal generating unit may be a member of a compressed air energy storage plant."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyArea> <http://www.w3.org/2000/01/rdf-schema#label> "EnergyArea"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes an area having energy production or consumption.  Specializations are intended to support the load allocation function as typically required in energy management systems or planning studies to allocate hypothesized load levels to individual load points for power flow analysis.  Often the energy area can be linked to both measured and forecast load levels."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyArea.ControlArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyArea.ControlArea> <http://www.w3.org/2000/01/rdf-schema#label> "ControlArea"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyArea.ControlArea> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyArea> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyArea.ControlArea> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ControlArea> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyArea.ControlArea> <http://www.w3.org/2000/01/rdf-schema#comment> "The control area specification that is used for the load forecast."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerTable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerTable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerTable> <http://www.w3.org/2000/01/rdf-schema#label> "PhaseTapChangerTable"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerTable> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes a tabular curve for how the phase angle difference and impedance varies with the tap step."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerTable.PhaseTapChangerTabular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerTable.PhaseTapChangerTabular> <http://www.w3.org/2000/01/rdf-schema#label> "PhaseTapChangerTabular"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerTable.PhaseTapChangerTabular> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerTable> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerTable.PhaseTapChangerTabular> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerTabular> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerTable.PhaseTapChangerTabular> <http://www.w3.org/2000/01/rdf-schema#comment> "The phase tap changers to which this phase tap table applies."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerTable.PhaseTapChangerTablePoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerTable.PhaseTapChangerTablePoint> <http://www.w3.org/2000/01/rdf-schema#label> "PhaseTapChangerTablePoint"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerTable.PhaseTapChangerTablePoint> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerTable> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerTable.PhaseTapChangerTablePoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerTablePoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseTapChangerTable.PhaseTapChangerTablePoint> <http://www.w3.org/2000/01/rdf-schema#comment> "The points of this table."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> <http://www.w3.org/2000/01/rdf-schema#label> "Equipment"@en .
@@ -1619,6 +1929,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.normallyInService> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.normallyInService> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.normallyInService> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the availability of the equipment under normal operating conditions. True means the equipment is available for topology processing, which determines if the equipment is energized or not. False means that the equipment is treated by network applications as if it is not in the model."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.OperationalLimitSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.OperationalLimitSet> <http://www.w3.org/2000/01/rdf-schema#label> "OperationalLimitSet"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.OperationalLimitSet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.OperationalLimitSet> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitSet> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.OperationalLimitSet> <http://www.w3.org/2000/01/rdf-schema#comment> "The operational limit sets associated with this equipment."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.EquipmentContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.EquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#label> "EquipmentContainer"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.EquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> .
@@ -1642,6 +1957,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.BusNameMarker> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.BusNameMarker> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#BusNameMarker> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.BusNameMarker> <http://www.w3.org/2000/01/rdf-schema#comment> "The bus name marker used to name the bus (topological node)."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.OperationalLimitSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.OperationalLimitSet> <http://www.w3.org/2000/01/rdf-schema#label> "OperationalLimitSet"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.OperationalLimitSet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.OperationalLimitSet> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitSet> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.OperationalLimitSet> <http://www.w3.org/2000/01/rdf-schema#comment> "The operational limit sets at the terminal."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode> <http://www.w3.org/2000/01/rdf-schema#label> "ConnectivityNode"@en .
@@ -1651,10 +1971,25 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode.ConnectivityNodeContainer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode.ConnectivityNodeContainer> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode.ConnectivityNodeContainer> <http://www.w3.org/2000/01/rdf-schema#comment> "Container of this connectivity node."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode.BoundaryPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode.BoundaryPoint> <http://www.w3.org/2000/01/rdf-schema#label> "BoundaryPoint"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode.BoundaryPoint> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode.BoundaryPoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#BoundaryPoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode.BoundaryPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "The boundary point associated with the connectivity node."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode.Terminals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode.Terminals> <http://www.w3.org/2000/01/rdf-schema#label> "Terminals"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode.Terminals> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode.Terminals> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode.Terminals> <http://www.w3.org/2000/01/rdf-schema#comment> "Terminals interconnected with zero impedance at a this connectivity node. "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SolarPowerPlant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SolarPowerPlant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SolarPowerPlant> <http://www.w3.org/2000/01/rdf-schema#label> "SolarPowerPlant"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SolarPowerPlant> <http://www.w3.org/2000/01/rdf-schema#comment> "Solar power plant."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SolarPowerPlant.SolarGeneratingUnits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SolarPowerPlant.SolarGeneratingUnits> <http://www.w3.org/2000/01/rdf-schema#label> "SolarGeneratingUnits"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SolarPowerPlant.SolarGeneratingUnits> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SolarPowerPlant> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SolarPowerPlant.SolarGeneratingUnits> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SolarGeneratingUnit> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SolarPowerPlant.SolarGeneratingUnits> <http://www.w3.org/2000/01/rdf-schema#comment> "A solar generating unit or units may be a member of a solar power plant."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#Conductor> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment> <http://www.w3.org/2000/01/rdf-schema#label> "ACLineSegment"@en .
@@ -1679,6 +2014,16 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.x> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.x> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.x> <http://www.w3.org/2000/01/rdf-schema#comment> "Positive sequence series reactance of the entire line section."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.Clamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.Clamp> <http://www.w3.org/2000/01/rdf-schema#label> "Clamp"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.Clamp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.Clamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Clamp> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.Clamp> <http://www.w3.org/2000/01/rdf-schema#comment> "The clamps connected to the line segment."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.Cut> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.Cut> <http://www.w3.org/2000/01/rdf-schema#label> "Cut"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.Cut> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.Cut> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Cut> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.Cut> <http://www.w3.org/2000/01/rdf-schema#comment> "Cuts applied to the line segment."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Line> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Line> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentContainer> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Line> <http://www.w3.org/2000/01/rdf-schema#label> "Line"@en .
@@ -1724,10 +2069,20 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment.BaseVoltage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment.BaseVoltage> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment.BaseVoltage> <http://www.w3.org/2000/01/rdf-schema#comment> "Base voltage of this conducting equipment.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment.Terminals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment.Terminals> <http://www.w3.org/2000/01/rdf-schema#label> "Terminals"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment.Terminals> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment.Terminals> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment.Terminals> <http://www.w3.org/2000/01/rdf-schema#comment> "Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#WindPowerPlant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#WindPowerPlant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#WindPowerPlant> <http://www.w3.org/2000/01/rdf-schema#label> "WindPowerPlant"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#WindPowerPlant> <http://www.w3.org/2000/01/rdf-schema#comment> "Wind power plant."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#WindPowerPlant.WindGeneratingUnits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#WindPowerPlant.WindGeneratingUnits> <http://www.w3.org/2000/01/rdf-schema#label> "WindGeneratingUnits"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#WindPowerPlant.WindGeneratingUnits> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#WindPowerPlant> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#WindPowerPlant.WindGeneratingUnits> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#WindGeneratingUnit> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#WindPowerPlant.WindGeneratingUnits> <http://www.w3.org/2000/01/rdf-schema#comment> "A wind generating unit or units may be a member of a wind power plant."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger> <http://www.w3.org/2000/01/rdf-schema#label> "TapChanger"@en .
@@ -1762,6 +2117,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger.normalStep> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger.normalStep> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger.normalStep> <http://www.w3.org/2000/01/rdf-schema#comment> "The tap step position used in \"normal\" network operation for this winding. For a \"Fixed\" tap changer indicates the current physical tap setting.\nThe attribute shall be equal to or greater than lowStep and equal to or less than highStep."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger.TapSchedules> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger.TapSchedules> <http://www.w3.org/2000/01/rdf-schema#label> "TapSchedules"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger.TapSchedules> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger.TapSchedules> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#TapSchedule> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger.TapSchedules> <http://www.w3.org/2000/01/rdf-schema#comment> "A TapChanger can have TapSchedules."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger.TapChangerControl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger.TapChangerControl> <http://www.w3.org/2000/01/rdf-schema#label> "TapChangerControl"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger.TapChangerControl> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#TapChanger> .
@@ -1803,6 +2163,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Season.startDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Season> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Season.startDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#MonthDay> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Season.startDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date season starts."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Season.SeasonDayTypeSchedules> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Season.SeasonDayTypeSchedules> <http://www.w3.org/2000/01/rdf-schema#label> "SeasonDayTypeSchedules"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Season.SeasonDayTypeSchedules> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Season> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Season.SeasonDayTypeSchedules> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SeasonDayTypeSchedule> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Season.SeasonDayTypeSchedules> <http://www.w3.org/2000/01/rdf-schema#comment> "Schedules that use this Season."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCNode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCNode> <http://www.w3.org/2000/01/rdf-schema#label> "DCNode"@en .
@@ -1812,6 +2177,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCNode.DCEquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCNode> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCNode.DCEquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCNode.DCEquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#comment> "The DC container for the DC nodes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCNode.DCTerminals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCNode.DCTerminals> <http://www.w3.org/2000/01/rdf-schema#label> "DCTerminals"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCNode.DCTerminals> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCNode> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCNode.DCTerminals> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCBaseTerminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCNode.DCTerminals> <http://www.w3.org/2000/01/rdf-schema#comment> "DC base terminals interconnected with zero impedance at a this DC connectivity node. "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyConsumer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyConsumer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyConnection> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#EnergyConsumer> <http://www.w3.org/2000/01/rdf-schema#label> "EnergyConsumer"@en .
@@ -1933,6 +2303,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter.valveU0> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter.valveU0> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter.valveU0> <http://www.w3.org/2000/01/rdf-schema#comment> "Valve threshold voltage, also called Uvalve. Forward voltage drop when the valve is conducting. Used in loss calculations, i.e. the switchLoss depend on numberOfValves * valveU0."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter.DCTerminals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter.DCTerminals> <http://www.w3.org/2000/01/rdf-schema#label> "DCTerminals"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter.DCTerminals> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter.DCTerminals> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverterDCTerminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter.DCTerminals> <http://www.w3.org/2000/01/rdf-schema#comment> "A DC converter have DC converter terminals. A converter has two DC converter terminals."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter.PccTerminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter.PccTerminal> <http://www.w3.org/2000/01/rdf-schema#label> "PccTerminal"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter.PccTerminal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter> .
@@ -1987,6 +2362,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#NonlinearShuntCompensator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#ShuntCompensator> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#NonlinearShuntCompensator> <http://www.w3.org/2000/01/rdf-schema#label> "NonlinearShuntCompensator"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#NonlinearShuntCompensator> <http://www.w3.org/2000/01/rdf-schema#comment> "A non linear shunt compensator has bank or section admittance values that differ. The attributes g, b, g0 and b0 of the associated NonlinearShuntCompensatorPoint describe the total conductance and admittance of a NonlinearShuntCompensatorPoint at a section number specified by NonlinearShuntCompensatorPoint.sectionNumber."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#NonlinearShuntCompensator.NonlinearShuntCompensatorPoints> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#NonlinearShuntCompensator.NonlinearShuntCompensatorPoints> <http://www.w3.org/2000/01/rdf-schema#label> "NonlinearShuntCompensatorPoints"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#NonlinearShuntCompensator.NonlinearShuntCompensatorPoints> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#NonlinearShuntCompensator> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#NonlinearShuntCompensator.NonlinearShuntCompensatorPoints> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#NonlinearShuntCompensatorPoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#NonlinearShuntCompensator.NonlinearShuntCompensatorPoints> <http://www.w3.org/2000/01/rdf-schema#comment> "All points of the non-linear shunt compensator."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SeasonDayTypeSchedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SeasonDayTypeSchedule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#RegularIntervalSchedule> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SeasonDayTypeSchedule> <http://www.w3.org/2000/01/rdf-schema#label> "SeasonDayTypeSchedule"@en .
@@ -2021,6 +2401,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#VsCapabilityCurve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#Curve> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#VsCapabilityCurve> <http://www.w3.org/2000/01/rdf-schema#label> "VsCapabilityCurve"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#VsCapabilityCurve> <http://www.w3.org/2000/01/rdf-schema#comment> "The P-Q capability curve for a voltage source converter, with P on X-axis and Qmin and Qmax on Y1-axis and Y2-axis."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VsCapabilityCurve.VsConverterDCSides> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VsCapabilityCurve.VsConverterDCSides> <http://www.w3.org/2000/01/rdf-schema#label> "VsConverterDCSides"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VsCapabilityCurve.VsConverterDCSides> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#VsCapabilityCurve> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VsCapabilityCurve.VsConverterDCSides> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#VsConverter> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#VsCapabilityCurve.VsConverterDCSides> <http://www.w3.org/2000/01/rdf-schema#comment> "All converters with this capability curve."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Breaker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Breaker> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#ProtectedSwitch> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Breaker> <http://www.w3.org/2000/01/rdf-schema#label> "Breaker"@en .

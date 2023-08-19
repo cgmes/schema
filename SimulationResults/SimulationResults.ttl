@@ -71,6 +71,11 @@
 	rdfs:domain <Curve> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The Y3-axis units of measure."^^rdf:XMLLiteral .
+<Curve.CurveDatas> rdf:type rdfs:Property ;
+	rdfs:label "CurveDatas"@en ;
+	rdfs:domain <Curve> ;
+	rdfs:range <CurveData> ;
+	rdfs:comment "The point data values that define this curve."^^rdf:XMLLiteral .
 
 <StringFixedLanguage> rdf:type rdfs:Datatype ;
 	rdfs:label "StringFixedLanguage"@en ;
@@ -80,16 +85,31 @@
 	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "SimulationSettings"@en ;
 	rdfs:comment "Describes simulation settings necessary for a simulation."^^rdf:XMLLiteral .
+<SimulationSettings.SimulationResult> rdf:type rdfs:Property ;
+	rdfs:label "SimulationResult"@en ;
+	rdfs:domain <SimulationSettings> ;
+	rdfs:range <SimulationResult> ;
+	rdfs:comment "The simulation reslut to which this simulation settings belong to."^^rdf:XMLLiteral .
 
 <SignalConfiguration> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "SignalConfiguration"@en ;
 	rdfs:comment "A configuration or a set of signals selected for recording during a simulation."^^rdf:XMLLiteral .
+<SignalConfiguration.SimulationResult> rdf:type rdfs:Property ;
+	rdfs:label "SimulationResult"@en ;
+	rdfs:domain <SignalConfiguration> ;
+	rdfs:range <SimulationResult> ;
+	rdfs:comment "The simulation reslut to which this simulation configuration belongs to."^^rdf:XMLLiteral .
 
 <SimulationEvents> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "SimulationEvents"@en ;
 	rdfs:comment "A configuration or a set of events executed during a simulation."^^rdf:XMLLiteral .
+<SimulationEvents.SimulationResult> rdf:type rdfs:Property ;
+	rdfs:label "SimulationResult"@en ;
+	rdfs:domain <SimulationEvents> ;
+	rdfs:range <SimulationResult> ;
+	rdfs:comment "The simulation reslut to which this simulation events belong to."^^rdf:XMLLiteral .
 
 <CurveData> rdf:type rdfs:Class ;
 	rdfs:label "CurveData"@en ;
@@ -154,6 +174,21 @@
 	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "SignalRecorder"@en ;
 	rdfs:comment "A recorder for a given signal."^^rdf:XMLLiteral .
+<SignalRecorder.SimulationChacteristic2> rdf:type rdfs:Property ;
+	rdfs:label "SimulationChacteristic2"@en ;
+	rdfs:domain <SignalRecorder> ;
+	rdfs:range <SimulationResultCharacteristic> ;
+	rdfs:comment "The characteristic where this signal is plotted."^^rdf:XMLLiteral .
+<SignalRecorder.SimulationCharacteristic1> rdf:type rdfs:Property ;
+	rdfs:label "SimulationCharacteristic1"@en ;
+	rdfs:domain <SignalRecorder> ;
+	rdfs:range <SimulationResultCharacteristic> ;
+	rdfs:comment "The characteristic where this signal is plotted."^^rdf:XMLLiteral .
+<SignalRecorder.SimulationCharacteristic3> rdf:type rdfs:Property ;
+	rdfs:label "SimulationCharacteristic3"@en ;
+	rdfs:domain <SignalRecorder> ;
+	rdfs:range <SimulationResultCharacteristic> ;
+	rdfs:comment "The characteristic where this signal is plotted."^^rdf:XMLLiteral .
 
 <SimulationResult> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -174,6 +209,11 @@
 	rdfs:domain <SimulationResult> ;
 	rdfs:range <SimulationEvents> ;
 	rdfs:comment "The simulation events that are part of the simulation result."^^rdf:XMLLiteral .
+<SimulationResult.SimulationResultCharacteristic> rdf:type rdfs:Property ;
+	rdfs:label "SimulationResultCharacteristic"@en ;
+	rdfs:domain <SimulationResult> ;
+	rdfs:range <SimulationResultCharacteristic> ;
+	rdfs:comment "The simulation result characteristic that is part of the simulation result."^^rdf:XMLLiteral .
 
 <IRI> rdf:type rdfs:Datatype ;
 	rdfs:label "IRI"@en ;

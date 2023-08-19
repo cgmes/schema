@@ -6,6 +6,11 @@
 <DiagramObjectGluePoint> rdf:type rdfs:Class ;
 	rdfs:label "DiagramObjectGluePoint"@en ;
 	rdfs:comment "This is used for grouping diagram object points from different diagram objects that are considered to be glued together in a diagram even if they are not at the exact same coordinates."^^rdf:XMLLiteral .
+<DiagramObjectGluePoint.DiagramObjectPoints> rdf:type rdfs:Property ;
+	rdfs:label "DiagramObjectPoints"@en ;
+	rdfs:domain <DiagramObjectGluePoint> ;
+	rdfs:range <DiagramObjectPoint> ;
+	rdfs:comment "A diagram object glue point is associated with 2 or more object points that are considered to be 'glued' together."^^rdf:XMLLiteral .
 
 <DiagramObject> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -51,6 +56,16 @@
 	rdfs:domain <DiagramObject> ;
 	rdfs:range <Diagram> ;
 	rdfs:comment "A diagram object is part of a diagram."^^rdf:XMLLiteral .
+<DiagramObject.VisibilityLayers> rdf:type rdfs:Property ;
+	rdfs:label "VisibilityLayers"@en ;
+	rdfs:domain <DiagramObject> ;
+	rdfs:range <VisibilityLayer> ;
+	rdfs:comment "A diagram object can be part of multiple visibility layers."^^rdf:XMLLiteral .
+<DiagramObject.DiagramObjectPoints> rdf:type rdfs:Property ;
+	rdfs:label "DiagramObjectPoints"@en ;
+	rdfs:domain <DiagramObject> ;
+	rdfs:range <DiagramObjectPoint> ;
+	rdfs:comment "A diagram object can have 0 or more points to reflect its layout position, routing (for polylines) or boundary (for polygons)."^^rdf:XMLLiteral .
 
 <DiagramObjectPoint> rdf:type rdfs:Class ;
 	rdfs:label "DiagramObjectPoint"@en ;
@@ -115,6 +130,11 @@
 	rdfs:domain <Diagram> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Y coordinate of the second corner of the initial view."^^rdf:XMLLiteral .
+<Diagram.DiagramElements> rdf:type rdfs:Property ;
+	rdfs:label "DiagramElements"@en ;
+	rdfs:domain <Diagram> ;
+	rdfs:range <DiagramObject> ;
+	rdfs:comment "A diagram is made up of multiple diagram objects."^^rdf:XMLLiteral .
 <Diagram.DiagramStyle> rdf:type rdfs:Property ;
 	rdfs:label "DiagramStyle"@en ;
 	rdfs:domain <Diagram> ;
@@ -140,11 +160,21 @@
 	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "DiagramStyle"@en ;
 	rdfs:comment "The diagram style refers to a style used by the originating system for a diagram.  A diagram style describes information such as schematic, geographic, etc."^^rdf:XMLLiteral .
+<DiagramStyle.Diagram> rdf:type rdfs:Property ;
+	rdfs:label "Diagram"@en ;
+	rdfs:domain <DiagramStyle> ;
+	rdfs:range <Diagram> ;
+	rdfs:comment "A DiagramStyle can be used by many Diagrams."^^rdf:XMLLiteral .
 
 <DiagramObjectStyle> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "DiagramObjectStyle"@en ;
 	rdfs:comment "A reference to a style used by the originating system for a diagram object.  A diagram object style describes information such as line thickness, shape such as circle or rectangle etc, and colour."^^rdf:XMLLiteral .
+<DiagramObjectStyle.StyledObjects> rdf:type rdfs:Property ;
+	rdfs:label "StyledObjects"@en ;
+	rdfs:domain <DiagramObjectStyle> ;
+	rdfs:range <DiagramObject> ;
+	rdfs:comment "A style can be assigned to multiple diagram objects."^^rdf:XMLLiteral .
 
 <TextDiagramObject> rdf:type rdfs:Class ;
 	rdfs:subClassOf <DiagramObject> ;
@@ -174,3 +204,8 @@
 	rdfs:domain <IdentifiedObject> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The name is any free human readable and possibly non unique text naming the object."^^rdf:XMLLiteral .
+<IdentifiedObject.DiagramObjects> rdf:type rdfs:Property ;
+	rdfs:label "DiagramObjects"@en ;
+	rdfs:domain <IdentifiedObject> ;
+	rdfs:range <DiagramObject> ;
+	rdfs:comment "The diagram objects that are associated with the domain object."^^rdf:XMLLiteral .

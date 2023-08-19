@@ -2,6 +2,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelTypeDynamics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelTypeDynamics> <http://www.w3.org/2000/01/rdf-schema#label> "DetailedModelTypeDynamics"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelTypeDynamics> <http://www.w3.org/2000/01/rdf-schema#comment> "The main class that packages all related to this type of a detailed model. This includes all parameters, functions, signals, etc."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelTypeDynamics.DetailedModelDynamics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelTypeDynamics.DetailedModelDynamics> <http://www.w3.org/2000/01/rdf-schema#label> "DetailedModelDynamics"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelTypeDynamics.DetailedModelDynamics> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelTypeDynamics> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelTypeDynamics.DetailedModelDynamics> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelTypeDynamics.DetailedModelDynamics> <http://www.w3.org/2000/01/rdf-schema#comment> "The detailed model dynamics that has this type of detailed model dynamics."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "DetailedModelDescriptor"@en .
@@ -58,6 +63,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.enabled> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.enabled> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.enabled> <http://www.w3.org/2000/01/rdf-schema#comment> "Function block used indicator.\ntrue = use of function block is enabled\nfalse = use of function block is disabled."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.DetailedModelDynamics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.DetailedModelDynamics> <http://www.w3.org/2000/01/rdf-schema#label> "DetailedModelDynamics"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.DetailedModelDynamics> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.DetailedModelDynamics> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.DetailedModelDynamics> <http://www.w3.org/2000/01/rdf-schema#comment> "The detailed model dynamics that has this dynamics function block."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#StringFixedLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#StringFixedLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "StringFixedLanguage"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#StringFixedLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "A string consisting of a sequence of characters. The character encoding is UTF-8. The string length is unspecified and unlimited.\nThe primitive is serialized as literal without language support."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
@@ -68,10 +78,20 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> <http://www.w3.org/2000/01/rdf-schema#label> "Equipment"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> <http://www.w3.org/2000/01/rdf-schema#comment> "The parts of a power system that are physical devices, electronic or mechanical."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.DetailedModelDynamics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.DetailedModelDynamics> <http://www.w3.org/2000/01/rdf-schema#label> "DetailedModelDynamics"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.DetailedModelDynamics> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.DetailedModelDynamics> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.DetailedModelDynamics> <http://www.w3.org/2000/01/rdf-schema#comment> "The detailed model dynamics this models this equipment."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterDesctiptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterDesctiptor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterDesctiptor> <http://www.w3.org/2000/01/rdf-schema#label> "ParameterDesctiptor"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterDesctiptor> <http://www.w3.org/2000/01/rdf-schema#comment> "Supports definition of one or more parameters of several different datatypes for use by the detailed model.  It describes the parameters used in the equations of the detailed model.\nThe name of the parameter shall be the same as the name used in the equations of the detailed model."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterDesctiptor.ParameterValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterDesctiptor.ParameterValue> <http://www.w3.org/2000/01/rdf-schema#label> "ParameterValue"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterDesctiptor.ParameterValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterDesctiptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterDesctiptor.ParameterValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterValue> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterDesctiptor.ParameterValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The value of the parameter descriptor."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics> <http://www.w3.org/2000/01/rdf-schema#label> "DetailedModelDynamics"@en .
@@ -81,6 +101,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics.DetailedModelTypeDynamics> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics.DetailedModelTypeDynamics> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelTypeDynamics> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics.DetailedModelTypeDynamics> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of detailed model dynamics that is applied to the detailed model dynamics."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics.ParameterValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics.ParameterValue> <http://www.w3.org/2000/01/rdf-schema#label> "ParameterValue"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics.ParameterValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics.ParameterValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterValue> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics.ParameterValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The value of the parameter for this detailed model dynamics."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics.DynamicsFunctionBlock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics.DynamicsFunctionBlock> <http://www.w3.org/2000/01/rdf-schema#label> "DynamicsFunctionBlock"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics.DynamicsFunctionBlock> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDynamics> .

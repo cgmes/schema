@@ -11,6 +11,11 @@
 <DCEquipmentContainer> rdf:type rdfs:Class ;
 	rdfs:label "DCEquipmentContainer"@en ;
 	rdfs:comment "A modelling construct to provide a root class for containment of DC as well as AC equipment. The class differ from the EquipmentContaner for AC in that it may also contain DCNode-s. Hence it can contain both AC and DC equipment."^^rdf:XMLLiteral .
+<DCEquipmentContainer.DCTopologicalNode> rdf:type rdfs:Property ;
+	rdfs:label "DCTopologicalNode"@en ;
+	rdfs:domain <DCEquipmentContainer> ;
+	rdfs:range <DCTopologicalNode> ;
+	rdfs:comment "The topological nodes which belong to this connectivity node container."^^rdf:XMLLiteral .
 
 <ACDCConverterDCTerminal> rdf:type rdfs:Class ;
 	rdfs:subClassOf <DCBaseTerminal> ;
@@ -21,6 +26,11 @@
 	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "ReportingGroup"@en ;
 	rdfs:comment "A reporting group is used for various ad-hoc groupings used for reporting."^^rdf:XMLLiteral .
+<ReportingGroup.TopologicalNode> rdf:type rdfs:Property ;
+	rdfs:label "TopologicalNode"@en ;
+	rdfs:domain <ReportingGroup> ;
+	rdfs:range <TopologicalNode> ;
+	rdfs:comment "The topological nodes that belong to the reporting group."^^rdf:XMLLiteral .
 
 <TopologicalNode> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -31,11 +41,21 @@
 	rdfs:domain <TopologicalNode> ;
 	rdfs:range <ReportingGroup> ;
 	rdfs:comment "The reporting group to which the topological node belongs."^^rdf:XMLLiteral .
+<TopologicalNode.Terminal> rdf:type rdfs:Property ;
+	rdfs:label "Terminal"@en ;
+	rdfs:domain <TopologicalNode> ;
+	rdfs:range <Terminal> ;
+	rdfs:comment "The terminals associated with the topological node.   This can be used as an alternative to the connectivity node path to terminal, thus making it unnecessary to model connectivity nodes in some cases.   Note that if connectivity nodes are in the model, this association would probably not be used as an input specification."^^rdf:XMLLiteral .
 <TopologicalNode.BaseVoltage> rdf:type rdfs:Property ;
 	rdfs:label "BaseVoltage"@en ;
 	rdfs:domain <TopologicalNode> ;
 	rdfs:range <BaseVoltage> ;
 	rdfs:comment "The base voltage of the topological node."^^rdf:XMLLiteral .
+<TopologicalNode.ConnectivityNodes> rdf:type rdfs:Property ;
+	rdfs:label "ConnectivityNodes"@en ;
+	rdfs:domain <TopologicalNode> ;
+	rdfs:range <ConnectivityNode> ;
+	rdfs:comment "The connectivity nodes combine together to form this topological node.  May depend on the current state of switches in the network."^^rdf:XMLLiteral .
 <TopologicalNode.ConnectivityNodeContainer> rdf:type rdfs:Property ;
 	rdfs:label "ConnectivityNodeContainer"@en ;
 	rdfs:domain <TopologicalNode> ;
@@ -45,10 +65,20 @@
 <ConnectivityNodeContainer> rdf:type rdfs:Class ;
 	rdfs:label "ConnectivityNodeContainer"@en ;
 	rdfs:comment "A base class for all objects that may contain connectivity nodes or topological nodes."^^rdf:XMLLiteral .
+<ConnectivityNodeContainer.TopologicalNode> rdf:type rdfs:Property ;
+	rdfs:label "TopologicalNode"@en ;
+	rdfs:domain <ConnectivityNodeContainer> ;
+	rdfs:range <TopologicalNode> ;
+	rdfs:comment "The topological nodes which belong to this connectivity node container."^^rdf:XMLLiteral .
 
 <BaseVoltage> rdf:type rdfs:Class ;
 	rdfs:label "BaseVoltage"@en ;
 	rdfs:comment "Defines a system base voltage which is referenced. "^^rdf:XMLLiteral .
+<BaseVoltage.TopologicalNode> rdf:type rdfs:Property ;
+	rdfs:label "TopologicalNode"@en ;
+	rdfs:domain <BaseVoltage> ;
+	rdfs:range <TopologicalNode> ;
+	rdfs:comment "The topological nodes at the base voltage."^^rdf:XMLLiteral .
 
 <DCTopologicalNode> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -59,6 +89,16 @@
 	rdfs:domain <DCTopologicalNode> ;
 	rdfs:range <DCEquipmentContainer> ;
 	rdfs:comment "The connectivity node container to which the topological node belongs."^^rdf:XMLLiteral .
+<DCTopologicalNode.DCNodes> rdf:type rdfs:Property ;
+	rdfs:label "DCNodes"@en ;
+	rdfs:domain <DCTopologicalNode> ;
+	rdfs:range <DCNode> ;
+	rdfs:comment "The DC connectivity nodes combined together to form this DC topological node.  May depend on the current state of switches in the network."^^rdf:XMLLiteral .
+<DCTopologicalNode.DCTerminals> rdf:type rdfs:Property ;
+	rdfs:label "DCTerminals"@en ;
+	rdfs:domain <DCTopologicalNode> ;
+	rdfs:range <DCBaseTerminal> ;
+	rdfs:comment "See association end TopologicalNode.Terminal."^^rdf:XMLLiteral .
 
 <Terminal> rdf:type rdfs:Class ;
 	rdfs:subClassOf <ACDCTerminal> ;

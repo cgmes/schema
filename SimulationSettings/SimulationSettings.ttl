@@ -7,10 +7,20 @@
 	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "FaultCauseType"@en ;
 	rdfs:comment "Type of cause of the fault."^^rdf:XMLLiteral .
+<FaultCauseType.Faults> rdf:type rdfs:Property ;
+	rdfs:label "Faults"@en ;
+	rdfs:domain <FaultCauseType> ;
+	rdfs:range <Fault> ;
+	rdfs:comment "All faults with this cause type."^^rdf:XMLLiteral .
 
 <Equipment> rdf:type rdfs:Class ;
 	rdfs:label "Equipment"@en ;
 	rdfs:comment "The parts of a power system that are physical devices, electronic or mechanical."^^rdf:XMLLiteral .
+<Equipment.Faults> rdf:type rdfs:Property ;
+	rdfs:label "Faults"@en ;
+	rdfs:domain <Equipment> ;
+	rdfs:range <Fault> ;
+	rdfs:comment "All faults on this equipment."^^rdf:XMLLiteral .
 
 <Fault> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -70,6 +80,11 @@
 	rdfs:domain <ClearSimulationEvent> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Execution time of the event. It is relative to the start of the simulation."^^rdf:XMLLiteral .
+<ClearSimulationEvent.ClearedFaultEvent> rdf:type rdfs:Property ;
+	rdfs:label "ClearedFaultEvent"@en ;
+	rdfs:domain <ClearSimulationEvent> ;
+	rdfs:range <Fault> ;
+	rdfs:comment "The fault event that is cleared by a ClearSimulationEvent."^^rdf:XMLLiteral .
 <ClearSimulationEvent.SimulationEvents> rdf:type rdfs:Property ;
 	rdfs:label "SimulationEvents"@en ;
 	rdfs:domain <ClearSimulationEvent> ;
@@ -180,26 +195,61 @@
 	rdfs:domain <PowerFlowSettings> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "The largest difference between actual and scheduled voltage magnitude for controlled node, in per unit of BaseVoltage, \n- at each node where voltage is subject to control to a set point, and \n- for which at least one of the devices participating in the control of bus voltage to its set point is not at a reactive power limit. \nIt shall be less than the controlled bus voltage error convergence tolerance. "^^rdf:XMLLiteral .
+<PowerFlowSettings.SimulationSettings> rdf:type rdfs:Property ;
+	rdfs:label "SimulationSettings"@en ;
+	rdfs:domain <PowerFlowSettings> ;
+	rdfs:range <SimulationSettings> ;
+	rdfs:comment "The simulation settings to which this power flow settings belongs to."^^rdf:XMLLiteral .
 
 <ACDCTerminal> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "ACDCTerminal"@en ;
 	rdfs:comment "An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^rdf:XMLLiteral .
+<ACDCTerminal.SignalRecorder> rdf:type rdfs:Property ;
+	rdfs:label "SignalRecorder"@en ;
+	rdfs:domain <ACDCTerminal> ;
+	rdfs:range <SignalRecorder> ;
+	rdfs:comment "The signal recorder where this signal is recorded."^^rdf:XMLLiteral .
 
 <SimulationEvents> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "SimulationEvents"@en ;
 	rdfs:comment "A configuration or a set of events executed during a simulation."^^rdf:XMLLiteral .
+<SimulationEvents.FaultEvent> rdf:type rdfs:Property ;
+	rdfs:label "FaultEvent"@en ;
+	rdfs:domain <SimulationEvents> ;
+	rdfs:range <Fault> ;
+	rdfs:comment "The simulation fault event that is part of this simulation."^^rdf:XMLLiteral .
+<SimulationEvents.ClearSimulationEvent> rdf:type rdfs:Property ;
+	rdfs:label "ClearSimulationEvent"@en ;
+	rdfs:domain <SimulationEvents> ;
+	rdfs:range <ClearSimulationEvent> ;
+	rdfs:comment "The clear simulation event that is part of this simulation."^^rdf:XMLLiteral .
+<SimulationEvents.ParameterEvent> rdf:type rdfs:Property ;
+	rdfs:label "ParameterEvent"@en ;
+	rdfs:domain <SimulationEvents> ;
+	rdfs:range <ParameterEvent> ;
+	rdfs:comment "The parameter event that is part of this simulation."^^rdf:XMLLiteral .
 
 <Terminal> rdf:type rdfs:Class ;
 	rdfs:subClassOf <ACDCTerminal> ;
 	rdfs:label "Terminal"@en ;
 	rdfs:comment "An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^rdf:XMLLiteral .
+<Terminal.EquipmentFaults> rdf:type rdfs:Property ;
+	rdfs:label "EquipmentFaults"@en ;
+	rdfs:domain <Terminal> ;
+	rdfs:range <EquipmentFault> ;
+	rdfs:comment "The equipment faults at this terminal."^^rdf:XMLLiteral .
 
 <SignalConfiguration> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "SignalConfiguration"@en ;
 	rdfs:comment "A configuration or a set of signals selected for recording during a simulation."^^rdf:XMLLiteral .
+<SignalConfiguration.SignalRecorder> rdf:type rdfs:Property ;
+	rdfs:label "SignalRecorder"@en ;
+	rdfs:domain <SignalConfiguration> ;
+	rdfs:range <SignalRecorder> ;
+	rdfs:comment "The signal that is recorded in this signal configuration."^^rdf:XMLLiteral .
 
 <ParameterEvent> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -245,6 +295,11 @@
 	rdfs:domain <ParameterEvent> ;
 	rdfs:range xsd:double ;
 	rdfs:comment "Defines the duration of the ramp in case. Only used in case attribute changeKind is set to ramp."^^rdf:XMLLiteral .
+<ParameterEvent.ClearSimulationEvent> rdf:type rdfs:Property ;
+	rdfs:label "ClearSimulationEvent"@en ;
+	rdfs:domain <ParameterEvent> ;
+	rdfs:range <ClearSimulationEvent> ;
+	rdfs:comment "The event that clears this fault event."^^rdf:XMLLiteral .
 <ParameterEvent.SimulationEvents> rdf:type rdfs:Property ;
 	rdfs:label "SimulationEvents"@en ;
 	rdfs:domain <ParameterEvent> ;
@@ -299,6 +354,11 @@
 	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "DynamicsFunctionBlock"@en ;
 	rdfs:comment "Abstract parent class for all Dynamics function blocks."^^rdf:XMLLiteral .
+<DynamicsFunctionBlock.SignalRecorder> rdf:type rdfs:Property ;
+	rdfs:label "SignalRecorder"@en ;
+	rdfs:domain <DynamicsFunctionBlock> ;
+	rdfs:range <SignalRecorder> ;
+	rdfs:comment "The signal recorder where this signal is recorded."^^rdf:XMLLiteral .
 
 <SimulationSettings> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
@@ -386,11 +446,21 @@
 <ACLineSegment> rdf:type rdfs:Class ;
 	rdfs:label "ACLineSegment"@en ;
 	rdfs:comment "A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system.\nFor symmetrical, transposed three phase lines, it is sufficient to use attributes of the line segment, which describe impedances and admittances for the entire length of the segment.  Additionally impedances can be computed by using length and associated per length impedances.\nThe BaseVoltage at the two ends of ACLineSegments in a Line shall have the same BaseVoltage.nominalVoltage. However, boundary lines may have slightly different BaseVoltage.nominalVoltages and variation is allowed. Larger voltage difference in general requires use of an equivalent branch."^^rdf:XMLLiteral .
+<ACLineSegment.LineFaults> rdf:type rdfs:Property ;
+	rdfs:label "LineFaults"@en ;
+	rdfs:domain <ACLineSegment> ;
+	rdfs:range <LineFault> ;
+	rdfs:comment "The line faults of the line segment."^^rdf:XMLLiteral .
 
 <SignalDescriptor> rdf:type rdfs:Class ;
 	rdfs:subClassOf <DetailedModelDescriptor> ;
 	rdfs:label "SignalDescriptor"@en ;
 	rdfs:comment "Describes the signals both internal signals that connect different functions or external signals."^^rdf:XMLLiteral .
+<SignalDescriptor.SignalRecorder> rdf:type rdfs:Property ;
+	rdfs:label "SignalRecorder"@en ;
+	rdfs:domain <SignalDescriptor> ;
+	rdfs:range <SignalRecorder> ;
+	rdfs:comment "The signal recorder where this signal is recorded."^^rdf:XMLLiteral .
 
 <IdentifiedObject> rdf:type rdfs:Class ;
 	rdfs:label "IdentifiedObject"@en ;
@@ -410,3 +480,8 @@
 	rdfs:domain <IdentifiedObject> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The name is any free human readable and possibly non unique text naming the object."^^rdf:XMLLiteral .
+<IdentifiedObject.ParameterEvent> rdf:type rdfs:Property ;
+	rdfs:label "ParameterEvent"@en ;
+	rdfs:domain <IdentifiedObject> ;
+	rdfs:range <ParameterEvent> ;
+	rdfs:comment "The parameter event that uses a parameter which belongs to this equipment, dynamics model or signal."^^rdf:XMLLiteral .

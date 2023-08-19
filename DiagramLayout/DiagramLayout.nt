@@ -1,6 +1,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectGluePoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectGluePoint> <http://www.w3.org/2000/01/rdf-schema#label> "DiagramObjectGluePoint"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectGluePoint> <http://www.w3.org/2000/01/rdf-schema#comment> "This is used for grouping diagram object points from different diagram objects that are considered to be glued together in a diagram even if they are not at the exact same coordinates."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectGluePoint.DiagramObjectPoints> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectGluePoint.DiagramObjectPoints> <http://www.w3.org/2000/01/rdf-schema#label> "DiagramObjectPoints"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectGluePoint.DiagramObjectPoints> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectGluePoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectGluePoint.DiagramObjectPoints> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectPoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectGluePoint.DiagramObjectPoints> <http://www.w3.org/2000/01/rdf-schema#comment> "A diagram object glue point is associated with 2 or more object points that are considered to be 'glued' together."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject> <http://www.w3.org/2000/01/rdf-schema#label> "DiagramObject"@en .
@@ -45,6 +50,16 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject.Diagram> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject.Diagram> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Diagram> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject.Diagram> <http://www.w3.org/2000/01/rdf-schema#comment> "A diagram object is part of a diagram."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject.VisibilityLayers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject.VisibilityLayers> <http://www.w3.org/2000/01/rdf-schema#label> "VisibilityLayers"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject.VisibilityLayers> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject.VisibilityLayers> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#VisibilityLayer> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject.VisibilityLayers> <http://www.w3.org/2000/01/rdf-schema#comment> "A diagram object can be part of multiple visibility layers."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject.DiagramObjectPoints> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject.DiagramObjectPoints> <http://www.w3.org/2000/01/rdf-schema#label> "DiagramObjectPoints"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject.DiagramObjectPoints> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject.DiagramObjectPoints> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectPoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject.DiagramObjectPoints> <http://www.w3.org/2000/01/rdf-schema#comment> "A diagram object can have 0 or more points to reflect its layout position, routing (for polylines) or boundary (for polygons)."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectPoint> <http://www.w3.org/2000/01/rdf-schema#label> "DiagramObjectPoint"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A point in a given space defined by 3 coordinates and associated to a diagram object.  The coordinates may be positive or negative as the origin does not have to be in the corner of a diagram.  "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
@@ -107,6 +122,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Diagram.y2InitialView> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Diagram> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Diagram.y2InitialView> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Diagram.y2InitialView> <http://www.w3.org/2000/01/rdf-schema#comment> "Y coordinate of the second corner of the initial view."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Diagram.DiagramElements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Diagram.DiagramElements> <http://www.w3.org/2000/01/rdf-schema#label> "DiagramElements"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Diagram.DiagramElements> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Diagram> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Diagram.DiagramElements> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Diagram.DiagramElements> <http://www.w3.org/2000/01/rdf-schema#comment> "A diagram is made up of multiple diagram objects."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Diagram.DiagramStyle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Diagram.DiagramStyle> <http://www.w3.org/2000/01/rdf-schema#label> "DiagramStyle"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Diagram.DiagramStyle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Diagram> .
@@ -130,10 +150,20 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramStyle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramStyle> <http://www.w3.org/2000/01/rdf-schema#label> "DiagramStyle"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramStyle> <http://www.w3.org/2000/01/rdf-schema#comment> "The diagram style refers to a style used by the originating system for a diagram.  A diagram style describes information such as schematic, geographic, etc."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramStyle.Diagram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramStyle.Diagram> <http://www.w3.org/2000/01/rdf-schema#label> "Diagram"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramStyle.Diagram> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramStyle> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramStyle.Diagram> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Diagram> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramStyle.Diagram> <http://www.w3.org/2000/01/rdf-schema#comment> "A DiagramStyle can be used by many Diagrams."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectStyle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectStyle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectStyle> <http://www.w3.org/2000/01/rdf-schema#label> "DiagramObjectStyle"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectStyle> <http://www.w3.org/2000/01/rdf-schema#comment> "A reference to a style used by the originating system for a diagram object.  A diagram object style describes information such as line thickness, shape such as circle or rectangle etc, and colour."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectStyle.StyledObjects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectStyle.StyledObjects> <http://www.w3.org/2000/01/rdf-schema#label> "StyledObjects"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectStyle.StyledObjects> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectStyle> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectStyle.StyledObjects> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObjectStyle.StyledObjects> <http://www.w3.org/2000/01/rdf-schema#comment> "A style can be assigned to multiple diagram objects."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TextDiagramObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TextDiagramObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TextDiagramObject> <http://www.w3.org/2000/01/rdf-schema#label> "TextDiagramObject"@en .
@@ -161,3 +191,8 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name is any free human readable and possibly non unique text naming the object."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.DiagramObjects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.DiagramObjects> <http://www.w3.org/2000/01/rdf-schema#label> "DiagramObjects"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.DiagramObjects> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.DiagramObjects> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DiagramObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.DiagramObjects> <http://www.w3.org/2000/01/rdf-schema#comment> "The diagram objects that are associated with the domain object."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .

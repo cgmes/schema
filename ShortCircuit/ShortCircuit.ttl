@@ -7,6 +7,16 @@
 	rdfs:subClassOf <ACDCTerminal> ;
 	rdfs:label "Terminal"@en ;
 	rdfs:comment "An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^rdf:XMLLiteral .
+<Terminal.HasFirstMutualCoupling> rdf:type rdfs:Property ;
+	rdfs:label "HasFirstMutualCoupling"@en ;
+	rdfs:domain <Terminal> ;
+	rdfs:range <MutualCoupling> ;
+	rdfs:comment "Mutual couplings associated with the branch as the first branch."^^rdf:XMLLiteral .
+<Terminal.HasSecondMutualCoupling> rdf:type rdfs:Property ;
+	rdfs:label "HasSecondMutualCoupling"@en ;
+	rdfs:domain <Terminal> ;
+	rdfs:range <MutualCoupling> ;
+	rdfs:comment "Mutual couplings with the branch associated as the first branch."^^rdf:XMLLiteral .
 
 <PowerTransformerEnd> rdf:type rdfs:Class ;
 	rdfs:subClassOf <TransformerEnd> ;

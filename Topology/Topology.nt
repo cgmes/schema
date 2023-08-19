@@ -5,6 +5,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#label> "DCEquipmentContainer"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#comment> "A modelling construct to provide a root class for containment of DC as well as AC equipment. The class differ from the EquipmentContaner for AC in that it may also contain DCNode-s. Hence it can contain both AC and DC equipment."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer.DCTopologicalNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer.DCTopologicalNode> <http://www.w3.org/2000/01/rdf-schema#label> "DCTopologicalNode"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer.DCTopologicalNode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer.DCTopologicalNode> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer.DCTopologicalNode> <http://www.w3.org/2000/01/rdf-schema#comment> "The topological nodes which belong to this connectivity node container."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverterDCTerminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverterDCTerminal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCBaseTerminal> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverterDCTerminal> <http://www.w3.org/2000/01/rdf-schema#label> "ACDCConverterDCTerminal"@en .
@@ -13,6 +18,11 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup> <http://www.w3.org/2000/01/rdf-schema#label> "ReportingGroup"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "A reporting group is used for various ad-hoc groupings used for reporting."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup.TopologicalNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup.TopologicalNode> <http://www.w3.org/2000/01/rdf-schema#label> "TopologicalNode"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup.TopologicalNode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup.TopologicalNode> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup.TopologicalNode> <http://www.w3.org/2000/01/rdf-schema#comment> "The topological nodes that belong to the reporting group."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode> <http://www.w3.org/2000/01/rdf-schema#label> "TopologicalNode"@en .
@@ -22,11 +32,21 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.ReportingGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.ReportingGroup> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ReportingGroup> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.ReportingGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "The reporting group to which the topological node belongs."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.Terminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.Terminal> <http://www.w3.org/2000/01/rdf-schema#label> "Terminal"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.Terminal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.Terminal> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.Terminal> <http://www.w3.org/2000/01/rdf-schema#comment> "The terminals associated with the topological node.   This can be used as an alternative to the connectivity node path to terminal, thus making it unnecessary to model connectivity nodes in some cases.   Note that if connectivity nodes are in the model, this association would probably not be used as an input specification."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.BaseVoltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.BaseVoltage> <http://www.w3.org/2000/01/rdf-schema#label> "BaseVoltage"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.BaseVoltage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.BaseVoltage> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.BaseVoltage> <http://www.w3.org/2000/01/rdf-schema#comment> "The base voltage of the topological node."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.ConnectivityNodes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.ConnectivityNodes> <http://www.w3.org/2000/01/rdf-schema#label> "ConnectivityNodes"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.ConnectivityNodes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.ConnectivityNodes> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNode> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.ConnectivityNodes> <http://www.w3.org/2000/01/rdf-schema#comment> "The connectivity nodes combine together to form this topological node.  May depend on the current state of switches in the network."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.ConnectivityNodeContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.ConnectivityNodeContainer> <http://www.w3.org/2000/01/rdf-schema#label> "ConnectivityNodeContainer"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode.ConnectivityNodeContainer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode> .
@@ -35,9 +55,19 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer> <http://www.w3.org/2000/01/rdf-schema#label> "ConnectivityNodeContainer"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer> <http://www.w3.org/2000/01/rdf-schema#comment> "A base class for all objects that may contain connectivity nodes or topological nodes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer.TopologicalNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer.TopologicalNode> <http://www.w3.org/2000/01/rdf-schema#label> "TopologicalNode"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer.TopologicalNode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer.TopologicalNode> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ConnectivityNodeContainer.TopologicalNode> <http://www.w3.org/2000/01/rdf-schema#comment> "The topological nodes which belong to this connectivity node container."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage> <http://www.w3.org/2000/01/rdf-schema#label> "BaseVoltage"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines a system base voltage which is referenced. "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.TopologicalNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.TopologicalNode> <http://www.w3.org/2000/01/rdf-schema#label> "TopologicalNode"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.TopologicalNode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.TopologicalNode> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#TopologicalNode> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#BaseVoltage.TopologicalNode> <http://www.w3.org/2000/01/rdf-schema#comment> "The topological nodes at the base voltage."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode> <http://www.w3.org/2000/01/rdf-schema#label> "DCTopologicalNode"@en .
@@ -47,6 +77,16 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode.DCEquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode.DCEquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCEquipmentContainer> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode.DCEquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#comment> "The connectivity node container to which the topological node belongs."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode.DCNodes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode.DCNodes> <http://www.w3.org/2000/01/rdf-schema#label> "DCNodes"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode.DCNodes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode.DCNodes> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCNode> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode.DCNodes> <http://www.w3.org/2000/01/rdf-schema#comment> "The DC connectivity nodes combined together to form this DC topological node.  May depend on the current state of switches in the network."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode.DCTerminals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode.DCTerminals> <http://www.w3.org/2000/01/rdf-schema#label> "DCTerminals"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode.DCTerminals> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode.DCTerminals> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#DCBaseTerminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DCTopologicalNode.DCTerminals> <http://www.w3.org/2000/01/rdf-schema#comment> "See association end TopologicalNode.Terminal."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> <http://www.w3.org/2000/01/rdf-schema#label> "Terminal"@en .
