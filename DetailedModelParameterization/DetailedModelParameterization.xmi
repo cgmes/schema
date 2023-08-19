@@ -1,118 +1,143 @@
 <?xml version="1.0" encoding="windows-1252" standalone="no" ?>
-<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2023-08-03 08:38:18">
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2023-08-19 17:39:02">
 	<XMI.header>
 		<XMI.documentation>
 			<XMI.exporter>Enterprise Architect</XMI.exporter>
-			<XMI.exporterVersion>2.5</XMI.exporterVersion>
-			<XMI.exporterID>1627</XMI.exporterID>
+			<XMI.exporterVersion>4.1RR</XMI.exporterVersion>
 		</XMI.documentation>
+		<XMI.metamodel XMI.name="UML" XMI.version="1.3"/>
 	</XMI.header>
 	<XMI.content>
 		<UML:Model name="EA Model" xmi.id="MX_EAID_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B">
 			<UML:Namespace.ownedElement>
-				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
 				<UML:Package name="DetailedModelParameterisationProfile" xmi.id="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 					<UML:ModelElement.taggedValue>
 						<UML:TaggedValue tag="documentation" value="This profile defines classes needed to exchange the values for parameters of a detailed model defined by detailed model configuration profile.&#xA;The information in this clause is reproduced from the UML with the permission of UCAIug.&#xA;"/>
 					</UML:ModelElement.taggedValue>
 					<UML:Namespace.ownedElement>
 						<UML:Class name="Boolean" xmi.id="EAID_088AFFF2_04F4_40f0_94C5_686F33AC85D1" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="Primitive"/>
-							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="A type with the value space &quot;true&quot; and &quot;false&quot;.&#xA;"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
-						<UML:Dependency xmi.id="EAID_FCA9FF4C_EB86_4f78_9130_8F8ED1264A5F" visibility="public" client="EAID_088AFFF2_04F4_40f0_94C5_686F33AC85D1" supplier="EAID_9F8964F1_6C32_465b_A83D_F5A201A291C3">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="IsBasedOn"/>
-							</UML:ModelElement.stereotype>
-							<UML:ModelElement.taggedValue/>
-						</UML:Dependency>
 						<UML:Class name="DetailedModelTypeDynamics" xmi.id="EAID_1C26E10B_16B0_4be2_AC9A_6BA7289E1275" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
+							<UML:GeneralizableElement.generalization>
+								<Foundation.Core.Generalization xmi.idref="EAID_678E67BC_AF3A_4e52_A130_9BBA0E71B927"/>
+							</UML:GeneralizableElement.generalization>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="The main class that packages all related to this type of a detailed model. This includes all parameters, functions, signals, etc.&#xA;"/>
 							</UML:ModelElement.taggedValue>
+							<UML:Namespace.ownedElement>
+								<UML:Generalization child="EAID_1C26E10B_16B0_4be2_AC9A_6BA7289E1275" parent="EAID_4F81CFF9_B903_4ed6_AAC8_A98DA7161C7B" xmi.id="EAID_678E67BC_AF3A_4e52_A130_9BBA0E71B927" visibility="public">
+									<UML:ModelElement.taggedValue/>
+								</UML:Generalization>
+							</UML:Namespace.ownedElement>
 						</UML:Class>
 						<UML:Association xmi.id="EAID_0D4EC88D_FD53_43b1_A992_800F7929B133" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="GUIDBasedOn" value="{B3E23881-9DF4-4b95-BF9F-208D60DD2AF3}" xmi.id="EAID_4B5E388E_5197_4a83_BDB3_682CBB648E01"/>
 							</UML:ModelElement.taggedValue>
 							<UML:Association.connection>
-								<UML:AssociationEnd visibility="public" multiplicity="0..*" name="DetailedModelDynamics" aggregation="none" isOrdered="false" isNavigable="false" type="EAID_F4AA41EA_4846_413d_9852_C003BCCEF2C0">
+								<UML:AssociationEnd xmi.id="EAID_src4EC88D_FD53_43b1_A992_800F7929B133" visibility="public" multiplicity="0..*" name="DetailedModelDynamics" aggregation="none" isOrdered="false" isNavigable="false" type="EAID_F4AA41EA_4846_413d_9852_C003BCCEF2C0">
+									<UML:AssociationEnd.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="0" upper="-1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:AssociationEnd.multiplicity>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="The detailed model dynamics that has this type of detailed model dynamics."/>
 									</UML:ModelElement.taggedValue>
 								</UML:AssociationEnd>
-								<UML:AssociationEnd visibility="public" multiplicity="1" name="DetailedModelTypeDynamics" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_1C26E10B_16B0_4be2_AC9A_6BA7289E1275">
+								<UML:AssociationEnd xmi.id="EAID_dst4EC88D_FD53_43b1_A992_800F7929B133" visibility="public" multiplicity="1" name="DetailedModelTypeDynamics" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_1C26E10B_16B0_4be2_AC9A_6BA7289E1275">
+									<UML:AssociationEnd.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:AssociationEnd.multiplicity>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="The type of detailed model dynamics that is applied to the detailed model dynamics."/>
 									</UML:ModelElement.taggedValue>
 								</UML:AssociationEnd>
 							</UML:Association.connection>
 						</UML:Association>
-						<UML:Dependency xmi.id="EAID_42136473_70B1_4509_A9CC_2B08B19E8A2E" visibility="public" client="EAID_1C26E10B_16B0_4be2_AC9A_6BA7289E1275" supplier="EAID_5EDF767F_A5D0_45ed_A2CA_448F43F2CA14">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="IsBasedOn"/>
-							</UML:ModelElement.stereotype>
-							<UML:ModelElement.taggedValue/>
-						</UML:Dependency>
-						<UML:Generalization subtype="EAID_1C26E10B_16B0_4be2_AC9A_6BA7289E1275" supertype="EAID_4F81CFF9_B903_4ed6_AAC8_A98DA7161C7B" xmi.id="EAID_678E67BC_AF3A_4e52_A130_9BBA0E71B927" visibility="public">
-							<UML:ModelElement.taggedValue/>
-						</UML:Generalization>
 						<UML:Class name="DetailedModelDescriptor" xmi.id="EAID_2E96D331_DCEC_4c43_8DBB_1E6FADD032A0" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
+							<UML:GeneralizableElement.generalization>
+								<Foundation.Core.Generalization xmi.idref="EAID_6C04039A_2904_4c1a_BB58_5E03F3E8908C"/>
+							</UML:GeneralizableElement.generalization>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="Describes different components of a detailed model."/>
 							</UML:ModelElement.taggedValue>
+							<UML:Namespace.ownedElement>
+								<UML:Generalization child="EAID_2E96D331_DCEC_4c43_8DBB_1E6FADD032A0" parent="EAID_4F81CFF9_B903_4ed6_AAC8_A98DA7161C7B" xmi.id="EAID_6C04039A_2904_4c1a_BB58_5E03F3E8908C" visibility="public">
+									<UML:ModelElement.taggedValue/>
+								</UML:Generalization>
+							</UML:Namespace.ownedElement>
+							<UML:Namespace.ownedElement>
+								<UML:Generalization child="EAID_E9C5343C_F4A5_4ef3_A8A8_21E874434FC2" parent="EAID_2E96D331_DCEC_4c43_8DBB_1E6FADD032A0" xmi.id="EAID_C0B08776_76F8_465e_9ADA_B867A67D901C" visibility="public">
+									<UML:ModelElement.taggedValue/>
+								</UML:Generalization>
+							</UML:Namespace.ownedElement>
 						</UML:Class>
-						<UML:Generalization subtype="EAID_2E96D331_DCEC_4c43_8DBB_1E6FADD032A0" supertype="EAID_4F81CFF9_B903_4ed6_AAC8_A98DA7161C7B" xmi.id="EAID_6C04039A_2904_4c1a_BB58_5E03F3E8908C" visibility="public">
-							<UML:ModelElement.taggedValue/>
-						</UML:Generalization>
-						<UML:Generalization subtype="EAID_E9C5343C_F4A5_4ef3_A8A8_21E874434FC2" supertype="EAID_2E96D331_DCEC_4c43_8DBB_1E6FADD032A0" xmi.id="EAID_C0B08776_76F8_465e_9ADA_B867A67D901C" visibility="public">
-							<UML:ModelElement.taggedValue/>
-						</UML:Generalization>
-						<UML:Dependency xmi.id="EAID_D042218B_4EEF_4951_B5A1_AC6D9449EDDB" visibility="public" client="EAID_2E96D331_DCEC_4c43_8DBB_1E6FADD032A0" supplier="EAID_4AF9369A_AF00_49d7_8970_2B62B4AE1C8E">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="IsBasedOn"/>
-							</UML:ModelElement.stereotype>
-							<UML:ModelElement.taggedValue/>
-						</UML:Dependency>
 						<UML:Class name="IdentifiedObject" xmi.id="EAID_4F81CFF9_B903_4ed6_AAC8_A98DA7161C7B" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="This is a root class to provide common identification for all classes needing identification and naming attributes."/>
 							</UML:ModelElement.taggedValue>
 							<UML:Classifier.feature>
-								<UML:Attribute name="description" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="description" xmi.id="EAID_8D317F03_1F92_4d7e_8C72_01F8E94889D5" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="0" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
 									</UML:StructuralFeature.type>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{13104BE9-CB1E-4dde-9A52-D7EE95DF7B65}" xmi.id="EAID_30152406_D2F5_4e0f_B5D2_B428DEFBDA6E"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="mRID" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="mRID" xmi.id="EAID_B3E0D5E6_BE0A_4a85_B09F_853B1C15F478" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
 									</UML:StructuralFeature.type>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.&#xA;For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{C775F80A-A23D-4f38-AB9D-49D1FA882337}" xmi.id="EAID_EAA3B581_B79F_4ba0_87A8_34C37E7CDDE5"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="name" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="name" xmi.id="EAID_9305CAAA_65C5_4a40_8762_E734B79FE487" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="0" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
 									</UML:StructuralFeature.type>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="The name is any free human readable and possibly non unique text naming the object.&#xA;"/>
@@ -120,30 +145,35 @@
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
 							</UML:Classifier.feature>
+							<UML:Namespace.ownedElement>
+								<UML:Generalization child="EAID_BA58632C_E9EA_45e3_B0B2_AA416FE5CA18" parent="EAID_4F81CFF9_B903_4ed6_AAC8_A98DA7161C7B" xmi.id="EAID_4208709A_78AD_42ec_8FE8_ED46C4000380" visibility="public">
+									<UML:ModelElement.taggedValue/>
+								</UML:Generalization>
+							</UML:Namespace.ownedElement>
+							<UML:Namespace.ownedElement>
+								<UML:Generalization child="EAID_63FAD9F7_602D_4066_AD63_3C4C292A987A" parent="EAID_4F81CFF9_B903_4ed6_AAC8_A98DA7161C7B" xmi.id="EAID_BBF7A3B2_1DBA_493f_B0C1_45C2CA4A5962" visibility="public">
+									<UML:ModelElement.taggedValue/>
+								</UML:Generalization>
+							</UML:Namespace.ownedElement>
 						</UML:Class>
-						<UML:Generalization subtype="EAID_BA58632C_E9EA_45e3_B0B2_AA416FE5CA18" supertype="EAID_4F81CFF9_B903_4ed6_AAC8_A98DA7161C7B" xmi.id="EAID_4208709A_78AD_42ec_8FE8_ED46C4000380" visibility="public">
-							<UML:ModelElement.taggedValue/>
-						</UML:Generalization>
-						<UML:Generalization subtype="EAID_63FAD9F7_602D_4066_AD63_3C4C292A987A" supertype="EAID_4F81CFF9_B903_4ed6_AAC8_A98DA7161C7B" xmi.id="EAID_BBF7A3B2_1DBA_493f_B0C1_45C2CA4A5962" visibility="public">
-							<UML:ModelElement.taggedValue/>
-						</UML:Generalization>
-						<UML:Dependency xmi.id="EAID_F803B172_4ED5_488e_9E57_38C59224FA48" visibility="public" client="EAID_4F81CFF9_B903_4ed6_AAC8_A98DA7161C7B" supplier="EAID_055C5806_E9D8_4a7a_9307_DAF7C31763C7">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="IsBasedOn"/>
-							</UML:ModelElement.stereotype>
-							<UML:ModelElement.taggedValue/>
-						</UML:Dependency>
 						<UML:Class name="ParameterValue" xmi.id="EAID_54301EEE_7A11_4a9b_8DAD_3EAE360FC4DF" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="Provides the value of a given parameter of a detailed model dynamics."/>
 							</UML:ModelElement.taggedValue>
 							<UML:Classifier.feature>
-								<UML:Attribute name="value" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="value" xmi.id="EAID_1B6E2F8B_887F_477e_993C_EE4EDE59A966" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
 									</UML:StructuralFeature.type>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="The value of the parameter."/>
@@ -157,12 +187,26 @@
 								<UML:TaggedValue tag="GUIDBasedOn" value="{9D6B2D40-EB75-4d47-B226-6D4129EF3D65}" xmi.id="EAID_7E81F614_A0BC_4244_8DB0_9ADE299CCD23"/>
 							</UML:ModelElement.taggedValue>
 							<UML:Association.connection>
-								<UML:AssociationEnd visibility="public" multiplicity="1" name="ParameterDescriptor" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_E9C5343C_F4A5_4ef3_A8A8_21E874434FC2">
+								<UML:AssociationEnd xmi.id="EAID_src56C216_E08A_49d8_B6DD_597CC6382817" visibility="public" multiplicity="1" name="ParameterDescriptor" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_E9C5343C_F4A5_4ef3_A8A8_21E874434FC2">
+									<UML:AssociationEnd.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:AssociationEnd.multiplicity>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="The parameter descriptor that has this value."/>
 									</UML:ModelElement.taggedValue>
 								</UML:AssociationEnd>
-								<UML:AssociationEnd visibility="public" multiplicity="0..*" name="ParameterValue" aggregation="none" isOrdered="false" isNavigable="false" type="EAID_54301EEE_7A11_4a9b_8DAD_3EAE360FC4DF">
+								<UML:AssociationEnd xmi.id="EAID_dst56C216_E08A_49d8_B6DD_597CC6382817" visibility="public" multiplicity="0..*" name="ParameterValue" aggregation="none" isOrdered="false" isNavigable="false" type="EAID_54301EEE_7A11_4a9b_8DAD_3EAE360FC4DF">
+									<UML:AssociationEnd.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="0" upper="-1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:AssociationEnd.multiplicity>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="The value of the parameter descriptor."/>
 									</UML:ModelElement.taggedValue>
@@ -174,110 +218,91 @@
 								<UML:TaggedValue tag="GUIDBasedOn" value="{4B0B1554-1C0B-44d9-B74E-B2181A939E67}" xmi.id="EAID_EC51E205_5FE2_4ecd_AE35_45B70001DF7B"/>
 							</UML:ModelElement.taggedValue>
 							<UML:Association.connection>
-								<UML:AssociationEnd visibility="public" multiplicity="1" name="DetailedModelDynamics" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_F4AA41EA_4846_413d_9852_C003BCCEF2C0">
+								<UML:AssociationEnd xmi.id="EAID_src5D77E7_D6C6_401a_A028_F8D0AB182108" visibility="public" multiplicity="1" name="DetailedModelDynamics" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_F4AA41EA_4846_413d_9852_C003BCCEF2C0">
+									<UML:AssociationEnd.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:AssociationEnd.multiplicity>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="The detailed model to which this parameter value applies."/>
 									</UML:ModelElement.taggedValue>
 								</UML:AssociationEnd>
-								<UML:AssociationEnd visibility="public" multiplicity="0..*" name="ParameterValue" aggregation="none" isOrdered="false" isNavigable="false" type="EAID_54301EEE_7A11_4a9b_8DAD_3EAE360FC4DF">
+								<UML:AssociationEnd xmi.id="EAID_dst5D77E7_D6C6_401a_A028_F8D0AB182108" visibility="public" multiplicity="0..*" name="ParameterValue" aggregation="none" isOrdered="false" isNavigable="false" type="EAID_54301EEE_7A11_4a9b_8DAD_3EAE360FC4DF">
+									<UML:AssociationEnd.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="0" upper="-1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:AssociationEnd.multiplicity>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="The value of the parameter for this detailed model dynamics."/>
 									</UML:ModelElement.taggedValue>
 								</UML:AssociationEnd>
 							</UML:Association.connection>
 						</UML:Association>
-						<UML:Dependency xmi.id="EAID_C0D0B24B_4FE6_422e_AA98_83485A075286" visibility="public" client="EAID_54301EEE_7A11_4a9b_8DAD_3EAE360FC4DF" supplier="EAID_935A7CF0_CF83_4253_BAED_FA7AD85B3D2B">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="IsBasedOn"/>
-							</UML:ModelElement.stereotype>
-							<UML:ModelElement.taggedValue/>
-						</UML:Dependency>
 						<UML:Class name="PowerSystemResource" xmi.id="EAID_63FAD9F7_602D_4066_AD63_3C4C292A987A" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
+							<UML:GeneralizableElement.generalization>
+								<Foundation.Core.Generalization xmi.idref="EAID_BBF7A3B2_1DBA_493f_B0C1_45C2CA4A5962"/>
+							</UML:GeneralizableElement.generalization>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="A power system resource (PSR) can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated."/>
 							</UML:ModelElement.taggedValue>
+							<UML:Namespace.ownedElement>
+								<UML:Generalization child="EAID_E48C1757_3C4F_4fa8_A620_A2E94213EDF4" parent="EAID_63FAD9F7_602D_4066_AD63_3C4C292A987A" xmi.id="EAID_4B8199E9_DE13_4159_87C8_AB345FA8A02C" visibility="public">
+									<UML:ModelElement.taggedValue/>
+								</UML:Generalization>
+							</UML:Namespace.ownedElement>
 						</UML:Class>
-						<UML:Generalization subtype="EAID_E48C1757_3C4F_4fa8_A620_A2E94213EDF4" supertype="EAID_63FAD9F7_602D_4066_AD63_3C4C292A987A" xmi.id="EAID_4B8199E9_DE13_4159_87C8_AB345FA8A02C" visibility="public">
-							<UML:ModelElement.taggedValue/>
-						</UML:Generalization>
-						<UML:Dependency xmi.id="EAID_684A3A8E_0DD7_4405_8060_5836534384F0" visibility="public" client="EAID_63FAD9F7_602D_4066_AD63_3C4C292A987A" supplier="EAID_0340C084_3759_40cc_AAF2_386101DE842F">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="IsBasedOn"/>
-							</UML:ModelElement.stereotype>
-							<UML:ModelElement.taggedValue/>
-						</UML:Dependency>
-						<UML:Comment xmi.id="EAID_6760F687_3CDA_4b22_BCFB_54C24A269FBC" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B">
+						<UML:Comment name="Reproduced with the permission of UCAIug." xmi.id="EAID_6760F687_3CDA_4b22_BCFB_54C24A269FBC" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B">
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="Reproduced with the permission of UCAIug."/>
 							</UML:ModelElement.taggedValue>
 						</UML:Comment>
 						<UML:Class name="DateTime" xmi.id="EAID_804A61BE_4A83_4266_8846_ECD023425DDC" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="Primitive"/>
-							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="Date and time as &quot;yyyy-mm-ddThh:mm:ss.sss&quot;, which conforms with ISO 8601. UTC time zone is specified as &quot;yyyy-mm-ddThh:mm:ss.sssZ&quot;. A local timezone relative UTC is specified as &quot;yyyy-mm-ddThh:mm:ss.sss-hh:mm&quot;. The second component (shown here as &quot;ss.sss&quot;) could have any number of digits in its fractional part to allow any kind of precision beyond seconds."/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
-						<UML:Dependency xmi.id="EAID_D3BD8B23_8F7B_402a_87B9_BF1FEDBB4FBD" visibility="public" client="EAID_804A61BE_4A83_4266_8846_ECD023425DDC" supplier="EAID_EEAE6E83_944C_489c_8E25_CFB85F80C3EB">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="IsBasedOn"/>
-							</UML:ModelElement.stereotype>
-							<UML:ModelElement.taggedValue/>
-						</UML:Dependency>
 						<UML:Class name="String" xmi.id="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="Primitive"/>
-							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="A string consisting of a sequence of characters. The character encoding is UTF-8. The string length is unspecified and unlimited."/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
-						<UML:Dependency xmi.id="EAID_33055C30_CB61_430e_A149_4DCB6CCB2B53" visibility="public" client="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3" supplier="EAID_E50DF78B_84CE_42e9_A275_A956DEF45490">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="IsBasedOn"/>
-							</UML:ModelElement.stereotype>
-							<UML:ModelElement.taggedValue/>
-						</UML:Dependency>
 						<UML:Class name="Date" xmi.id="EAID_95DB57C0_26A2_45c3_87E4_E5FF3C6AF171" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="Primitive"/>
-							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="Date as &quot;yyyy-mm-dd&quot;, which conforms with ISO 8601. UTC time zone is specified as &quot;yyyy-mm-ddZ&quot;. A local timezone relative UTC is specified as &quot;yyyy-mm-dd(+/-)hh:mm&quot;."/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
-						<UML:Dependency xmi.id="EAID_483F683B_B805_4dcf_839E_46CF17D27DA1" visibility="public" client="EAID_95DB57C0_26A2_45c3_87E4_E5FF3C6AF171" supplier="EAID_C724EF94_9D38_4673_A889_46E7C5C6321C">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="IsBasedOn"/>
-							</UML:ModelElement.stereotype>
-							<UML:ModelElement.taggedValue/>
-						</UML:Dependency>
 						<UML:Class name="StringIRI" xmi.id="EAID_AC58D9C5_43D2_4b00_9EA5_BADCC8E85740" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="Primitive"/>
-							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.&#xA;The primitive is serialized as literal without language support.&#xA;IRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.&#xA;IRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.&#xA;IRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names.&#xA;"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
-						<UML:Dependency xmi.id="EAID_A0A8BFB9_3BE8_412a_AC2F_430D1BD5B4FD" visibility="public" client="EAID_AC58D9C5_43D2_4b00_9EA5_BADCC8E85740" supplier="EAID_BD74311B_B658_47d4_ACA8_498AC48A0B7E">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="IsBasedOn"/>
-							</UML:ModelElement.stereotype>
-							<UML:ModelElement.taggedValue/>
-						</UML:Dependency>
 						<UML:Class name="DynamicsFunctionBlock" xmi.id="EAID_BA58632C_E9EA_45e3_B0B2_AA416FE5CA18" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
+							<UML:GeneralizableElement.generalization>
+								<Foundation.Core.Generalization xmi.idref="EAID_4208709A_78AD_42ec_8FE8_ED46C4000380"/>
+							</UML:GeneralizableElement.generalization>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="Abstract parent class for all Dynamics function blocks."/>
 							</UML:ModelElement.taggedValue>
 							<UML:Classifier.feature>
-								<UML:Attribute name="enabled" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="enabled" xmi.id="EAID_92FB9780_AEE7_466f_9866_B6869F4E0E4F" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_088AFFF2_04F4_40f0_94C5_686F33AC85D1"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_088AFFF2_04F4_40f0_94C5_686F33AC85D1"/>
 									</UML:StructuralFeature.type>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="Function block used indicator.&#xA;true = use of function block is enabled&#xA;false = use of function block is disabled."/>
@@ -285,81 +310,67 @@
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
 							</UML:Classifier.feature>
+							<UML:Namespace.ownedElement>
+								<UML:Generalization child="EAID_F4AA41EA_4846_413d_9852_C003BCCEF2C0" parent="EAID_BA58632C_E9EA_45e3_B0B2_AA416FE5CA18" xmi.id="EAID_C93BF3C5_A0A3_42e5_A10A_3FEC601400DC" visibility="public">
+									<UML:ModelElement.taggedValue/>
+								</UML:Generalization>
+							</UML:Namespace.ownedElement>
 						</UML:Class>
-						<UML:Dependency xmi.id="EAID_6912C963_3EC3_4d2f_BBE2_2AD9BCA677E2" visibility="public" client="EAID_BA58632C_E9EA_45e3_B0B2_AA416FE5CA18" supplier="EAID_1CD8BBD4_A285_4466_A0D2_C02CB645EFBB">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="IsBasedOn"/>
-							</UML:ModelElement.stereotype>
-							<UML:ModelElement.taggedValue/>
-						</UML:Dependency>
-						<UML:Generalization subtype="EAID_F4AA41EA_4846_413d_9852_C003BCCEF2C0" supertype="EAID_BA58632C_E9EA_45e3_B0B2_AA416FE5CA18" xmi.id="EAID_C93BF3C5_A0A3_42e5_A10A_3FEC601400DC" visibility="public">
-							<UML:ModelElement.taggedValue/>
-						</UML:Generalization>
 						<UML:Association xmi.id="EAID_DCAFA4BA_BA1B_496c_88A7_634A07BE1B5D" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="GUIDBasedOn" value="{623E5AB5-8FF8-4d6e-9B17-E5EED2056B14}" xmi.id="EAID_6DDDDE73_7DC0_49ba_ADE3_BFB15BBA50EC"/>
 							</UML:ModelElement.taggedValue>
 							<UML:Association.connection>
-								<UML:AssociationEnd visibility="public" multiplicity="0..*" name="DetailedModelDynamics" aggregation="none" isOrdered="false" isNavigable="false" type="EAID_F4AA41EA_4846_413d_9852_C003BCCEF2C0">
+								<UML:AssociationEnd xmi.id="EAID_srcAFA4BA_BA1B_496c_88A7_634A07BE1B5D" visibility="public" multiplicity="0..*" name="DetailedModelDynamics" aggregation="none" isOrdered="false" isNavigable="false" type="EAID_F4AA41EA_4846_413d_9852_C003BCCEF2C0">
+									<UML:AssociationEnd.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="0" upper="-1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:AssociationEnd.multiplicity>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="The detailed model dynamics that has this dynamics function block."/>
 									</UML:ModelElement.taggedValue>
 								</UML:AssociationEnd>
-								<UML:AssociationEnd visibility="public" multiplicity="0..1" name="DynamicsFunctionBlock" aggregation="none" isOrdered="false" isNavigable="true" type="EAID_BA58632C_E9EA_45e3_B0B2_AA416FE5CA18">
+								<UML:AssociationEnd xmi.id="EAID_dstAFA4BA_BA1B_496c_88A7_634A07BE1B5D" visibility="public" multiplicity="0..1" name="DynamicsFunctionBlock" aggregation="none" isOrdered="false" isNavigable="true" type="EAID_BA58632C_E9EA_45e3_B0B2_AA416FE5CA18">
+									<UML:AssociationEnd.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="0" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:AssociationEnd.multiplicity>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="The dynamics function block for this detailed model dynamics."/>
 									</UML:ModelElement.taggedValue>
 								</UML:AssociationEnd>
 							</UML:Association.connection>
 						</UML:Association>
-						<UML:Comment xmi.id="EAID_BECE5A00_F8D3_448a_97E2_95667D69016F" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B">
+						<UML:Comment name="Reproduced with the permission of UCAIug." xmi.id="EAID_BECE5A00_F8D3_448a_97E2_95667D69016F" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B">
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="Reproduced with the permission of UCAIug."/>
 							</UML:ModelElement.taggedValue>
 						</UML:Comment>
 						<UML:Class name="StringFixedLanguage" xmi.id="EAID_C8B12227_8C91_46ba_BC54_20BC6EB00C8B" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="Primitive"/>
-							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="A string consisting of a sequence of characters. The character encoding is UTF-8. The string length is unspecified and unlimited.&#xA;The primitive is serialized as literal without language support."/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
-						<UML:Dependency xmi.id="EAID_7BDE273F_BC7C_47c3_8047_97E06965B1BE" visibility="public" client="EAID_C8B12227_8C91_46ba_BC54_20BC6EB00C8B" supplier="EAID_63AB75FF_8E0F_4772_B62D_52A163E2349C">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="IsBasedOn"/>
-							</UML:ModelElement.stereotype>
-							<UML:ModelElement.taggedValue/>
-						</UML:Dependency>
 						<UML:Class name="URL" xmi.id="EAID_CB49ED8B_574A_444f_BBF8_E47085CB852B" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="Primitive"/>
-							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="A Uniform Resource Locator (URL), colloquially termed a web address, is a reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it. A URL is a specific type of Uniform Resource Identifier (URI), although many people use the two terms interchangeably.URLs occur most commonly to reference web pages (http), but are also used for file transfer (ftp), email (mailto), database access (JDBC), and many other applications."/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
-						<UML:Dependency xmi.id="EAID_FB1152EF_45B3_4139_97BF_C7999F97E48E" visibility="public" client="EAID_CB49ED8B_574A_444f_BBF8_E47085CB852B" supplier="EAID_7735AEFC_A1CE_49cd_98A7_DE4249C3367F">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="IsBasedOn"/>
-							</UML:ModelElement.stereotype>
-							<UML:ModelElement.taggedValue/>
-						</UML:Dependency>
 						<UML:Class name="IRI" xmi.id="EAID_E2A1E2A0_8776_4408_985C_848C5595F632" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="Primitive"/>
-							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.&#xA;The primitive is serialized as rdf:resource in RDFXML.&#xA;IRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.&#xA;IRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.&#xA;IRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names."/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
-						<UML:Dependency xmi.id="EAID_9DF87CF1_8612_4bb7_9D12_12D7FEAB26A7" visibility="public" client="EAID_E2A1E2A0_8776_4408_985C_848C5595F632" supplier="EAID_A64B7F34_431B_4556_B4E9_E8C806118AD5">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="IsBasedOn"/>
-							</UML:ModelElement.stereotype>
-							<UML:ModelElement.taggedValue/>
-						</UML:Dependency>
 						<UML:Class name="Equipment" xmi.id="EAID_E48C1757_3C4F_4fa8_A620_A2E94213EDF4" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
+							<UML:GeneralizableElement.generalization>
+								<Foundation.Core.Generalization xmi.idref="EAID_4B8199E9_DE13_4159_87C8_AB345FA8A02C"/>
+							</UML:GeneralizableElement.generalization>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="The parts of a power system that are physical devices, electronic or mechanical."/>
 							</UML:ModelElement.taggedValue>
@@ -369,364 +380,450 @@
 								<UML:TaggedValue tag="GUIDBasedOn" value="{868AEE49-8683-405a-B352-53C5350D2E91}" xmi.id="EAID_BAA5D936_9E11_4411_A274_43FBB15FACAC"/>
 							</UML:ModelElement.taggedValue>
 							<UML:Association.connection>
-								<UML:AssociationEnd visibility="public" multiplicity="0..*" name="DetailedModelDynamics" aggregation="none" isOrdered="false" isNavigable="false" type="EAID_F4AA41EA_4846_413d_9852_C003BCCEF2C0">
+								<UML:AssociationEnd xmi.id="EAID_srcBB8BEE_12F9_4c09_A7C7_8C095BB3AA69" visibility="public" multiplicity="0..*" name="DetailedModelDynamics" aggregation="none" isOrdered="false" isNavigable="false" type="EAID_F4AA41EA_4846_413d_9852_C003BCCEF2C0">
+									<UML:AssociationEnd.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="0" upper="-1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:AssociationEnd.multiplicity>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="The detailed model dynamics this models this equipment."/>
 									</UML:ModelElement.taggedValue>
 								</UML:AssociationEnd>
-								<UML:AssociationEnd visibility="public" multiplicity="0..1" name="Equipment" aggregation="none" isOrdered="false" isNavigable="true" type="EAID_E48C1757_3C4F_4fa8_A620_A2E94213EDF4">
+								<UML:AssociationEnd xmi.id="EAID_dstBB8BEE_12F9_4c09_A7C7_8C095BB3AA69" visibility="public" multiplicity="0..1" name="Equipment" aggregation="none" isOrdered="false" isNavigable="true" type="EAID_E48C1757_3C4F_4fa8_A620_A2E94213EDF4">
+									<UML:AssociationEnd.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="0" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:AssociationEnd.multiplicity>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="The equipment which behaviour this detailed model dynamics represents."/>
 									</UML:ModelElement.taggedValue>
 								</UML:AssociationEnd>
 							</UML:Association.connection>
 						</UML:Association>
-						<UML:Dependency xmi.id="EAID_52F18F84_DA65_46a9_8003_1074BAF9CAF8" visibility="public" client="EAID_E48C1757_3C4F_4fa8_A620_A2E94213EDF4" supplier="EAID_F8DD8DAC_3545_4660_9CA5_794881CC6591">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="IsBasedOn"/>
-							</UML:ModelElement.stereotype>
-							<UML:ModelElement.taggedValue/>
-						</UML:Dependency>
 						<UML:Class name="ParameterDesctiptor" xmi.id="EAID_E9C5343C_F4A5_4ef3_A8A8_21E874434FC2" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
+							<UML:GeneralizableElement.generalization>
+								<Foundation.Core.Generalization xmi.idref="EAID_C0B08776_76F8_465e_9ADA_B867A67D901C"/>
+							</UML:GeneralizableElement.generalization>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="Supports definition of one or more parameters of several different datatypes for use by the detailed model.  It describes the parameters used in the equations of the detailed model.&#xA;The name of the parameter shall be the same as the name used in the equations of the detailed model.&#xA;"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
-						<UML:Dependency xmi.id="EAID_C858251D_29B7_4efe_8251_E22B1C864AE1" visibility="public" client="EAID_E9C5343C_F4A5_4ef3_A8A8_21E874434FC2" supplier="EAID_5C8F98A8_A6B9_495f_A1F9_200AF31D1E84">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="IsBasedOn"/>
-							</UML:ModelElement.stereotype>
-							<UML:ModelElement.taggedValue/>
-						</UML:Dependency>
 						<UML:Class name="DetailedModelDynamics" xmi.id="EAID_F4AA41EA_4846_413d_9852_C003BCCEF2C0" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:GeneralizableElement.generalization>
+								<Foundation.Core.Generalization xmi.idref="EAID_C93BF3C5_A0A3_42e5_A10A_3FEC601400DC"/>
+							</UML:GeneralizableElement.generalization>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="The main class that packages all related to this detailed model. This includes all parameters, functions, signals, etc."/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
-						<UML:Dependency xmi.id="EAID_77838CA4_CF5E_409f_92C9_F02EABE35278" visibility="public" client="EAID_F4AA41EA_4846_413d_9852_C003BCCEF2C0" supplier="EAID_0B926C2C_1D9B_408e_8228_D392CFACFC4B">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="IsBasedOn"/>
-							</UML:ModelElement.stereotype>
-							<UML:ModelElement.taggedValue/>
-						</UML:Dependency>
 						<UML:Class name="DetailedModelParameterisation-EU_Ontology" xmi.id="EAID_FC5AA47F_00E8_42e2_B0B4_457D6CF35F4D" visibility="public" namespace="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="owl"/>
-							</UML:ModelElement.stereotype>
+							<UML:GeneralizableElement.generalization>
+								<Foundation.Core.Generalization xmi.idref="EAID_5FB01BC0_7A21_4045_B21F_3386719AC1E4"/>
+							</UML:GeneralizableElement.generalization>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="The class of ontologies."/>
 							</UML:ModelElement.taggedValue>
 							<UML:Classifier.feature>
-								<UML:Attribute name="backwardCompatibleWith" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="backwardCompatibleWith" xmi.id="EAID_8D57DED6_E269_44a9_85EC_6252919A4011" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="0" upper="n"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_E2A1E2A0_8776_4408_985C_848C5595F632"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_E2A1E2A0_8776_4408_985C_848C5595F632"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="owl"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="The annotation property that indicates that a given ontology is backward compatible with another ontology."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{14C541BA-24F2-4b40-83BC-F26702EC4C26}" xmi.id="EAID_275FD57E_4E45_4eea_B275_3D2D49BBE0D9"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="conformsTo" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="conformsTo" xmi.id="EAID_F7872700_D595_40ba_907B_E074A7BA150A" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="n"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="urn:iso:std:iec:61970-301:ed-7:amd1|urn:iso:std:iec:61970-302:ed-2|file://iec61970cim17v40_iec61968cim13v13a_iec62325cim03v17a.eap|urn:iso:std:iec:61970-401:draft:ed-1|urn:iso:std:iec:61970-501:draft:ed-2"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_AC58D9C5_43D2_4b00_9EA5_BADCC8E85740"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_AC58D9C5_43D2_4b00_9EA5_BADCC8E85740"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="dct"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="An established standard to which the described resource conforms."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{7053C681-F66D-4b79-9F2D-14B6AD0E1470}" xmi.id="EAID_923E3D48_9279_47a5_A541_D4494220C419"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="creator" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="creator" xmi.id="EAID_DA210E97_8E9D_48e4_A578_8BCF12C61E1B" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="IEC TC57 WG13"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="dct"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="An entity responsible for making the resource.&#xA;Recommended practice is to identify the creator with a URI. If this is not possible or feasible, a literal value that identifies the creator may be provided."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{ECBB9D07-6D2E-404b-8744-D4695F222BAA}" xmi.id="EAID_BB58E41A_2C17_4dc2_A33C_850C4DA83CBF"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="description" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="description" xmi.id="EAID_C6719C30_AAD2_4408_9CEC_EC920DBC54A8" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="0" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="This vocabulary is describing the detailed model parameterisation profile from IEC 61970-457."/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="dct"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="An account of the resource.&#xA;Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{F8EADEEC-8B20-4978-9B51-53B4AEF5E874}" xmi.id="EAID_E6FDDD6F_1966_4a8b_A7A2_6D2BFC18DE6A"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="identifier" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="identifier" xmi.id="EAID_58753E4A_555F_47b7_875E_C39A8D68E179" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="urn:uuid:4aee6aaf-25da-43ca-988f-bc463ba0c9cd"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_AC58D9C5_43D2_4b00_9EA5_BADCC8E85740"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_AC58D9C5_43D2_4b00_9EA5_BADCC8E85740"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="dct"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="An unambiguous reference to the resource within a given context.&#xA;Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN). Persistent identifiers should be provided as HTTP URIs."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{D3189AD5-9626-4e74-B4C8-C9098107B928}" xmi.id="EAID_D6E4916B_5318_4bb4_8779_65F6E6A976D2"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="imports" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="imports" xmi.id="EAID_27C59EAA_F400_4de7_9896_E0CDC96285B3" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="0" upper="n"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_E2A1E2A0_8776_4408_985C_848C5595F632"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_E2A1E2A0_8776_4408_985C_848C5595F632"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="owl"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="The property that is used for importing other ontologies into a given ontology."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{7FEE02DB-5749-46ed-9CD3-A22F72F79226}" xmi.id="EAID_E9A931FB_7C7E_46f2_8402_C5DA0B2C6D2A"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="incompatibleWith" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="incompatibleWith" xmi.id="EAID_57750E07_6EFF_4776_8701_C617D9E51F7B" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="0" upper="n"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_E2A1E2A0_8776_4408_985C_848C5595F632"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_E2A1E2A0_8776_4408_985C_848C5595F632"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="owl"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="The annotation property that indicates that a given ontology is incompatible with another ontology."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{5A77D7A1-D006-4e46-903F-12D56756C12B}" xmi.id="EAID_7FEDBCA3_E9A3_4e1f_9BDE_014D6D2063A2"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="issued" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="issued" xmi.id="EAID_B3EA7AA8_23F5_4b73_A653_87846D8ED918" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_804A61BE_4A83_4266_8846_ECD023425DDC"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_804A61BE_4A83_4266_8846_ECD023425DDC"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="dct"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="Date of formal issuance of the resource.&#xA;Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{72A7E5CA-E495-4502-A989-C344D8AA3AAA}" xmi.id="EAID_C7D9B11D_1B0D_4b6d_AE48_ADD6B6D5632B"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="keyword" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="keyword" xmi.id="EAID_7FC69EFE_5F80_4d24_8F91_BD6C15004511" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="DMP"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_C8B12227_8C91_46ba_BC54_20BC6EB00C8B"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_C8B12227_8C91_46ba_BC54_20BC6EB00C8B"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="dcat"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="A keyword or tag describing a resource."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{2909FB8E-A0CA-43df-904C-259C2147E7D0}" xmi.id="EAID_C60FB5D0_60E9_40d3_A2D7_BEDCCE625AFF"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="landingPage" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="landingPage" xmi.id="EAID_A37172AC_1159_4ddd_B013_4350FA592D3D" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="0" upper="n"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="https://webstore.iec.ch/"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_CB49ED8B_574A_444f_BBF8_E47085CB852B"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_CB49ED8B_574A_444f_BBF8_E47085CB852B"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="dcat"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information.&#xA;&#xA;If the distribution(s) are accessible only through a landing page (i.e. direct download URLs are not known), then the landing page link should be duplicated as accessURL on a distribution."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{38988857-F824-4f78-A87D-108BE2CDDF2C}" xmi.id="EAID_E354048E_61FA_4080_AA6C_1E023A105EAD"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="language" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="language" xmi.id="EAID_2F17A3D4_AD60_41c7_9A08_6027DD7D0782" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="0" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="en-GB"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_C8B12227_8C91_46ba_BC54_20BC6EB00C8B"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_C8B12227_8C91_46ba_BC54_20BC6EB00C8B"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="dct"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="A language of the item. This refers to the natural language used for textual metadata (i.e. titles, descriptions, etc) of a cataloged resource (i.e. dataset or service) or the textual values of a dataset distribution.&#xA;Recommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 [IETF-BCP47] language tag."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{89D2D947-9C25-4558-A7F2-EB6462EC855C}" xmi.id="EAID_C3D41A9C_C67D_424b_91F4_95BAA8B5C327"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="license" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="license" xmi.id="EAID_6B234225_E7B8_4f85_8DCA_152B0AE91733" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="https://creativecommons.org/licenses/by/4.0/"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="dct"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="A legal document giving official permission to do something with the resource.&#xA;Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{1C3B5575-1163-40d0-AF84-34847DD5346A}" xmi.id="EAID_5F64F9C1_7A54_42ca_B943_F553622FB79F"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="modified" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="modified" xmi.id="EAID_204F389C_758D_4984_AD0B_EACD179BB590" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="2022-02-22"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_95DB57C0_26A2_45c3_87E4_E5FF3C6AF171"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_95DB57C0_26A2_45c3_87E4_E5FF3C6AF171"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="dct"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="Most recent date on which the item was changed, updated or modified.&#xA;Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{65B4A9BA-9079-491a-A021-45C2AC85C7F6}" xmi.id="EAID_7ABD4B8C_AD5F_454b_AE3E_23037C806384"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="priorVersion" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="priorVersion" xmi.id="EAID_92BB2723_72FD_4a19_A94E_3858E131D4DE" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="0" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_E2A1E2A0_8776_4408_985C_848C5595F632"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_E2A1E2A0_8776_4408_985C_848C5595F632"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="owl"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="The annotation property that indicates the predecessor ontology of a given ontology."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{2DB7A6F3-2A51-4b7f-ADF9-E1FBCA003EB4}" xmi.id="EAID_46CD5525_7DA4_4cf4_90A9_34C58E248904"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="publisher" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="publisher" xmi.id="EAID_C8A8E180_471B_433c_823B_FBAA660523FC" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="IEC"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="dct"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="An entity responsible for making the resource available."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{EE0BC1A0-8840-42cc-8CE0-AD42BEB7B3C0}" xmi.id="EAID_18FAB4A0_BF3E_4962_B74A_889583DDF633"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="rights" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="rights" xmi.id="EAID_89035E21_0382_46e5_B0A9_7CEB9345FD2F" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="Copyright"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="dct"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="A statement that concerns all rights not addressed with dct:license or dct:accessRights, such as copyright statements."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{24625853-26A3-44fe-8181-0F87CF1C65B1}" xmi.id="EAID_F85AB130_603B_400c_AF84_AA1EA2DB290B"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="rightsHolder" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="rightsHolder" xmi.id="EAID_68245876_F8E2_43ab_B493_090D627E3C98" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="0" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="IEC"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="dct"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="Information about rights held in and over the resource.&#xA;Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. Recommended practice is to refer to a rights statement with a URI. If this is not possible or feasible, a literal value (name, label, or short text) may be provided."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{9AE99C5E-9F41-4cf5-BC4C-1AD60DDEE8C2}" xmi.id="EAID_4BCFFC19_57B0_4aba_AFA9_F18650204AD4"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="theme" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="theme" xmi.id="EAID_79B6E03B_53EE_463f_AE4E_EB109900317D" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="0" upper="n"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="vocabulary"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="dcat"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="A main category of the resource. A resource can have multiple themes."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{BA0F666F-074F-4309-9D2F-D20EC593B2B9}" xmi.id="EAID_59E30132_001B_4246_88FE_3E9D038BFD5C"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="title" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="title" xmi.id="EAID_D4B5DC4D_B719_4680_B38F_FF52EC41D730" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="Detailed Model Parameterisation Vocabulary"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="dct"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="A name given to the resource."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{55680243-9EF7-4a6f-B259-A34207D8FCE3}" xmi.id="EAID_CD0B61A8_B86C_445d_810F_5BAA9899AA72"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="versionInfo" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="versionInfo" xmi.id="EAID_00496D46_CA66_43b5_83A8_23DAB56681E1" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="1.0.0"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="owl"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="The annotation property that provides version information for an ontology or another OWL construct."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{93331D96-1E7A-4461-AEB2-852800CE9915}" xmi.id="EAID_32D0E7F1_32E8_4836_88F1_AAB4EDB8E626"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="versionIRI" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="versionIRI" xmi.id="EAID_0A6BF071_50A6_4629_BE82_00966E7685A4" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="http://iec.ch/TC57/ns/CIM/DetailedModelParameterisation/1.0"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_E2A1E2A0_8776_4408_985C_848C5595F632"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_E2A1E2A0_8776_4408_985C_848C5595F632"/>
 									</UML:StructuralFeature.type>
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="owl"/>
-									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="The property that identifies the version IRI of an ontology."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{DDCD6029-D417-4895-948E-04849E2560E2}" xmi.id="EAID_44DD30EA_9681_418f_9829_BC335BF91CE2"/>
@@ -734,29 +831,58 @@
 								</UML:Attribute>
 							</UML:Classifier.feature>
 						</UML:Class>
-						<UML:Generalization subtype="EAID_FC5AA47F_00E8_42e2_B0B4_457D6CF35F4D" supertype="EAID_DAC9EF48_0878_42d9_9A87_30DBE78A76A0" xmi.id="EAID_5FB01BC0_7A21_4045_B21F_3386719AC1E4" visibility="public">
-							<UML:ModelElement.taggedValue/>
-						</UML:Generalization>
-						<UML:Dependency xmi.id="EAID_CF979613_1F01_4c0f_A145_79CDA5910B00" visibility="public" client="EAID_FC5AA47F_00E8_42e2_B0B4_457D6CF35F4D" supplier="EAID_1EC49270_EB56_4f35_ABC1_8FEE5A84FAF0">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="IsBasedOn"/>
-							</UML:ModelElement.stereotype>
-							<UML:ModelElement.taggedValue/>
-						</UML:Dependency>
-						<UML:Dependency xmi.id="EAID_2163ADE1_4E0C_49f0_B0D9_1BAB3534753F" visibility="public" client="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" supplier="EAPK_3593D1DA_0DC7_46f0_B8A1_37DA93912939">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="IsBasedOn"/>
-							</UML:ModelElement.stereotype>
-							<UML:ModelElement.taggedValue/>
-						</UML:Dependency>
-						<UML:Dependency xmi.id="EAID_32887B43_67A3_4731_9A4D_06F924A8BC84" visibility="public" client="EAPK_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B" supplier="EAPK_21D32832_FF64_4213_B81C_55ACE35EEBFF">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="IsBasedOn"/>
-							</UML:ModelElement.stereotype>
-							<UML:ModelElement.taggedValue/>
-						</UML:Dependency>
 					</UML:Namespace.ownedElement>
 				</UML:Package>
+				<UML:Stereotype xmi.id="eaxmiid0" name="dcat" visibility="private" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false" baseClass="Attribute">
+					<UML:Stereotype.extendedElement>
+						<Foundation.Core.ModelElement xmi.idref="EAID_7FC69EFE_5F80_4d24_8F91_BD6C15004511"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_A37172AC_1159_4ddd_B013_4350FA592D3D"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_79B6E03B_53EE_463f_AE4E_EB109900317D"/>
+					</UML:Stereotype.extendedElement>
+				</UML:Stereotype>
+				<UML:Stereotype xmi.id="eaxmiid1" name="Primitive" visibility="private" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false" baseClass="Class">
+					<UML:Stereotype.extendedElement>
+						<Foundation.Core.ModelElement xmi.idref="EAID_088AFFF2_04F4_40f0_94C5_686F33AC85D1"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_804A61BE_4A83_4266_8846_ECD023425DDC"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_8FA11CB4_3A66_4fcd_A4F1_9B5265397BA3"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_95DB57C0_26A2_45c3_87E4_E5FF3C6AF171"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_AC58D9C5_43D2_4b00_9EA5_BADCC8E85740"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_C8B12227_8C91_46ba_BC54_20BC6EB00C8B"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_CB49ED8B_574A_444f_BBF8_E47085CB852B"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_E2A1E2A0_8776_4408_985C_848C5595F632"/>
+					</UML:Stereotype.extendedElement>
+				</UML:Stereotype>
+				<UML:Stereotype xmi.id="eaxmiid2" name="dct" visibility="private" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false" baseClass="Attribute">
+					<UML:Stereotype.extendedElement>
+						<Foundation.Core.ModelElement xmi.idref="EAID_F7872700_D595_40ba_907B_E074A7BA150A"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_DA210E97_8E9D_48e4_A578_8BCF12C61E1B"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_C6719C30_AAD2_4408_9CEC_EC920DBC54A8"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_58753E4A_555F_47b7_875E_C39A8D68E179"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_B3EA7AA8_23F5_4b73_A653_87846D8ED918"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_2F17A3D4_AD60_41c7_9A08_6027DD7D0782"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_6B234225_E7B8_4f85_8DCA_152B0AE91733"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_204F389C_758D_4984_AD0B_EACD179BB590"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_C8A8E180_471B_433c_823B_FBAA660523FC"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_89035E21_0382_46e5_B0A9_7CEB9345FD2F"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_68245876_F8E2_43ab_B493_090D627E3C98"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_D4B5DC4D_B719_4680_B38F_FF52EC41D730"/>
+					</UML:Stereotype.extendedElement>
+				</UML:Stereotype>
+				<UML:Stereotype xmi.id="eaxmiid3" name="owl" visibility="private" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false" baseClass="Attribute">
+					<UML:Stereotype.extendedElement>
+						<Foundation.Core.ModelElement xmi.idref="EAID_8D57DED6_E269_44a9_85EC_6252919A4011"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_27C59EAA_F400_4de7_9896_E0CDC96285B3"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_57750E07_6EFF_4776_8701_C617D9E51F7B"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_92BB2723_72FD_4a19_A94E_3858E131D4DE"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_00496D46_CA66_43b5_83A8_23DAB56681E1"/>
+						<Foundation.Core.ModelElement xmi.idref="EAID_0A6BF071_50A6_4629_BE82_00966E7685A4"/>
+					</UML:Stereotype.extendedElement>
+				</UML:Stereotype>
+				<UML:Stereotype xmi.id="eaxmiid4" name="owl" visibility="private" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false" baseClass="Class">
+					<UML:Stereotype.extendedElement>
+						<Foundation.Core.ModelElement xmi.idref="EAID_FC5AA47F_00E8_42e2_B0B4_457D6CF35F4D"/>
+					</UML:Stereotype.extendedElement>
+				</UML:Stereotype>
 			</UML:Namespace.ownedElement>
 		</UML:Model>
 		<UML:TaggedValue tag="Copyright" xmi.id="EAID_BCBB7C2C_588E_4561_B0F4_BEB8018B1E0D" value="Copyright 2022 ENTSO-E" modelElement="MX_EAID_9D7AC7E2_30BB_4a37_A9A8_BFB0EDAA961B"/>
@@ -782,27 +908,6 @@
 	</XMI.content>
 	<XMI.difference/>
 	<XMI.extensions xmi.extender="Enterprise Architect 2.5">
-		<EAStub xmi.id="EAID_9F8964F1_6C32_465b_A83D_F5A201A291C3" name="Boolean" UMLType="Class"/>
 		<EAModel.paramSub/>
-		<EAStub xmi.id="EAID_5EDF767F_A5D0_45ed_A2CA_448F43F2CA14" name="DetailedModelTypeDynamics" UMLType="Class"/>
-		<EAStub xmi.id="EAID_4AF9369A_AF00_49d7_8970_2B62B4AE1C8E" name="DetailedModelDescriptor" UMLType="Class"/>
-		<EAStub xmi.id="EAID_055C5806_E9D8_4a7a_9307_DAF7C31763C7" name="IdentifiedObject" UMLType="Class"/>
-		<EAStub xmi.id="EAID_935A7CF0_CF83_4253_BAED_FA7AD85B3D2B" name="ParameterValue" UMLType="Class"/>
-		<EAStub xmi.id="EAID_0340C084_3759_40cc_AAF2_386101DE842F" name="PowerSystemResource" UMLType="Class"/>
-		<EAStub xmi.id="EAID_EEAE6E83_944C_489c_8E25_CFB85F80C3EB" name="DateTime" UMLType="Class"/>
-		<EAStub xmi.id="EAID_E50DF78B_84CE_42e9_A275_A956DEF45490" name="String" UMLType="Class"/>
-		<EAStub xmi.id="EAID_C724EF94_9D38_4673_A889_46E7C5C6321C" name="Date" UMLType="Class"/>
-		<EAStub xmi.id="EAID_BD74311B_B658_47d4_ACA8_498AC48A0B7E" name="StringIRI" UMLType="Class"/>
-		<EAStub xmi.id="EAID_1CD8BBD4_A285_4466_A0D2_C02CB645EFBB" name="DynamicsFunctionBlock" UMLType="Class"/>
-		<EAStub xmi.id="EAID_63AB75FF_8E0F_4772_B62D_52A163E2349C" name="StringFixedLanguage" UMLType="Class"/>
-		<EAStub xmi.id="EAID_7735AEFC_A1CE_49cd_98A7_DE4249C3367F" name="URL" UMLType="Class"/>
-		<EAStub xmi.id="EAID_A64B7F34_431B_4556_B4E9_E8C806118AD5" name="IRI" UMLType="Class"/>
-		<EAStub xmi.id="EAID_F8DD8DAC_3545_4660_9CA5_794881CC6591" name="Equipment" UMLType="Class"/>
-		<EAStub xmi.id="EAID_5C8F98A8_A6B9_495f_A1F9_200AF31D1E84" name="ParameterDesctiptor" UMLType="Class"/>
-		<EAStub xmi.id="EAID_0B926C2C_1D9B_408e_8228_D392CFACFC4B" name="DetailedModelDynamics" UMLType="Class"/>
-		<EAStub xmi.id="EAID_DAC9EF48_0878_42d9_9A87_30DBE78A76A0" name="Configuration_Dataset" UMLType="Class"/>
-		<EAStub xmi.id="EAID_1EC49270_EB56_4f35_ABC1_8FEE5A84FAF0" name="Ontology" UMLType="Class"/>
-		<EAStub xmi.id="EAPK_3593D1DA_0DC7_46f0_B8A1_37DA93912939" name="EuropeanCIMExtensions" UMLType="Package"/>
-		<EAStub xmi.id="EAPK_21D32832_FF64_4213_B81C_55ACE35EEBFF" name="IEC61970" UMLType="Package"/>
 	</XMI.extensions>
 </XMI>
