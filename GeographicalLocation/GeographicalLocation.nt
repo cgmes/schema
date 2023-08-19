@@ -1,3 +1,30 @@
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#label> "CoordinateSystem"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Coordinate reference system."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem.crsUrn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem.crsUrn> <http://www.w3.org/2000/01/rdf-schema#label> "crsUrn"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem.crsUrn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem.crsUrn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem.crsUrn> <http://www.w3.org/2000/01/rdf-schema#comment> "A Uniform Resource Name (URN) for the coordinate reference system (crs) used to define 'Location.PositionPoints'.\nAn example would be the European Petroleum Survey Group (EPSG) code for a coordinate reference system, defined in URN under the Open Geospatial Consortium (OGC) namespace as: urn:ogc:def:crs:EPSG::XXXX, where XXXX is an EPSG code (a full list of codes can be found at the EPSG Registry web site http://www.epsg-registry.org/). To define the coordinate system as being WGS84 (latitude, longitude) using an EPSG OGC, this attribute would be urn:ogc:def:crs:EPSG::4236.\nA profile should limit this code to a set of allowed URNs agreed to by all sending and receiving parties."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem.Locations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem.Locations> <http://www.w3.org/2000/01/rdf-schema#label> "Locations"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem.Locations> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem.Locations> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Location> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem.Locations> <http://www.w3.org/2000/01/rdf-schema#comment> "All locations described with position points in this coordinate system."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> <http://www.w3.org/2000/01/rdf-schema#label> "IdentifiedObject"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a root class to provide common identification for all classes needing identification and naming attributes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/2000/01/rdf-schema#label> "mRID"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/2000/01/rdf-schema#comment> "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name is any free human readable and possibly non unique text naming the object."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
@@ -22,27 +49,70 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Location.CoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Location> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Location.CoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Location.CoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Coordinate system used to describe position points of this location."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#WorkLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#WorkLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#Location> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#WorkLocation> <http://www.w3.org/2000/01/rdf-schema#label> "WorkLocation"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#WorkLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about a particular location for various forms of work."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> <http://www.w3.org/2000/01/rdf-schema#label> "IdentifiedObject"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a root class to provide common identification for all classes needing identification and naming attributes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/2000/01/rdf-schema#label> "mRID"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/2000/01/rdf-schema#comment> "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name is any free human readable and possibly non unique text naming the object."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint> <http://www.w3.org/2000/01/rdf-schema#label> "PositionPoint"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Set of spatial coordinates that determine a point, defined in the coordinate system specified in 'Location.CoordinateSystem'. Use a single position point instance to describe a point-oriented location. Use a sequence of position points to describe a line-oriented object (physical location of non-point oriented objects like cables or lines), or area of an object (like a substation or a geographical zone - in this case, have first and last position point with the same values)."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.sequenceNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.sequenceNumber> <http://www.w3.org/2000/01/rdf-schema#label> "sequenceNumber"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.sequenceNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.sequenceNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.sequenceNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Zero-relative sequence number of this point within a series of points."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.xPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.xPosition> <http://www.w3.org/2000/01/rdf-schema#label> "xPosition"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.xPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.xPosition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.xPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "X axis position."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.yPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.yPosition> <http://www.w3.org/2000/01/rdf-schema#label> "yPosition"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.yPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.yPosition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.yPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "Y axis position."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.zPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.zPosition> <http://www.w3.org/2000/01/rdf-schema#label> "zPosition"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.zPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.zPosition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.zPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "(if applicable) Z axis position."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.Location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.Location> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Location> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Location described by this position point."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> <http://www.w3.org/2000/01/rdf-schema#label> "PowerSystemResource"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> <http://www.w3.org/2000/01/rdf-schema#comment> "A power system resource (PSR) can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource.Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource.Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource.Location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource.Location> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Location> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource.Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Location of this power system resource."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ServiceLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ServiceLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#WorkLocation> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ServiceLocation> <http://www.w3.org/2000/01/rdf-schema#label> "ServiceLocation"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#ServiceLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "A real estate location, commonly referred to as premises."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status> <http://www.w3.org/2000/01/rdf-schema#label> "Status"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status> <http://www.w3.org/2000/01/rdf-schema#comment> "Current status information relevant to an entity."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.dateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.dateTime> <http://www.w3.org/2000/01/rdf-schema#label> "dateTime"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.dateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Status> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.dateTime> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/DateTime> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.dateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Date and time for which status 'value' applies."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.reason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.reason> <http://www.w3.org/2000/01/rdf-schema#label> "reason"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.reason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Status> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.reason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.reason> <http://www.w3.org/2000/01/rdf-schema#comment> "Reason code or explanation for why an object went to the current status 'value'."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.remark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.remark> <http://www.w3.org/2000/01/rdf-schema#label> "remark"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.remark> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Status> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.remark> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.remark> <http://www.w3.org/2000/01/rdf-schema#comment> "Pertinent information regarding the current 'value', as free form text."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.value> <http://www.w3.org/2000/01/rdf-schema#label> "value"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.value> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Status> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.value> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.value> <http://www.w3.org/2000/01/rdf-schema#comment> "Status value at 'dateTime'; prior status changes may have been kept in instances of activity records associated with the object to which this status applies."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#StreetAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#StreetAddress> <http://www.w3.org/2000/01/rdf-schema#label> "StreetAddress"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#StreetAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "General purpose street and postal address information."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
@@ -144,52 +214,6 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#StreetDetail.withinTownLimits> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#StreetDetail> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#StreetDetail.withinTownLimits> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#StreetDetail.withinTownLimits> <http://www.w3.org/2000/01/rdf-schema#comment> "True if this street is within the legal geographical boundaries of the specified town (default)."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> <http://www.w3.org/2000/01/rdf-schema#label> "PowerSystemResource"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> <http://www.w3.org/2000/01/rdf-schema#comment> "A power system resource (PSR) can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource.Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource.Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource.Location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource.Location> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Location> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource.Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Location of this power system resource."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status> <http://www.w3.org/2000/01/rdf-schema#label> "Status"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status> <http://www.w3.org/2000/01/rdf-schema#comment> "Current status information relevant to an entity."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.dateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.dateTime> <http://www.w3.org/2000/01/rdf-schema#label> "dateTime"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.dateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Status> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.dateTime> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/DateTime> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.dateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Date and time for which status 'value' applies."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.reason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.reason> <http://www.w3.org/2000/01/rdf-schema#label> "reason"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.reason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Status> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.reason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.reason> <http://www.w3.org/2000/01/rdf-schema#comment> "Reason code or explanation for why an object went to the current status 'value'."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.remark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.remark> <http://www.w3.org/2000/01/rdf-schema#label> "remark"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.remark> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Status> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.remark> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.remark> <http://www.w3.org/2000/01/rdf-schema#comment> "Pertinent information regarding the current 'value', as free form text."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.value> <http://www.w3.org/2000/01/rdf-schema#label> "value"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.value> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Status> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.value> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Status.value> <http://www.w3.org/2000/01/rdf-schema#comment> "Status value at 'dateTime'; prior status changes may have been kept in instances of activity records associated with the object to which this status applies."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#label> "CoordinateSystem"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Coordinate reference system."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem.crsUrn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem.crsUrn> <http://www.w3.org/2000/01/rdf-schema#label> "crsUrn"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem.crsUrn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem.crsUrn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem.crsUrn> <http://www.w3.org/2000/01/rdf-schema#comment> "A Uniform Resource Name (URN) for the coordinate reference system (crs) used to define 'Location.PositionPoints'.\nAn example would be the European Petroleum Survey Group (EPSG) code for a coordinate reference system, defined in URN under the Open Geospatial Consortium (OGC) namespace as: urn:ogc:def:crs:EPSG::XXXX, where XXXX is an EPSG code (a full list of codes can be found at the EPSG Registry web site http://www.epsg-registry.org/). To define the coordinate system as being WGS84 (latitude, longitude) using an EPSG OGC, this attribute would be urn:ogc:def:crs:EPSG::4236.\nA profile should limit this code to a set of allowed URNs agreed to by all sending and receiving parties."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem.Locations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem.Locations> <http://www.w3.org/2000/01/rdf-schema#label> "Locations"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem.Locations> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem.Locations> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Location> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#CoordinateSystem.Locations> <http://www.w3.org/2000/01/rdf-schema#comment> "All locations described with position points in this coordinate system."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TownDetail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TownDetail> <http://www.w3.org/2000/01/rdf-schema#label> "TownDetail"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TownDetail> <http://www.w3.org/2000/01/rdf-schema#comment> "Town details, in the context of address."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
@@ -218,31 +242,7 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TownDetail.stateOrProvince> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#TownDetail> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TownDetail.stateOrProvince> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#TownDetail.stateOrProvince> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the state or province."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint> <http://www.w3.org/2000/01/rdf-schema#label> "PositionPoint"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Set of spatial coordinates that determine a point, defined in the coordinate system specified in 'Location.CoordinateSystem'. Use a single position point instance to describe a point-oriented location. Use a sequence of position points to describe a line-oriented object (physical location of non-point oriented objects like cables or lines), or area of an object (like a substation or a geographical zone - in this case, have first and last position point with the same values)."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.sequenceNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.sequenceNumber> <http://www.w3.org/2000/01/rdf-schema#label> "sequenceNumber"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.sequenceNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.sequenceNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.sequenceNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Zero-relative sequence number of this point within a series of points."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.xPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.xPosition> <http://www.w3.org/2000/01/rdf-schema#label> "xPosition"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.xPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.xPosition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.xPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "X axis position."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.yPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.yPosition> <http://www.w3.org/2000/01/rdf-schema#label> "yPosition"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.yPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.yPosition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.yPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "Y axis position."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.zPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.zPosition> <http://www.w3.org/2000/01/rdf-schema#label> "zPosition"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.zPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.zPosition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.zPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "(if applicable) Z axis position."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.Location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.Location> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Location> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#PositionPoint.Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Location described by this position point."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#WorkLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#WorkLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#Location> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#WorkLocation> <http://www.w3.org/2000/01/rdf-schema#label> "WorkLocation"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#WorkLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about a particular location for various forms of work."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .

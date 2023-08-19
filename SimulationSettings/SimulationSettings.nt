@@ -1,12 +1,57 @@
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType> <http://www.w3.org/2000/01/rdf-schema#label> "FaultCauseType"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of cause of the fault."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType.Faults> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType.Faults> <http://www.w3.org/2000/01/rdf-schema#label> "Faults"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType.Faults> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType.Faults> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Fault> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType.Faults> <http://www.w3.org/2000/01/rdf-schema#comment> "All faults with this cause type."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> <http://www.w3.org/2000/01/rdf-schema#label> "ACDCTerminal"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> <http://www.w3.org/2000/01/rdf-schema#comment> "An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.SignalRecorder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#label> "SignalRecorder"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#comment> "The signal recorder where this signal is recorded."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment> <http://www.w3.org/2000/01/rdf-schema#label> "ACLineSegment"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment> <http://www.w3.org/2000/01/rdf-schema#comment> "A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system.\nFor symmetrical, transposed three phase lines, it is sufficient to use attributes of the line segment, which describe impedances and admittances for the entire length of the segment.  Additionally impedances can be computed by using length and associated per length impedances.\nThe BaseVoltage at the two ends of ACLineSegments in a Line shall have the same BaseVoltage.nominalVoltage. However, boundary lines may have slightly different BaseVoltage.nominalVoltages and variation is allowed. Larger voltage difference in general requires use of an equivalent branch."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.LineFaults> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.LineFaults> <http://www.w3.org/2000/01/rdf-schema#label> "LineFaults"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.LineFaults> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.LineFaults> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.LineFaults> <http://www.w3.org/2000/01/rdf-schema#comment> "The line faults of the line segment."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ClearSimulationEvent"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines an event which clears another event such as ParemeterEvent or Fault."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.eventTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.eventTime> <http://www.w3.org/2000/01/rdf-schema#label> "eventTime"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.eventTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.eventTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.eventTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Execution time of the event. It is relative to the start of the simulation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedFaultEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedFaultEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ClearedFaultEvent"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedFaultEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedFaultEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Fault> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedFaultEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The fault event that is cleared by a ClearSimulationEvent."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.SimulationEvents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#label> "SimulationEvents"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#comment> "The simulation events to which this clear simulation event belongs to."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedParameterEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedParameterEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ClearedParameterEvent"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedParameterEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedParameterEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedParameterEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The parameter event that is cleared by a ClearSimulationEvent."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "DetailedModelDescriptor"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes different components of a detailed model."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock> <http://www.w3.org/2000/01/rdf-schema#label> "DynamicsFunctionBlock"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract parent class for all Dynamics function blocks."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.SignalRecorder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#label> "SignalRecorder"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#comment> "The signal recorder where this signal is recorded."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> <http://www.w3.org/2000/01/rdf-schema#label> "Equipment"@en .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> <http://www.w3.org/2000/01/rdf-schema#comment> "The parts of a power system that are physical devices, electronic or mechanical."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
@@ -15,6 +60,15 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.Faults> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.Faults> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Fault> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment.Faults> <http://www.w3.org/2000/01/rdf-schema#comment> "All faults on this equipment."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#Fault> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault> <http://www.w3.org/2000/01/rdf-schema#label> "EquipmentFault"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault> <http://www.w3.org/2000/01/rdf-schema#comment> "A fault applied at the terminal, external to the equipment. This class is not used to specify faults internal to the equipment."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault.Terminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault.Terminal> <http://www.w3.org/2000/01/rdf-schema#label> "Terminal"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault.Terminal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault.Terminal> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault.Terminal> <http://www.w3.org/2000/01/rdf-schema#comment> "The terminal connecting to the bus to which the fault is applied."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Fault> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Fault> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Fault> <http://www.w3.org/2000/01/rdf-schema#label> "Fault"@en .
@@ -59,42 +113,137 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Fault.SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Fault> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Fault.SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#Fault.SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#comment> "The simulation events to which this simulation fault event belongs to."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#StringIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#StringIRI> <http://www.w3.org/2000/01/rdf-schema#label> "StringIRI"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#StringIRI> <http://www.w3.org/2000/01/rdf-schema#comment> "An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.\nThe primitive is serialized as literal without language support.\nIRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.\nIRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.\nIRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ClearSimulationEvent"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines an event which clears another event such as ParemeterEvent or Fault."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.eventTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.eventTime> <http://www.w3.org/2000/01/rdf-schema#label> "eventTime"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.eventTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.eventTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.eventTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Execution time of the event. It is relative to the start of the simulation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedFaultEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedFaultEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ClearedFaultEvent"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedFaultEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedFaultEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Fault> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedFaultEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The fault event that is cleared by a ClearSimulationEvent."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.SimulationEvents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#label> "SimulationEvents"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#comment> "The simulation events to which this clear simulation event belongs to."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedParameterEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedParameterEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ClearedParameterEvent"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedParameterEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedParameterEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent.ClearedParameterEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The parameter event that is cleared by a ClearSimulationEvent."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#Fault> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault> <http://www.w3.org/2000/01/rdf-schema#label> "EquipmentFault"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault> <http://www.w3.org/2000/01/rdf-schema#comment> "A fault applied at the terminal, external to the equipment. This class is not used to specify faults internal to the equipment."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault.Terminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault.Terminal> <http://www.w3.org/2000/01/rdf-schema#label> "Terminal"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault.Terminal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault.Terminal> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault.Terminal> <http://www.w3.org/2000/01/rdf-schema#comment> "The terminal connecting to the bus to which the fault is applied."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType> <http://www.w3.org/2000/01/rdf-schema#label> "FaultCauseType"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of cause of the fault."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType.Faults> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType.Faults> <http://www.w3.org/2000/01/rdf-schema#label> "Faults"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType.Faults> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType.Faults> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Fault> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultCauseType.Faults> <http://www.w3.org/2000/01/rdf-schema#comment> "All faults with this cause type."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance> <http://www.w3.org/2000/01/rdf-schema#label> "FaultImpedance"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance> <http://www.w3.org/2000/01/rdf-schema#comment> "Impedance description for the fault."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rGround> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rGround> <http://www.w3.org/2000/01/rdf-schema#label> "rGround"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rGround> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rGround> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rGround> <http://www.w3.org/2000/01/rdf-schema#comment> "The resistance of the fault between phases and ground."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rLineToLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rLineToLine> <http://www.w3.org/2000/01/rdf-schema#label> "rLineToLine"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rLineToLine> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rLineToLine> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rLineToLine> <http://www.w3.org/2000/01/rdf-schema#comment> "The resistance of the fault between phases."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xGround> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xGround> <http://www.w3.org/2000/01/rdf-schema#label> "xGround"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xGround> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xGround> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xGround> <http://www.w3.org/2000/01/rdf-schema#comment> "The reactance of the fault between phases and ground."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xLineToLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xLineToLine> <http://www.w3.org/2000/01/rdf-schema#label> "xLineToLine"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xLineToLine> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xLineToLine> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xLineToLine> <http://www.w3.org/2000/01/rdf-schema#comment> "The reactance of the fault between phases."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IRI> <http://www.w3.org/2000/01/rdf-schema#label> "IRI"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IRI> <http://www.w3.org/2000/01/rdf-schema#comment> "An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.\nThe primitive is serialized as rdf:resource in RDFXML.\nIRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.\nIRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.\nIRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> <http://www.w3.org/2000/01/rdf-schema#label> "IdentifiedObject"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a root class to provide common identification for all classes needing identification and naming attributes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.description> <http://www.w3.org/2000/01/rdf-schema#label> "description"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.description> <http://www.w3.org/2000/01/rdf-schema#comment> "The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/2000/01/rdf-schema#label> "mRID"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/2000/01/rdf-schema#comment> "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name is any free human readable and possibly non unique text naming the object."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.ParameterEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ParameterEvent"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The parameter event that uses a parameter which belongs to this equipment, dynamics model or signal."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#Fault> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault> <http://www.w3.org/2000/01/rdf-schema#label> "LineFault"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault> <http://www.w3.org/2000/01/rdf-schema#comment> "A fault that occurs on an AC line segment at some point along the length."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.lengthFromTerminal1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.lengthFromTerminal1> <http://www.w3.org/2000/01/rdf-schema#label> "lengthFromTerminal1"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.lengthFromTerminal1> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.lengthFromTerminal1> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.lengthFromTerminal1> <http://www.w3.org/2000/01/rdf-schema#comment> "The length to the place where the fault is located starting from terminal with sequence number 1 of the faulted line segment."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.ACLineSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.ACLineSegment> <http://www.w3.org/2000/01/rdf-schema#label> "ACLineSegment"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.ACLineSegment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.ACLineSegment> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.ACLineSegment> <http://www.w3.org/2000/01/rdf-schema#comment> "The line segment of this line fault."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ParameterEvent"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to apply changes to particular parameter or signal. The parameter or signal could be any property from power flow part of the model or property/signal of standard, user defined or detailed model."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.booleanParameterValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.booleanParameterValue> <http://www.w3.org/2000/01/rdf-schema#label> "booleanParameterValue"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.booleanParameterValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.booleanParameterValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.booleanParameterValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean parameter value. If this attribute is populated, integerParameterValue and floatParameterValue will not be."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.changeKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.changeKind> <http://www.w3.org/2000/01/rdf-schema#label> "changeKind"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.changeKind> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.changeKind> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.changeKind> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines if the change is done in one step or using ramp."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.eventTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.eventTime> <http://www.w3.org/2000/01/rdf-schema#label> "eventTime"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.eventTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.eventTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.eventTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Execution time of the event. It is relative to the start of the simulation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.floatParementerValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.floatParementerValue> <http://www.w3.org/2000/01/rdf-schema#label> "floatParementerValue"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.floatParementerValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.floatParementerValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.floatParementerValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Floating point parameter value. If this attribute is populated, booleanParameterValue and integerParameterValue will not be."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.integerParameterValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.integerParameterValue> <http://www.w3.org/2000/01/rdf-schema#label> "integerParameterValue"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.integerParameterValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.integerParameterValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.integerParameterValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Integer parameter value. If this attribute is populated, booleanParameterValue and floatParameterValue will not be."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterIRI> <http://www.w3.org/2000/01/rdf-schema#label> "parameterIRI"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterIRI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterIRI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterIRI> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies which parameter is changed during the event. It can be an attribute of a class that inherits from IdentifiedObject. The parameter IRI (Internationalized Resource Identifier) is a Unicode string that conforms to the syntax defined in RFC 3987. The string is serialized as literal without language support."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterName> <http://www.w3.org/2000/01/rdf-schema#label> "parameterName"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterName> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies which parameter is changed during the event. It is used only in cases where IRI is not defined, e.g. an internal quantity of a model. "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.rampDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.rampDuration> <http://www.w3.org/2000/01/rdf-schema#label> "rampDuration"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.rampDuration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.rampDuration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.rampDuration> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the duration of the ramp in case. Only used in case attribute changeKind is set to ramp."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.ClearSimulationEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ClearSimulationEvent"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The event that clears this fault event."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.SimulationEvents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#label> "SimulationEvents"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#comment> "The simulation events to which this parameter event belongs to."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.UsesParameterOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.UsesParameterOf> <http://www.w3.org/2000/01/rdf-schema#label> "UsesParameterOf"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.UsesParameterOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.UsesParameterOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.UsesParameterOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The equipment, dynamics model or signal that is used to define the parameter event."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings> <http://www.w3.org/2000/01/rdf-schema#label> "PowerFlowSettings"@en .
@@ -189,43 +338,6 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings.SimulationSettings> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings.SimulationSettings> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings.SimulationSettings> <http://www.w3.org/2000/01/rdf-schema#comment> "The simulation settings to which this power flow settings belongs to."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> <http://www.w3.org/2000/01/rdf-schema#label> "ACDCTerminal"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> <http://www.w3.org/2000/01/rdf-schema#comment> "An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.SignalRecorder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#label> "SignalRecorder"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#comment> "The signal recorder where this signal is recorded."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#label> "SimulationEvents"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#comment> "A configuration or a set of events executed during a simulation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.FaultEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.FaultEvent> <http://www.w3.org/2000/01/rdf-schema#label> "FaultEvent"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.FaultEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.FaultEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Fault> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.FaultEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The simulation fault event that is part of this simulation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.ClearSimulationEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ClearSimulationEvent"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The clear simulation event that is part of this simulation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.ParameterEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ParameterEvent"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The parameter event that is part of this simulation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> <http://www.w3.org/2000/01/rdf-schema#label> "Terminal"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> <http://www.w3.org/2000/01/rdf-schema#comment> "An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.EquipmentFaults> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.EquipmentFaults> <http://www.w3.org/2000/01/rdf-schema#label> "EquipmentFaults"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.EquipmentFaults> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.EquipmentFaults> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.EquipmentFaults> <http://www.w3.org/2000/01/rdf-schema#comment> "The equipment faults at this terminal."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalConfiguration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "SignalConfiguration"@en .
@@ -235,68 +347,15 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalConfiguration.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalConfiguration> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalConfiguration.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalConfiguration.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#comment> "The signal that is recorded in this signal configuration."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ParameterEvent"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to apply changes to particular parameter or signal. The parameter or signal could be any property from power flow part of the model or property/signal of standard, user defined or detailed model."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.booleanParameterValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.booleanParameterValue> <http://www.w3.org/2000/01/rdf-schema#label> "booleanParameterValue"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.booleanParameterValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.booleanParameterValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.booleanParameterValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean parameter value. If this attribute is populated, integerParameterValue and floatParameterValue will not be."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.changeKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.changeKind> <http://www.w3.org/2000/01/rdf-schema#label> "changeKind"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.changeKind> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.changeKind> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.changeKind> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines if the change is done in one step or using ramp."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.eventTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.eventTime> <http://www.w3.org/2000/01/rdf-schema#label> "eventTime"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.eventTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.eventTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.eventTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Execution time of the event. It is relative to the start of the simulation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.floatParementerValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.floatParementerValue> <http://www.w3.org/2000/01/rdf-schema#label> "floatParementerValue"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.floatParementerValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.floatParementerValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.floatParementerValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Floating point parameter value. If this attribute is populated, booleanParameterValue and integerParameterValue will not be."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.integerParameterValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.integerParameterValue> <http://www.w3.org/2000/01/rdf-schema#label> "integerParameterValue"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.integerParameterValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.integerParameterValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.integerParameterValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Integer parameter value. If this attribute is populated, booleanParameterValue and floatParameterValue will not be."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterIRI> <http://www.w3.org/2000/01/rdf-schema#label> "parameterIRI"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterIRI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterIRI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterIRI> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies which parameter is changed during the event. It can be an attribute of a class that inherits from IdentifiedObject. The parameter IRI (Internationalized Resource Identifier) is a Unicode string that conforms to the syntax defined in RFC 3987. The string is serialized as literal without language support."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterName> <http://www.w3.org/2000/01/rdf-schema#label> "parameterName"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.parameterName> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies which parameter is changed during the event. It is used only in cases where IRI is not defined, e.g. an internal quantity of a model. "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.rampDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.rampDuration> <http://www.w3.org/2000/01/rdf-schema#label> "rampDuration"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.rampDuration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.rampDuration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.rampDuration> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the duration of the ramp in case. Only used in case attribute changeKind is set to ramp."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.ClearSimulationEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ClearSimulationEvent"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The event that clears this fault event."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.SimulationEvents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#label> "SimulationEvents"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#comment> "The simulation events to which this parameter event belongs to."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.UsesParameterOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.UsesParameterOf> <http://www.w3.org/2000/01/rdf-schema#label> "UsesParameterOf"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.UsesParameterOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.UsesParameterOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent.UsesParameterOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The equipment, dynamics model or signal that is used to define the parameter event."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#StringFixedLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#StringFixedLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "StringFixedLanguage"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#StringFixedLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "A string consisting of a sequence of characters. The character encoding is UTF-8. The string length is unspecified and unlimited.\nThe primitive is serialized as literal without language support."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "SignalDescriptor"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the signals both internal signals that connect different functions or external signals."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.SignalRecorder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#label> "SignalRecorder"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#comment> "The signal recorder where this signal is recorded."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#label> "SignalRecorder"@en .
@@ -326,19 +385,25 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder.RecordedSignal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder.RecordedSignal> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder.RecordedSignal> <http://www.w3.org/2000/01/rdf-schema#comment> "The signal that is recorded during the simulation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "DetailedModelDescriptor"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes different components of a detailed model."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock> <http://www.w3.org/2000/01/rdf-schema#label> "DynamicsFunctionBlock"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract parent class for all Dynamics function blocks."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.SignalRecorder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#label> "SignalRecorder"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#DynamicsFunctionBlock.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#comment> "The signal recorder where this signal is recorded."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#label> "SimulationEvents"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents> <http://www.w3.org/2000/01/rdf-schema#comment> "A configuration or a set of events executed during a simulation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.FaultEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.FaultEvent> <http://www.w3.org/2000/01/rdf-schema#label> "FaultEvent"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.FaultEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.FaultEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#Fault> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.FaultEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The simulation fault event that is part of this simulation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.ClearSimulationEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ClearSimulationEvent"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ClearSimulationEvent> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.ClearSimulationEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The clear simulation event that is part of this simulation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.ParameterEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ParameterEvent"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationEvents.ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The parameter event that is part of this simulation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings> <http://www.w3.org/2000/01/rdf-schema#label> "SimulationSettings"@en .
@@ -378,83 +443,18 @@
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings.PowerFlowSettings> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings.PowerFlowSettings> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#PowerFlowSettings> .
 <http://iec.ch/TC57/2013/CIM-schema-cim16#SimulationSettings.PowerFlowSettings> <http://www.w3.org/2000/01/rdf-schema#comment> "The power flow settings that are part of the simulation settings."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IRI> <http://www.w3.org/2000/01/rdf-schema#label> "IRI"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IRI> <http://www.w3.org/2000/01/rdf-schema#comment> "An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.\nThe primitive is serialized as rdf:resource in RDFXML.\nIRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.\nIRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.\nIRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance> <http://www.w3.org/2000/01/rdf-schema#label> "FaultImpedance"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance> <http://www.w3.org/2000/01/rdf-schema#comment> "Impedance description for the fault."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rGround> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rGround> <http://www.w3.org/2000/01/rdf-schema#label> "rGround"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rGround> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rGround> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rGround> <http://www.w3.org/2000/01/rdf-schema#comment> "The resistance of the fault between phases and ground."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rLineToLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rLineToLine> <http://www.w3.org/2000/01/rdf-schema#label> "rLineToLine"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rLineToLine> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rLineToLine> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.rLineToLine> <http://www.w3.org/2000/01/rdf-schema#comment> "The resistance of the fault between phases."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xGround> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xGround> <http://www.w3.org/2000/01/rdf-schema#label> "xGround"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xGround> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xGround> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xGround> <http://www.w3.org/2000/01/rdf-schema#comment> "The reactance of the fault between phases and ground."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xLineToLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xLineToLine> <http://www.w3.org/2000/01/rdf-schema#label> "xLineToLine"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xLineToLine> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xLineToLine> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#FaultImpedance.xLineToLine> <http://www.w3.org/2000/01/rdf-schema#comment> "The reactance of the fault between phases."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#Fault> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault> <http://www.w3.org/2000/01/rdf-schema#label> "LineFault"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault> <http://www.w3.org/2000/01/rdf-schema#comment> "A fault that occurs on an AC line segment at some point along the length."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.lengthFromTerminal1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.lengthFromTerminal1> <http://www.w3.org/2000/01/rdf-schema#label> "lengthFromTerminal1"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.lengthFromTerminal1> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.lengthFromTerminal1> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.lengthFromTerminal1> <http://www.w3.org/2000/01/rdf-schema#comment> "The length to the place where the fault is located starting from terminal with sequence number 1 of the faulted line segment."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.ACLineSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.ACLineSegment> <http://www.w3.org/2000/01/rdf-schema#label> "ACLineSegment"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.ACLineSegment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.ACLineSegment> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault.ACLineSegment> <http://www.w3.org/2000/01/rdf-schema#comment> "The line segment of this line fault."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment> <http://www.w3.org/2000/01/rdf-schema#label> "ACLineSegment"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment> <http://www.w3.org/2000/01/rdf-schema#comment> "A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system.\nFor symmetrical, transposed three phase lines, it is sufficient to use attributes of the line segment, which describe impedances and admittances for the entire length of the segment.  Additionally impedances can be computed by using length and associated per length impedances.\nThe BaseVoltage at the two ends of ACLineSegments in a Line shall have the same BaseVoltage.nominalVoltage. However, boundary lines may have slightly different BaseVoltage.nominalVoltages and variation is allowed. Larger voltage difference in general requires use of an equivalent branch."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.LineFaults> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.LineFaults> <http://www.w3.org/2000/01/rdf-schema#label> "LineFaults"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.LineFaults> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.LineFaults> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#LineFault> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment.LineFaults> <http://www.w3.org/2000/01/rdf-schema#comment> "The line faults of the line segment."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#DetailedModelDescriptor> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "SignalDescriptor"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the signals both internal signals that connect different functions or external signals."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.SignalRecorder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#label> "SignalRecorder"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#SignalRecorder> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#SignalDescriptor.SignalRecorder> <http://www.w3.org/2000/01/rdf-schema#comment> "The signal recorder where this signal is recorded."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> <http://www.w3.org/2000/01/rdf-schema#label> "IdentifiedObject"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a root class to provide common identification for all classes needing identification and naming attributes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.description> <http://www.w3.org/2000/01/rdf-schema#label> "description"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.description> <http://www.w3.org/2000/01/rdf-schema#comment> "The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/2000/01/rdf-schema#label> "mRID"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.mRID> <http://www.w3.org/2000/01/rdf-schema#comment> "Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.\nFor CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name is any free human readable and possibly non unique text naming the object."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.ParameterEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ParameterEvent"@en .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#ParameterEvent> .
-<http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject.ParameterEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The parameter event that uses a parameter which belongs to this equipment, dynamics model or signal."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#StringFixedLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#StringFixedLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "StringFixedLanguage"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#StringFixedLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "A string consisting of a sequence of characters. The character encoding is UTF-8. The string length is unspecified and unlimited.\nThe primitive is serialized as literal without language support."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#StringIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#StringIRI> <http://www.w3.org/2000/01/rdf-schema#label> "StringIRI"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#StringIRI> <http://www.w3.org/2000/01/rdf-schema#comment> "An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.\nThe primitive is serialized as literal without language support.\nIRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.\nIRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.\nIRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> <http://www.w3.org/2000/01/rdf-schema#label> "Terminal"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> <http://www.w3.org/2000/01/rdf-schema#comment> "An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.EquipmentFaults> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.EquipmentFaults> <http://www.w3.org/2000/01/rdf-schema#label> "EquipmentFaults"@en .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.EquipmentFaults> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.EquipmentFaults> <http://www.w3.org/2000/01/rdf-schema#range> <http://iec.ch/TC57/2013/CIM-schema-cim16#EquipmentFault> .
+<http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal.EquipmentFaults> <http://www.w3.org/2000/01/rdf-schema#comment> "The equipment faults at this terminal."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .

@@ -23,18 +23,14 @@
 	rdfs:range <Statements> ;
 	rdfs:comment "A property of the difference model whose value is the collection of reverse difference statements."^^rdf:XMLLiteral .
 
-<IRI> rdf:type rdfs:Datatype ;
-	rdfs:label "IRI"@en ;
-	rdfs:comment "An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.\nThe primitive is serialized as rdf:resource in RDFXML.\nIRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.\nIRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.\nIRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names."^^rdf:XMLLiteral .
-
 <FullModel> rdf:type rdfs:Class ;
 	rdfs:subClassOf <Model> ;
 	rdfs:label "FullModel"@en ;
 	rdfs:comment "It represents the full model header and its contents is described by the Model class."^^rdf:XMLLiteral .
 
-<StringFixedLanguage> rdf:type rdfs:Datatype ;
-	rdfs:label "StringFixedLanguage"@en ;
-	rdfs:comment "A string consisting of a sequence of characters. The character encoding is UTF-8. The string length is unspecified and unlimited.\nThe primitive is serialized as literal without language support."^^rdf:XMLLiteral .
+<IRI> rdf:type rdfs:Datatype ;
+	rdfs:label "IRI"@en ;
+	rdfs:comment "An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.\nThe primitive is serialized as rdf:resource in RDFXML.\nIRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.\nIRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.\nIRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names."^^rdf:XMLLiteral .
 
 <Model> rdf:type rdfs:Class ;
 	rdfs:label "Model"@en ;
@@ -240,10 +236,6 @@
 	rdfs:range <Model> ;
 	rdfs:comment "All documents depending on the model described by this document. This role is not intended to be included in any document exchanging instance data."^^rdf:XMLLiteral .
 
-<StringIRI> rdf:type rdfs:Datatype ;
-	rdfs:label "StringIRI"@en ;
-	rdfs:comment "An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.\nThe primitive is serialized as literal without language support.\nIRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.\nIRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.\nIRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names."^^rdf:XMLLiteral .
-
 <Statements> rdf:type rdfs:Class ;
 	rdfs:label "Statements"@en ;
 	rdfs:comment "It represent a set of Definition and/or Description elements."^^rdf:XMLLiteral .
@@ -262,3 +254,11 @@
 	rdfs:domain <Statements> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "Statement subject."^^rdf:XMLLiteral .
+
+<StringFixedLanguage> rdf:type rdfs:Datatype ;
+	rdfs:label "StringFixedLanguage"@en ;
+	rdfs:comment "A string consisting of a sequence of characters. The character encoding is UTF-8. The string length is unspecified and unlimited.\nThe primitive is serialized as literal without language support."^^rdf:XMLLiteral .
+
+<StringIRI> rdf:type rdfs:Datatype ;
+	rdfs:label "StringIRI"@en ;
+	rdfs:comment "An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987.\nThe primitive is serialized as literal without language support.\nIRIs in the RDF abstract syntax must be absolute, and may contain a fragment identifier.\nIRI equality: Two IRIs are equal if and only if they are equivalent under Simple String Comparison according to section 5.1 of [RFC3987]. Further normalization must not be performed when comparing IRIs for equality.\nIRIs are a generalization of URIs [RFC3986] that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. When IRIs are used in operations that are only defined for URIs, they must first be converted according to the mapping defined in section 3.1 of [RFC3987]. A notable example is retrieval over the HTTP protocol. The mapping involves UTF-8 encoding of non-ASCII characters, %-encoding of octets not allowed in URIs, and Punycode-encoding of domain names."^^rdf:XMLLiteral .

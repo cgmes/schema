@@ -8,21 +8,6 @@
 	rdfs:label "ACDCTerminal"@en ;
 	rdfs:comment "An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^rdf:XMLLiteral .
 
-<Terminal> rdf:type rdfs:Class ;
-	rdfs:subClassOf <ACDCTerminal> ;
-	rdfs:label "Terminal"@en ;
-	rdfs:comment "An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^rdf:XMLLiteral .
-<Terminal.ConductingEquipment> rdf:type rdfs:Property ;
-	rdfs:label "ConductingEquipment"@en ;
-	rdfs:domain <Terminal> ;
-	rdfs:range <ConductingEquipment> ;
-	rdfs:comment "The conducting equipment of the terminal.  Conducting equipment have  terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes."^^rdf:XMLLiteral .
-<Terminal.ConnectivityNode> rdf:type rdfs:Property ;
-	rdfs:label "ConnectivityNode"@en ;
-	rdfs:domain <Terminal> ;
-	rdfs:range <ConnectivityNode> ;
-	rdfs:comment "The connectivity node to which this terminal connects with zero impedance."^^rdf:XMLLiteral .
-
 <BaseVoltage> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "BaseVoltage"@en ;
@@ -38,111 +23,6 @@
 	rdfs:range <VoltageLevel> ;
 	rdfs:comment "The voltage levels having this base voltage."^^rdf:XMLLiteral .
 
-<PowerSystemResource> rdf:type rdfs:Class ;
-	rdfs:subClassOf <IdentifiedObject> ;
-	rdfs:label "PowerSystemResource"@en ;
-	rdfs:comment "A power system resource (PSR) can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated."^^rdf:XMLLiteral .
-
-<ConnectivityNode> rdf:type rdfs:Class ;
-	rdfs:subClassOf <IdentifiedObject> ;
-	rdfs:label "ConnectivityNode"@en ;
-	rdfs:comment "Connectivity nodes are points where terminals of AC conducting equipment are connected together with zero impedance."^^rdf:XMLLiteral .
-<ConnectivityNode.Terminals> rdf:type rdfs:Property ;
-	rdfs:label "Terminals"@en ;
-	rdfs:domain <ConnectivityNode> ;
-	rdfs:range <Terminal> ;
-	rdfs:comment "Terminals interconnected with zero impedance at a this connectivity node. "^^rdf:XMLLiteral .
-<ConnectivityNode.ConnectivityNodeContainer> rdf:type rdfs:Property ;
-	rdfs:label "ConnectivityNodeContainer"@en ;
-	rdfs:domain <ConnectivityNode> ;
-	rdfs:range <ConnectivityNodeContainer> ;
-	rdfs:comment "Container of this connectivity node."^^rdf:XMLLiteral .
-<ConnectivityNode.BoundaryPoint> rdf:type rdfs:Property ;
-	rdfs:label "BoundaryPoint"@en ;
-	rdfs:domain <ConnectivityNode> ;
-	rdfs:range <BoundaryPoint> ;
-	rdfs:comment "The boundary point associated with the connectivity node."^^rdf:XMLLiteral .
-
-<GeographicalRegion> rdf:type rdfs:Class ;
-	rdfs:subClassOf <IdentifiedObject> ;
-	rdfs:label "GeographicalRegion"@en ;
-	rdfs:comment "A geographical region of a power system network model."^^rdf:XMLLiteral .
-<GeographicalRegion.Regions> rdf:type rdfs:Property ;
-	rdfs:label "Regions"@en ;
-	rdfs:domain <GeographicalRegion> ;
-	rdfs:range <SubGeographicalRegion> ;
-	rdfs:comment "All sub-geographical regions within this geographical region."^^rdf:XMLLiteral .
-
-<ConductingEquipment> rdf:type rdfs:Class ;
-	rdfs:subClassOf <Equipment> ;
-	rdfs:label "ConductingEquipment"@en ;
-	rdfs:comment "The parts of the AC power system that are designed to carry current or that are conductively connected through terminals."^^rdf:XMLLiteral .
-<ConductingEquipment.Terminals> rdf:type rdfs:Property ;
-	rdfs:label "Terminals"@en ;
-	rdfs:domain <ConductingEquipment> ;
-	rdfs:range <Terminal> ;
-	rdfs:comment "Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes."^^rdf:XMLLiteral .
-
-<VoltageLevel> rdf:type rdfs:Class ;
-	rdfs:subClassOf <EquipmentContainer> ;
-	rdfs:label "VoltageLevel"@en ;
-	rdfs:comment "A collection of equipment at one common system voltage forming a switchgear. The equipment typically consists of breakers, busbars, instrumentation, control, regulation and protection devices as well as assemblies of all these."^^rdf:XMLLiteral .
-<VoltageLevel.highVoltageLimit> rdf:type rdfs:Property ;
-	rdfs:label "highVoltageLimit"@en ;
-	rdfs:domain <VoltageLevel> ;
-	rdfs:range xsd:double ;
-	rdfs:comment "The bus bar's high voltage limit.\nThe limit applies to all equipment and nodes contained in a given VoltageLevel. It is not required that it is exchanged in pair with lowVoltageLimit. It is preferable to use operational VoltageLimit, which prevails, if present."^^rdf:XMLLiteral .
-<VoltageLevel.lowVoltageLimit> rdf:type rdfs:Property ;
-	rdfs:label "lowVoltageLimit"@en ;
-	rdfs:domain <VoltageLevel> ;
-	rdfs:range xsd:double ;
-	rdfs:comment "The bus bar's low voltage limit.\nThe limit applies to all equipment and nodes contained in a given VoltageLevel. It is not required that it is exchanged in pair with highVoltageLimit. It is preferable to use operational VoltageLimit, which prevails, if present."^^rdf:XMLLiteral .
-<VoltageLevel.BaseVoltage> rdf:type rdfs:Property ;
-	rdfs:label "BaseVoltage"@en ;
-	rdfs:domain <VoltageLevel> ;
-	rdfs:range <BaseVoltage> ;
-	rdfs:comment "The base voltage used for all equipment within the voltage level."^^rdf:XMLLiteral .
-<VoltageLevel.Substation> rdf:type rdfs:Property ;
-	rdfs:label "Substation"@en ;
-	rdfs:domain <VoltageLevel> ;
-	rdfs:range <Substation> ;
-	rdfs:comment "The substation of the voltage level."^^rdf:XMLLiteral .
-<VoltageLevel.Bays> rdf:type rdfs:Property ;
-	rdfs:label "Bays"@en ;
-	rdfs:domain <VoltageLevel> ;
-	rdfs:range <Bay> ;
-	rdfs:comment "The bays within this voltage level."^^rdf:XMLLiteral .
-
-<Junction> rdf:type rdfs:Class ;
-	rdfs:subClassOf <Connector> ;
-	rdfs:label "Junction"@en ;
-	rdfs:comment "A point where one or more conducting equipments are connected with zero resistance."^^rdf:XMLLiteral .
-
-<EquipmentContainer> rdf:type rdfs:Class ;
-	rdfs:subClassOf <ConnectivityNodeContainer> ;
-	rdfs:label "EquipmentContainer"@en ;
-	rdfs:comment "A modelling construct to provide a root class for containing equipment. "^^rdf:XMLLiteral .
-<EquipmentContainer.Equipments> rdf:type rdfs:Property ;
-	rdfs:label "Equipments"@en ;
-	rdfs:domain <EquipmentContainer> ;
-	rdfs:range <Equipment> ;
-	rdfs:comment "Contained equipment."^^rdf:XMLLiteral .
-
-<Line> rdf:type rdfs:Class ;
-	rdfs:subClassOf <EquipmentContainer> ;
-	rdfs:label "Line"@en ;
-	rdfs:comment "Contains equipment beyond a substation belonging to a power transmission line. "^^rdf:XMLLiteral .
-<Line.Region> rdf:type rdfs:Property ;
-	rdfs:label "Region"@en ;
-	rdfs:domain <Line> ;
-	rdfs:range <SubGeographicalRegion> ;
-	rdfs:comment "The sub-geographical region of the line."^^rdf:XMLLiteral .
-
-<Connector> rdf:type rdfs:Class ;
-	rdfs:subClassOf <ConductingEquipment> ;
-	rdfs:label "Connector"@en ;
-	rdfs:comment "A conductor, or group of conductors, with negligible impedance, that serve to connect other conducting equipment within a single substation and are modelled with a single logical terminal."^^rdf:XMLLiteral .
-
 <Bay> rdf:type rdfs:Class ;
 	rdfs:subClassOf <EquipmentContainer> ;
 	rdfs:label "Bay"@en ;
@@ -152,61 +32,6 @@
 	rdfs:domain <Bay> ;
 	rdfs:range <VoltageLevel> ;
 	rdfs:comment "The voltage level containing this bay."^^rdf:XMLLiteral .
-
-<Substation> rdf:type rdfs:Class ;
-	rdfs:subClassOf <EquipmentContainer> ;
-	rdfs:label "Substation"@en ;
-	rdfs:comment "A collection of equipment for purposes other than generation or utilization, through which electric energy in bulk is passed for the purposes of switching or modifying its characteristics. "^^rdf:XMLLiteral .
-<Substation.VoltageLevels> rdf:type rdfs:Property ;
-	rdfs:label "VoltageLevels"@en ;
-	rdfs:domain <Substation> ;
-	rdfs:range <VoltageLevel> ;
-	rdfs:comment "The voltage levels within this substation."^^rdf:XMLLiteral .
-<Substation.Region> rdf:type rdfs:Property ;
-	rdfs:label "Region"@en ;
-	rdfs:domain <Substation> ;
-	rdfs:range <SubGeographicalRegion> ;
-	rdfs:comment "The SubGeographicalRegion containing the substation."^^rdf:XMLLiteral .
-
-<Equipment> rdf:type rdfs:Class ;
-	rdfs:subClassOf <PowerSystemResource> ;
-	rdfs:label "Equipment"@en ;
-	rdfs:comment "The parts of a power system that are physical devices, electronic or mechanical."^^rdf:XMLLiteral .
-<Equipment.EquipmentContainer> rdf:type rdfs:Property ;
-	rdfs:label "EquipmentContainer"@en ;
-	rdfs:domain <Equipment> ;
-	rdfs:range <EquipmentContainer> ;
-	rdfs:comment "Container of this equipment."^^rdf:XMLLiteral .
-
-<SubGeographicalRegion> rdf:type rdfs:Class ;
-	rdfs:subClassOf <IdentifiedObject> ;
-	rdfs:label "SubGeographicalRegion"@en ;
-	rdfs:comment "A subset of a geographical region of a power system network model."^^rdf:XMLLiteral .
-<SubGeographicalRegion.Region> rdf:type rdfs:Property ;
-	rdfs:label "Region"@en ;
-	rdfs:domain <SubGeographicalRegion> ;
-	rdfs:range <GeographicalRegion> ;
-	rdfs:comment "The geographical region which this sub-geographical region is within."^^rdf:XMLLiteral .
-<SubGeographicalRegion.Lines> rdf:type rdfs:Property ;
-	rdfs:label "Lines"@en ;
-	rdfs:domain <SubGeographicalRegion> ;
-	rdfs:range <Line> ;
-	rdfs:comment "The lines within the sub-geographical region."^^rdf:XMLLiteral .
-<SubGeographicalRegion.Substations> rdf:type rdfs:Property ;
-	rdfs:label "Substations"@en ;
-	rdfs:domain <SubGeographicalRegion> ;
-	rdfs:range <Substation> ;
-	rdfs:comment "The substations in this sub-geographical region."^^rdf:XMLLiteral .
-
-<ConnectivityNodeContainer> rdf:type rdfs:Class ;
-	rdfs:subClassOf <PowerSystemResource> ;
-	rdfs:label "ConnectivityNodeContainer"@en ;
-	rdfs:comment "A base class for all objects that may contain connectivity nodes or topological nodes."^^rdf:XMLLiteral .
-<ConnectivityNodeContainer.ConnectivityNodes> rdf:type rdfs:Property ;
-	rdfs:label "ConnectivityNodes"@en ;
-	rdfs:domain <ConnectivityNodeContainer> ;
-	rdfs:range <ConnectivityNode> ;
-	rdfs:comment "Connectivity nodes which belong to this connectivity node container."^^rdf:XMLLiteral .
 
 <BoundaryPoint> rdf:type rdfs:Class ;
 	rdfs:subClassOf <PowerSystemResource> ;
@@ -258,10 +83,85 @@
 	rdfs:range <ConnectivityNode> ;
 	rdfs:comment "The connectivity node that is designated as a boundary point."^^rdf:XMLLiteral .
 
+<ConductingEquipment> rdf:type rdfs:Class ;
+	rdfs:subClassOf <Equipment> ;
+	rdfs:label "ConductingEquipment"@en ;
+	rdfs:comment "The parts of the AC power system that are designed to carry current or that are conductively connected through terminals."^^rdf:XMLLiteral .
+<ConductingEquipment.Terminals> rdf:type rdfs:Property ;
+	rdfs:label "Terminals"@en ;
+	rdfs:domain <ConductingEquipment> ;
+	rdfs:range <Terminal> ;
+	rdfs:comment "Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes."^^rdf:XMLLiteral .
+
+<ConnectivityNode> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
+	rdfs:label "ConnectivityNode"@en ;
+	rdfs:comment "Connectivity nodes are points where terminals of AC conducting equipment are connected together with zero impedance."^^rdf:XMLLiteral .
+<ConnectivityNode.Terminals> rdf:type rdfs:Property ;
+	rdfs:label "Terminals"@en ;
+	rdfs:domain <ConnectivityNode> ;
+	rdfs:range <Terminal> ;
+	rdfs:comment "Terminals interconnected with zero impedance at a this connectivity node. "^^rdf:XMLLiteral .
+<ConnectivityNode.ConnectivityNodeContainer> rdf:type rdfs:Property ;
+	rdfs:label "ConnectivityNodeContainer"@en ;
+	rdfs:domain <ConnectivityNode> ;
+	rdfs:range <ConnectivityNodeContainer> ;
+	rdfs:comment "Container of this connectivity node."^^rdf:XMLLiteral .
+<ConnectivityNode.BoundaryPoint> rdf:type rdfs:Property ;
+	rdfs:label "BoundaryPoint"@en ;
+	rdfs:domain <ConnectivityNode> ;
+	rdfs:range <BoundaryPoint> ;
+	rdfs:comment "The boundary point associated with the connectivity node."^^rdf:XMLLiteral .
+
+<ConnectivityNodeContainer> rdf:type rdfs:Class ;
+	rdfs:subClassOf <PowerSystemResource> ;
+	rdfs:label "ConnectivityNodeContainer"@en ;
+	rdfs:comment "A base class for all objects that may contain connectivity nodes or topological nodes."^^rdf:XMLLiteral .
+<ConnectivityNodeContainer.ConnectivityNodes> rdf:type rdfs:Property ;
+	rdfs:label "ConnectivityNodes"@en ;
+	rdfs:domain <ConnectivityNodeContainer> ;
+	rdfs:range <ConnectivityNode> ;
+	rdfs:comment "Connectivity nodes which belong to this connectivity node container."^^rdf:XMLLiteral .
+
+<Connector> rdf:type rdfs:Class ;
+	rdfs:subClassOf <ConductingEquipment> ;
+	rdfs:label "Connector"@en ;
+	rdfs:comment "A conductor, or group of conductors, with negligible impedance, that serve to connect other conducting equipment within a single substation and are modelled with a single logical terminal."^^rdf:XMLLiteral .
+
 <EnergySchedulingType> rdf:type rdfs:Class ;
 	rdfs:subClassOf <IdentifiedObject> ;
 	rdfs:label "EnergySchedulingType"@en ;
 	rdfs:comment "Used to define the type of generation for scheduling purposes."^^rdf:XMLLiteral .
+
+<Equipment> rdf:type rdfs:Class ;
+	rdfs:subClassOf <PowerSystemResource> ;
+	rdfs:label "Equipment"@en ;
+	rdfs:comment "The parts of a power system that are physical devices, electronic or mechanical."^^rdf:XMLLiteral .
+<Equipment.EquipmentContainer> rdf:type rdfs:Property ;
+	rdfs:label "EquipmentContainer"@en ;
+	rdfs:domain <Equipment> ;
+	rdfs:range <EquipmentContainer> ;
+	rdfs:comment "Container of this equipment."^^rdf:XMLLiteral .
+
+<EquipmentContainer> rdf:type rdfs:Class ;
+	rdfs:subClassOf <ConnectivityNodeContainer> ;
+	rdfs:label "EquipmentContainer"@en ;
+	rdfs:comment "A modelling construct to provide a root class for containing equipment. "^^rdf:XMLLiteral .
+<EquipmentContainer.Equipments> rdf:type rdfs:Property ;
+	rdfs:label "Equipments"@en ;
+	rdfs:domain <EquipmentContainer> ;
+	rdfs:range <Equipment> ;
+	rdfs:comment "Contained equipment."^^rdf:XMLLiteral .
+
+<GeographicalRegion> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
+	rdfs:label "GeographicalRegion"@en ;
+	rdfs:comment "A geographical region of a power system network model."^^rdf:XMLLiteral .
+<GeographicalRegion.Regions> rdf:type rdfs:Property ;
+	rdfs:label "Regions"@en ;
+	rdfs:domain <GeographicalRegion> ;
+	rdfs:range <SubGeographicalRegion> ;
+	rdfs:comment "All sub-geographical regions within this geographical region."^^rdf:XMLLiteral .
 
 <IdentifiedObject> rdf:type rdfs:Class ;
 	rdfs:label "IdentifiedObject"@en ;
@@ -291,3 +191,103 @@
 	rdfs:domain <IdentifiedObject> ;
 	rdfs:range xsd:string ;
 	rdfs:comment "The attribute is used for an exchange of a human readable short name with length of the string 12 characters maximum."^^rdf:XMLLiteral .
+
+<Junction> rdf:type rdfs:Class ;
+	rdfs:subClassOf <Connector> ;
+	rdfs:label "Junction"@en ;
+	rdfs:comment "A point where one or more conducting equipments are connected with zero resistance."^^rdf:XMLLiteral .
+
+<Line> rdf:type rdfs:Class ;
+	rdfs:subClassOf <EquipmentContainer> ;
+	rdfs:label "Line"@en ;
+	rdfs:comment "Contains equipment beyond a substation belonging to a power transmission line. "^^rdf:XMLLiteral .
+<Line.Region> rdf:type rdfs:Property ;
+	rdfs:label "Region"@en ;
+	rdfs:domain <Line> ;
+	rdfs:range <SubGeographicalRegion> ;
+	rdfs:comment "The sub-geographical region of the line."^^rdf:XMLLiteral .
+
+<PowerSystemResource> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
+	rdfs:label "PowerSystemResource"@en ;
+	rdfs:comment "A power system resource (PSR) can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated."^^rdf:XMLLiteral .
+
+<SubGeographicalRegion> rdf:type rdfs:Class ;
+	rdfs:subClassOf <IdentifiedObject> ;
+	rdfs:label "SubGeographicalRegion"@en ;
+	rdfs:comment "A subset of a geographical region of a power system network model."^^rdf:XMLLiteral .
+<SubGeographicalRegion.Region> rdf:type rdfs:Property ;
+	rdfs:label "Region"@en ;
+	rdfs:domain <SubGeographicalRegion> ;
+	rdfs:range <GeographicalRegion> ;
+	rdfs:comment "The geographical region which this sub-geographical region is within."^^rdf:XMLLiteral .
+<SubGeographicalRegion.Lines> rdf:type rdfs:Property ;
+	rdfs:label "Lines"@en ;
+	rdfs:domain <SubGeographicalRegion> ;
+	rdfs:range <Line> ;
+	rdfs:comment "The lines within the sub-geographical region."^^rdf:XMLLiteral .
+<SubGeographicalRegion.Substations> rdf:type rdfs:Property ;
+	rdfs:label "Substations"@en ;
+	rdfs:domain <SubGeographicalRegion> ;
+	rdfs:range <Substation> ;
+	rdfs:comment "The substations in this sub-geographical region."^^rdf:XMLLiteral .
+
+<Substation> rdf:type rdfs:Class ;
+	rdfs:subClassOf <EquipmentContainer> ;
+	rdfs:label "Substation"@en ;
+	rdfs:comment "A collection of equipment for purposes other than generation or utilization, through which electric energy in bulk is passed for the purposes of switching or modifying its characteristics. "^^rdf:XMLLiteral .
+<Substation.VoltageLevels> rdf:type rdfs:Property ;
+	rdfs:label "VoltageLevels"@en ;
+	rdfs:domain <Substation> ;
+	rdfs:range <VoltageLevel> ;
+	rdfs:comment "The voltage levels within this substation."^^rdf:XMLLiteral .
+<Substation.Region> rdf:type rdfs:Property ;
+	rdfs:label "Region"@en ;
+	rdfs:domain <Substation> ;
+	rdfs:range <SubGeographicalRegion> ;
+	rdfs:comment "The SubGeographicalRegion containing the substation."^^rdf:XMLLiteral .
+
+<Terminal> rdf:type rdfs:Class ;
+	rdfs:subClassOf <ACDCTerminal> ;
+	rdfs:label "Terminal"@en ;
+	rdfs:comment "An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."^^rdf:XMLLiteral .
+<Terminal.ConductingEquipment> rdf:type rdfs:Property ;
+	rdfs:label "ConductingEquipment"@en ;
+	rdfs:domain <Terminal> ;
+	rdfs:range <ConductingEquipment> ;
+	rdfs:comment "The conducting equipment of the terminal.  Conducting equipment have  terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes."^^rdf:XMLLiteral .
+<Terminal.ConnectivityNode> rdf:type rdfs:Property ;
+	rdfs:label "ConnectivityNode"@en ;
+	rdfs:domain <Terminal> ;
+	rdfs:range <ConnectivityNode> ;
+	rdfs:comment "The connectivity node to which this terminal connects with zero impedance."^^rdf:XMLLiteral .
+
+<VoltageLevel> rdf:type rdfs:Class ;
+	rdfs:subClassOf <EquipmentContainer> ;
+	rdfs:label "VoltageLevel"@en ;
+	rdfs:comment "A collection of equipment at one common system voltage forming a switchgear. The equipment typically consists of breakers, busbars, instrumentation, control, regulation and protection devices as well as assemblies of all these."^^rdf:XMLLiteral .
+<VoltageLevel.highVoltageLimit> rdf:type rdfs:Property ;
+	rdfs:label "highVoltageLimit"@en ;
+	rdfs:domain <VoltageLevel> ;
+	rdfs:range xsd:double ;
+	rdfs:comment "The bus bar's high voltage limit.\nThe limit applies to all equipment and nodes contained in a given VoltageLevel. It is not required that it is exchanged in pair with lowVoltageLimit. It is preferable to use operational VoltageLimit, which prevails, if present."^^rdf:XMLLiteral .
+<VoltageLevel.lowVoltageLimit> rdf:type rdfs:Property ;
+	rdfs:label "lowVoltageLimit"@en ;
+	rdfs:domain <VoltageLevel> ;
+	rdfs:range xsd:double ;
+	rdfs:comment "The bus bar's low voltage limit.\nThe limit applies to all equipment and nodes contained in a given VoltageLevel. It is not required that it is exchanged in pair with highVoltageLimit. It is preferable to use operational VoltageLimit, which prevails, if present."^^rdf:XMLLiteral .
+<VoltageLevel.BaseVoltage> rdf:type rdfs:Property ;
+	rdfs:label "BaseVoltage"@en ;
+	rdfs:domain <VoltageLevel> ;
+	rdfs:range <BaseVoltage> ;
+	rdfs:comment "The base voltage used for all equipment within the voltage level."^^rdf:XMLLiteral .
+<VoltageLevel.Substation> rdf:type rdfs:Property ;
+	rdfs:label "Substation"@en ;
+	rdfs:domain <VoltageLevel> ;
+	rdfs:range <Substation> ;
+	rdfs:comment "The substation of the voltage level."^^rdf:XMLLiteral .
+<VoltageLevel.Bays> rdf:type rdfs:Property ;
+	rdfs:label "Bays"@en ;
+	rdfs:domain <VoltageLevel> ;
+	rdfs:range <Bay> ;
+	rdfs:comment "The bays within this voltage level."^^rdf:XMLLiteral .
