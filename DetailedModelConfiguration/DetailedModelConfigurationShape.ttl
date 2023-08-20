@@ -7,9 +7,9 @@
 <ACDCTerminalShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ACDCTerminal> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name .
 
-<ACDCTerminalShape.SignalDescriptor> rdf:type sh:PropertyShape ;
+_:ACDCTerminalShape.SignalDescriptor rdf:type sh:PropertyShape ;
 	sh:path <ACDCTerminal.SignalDescriptor> ;
 	sh:class <SignalDescriptor> ;
 	sh:name "Signal Descriptor"@en ;
@@ -18,9 +18,9 @@
 <DetailedModelDescriptorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <DetailedModelDescriptor> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name .
 
-<DetailedModelDescriptorShape.DetailedModelTypeDynamics> rdf:type sh:PropertyShape ;
+_:DetailedModelDescriptorShape.DetailedModelTypeDynamics rdf:type sh:PropertyShape ;
 	sh:path <DetailedModelDescriptor.DetailedModelTypeDynamics> ;
 	sh:class <DetailedModelTypeDynamics> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -30,9 +30,9 @@
 
 <DetailedModelDescriptorArtifactShape> rdf:type sh:NodeShape ;
 	sh:targetClass <DetailedModelDescriptorArtifact> ;
-	sh:property <DetailedModelDescriptorArtifactShape.equationLanguageKind> , <DetailedModelDescriptorArtifactShape.equationLanguageTypeOther> , <DetailedModelDescriptorArtifactShape.FunctionDescriptor> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <DetailedModelDescriptorShape.DetailedModelTypeDynamics> .
+	sh:property _:DetailedModelDescriptorArtifactShape.equationLanguageKind , _:DetailedModelDescriptorArtifactShape.equationLanguageTypeOther , _:DetailedModelDescriptorArtifactShape.FunctionDescriptor , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:DetailedModelDescriptorShape.DetailedModelTypeDynamics .
 
-<DetailedModelDescriptorArtifactShape.equationLanguageKind> rdf:type sh:PropertyShape ;
+_:DetailedModelDescriptorArtifactShape.equationLanguageKind rdf:type sh:PropertyShape ;
 	sh:path <DetailedModelDescriptorArtifact.equationLanguageKind> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -40,14 +40,14 @@
 	sh:in "modelica" , "generalMathemathicalExpression" , "matlab" ;
 	sh:name "Equation Language Kind"@en ;
 	sh:description "Describes what kind of language is used to describe the equation."^^rdf:XMLLiteral .
-<DetailedModelDescriptorArtifactShape.equationLanguageTypeOther> rdf:type sh:PropertyShape ;
+_:DetailedModelDescriptorArtifactShape.equationLanguageTypeOther rdf:type sh:PropertyShape ;
 	sh:path <DetailedModelDescriptorArtifact.equationLanguageTypeOther> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Equation Language Type Other"@en ;
 	sh:description "Defines the language used to describe equations."^^rdf:XMLLiteral .
 
-<DetailedModelDescriptorArtifactShape.FunctionDescriptor> rdf:type sh:PropertyShape ;
+_:DetailedModelDescriptorArtifactShape.FunctionDescriptor rdf:type sh:PropertyShape ;
 	sh:path <DetailedModelDescriptorArtifact.FunctionDescriptor> ;
 	sh:class <FunctionDescriptor> ;
 	sh:name "Function Descriptor"@en ;
@@ -55,13 +55,13 @@
 
 <DetailedModelDocumentationArtifactShape> rdf:type sh:NodeShape ;
 	sh:targetClass <DetailedModelDocumentationArtifact> ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <DetailedModelDescriptorShape.DetailedModelTypeDynamics> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:DetailedModelDescriptorShape.DetailedModelTypeDynamics .
 
 <DetailedModelTypeDynamicsShape> rdf:type sh:NodeShape ;
 	sh:targetClass <DetailedModelTypeDynamics> ;
-	sh:property <DetailedModelTypeDynamicsShape.DetailedModelDescriptor> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+	sh:property _:DetailedModelTypeDynamicsShape.DetailedModelDescriptor , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name .
 
-<DetailedModelTypeDynamicsShape.DetailedModelDescriptor> rdf:type sh:PropertyShape ;
+_:DetailedModelTypeDynamicsShape.DetailedModelDescriptor rdf:type sh:PropertyShape ;
 	sh:path <DetailedModelTypeDynamics.DetailedModelDescriptor> ;
 	sh:class <DetailedModelDescriptor> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -71,9 +71,9 @@
 <DynamicsFunctionBlockShape> rdf:type sh:NodeShape ;
 	sh:targetClass <DynamicsFunctionBlock> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name .
 
-<DynamicsFunctionBlockShape.SignalDescriptor> rdf:type sh:PropertyShape ;
+_:DynamicsFunctionBlockShape.SignalDescriptor rdf:type sh:PropertyShape ;
 	sh:path <DynamicsFunctionBlock.SignalDescriptor> ;
 	sh:class <SignalDescriptor> ;
 	sh:name "Signal Descriptor"@en ;
@@ -81,60 +81,60 @@
 
 <FunctionDescriptorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <FunctionDescriptor> ;
-	sh:property <FunctionDescriptorShape.describedByArtifact> , <FunctionDescriptorShape.equation> , <FunctionDescriptorShape.equationLanguageKind> , <FunctionDescriptorShape.initialConditionsEquation> , <FunctionDescriptorShape.ParameterDescriptor> , <FunctionDescriptorShape.InputOutputDescriptor> , <FunctionDescriptorShape.EquationDescriptorArtifact> , <FunctionDescriptorShape.LowerLimit> , <FunctionDescriptorShape.UpperLimit> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <DetailedModelDescriptorShape.DetailedModelTypeDynamics> .
+	sh:property _:FunctionDescriptorShape.describedByArtifact , _:FunctionDescriptorShape.equation , _:FunctionDescriptorShape.equationLanguageKind , _:FunctionDescriptorShape.initialConditionsEquation , _:FunctionDescriptorShape.ParameterDescriptor , _:FunctionDescriptorShape.InputOutputDescriptor , _:FunctionDescriptorShape.EquationDescriptorArtifact , _:FunctionDescriptorShape.LowerLimit , _:FunctionDescriptorShape.UpperLimit , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:DetailedModelDescriptorShape.DetailedModelTypeDynamics .
 
-<FunctionDescriptorShape.describedByArtifact> rdf:type sh:PropertyShape ;
+_:FunctionDescriptorShape.describedByArtifact rdf:type sh:PropertyShape ;
 	sh:path <FunctionDescriptor.describedByArtifact> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Described By Artifact"@en ;
 	sh:description "Identifies if the function descriptor is described by an artifact."^^rdf:XMLLiteral .
-<FunctionDescriptorShape.equation> rdf:type sh:PropertyShape ;
+_:FunctionDescriptorShape.equation rdf:type sh:PropertyShape ;
 	sh:path <FunctionDescriptor.equation> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Equation"@en ;
 	sh:description "Mathematical expression of the function in the specified language."^^rdf:XMLLiteral .
-<FunctionDescriptorShape.equationLanguageKind> rdf:type sh:PropertyShape ;
+_:FunctionDescriptorShape.equationLanguageKind rdf:type sh:PropertyShape ;
 	sh:path <FunctionDescriptor.equationLanguageKind> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:in "modelica" , "generalMathemathicalExpression" , "matlab" ;
 	sh:name "Equation Language Kind"@en ;
 	sh:description "Describes what kind of language is used to describe the equation."^^rdf:XMLLiteral .
-<FunctionDescriptorShape.initialConditionsEquation> rdf:type sh:PropertyShape ;
+_:FunctionDescriptorShape.initialConditionsEquation rdf:type sh:PropertyShape ;
 	sh:path <FunctionDescriptor.initialConditionsEquation> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Initial Conditions Equation"@en ;
 	sh:description "Mathematical expression (in the specified language) of the initial conditions of the function descriptor."^^rdf:XMLLiteral .
 
-<FunctionDescriptorShape.ParameterDescriptor> rdf:type sh:PropertyShape ;
+_:FunctionDescriptorShape.ParameterDescriptor rdf:type sh:PropertyShape ;
 	sh:path <FunctionDescriptor.ParameterDescriptor> ;
 	sh:class <ParameterDesctiptor> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:name "Parameter Descriptor"@en ;
 	sh:description "The parameter descriptor for this function descriptor."^^rdf:XMLLiteral .
-<FunctionDescriptorShape.InputOutputDescriptor> rdf:type sh:PropertyShape ;
+_:FunctionDescriptorShape.InputOutputDescriptor rdf:type sh:PropertyShape ;
 	sh:path <FunctionDescriptor.InputOutputDescriptor> ;
 	sh:class <InputOutputDescriptor> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Input Output Descriptor"@en ;
 	sh:description "The input and output descriptor of this function descriptor."^^rdf:XMLLiteral .
-<FunctionDescriptorShape.EquationDescriptorArtifact> rdf:type sh:PropertyShape ;
+_:FunctionDescriptorShape.EquationDescriptorArtifact rdf:type sh:PropertyShape ;
 	sh:path <FunctionDescriptor.EquationDescriptorArtifact> ;
 	sh:class <DetailedModelDescriptorArtifact> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Equation Descriptor Artifact"@en ;
 	sh:description "The equation descriptor artifact for this function descriptor."^^rdf:XMLLiteral .
-<FunctionDescriptorShape.LowerLimit> rdf:type sh:PropertyShape ;
+_:FunctionDescriptorShape.LowerLimit rdf:type sh:PropertyShape ;
 	sh:path <FunctionDescriptor.LowerLimit> ;
 	sh:class <LimiterDescriptor> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Lower Limit"@en ;
 	sh:description "The lower limit of the limiter descriptor."^^rdf:XMLLiteral .
-<FunctionDescriptorShape.UpperLimit> rdf:type sh:PropertyShape ;
+_:FunctionDescriptorShape.UpperLimit rdf:type sh:PropertyShape ;
 	sh:path <FunctionDescriptor.UpperLimit> ;
 	sh:class <LimiterDescriptor> ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -145,20 +145,20 @@
 	sh:targetClass <IdentifiedObject> ;
 	sh:closed "true"^^xsd:boolean .
 
-<IdentifiedObjectShape.description> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.description rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.description> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Description"@en ;
 	sh:description "The description is a free human readable text describing or naming the object."^^rdf:XMLLiteral .
-<IdentifiedObjectShape.mRID> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.mRID rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.mRID> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "MRID"@en ;
 	sh:description "Master resource identifier issued by a model authority."^^rdf:XMLLiteral .
-<IdentifiedObjectShape.name> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.name rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.name> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -167,32 +167,32 @@
 
 <InputOutputDescriptorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <InputOutputDescriptor> ;
-	sh:property <InputOutputDescriptorShape.InputSignal> , <InputOutputDescriptorShape.LimiterDescriptor> , <InputOutputDescriptorShape.OutputSignal> , <InputOutputDescriptorShape.OperatorDescriptor> , <InputOutputDescriptorShape.FunctionDescriptor> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <DetailedModelDescriptorShape.DetailedModelTypeDynamics> .
+	sh:property _:InputOutputDescriptorShape.InputSignal , _:InputOutputDescriptorShape.LimiterDescriptor , _:InputOutputDescriptorShape.OutputSignal , _:InputOutputDescriptorShape.OperatorDescriptor , _:InputOutputDescriptorShape.FunctionDescriptor , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:DetailedModelDescriptorShape.DetailedModelTypeDynamics .
 
-<InputOutputDescriptorShape.InputSignal> rdf:type sh:PropertyShape ;
+_:InputOutputDescriptorShape.InputSignal rdf:type sh:PropertyShape ;
 	sh:path <InputOutputDescriptor.InputSignal> ;
 	sh:class <SignalDescriptor> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:name "Input Signal"@en ;
 	sh:description "The input signal for this input descriptor."^^rdf:XMLLiteral .
-<InputOutputDescriptorShape.LimiterDescriptor> rdf:type sh:PropertyShape ;
+_:InputOutputDescriptorShape.LimiterDescriptor rdf:type sh:PropertyShape ;
 	sh:path <InputOutputDescriptor.LimiterDescriptor> ;
 	sh:class <LimiterDescriptor> ;
 	sh:name "Limiter Descriptor"@en ;
 	sh:description "The limiter descriptor that has input and output descriptor."^^rdf:XMLLiteral .
-<InputOutputDescriptorShape.OutputSignal> rdf:type sh:PropertyShape ;
+_:InputOutputDescriptorShape.OutputSignal rdf:type sh:PropertyShape ;
 	sh:path <InputOutputDescriptor.OutputSignal> ;
 	sh:class <SignalDescriptor> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Output Signal"@en ;
 	sh:description "The output signal for this output descriptor."^^rdf:XMLLiteral .
-<InputOutputDescriptorShape.OperatorDescriptor> rdf:type sh:PropertyShape ;
+_:InputOutputDescriptorShape.OperatorDescriptor rdf:type sh:PropertyShape ;
 	sh:path <InputOutputDescriptor.OperatorDescriptor> ;
 	sh:class <OperatorDescriptor> ;
 	sh:name "Operator Descriptor"@en ;
 	sh:description "The operator descriptor that has input and output descriptor."^^rdf:XMLLiteral .
-<InputOutputDescriptorShape.FunctionDescriptor> rdf:type sh:PropertyShape ;
+_:InputOutputDescriptorShape.FunctionDescriptor rdf:type sh:PropertyShape ;
 	sh:path <InputOutputDescriptor.FunctionDescriptor> ;
 	sh:class <FunctionDescriptor> ;
 	sh:name "Function Descriptor"@en ;
@@ -200,22 +200,22 @@
 
 <LimiterDescriptorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <LimiterDescriptor> ;
-	sh:property <LimiterDescriptorShape.InputOutputDescriptor> , <LimiterDescriptorShape.LowerLimitFunction> , <LimiterDescriptorShape.UpperLimitFunction> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <DetailedModelDescriptorShape.DetailedModelTypeDynamics> .
+	sh:property _:LimiterDescriptorShape.InputOutputDescriptor , _:LimiterDescriptorShape.LowerLimitFunction , _:LimiterDescriptorShape.UpperLimitFunction , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:DetailedModelDescriptorShape.DetailedModelTypeDynamics .
 
-<LimiterDescriptorShape.InputOutputDescriptor> rdf:type sh:PropertyShape ;
+_:LimiterDescriptorShape.InputOutputDescriptor rdf:type sh:PropertyShape ;
 	sh:path <LimiterDescriptor.InputOutputDescriptor> ;
 	sh:class <InputOutputDescriptor> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Input Output Descriptor"@en ;
 	sh:description "The input and output descriptor that belongs to the limiter descriptor."^^rdf:XMLLiteral .
-<LimiterDescriptorShape.LowerLimitFunction> rdf:type sh:PropertyShape ;
+_:LimiterDescriptorShape.LowerLimitFunction rdf:type sh:PropertyShape ;
 	sh:path <LimiterDescriptor.LowerLimitFunction> ;
 	sh:class <FunctionDescriptor> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Lower Limit Function"@en ;
 	sh:description "The function fo the lower limit."^^rdf:XMLLiteral .
-<LimiterDescriptorShape.UpperLimitFunction> rdf:type sh:PropertyShape ;
+_:LimiterDescriptorShape.UpperLimitFunction rdf:type sh:PropertyShape ;
 	sh:path <LimiterDescriptor.UpperLimitFunction> ;
 	sh:class <FunctionDescriptor> ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -224,16 +224,16 @@
 
 <OperatorDescriptorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <OperatorDescriptor> ;
-	sh:property <OperatorDescriptorShape.logicalKind> , <OperatorDescriptorShape.operatorKind> , <OperatorDescriptorShape.InputOutputDescriptor> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <DetailedModelDescriptorShape.DetailedModelTypeDynamics> .
+	sh:property _:OperatorDescriptorShape.logicalKind , _:OperatorDescriptorShape.operatorKind , _:OperatorDescriptorShape.InputOutputDescriptor , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:DetailedModelDescriptorShape.DetailedModelTypeDynamics .
 
-<OperatorDescriptorShape.logicalKind> rdf:type sh:PropertyShape ;
+_:OperatorDescriptorShape.logicalKind rdf:type sh:PropertyShape ;
 	sh:path <OperatorDescriptor.logicalKind> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:in "and" , "or" , "not" , "equal" , "greaterThan" , "lessThan" , "greaterThanOrEqual" , "lessThanOrEqual" ;
 	sh:name "Logical Kind"@en ;
 	sh:description "Logical kind of the operator."^^rdf:XMLLiteral .
-<OperatorDescriptorShape.operatorKind> rdf:type sh:PropertyShape ;
+_:OperatorDescriptorShape.operatorKind rdf:type sh:PropertyShape ;
 	sh:path <OperatorDescriptor.operatorKind> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -242,7 +242,7 @@
 	sh:name "Operator Kind"@en ;
 	sh:description "Kinds of operator."^^rdf:XMLLiteral .
 
-<OperatorDescriptorShape.InputOutputDescriptor> rdf:type sh:PropertyShape ;
+_:OperatorDescriptorShape.InputOutputDescriptor rdf:type sh:PropertyShape ;
 	sh:path <OperatorDescriptor.InputOutputDescriptor> ;
 	sh:class <InputOutputDescriptor> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -252,28 +252,28 @@
 
 <ParameterDesctiptorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ParameterDesctiptor> ;
-	sh:property <ParameterDesctiptorShape.constraintKind> , <ParameterDesctiptorShape.constraintValue> , <ParameterDesctiptorShape.engineeringUnit> , <ParameterDesctiptorShape.kind> , <ParameterDesctiptorShape.referenceCustomConstraint> , <ParameterDesctiptorShape.sequenceNumber> , <ParameterDesctiptorShape.typicalValue> , <ParameterDesctiptorShape.typicalValueRangeMax> , <ParameterDesctiptorShape.typicalValueRangeMin> , <ParameterDesctiptorShape.valueXSDdatatype> , <ParameterDesctiptorShape.FunctionDescriptor> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <DetailedModelDescriptorShape.DetailedModelTypeDynamics> .
+	sh:property _:ParameterDesctiptorShape.constraintKind , _:ParameterDesctiptorShape.constraintValue , _:ParameterDesctiptorShape.engineeringUnit , _:ParameterDesctiptorShape.kind , _:ParameterDesctiptorShape.referenceCustomConstraint , _:ParameterDesctiptorShape.sequenceNumber , _:ParameterDesctiptorShape.typicalValue , _:ParameterDesctiptorShape.typicalValueRangeMax , _:ParameterDesctiptorShape.typicalValueRangeMin , _:ParameterDesctiptorShape.valueXSDdatatype , _:ParameterDesctiptorShape.FunctionDescriptor , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:DetailedModelDescriptorShape.DetailedModelTypeDynamics .
 
-<ParameterDesctiptorShape.constraintKind> rdf:type sh:PropertyShape ;
+_:ParameterDesctiptorShape.constraintKind rdf:type sh:PropertyShape ;
 	sh:path <ParameterDesctiptor.constraintKind> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:in "lessThan" , "greaterThan" , "equals" , "lessThanOrEquals" , "greaterThanOrEquals" ;
 	sh:name "Constraint Kind"@en ;
 	sh:description "The kind for the constraint."^^rdf:XMLLiteral .
-<ParameterDesctiptorShape.constraintValue> rdf:type sh:PropertyShape ;
+_:ParameterDesctiptorShape.constraintValue rdf:type sh:PropertyShape ;
 	sh:path <ParameterDesctiptor.constraintValue> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Constraint Value"@en ;
 	sh:description "The value of the constraint."^^rdf:XMLLiteral .
-<ParameterDesctiptorShape.engineeringUnit> rdf:type sh:PropertyShape ;
+_:ParameterDesctiptorShape.engineeringUnit rdf:type sh:PropertyShape ;
 	sh:path <ParameterDesctiptor.engineeringUnit> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Engineering Unit"@en ;
 	sh:description "The engineering unit of the value."^^rdf:XMLLiteral .
-<ParameterDesctiptorShape.kind> rdf:type sh:PropertyShape ;
+_:ParameterDesctiptorShape.kind rdf:type sh:PropertyShape ;
 	sh:path <ParameterDesctiptor.kind> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -281,38 +281,38 @@
 	sh:in "stateVariable" , "regular" , "internal" ;
 	sh:name "Kind"@en ;
 	sh:description "The kind of the parameter."^^rdf:XMLLiteral .
-<ParameterDesctiptorShape.referenceCustomConstraint> rdf:type sh:PropertyShape ;
+_:ParameterDesctiptorShape.referenceCustomConstraint rdf:type sh:PropertyShape ;
 	sh:path <ParameterDesctiptor.referenceCustomConstraint> ;
 	sh:class <IRI> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Reference Custom Constraint"@en ;
 	sh:description "Provides the reference to a custom constraint related to this parameter."^^rdf:XMLLiteral .
-<ParameterDesctiptorShape.sequenceNumber> rdf:type sh:PropertyShape ;
+_:ParameterDesctiptorShape.sequenceNumber rdf:type sh:PropertyShape ;
 	sh:path <ParameterDesctiptor.sequenceNumber> ;
 	sh:datatype xsd:integer ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Sequence Number"@en ;
 	sh:description "Sequence number of the parameter among the set of parameters associated with the related proprietary user-defined model."^^rdf:XMLLiteral .
-<ParameterDesctiptorShape.typicalValue> rdf:type sh:PropertyShape ;
+_:ParameterDesctiptorShape.typicalValue rdf:type sh:PropertyShape ;
 	sh:path <ParameterDesctiptor.typicalValue> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Typical Value"@en ;
 	sh:description "Typical value for the parameter."^^rdf:XMLLiteral .
-<ParameterDesctiptorShape.typicalValueRangeMax> rdf:type sh:PropertyShape ;
+_:ParameterDesctiptorShape.typicalValueRangeMax rdf:type sh:PropertyShape ;
 	sh:path <ParameterDesctiptor.typicalValueRangeMax> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Typical Value Range Max"@en ;
 	sh:description "Maximum value (upper end of the range) of the typical range."^^rdf:XMLLiteral .
-<ParameterDesctiptorShape.typicalValueRangeMin> rdf:type sh:PropertyShape ;
+_:ParameterDesctiptorShape.typicalValueRangeMin rdf:type sh:PropertyShape ;
 	sh:path <ParameterDesctiptor.typicalValueRangeMin> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Typical Value Range Min"@en ;
 	sh:description "Minimum value (lower end of the range) of the typical range."^^rdf:XMLLiteral .
-<ParameterDesctiptorShape.valueXSDdatatype> rdf:type sh:PropertyShape ;
+_:ParameterDesctiptorShape.valueXSDdatatype rdf:type sh:PropertyShape ;
 	sh:path <ParameterDesctiptor.valueXSDdatatype> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -321,7 +321,7 @@
 	sh:name "Value Xs Ddatatype"@en ;
 	sh:description "The XSD datatype of the value."^^rdf:XMLLiteral .
 
-<ParameterDesctiptorShape.FunctionDescriptor> rdf:type sh:PropertyShape ;
+_:ParameterDesctiptorShape.FunctionDescriptor rdf:type sh:PropertyShape ;
 	sh:path <ParameterDesctiptor.FunctionDescriptor> ;
 	sh:class <FunctionDescriptor> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -331,9 +331,9 @@
 
 <SignalDescriptorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <SignalDescriptor> ;
-	sh:property <SignalDescriptorShape.isSignalInverted> , <SignalDescriptorShape.InputDescriptor> , <SignalDescriptorShape.OutputDescriptor> , <SignalDescriptorShape.ACDCTerminal> , <SignalDescriptorShape.DynamicsFunctionBlock> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <DetailedModelDescriptorShape.DetailedModelTypeDynamics> .
+	sh:property _:SignalDescriptorShape.isSignalInverted , _:SignalDescriptorShape.InputDescriptor , _:SignalDescriptorShape.OutputDescriptor , _:SignalDescriptorShape.ACDCTerminal , _:SignalDescriptorShape.DynamicsFunctionBlock , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:DetailedModelDescriptorShape.DetailedModelTypeDynamics .
 
-<SignalDescriptorShape.isSignalInverted> rdf:type sh:PropertyShape ;
+_:SignalDescriptorShape.isSignalInverted rdf:type sh:PropertyShape ;
 	sh:path <SignalDescriptor.isSignalInverted> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
@@ -341,23 +341,23 @@
 	sh:name "Is Signal Inverted"@en ;
 	sh:description "Indicates if the signal is inverted."^^rdf:XMLLiteral .
 
-<SignalDescriptorShape.InputDescriptor> rdf:type sh:PropertyShape ;
+_:SignalDescriptorShape.InputDescriptor rdf:type sh:PropertyShape ;
 	sh:path <SignalDescriptor.InputDescriptor> ;
 	sh:class <InputOutputDescriptor> ;
 	sh:name "Input Descriptor"@en ;
 	sh:description "The input of the input descriptor that has this signal descriptor."^^rdf:XMLLiteral .
-<SignalDescriptorShape.OutputDescriptor> rdf:type sh:PropertyShape ;
+_:SignalDescriptorShape.OutputDescriptor rdf:type sh:PropertyShape ;
 	sh:path <SignalDescriptor.OutputDescriptor> ;
 	sh:class <InputOutputDescriptor> ;
 	sh:name "Output Descriptor"@en ;
 	sh:description "The output of this input and output desciptor that has a signal descriptor."^^rdf:XMLLiteral .
-<SignalDescriptorShape.ACDCTerminal> rdf:type sh:PropertyShape ;
+_:SignalDescriptorShape.ACDCTerminal rdf:type sh:PropertyShape ;
 	sh:path <SignalDescriptor.ACDCTerminal> ;
 	sh:class <ACDCTerminal> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Acdc Terminal"@en ;
 	sh:description "Th eterminal for this signal descriptor."^^rdf:XMLLiteral .
-<SignalDescriptorShape.DynamicsFunctionBlock> rdf:type sh:PropertyShape ;
+_:SignalDescriptorShape.DynamicsFunctionBlock rdf:type sh:PropertyShape ;
 	sh:path <SignalDescriptor.DynamicsFunctionBlock> ;
 	sh:class <DynamicsFunctionBlock> ;
 	sh:maxCount "1"^^xsd:integer ;

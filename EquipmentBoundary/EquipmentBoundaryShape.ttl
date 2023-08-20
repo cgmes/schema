@@ -7,13 +7,13 @@
 <ACDCTerminalShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ACDCTerminal> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.energyIdentCodeEic , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.shortName .
 
 <BaseVoltageShape> rdf:type sh:NodeShape ;
 	sh:targetClass <BaseVoltage> ;
-	sh:property <BaseVoltageShape.nominalVoltage> , <BaseVoltageShape.VoltageLevel> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> .
+	sh:property _:BaseVoltageShape.nominalVoltage , _:BaseVoltageShape.VoltageLevel , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.energyIdentCodeEic , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.shortName .
 
-<BaseVoltageShape.nominalVoltage> rdf:type sh:PropertyShape ;
+_:BaseVoltageShape.nominalVoltage rdf:type sh:PropertyShape ;
 	sh:path <BaseVoltage.nominalVoltage> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -21,7 +21,7 @@
 	sh:name "Nominal Voltage"@en ;
 	sh:description "The power system resource's base voltage."^^rdf:XMLLiteral .
 
-<BaseVoltageShape.VoltageLevel> rdf:type sh:PropertyShape ;
+_:BaseVoltageShape.VoltageLevel rdf:type sh:PropertyShape ;
 	sh:path <BaseVoltage.VoltageLevel> ;
 	sh:class <VoltageLevel> ;
 	sh:name "Voltage Level"@en ;
@@ -29,9 +29,9 @@
 
 <BayShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Bay> ;
-	sh:property <BayShape.VoltageLevel> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> , <EquipmentContainerShape.Equipments> , <ConnectivityNodeContainerShape.ConnectivityNodes> .
+	sh:property _:BayShape.VoltageLevel , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.energyIdentCodeEic , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.shortName , _:EquipmentContainerShape.Equipments , _:ConnectivityNodeContainerShape.ConnectivityNodes .
 
-<BayShape.VoltageLevel> rdf:type sh:PropertyShape ;
+_:BayShape.VoltageLevel rdf:type sh:PropertyShape ;
 	sh:path <Bay.VoltageLevel> ;
 	sh:class <VoltageLevel> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -41,58 +41,58 @@
 
 <BoundaryPointShape> rdf:type sh:NodeShape ;
 	sh:targetClass <BoundaryPoint> ;
-	sh:property <BoundaryPointShape.fromEndIsoCode> , <BoundaryPointShape.fromEndName> , <BoundaryPointShape.fromEndNameTso> , <BoundaryPointShape.isDirectCurrent> , <BoundaryPointShape.isExcludedFromAreaInterchange> , <BoundaryPointShape.toEndIsoCode> , <BoundaryPointShape.toEndName> , <BoundaryPointShape.toEndNameTso> , <BoundaryPointShape.ConnectivityNode> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> .
+	sh:property _:BoundaryPointShape.fromEndIsoCode , _:BoundaryPointShape.fromEndName , _:BoundaryPointShape.fromEndNameTso , _:BoundaryPointShape.isDirectCurrent , _:BoundaryPointShape.isExcludedFromAreaInterchange , _:BoundaryPointShape.toEndIsoCode , _:BoundaryPointShape.toEndName , _:BoundaryPointShape.toEndNameTso , _:BoundaryPointShape.ConnectivityNode , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.energyIdentCodeEic , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.shortName .
 
-<BoundaryPointShape.fromEndIsoCode> rdf:type sh:PropertyShape ;
+_:BoundaryPointShape.fromEndIsoCode rdf:type sh:PropertyShape ;
 	sh:path <BoundaryPoint.fromEndIsoCode> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "From End Iso Code"@en .
-<BoundaryPointShape.fromEndName> rdf:type sh:PropertyShape ;
+_:BoundaryPointShape.fromEndName rdf:type sh:PropertyShape ;
 	sh:path <BoundaryPoint.fromEndName> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "From End Name"@en ;
 	sh:description "A human readable name with length of the string 64 characters maximum."^^rdf:XMLLiteral .
-<BoundaryPointShape.fromEndNameTso> rdf:type sh:PropertyShape ;
+_:BoundaryPointShape.fromEndNameTso rdf:type sh:PropertyShape ;
 	sh:path <BoundaryPoint.fromEndNameTso> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "From End Name Tso"@en .
-<BoundaryPointShape.isDirectCurrent> rdf:type sh:PropertyShape ;
+_:BoundaryPointShape.isDirectCurrent rdf:type sh:PropertyShape ;
 	sh:path <BoundaryPoint.isDirectCurrent> ;
 	sh:datatype xsd:boolean ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Is Direct Current"@en .
-<BoundaryPointShape.isExcludedFromAreaInterchange> rdf:type sh:PropertyShape ;
+_:BoundaryPointShape.isExcludedFromAreaInterchange rdf:type sh:PropertyShape ;
 	sh:path <BoundaryPoint.isExcludedFromAreaInterchange> ;
 	sh:datatype xsd:boolean ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Is Excluded From Area Interchange"@en .
-<BoundaryPointShape.toEndIsoCode> rdf:type sh:PropertyShape ;
+_:BoundaryPointShape.toEndIsoCode rdf:type sh:PropertyShape ;
 	sh:path <BoundaryPoint.toEndIsoCode> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "To End Iso Code"@en .
-<BoundaryPointShape.toEndName> rdf:type sh:PropertyShape ;
+_:BoundaryPointShape.toEndName rdf:type sh:PropertyShape ;
 	sh:path <BoundaryPoint.toEndName> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "To End Name"@en ;
 	sh:description "A human readable name with length of the string 64 characters maximum."^^rdf:XMLLiteral .
-<BoundaryPointShape.toEndNameTso> rdf:type sh:PropertyShape ;
+_:BoundaryPointShape.toEndNameTso rdf:type sh:PropertyShape ;
 	sh:path <BoundaryPoint.toEndNameTso> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "To End Name Tso"@en .
 
-<BoundaryPointShape.ConnectivityNode> rdf:type sh:PropertyShape ;
+_:BoundaryPointShape.ConnectivityNode rdf:type sh:PropertyShape ;
 	sh:path <BoundaryPoint.ConnectivityNode> ;
 	sh:class <ConnectivityNode> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -103,30 +103,30 @@
 <ConductingEquipmentShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ConductingEquipment> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> , <EquipmentShape.EquipmentContainer> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.energyIdentCodeEic , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.shortName , _:EquipmentShape.EquipmentContainer .
 
-<ConductingEquipmentShape.Terminals> rdf:type sh:PropertyShape ;
+_:ConductingEquipmentShape.Terminals rdf:type sh:PropertyShape ;
 	sh:path <ConductingEquipment.Terminals> ;
 	sh:class <Terminal> ;
 	sh:name "Terminals"@en .
 
 <ConnectivityNodeShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ConnectivityNode> ;
-	sh:property <ConnectivityNodeShape.Terminals> , <ConnectivityNodeShape.ConnectivityNodeContainer> , <ConnectivityNodeShape.BoundaryPoint> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> .
+	sh:property _:ConnectivityNodeShape.Terminals , _:ConnectivityNodeShape.ConnectivityNodeContainer , _:ConnectivityNodeShape.BoundaryPoint , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.energyIdentCodeEic , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.shortName .
 
-<ConnectivityNodeShape.Terminals> rdf:type sh:PropertyShape ;
+_:ConnectivityNodeShape.Terminals rdf:type sh:PropertyShape ;
 	sh:path <ConnectivityNode.Terminals> ;
 	sh:class <Terminal> ;
 	sh:name "Terminals"@en ;
 	sh:description "Terminals interconnected with zero impedance at a this connectivity node."^^rdf:XMLLiteral .
-<ConnectivityNodeShape.ConnectivityNodeContainer> rdf:type sh:PropertyShape ;
+_:ConnectivityNodeShape.ConnectivityNodeContainer rdf:type sh:PropertyShape ;
 	sh:path <ConnectivityNode.ConnectivityNodeContainer> ;
 	sh:class <ConnectivityNodeContainer> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Connectivity Node Container"@en ;
 	sh:description "Container of this connectivity node."^^rdf:XMLLiteral .
-<ConnectivityNodeShape.BoundaryPoint> rdf:type sh:PropertyShape ;
+_:ConnectivityNodeShape.BoundaryPoint rdf:type sh:PropertyShape ;
 	sh:path <ConnectivityNode.BoundaryPoint> ;
 	sh:class <BoundaryPoint> ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -136,9 +136,9 @@
 <ConnectivityNodeContainerShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ConnectivityNodeContainer> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.energyIdentCodeEic , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.shortName .
 
-<ConnectivityNodeContainerShape.ConnectivityNodes> rdf:type sh:PropertyShape ;
+_:ConnectivityNodeContainerShape.ConnectivityNodes rdf:type sh:PropertyShape ;
 	sh:path <ConnectivityNodeContainer.ConnectivityNodes> ;
 	sh:class <ConnectivityNode> ;
 	sh:name "Connectivity Nodes"@en ;
@@ -147,18 +147,18 @@
 <ConnectorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Connector> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> , <ConductingEquipmentShape.Terminals> , <EquipmentShape.EquipmentContainer> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.energyIdentCodeEic , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.shortName , _:ConductingEquipmentShape.Terminals , _:EquipmentShape.EquipmentContainer .
 
 <EnergySchedulingTypeShape> rdf:type sh:NodeShape ;
 	sh:targetClass <EnergySchedulingType> ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.energyIdentCodeEic , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.shortName .
 
 <EquipmentShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Equipment> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.energyIdentCodeEic , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.shortName .
 
-<EquipmentShape.EquipmentContainer> rdf:type sh:PropertyShape ;
+_:EquipmentShape.EquipmentContainer rdf:type sh:PropertyShape ;
 	sh:path <Equipment.EquipmentContainer> ;
 	sh:class <EquipmentContainer> ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -168,9 +168,9 @@
 <EquipmentContainerShape> rdf:type sh:NodeShape ;
 	sh:targetClass <EquipmentContainer> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> , <ConnectivityNodeContainerShape.ConnectivityNodes> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.energyIdentCodeEic , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.shortName , _:ConnectivityNodeContainerShape.ConnectivityNodes .
 
-<EquipmentContainerShape.Equipments> rdf:type sh:PropertyShape ;
+_:EquipmentContainerShape.Equipments rdf:type sh:PropertyShape ;
 	sh:path <EquipmentContainer.Equipments> ;
 	sh:class <Equipment> ;
 	sh:name "Equipments"@en ;
@@ -178,9 +178,9 @@
 
 <GeographicalRegionShape> rdf:type sh:NodeShape ;
 	sh:targetClass <GeographicalRegion> ;
-	sh:property <GeographicalRegionShape.Regions> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> .
+	sh:property _:GeographicalRegionShape.Regions , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.energyIdentCodeEic , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.shortName .
 
-<GeographicalRegionShape.Regions> rdf:type sh:PropertyShape ;
+_:GeographicalRegionShape.Regions rdf:type sh:PropertyShape ;
 	sh:path <GeographicalRegion.Regions> ;
 	sh:class <SubGeographicalRegion> ;
 	sh:name "Regions"@en ;
@@ -190,33 +190,33 @@
 	sh:targetClass <IdentifiedObject> ;
 	sh:closed "true"^^xsd:boolean .
 
-<IdentifiedObjectShape.description> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.description rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.description> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Description"@en ;
 	sh:description "The description is a free human readable text describing or naming the object."^^rdf:XMLLiteral .
-<IdentifiedObjectShape.energyIdentCodeEic> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.energyIdentCodeEic rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.energyIdentCodeEic> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Energy Ident Code Eic"@en ;
 	sh:description "The attribute is used for an exchange of the EIC code (Energy identification Code)."^^rdf:XMLLiteral .
-<IdentifiedObjectShape.mRID> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.mRID rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.mRID> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "MRID"@en ;
 	sh:description "Master resource identifier issued by a model authority."^^rdf:XMLLiteral .
-<IdentifiedObjectShape.name> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.name rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.name> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Name"@en ;
 	sh:description "The name is any free human readable and possibly non unique text naming the object."^^rdf:XMLLiteral .
-<IdentifiedObjectShape.shortName> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.shortName rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.shortName> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -225,13 +225,13 @@
 
 <JunctionShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Junction> ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> , <ConductingEquipmentShape.Terminals> , <EquipmentShape.EquipmentContainer> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.energyIdentCodeEic , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.shortName , _:ConductingEquipmentShape.Terminals , _:EquipmentShape.EquipmentContainer .
 
 <LineShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Line> ;
-	sh:property <LineShape.Region> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> , <EquipmentContainerShape.Equipments> , <ConnectivityNodeContainerShape.ConnectivityNodes> .
+	sh:property _:LineShape.Region , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.energyIdentCodeEic , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.shortName , _:EquipmentContainerShape.Equipments , _:ConnectivityNodeContainerShape.ConnectivityNodes .
 
-<LineShape.Region> rdf:type sh:PropertyShape ;
+_:LineShape.Region rdf:type sh:PropertyShape ;
 	sh:path <Line.Region> ;
 	sh:class <SubGeographicalRegion> ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -241,25 +241,25 @@
 <PowerSystemResourceShape> rdf:type sh:NodeShape ;
 	sh:targetClass <PowerSystemResource> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.energyIdentCodeEic , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.shortName .
 
 <SubGeographicalRegionShape> rdf:type sh:NodeShape ;
 	sh:targetClass <SubGeographicalRegion> ;
-	sh:property <SubGeographicalRegionShape.Region> , <SubGeographicalRegionShape.Lines> , <SubGeographicalRegionShape.Substations> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> .
+	sh:property _:SubGeographicalRegionShape.Region , _:SubGeographicalRegionShape.Lines , _:SubGeographicalRegionShape.Substations , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.energyIdentCodeEic , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.shortName .
 
-<SubGeographicalRegionShape.Region> rdf:type sh:PropertyShape ;
+_:SubGeographicalRegionShape.Region rdf:type sh:PropertyShape ;
 	sh:path <SubGeographicalRegion.Region> ;
 	sh:class <GeographicalRegion> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Region"@en ;
 	sh:description "The geographical region which this sub-geographical region is within."^^rdf:XMLLiteral .
-<SubGeographicalRegionShape.Lines> rdf:type sh:PropertyShape ;
+_:SubGeographicalRegionShape.Lines rdf:type sh:PropertyShape ;
 	sh:path <SubGeographicalRegion.Lines> ;
 	sh:class <Line> ;
 	sh:name "Lines"@en ;
 	sh:description "The lines within the sub-geographical region."^^rdf:XMLLiteral .
-<SubGeographicalRegionShape.Substations> rdf:type sh:PropertyShape ;
+_:SubGeographicalRegionShape.Substations rdf:type sh:PropertyShape ;
 	sh:path <SubGeographicalRegion.Substations> ;
 	sh:class <Substation> ;
 	sh:name "Substations"@en ;
@@ -267,14 +267,14 @@
 
 <SubstationShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Substation> ;
-	sh:property <SubstationShape.VoltageLevels> , <SubstationShape.Region> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> , <EquipmentContainerShape.Equipments> , <ConnectivityNodeContainerShape.ConnectivityNodes> .
+	sh:property _:SubstationShape.VoltageLevels , _:SubstationShape.Region , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.energyIdentCodeEic , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.shortName , _:EquipmentContainerShape.Equipments , _:ConnectivityNodeContainerShape.ConnectivityNodes .
 
-<SubstationShape.VoltageLevels> rdf:type sh:PropertyShape ;
+_:SubstationShape.VoltageLevels rdf:type sh:PropertyShape ;
 	sh:path <Substation.VoltageLevels> ;
 	sh:class <VoltageLevel> ;
 	sh:name "Voltage Levels"@en ;
 	sh:description "The voltage levels within this substation."^^rdf:XMLLiteral .
-<SubstationShape.Region> rdf:type sh:PropertyShape ;
+_:SubstationShape.Region rdf:type sh:PropertyShape ;
 	sh:path <Substation.Region> ;
 	sh:class <SubGeographicalRegion> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -284,16 +284,16 @@
 
 <TerminalShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Terminal> ;
-	sh:property <TerminalShape.ConductingEquipment> , <TerminalShape.ConnectivityNode> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> .
+	sh:property _:TerminalShape.ConductingEquipment , _:TerminalShape.ConnectivityNode , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.energyIdentCodeEic , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.shortName .
 
-<TerminalShape.ConductingEquipment> rdf:type sh:PropertyShape ;
+_:TerminalShape.ConductingEquipment rdf:type sh:PropertyShape ;
 	sh:path <Terminal.ConductingEquipment> ;
 	sh:class <ConductingEquipment> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Conducting Equipment"@en ;
 	sh:description "The conducting equipment of the terminal."^^rdf:XMLLiteral .
-<TerminalShape.ConnectivityNode> rdf:type sh:PropertyShape ;
+_:TerminalShape.ConnectivityNode rdf:type sh:PropertyShape ;
 	sh:path <Terminal.ConnectivityNode> ;
 	sh:class <ConnectivityNode> ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -302,36 +302,36 @@
 
 <VoltageLevelShape> rdf:type sh:NodeShape ;
 	sh:targetClass <VoltageLevel> ;
-	sh:property <VoltageLevelShape.highVoltageLimit> , <VoltageLevelShape.lowVoltageLimit> , <VoltageLevelShape.BaseVoltage> , <VoltageLevelShape.Substation> , <VoltageLevelShape.Bays> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.energyIdentCodeEic> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.shortName> , <EquipmentContainerShape.Equipments> , <ConnectivityNodeContainerShape.ConnectivityNodes> .
+	sh:property _:VoltageLevelShape.highVoltageLimit , _:VoltageLevelShape.lowVoltageLimit , _:VoltageLevelShape.BaseVoltage , _:VoltageLevelShape.Substation , _:VoltageLevelShape.Bays , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.energyIdentCodeEic , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.shortName , _:EquipmentContainerShape.Equipments , _:ConnectivityNodeContainerShape.ConnectivityNodes .
 
-<VoltageLevelShape.highVoltageLimit> rdf:type sh:PropertyShape ;
+_:VoltageLevelShape.highVoltageLimit rdf:type sh:PropertyShape ;
 	sh:path <VoltageLevel.highVoltageLimit> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "High Voltage Limit"@en ;
 	sh:description "The bus bar's high voltage limit.\nThe limit applies to all equipment and nodes contained in a given VoltageLevel."^^rdf:XMLLiteral .
-<VoltageLevelShape.lowVoltageLimit> rdf:type sh:PropertyShape ;
+_:VoltageLevelShape.lowVoltageLimit rdf:type sh:PropertyShape ;
 	sh:path <VoltageLevel.lowVoltageLimit> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Low Voltage Limit"@en ;
 	sh:description "The bus bar's low voltage limit.\nThe limit applies to all equipment and nodes contained in a given VoltageLevel."^^rdf:XMLLiteral .
 
-<VoltageLevelShape.BaseVoltage> rdf:type sh:PropertyShape ;
+_:VoltageLevelShape.BaseVoltage rdf:type sh:PropertyShape ;
 	sh:path <VoltageLevel.BaseVoltage> ;
 	sh:class <BaseVoltage> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Base Voltage"@en ;
 	sh:description "The base voltage used for all equipment within the voltage level."^^rdf:XMLLiteral .
-<VoltageLevelShape.Substation> rdf:type sh:PropertyShape ;
+_:VoltageLevelShape.Substation rdf:type sh:PropertyShape ;
 	sh:path <VoltageLevel.Substation> ;
 	sh:class <Substation> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Substation"@en ;
 	sh:description "The substation of the voltage level."^^rdf:XMLLiteral .
-<VoltageLevelShape.Bays> rdf:type sh:PropertyShape ;
+_:VoltageLevelShape.Bays rdf:type sh:PropertyShape ;
 	sh:path <VoltageLevel.Bays> ;
 	sh:class <Bay> ;
 	sh:name "Bays"@en ;

@@ -7,9 +7,9 @@
 <ACDCTerminalShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ACDCTerminal> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.ParameterEvent> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.ParameterEvent .
 
-<ACDCTerminalShape.SignalRecorder> rdf:type sh:PropertyShape ;
+_:ACDCTerminalShape.SignalRecorder rdf:type sh:PropertyShape ;
 	sh:path <ACDCTerminal.SignalRecorder> ;
 	sh:class <SignalRecorder> ;
 	sh:name "Signal Recorder"@en ;
@@ -19,7 +19,7 @@
 	sh:targetClass <ACLineSegment> ;
 	sh:closed "true"^^xsd:boolean .
 
-<ACLineSegmentShape.LineFaults> rdf:type sh:PropertyShape ;
+_:ACLineSegmentShape.LineFaults rdf:type sh:PropertyShape ;
 	sh:path <ACLineSegment.LineFaults> ;
 	sh:class <LineFault> ;
 	sh:name "Line Faults"@en ;
@@ -27,9 +27,9 @@
 
 <ClearSimulationEventShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ClearSimulationEvent> ;
-	sh:property <ClearSimulationEventShape.eventTime> , <ClearSimulationEventShape.ClearedFaultEvent> , <ClearSimulationEventShape.SimulationEvents> , <ClearSimulationEventShape.ClearedParameterEvent> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.ParameterEvent> .
+	sh:property _:ClearSimulationEventShape.eventTime , _:ClearSimulationEventShape.ClearedFaultEvent , _:ClearSimulationEventShape.SimulationEvents , _:ClearSimulationEventShape.ClearedParameterEvent , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.ParameterEvent .
 
-<ClearSimulationEventShape.eventTime> rdf:type sh:PropertyShape ;
+_:ClearSimulationEventShape.eventTime rdf:type sh:PropertyShape ;
 	sh:path <ClearSimulationEvent.eventTime> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -37,20 +37,20 @@
 	sh:name "Event Time"@en ;
 	sh:description "Execution time of the event."^^rdf:XMLLiteral .
 
-<ClearSimulationEventShape.ClearedFaultEvent> rdf:type sh:PropertyShape ;
+_:ClearSimulationEventShape.ClearedFaultEvent rdf:type sh:PropertyShape ;
 	sh:path <ClearSimulationEvent.ClearedFaultEvent> ;
 	sh:class <Fault> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Cleared Fault Event"@en ;
 	sh:description "The fault event that is cleared by a ClearSimulationEvent."^^rdf:XMLLiteral .
-<ClearSimulationEventShape.SimulationEvents> rdf:type sh:PropertyShape ;
+_:ClearSimulationEventShape.SimulationEvents rdf:type sh:PropertyShape ;
 	sh:path <ClearSimulationEvent.SimulationEvents> ;
 	sh:class <SimulationEvents> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Simulation Events"@en ;
 	sh:description "The simulation events to which this clear simulation event belongs to."^^rdf:XMLLiteral .
-<ClearSimulationEventShape.ClearedParameterEvent> rdf:type sh:PropertyShape ;
+_:ClearSimulationEventShape.ClearedParameterEvent rdf:type sh:PropertyShape ;
 	sh:path <ClearSimulationEvent.ClearedParameterEvent> ;
 	sh:class <ParameterEvent> ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -60,14 +60,14 @@
 <DetailedModelDescriptorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <DetailedModelDescriptor> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.ParameterEvent> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.ParameterEvent .
 
 <DynamicsFunctionBlockShape> rdf:type sh:NodeShape ;
 	sh:targetClass <DynamicsFunctionBlock> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.ParameterEvent> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.ParameterEvent .
 
-<DynamicsFunctionBlockShape.SignalRecorder> rdf:type sh:PropertyShape ;
+_:DynamicsFunctionBlockShape.SignalRecorder rdf:type sh:PropertyShape ;
 	sh:path <DynamicsFunctionBlock.SignalRecorder> ;
 	sh:class <SignalRecorder> ;
 	sh:name "Signal Recorder"@en ;
@@ -77,7 +77,7 @@
 	sh:targetClass <Equipment> ;
 	sh:closed "true"^^xsd:boolean .
 
-<EquipmentShape.Faults> rdf:type sh:PropertyShape ;
+_:EquipmentShape.Faults rdf:type sh:PropertyShape ;
 	sh:path <Equipment.Faults> ;
 	sh:class <Fault> ;
 	sh:name "Faults"@en ;
@@ -85,9 +85,9 @@
 
 <EquipmentFaultShape> rdf:type sh:NodeShape ;
 	sh:targetClass <EquipmentFault> ;
-	sh:property <EquipmentFaultShape.Terminal> , <FaultShape.impedance> , <FaultShape.kind> , <FaultShape.occurredDateTime> , <FaultShape.phases> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <FaultShape.FaultCauseTypes> , <FaultShape.FaultyEquipment> , <FaultShape.ClearSimulationEvent> , <FaultShape.SimulationEvents> , <IdentifiedObjectShape.ParameterEvent> .
+	sh:property _:EquipmentFaultShape.Terminal , _:FaultShape.impedance , _:FaultShape.kind , _:FaultShape.occurredDateTime , _:FaultShape.phases , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:FaultShape.FaultCauseTypes , _:FaultShape.FaultyEquipment , _:FaultShape.ClearSimulationEvent , _:FaultShape.SimulationEvents , _:IdentifiedObjectShape.ParameterEvent .
 
-<EquipmentFaultShape.Terminal> rdf:type sh:PropertyShape ;
+_:EquipmentFaultShape.Terminal rdf:type sh:PropertyShape ;
 	sh:path <EquipmentFault.Terminal> ;
 	sh:class <Terminal> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -98,16 +98,16 @@
 <FaultShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Fault> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.ParameterEvent> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.ParameterEvent .
 
-<FaultShape.impedance> rdf:type sh:PropertyShape ;
+_:FaultShape.impedance rdf:type sh:PropertyShape ;
 	sh:path <Fault.impedance> ;
 	sh:class <FaultImpedance> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Impedance"@en ;
 	sh:description "Fault impedance."^^rdf:XMLLiteral .
-<FaultShape.kind> rdf:type sh:PropertyShape ;
+_:FaultShape.kind rdf:type sh:PropertyShape ;
 	sh:path <Fault.kind> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -115,14 +115,14 @@
 	sh:in "lineToGround" , "lineToLine" , "lineToLineToGround" , "lineOpen" ;
 	sh:name "Kind"@en ;
 	sh:description "The kind of phase fault."^^rdf:XMLLiteral .
-<FaultShape.occurredDateTime> rdf:type sh:PropertyShape ;
+_:FaultShape.occurredDateTime rdf:type sh:PropertyShape ;
 	sh:path <Fault.occurredDateTime> ;
 	sh:datatype <https://schema.org/DateTime> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Occurred Date Time"@en ;
 	sh:description "The date and time at which the fault occurred."^^rdf:XMLLiteral .
-<FaultShape.phases> rdf:type sh:PropertyShape ;
+_:FaultShape.phases rdf:type sh:PropertyShape ;
 	sh:path <Fault.phases> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -131,24 +131,24 @@
 	sh:name "Phases"@en ;
 	sh:description "The phases participating in the fault."^^rdf:XMLLiteral .
 
-<FaultShape.FaultCauseTypes> rdf:type sh:PropertyShape ;
+_:FaultShape.FaultCauseTypes rdf:type sh:PropertyShape ;
 	sh:path <Fault.FaultCauseTypes> ;
 	sh:class <FaultCauseType> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Fault Cause Types"@en ;
 	sh:description "All types of fault cause."^^rdf:XMLLiteral .
-<FaultShape.FaultyEquipment> rdf:type sh:PropertyShape ;
+_:FaultShape.FaultyEquipment rdf:type sh:PropertyShape ;
 	sh:path <Fault.FaultyEquipment> ;
 	sh:class <Equipment> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Faulty Equipment"@en ;
 	sh:description "Equipment carrying this fault."^^rdf:XMLLiteral .
-<FaultShape.ClearSimulationEvent> rdf:type sh:PropertyShape ;
+_:FaultShape.ClearSimulationEvent rdf:type sh:PropertyShape ;
 	sh:path <Fault.ClearSimulationEvent> ;
 	sh:class <ClearSimulationEvent> ;
 	sh:name "Clear Simulation Event"@en ;
 	sh:description "The event that clears this fault event."^^rdf:XMLLiteral .
-<FaultShape.SimulationEvents> rdf:type sh:PropertyShape ;
+_:FaultShape.SimulationEvents rdf:type sh:PropertyShape ;
 	sh:path <Fault.SimulationEvents> ;
 	sh:class <SimulationEvents> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -158,9 +158,9 @@
 
 <FaultCauseTypeShape> rdf:type sh:NodeShape ;
 	sh:targetClass <FaultCauseType> ;
-	sh:property <FaultCauseTypeShape.Faults> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.ParameterEvent> .
+	sh:property _:FaultCauseTypeShape.Faults , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.ParameterEvent .
 
-<FaultCauseTypeShape.Faults> rdf:type sh:PropertyShape ;
+_:FaultCauseTypeShape.Faults rdf:type sh:PropertyShape ;
 	sh:path <FaultCauseType.Faults> ;
 	sh:class <Fault> ;
 	sh:name "Faults"@en ;
@@ -168,27 +168,27 @@
 
 <FaultImpedanceShape> rdf:type sh:NodeShape ;
 	sh:targetClass <FaultImpedance> ;
-	sh:property <FaultImpedanceShape.rGround> , <FaultImpedanceShape.rLineToLine> , <FaultImpedanceShape.xGround> , <FaultImpedanceShape.xLineToLine> .
+	sh:property _:FaultImpedanceShape.rGround , _:FaultImpedanceShape.rLineToLine , _:FaultImpedanceShape.xGround , _:FaultImpedanceShape.xLineToLine .
 
-<FaultImpedanceShape.rGround> rdf:type sh:PropertyShape ;
+_:FaultImpedanceShape.rGround rdf:type sh:PropertyShape ;
 	sh:path <FaultImpedance.rGround> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "R Ground"@en ;
 	sh:description "The resistance of the fault between phases and ground."^^rdf:XMLLiteral .
-<FaultImpedanceShape.rLineToLine> rdf:type sh:PropertyShape ;
+_:FaultImpedanceShape.rLineToLine rdf:type sh:PropertyShape ;
 	sh:path <FaultImpedance.rLineToLine> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "R Line To Line"@en ;
 	sh:description "The resistance of the fault between phases."^^rdf:XMLLiteral .
-<FaultImpedanceShape.xGround> rdf:type sh:PropertyShape ;
+_:FaultImpedanceShape.xGround rdf:type sh:PropertyShape ;
 	sh:path <FaultImpedance.xGround> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "X Ground"@en ;
 	sh:description "The reactance of the fault between phases and ground."^^rdf:XMLLiteral .
-<FaultImpedanceShape.xLineToLine> rdf:type sh:PropertyShape ;
+_:FaultImpedanceShape.xLineToLine rdf:type sh:PropertyShape ;
 	sh:path <FaultImpedance.xLineToLine> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -199,27 +199,27 @@
 	sh:targetClass <IdentifiedObject> ;
 	sh:closed "true"^^xsd:boolean .
 
-<IdentifiedObjectShape.description> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.description rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.description> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Description"@en ;
 	sh:description "The description is a free human readable text describing or naming the object."^^rdf:XMLLiteral .
-<IdentifiedObjectShape.mRID> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.mRID rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.mRID> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "MRID"@en ;
 	sh:description "Master resource identifier issued by a model authority."^^rdf:XMLLiteral .
-<IdentifiedObjectShape.name> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.name rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.name> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Name"@en ;
 	sh:description "The name is any free human readable and possibly non unique text naming the object."^^rdf:XMLLiteral .
 
-<IdentifiedObjectShape.ParameterEvent> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.ParameterEvent rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.ParameterEvent> ;
 	sh:class <ParameterEvent> ;
 	sh:name "Parameter Event"@en ;
@@ -227,16 +227,16 @@
 
 <LineFaultShape> rdf:type sh:NodeShape ;
 	sh:targetClass <LineFault> ;
-	sh:property <LineFaultShape.lengthFromTerminal1> , <LineFaultShape.ACLineSegment> , <FaultShape.impedance> , <FaultShape.kind> , <FaultShape.occurredDateTime> , <FaultShape.phases> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <FaultShape.FaultCauseTypes> , <FaultShape.FaultyEquipment> , <FaultShape.ClearSimulationEvent> , <FaultShape.SimulationEvents> , <IdentifiedObjectShape.ParameterEvent> .
+	sh:property _:LineFaultShape.lengthFromTerminal1 , _:LineFaultShape.ACLineSegment , _:FaultShape.impedance , _:FaultShape.kind , _:FaultShape.occurredDateTime , _:FaultShape.phases , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:FaultShape.FaultCauseTypes , _:FaultShape.FaultyEquipment , _:FaultShape.ClearSimulationEvent , _:FaultShape.SimulationEvents , _:IdentifiedObjectShape.ParameterEvent .
 
-<LineFaultShape.lengthFromTerminal1> rdf:type sh:PropertyShape ;
+_:LineFaultShape.lengthFromTerminal1 rdf:type sh:PropertyShape ;
 	sh:path <LineFault.lengthFromTerminal1> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Length From Terminal1"@en .
 
-<LineFaultShape.ACLineSegment> rdf:type sh:PropertyShape ;
+_:LineFaultShape.ACLineSegment rdf:type sh:PropertyShape ;
 	sh:path <LineFault.ACLineSegment> ;
 	sh:class <ACLineSegment> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -246,15 +246,15 @@
 
 <ParameterEventShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ParameterEvent> ;
-	sh:property <ParameterEventShape.booleanParameterValue> , <ParameterEventShape.changeKind> , <ParameterEventShape.eventTime> , <ParameterEventShape.floatParementerValue> , <ParameterEventShape.integerParameterValue> , <ParameterEventShape.parameterIRI> , <ParameterEventShape.parameterName> , <ParameterEventShape.rampDuration> , <ParameterEventShape.ClearSimulationEvent> , <ParameterEventShape.SimulationEvents> , <ParameterEventShape.UsesParameterOf> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.ParameterEvent> .
+	sh:property _:ParameterEventShape.booleanParameterValue , _:ParameterEventShape.changeKind , _:ParameterEventShape.eventTime , _:ParameterEventShape.floatParementerValue , _:ParameterEventShape.integerParameterValue , _:ParameterEventShape.parameterIRI , _:ParameterEventShape.parameterName , _:ParameterEventShape.rampDuration , _:ParameterEventShape.ClearSimulationEvent , _:ParameterEventShape.SimulationEvents , _:ParameterEventShape.UsesParameterOf , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.ParameterEvent .
 
-<ParameterEventShape.booleanParameterValue> rdf:type sh:PropertyShape ;
+_:ParameterEventShape.booleanParameterValue rdf:type sh:PropertyShape ;
 	sh:path <ParameterEvent.booleanParameterValue> ;
 	sh:datatype xsd:boolean ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Boolean Parameter Value"@en ;
 	sh:description "Boolean parameter value."^^rdf:XMLLiteral .
-<ParameterEventShape.changeKind> rdf:type sh:PropertyShape ;
+_:ParameterEventShape.changeKind rdf:type sh:PropertyShape ;
 	sh:path <ParameterEvent.changeKind> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -262,57 +262,57 @@
 	sh:in "step" , "ramp" ;
 	sh:name "Change Kind"@en ;
 	sh:description "Defines if the change is done in one step or using ramp."^^rdf:XMLLiteral .
-<ParameterEventShape.eventTime> rdf:type sh:PropertyShape ;
+_:ParameterEventShape.eventTime rdf:type sh:PropertyShape ;
 	sh:path <ParameterEvent.eventTime> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Event Time"@en ;
 	sh:description "Execution time of the event."^^rdf:XMLLiteral .
-<ParameterEventShape.floatParementerValue> rdf:type sh:PropertyShape ;
+_:ParameterEventShape.floatParementerValue rdf:type sh:PropertyShape ;
 	sh:path <ParameterEvent.floatParementerValue> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Float Parementer Value"@en ;
 	sh:description "Floating point parameter value."^^rdf:XMLLiteral .
-<ParameterEventShape.integerParameterValue> rdf:type sh:PropertyShape ;
+_:ParameterEventShape.integerParameterValue rdf:type sh:PropertyShape ;
 	sh:path <ParameterEvent.integerParameterValue> ;
 	sh:datatype xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Integer Parameter Value"@en ;
 	sh:description "Integer parameter value."^^rdf:XMLLiteral .
-<ParameterEventShape.parameterIRI> rdf:type sh:PropertyShape ;
+_:ParameterEventShape.parameterIRI rdf:type sh:PropertyShape ;
 	sh:path <ParameterEvent.parameterIRI> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Parameter Iri"@en ;
 	sh:description "Identifies which parameter is changed during the event."^^rdf:XMLLiteral .
-<ParameterEventShape.parameterName> rdf:type sh:PropertyShape ;
+_:ParameterEventShape.parameterName rdf:type sh:PropertyShape ;
 	sh:path <ParameterEvent.parameterName> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Parameter Name"@en ;
 	sh:description "Identifies which parameter is changed during the event."^^rdf:XMLLiteral .
-<ParameterEventShape.rampDuration> rdf:type sh:PropertyShape ;
+_:ParameterEventShape.rampDuration rdf:type sh:PropertyShape ;
 	sh:path <ParameterEvent.rampDuration> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Ramp Duration"@en ;
 	sh:description "Defines the duration of the ramp in case."^^rdf:XMLLiteral .
 
-<ParameterEventShape.ClearSimulationEvent> rdf:type sh:PropertyShape ;
+_:ParameterEventShape.ClearSimulationEvent rdf:type sh:PropertyShape ;
 	sh:path <ParameterEvent.ClearSimulationEvent> ;
 	sh:class <ClearSimulationEvent> ;
 	sh:name "Clear Simulation Event"@en ;
 	sh:description "The event that clears this fault event."^^rdf:XMLLiteral .
-<ParameterEventShape.SimulationEvents> rdf:type sh:PropertyShape ;
+_:ParameterEventShape.SimulationEvents rdf:type sh:PropertyShape ;
 	sh:path <ParameterEvent.SimulationEvents> ;
 	sh:class <SimulationEvents> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Simulation Events"@en ;
 	sh:description "The simulation events to which this parameter event belongs to."^^rdf:XMLLiteral .
-<ParameterEventShape.UsesParameterOf> rdf:type sh:PropertyShape ;
+_:ParameterEventShape.UsesParameterOf rdf:type sh:PropertyShape ;
 	sh:path <ParameterEvent.UsesParameterOf> ;
 	sh:class <IdentifiedObject> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -322,16 +322,16 @@
 
 <PowerFlowSettingsShape> rdf:type sh:NodeShape ;
 	sh:targetClass <PowerFlowSettings> ;
-	sh:property <PowerFlowSettingsShape.activePowerTolerance> , <PowerFlowSettingsShape.algorithmKind> , <PowerFlowSettingsShape.flatStart> , <PowerFlowSettingsShape.impedanceThreshold> , <PowerFlowSettingsShape.interchangeControlEnabled> , <PowerFlowSettingsShape.loadVoltageDependency> , <PowerFlowSettingsShape.reactivePowerTolerance> , <PowerFlowSettingsShape.respectActivePowerLimits> , <PowerFlowSettingsShape.respectReactivePowerLimits> , <PowerFlowSettingsShape.shiftKind> , <PowerFlowSettingsShape.slackDistributionKind> , <PowerFlowSettingsShape.staticVarCompensatorControlPriority> , <PowerFlowSettingsShape.switchedShuntControlPriority> , <PowerFlowSettingsShape.transformerPhaseTapControlPriority> , <PowerFlowSettingsShape.transformerRatioTapControlPriority> , <PowerFlowSettingsShape.voltageAngleLimit> , <PowerFlowSettingsShape.voltageTolerance> , <PowerFlowSettingsShape.SimulationSettings> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.ParameterEvent> .
+	sh:property _:PowerFlowSettingsShape.activePowerTolerance , _:PowerFlowSettingsShape.algorithmKind , _:PowerFlowSettingsShape.flatStart , _:PowerFlowSettingsShape.impedanceThreshold , _:PowerFlowSettingsShape.interchangeControlEnabled , _:PowerFlowSettingsShape.loadVoltageDependency , _:PowerFlowSettingsShape.reactivePowerTolerance , _:PowerFlowSettingsShape.respectActivePowerLimits , _:PowerFlowSettingsShape.respectReactivePowerLimits , _:PowerFlowSettingsShape.shiftKind , _:PowerFlowSettingsShape.slackDistributionKind , _:PowerFlowSettingsShape.staticVarCompensatorControlPriority , _:PowerFlowSettingsShape.switchedShuntControlPriority , _:PowerFlowSettingsShape.transformerPhaseTapControlPriority , _:PowerFlowSettingsShape.transformerRatioTapControlPriority , _:PowerFlowSettingsShape.voltageAngleLimit , _:PowerFlowSettingsShape.voltageTolerance , _:PowerFlowSettingsShape.SimulationSettings , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.ParameterEvent .
 
-<PowerFlowSettingsShape.activePowerTolerance> rdf:type sh:PropertyShape ;
+_:PowerFlowSettingsShape.activePowerTolerance rdf:type sh:PropertyShape ;
 	sh:path <PowerFlowSettings.activePowerTolerance> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Active Power Tolerance"@en ;
 	sh:description "The active power tolerance for a given power flow solution."^^rdf:XMLLiteral .
-<PowerFlowSettingsShape.algorithmKind> rdf:type sh:PropertyShape ;
+_:PowerFlowSettingsShape.algorithmKind rdf:type sh:PropertyShape ;
 	sh:path <PowerFlowSettings.algorithmKind> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -339,63 +339,63 @@
 	sh:in "fullNewtonRaphson" , "fixedSlopeNewtonRaphson" , "fastDecoupled" , "gaussSeidel" , "modifiedGaussSeidel" , "dcPowerFlow" ;
 	sh:name "Algorithm Kind"@en ;
 	sh:description "It defines the power flow algorithm."^^rdf:XMLLiteral .
-<PowerFlowSettingsShape.flatStart> rdf:type sh:PropertyShape ;
+_:PowerFlowSettingsShape.flatStart rdf:type sh:PropertyShape ;
 	sh:path <PowerFlowSettings.flatStart> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Flat Start"@en ;
 	sh:description "True means that power flow used a flat start."^^rdf:XMLLiteral .
-<PowerFlowSettingsShape.impedanceThreshold> rdf:type sh:PropertyShape ;
+_:PowerFlowSettingsShape.impedanceThreshold rdf:type sh:PropertyShape ;
 	sh:path <PowerFlowSettings.impedanceThreshold> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Impedance Threshold"@en ;
 	sh:description "Zero impedance threshold used considered when calculating zero or low impendence branches."^^rdf:XMLLiteral .
-<PowerFlowSettingsShape.interchangeControlEnabled> rdf:type sh:PropertyShape ;
+_:PowerFlowSettingsShape.interchangeControlEnabled rdf:type sh:PropertyShape ;
 	sh:path <PowerFlowSettings.interchangeControlEnabled> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Interchange Control Enabled"@en ;
 	sh:description "Define if the interchange control is enabled during power flow calculation."^^rdf:XMLLiteral .
-<PowerFlowSettingsShape.loadVoltageDependency> rdf:type sh:PropertyShape ;
+_:PowerFlowSettingsShape.loadVoltageDependency rdf:type sh:PropertyShape ;
 	sh:path <PowerFlowSettings.loadVoltageDependency> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Load Voltage Dependency"@en ;
 	sh:description "Defines if voltage dependency of loads is considered."^^rdf:XMLLiteral .
-<PowerFlowSettingsShape.reactivePowerTolerance> rdf:type sh:PropertyShape ;
+_:PowerFlowSettingsShape.reactivePowerTolerance rdf:type sh:PropertyShape ;
 	sh:path <PowerFlowSettings.reactivePowerTolerance> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Reactive Power Tolerance"@en ;
 	sh:description "The reactive power tolerance for a given power flow solution."^^rdf:XMLLiteral .
-<PowerFlowSettingsShape.respectActivePowerLimits> rdf:type sh:PropertyShape ;
+_:PowerFlowSettingsShape.respectActivePowerLimits rdf:type sh:PropertyShape ;
 	sh:path <PowerFlowSettings.respectActivePowerLimits> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Respect Active Power Limits"@en ;
 	sh:description "Indicates if active power limits of the equipment are respected during power flow calculation."^^rdf:XMLLiteral .
-<PowerFlowSettingsShape.respectReactivePowerLimits> rdf:type sh:PropertyShape ;
+_:PowerFlowSettingsShape.respectReactivePowerLimits rdf:type sh:PropertyShape ;
 	sh:path <PowerFlowSettings.respectReactivePowerLimits> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Respect Reactive Power Limits"@en ;
 	sh:description "Indicates if reactive power of limits of the equipment are respected during power flow calculation."^^rdf:XMLLiteral .
-<PowerFlowSettingsShape.shiftKind> rdf:type sh:PropertyShape ;
+_:PowerFlowSettingsShape.shiftKind rdf:type sh:PropertyShape ;
 	sh:path <PowerFlowSettings.shiftKind> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:in "conformLoadShift" , "allLoadShift" , "generationShift" , "generationAndLoadShiftKey" ;
 	sh:name "Shift Kind"@en ;
 	sh:description "Defines type of scaling used to reach defined net-position."^^rdf:XMLLiteral .
-<PowerFlowSettingsShape.slackDistributionKind> rdf:type sh:PropertyShape ;
+_:PowerFlowSettingsShape.slackDistributionKind rdf:type sh:PropertyShape ;
 	sh:path <PowerFlowSettings.slackDistributionKind> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -403,49 +403,49 @@
 	sh:in "loadDistribution" , "generationDistributionParticipationFactor" , "generationDistributionActivePowerAndVoltageNodesOnly" , "singleReferenceMachine" ;
 	sh:name "Slack Distribution Kind"@en ;
 	sh:description "Defines slack distribution used in power flow calculation."^^rdf:XMLLiteral .
-<PowerFlowSettingsShape.staticVarCompensatorControlPriority> rdf:type sh:PropertyShape ;
+_:PowerFlowSettingsShape.staticVarCompensatorControlPriority rdf:type sh:PropertyShape ;
 	sh:path <PowerFlowSettings.staticVarCompensatorControlPriority> ;
 	sh:datatype xsd:integer ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Static Var Compensator Control Priority"@en ;
 	sh:description "Indicates if control is applied on static var compensators."^^rdf:XMLLiteral .
-<PowerFlowSettingsShape.switchedShuntControlPriority> rdf:type sh:PropertyShape ;
+_:PowerFlowSettingsShape.switchedShuntControlPriority rdf:type sh:PropertyShape ;
 	sh:path <PowerFlowSettings.switchedShuntControlPriority> ;
 	sh:datatype xsd:integer ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Switched Shunt Control Priority"@en ;
 	sh:description "Indicates if control is applied on switched shunts."^^rdf:XMLLiteral .
-<PowerFlowSettingsShape.transformerPhaseTapControlPriority> rdf:type sh:PropertyShape ;
+_:PowerFlowSettingsShape.transformerPhaseTapControlPriority rdf:type sh:PropertyShape ;
 	sh:path <PowerFlowSettings.transformerPhaseTapControlPriority> ;
 	sh:datatype xsd:integer ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Transformer Phase Tap Control Priority"@en ;
 	sh:description "Indicates if phase tap change control is applied on transformers."^^rdf:XMLLiteral .
-<PowerFlowSettingsShape.transformerRatioTapControlPriority> rdf:type sh:PropertyShape ;
+_:PowerFlowSettingsShape.transformerRatioTapControlPriority rdf:type sh:PropertyShape ;
 	sh:path <PowerFlowSettings.transformerRatioTapControlPriority> ;
 	sh:datatype xsd:integer ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Transformer Ratio Tap Control Priority"@en ;
 	sh:description "Indicates if ratio tap change control is applied on transformers."^^rdf:XMLLiteral .
-<PowerFlowSettingsShape.voltageAngleLimit> rdf:type sh:PropertyShape ;
+_:PowerFlowSettingsShape.voltageAngleLimit rdf:type sh:PropertyShape ;
 	sh:path <PowerFlowSettings.voltageAngleLimit> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Voltage Angle Limit"@en ;
 	sh:description "The maximum allowed voltage angle between two nodes for a given power flow solution."^^rdf:XMLLiteral .
-<PowerFlowSettingsShape.voltageTolerance> rdf:type sh:PropertyShape ;
+_:PowerFlowSettingsShape.voltageTolerance rdf:type sh:PropertyShape ;
 	sh:path <PowerFlowSettings.voltageTolerance> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Voltage Tolerance"@en .
 
-<PowerFlowSettingsShape.SimulationSettings> rdf:type sh:PropertyShape ;
+_:PowerFlowSettingsShape.SimulationSettings rdf:type sh:PropertyShape ;
 	sh:path <PowerFlowSettings.SimulationSettings> ;
 	sh:class <SimulationSettings> ;
 	sh:name "Simulation Settings"@en ;
@@ -453,9 +453,9 @@
 
 <SignalConfigurationShape> rdf:type sh:NodeShape ;
 	sh:targetClass <SignalConfiguration> ;
-	sh:property <SignalConfigurationShape.SignalRecorder> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.ParameterEvent> .
+	sh:property _:SignalConfigurationShape.SignalRecorder , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.ParameterEvent .
 
-<SignalConfigurationShape.SignalRecorder> rdf:type sh:PropertyShape ;
+_:SignalConfigurationShape.SignalRecorder rdf:type sh:PropertyShape ;
 	sh:path <SignalConfiguration.SignalRecorder> ;
 	sh:class <SignalRecorder> ;
 	sh:name "Signal Recorder"@en ;
@@ -464,9 +464,9 @@
 <SignalDescriptorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <SignalDescriptor> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.ParameterEvent> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.ParameterEvent .
 
-<SignalDescriptorShape.SignalRecorder> rdf:type sh:PropertyShape ;
+_:SignalDescriptorShape.SignalRecorder rdf:type sh:PropertyShape ;
 	sh:path <SignalDescriptor.SignalRecorder> ;
 	sh:class <SignalRecorder> ;
 	sh:name "Signal Recorder"@en ;
@@ -474,9 +474,9 @@
 
 <SignalRecorderShape> rdf:type sh:NodeShape ;
 	sh:targetClass <SignalRecorder> ;
-	sh:property <SignalRecorderShape.signalKind> , <SignalRecorderShape.RecordedSignalAt> , <SignalRecorderShape.SimulationConfiguration> , <SignalRecorderShape.RecordedSignalOf> , <SignalRecorderShape.RecordedSignal> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.ParameterEvent> .
+	sh:property _:SignalRecorderShape.signalKind , _:SignalRecorderShape.RecordedSignalAt , _:SignalRecorderShape.SimulationConfiguration , _:SignalRecorderShape.RecordedSignalOf , _:SignalRecorderShape.RecordedSignal , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.ParameterEvent .
 
-<SignalRecorderShape.signalKind> rdf:type sh:PropertyShape ;
+_:SignalRecorderShape.signalKind rdf:type sh:PropertyShape ;
 	sh:path <SignalRecorder.signalKind> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -485,25 +485,25 @@
 	sh:name "Signal Kind"@en ;
 	sh:description "Indicates the kind of the signal."^^rdf:XMLLiteral .
 
-<SignalRecorderShape.RecordedSignalAt> rdf:type sh:PropertyShape ;
+_:SignalRecorderShape.RecordedSignalAt rdf:type sh:PropertyShape ;
 	sh:path <SignalRecorder.RecordedSignalAt> ;
 	sh:class <ACDCTerminal> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Recorded Signal At"@en ;
 	sh:description "The terminal at which the signal is recorded."^^rdf:XMLLiteral .
-<SignalRecorderShape.SimulationConfiguration> rdf:type sh:PropertyShape ;
+_:SignalRecorderShape.SimulationConfiguration rdf:type sh:PropertyShape ;
 	sh:path <SignalRecorder.SimulationConfiguration> ;
 	sh:class <SignalConfiguration> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Simulation Configuration"@en ;
 	sh:description "The simulation configuration set for which this signal recorder is recording."^^rdf:XMLLiteral .
-<SignalRecorderShape.RecordedSignalOf> rdf:type sh:PropertyShape ;
+_:SignalRecorderShape.RecordedSignalOf rdf:type sh:PropertyShape ;
 	sh:path <SignalRecorder.RecordedSignalOf> ;
 	sh:class <DynamicsFunctionBlock> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Recorded Signal Of"@en ;
 	sh:description "The dynamics function block to which the singal belongs to."^^rdf:XMLLiteral .
-<SignalRecorderShape.RecordedSignal> rdf:type sh:PropertyShape ;
+_:SignalRecorderShape.RecordedSignal rdf:type sh:PropertyShape ;
 	sh:path <SignalRecorder.RecordedSignal> ;
 	sh:class <SignalDescriptor> ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -512,19 +512,19 @@
 
 <SimulationEventsShape> rdf:type sh:NodeShape ;
 	sh:targetClass <SimulationEvents> ;
-	sh:property <SimulationEventsShape.FaultEvent> , <SimulationEventsShape.ClearSimulationEvent> , <SimulationEventsShape.ParameterEvent> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.ParameterEvent> .
+	sh:property _:SimulationEventsShape.FaultEvent , _:SimulationEventsShape.ClearSimulationEvent , _:SimulationEventsShape.ParameterEvent , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.ParameterEvent .
 
-<SimulationEventsShape.FaultEvent> rdf:type sh:PropertyShape ;
+_:SimulationEventsShape.FaultEvent rdf:type sh:PropertyShape ;
 	sh:path <SimulationEvents.FaultEvent> ;
 	sh:class <Fault> ;
 	sh:name "Fault Event"@en ;
 	sh:description "The simulation fault event that is part of this simulation."^^rdf:XMLLiteral .
-<SimulationEventsShape.ClearSimulationEvent> rdf:type sh:PropertyShape ;
+_:SimulationEventsShape.ClearSimulationEvent rdf:type sh:PropertyShape ;
 	sh:path <SimulationEvents.ClearSimulationEvent> ;
 	sh:class <ClearSimulationEvent> ;
 	sh:name "Clear Simulation Event"@en ;
 	sh:description "The clear simulation event that is part of this simulation."^^rdf:XMLLiteral .
-<SimulationEventsShape.ParameterEvent> rdf:type sh:PropertyShape ;
+_:SimulationEventsShape.ParameterEvent rdf:type sh:PropertyShape ;
 	sh:path <SimulationEvents.ParameterEvent> ;
 	sh:class <ParameterEvent> ;
 	sh:name "Parameter Event"@en ;
@@ -532,42 +532,42 @@
 
 <SimulationSettingsShape> rdf:type sh:NodeShape ;
 	sh:targetClass <SimulationSettings> ;
-	sh:property <SimulationSettingsShape.duration> , <SimulationSettingsShape.integrationStepSize> , <SimulationSettingsShape.isIntegrationStepSizeVariable> , <SimulationSettingsShape.maximumIntegrationStepSize> , <SimulationSettingsShape.minimumIntegrationStepSize> , <SimulationSettingsShape.simulationResultsRecordedEvery> , <SimulationSettingsShape.PowerFlowSettings> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.ParameterEvent> .
+	sh:property _:SimulationSettingsShape.duration , _:SimulationSettingsShape.integrationStepSize , _:SimulationSettingsShape.isIntegrationStepSizeVariable , _:SimulationSettingsShape.maximumIntegrationStepSize , _:SimulationSettingsShape.minimumIntegrationStepSize , _:SimulationSettingsShape.simulationResultsRecordedEvery , _:SimulationSettingsShape.PowerFlowSettings , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.ParameterEvent .
 
-<SimulationSettingsShape.duration> rdf:type sh:PropertyShape ;
+_:SimulationSettingsShape.duration rdf:type sh:PropertyShape ;
 	sh:path <SimulationSettings.duration> ;
 	sh:datatype xsd:duration ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Duration"@en ;
 	sh:description "Complete simulation duration relative to the start of the simulation."^^rdf:XMLLiteral .
-<SimulationSettingsShape.integrationStepSize> rdf:type sh:PropertyShape ;
+_:SimulationSettingsShape.integrationStepSize rdf:type sh:PropertyShape ;
 	sh:path <SimulationSettings.integrationStepSize> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Integration Step Size"@en ;
 	sh:description "Indicates the integration step size."^^rdf:XMLLiteral .
-<SimulationSettingsShape.isIntegrationStepSizeVariable> rdf:type sh:PropertyShape ;
+_:SimulationSettingsShape.isIntegrationStepSizeVariable rdf:type sh:PropertyShape ;
 	sh:path <SimulationSettings.isIntegrationStepSizeVariable> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Is Integration Step Size Variable"@en ;
 	sh:description "Indicates if the integration step size is variable or fixed."^^rdf:XMLLiteral .
-<SimulationSettingsShape.maximumIntegrationStepSize> rdf:type sh:PropertyShape ;
+_:SimulationSettingsShape.maximumIntegrationStepSize rdf:type sh:PropertyShape ;
 	sh:path <SimulationSettings.maximumIntegrationStepSize> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Maximum Integration Step Size"@en ;
 	sh:description "Maximum integration step size."^^rdf:XMLLiteral .
-<SimulationSettingsShape.minimumIntegrationStepSize> rdf:type sh:PropertyShape ;
+_:SimulationSettingsShape.minimumIntegrationStepSize rdf:type sh:PropertyShape ;
 	sh:path <SimulationSettings.minimumIntegrationStepSize> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Minimum Integration Step Size"@en ;
 	sh:description "Minimum integration step size."^^rdf:XMLLiteral .
-<SimulationSettingsShape.simulationResultsRecordedEvery> rdf:type sh:PropertyShape ;
+_:SimulationSettingsShape.simulationResultsRecordedEvery rdf:type sh:PropertyShape ;
 	sh:path <SimulationSettings.simulationResultsRecordedEvery> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -575,7 +575,7 @@
 	sh:name "Simulation Results Recorded Every"@en ;
 	sh:description "Indicates the periodicity of recording of simulation results."^^rdf:XMLLiteral .
 
-<SimulationSettingsShape.PowerFlowSettings> rdf:type sh:PropertyShape ;
+_:SimulationSettingsShape.PowerFlowSettings rdf:type sh:PropertyShape ;
 	sh:path <SimulationSettings.PowerFlowSettings> ;
 	sh:class <PowerFlowSettings> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -586,9 +586,9 @@
 <TerminalShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Terminal> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <ACDCTerminalShape.SignalRecorder> , <IdentifiedObjectShape.ParameterEvent> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:ACDCTerminalShape.SignalRecorder , _:IdentifiedObjectShape.ParameterEvent .
 
-<TerminalShape.EquipmentFaults> rdf:type sh:PropertyShape ;
+_:TerminalShape.EquipmentFaults rdf:type sh:PropertyShape ;
 	sh:path <Terminal.EquipmentFaults> ;
 	sh:class <EquipmentFault> ;
 	sh:name "Equipment Faults"@en ;

@@ -7,41 +7,41 @@
 <ACDCTerminalShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ACDCTerminal> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.mRID> .
+	sh:property _:IdentifiedObjectShape.mRID .
 
 <ACLineSegmentShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ACLineSegment> ;
-	sh:property <ACLineSegmentShape.b0ch> , <ACLineSegmentShape.g0ch> , <ACLineSegmentShape.r0> , <ACLineSegmentShape.shortCircuitEndTemperature> , <ACLineSegmentShape.x0> , <IdentifiedObjectShape.mRID> .
+	sh:property _:ACLineSegmentShape.b0ch , _:ACLineSegmentShape.g0ch , _:ACLineSegmentShape.r0 , _:ACLineSegmentShape.shortCircuitEndTemperature , _:ACLineSegmentShape.x0 , _:IdentifiedObjectShape.mRID .
 
-<ACLineSegmentShape.b0ch> rdf:type sh:PropertyShape ;
+_:ACLineSegmentShape.b0ch rdf:type sh:PropertyShape ;
 	sh:path <ACLineSegment.b0ch> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "B0ch"@en ;
 	sh:description "Zero sequence shunt (charging) susceptance, uniformly distributed, of the entire line section."^^rdf:XMLLiteral .
-<ACLineSegmentShape.g0ch> rdf:type sh:PropertyShape ;
+_:ACLineSegmentShape.g0ch rdf:type sh:PropertyShape ;
 	sh:path <ACLineSegment.g0ch> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "G0ch"@en ;
 	sh:description "Zero sequence shunt (charging) conductance, uniformly distributed, of the entire line section."^^rdf:XMLLiteral .
-<ACLineSegmentShape.r0> rdf:type sh:PropertyShape ;
+_:ACLineSegmentShape.r0 rdf:type sh:PropertyShape ;
 	sh:path <ACLineSegment.r0> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "R0"@en ;
 	sh:description "Zero sequence series resistance of the entire line section."^^rdf:XMLLiteral .
-<ACLineSegmentShape.shortCircuitEndTemperature> rdf:type sh:PropertyShape ;
+_:ACLineSegmentShape.shortCircuitEndTemperature rdf:type sh:PropertyShape ;
 	sh:path <ACLineSegment.shortCircuitEndTemperature> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Short Circuit End Temperature"@en ;
 	sh:description "Maximum permitted temperature at the end of SC for the calculation of minimum short-circuit currents."^^rdf:XMLLiteral .
-<ACLineSegmentShape.x0> rdf:type sh:PropertyShape ;
+_:ACLineSegmentShape.x0 rdf:type sh:PropertyShape ;
 	sh:path <ACLineSegment.x0> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -51,51 +51,51 @@
 
 <AsynchronousMachineShape> rdf:type sh:NodeShape ;
 	sh:targetClass <AsynchronousMachine> ;
-	sh:property <AsynchronousMachineShape.converterFedDrive> , <AsynchronousMachineShape.efficiency> , <AsynchronousMachineShape.iaIrRatio> , <AsynchronousMachineShape.polePairNumber> , <AsynchronousMachineShape.ratedMechanicalPower> , <AsynchronousMachineShape.reversible> , <AsynchronousMachineShape.rxLockedRotorRatio> , <IdentifiedObjectShape.mRID> .
+	sh:property _:AsynchronousMachineShape.converterFedDrive , _:AsynchronousMachineShape.efficiency , _:AsynchronousMachineShape.iaIrRatio , _:AsynchronousMachineShape.polePairNumber , _:AsynchronousMachineShape.ratedMechanicalPower , _:AsynchronousMachineShape.reversible , _:AsynchronousMachineShape.rxLockedRotorRatio , _:IdentifiedObjectShape.mRID .
 
-<AsynchronousMachineShape.converterFedDrive> rdf:type sh:PropertyShape ;
+_:AsynchronousMachineShape.converterFedDrive rdf:type sh:PropertyShape ;
 	sh:path <AsynchronousMachine.converterFedDrive> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Converter Fed Drive"@en ;
 	sh:description "Indicates whether the machine is a converter fed drive."^^rdf:XMLLiteral .
-<AsynchronousMachineShape.efficiency> rdf:type sh:PropertyShape ;
+_:AsynchronousMachineShape.efficiency rdf:type sh:PropertyShape ;
 	sh:path <AsynchronousMachine.efficiency> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Efficiency"@en ;
 	sh:description "Efficiency of the asynchronous machine at nominal operation as a percentage."^^rdf:XMLLiteral .
-<AsynchronousMachineShape.iaIrRatio> rdf:type sh:PropertyShape ;
+_:AsynchronousMachineShape.iaIrRatio rdf:type sh:PropertyShape ;
 	sh:path <AsynchronousMachine.iaIrRatio> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Ia Ir Ratio"@en ;
 	sh:description "Ratio of locked-rotor current to the rated current of the motor (Ia/Ir)."^^rdf:XMLLiteral .
-<AsynchronousMachineShape.polePairNumber> rdf:type sh:PropertyShape ;
+_:AsynchronousMachineShape.polePairNumber rdf:type sh:PropertyShape ;
 	sh:path <AsynchronousMachine.polePairNumber> ;
 	sh:datatype xsd:integer ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Pole Pair Number"@en ;
 	sh:description "Number of pole pairs of stator."^^rdf:XMLLiteral .
-<AsynchronousMachineShape.ratedMechanicalPower> rdf:type sh:PropertyShape ;
+_:AsynchronousMachineShape.ratedMechanicalPower rdf:type sh:PropertyShape ;
 	sh:path <AsynchronousMachine.ratedMechanicalPower> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Rated Mechanical Power"@en ;
 	sh:description "Rated mechanical power (Pr in IEC 60909-0)."^^rdf:XMLLiteral .
-<AsynchronousMachineShape.reversible> rdf:type sh:PropertyShape ;
+_:AsynchronousMachineShape.reversible rdf:type sh:PropertyShape ;
 	sh:path <AsynchronousMachine.reversible> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Reversible"@en ;
 	sh:description "Indicates for converter drive motors if the power can be reversible."^^rdf:XMLLiteral .
-<AsynchronousMachineShape.rxLockedRotorRatio> rdf:type sh:PropertyShape ;
+_:AsynchronousMachineShape.rxLockedRotorRatio rdf:type sh:PropertyShape ;
 	sh:path <AsynchronousMachine.rxLockedRotorRatio> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -104,9 +104,9 @@
 
 <BusbarSectionShape> rdf:type sh:NodeShape ;
 	sh:targetClass <BusbarSection> ;
-	sh:property <BusbarSectionShape.ipMax> , <IdentifiedObjectShape.mRID> .
+	sh:property _:BusbarSectionShape.ipMax , _:IdentifiedObjectShape.mRID .
 
-<BusbarSectionShape.ipMax> rdf:type sh:PropertyShape ;
+_:BusbarSectionShape.ipMax rdf:type sh:PropertyShape ;
 	sh:path <BusbarSection.ipMax> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -116,24 +116,24 @@
 <ConductingEquipmentShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ConductingEquipment> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.mRID> .
+	sh:property _:IdentifiedObjectShape.mRID .
 
 <ConductorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Conductor> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.mRID> .
+	sh:property _:IdentifiedObjectShape.mRID .
 
 <ConnectorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Connector> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.mRID> .
+	sh:property _:IdentifiedObjectShape.mRID .
 
 <EarthFaultCompensatorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <EarthFaultCompensator> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.mRID> .
+	sh:property _:IdentifiedObjectShape.mRID .
 
-<EarthFaultCompensatorShape.r> rdf:type sh:PropertyShape ;
+_:EarthFaultCompensatorShape.r rdf:type sh:PropertyShape ;
 	sh:path <EarthFaultCompensator.r> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -143,43 +143,43 @@
 <EnergyConnectionShape> rdf:type sh:NodeShape ;
 	sh:targetClass <EnergyConnection> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.mRID> .
+	sh:property _:IdentifiedObjectShape.mRID .
 
 <EnergySourceShape> rdf:type sh:NodeShape ;
 	sh:targetClass <EnergySource> ;
-	sh:property <EnergySourceShape.r> , <EnergySourceShape.r0> , <EnergySourceShape.rn> , <EnergySourceShape.x> , <EnergySourceShape.x0> , <EnergySourceShape.xn> , <IdentifiedObjectShape.mRID> .
+	sh:property _:EnergySourceShape.r , _:EnergySourceShape.r0 , _:EnergySourceShape.rn , _:EnergySourceShape.x , _:EnergySourceShape.x0 , _:EnergySourceShape.xn , _:IdentifiedObjectShape.mRID .
 
-<EnergySourceShape.r> rdf:type sh:PropertyShape ;
+_:EnergySourceShape.r rdf:type sh:PropertyShape ;
 	sh:path <EnergySource.r> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "R"@en ;
 	sh:description "Positive sequence Thevenin resistance."^^rdf:XMLLiteral .
-<EnergySourceShape.r0> rdf:type sh:PropertyShape ;
+_:EnergySourceShape.r0 rdf:type sh:PropertyShape ;
 	sh:path <EnergySource.r0> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "R0"@en ;
 	sh:description "Zero sequence Thevenin resistance."^^rdf:XMLLiteral .
-<EnergySourceShape.rn> rdf:type sh:PropertyShape ;
+_:EnergySourceShape.rn rdf:type sh:PropertyShape ;
 	sh:path <EnergySource.rn> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Rn"@en ;
 	sh:description "Negative sequence Thevenin resistance."^^rdf:XMLLiteral .
-<EnergySourceShape.x> rdf:type sh:PropertyShape ;
+_:EnergySourceShape.x rdf:type sh:PropertyShape ;
 	sh:path <EnergySource.x> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "X"@en ;
 	sh:description "Positive sequence Thevenin reactance."^^rdf:XMLLiteral .
-<EnergySourceShape.x0> rdf:type sh:PropertyShape ;
+_:EnergySourceShape.x0 rdf:type sh:PropertyShape ;
 	sh:path <EnergySource.x0> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "X0"@en ;
 	sh:description "Zero sequence Thevenin reactance."^^rdf:XMLLiteral .
-<EnergySourceShape.xn> rdf:type sh:PropertyShape ;
+_:EnergySourceShape.xn rdf:type sh:PropertyShape ;
 	sh:path <EnergySource.xn> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -189,90 +189,90 @@
 <EquipmentShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Equipment> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.mRID> .
+	sh:property _:IdentifiedObjectShape.mRID .
 
 <EquivalentBranchShape> rdf:type sh:NodeShape ;
 	sh:targetClass <EquivalentBranch> ;
-	sh:property <EquivalentBranchShape.negativeR12> , <EquivalentBranchShape.negativeR21> , <EquivalentBranchShape.negativeX12> , <EquivalentBranchShape.negativeX21> , <EquivalentBranchShape.positiveR12> , <EquivalentBranchShape.positiveR21> , <EquivalentBranchShape.positiveX12> , <EquivalentBranchShape.positiveX21> , <EquivalentBranchShape.zeroR12> , <EquivalentBranchShape.zeroR21> , <EquivalentBranchShape.zeroX12> , <EquivalentBranchShape.zeroX21> , <IdentifiedObjectShape.mRID> .
+	sh:property _:EquivalentBranchShape.negativeR12 , _:EquivalentBranchShape.negativeR21 , _:EquivalentBranchShape.negativeX12 , _:EquivalentBranchShape.negativeX21 , _:EquivalentBranchShape.positiveR12 , _:EquivalentBranchShape.positiveR21 , _:EquivalentBranchShape.positiveX12 , _:EquivalentBranchShape.positiveX21 , _:EquivalentBranchShape.zeroR12 , _:EquivalentBranchShape.zeroR21 , _:EquivalentBranchShape.zeroX12 , _:EquivalentBranchShape.zeroX21 , _:IdentifiedObjectShape.mRID .
 
-<EquivalentBranchShape.negativeR12> rdf:type sh:PropertyShape ;
+_:EquivalentBranchShape.negativeR12 rdf:type sh:PropertyShape ;
 	sh:path <EquivalentBranch.negativeR12> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Negative R12"@en ;
 	sh:description "Negative sequence series resistance from terminal sequence  1 to terminal sequence 2."^^rdf:XMLLiteral .
-<EquivalentBranchShape.negativeR21> rdf:type sh:PropertyShape ;
+_:EquivalentBranchShape.negativeR21 rdf:type sh:PropertyShape ;
 	sh:path <EquivalentBranch.negativeR21> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Negative R21"@en ;
 	sh:description "Negative sequence series resistance from terminal sequence 2 to terminal sequence 1."^^rdf:XMLLiteral .
-<EquivalentBranchShape.negativeX12> rdf:type sh:PropertyShape ;
+_:EquivalentBranchShape.negativeX12 rdf:type sh:PropertyShape ;
 	sh:path <EquivalentBranch.negativeX12> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Negative X12"@en ;
 	sh:description "Negative sequence series reactance from terminal sequence  1 to terminal sequence 2."^^rdf:XMLLiteral .
-<EquivalentBranchShape.negativeX21> rdf:type sh:PropertyShape ;
+_:EquivalentBranchShape.negativeX21 rdf:type sh:PropertyShape ;
 	sh:path <EquivalentBranch.negativeX21> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Negative X21"@en ;
 	sh:description "Negative sequence series reactance from terminal sequence 2 to terminal sequence 1."^^rdf:XMLLiteral .
-<EquivalentBranchShape.positiveR12> rdf:type sh:PropertyShape ;
+_:EquivalentBranchShape.positiveR12 rdf:type sh:PropertyShape ;
 	sh:path <EquivalentBranch.positiveR12> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Positive R12"@en ;
 	sh:description "Positive sequence series resistance from terminal sequence  1 to terminal sequence 2 ."^^rdf:XMLLiteral .
-<EquivalentBranchShape.positiveR21> rdf:type sh:PropertyShape ;
+_:EquivalentBranchShape.positiveR21 rdf:type sh:PropertyShape ;
 	sh:path <EquivalentBranch.positiveR21> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Positive R21"@en ;
 	sh:description "Positive sequence series resistance from terminal sequence 2 to terminal sequence 1."^^rdf:XMLLiteral .
-<EquivalentBranchShape.positiveX12> rdf:type sh:PropertyShape ;
+_:EquivalentBranchShape.positiveX12 rdf:type sh:PropertyShape ;
 	sh:path <EquivalentBranch.positiveX12> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Positive X12"@en ;
 	sh:description "Positive sequence series reactance from terminal sequence  1 to terminal sequence 2."^^rdf:XMLLiteral .
-<EquivalentBranchShape.positiveX21> rdf:type sh:PropertyShape ;
+_:EquivalentBranchShape.positiveX21 rdf:type sh:PropertyShape ;
 	sh:path <EquivalentBranch.positiveX21> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Positive X21"@en ;
 	sh:description "Positive sequence series reactance from terminal sequence 2 to terminal sequence 1."^^rdf:XMLLiteral .
-<EquivalentBranchShape.zeroR12> rdf:type sh:PropertyShape ;
+_:EquivalentBranchShape.zeroR12 rdf:type sh:PropertyShape ;
 	sh:path <EquivalentBranch.zeroR12> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Zero R12"@en ;
 	sh:description "Zero sequence series resistance from terminal sequence  1 to terminal sequence 2."^^rdf:XMLLiteral .
-<EquivalentBranchShape.zeroR21> rdf:type sh:PropertyShape ;
+_:EquivalentBranchShape.zeroR21 rdf:type sh:PropertyShape ;
 	sh:path <EquivalentBranch.zeroR21> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Zero R21"@en ;
 	sh:description "Zero sequence series resistance from terminal sequence  2 to terminal sequence 1."^^rdf:XMLLiteral .
-<EquivalentBranchShape.zeroX12> rdf:type sh:PropertyShape ;
+_:EquivalentBranchShape.zeroX12 rdf:type sh:PropertyShape ;
 	sh:path <EquivalentBranch.zeroX12> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Zero X12"@en ;
 	sh:description "Zero sequence series reactance from terminal sequence  1 to terminal sequence 2."^^rdf:XMLLiteral .
-<EquivalentBranchShape.zeroX21> rdf:type sh:PropertyShape ;
+_:EquivalentBranchShape.zeroX21 rdf:type sh:PropertyShape ;
 	sh:path <EquivalentBranch.zeroX21> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -283,48 +283,48 @@
 <EquivalentEquipmentShape> rdf:type sh:NodeShape ;
 	sh:targetClass <EquivalentEquipment> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.mRID> .
+	sh:property _:IdentifiedObjectShape.mRID .
 
 <EquivalentInjectionShape> rdf:type sh:NodeShape ;
 	sh:targetClass <EquivalentInjection> ;
-	sh:property <EquivalentInjectionShape.r> , <EquivalentInjectionShape.r0> , <EquivalentInjectionShape.r2> , <EquivalentInjectionShape.x> , <EquivalentInjectionShape.x0> , <EquivalentInjectionShape.x2> , <IdentifiedObjectShape.mRID> .
+	sh:property _:EquivalentInjectionShape.r , _:EquivalentInjectionShape.r0 , _:EquivalentInjectionShape.r2 , _:EquivalentInjectionShape.x , _:EquivalentInjectionShape.x0 , _:EquivalentInjectionShape.x2 , _:IdentifiedObjectShape.mRID .
 
-<EquivalentInjectionShape.r> rdf:type sh:PropertyShape ;
+_:EquivalentInjectionShape.r rdf:type sh:PropertyShape ;
 	sh:path <EquivalentInjection.r> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "R"@en ;
 	sh:description "Positive sequence resistance."^^rdf:XMLLiteral .
-<EquivalentInjectionShape.r0> rdf:type sh:PropertyShape ;
+_:EquivalentInjectionShape.r0 rdf:type sh:PropertyShape ;
 	sh:path <EquivalentInjection.r0> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "R0"@en ;
 	sh:description "Zero sequence resistance."^^rdf:XMLLiteral .
-<EquivalentInjectionShape.r2> rdf:type sh:PropertyShape ;
+_:EquivalentInjectionShape.r2 rdf:type sh:PropertyShape ;
 	sh:path <EquivalentInjection.r2> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "R2"@en ;
 	sh:description "Negative sequence resistance."^^rdf:XMLLiteral .
-<EquivalentInjectionShape.x> rdf:type sh:PropertyShape ;
+_:EquivalentInjectionShape.x rdf:type sh:PropertyShape ;
 	sh:path <EquivalentInjection.x> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "X"@en ;
 	sh:description "Positive sequence reactance."^^rdf:XMLLiteral .
-<EquivalentInjectionShape.x0> rdf:type sh:PropertyShape ;
+_:EquivalentInjectionShape.x0 rdf:type sh:PropertyShape ;
 	sh:path <EquivalentInjection.x0> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "X0"@en ;
 	sh:description "Zero sequence reactance."^^rdf:XMLLiteral .
-<EquivalentInjectionShape.x2> rdf:type sh:PropertyShape ;
+_:EquivalentInjectionShape.x2 rdf:type sh:PropertyShape ;
 	sh:path <EquivalentInjection.x2> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -334,71 +334,71 @@
 
 <ExternalNetworkInjectionShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ExternalNetworkInjection> ;
-	sh:property <ExternalNetworkInjectionShape.ikSecond> , <ExternalNetworkInjectionShape.maxInitialSymShCCurrent> , <ExternalNetworkInjectionShape.maxR0ToX0Ratio> , <ExternalNetworkInjectionShape.maxR1ToX1Ratio> , <ExternalNetworkInjectionShape.maxZ0ToZ1Ratio> , <ExternalNetworkInjectionShape.minInitialSymShCCurrent> , <ExternalNetworkInjectionShape.minR0ToX0Ratio> , <ExternalNetworkInjectionShape.minR1ToX1Ratio> , <ExternalNetworkInjectionShape.minZ0ToZ1Ratio> , <ExternalNetworkInjectionShape.voltageFactor> , <IdentifiedObjectShape.mRID> .
+	sh:property _:ExternalNetworkInjectionShape.ikSecond , _:ExternalNetworkInjectionShape.maxInitialSymShCCurrent , _:ExternalNetworkInjectionShape.maxR0ToX0Ratio , _:ExternalNetworkInjectionShape.maxR1ToX1Ratio , _:ExternalNetworkInjectionShape.maxZ0ToZ1Ratio , _:ExternalNetworkInjectionShape.minInitialSymShCCurrent , _:ExternalNetworkInjectionShape.minR0ToX0Ratio , _:ExternalNetworkInjectionShape.minR1ToX1Ratio , _:ExternalNetworkInjectionShape.minZ0ToZ1Ratio , _:ExternalNetworkInjectionShape.voltageFactor , _:IdentifiedObjectShape.mRID .
 
-<ExternalNetworkInjectionShape.ikSecond> rdf:type sh:PropertyShape ;
+_:ExternalNetworkInjectionShape.ikSecond rdf:type sh:PropertyShape ;
 	sh:path <ExternalNetworkInjection.ikSecond> ;
 	sh:datatype xsd:boolean ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Ik Second"@en ;
 	sh:description "Indicates whether initial symmetrical short-circuit current and power have been calculated according to IEC (Ik\")."^^rdf:XMLLiteral .
-<ExternalNetworkInjectionShape.maxInitialSymShCCurrent> rdf:type sh:PropertyShape ;
+_:ExternalNetworkInjectionShape.maxInitialSymShCCurrent rdf:type sh:PropertyShape ;
 	sh:path <ExternalNetworkInjection.maxInitialSymShCCurrent> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Max Initial Sym Sh C Current"@en ;
 	sh:description "  Maximum initial symmetrical short-circuit currents (Ik\" max) in A (Ik\" = Sk\"/(SQRT(3) Un))."^^rdf:XMLLiteral .
-<ExternalNetworkInjectionShape.maxR0ToX0Ratio> rdf:type sh:PropertyShape ;
+_:ExternalNetworkInjectionShape.maxR0ToX0Ratio rdf:type sh:PropertyShape ;
 	sh:path <ExternalNetworkInjection.maxR0ToX0Ratio> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Max R0 To X0 Ratio"@en ;
 	sh:description "Maximum ratio of zero sequence resistance of Network Feeder to its zero sequence reactance (R(0)/X(0) max)."^^rdf:XMLLiteral .
-<ExternalNetworkInjectionShape.maxR1ToX1Ratio> rdf:type sh:PropertyShape ;
+_:ExternalNetworkInjectionShape.maxR1ToX1Ratio rdf:type sh:PropertyShape ;
 	sh:path <ExternalNetworkInjection.maxR1ToX1Ratio> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Max R1 To X1 Ratio"@en ;
 	sh:description "Maximum ratio of positive sequence resistance of Network Feeder to its positive sequence reactance (R(1)/X(1) max)."^^rdf:XMLLiteral .
-<ExternalNetworkInjectionShape.maxZ0ToZ1Ratio> rdf:type sh:PropertyShape ;
+_:ExternalNetworkInjectionShape.maxZ0ToZ1Ratio rdf:type sh:PropertyShape ;
 	sh:path <ExternalNetworkInjection.maxZ0ToZ1Ratio> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Max Z0 To Z1 Ratio"@en ;
 	sh:description "Maximum ratio of zero sequence impedance to its positive sequence impedance (Z(0)/Z(1) max)."^^rdf:XMLLiteral .
-<ExternalNetworkInjectionShape.minInitialSymShCCurrent> rdf:type sh:PropertyShape ;
+_:ExternalNetworkInjectionShape.minInitialSymShCCurrent rdf:type sh:PropertyShape ;
 	sh:path <ExternalNetworkInjection.minInitialSymShCCurrent> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Min Initial Sym Sh C Current"@en ;
 	sh:description "Minimum initial symmetrical short-circuit currents (Ik\" min) in A (Ik\" = Sk\"/(SQRT(3) Un))."^^rdf:XMLLiteral .
-<ExternalNetworkInjectionShape.minR0ToX0Ratio> rdf:type sh:PropertyShape ;
+_:ExternalNetworkInjectionShape.minR0ToX0Ratio rdf:type sh:PropertyShape ;
 	sh:path <ExternalNetworkInjection.minR0ToX0Ratio> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Min R0 To X0 Ratio"@en ;
 	sh:description "Indicates whether initial symmetrical short-circuit current and power have been calculated according to IEC (Ik\")."^^rdf:XMLLiteral .
-<ExternalNetworkInjectionShape.minR1ToX1Ratio> rdf:type sh:PropertyShape ;
+_:ExternalNetworkInjectionShape.minR1ToX1Ratio rdf:type sh:PropertyShape ;
 	sh:path <ExternalNetworkInjection.minR1ToX1Ratio> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Min R1 To X1 Ratio"@en ;
 	sh:description "Minimum ratio of positive sequence resistance of Network Feeder to its positive sequence reactance (R(1)/X(1) min)."^^rdf:XMLLiteral .
-<ExternalNetworkInjectionShape.minZ0ToZ1Ratio> rdf:type sh:PropertyShape ;
+_:ExternalNetworkInjectionShape.minZ0ToZ1Ratio rdf:type sh:PropertyShape ;
 	sh:path <ExternalNetworkInjection.minZ0ToZ1Ratio> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Min Z0 To Z1 Ratio"@en ;
 	sh:description "Minimum ratio of zero sequence impedance to its positive sequence impedance (Z(0)/Z(1) min)."^^rdf:XMLLiteral .
-<ExternalNetworkInjectionShape.voltageFactor> rdf:type sh:PropertyShape ;
+_:ExternalNetworkInjectionShape.voltageFactor rdf:type sh:PropertyShape ;
 	sh:path <ExternalNetworkInjection.voltageFactor> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -407,9 +407,9 @@
 
 <GroundingImpedanceShape> rdf:type sh:NodeShape ;
 	sh:targetClass <GroundingImpedance> ;
-	sh:property <GroundingImpedanceShape.x> , <EarthFaultCompensatorShape.r> , <IdentifiedObjectShape.mRID> .
+	sh:property _:GroundingImpedanceShape.x , _:EarthFaultCompensatorShape.r , _:IdentifiedObjectShape.mRID .
 
-<GroundingImpedanceShape.x> rdf:type sh:PropertyShape ;
+_:GroundingImpedanceShape.x rdf:type sh:PropertyShape ;
 	sh:path <GroundingImpedance.x> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -421,7 +421,7 @@
 	sh:targetClass <IdentifiedObject> ;
 	sh:closed "true"^^xsd:boolean .
 
-<IdentifiedObjectShape.mRID> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.mRID rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.mRID> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -431,16 +431,16 @@
 
 <LinearShuntCompensatorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <LinearShuntCompensator> ;
-	sh:property <LinearShuntCompensatorShape.b0PerSection> , <LinearShuntCompensatorShape.g0PerSection> , <IdentifiedObjectShape.mRID> .
+	sh:property _:LinearShuntCompensatorShape.b0PerSection , _:LinearShuntCompensatorShape.g0PerSection , _:IdentifiedObjectShape.mRID .
 
-<LinearShuntCompensatorShape.b0PerSection> rdf:type sh:PropertyShape ;
+_:LinearShuntCompensatorShape.b0PerSection rdf:type sh:PropertyShape ;
 	sh:path <LinearShuntCompensator.b0PerSection> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "B0 Per Section"@en ;
 	sh:description "Zero sequence shunt (charging) susceptance per section."^^rdf:XMLLiteral .
-<LinearShuntCompensatorShape.g0PerSection> rdf:type sh:PropertyShape ;
+_:LinearShuntCompensatorShape.g0PerSection rdf:type sh:PropertyShape ;
 	sh:path <LinearShuntCompensator.g0PerSection> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -450,58 +450,58 @@
 
 <MutualCouplingShape> rdf:type sh:NodeShape ;
 	sh:targetClass <MutualCoupling> ;
-	sh:property <MutualCouplingShape.b0ch> , <MutualCouplingShape.distance11> , <MutualCouplingShape.distance12> , <MutualCouplingShape.distance21> , <MutualCouplingShape.distance22> , <MutualCouplingShape.g0ch> , <MutualCouplingShape.r0> , <MutualCouplingShape.x0> , <MutualCouplingShape.First_Terminal> , <MutualCouplingShape.Second_Terminal> , <IdentifiedObjectShape.mRID> .
+	sh:property _:MutualCouplingShape.b0ch , _:MutualCouplingShape.distance11 , _:MutualCouplingShape.distance12 , _:MutualCouplingShape.distance21 , _:MutualCouplingShape.distance22 , _:MutualCouplingShape.g0ch , _:MutualCouplingShape.r0 , _:MutualCouplingShape.x0 , _:MutualCouplingShape.First_Terminal , _:MutualCouplingShape.Second_Terminal , _:IdentifiedObjectShape.mRID .
 
-<MutualCouplingShape.b0ch> rdf:type sh:PropertyShape ;
+_:MutualCouplingShape.b0ch rdf:type sh:PropertyShape ;
 	sh:path <MutualCoupling.b0ch> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "B0ch"@en ;
 	sh:description "Zero sequence mutual coupling shunt (charging) susceptance, uniformly distributed, of the entire line section."^^rdf:XMLLiteral .
-<MutualCouplingShape.distance11> rdf:type sh:PropertyShape ;
+_:MutualCouplingShape.distance11 rdf:type sh:PropertyShape ;
 	sh:path <MutualCoupling.distance11> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Distance11"@en ;
 	sh:description "Distance to the start of the coupled region from the first line's terminal having sequence number equal to 1."^^rdf:XMLLiteral .
-<MutualCouplingShape.distance12> rdf:type sh:PropertyShape ;
+_:MutualCouplingShape.distance12 rdf:type sh:PropertyShape ;
 	sh:path <MutualCoupling.distance12> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Distance12"@en ;
 	sh:description "Distance to the end of the coupled region from the first line's terminal with sequence number equal to 1."^^rdf:XMLLiteral .
-<MutualCouplingShape.distance21> rdf:type sh:PropertyShape ;
+_:MutualCouplingShape.distance21 rdf:type sh:PropertyShape ;
 	sh:path <MutualCoupling.distance21> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Distance21"@en ;
 	sh:description "Distance to the start of coupled region from the second line's terminal with sequence number equal to 1."^^rdf:XMLLiteral .
-<MutualCouplingShape.distance22> rdf:type sh:PropertyShape ;
+_:MutualCouplingShape.distance22 rdf:type sh:PropertyShape ;
 	sh:path <MutualCoupling.distance22> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Distance22"@en ;
 	sh:description "Distance to the end of coupled region from the second line's terminal with sequence number equal to 1."^^rdf:XMLLiteral .
-<MutualCouplingShape.g0ch> rdf:type sh:PropertyShape ;
+_:MutualCouplingShape.g0ch rdf:type sh:PropertyShape ;
 	sh:path <MutualCoupling.g0ch> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "G0ch"@en ;
 	sh:description "Zero sequence mutual coupling shunt (charging) conductance, uniformly distributed, of the entire line section."^^rdf:XMLLiteral .
-<MutualCouplingShape.r0> rdf:type sh:PropertyShape ;
+_:MutualCouplingShape.r0 rdf:type sh:PropertyShape ;
 	sh:path <MutualCoupling.r0> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "R0"@en ;
 	sh:description "Zero sequence branch-to-branch mutual impedance coupling, resistance."^^rdf:XMLLiteral .
-<MutualCouplingShape.x0> rdf:type sh:PropertyShape ;
+_:MutualCouplingShape.x0 rdf:type sh:PropertyShape ;
 	sh:path <MutualCoupling.x0> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -509,14 +509,14 @@
 	sh:name "X0"@en ;
 	sh:description "Zero sequence branch-to-branch mutual impedance coupling, reactance."^^rdf:XMLLiteral .
 
-<MutualCouplingShape.First_Terminal> rdf:type sh:PropertyShape ;
+_:MutualCouplingShape.First_Terminal rdf:type sh:PropertyShape ;
 	sh:path <MutualCoupling.First_Terminal> ;
 	sh:class <Terminal> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "First Terminal"@en ;
 	sh:description "The starting terminal for the calculation of distances along the first branch of the mutual coupling."^^rdf:XMLLiteral .
-<MutualCouplingShape.Second_Terminal> rdf:type sh:PropertyShape ;
+_:MutualCouplingShape.Second_Terminal rdf:type sh:PropertyShape ;
 	sh:path <MutualCoupling.Second_Terminal> ;
 	sh:class <Terminal> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -526,16 +526,16 @@
 
 <NonlinearShuntCompensatorPointShape> rdf:type sh:NodeShape ;
 	sh:targetClass <NonlinearShuntCompensatorPoint> ;
-	sh:property <NonlinearShuntCompensatorPointShape.b0> , <NonlinearShuntCompensatorPointShape.g0> .
+	sh:property _:NonlinearShuntCompensatorPointShape.b0 , _:NonlinearShuntCompensatorPointShape.g0 .
 
-<NonlinearShuntCompensatorPointShape.b0> rdf:type sh:PropertyShape ;
+_:NonlinearShuntCompensatorPointShape.b0 rdf:type sh:PropertyShape ;
 	sh:path <NonlinearShuntCompensatorPoint.b0> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "B0"@en ;
 	sh:description "Zero sequence shunt (charging) susceptance per section."^^rdf:XMLLiteral .
-<NonlinearShuntCompensatorPointShape.g0> rdf:type sh:PropertyShape ;
+_:NonlinearShuntCompensatorPointShape.g0 rdf:type sh:PropertyShape ;
 	sh:path <NonlinearShuntCompensatorPoint.g0> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -545,9 +545,9 @@
 
 <PetersenCoilShape> rdf:type sh:NodeShape ;
 	sh:targetClass <PetersenCoil> ;
-	sh:property <PetersenCoilShape.mode> , <PetersenCoilShape.nominalU> , <PetersenCoilShape.offsetCurrent> , <PetersenCoilShape.positionCurrent> , <PetersenCoilShape.xGroundMax> , <PetersenCoilShape.xGroundMin> , <PetersenCoilShape.xGroundNominal> , <EarthFaultCompensatorShape.r> , <IdentifiedObjectShape.mRID> .
+	sh:property _:PetersenCoilShape.mode , _:PetersenCoilShape.nominalU , _:PetersenCoilShape.offsetCurrent , _:PetersenCoilShape.positionCurrent , _:PetersenCoilShape.xGroundMax , _:PetersenCoilShape.xGroundMin , _:PetersenCoilShape.xGroundNominal , _:EarthFaultCompensatorShape.r , _:IdentifiedObjectShape.mRID .
 
-<PetersenCoilShape.mode> rdf:type sh:PropertyShape ;
+_:PetersenCoilShape.mode rdf:type sh:PropertyShape ;
 	sh:path <PetersenCoil.mode> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -555,40 +555,40 @@
 	sh:in "fixed" , "manual" , "automaticPositioning" ;
 	sh:name "Mode"@en ;
 	sh:description "The mode of operation of the Petersen coil."^^rdf:XMLLiteral .
-<PetersenCoilShape.nominalU> rdf:type sh:PropertyShape ;
+_:PetersenCoilShape.nominalU rdf:type sh:PropertyShape ;
 	sh:path <PetersenCoil.nominalU> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Nominal U"@en ;
 	sh:description "The nominal voltage for which the coil is designed."^^rdf:XMLLiteral .
-<PetersenCoilShape.offsetCurrent> rdf:type sh:PropertyShape ;
+_:PetersenCoilShape.offsetCurrent rdf:type sh:PropertyShape ;
 	sh:path <PetersenCoil.offsetCurrent> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Offset Current"@en ;
 	sh:description "The offset current that the Petersen coil controller is operating from the resonant point."^^rdf:XMLLiteral .
-<PetersenCoilShape.positionCurrent> rdf:type sh:PropertyShape ;
+_:PetersenCoilShape.positionCurrent rdf:type sh:PropertyShape ;
 	sh:path <PetersenCoil.positionCurrent> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Position Current"@en ;
 	sh:description "The control current used to control the Petersen coil also known as the position current."^^rdf:XMLLiteral .
-<PetersenCoilShape.xGroundMax> rdf:type sh:PropertyShape ;
+_:PetersenCoilShape.xGroundMax rdf:type sh:PropertyShape ;
 	sh:path <PetersenCoil.xGroundMax> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "X Ground Max"@en ;
 	sh:description "The maximum reactance."^^rdf:XMLLiteral .
-<PetersenCoilShape.xGroundMin> rdf:type sh:PropertyShape ;
+_:PetersenCoilShape.xGroundMin rdf:type sh:PropertyShape ;
 	sh:path <PetersenCoil.xGroundMin> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "X Ground Min"@en ;
 	sh:description "The minimum reactance."^^rdf:XMLLiteral .
-<PetersenCoilShape.xGroundNominal> rdf:type sh:PropertyShape ;
+_:PetersenCoilShape.xGroundNominal rdf:type sh:PropertyShape ;
 	sh:path <PetersenCoil.xGroundNominal> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -599,42 +599,42 @@
 <PowerSystemResourceShape> rdf:type sh:NodeShape ;
 	sh:targetClass <PowerSystemResource> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.mRID> .
+	sh:property _:IdentifiedObjectShape.mRID .
 
 <PowerTransformerShape> rdf:type sh:NodeShape ;
 	sh:targetClass <PowerTransformer> ;
-	sh:property <PowerTransformerShape.beforeShCircuitHighestOperatingCurrent> , <PowerTransformerShape.beforeShCircuitHighestOperatingVoltage> , <PowerTransformerShape.beforeShortCircuitAnglePf> , <PowerTransformerShape.highSideMinOperatingU> , <PowerTransformerShape.isPartOfGeneratorUnit> , <PowerTransformerShape.operationalValuesConsidered> , <IdentifiedObjectShape.mRID> .
+	sh:property _:PowerTransformerShape.beforeShCircuitHighestOperatingCurrent , _:PowerTransformerShape.beforeShCircuitHighestOperatingVoltage , _:PowerTransformerShape.beforeShortCircuitAnglePf , _:PowerTransformerShape.highSideMinOperatingU , _:PowerTransformerShape.isPartOfGeneratorUnit , _:PowerTransformerShape.operationalValuesConsidered , _:IdentifiedObjectShape.mRID .
 
-<PowerTransformerShape.beforeShCircuitHighestOperatingCurrent> rdf:type sh:PropertyShape ;
+_:PowerTransformerShape.beforeShCircuitHighestOperatingCurrent rdf:type sh:PropertyShape ;
 	sh:path <PowerTransformer.beforeShCircuitHighestOperatingCurrent> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Before Sh Circuit Highest Operating Current"@en .
-<PowerTransformerShape.beforeShCircuitHighestOperatingVoltage> rdf:type sh:PropertyShape ;
+_:PowerTransformerShape.beforeShCircuitHighestOperatingVoltage rdf:type sh:PropertyShape ;
 	sh:path <PowerTransformer.beforeShCircuitHighestOperatingVoltage> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Before Sh Circuit Highest Operating Voltage"@en ;
 	sh:description "The highest operating voltage (Ub in IEC 60909-0) before short circuit."^^rdf:XMLLiteral .
-<PowerTransformerShape.beforeShortCircuitAnglePf> rdf:type sh:PropertyShape ;
+_:PowerTransformerShape.beforeShortCircuitAnglePf rdf:type sh:PropertyShape ;
 	sh:path <PowerTransformer.beforeShortCircuitAnglePf> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Before Short Circuit Angle Pf"@en ;
 	sh:description "The angle of power factor before short circuit (phib in IEC 60909-0)."^^rdf:XMLLiteral .
-<PowerTransformerShape.highSideMinOperatingU> rdf:type sh:PropertyShape ;
+_:PowerTransformerShape.highSideMinOperatingU rdf:type sh:PropertyShape ;
 	sh:path <PowerTransformer.highSideMinOperatingU> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "High Side Min Operating U"@en .
-<PowerTransformerShape.isPartOfGeneratorUnit> rdf:type sh:PropertyShape ;
+_:PowerTransformerShape.isPartOfGeneratorUnit rdf:type sh:PropertyShape ;
 	sh:path <PowerTransformer.isPartOfGeneratorUnit> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Is Part Of Generator Unit"@en ;
 	sh:description "Indicates whether the machine is part of a power station unit."^^rdf:XMLLiteral .
-<PowerTransformerShape.operationalValuesConsidered> rdf:type sh:PropertyShape ;
+_:PowerTransformerShape.operationalValuesConsidered rdf:type sh:PropertyShape ;
 	sh:path <PowerTransformer.operationalValuesConsidered> ;
 	sh:datatype xsd:boolean ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -642,37 +642,37 @@
 
 <PowerTransformerEndShape> rdf:type sh:NodeShape ;
 	sh:targetClass <PowerTransformerEnd> ;
-	sh:property <PowerTransformerEndShape.b0> , <PowerTransformerEndShape.g0> , <PowerTransformerEndShape.phaseAngleClock> , <PowerTransformerEndShape.r0> , <PowerTransformerEndShape.x0> , <TransformerEndShape.grounded> , <TransformerEndShape.rground> , <TransformerEndShape.xground> , <IdentifiedObjectShape.mRID> .
+	sh:property _:PowerTransformerEndShape.b0 , _:PowerTransformerEndShape.g0 , _:PowerTransformerEndShape.phaseAngleClock , _:PowerTransformerEndShape.r0 , _:PowerTransformerEndShape.x0 , _:TransformerEndShape.grounded , _:TransformerEndShape.rground , _:TransformerEndShape.xground , _:IdentifiedObjectShape.mRID .
 
-<PowerTransformerEndShape.b0> rdf:type sh:PropertyShape ;
+_:PowerTransformerEndShape.b0 rdf:type sh:PropertyShape ;
 	sh:path <PowerTransformerEnd.b0> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "B0"@en ;
 	sh:description "Zero sequence magnetizing branch susceptance."^^rdf:XMLLiteral .
-<PowerTransformerEndShape.g0> rdf:type sh:PropertyShape ;
+_:PowerTransformerEndShape.g0 rdf:type sh:PropertyShape ;
 	sh:path <PowerTransformerEnd.g0> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "G0"@en ;
 	sh:description "Zero sequence magnetizing branch conductance (star-model)."^^rdf:XMLLiteral .
-<PowerTransformerEndShape.phaseAngleClock> rdf:type sh:PropertyShape ;
+_:PowerTransformerEndShape.phaseAngleClock rdf:type sh:PropertyShape ;
 	sh:path <PowerTransformerEnd.phaseAngleClock> ;
 	sh:datatype xsd:integer ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Phase Angle Clock"@en ;
 	sh:description "Terminal voltage phase angle displacement where 360 degrees are represented with clock hours."^^rdf:XMLLiteral .
-<PowerTransformerEndShape.r0> rdf:type sh:PropertyShape ;
+_:PowerTransformerEndShape.r0 rdf:type sh:PropertyShape ;
 	sh:path <PowerTransformerEnd.r0> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "R0"@en ;
 	sh:description "Zero sequence series resistance (star-model) of the transformer end."^^rdf:XMLLiteral .
-<PowerTransformerEndShape.x0> rdf:type sh:PropertyShape ;
+_:PowerTransformerEndShape.x0 rdf:type sh:PropertyShape ;
 	sh:path <PowerTransformerEnd.x0> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -683,43 +683,43 @@
 <RegulatingCondEqShape> rdf:type sh:NodeShape ;
 	sh:targetClass <RegulatingCondEq> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.mRID> .
+	sh:property _:IdentifiedObjectShape.mRID .
 
 <RotatingMachineShape> rdf:type sh:NodeShape ;
 	sh:targetClass <RotatingMachine> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.mRID> .
+	sh:property _:IdentifiedObjectShape.mRID .
 
 <SeriesCompensatorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <SeriesCompensator> ;
-	sh:property <SeriesCompensatorShape.r0> , <SeriesCompensatorShape.varistorPresent> , <SeriesCompensatorShape.varistorRatedCurrent> , <SeriesCompensatorShape.varistorVoltageThreshold> , <SeriesCompensatorShape.x0> , <IdentifiedObjectShape.mRID> .
+	sh:property _:SeriesCompensatorShape.r0 , _:SeriesCompensatorShape.varistorPresent , _:SeriesCompensatorShape.varistorRatedCurrent , _:SeriesCompensatorShape.varistorVoltageThreshold , _:SeriesCompensatorShape.x0 , _:IdentifiedObjectShape.mRID .
 
-<SeriesCompensatorShape.r0> rdf:type sh:PropertyShape ;
+_:SeriesCompensatorShape.r0 rdf:type sh:PropertyShape ;
 	sh:path <SeriesCompensator.r0> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "R0"@en ;
 	sh:description "Zero sequence resistance."^^rdf:XMLLiteral .
-<SeriesCompensatorShape.varistorPresent> rdf:type sh:PropertyShape ;
+_:SeriesCompensatorShape.varistorPresent rdf:type sh:PropertyShape ;
 	sh:path <SeriesCompensator.varistorPresent> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Varistor Present"@en .
-<SeriesCompensatorShape.varistorRatedCurrent> rdf:type sh:PropertyShape ;
+_:SeriesCompensatorShape.varistorRatedCurrent rdf:type sh:PropertyShape ;
 	sh:path <SeriesCompensator.varistorRatedCurrent> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Varistor Rated Current"@en ;
 	sh:description "The maximum current the varistor is designed to handle at specified duration."^^rdf:XMLLiteral .
-<SeriesCompensatorShape.varistorVoltageThreshold> rdf:type sh:PropertyShape ;
+_:SeriesCompensatorShape.varistorVoltageThreshold rdf:type sh:PropertyShape ;
 	sh:path <SeriesCompensator.varistorVoltageThreshold> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Varistor Voltage Threshold"@en ;
 	sh:description "The dc voltage at which the varistor starts conducting."^^rdf:XMLLiteral .
-<SeriesCompensatorShape.x0> rdf:type sh:PropertyShape ;
+_:SeriesCompensatorShape.x0 rdf:type sh:PropertyShape ;
 	sh:path <SeriesCompensator.x0> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -730,101 +730,101 @@
 <ShuntCompensatorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ShuntCompensator> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.mRID> .
+	sh:property _:IdentifiedObjectShape.mRID .
 
 <SynchronousMachineShape> rdf:type sh:NodeShape ;
 	sh:targetClass <SynchronousMachine> ;
-	sh:property <SynchronousMachineShape.earthing> , <SynchronousMachineShape.earthingStarPointR> , <SynchronousMachineShape.earthingStarPointX> , <SynchronousMachineShape.ikk> , <SynchronousMachineShape.mu> , <SynchronousMachineShape.r> , <SynchronousMachineShape.r0> , <SynchronousMachineShape.r2> , <SynchronousMachineShape.satDirectSubtransX> , <SynchronousMachineShape.satDirectSyncX> , <SynchronousMachineShape.satDirectTransX> , <SynchronousMachineShape.shortCircuitRotorType> , <SynchronousMachineShape.voltageRegulationRange> , <SynchronousMachineShape.x0> , <SynchronousMachineShape.x2> , <IdentifiedObjectShape.mRID> .
+	sh:property _:SynchronousMachineShape.earthing , _:SynchronousMachineShape.earthingStarPointR , _:SynchronousMachineShape.earthingStarPointX , _:SynchronousMachineShape.ikk , _:SynchronousMachineShape.mu , _:SynchronousMachineShape.r , _:SynchronousMachineShape.r0 , _:SynchronousMachineShape.r2 , _:SynchronousMachineShape.satDirectSubtransX , _:SynchronousMachineShape.satDirectSyncX , _:SynchronousMachineShape.satDirectTransX , _:SynchronousMachineShape.shortCircuitRotorType , _:SynchronousMachineShape.voltageRegulationRange , _:SynchronousMachineShape.x0 , _:SynchronousMachineShape.x2 , _:IdentifiedObjectShape.mRID .
 
-<SynchronousMachineShape.earthing> rdf:type sh:PropertyShape ;
+_:SynchronousMachineShape.earthing rdf:type sh:PropertyShape ;
 	sh:path <SynchronousMachine.earthing> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Earthing"@en ;
 	sh:description "Indicates whether or not the generator is earthed."^^rdf:XMLLiteral .
-<SynchronousMachineShape.earthingStarPointR> rdf:type sh:PropertyShape ;
+_:SynchronousMachineShape.earthingStarPointR rdf:type sh:PropertyShape ;
 	sh:path <SynchronousMachine.earthingStarPointR> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Earthing Star Point R"@en ;
 	sh:description "Generator star point earthing resistance (Re)."^^rdf:XMLLiteral .
-<SynchronousMachineShape.earthingStarPointX> rdf:type sh:PropertyShape ;
+_:SynchronousMachineShape.earthingStarPointX rdf:type sh:PropertyShape ;
 	sh:path <SynchronousMachine.earthingStarPointX> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Earthing Star Point X"@en ;
 	sh:description "Generator star point earthing reactance (Xe)."^^rdf:XMLLiteral .
-<SynchronousMachineShape.ikk> rdf:type sh:PropertyShape ;
+_:SynchronousMachineShape.ikk rdf:type sh:PropertyShape ;
 	sh:path <SynchronousMachine.ikk> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Ikk"@en .
-<SynchronousMachineShape.mu> rdf:type sh:PropertyShape ;
+_:SynchronousMachineShape.mu rdf:type sh:PropertyShape ;
 	sh:path <SynchronousMachine.mu> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Mu"@en .
-<SynchronousMachineShape.r> rdf:type sh:PropertyShape ;
+_:SynchronousMachineShape.r rdf:type sh:PropertyShape ;
 	sh:path <SynchronousMachine.r> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "R"@en ;
 	sh:description "Equivalent resistance (RG) of generator."^^rdf:XMLLiteral .
-<SynchronousMachineShape.r0> rdf:type sh:PropertyShape ;
+_:SynchronousMachineShape.r0 rdf:type sh:PropertyShape ;
 	sh:path <SynchronousMachine.r0> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "R0"@en ;
 	sh:description "Zero sequence resistance of the synchronous machine."^^rdf:XMLLiteral .
-<SynchronousMachineShape.r2> rdf:type sh:PropertyShape ;
+_:SynchronousMachineShape.r2 rdf:type sh:PropertyShape ;
 	sh:path <SynchronousMachine.r2> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "R2"@en ;
 	sh:description "Negative sequence resistance."^^rdf:XMLLiteral .
-<SynchronousMachineShape.satDirectSubtransX> rdf:type sh:PropertyShape ;
+_:SynchronousMachineShape.satDirectSubtransX rdf:type sh:PropertyShape ;
 	sh:path <SynchronousMachine.satDirectSubtransX> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Sat Direct Subtrans X"@en ;
 	sh:description "Direct-axis subtransient reactance saturated, also known as Xd\"sat."^^rdf:XMLLiteral .
-<SynchronousMachineShape.satDirectSyncX> rdf:type sh:PropertyShape ;
+_:SynchronousMachineShape.satDirectSyncX rdf:type sh:PropertyShape ;
 	sh:path <SynchronousMachine.satDirectSyncX> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Sat Direct Sync X"@en ;
 	sh:description "Direct-axes saturated synchronous reactance (xdsat); reciprocal of short-circuit ration."^^rdf:XMLLiteral .
-<SynchronousMachineShape.satDirectTransX> rdf:type sh:PropertyShape ;
+_:SynchronousMachineShape.satDirectTransX rdf:type sh:PropertyShape ;
 	sh:path <SynchronousMachine.satDirectTransX> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Sat Direct Trans X"@en ;
 	sh:description "Saturated Direct-axis transient reactance."^^rdf:XMLLiteral .
-<SynchronousMachineShape.shortCircuitRotorType> rdf:type sh:PropertyShape ;
+_:SynchronousMachineShape.shortCircuitRotorType rdf:type sh:PropertyShape ;
 	sh:path <SynchronousMachine.shortCircuitRotorType> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:in "salientPole1" , "salientPole2" , "turboSeries1" , "turboSeries2" ;
 	sh:name "Short Circuit Rotor Type"@en ;
 	sh:description "Type of rotor, used by short circuit applications, only for single fed short circuit according to IEC 60909."^^rdf:XMLLiteral .
-<SynchronousMachineShape.voltageRegulationRange> rdf:type sh:PropertyShape ;
+_:SynchronousMachineShape.voltageRegulationRange rdf:type sh:PropertyShape ;
 	sh:path <SynchronousMachine.voltageRegulationRange> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Voltage Regulation Range"@en .
-<SynchronousMachineShape.x0> rdf:type sh:PropertyShape ;
+_:SynchronousMachineShape.x0 rdf:type sh:PropertyShape ;
 	sh:path <SynchronousMachine.x0> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "X0"@en ;
 	sh:description "Zero sequence reactance of the synchronous machine."^^rdf:XMLLiteral .
-<SynchronousMachineShape.x2> rdf:type sh:PropertyShape ;
+_:SynchronousMachineShape.x2 rdf:type sh:PropertyShape ;
 	sh:path <SynchronousMachine.x2> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -835,14 +835,14 @@
 <TerminalShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Terminal> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.mRID> .
+	sh:property _:IdentifiedObjectShape.mRID .
 
-<TerminalShape.HasFirstMutualCoupling> rdf:type sh:PropertyShape ;
+_:TerminalShape.HasFirstMutualCoupling rdf:type sh:PropertyShape ;
 	sh:path <Terminal.HasFirstMutualCoupling> ;
 	sh:class <MutualCoupling> ;
 	sh:name "Has First Mutual Coupling"@en ;
 	sh:description "Mutual couplings associated with the branch as the first branch."^^rdf:XMLLiteral .
-<TerminalShape.HasSecondMutualCoupling> rdf:type sh:PropertyShape ;
+_:TerminalShape.HasSecondMutualCoupling rdf:type sh:PropertyShape ;
 	sh:path <Terminal.HasSecondMutualCoupling> ;
 	sh:class <MutualCoupling> ;
 	sh:name "Has Second Mutual Coupling"@en ;
@@ -851,22 +851,22 @@
 <TransformerEndShape> rdf:type sh:NodeShape ;
 	sh:targetClass <TransformerEnd> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.mRID> .
+	sh:property _:IdentifiedObjectShape.mRID .
 
-<TransformerEndShape.grounded> rdf:type sh:PropertyShape ;
+_:TransformerEndShape.grounded rdf:type sh:PropertyShape ;
 	sh:path <TransformerEnd.grounded> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Grounded"@en ;
 	sh:description "(for Yn and Zn connections) True if the neutral is solidly grounded."^^rdf:XMLLiteral .
-<TransformerEndShape.rground> rdf:type sh:PropertyShape ;
+_:TransformerEndShape.rground rdf:type sh:PropertyShape ;
 	sh:path <TransformerEnd.rground> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Rground"@en ;
 	sh:description "(for Yn and Zn connections) Resistance part of neutral impedance where 'grounded' is true."^^rdf:XMLLiteral .
-<TransformerEndShape.xground> rdf:type sh:PropertyShape ;
+_:TransformerEndShape.xground rdf:type sh:PropertyShape ;
 	sh:path <TransformerEnd.xground> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;

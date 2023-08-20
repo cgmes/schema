@@ -7,29 +7,29 @@
 <ACDCConverterShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ACDCConverter> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
-<ACDCConverterShape.p> rdf:type sh:PropertyShape ;
+_:ACDCConverterShape.p rdf:type sh:PropertyShape ;
 	sh:path <ACDCConverter.p> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "P"@en ;
 	sh:description "Active power at the point of common coupling."^^rdf:XMLLiteral .
-<ACDCConverterShape.q> rdf:type sh:PropertyShape ;
+_:ACDCConverterShape.q rdf:type sh:PropertyShape ;
 	sh:path <ACDCConverter.q> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Q"@en ;
 	sh:description "Reactive power at the point of common coupling."^^rdf:XMLLiteral .
-<ACDCConverterShape.targetPpcc> rdf:type sh:PropertyShape ;
+_:ACDCConverterShape.targetPpcc rdf:type sh:PropertyShape ;
 	sh:path <ACDCConverter.targetPpcc> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Target Ppcc"@en ;
 	sh:description "Real power injection target in AC grid, at point of common coupling."^^rdf:XMLLiteral .
-<ACDCConverterShape.targetUdc> rdf:type sh:PropertyShape ;
+_:ACDCConverterShape.targetUdc rdf:type sh:PropertyShape ;
 	sh:path <ACDCConverter.targetUdc> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -38,14 +38,14 @@
 
 <ACDCConverterDCTerminalShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ACDCConverterDCTerminal> ;
-	sh:property <ACDCTerminalShape.connected> , <IdentifiedObjectShape.mRID> .
+	sh:property _:ACDCTerminalShape.connected , _:IdentifiedObjectShape.mRID .
 
 <ACDCTerminalShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ACDCTerminal> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.mRID> .
+	sh:property _:IdentifiedObjectShape.mRID .
 
-<ACDCTerminalShape.connected> rdf:type sh:PropertyShape ;
+_:ACDCTerminalShape.connected rdf:type sh:PropertyShape ;
 	sh:path <ACDCTerminal.connected> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
@@ -55,9 +55,9 @@
 
 <ActivePowerLimitShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ActivePowerLimit> ;
-	sh:property <ActivePowerLimitShape.value> , <IdentifiedObjectShape.mRID> .
+	sh:property _:ActivePowerLimitShape.value , _:IdentifiedObjectShape.mRID .
 
-<ActivePowerLimitShape.value> rdf:type sh:PropertyShape ;
+_:ActivePowerLimitShape.value rdf:type sh:PropertyShape ;
 	sh:path <ActivePowerLimit.value> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -67,9 +67,9 @@
 
 <ApparentPowerLimitShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ApparentPowerLimit> ;
-	sh:property <ApparentPowerLimitShape.value> , <IdentifiedObjectShape.mRID> .
+	sh:property _:ApparentPowerLimitShape.value , _:IdentifiedObjectShape.mRID .
 
-<ApparentPowerLimitShape.value> rdf:type sh:PropertyShape ;
+_:ApparentPowerLimitShape.value rdf:type sh:PropertyShape ;
 	sh:path <ApparentPowerLimit.value> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -79,9 +79,9 @@
 
 <AsynchronousMachineShape> rdf:type sh:NodeShape ;
 	sh:targetClass <AsynchronousMachine> ;
-	sh:property <AsynchronousMachineShape.asynchronousMachineType> , <RotatingMachineShape.p> , <RotatingMachineShape.q> , <RegulatingCondEqShape.controlEnabled> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:AsynchronousMachineShape.asynchronousMachineType , _:RotatingMachineShape.p , _:RotatingMachineShape.q , _:RegulatingCondEqShape.controlEnabled , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
-<AsynchronousMachineShape.asynchronousMachineType> rdf:type sh:PropertyShape ;
+_:AsynchronousMachineShape.asynchronousMachineType rdf:type sh:PropertyShape ;
 	sh:path <AsynchronousMachine.asynchronousMachineType> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -92,9 +92,9 @@
 
 <BatteryUnitShape> rdf:type sh:NodeShape ;
 	sh:targetClass <BatteryUnit> ;
-	sh:property <BatteryUnitShape.batteryState> , <BatteryUnitShape.storedE> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:BatteryUnitShape.batteryState , _:BatteryUnitShape.storedE , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
-<BatteryUnitShape.batteryState> rdf:type sh:PropertyShape ;
+_:BatteryUnitShape.batteryState rdf:type sh:PropertyShape ;
 	sh:path <BatteryUnit.batteryState> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -102,7 +102,7 @@
 	sh:in "discharging" , "full" , "waiting" , "charging" , "empty" ;
 	sh:name "Battery State"@en ;
 	sh:description "The current state of the battery (charging, full, etc.)."^^rdf:XMLLiteral .
-<BatteryUnitShape.storedE> rdf:type sh:PropertyShape ;
+_:BatteryUnitShape.storedE rdf:type sh:PropertyShape ;
 	sh:path <BatteryUnit.storedE> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -112,29 +112,29 @@
 
 <BreakerShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Breaker> ;
-	sh:property <SwitchShape.locked> , <SwitchShape.open> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:SwitchShape.locked , _:SwitchShape.open , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <ConductingEquipmentShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ConductingEquipment> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <ConformLoadShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ConformLoad> ;
-	sh:property <EnergyConsumerShape.p> , <EnergyConsumerShape.q> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:EnergyConsumerShape.p , _:EnergyConsumerShape.q , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <ControlAreaShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ControlArea> ;
-	sh:property <ControlAreaShape.netInterchange> , <ControlAreaShape.pTolerance> , <IdentifiedObjectShape.mRID> .
+	sh:property _:ControlAreaShape.netInterchange , _:ControlAreaShape.pTolerance , _:IdentifiedObjectShape.mRID .
 
-<ControlAreaShape.netInterchange> rdf:type sh:PropertyShape ;
+_:ControlAreaShape.netInterchange rdf:type sh:PropertyShape ;
 	sh:path <ControlArea.netInterchange> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Net Interchange"@en ;
 	sh:description "The specified positive net interchange into the control area, i.e."^^rdf:XMLLiteral .
-<ControlAreaShape.pTolerance> rdf:type sh:PropertyShape ;
+_:ControlAreaShape.pTolerance rdf:type sh:PropertyShape ;
 	sh:path <ControlArea.pTolerance> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -143,9 +143,9 @@
 
 <CsConverterShape> rdf:type sh:NodeShape ;
 	sh:targetClass <CsConverter> ;
-	sh:property <CsConverterShape.operatingMode> , <CsConverterShape.pPccControl> , <CsConverterShape.targetAlpha> , <CsConverterShape.targetGamma> , <CsConverterShape.targetIdc> , <ACDCConverterShape.p> , <ACDCConverterShape.q> , <ACDCConverterShape.targetPpcc> , <ACDCConverterShape.targetUdc> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:CsConverterShape.operatingMode , _:CsConverterShape.pPccControl , _:CsConverterShape.targetAlpha , _:CsConverterShape.targetGamma , _:CsConverterShape.targetIdc , _:ACDCConverterShape.p , _:ACDCConverterShape.q , _:ACDCConverterShape.targetPpcc , _:ACDCConverterShape.targetUdc , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
-<CsConverterShape.operatingMode> rdf:type sh:PropertyShape ;
+_:CsConverterShape.operatingMode rdf:type sh:PropertyShape ;
 	sh:path <CsConverter.operatingMode> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -153,7 +153,7 @@
 	sh:in "inverter" , "rectifier" ;
 	sh:name "Operating Mode"@en ;
 	sh:description "Indicates whether the DC pole is operating as an inverter or as a rectifier."^^rdf:XMLLiteral .
-<CsConverterShape.pPccControl> rdf:type sh:PropertyShape ;
+_:CsConverterShape.pPccControl rdf:type sh:PropertyShape ;
 	sh:path <CsConverter.pPccControl> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -161,19 +161,19 @@
 	sh:in "activePower" , "dcVoltage" , "dcCurrent" ;
 	sh:name "P Pcc Control"@en ;
 	sh:description "Kind of active power control."^^rdf:XMLLiteral .
-<CsConverterShape.targetAlpha> rdf:type sh:PropertyShape ;
+_:CsConverterShape.targetAlpha rdf:type sh:PropertyShape ;
 	sh:path <CsConverter.targetAlpha> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Target Alpha"@en ;
 	sh:description "Target firing angle."^^rdf:XMLLiteral .
-<CsConverterShape.targetGamma> rdf:type sh:PropertyShape ;
+_:CsConverterShape.targetGamma rdf:type sh:PropertyShape ;
 	sh:path <CsConverter.targetGamma> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Target Gamma"@en ;
 	sh:description "Target extinction angle."^^rdf:XMLLiteral .
-<CsConverterShape.targetIdc> rdf:type sh:PropertyShape ;
+_:CsConverterShape.targetIdc rdf:type sh:PropertyShape ;
 	sh:path <CsConverter.targetIdc> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -182,9 +182,9 @@
 
 <CurrentLimitShape> rdf:type sh:NodeShape ;
 	sh:targetClass <CurrentLimit> ;
-	sh:property <CurrentLimitShape.value> , <IdentifiedObjectShape.mRID> .
+	sh:property _:CurrentLimitShape.value , _:IdentifiedObjectShape.mRID .
 
-<CurrentLimitShape.value> rdf:type sh:PropertyShape ;
+_:CurrentLimitShape.value rdf:type sh:PropertyShape ;
 	sh:path <CurrentLimit.value> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -195,37 +195,37 @@
 <DCBaseTerminalShape> rdf:type sh:NodeShape ;
 	sh:targetClass <DCBaseTerminal> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <ACDCTerminalShape.connected> , <IdentifiedObjectShape.mRID> .
+	sh:property _:ACDCTerminalShape.connected , _:IdentifiedObjectShape.mRID .
 
 <DCTerminalShape> rdf:type sh:NodeShape ;
 	sh:targetClass <DCTerminal> ;
-	sh:property <ACDCTerminalShape.connected> , <IdentifiedObjectShape.mRID> .
+	sh:property _:ACDCTerminalShape.connected , _:IdentifiedObjectShape.mRID .
 
 <DisconnectingCircuitBreakerShape> rdf:type sh:NodeShape ;
 	sh:targetClass <DisconnectingCircuitBreaker> ;
-	sh:property <SwitchShape.locked> , <SwitchShape.open> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:SwitchShape.locked , _:SwitchShape.open , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <DisconnectorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Disconnector> ;
-	sh:property <SwitchShape.locked> , <SwitchShape.open> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:SwitchShape.locked , _:SwitchShape.open , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <EnergyConnectionShape> rdf:type sh:NodeShape ;
 	sh:targetClass <EnergyConnection> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <EnergyConsumerShape> rdf:type sh:NodeShape ;
 	sh:targetClass <EnergyConsumer> ;
-	sh:property <EnergyConsumerShape.p> , <EnergyConsumerShape.q> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:EnergyConsumerShape.p , _:EnergyConsumerShape.q , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
-<EnergyConsumerShape.p> rdf:type sh:PropertyShape ;
+_:EnergyConsumerShape.p rdf:type sh:PropertyShape ;
 	sh:path <EnergyConsumer.p> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "P"@en ;
 	sh:description "Active power of the load."^^rdf:XMLLiteral .
-<EnergyConsumerShape.q> rdf:type sh:PropertyShape ;
+_:EnergyConsumerShape.q rdf:type sh:PropertyShape ;
 	sh:path <EnergyConsumer.q> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -235,28 +235,28 @@
 
 <EnergySourceShape> rdf:type sh:NodeShape ;
 	sh:targetClass <EnergySource> ;
-	sh:property <EnergySourceShape.activePower> , <EnergySourceShape.reactivePower> , <EnergySourceShape.voltageAngle> , <EnergySourceShape.voltageMagnitude> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:EnergySourceShape.activePower , _:EnergySourceShape.reactivePower , _:EnergySourceShape.voltageAngle , _:EnergySourceShape.voltageMagnitude , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
-<EnergySourceShape.activePower> rdf:type sh:PropertyShape ;
+_:EnergySourceShape.activePower rdf:type sh:PropertyShape ;
 	sh:path <EnergySource.activePower> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Active Power"@en ;
 	sh:description "High voltage source active injection."^^rdf:XMLLiteral .
-<EnergySourceShape.reactivePower> rdf:type sh:PropertyShape ;
+_:EnergySourceShape.reactivePower rdf:type sh:PropertyShape ;
 	sh:path <EnergySource.reactivePower> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Reactive Power"@en ;
 	sh:description "High voltage source reactive injection."^^rdf:XMLLiteral .
-<EnergySourceShape.voltageAngle> rdf:type sh:PropertyShape ;
+_:EnergySourceShape.voltageAngle rdf:type sh:PropertyShape ;
 	sh:path <EnergySource.voltageAngle> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Voltage Angle"@en .
-<EnergySourceShape.voltageMagnitude> rdf:type sh:PropertyShape ;
+_:EnergySourceShape.voltageMagnitude rdf:type sh:PropertyShape ;
 	sh:path <EnergySource.voltageMagnitude> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -264,9 +264,9 @@
 
 <EquipmentShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Equipment> ;
-	sh:property <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
-<EquipmentShape.inService> rdf:type sh:PropertyShape ;
+_:EquipmentShape.inService rdf:type sh:PropertyShape ;
 	sh:path <Equipment.inService> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
@@ -277,33 +277,33 @@
 <EquivalentEquipmentShape> rdf:type sh:NodeShape ;
 	sh:targetClass <EquivalentEquipment> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <EquivalentInjectionShape> rdf:type sh:NodeShape ;
 	sh:targetClass <EquivalentInjection> ;
-	sh:property <EquivalentInjectionShape.p> , <EquivalentInjectionShape.q> , <EquivalentInjectionShape.regulationStatus> , <EquivalentInjectionShape.regulationTarget> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:EquivalentInjectionShape.p , _:EquivalentInjectionShape.q , _:EquivalentInjectionShape.regulationStatus , _:EquivalentInjectionShape.regulationTarget , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
-<EquivalentInjectionShape.p> rdf:type sh:PropertyShape ;
+_:EquivalentInjectionShape.p rdf:type sh:PropertyShape ;
 	sh:path <EquivalentInjection.p> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "P"@en ;
 	sh:description "Equivalent active power injection."^^rdf:XMLLiteral .
-<EquivalentInjectionShape.q> rdf:type sh:PropertyShape ;
+_:EquivalentInjectionShape.q rdf:type sh:PropertyShape ;
 	sh:path <EquivalentInjection.q> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Q"@en ;
 	sh:description "Equivalent reactive power injection."^^rdf:XMLLiteral .
-<EquivalentInjectionShape.regulationStatus> rdf:type sh:PropertyShape ;
+_:EquivalentInjectionShape.regulationStatus rdf:type sh:PropertyShape ;
 	sh:path <EquivalentInjection.regulationStatus> ;
 	sh:datatype xsd:boolean ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Regulation Status"@en ;
 	sh:description "Specifies the regulation status of the EquivalentInjection."^^rdf:XMLLiteral .
-<EquivalentInjectionShape.regulationTarget> rdf:type sh:PropertyShape ;
+_:EquivalentInjectionShape.regulationTarget rdf:type sh:PropertyShape ;
 	sh:path <EquivalentInjection.regulationTarget> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -312,23 +312,23 @@
 
 <ExternalNetworkInjectionShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ExternalNetworkInjection> ;
-	sh:property <ExternalNetworkInjectionShape.p> , <ExternalNetworkInjectionShape.q> , <ExternalNetworkInjectionShape.referencePriority> , <RegulatingCondEqShape.controlEnabled> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:ExternalNetworkInjectionShape.p , _:ExternalNetworkInjectionShape.q , _:ExternalNetworkInjectionShape.referencePriority , _:RegulatingCondEqShape.controlEnabled , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
-<ExternalNetworkInjectionShape.p> rdf:type sh:PropertyShape ;
+_:ExternalNetworkInjectionShape.p rdf:type sh:PropertyShape ;
 	sh:path <ExternalNetworkInjection.p> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "P"@en ;
 	sh:description "Active power injection."^^rdf:XMLLiteral .
-<ExternalNetworkInjectionShape.q> rdf:type sh:PropertyShape ;
+_:ExternalNetworkInjectionShape.q rdf:type sh:PropertyShape ;
 	sh:path <ExternalNetworkInjection.q> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Q"@en ;
 	sh:description "Reactive power injection."^^rdf:XMLLiteral .
-<ExternalNetworkInjectionShape.referencePriority> rdf:type sh:PropertyShape ;
+_:ExternalNetworkInjectionShape.referencePriority rdf:type sh:PropertyShape ;
 	sh:path <ExternalNetworkInjection.referencePriority> ;
 	sh:datatype xsd:integer ;
 	sh:minCount "1"^^xsd:integer ;
@@ -338,13 +338,13 @@
 
 <FuseShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Fuse> ;
-	sh:property <SwitchShape.locked> , <SwitchShape.open> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:SwitchShape.locked , _:SwitchShape.open , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <GeneratingUnitShape> rdf:type sh:NodeShape ;
 	sh:targetClass <GeneratingUnit> ;
-	sh:property <GeneratingUnitShape.normalPF> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:GeneratingUnitShape.normalPF , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
-<GeneratingUnitShape.normalPF> rdf:type sh:PropertyShape ;
+_:GeneratingUnitShape.normalPF rdf:type sh:PropertyShape ;
 	sh:path <GeneratingUnit.normalPF> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -354,17 +354,17 @@
 
 <GroundDisconnectorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <GroundDisconnector> ;
-	sh:property <SwitchShape.locked> , <SwitchShape.open> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:SwitchShape.locked , _:SwitchShape.open , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <HydroGeneratingUnitShape> rdf:type sh:NodeShape ;
 	sh:targetClass <HydroGeneratingUnit> ;
-	sh:property <GeneratingUnitShape.normalPF> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:GeneratingUnitShape.normalPF , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <IdentifiedObjectShape> rdf:type sh:NodeShape ;
 	sh:targetClass <IdentifiedObject> ;
 	sh:closed "true"^^xsd:boolean .
 
-<IdentifiedObjectShape.mRID> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.mRID rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.mRID> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -374,71 +374,71 @@
 
 <JumperShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Jumper> ;
-	sh:property <SwitchShape.locked> , <SwitchShape.open> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:SwitchShape.locked , _:SwitchShape.open , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <LinearShuntCompensatorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <LinearShuntCompensator> ;
-	sh:property <ShuntCompensatorShape.sections> , <RegulatingCondEqShape.controlEnabled> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:ShuntCompensatorShape.sections , _:RegulatingCondEqShape.controlEnabled , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <LoadBreakSwitchShape> rdf:type sh:NodeShape ;
 	sh:targetClass <LoadBreakSwitch> ;
-	sh:property <SwitchShape.locked> , <SwitchShape.open> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:SwitchShape.locked , _:SwitchShape.open , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <NonConformLoadShape> rdf:type sh:NodeShape ;
 	sh:targetClass <NonConformLoad> ;
-	sh:property <EnergyConsumerShape.p> , <EnergyConsumerShape.q> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:EnergyConsumerShape.p , _:EnergyConsumerShape.q , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <NonlinearShuntCompensatorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <NonlinearShuntCompensator> ;
-	sh:property <ShuntCompensatorShape.sections> , <RegulatingCondEqShape.controlEnabled> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:ShuntCompensatorShape.sections , _:RegulatingCondEqShape.controlEnabled , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <NuclearGeneratingUnitShape> rdf:type sh:NodeShape ;
 	sh:targetClass <NuclearGeneratingUnit> ;
-	sh:property <GeneratingUnitShape.normalPF> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:GeneratingUnitShape.normalPF , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <OperationalLimitShape> rdf:type sh:NodeShape ;
 	sh:targetClass <OperationalLimit> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.mRID> .
+	sh:property _:IdentifiedObjectShape.mRID .
 
 <PhaseTapChangerShape> rdf:type sh:NodeShape ;
 	sh:targetClass <PhaseTapChanger> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <TapChangerShape.controlEnabled> , <TapChangerShape.step> , <IdentifiedObjectShape.mRID> .
+	sh:property _:TapChangerShape.controlEnabled , _:TapChangerShape.step , _:IdentifiedObjectShape.mRID .
 
 <PhaseTapChangerAsymmetricalShape> rdf:type sh:NodeShape ;
 	sh:targetClass <PhaseTapChangerAsymmetrical> ;
-	sh:property <TapChangerShape.controlEnabled> , <TapChangerShape.step> , <IdentifiedObjectShape.mRID> .
+	sh:property _:TapChangerShape.controlEnabled , _:TapChangerShape.step , _:IdentifiedObjectShape.mRID .
 
 <PhaseTapChangerLinearShape> rdf:type sh:NodeShape ;
 	sh:targetClass <PhaseTapChangerLinear> ;
-	sh:property <TapChangerShape.controlEnabled> , <TapChangerShape.step> , <IdentifiedObjectShape.mRID> .
+	sh:property _:TapChangerShape.controlEnabled , _:TapChangerShape.step , _:IdentifiedObjectShape.mRID .
 
 <PhaseTapChangerNonLinearShape> rdf:type sh:NodeShape ;
 	sh:targetClass <PhaseTapChangerNonLinear> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <TapChangerShape.controlEnabled> , <TapChangerShape.step> , <IdentifiedObjectShape.mRID> .
+	sh:property _:TapChangerShape.controlEnabled , _:TapChangerShape.step , _:IdentifiedObjectShape.mRID .
 
 <PhaseTapChangerSymmetricalShape> rdf:type sh:NodeShape ;
 	sh:targetClass <PhaseTapChangerSymmetrical> ;
-	sh:property <TapChangerShape.controlEnabled> , <TapChangerShape.step> , <IdentifiedObjectShape.mRID> .
+	sh:property _:TapChangerShape.controlEnabled , _:TapChangerShape.step , _:IdentifiedObjectShape.mRID .
 
 <PhaseTapChangerTabularShape> rdf:type sh:NodeShape ;
 	sh:targetClass <PhaseTapChangerTabular> ;
-	sh:property <TapChangerShape.controlEnabled> , <TapChangerShape.step> , <IdentifiedObjectShape.mRID> .
+	sh:property _:TapChangerShape.controlEnabled , _:TapChangerShape.step , _:IdentifiedObjectShape.mRID .
 
 <PowerElectronicsConnectionShape> rdf:type sh:NodeShape ;
 	sh:targetClass <PowerElectronicsConnection> ;
-	sh:property <PowerElectronicsConnectionShape.p> , <PowerElectronicsConnectionShape.q> , <RegulatingCondEqShape.controlEnabled> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:PowerElectronicsConnectionShape.p , _:PowerElectronicsConnectionShape.q , _:RegulatingCondEqShape.controlEnabled , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
-<PowerElectronicsConnectionShape.p> rdf:type sh:PropertyShape ;
+_:PowerElectronicsConnectionShape.p rdf:type sh:PropertyShape ;
 	sh:path <PowerElectronicsConnection.p> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "P"@en ;
 	sh:description "Active power injection."^^rdf:XMLLiteral .
-<PowerElectronicsConnectionShape.q> rdf:type sh:PropertyShape ;
+_:PowerElectronicsConnectionShape.q rdf:type sh:PropertyShape ;
 	sh:path <PowerElectronicsConnection.q> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -449,28 +449,28 @@
 <PowerElectronicsUnitShape> rdf:type sh:NodeShape ;
 	sh:targetClass <PowerElectronicsUnit> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <PowerSystemResourceShape> rdf:type sh:NodeShape ;
 	sh:targetClass <PowerSystemResource> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.mRID> .
+	sh:property _:IdentifiedObjectShape.mRID .
 
 <ProtectedSwitchShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ProtectedSwitch> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <SwitchShape.locked> , <SwitchShape.open> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:SwitchShape.locked , _:SwitchShape.open , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <RatioTapChangerShape> rdf:type sh:NodeShape ;
 	sh:targetClass <RatioTapChanger> ;
-	sh:property <TapChangerShape.controlEnabled> , <TapChangerShape.step> , <IdentifiedObjectShape.mRID> .
+	sh:property _:TapChangerShape.controlEnabled , _:TapChangerShape.step , _:IdentifiedObjectShape.mRID .
 
 <RegulatingCondEqShape> rdf:type sh:NodeShape ;
 	sh:targetClass <RegulatingCondEq> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
-<RegulatingCondEqShape.controlEnabled> rdf:type sh:PropertyShape ;
+_:RegulatingCondEqShape.controlEnabled rdf:type sh:PropertyShape ;
 	sh:path <RegulatingCondEq.controlEnabled> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
@@ -480,47 +480,47 @@
 
 <RegulatingControlShape> rdf:type sh:NodeShape ;
 	sh:targetClass <RegulatingControl> ;
-	sh:property <RegulatingControlShape.discrete> , <RegulatingControlShape.enabled> , <RegulatingControlShape.maxAllowedTargetValue> , <RegulatingControlShape.minAllowedTargetValue> , <RegulatingControlShape.targetDeadband> , <RegulatingControlShape.targetValue> , <RegulatingControlShape.targetValueUnitMultiplier> , <IdentifiedObjectShape.mRID> .
+	sh:property _:RegulatingControlShape.discrete , _:RegulatingControlShape.enabled , _:RegulatingControlShape.maxAllowedTargetValue , _:RegulatingControlShape.minAllowedTargetValue , _:RegulatingControlShape.targetDeadband , _:RegulatingControlShape.targetValue , _:RegulatingControlShape.targetValueUnitMultiplier , _:IdentifiedObjectShape.mRID .
 
-<RegulatingControlShape.discrete> rdf:type sh:PropertyShape ;
+_:RegulatingControlShape.discrete rdf:type sh:PropertyShape ;
 	sh:path <RegulatingControl.discrete> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Discrete"@en ;
 	sh:description "The regulation is performed in a discrete mode."^^rdf:XMLLiteral .
-<RegulatingControlShape.enabled> rdf:type sh:PropertyShape ;
+_:RegulatingControlShape.enabled rdf:type sh:PropertyShape ;
 	sh:path <RegulatingControl.enabled> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Enabled"@en ;
 	sh:description "The flag tells if regulation is enabled."^^rdf:XMLLiteral .
-<RegulatingControlShape.maxAllowedTargetValue> rdf:type sh:PropertyShape ;
+_:RegulatingControlShape.maxAllowedTargetValue rdf:type sh:PropertyShape ;
 	sh:path <RegulatingControl.maxAllowedTargetValue> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Max Allowed Target Value"@en ;
 	sh:description "Maximum allowed target value (RegulatingControl.targetValue)."^^rdf:XMLLiteral .
-<RegulatingControlShape.minAllowedTargetValue> rdf:type sh:PropertyShape ;
+_:RegulatingControlShape.minAllowedTargetValue rdf:type sh:PropertyShape ;
 	sh:path <RegulatingControl.minAllowedTargetValue> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Min Allowed Target Value"@en ;
 	sh:description "Minimum allowed target value (RegulatingControl.targetValue)."^^rdf:XMLLiteral .
-<RegulatingControlShape.targetDeadband> rdf:type sh:PropertyShape ;
+_:RegulatingControlShape.targetDeadband rdf:type sh:PropertyShape ;
 	sh:path <RegulatingControl.targetDeadband> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Target Deadband"@en .
-<RegulatingControlShape.targetValue> rdf:type sh:PropertyShape ;
+_:RegulatingControlShape.targetValue rdf:type sh:PropertyShape ;
 	sh:path <RegulatingControl.targetValue> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Target Value"@en ;
 	sh:description "The target value specified for case input."^^rdf:XMLLiteral .
-<RegulatingControlShape.targetValueUnitMultiplier> rdf:type sh:PropertyShape ;
+_:RegulatingControlShape.targetValueUnitMultiplier rdf:type sh:PropertyShape ;
 	sh:path <RegulatingControl.targetValueUnitMultiplier> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -532,16 +532,16 @@
 <RotatingMachineShape> rdf:type sh:NodeShape ;
 	sh:targetClass <RotatingMachine> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <RegulatingCondEqShape.controlEnabled> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:RegulatingCondEqShape.controlEnabled , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
-<RotatingMachineShape.p> rdf:type sh:PropertyShape ;
+_:RotatingMachineShape.p rdf:type sh:PropertyShape ;
 	sh:path <RotatingMachine.p> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "P"@en ;
 	sh:description "Active power injection."^^rdf:XMLLiteral .
-<RotatingMachineShape.q> rdf:type sh:PropertyShape ;
+_:RotatingMachineShape.q rdf:type sh:PropertyShape ;
 	sh:path <RotatingMachine.q> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -552,9 +552,9 @@
 <ShuntCompensatorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ShuntCompensator> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <RegulatingCondEqShape.controlEnabled> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:RegulatingCondEqShape.controlEnabled , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
-<ShuntCompensatorShape.sections> rdf:type sh:PropertyShape ;
+_:ShuntCompensatorShape.sections rdf:type sh:PropertyShape ;
 	sh:path <ShuntCompensator.sections> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -564,13 +564,13 @@
 
 <SolarGeneratingUnitShape> rdf:type sh:NodeShape ;
 	sh:targetClass <SolarGeneratingUnit> ;
-	sh:property <GeneratingUnitShape.normalPF> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:GeneratingUnitShape.normalPF , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <StaticVarCompensatorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <StaticVarCompensator> ;
-	sh:property <StaticVarCompensatorShape.q> , <RegulatingCondEqShape.controlEnabled> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:StaticVarCompensatorShape.q , _:RegulatingCondEqShape.controlEnabled , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
-<StaticVarCompensatorShape.q> rdf:type sh:PropertyShape ;
+_:StaticVarCompensatorShape.q rdf:type sh:PropertyShape ;
 	sh:path <StaticVarCompensator.q> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -580,20 +580,20 @@
 
 <StationSupplyShape> rdf:type sh:NodeShape ;
 	sh:targetClass <StationSupply> ;
-	sh:property <EnergyConsumerShape.p> , <EnergyConsumerShape.q> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:EnergyConsumerShape.p , _:EnergyConsumerShape.q , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <SwitchShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Switch> ;
-	sh:property <SwitchShape.locked> , <SwitchShape.open> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:SwitchShape.locked , _:SwitchShape.open , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
-<SwitchShape.locked> rdf:type sh:PropertyShape ;
+_:SwitchShape.locked rdf:type sh:PropertyShape ;
 	sh:path <Switch.locked> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Locked"@en ;
 	sh:description "If true, the switch is locked."^^rdf:XMLLiteral .
-<SwitchShape.open> rdf:type sh:PropertyShape ;
+_:SwitchShape.open rdf:type sh:PropertyShape ;
 	sh:path <Switch.open> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
@@ -603,9 +603,9 @@
 
 <SynchronousMachineShape> rdf:type sh:NodeShape ;
 	sh:targetClass <SynchronousMachine> ;
-	sh:property <SynchronousMachineShape.operatingMode> , <SynchronousMachineShape.referencePriority> , <RotatingMachineShape.p> , <RotatingMachineShape.q> , <RegulatingCondEqShape.controlEnabled> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:SynchronousMachineShape.operatingMode , _:SynchronousMachineShape.referencePriority , _:RotatingMachineShape.p , _:RotatingMachineShape.q , _:RegulatingCondEqShape.controlEnabled , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
-<SynchronousMachineShape.operatingMode> rdf:type sh:PropertyShape ;
+_:SynchronousMachineShape.operatingMode rdf:type sh:PropertyShape ;
 	sh:path <SynchronousMachine.operatingMode> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -613,7 +613,7 @@
 	sh:in "generator" , "condenser" , "motor" ;
 	sh:name "Operating Mode"@en ;
 	sh:description "Current mode of operation."^^rdf:XMLLiteral .
-<SynchronousMachineShape.referencePriority> rdf:type sh:PropertyShape ;
+_:SynchronousMachineShape.referencePriority rdf:type sh:PropertyShape ;
 	sh:path <SynchronousMachine.referencePriority> ;
 	sh:datatype xsd:integer ;
 	sh:minCount "1"^^xsd:integer ;
@@ -624,16 +624,16 @@
 <TapChangerShape> rdf:type sh:NodeShape ;
 	sh:targetClass <TapChanger> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.mRID> .
+	sh:property _:IdentifiedObjectShape.mRID .
 
-<TapChangerShape.controlEnabled> rdf:type sh:PropertyShape ;
+_:TapChangerShape.controlEnabled rdf:type sh:PropertyShape ;
 	sh:path <TapChanger.controlEnabled> ;
 	sh:datatype xsd:boolean ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Control Enabled"@en ;
 	sh:description "Specifies the regulation status of the equipment."^^rdf:XMLLiteral .
-<TapChangerShape.step> rdf:type sh:PropertyShape ;
+_:TapChangerShape.step rdf:type sh:PropertyShape ;
 	sh:path <TapChanger.step> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -643,21 +643,21 @@
 
 <TapChangerControlShape> rdf:type sh:NodeShape ;
 	sh:targetClass <TapChangerControl> ;
-	sh:property <RegulatingControlShape.discrete> , <RegulatingControlShape.enabled> , <RegulatingControlShape.maxAllowedTargetValue> , <RegulatingControlShape.minAllowedTargetValue> , <RegulatingControlShape.targetDeadband> , <RegulatingControlShape.targetValue> , <RegulatingControlShape.targetValueUnitMultiplier> , <IdentifiedObjectShape.mRID> .
+	sh:property _:RegulatingControlShape.discrete , _:RegulatingControlShape.enabled , _:RegulatingControlShape.maxAllowedTargetValue , _:RegulatingControlShape.minAllowedTargetValue , _:RegulatingControlShape.targetDeadband , _:RegulatingControlShape.targetValue , _:RegulatingControlShape.targetValueUnitMultiplier , _:IdentifiedObjectShape.mRID .
 
 <TerminalShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Terminal> ;
-	sh:property <ACDCTerminalShape.connected> , <IdentifiedObjectShape.mRID> .
+	sh:property _:ACDCTerminalShape.connected , _:IdentifiedObjectShape.mRID .
 
 <ThermalGeneratingUnitShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ThermalGeneratingUnit> ;
-	sh:property <GeneratingUnitShape.normalPF> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:GeneratingUnitShape.normalPF , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
 <VoltageLimitShape> rdf:type sh:NodeShape ;
 	sh:targetClass <VoltageLimit> ;
-	sh:property <VoltageLimitShape.value> , <IdentifiedObjectShape.mRID> .
+	sh:property _:VoltageLimitShape.value , _:IdentifiedObjectShape.mRID .
 
-<VoltageLimitShape.value> rdf:type sh:PropertyShape ;
+_:VoltageLimitShape.value rdf:type sh:PropertyShape ;
 	sh:path <VoltageLimit.value> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -667,21 +667,21 @@
 
 <VsConverterShape> rdf:type sh:NodeShape ;
 	sh:targetClass <VsConverter> ;
-	sh:property <VsConverterShape.droop> , <VsConverterShape.droopCompensation> , <VsConverterShape.pPccControl> , <VsConverterShape.qPccControl> , <VsConverterShape.qShare> , <VsConverterShape.targetPhasePcc> , <VsConverterShape.targetPowerFactorPcc> , <VsConverterShape.targetPWMfactor> , <VsConverterShape.targetQpcc> , <VsConverterShape.targetUpcc> , <ACDCConverterShape.p> , <ACDCConverterShape.q> , <ACDCConverterShape.targetPpcc> , <ACDCConverterShape.targetUdc> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:VsConverterShape.droop , _:VsConverterShape.droopCompensation , _:VsConverterShape.pPccControl , _:VsConverterShape.qPccControl , _:VsConverterShape.qShare , _:VsConverterShape.targetPhasePcc , _:VsConverterShape.targetPowerFactorPcc , _:VsConverterShape.targetPWMfactor , _:VsConverterShape.targetQpcc , _:VsConverterShape.targetUpcc , _:ACDCConverterShape.p , _:ACDCConverterShape.q , _:ACDCConverterShape.targetPpcc , _:ACDCConverterShape.targetUdc , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
 
-<VsConverterShape.droop> rdf:type sh:PropertyShape ;
+_:VsConverterShape.droop rdf:type sh:PropertyShape ;
 	sh:path <VsConverter.droop> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Droop"@en ;
 	sh:description "Droop constant."^^rdf:XMLLiteral .
-<VsConverterShape.droopCompensation> rdf:type sh:PropertyShape ;
+_:VsConverterShape.droopCompensation rdf:type sh:PropertyShape ;
 	sh:path <VsConverter.droopCompensation> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Droop Compensation"@en ;
 	sh:description "Compensation constant."^^rdf:XMLLiteral .
-<VsConverterShape.pPccControl> rdf:type sh:PropertyShape ;
+_:VsConverterShape.pPccControl rdf:type sh:PropertyShape ;
 	sh:path <VsConverter.pPccControl> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -689,7 +689,7 @@
 	sh:in "pPcc" , "udc" , "pPccAndUdcDroop" , "pPccAndUdcDroopWithCompensation" , "pPccAndUdcDroopPilot" , "phasePcc" ;
 	sh:name "P Pcc Control"@en ;
 	sh:description "Kind of control of real power and/or DC voltage."^^rdf:XMLLiteral .
-<VsConverterShape.qPccControl> rdf:type sh:PropertyShape ;
+_:VsConverterShape.qPccControl rdf:type sh:PropertyShape ;
 	sh:path <VsConverter.qPccControl> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -697,37 +697,37 @@
 	sh:in "reactivePcc" , "voltagePcc" , "powerFactorPcc" , "pulseWidthModulation" ;
 	sh:name "Q Pcc Control"@en ;
 	sh:description "Kind of reactive power control."^^rdf:XMLLiteral .
-<VsConverterShape.qShare> rdf:type sh:PropertyShape ;
+_:VsConverterShape.qShare rdf:type sh:PropertyShape ;
 	sh:path <VsConverter.qShare> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Q Share"@en ;
 	sh:description "Reactive power sharing factor among parallel converters on Uac control."^^rdf:XMLLiteral .
-<VsConverterShape.targetPhasePcc> rdf:type sh:PropertyShape ;
+_:VsConverterShape.targetPhasePcc rdf:type sh:PropertyShape ;
 	sh:path <VsConverter.targetPhasePcc> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Target Phase Pcc"@en ;
 	sh:description "Phase target at AC side, at point of common coupling."^^rdf:XMLLiteral .
-<VsConverterShape.targetPowerFactorPcc> rdf:type sh:PropertyShape ;
+_:VsConverterShape.targetPowerFactorPcc rdf:type sh:PropertyShape ;
 	sh:path <VsConverter.targetPowerFactorPcc> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Target Power Factor Pcc"@en ;
 	sh:description "Power factor target at the AC side, at point of common coupling."^^rdf:XMLLiteral .
-<VsConverterShape.targetPWMfactor> rdf:type sh:PropertyShape ;
+_:VsConverterShape.targetPWMfactor rdf:type sh:PropertyShape ;
 	sh:path <VsConverter.targetPWMfactor> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Target Pw Mfactor"@en ;
 	sh:description "Magnitude of pulse-modulation factor."^^rdf:XMLLiteral .
-<VsConverterShape.targetQpcc> rdf:type sh:PropertyShape ;
+_:VsConverterShape.targetQpcc rdf:type sh:PropertyShape ;
 	sh:path <VsConverter.targetQpcc> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Target Qpcc"@en ;
 	sh:description "Reactive power injection target in AC grid, at point of common coupling."^^rdf:XMLLiteral .
-<VsConverterShape.targetUpcc> rdf:type sh:PropertyShape ;
+_:VsConverterShape.targetUpcc rdf:type sh:PropertyShape ;
 	sh:path <VsConverter.targetUpcc> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -736,4 +736,4 @@
 
 <WindGeneratingUnitShape> rdf:type sh:NodeShape ;
 	sh:targetClass <WindGeneratingUnit> ;
-	sh:property <GeneratingUnitShape.normalPF> , <EquipmentShape.inService> , <IdentifiedObjectShape.mRID> .
+	sh:property _:GeneratingUnitShape.normalPF , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .

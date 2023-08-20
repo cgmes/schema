@@ -6,20 +6,20 @@
 
 <DifferenceModelShape> rdf:type sh:NodeShape ;
 	sh:targetClass <DifferenceModel> ;
-	sh:property <DifferenceModelShape.forwardDifferences> , <DifferenceModelShape.preconditions> , <DifferenceModelShape.reverseDifferences> , <ModelShape.accessRights> , <ModelShape.accrualPeriodicity> , <ModelShape.applicationSoftware> , <ModelShape.atLocation> , <ModelShape.conformsTo> , <ModelShape.created> , <ModelShape.creator> , <ModelShape.description> , <ModelShape.generatedAtTime> , <ModelShape.hadPrimarySource> , <ModelShape.hasCurrentVersion> , <ModelShape.hasVersion> , <ModelShape.hasXSDDuration> , <ModelShape.identifier> , <ModelShape.inXSDDateTimeStamp> , <ModelShape.isVersionOf> , <ModelShape.keyword> , <ModelShape.license> , <ModelShape.modelingAuthoritySet> , <ModelShape.previousVersion> , <ModelShape.processType> , <ModelShape.profile> , <ModelShape.rights> , <ModelShape.rightsHolder> , <ModelShape.scenarioTime> , <ModelShape.serviceLocation> , <ModelShape.specializationOf> , <ModelShape.status> , <ModelShape.type> , <ModelShape.usedSettings> , <ModelShape.version> , <ModelShape.versionNotes> , <ModelShape.wasAttributedTo> , <ModelShape.wasGeneratedBy> , <ModelShape.wasInfluencedBy> , <ModelShape.wasRevisionOf> , <ModelShape.Supersedes> , <ModelShape.SupersededBy> , <ModelShape.DependentOn> , <ModelShape.Depending> .
+	sh:property _:DifferenceModelShape.forwardDifferences , _:DifferenceModelShape.preconditions , _:DifferenceModelShape.reverseDifferences , _:ModelShape.accessRights , _:ModelShape.accrualPeriodicity , _:ModelShape.applicationSoftware , _:ModelShape.atLocation , _:ModelShape.conformsTo , _:ModelShape.created , _:ModelShape.creator , _:ModelShape.description , _:ModelShape.generatedAtTime , _:ModelShape.hadPrimarySource , _:ModelShape.hasCurrentVersion , _:ModelShape.hasVersion , _:ModelShape.hasXSDDuration , _:ModelShape.identifier , _:ModelShape.inXSDDateTimeStamp , _:ModelShape.isVersionOf , _:ModelShape.keyword , _:ModelShape.license , _:ModelShape.modelingAuthoritySet , _:ModelShape.previousVersion , _:ModelShape.processType , _:ModelShape.profile , _:ModelShape.rights , _:ModelShape.rightsHolder , _:ModelShape.scenarioTime , _:ModelShape.serviceLocation , _:ModelShape.specializationOf , _:ModelShape.status , _:ModelShape.type , _:ModelShape.usedSettings , _:ModelShape.version , _:ModelShape.versionNotes , _:ModelShape.wasAttributedTo , _:ModelShape.wasGeneratedBy , _:ModelShape.wasInfluencedBy , _:ModelShape.wasRevisionOf , _:ModelShape.Supersedes , _:ModelShape.SupersededBy , _:ModelShape.DependentOn , _:ModelShape.Depending .
 
-<DifferenceModelShape.forwardDifferences> rdf:type sh:PropertyShape ;
+_:DifferenceModelShape.forwardDifferences rdf:type sh:PropertyShape ;
 	sh:path <DifferenceModel.forwardDifferences> ;
 	sh:class <Statements> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:name "Forward Differences"@en .
-<DifferenceModelShape.preconditions> rdf:type sh:PropertyShape ;
+_:DifferenceModelShape.preconditions rdf:type sh:PropertyShape ;
 	sh:path <DifferenceModel.preconditions> ;
 	sh:class <Statements> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:name "Preconditions"@en ;
 	sh:description "A property of the difference model whose value is the collection of precondition statements."^^rdf:XMLLiteral .
-<DifferenceModelShape.reverseDifferences> rdf:type sh:PropertyShape ;
+_:DifferenceModelShape.reverseDifferences rdf:type sh:PropertyShape ;
 	sh:path <DifferenceModel.reverseDifferences> ;
 	sh:class <Statements> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -28,222 +28,222 @@
 
 <FullModelShape> rdf:type sh:NodeShape ;
 	sh:targetClass <FullModel> ;
-	sh:property <ModelShape.accessRights> , <ModelShape.accrualPeriodicity> , <ModelShape.applicationSoftware> , <ModelShape.atLocation> , <ModelShape.conformsTo> , <ModelShape.created> , <ModelShape.creator> , <ModelShape.description> , <ModelShape.generatedAtTime> , <ModelShape.hadPrimarySource> , <ModelShape.hasCurrentVersion> , <ModelShape.hasVersion> , <ModelShape.hasXSDDuration> , <ModelShape.identifier> , <ModelShape.inXSDDateTimeStamp> , <ModelShape.isVersionOf> , <ModelShape.keyword> , <ModelShape.license> , <ModelShape.modelingAuthoritySet> , <ModelShape.previousVersion> , <ModelShape.processType> , <ModelShape.profile> , <ModelShape.rights> , <ModelShape.rightsHolder> , <ModelShape.scenarioTime> , <ModelShape.serviceLocation> , <ModelShape.specializationOf> , <ModelShape.status> , <ModelShape.type> , <ModelShape.usedSettings> , <ModelShape.version> , <ModelShape.versionNotes> , <ModelShape.wasAttributedTo> , <ModelShape.wasGeneratedBy> , <ModelShape.wasInfluencedBy> , <ModelShape.wasRevisionOf> , <ModelShape.Supersedes> , <ModelShape.SupersededBy> , <ModelShape.DependentOn> , <ModelShape.Depending> .
+	sh:property _:ModelShape.accessRights , _:ModelShape.accrualPeriodicity , _:ModelShape.applicationSoftware , _:ModelShape.atLocation , _:ModelShape.conformsTo , _:ModelShape.created , _:ModelShape.creator , _:ModelShape.description , _:ModelShape.generatedAtTime , _:ModelShape.hadPrimarySource , _:ModelShape.hasCurrentVersion , _:ModelShape.hasVersion , _:ModelShape.hasXSDDuration , _:ModelShape.identifier , _:ModelShape.inXSDDateTimeStamp , _:ModelShape.isVersionOf , _:ModelShape.keyword , _:ModelShape.license , _:ModelShape.modelingAuthoritySet , _:ModelShape.previousVersion , _:ModelShape.processType , _:ModelShape.profile , _:ModelShape.rights , _:ModelShape.rightsHolder , _:ModelShape.scenarioTime , _:ModelShape.serviceLocation , _:ModelShape.specializationOf , _:ModelShape.status , _:ModelShape.type , _:ModelShape.usedSettings , _:ModelShape.version , _:ModelShape.versionNotes , _:ModelShape.wasAttributedTo , _:ModelShape.wasGeneratedBy , _:ModelShape.wasInfluencedBy , _:ModelShape.wasRevisionOf , _:ModelShape.Supersedes , _:ModelShape.SupersededBy , _:ModelShape.DependentOn , _:ModelShape.Depending .
 
 <ModelShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Model> ;
 	sh:closed "true"^^xsd:boolean .
 
-<ModelShape.accessRights> rdf:type sh:PropertyShape ;
+_:ModelShape.accessRights rdf:type sh:PropertyShape ;
 	sh:path <Model.accessRights> ;
 	sh:class <IRI> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Access Rights"@en ;
 	sh:description "Information about who access the resource or an indication of its security status."^^rdf:XMLLiteral .
-<ModelShape.accrualPeriodicity> rdf:type sh:PropertyShape ;
+_:ModelShape.accrualPeriodicity rdf:type sh:PropertyShape ;
 	sh:path <Model.accrualPeriodicity> ;
 	sh:class <IRI> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Accrual Periodicity"@en ;
 	sh:description "The frequency with which items are added to a collection.\n[CIM context:\nReference to the time frame.]."^^rdf:XMLLiteral .
-<ModelShape.applicationSoftware> rdf:type sh:PropertyShape ;
+_:ModelShape.applicationSoftware rdf:type sh:PropertyShape ;
 	sh:path <Model.applicationSoftware> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Application Software"@en ;
 	sh:description "Identifies the application software which generated this instance file."^^rdf:XMLLiteral .
-<ModelShape.atLocation> rdf:type sh:PropertyShape ;
+_:ModelShape.atLocation rdf:type sh:PropertyShape ;
 	sh:path <Model.atLocation> ;
 	sh:class <IRI> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "At Location"@en .
-<ModelShape.conformsTo> rdf:type sh:PropertyShape ;
+_:ModelShape.conformsTo rdf:type sh:PropertyShape ;
 	sh:path <Model.conformsTo> ;
 	sh:class <StringIRI> ;
 	sh:name "Conforms To"@en .
-<ModelShape.created> rdf:type sh:PropertyShape ;
+_:ModelShape.created rdf:type sh:PropertyShape ;
 	sh:path <Model.created> ;
 	sh:datatype <https://schema.org/DateTime> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Created"@en ;
 	sh:description "The date and time when the model was created."^^rdf:XMLLiteral .
-<ModelShape.creator> rdf:type sh:PropertyShape ;
+_:ModelShape.creator rdf:type sh:PropertyShape ;
 	sh:path <Model.creator> ;
 	sh:class <StringIRI> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Creator"@en ;
 	sh:description "An entity responsible for making the resource.\nRecommended practice is to identify the creator with a URI."^^rdf:XMLLiteral .
-<ModelShape.description> rdf:type sh:PropertyShape ;
+_:ModelShape.description rdf:type sh:PropertyShape ;
 	sh:path <Model.description> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Description"@en ;
 	sh:description "A free-text account of the item."^^rdf:XMLLiteral .
-<ModelShape.generatedAtTime> rdf:type sh:PropertyShape ;
+_:ModelShape.generatedAtTime rdf:type sh:PropertyShape ;
 	sh:path <Model.generatedAtTime> ;
 	sh:datatype <https://schema.org/DateTime> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Generated At Time"@en ;
 	sh:description "Generation is the completion of production of a new entity by an activity."^^rdf:XMLLiteral .
-<ModelShape.hadPrimarySource> rdf:type sh:PropertyShape ;
+_:ModelShape.hadPrimarySource rdf:type sh:PropertyShape ;
 	sh:path <Model.hadPrimarySource> ;
 	sh:class <IRI> ;
 	sh:name "Had Primary Source"@en .
-<ModelShape.hasCurrentVersion> rdf:type sh:PropertyShape ;
+_:ModelShape.hasCurrentVersion rdf:type sh:PropertyShape ;
 	sh:path <Model.hasCurrentVersion> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Has Current Version"@en .
-<ModelShape.hasVersion> rdf:type sh:PropertyShape ;
+_:ModelShape.hasVersion rdf:type sh:PropertyShape ;
 	sh:path <Model.hasVersion> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Has Version"@en .
-<ModelShape.hasXSDDuration> rdf:type sh:PropertyShape ;
+_:ModelShape.hasXSDDuration rdf:type sh:PropertyShape ;
 	sh:path <Model.hasXSDDuration> ;
 	sh:datatype xsd:duration ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Has Xsd Duration"@en .
-<ModelShape.identifier> rdf:type sh:PropertyShape ;
+_:ModelShape.identifier rdf:type sh:PropertyShape ;
 	sh:path <Model.identifier> ;
 	sh:class <StringIRI> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Identifier"@en ;
 	sh:description "An unambiguous reference to the resource within a given context."^^rdf:XMLLiteral .
-<ModelShape.inXSDDateTimeStamp> rdf:type sh:PropertyShape ;
+_:ModelShape.inXSDDateTimeStamp rdf:type sh:PropertyShape ;
 	sh:path <Model.inXSDDateTimeStamp> ;
 	sh:datatype xsd:dateTimeStamp ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "In Xsd Date Time Stamp"@en .
-<ModelShape.isVersionOf> rdf:type sh:PropertyShape ;
+_:ModelShape.isVersionOf rdf:type sh:PropertyShape ;
 	sh:path <Model.isVersionOf> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Is Version Of"@en .
-<ModelShape.keyword> rdf:type sh:PropertyShape ;
+_:ModelShape.keyword rdf:type sh:PropertyShape ;
 	sh:path <Model.keyword> ;
 	sh:class <StringFixedLanguage> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Keyword"@en .
-<ModelShape.license> rdf:type sh:PropertyShape ;
+_:ModelShape.license rdf:type sh:PropertyShape ;
 	sh:path <Model.license> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "License"@en ;
 	sh:description "A legal document giving official permission to do something with the resource."^^rdf:XMLLiteral .
-<ModelShape.modelingAuthoritySet> rdf:type sh:PropertyShape ;
+_:ModelShape.modelingAuthoritySet rdf:type sh:PropertyShape ;
 	sh:path <Model.modelingAuthoritySet> ;
 	sh:datatype xsd:anyURI ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Modeling Authority Set"@en ;
 	sh:description "A URN/URI referring to the organisation role / model authority set reference."^^rdf:XMLLiteral .
-<ModelShape.previousVersion> rdf:type sh:PropertyShape ;
+_:ModelShape.previousVersion rdf:type sh:PropertyShape ;
 	sh:path <Model.previousVersion> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Previous Version"@en .
-<ModelShape.processType> rdf:type sh:PropertyShape ;
+_:ModelShape.processType rdf:type sh:PropertyShape ;
 	sh:path <Model.processType> ;
 	sh:class <IRI> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Process Type"@en ;
 	sh:description "The exact business nature."^^rdf:XMLLiteral .
-<ModelShape.profile> rdf:type sh:PropertyShape ;
+_:ModelShape.profile rdf:type sh:PropertyShape ;
 	sh:path <Model.profile> ;
 	sh:datatype xsd:anyURI ;
 	sh:name "Profile"@en ;
 	sh:description "URN/URI describing the profiles that governs this model."^^rdf:XMLLiteral .
-<ModelShape.rights> rdf:type sh:PropertyShape ;
+_:ModelShape.rights rdf:type sh:PropertyShape ;
 	sh:path <Model.rights> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Rights"@en ;
 	sh:description "A statement that concerns all rights not addressed with dct:license or dct:accessRights, such as copyright statements."^^rdf:XMLLiteral .
-<ModelShape.rightsHolder> rdf:type sh:PropertyShape ;
+_:ModelShape.rightsHolder rdf:type sh:PropertyShape ;
 	sh:path <Model.rightsHolder> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Rights Holder"@en ;
 	sh:description "Information about rights held in and over the resource."^^rdf:XMLLiteral .
-<ModelShape.scenarioTime> rdf:type sh:PropertyShape ;
+_:ModelShape.scenarioTime rdf:type sh:PropertyShape ;
 	sh:path <Model.scenarioTime> ;
 	sh:datatype <https://schema.org/DateTime> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Scenario Time"@en ;
 	sh:description "The date and time that this model represents, i.e."^^rdf:XMLLiteral .
-<ModelShape.serviceLocation> rdf:type sh:PropertyShape ;
+_:ModelShape.serviceLocation rdf:type sh:PropertyShape ;
 	sh:path <Model.serviceLocation> ;
 	sh:class <IRI> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Service Location"@en ;
 	sh:description "Reference to a service location (region or a domain)."^^rdf:XMLLiteral .
-<ModelShape.specializationOf> rdf:type sh:PropertyShape ;
+_:ModelShape.specializationOf rdf:type sh:PropertyShape ;
 	sh:path <Model.specializationOf> ;
 	sh:class <IRI> ;
 	sh:name "Specialization Of"@en .
-<ModelShape.status> rdf:type sh:PropertyShape ;
+_:ModelShape.status rdf:type sh:PropertyShape ;
 	sh:path <Model.status> ;
 	sh:class <IRI> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Status"@en .
-<ModelShape.type> rdf:type sh:PropertyShape ;
+_:ModelShape.type rdf:type sh:PropertyShape ;
 	sh:path <Model.type> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Type"@en ;
 	sh:description "The nature or genre of the resource."^^rdf:XMLLiteral .
-<ModelShape.usedSettings> rdf:type sh:PropertyShape ;
+_:ModelShape.usedSettings rdf:type sh:PropertyShape ;
 	sh:path <Model.usedSettings> ;
 	sh:class <IRI> ;
 	sh:name "Used Settings"@en ;
 	sh:description "Reference to a set of parameters describing used settings (e.g."^^rdf:XMLLiteral .
-<ModelShape.version> rdf:type sh:PropertyShape ;
+_:ModelShape.version rdf:type sh:PropertyShape ;
 	sh:path <Model.version> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Version"@en ;
 	sh:description "The version number of a resource."^^rdf:XMLLiteral .
-<ModelShape.versionNotes> rdf:type sh:PropertyShape ;
+_:ModelShape.versionNotes rdf:type sh:PropertyShape ;
 	sh:path <Model.versionNotes> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Version Notes"@en ;
 	sh:description "A description of changes between this version and the previous version of the resource."^^rdf:XMLLiteral .
-<ModelShape.wasAttributedTo> rdf:type sh:PropertyShape ;
+_:ModelShape.wasAttributedTo rdf:type sh:PropertyShape ;
 	sh:path <Model.wasAttributedTo> ;
 	sh:class <IRI> ;
 	sh:name "Was Attributed To"@en .
-<ModelShape.wasGeneratedBy> rdf:type sh:PropertyShape ;
+_:ModelShape.wasGeneratedBy rdf:type sh:PropertyShape ;
 	sh:path <Model.wasGeneratedBy> ;
 	sh:class <IRI> ;
 	sh:name "Was Generated By"@en ;
 	sh:description "Generation is the completion of production of a new entity by an activity."^^rdf:XMLLiteral .
-<ModelShape.wasInfluencedBy> rdf:type sh:PropertyShape ;
+_:ModelShape.wasInfluencedBy rdf:type sh:PropertyShape ;
 	sh:path <Model.wasInfluencedBy> ;
 	sh:class <IRI> ;
 	sh:name "Was Influenced By"@en .
-<ModelShape.wasRevisionOf> rdf:type sh:PropertyShape ;
+_:ModelShape.wasRevisionOf rdf:type sh:PropertyShape ;
 	sh:path <Model.wasRevisionOf> ;
 	sh:class <IRI> ;
 	sh:name "Was Revision Of"@en ;
 	sh:description "A revision is a derivation for which the resulting entity is a revised version of some original."^^rdf:XMLLiteral .
 
-<ModelShape.Supersedes> rdf:type sh:PropertyShape ;
+_:ModelShape.Supersedes rdf:type sh:PropertyShape ;
 	sh:path <Model.Supersedes> ;
 	sh:class <Model> ;
 	sh:name "Supersedes"@en ;
 	sh:description "When a model is updated the resulting model supersedes the models that were used as basis for the update."^^rdf:XMLLiteral .
-<ModelShape.SupersededBy> rdf:type sh:PropertyShape ;
+_:ModelShape.SupersededBy rdf:type sh:PropertyShape ;
 	sh:path <Model.SupersededBy> ;
 	sh:class <Model> ;
 	sh:name "Superseded By"@en ;
 	sh:description "All models superseding this model."^^rdf:XMLLiteral .
-<ModelShape.DependentOn> rdf:type sh:PropertyShape ;
+_:ModelShape.DependentOn rdf:type sh:PropertyShape ;
 	sh:path <Model.DependentOn> ;
 	sh:class <Model> ;
 	sh:name "Dependent On"@en ;
 	sh:description "A reference to the model documents that the model described by this document depends on."^^rdf:XMLLiteral .
-<ModelShape.Depending> rdf:type sh:PropertyShape ;
+_:ModelShape.Depending rdf:type sh:PropertyShape ;
 	sh:path <Model.Depending> ;
 	sh:class <Model> ;
 	sh:name "Depending"@en ;
@@ -251,23 +251,23 @@
 
 <StatementsShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Statements> ;
-	sh:property <StatementsShape.object> , <StatementsShape.predicate> , <StatementsShape.subject> .
+	sh:property _:StatementsShape.object , _:StatementsShape.predicate , _:StatementsShape.subject .
 
-<StatementsShape.object> rdf:type sh:PropertyShape ;
+_:StatementsShape.object rdf:type sh:PropertyShape ;
 	sh:path <Statements.object> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Object"@en ;
 	sh:description "Statement object."^^rdf:XMLLiteral .
-<StatementsShape.predicate> rdf:type sh:PropertyShape ;
+_:StatementsShape.predicate rdf:type sh:PropertyShape ;
 	sh:path <Statements.predicate> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Predicate"@en ;
 	sh:description "Statement predicate."^^rdf:XMLLiteral .
-<StatementsShape.subject> rdf:type sh:PropertyShape ;
+_:StatementsShape.subject rdf:type sh:PropertyShape ;
 	sh:path <Statements.subject> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;

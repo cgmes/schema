@@ -6,9 +6,9 @@
 
 <DiagramShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Diagram> ;
-	sh:property <DiagramShape.orientation> , <DiagramShape.x1InitialView> , <DiagramShape.x2InitialView> , <DiagramShape.y1InitialView> , <DiagramShape.y2InitialView> , <DiagramShape.DiagramElements> , <DiagramShape.DiagramStyle> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.DiagramObjects> .
+	sh:property _:DiagramShape.orientation , _:DiagramShape.x1InitialView , _:DiagramShape.x2InitialView , _:DiagramShape.y1InitialView , _:DiagramShape.y2InitialView , _:DiagramShape.DiagramElements , _:DiagramShape.DiagramStyle , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.DiagramObjects .
 
-<DiagramShape.orientation> rdf:type sh:PropertyShape ;
+_:DiagramShape.orientation rdf:type sh:PropertyShape ;
 	sh:path <Diagram.orientation> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -16,37 +16,37 @@
 	sh:in "positive" , "negative" ;
 	sh:name "Orientation"@en ;
 	sh:description "Coordinate system orientation of the diagram."^^rdf:XMLLiteral .
-<DiagramShape.x1InitialView> rdf:type sh:PropertyShape ;
+_:DiagramShape.x1InitialView rdf:type sh:PropertyShape ;
 	sh:path <Diagram.x1InitialView> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "X1 Initial View"@en ;
 	sh:description "X coordinate of the first corner of the initial view."^^rdf:XMLLiteral .
-<DiagramShape.x2InitialView> rdf:type sh:PropertyShape ;
+_:DiagramShape.x2InitialView rdf:type sh:PropertyShape ;
 	sh:path <Diagram.x2InitialView> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "X2 Initial View"@en ;
 	sh:description "X coordinate of the second corner of the initial view."^^rdf:XMLLiteral .
-<DiagramShape.y1InitialView> rdf:type sh:PropertyShape ;
+_:DiagramShape.y1InitialView rdf:type sh:PropertyShape ;
 	sh:path <Diagram.y1InitialView> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Y1 Initial View"@en ;
 	sh:description "Y coordinate of the first corner of the initial view."^^rdf:XMLLiteral .
-<DiagramShape.y2InitialView> rdf:type sh:PropertyShape ;
+_:DiagramShape.y2InitialView rdf:type sh:PropertyShape ;
 	sh:path <Diagram.y2InitialView> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Y2 Initial View"@en ;
 	sh:description "Y coordinate of the second corner of the initial view."^^rdf:XMLLiteral .
 
-<DiagramShape.DiagramElements> rdf:type sh:PropertyShape ;
+_:DiagramShape.DiagramElements rdf:type sh:PropertyShape ;
 	sh:path <Diagram.DiagramElements> ;
 	sh:class <DiagramObject> ;
 	sh:name "Diagram Elements"@en ;
 	sh:description "A diagram is made up of multiple diagram objects."^^rdf:XMLLiteral .
-<DiagramShape.DiagramStyle> rdf:type sh:PropertyShape ;
+_:DiagramShape.DiagramStyle rdf:type sh:PropertyShape ;
 	sh:path <Diagram.DiagramStyle> ;
 	sh:class <DiagramStyle> ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -55,73 +55,73 @@
 
 <DiagramObjectShape> rdf:type sh:NodeShape ;
 	sh:targetClass <DiagramObject> ;
-	sh:property <DiagramObjectShape.drawingOrder> , <DiagramObjectShape.isPolygon> , <DiagramObjectShape.offsetX> , <DiagramObjectShape.offsetY> , <DiagramObjectShape.rotation> , <DiagramObjectShape.DiagramObjectStyle> , <DiagramObjectShape.IdentifiedObject> , <DiagramObjectShape.Diagram> , <DiagramObjectShape.VisibilityLayers> , <DiagramObjectShape.DiagramObjectPoints> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.DiagramObjects> .
+	sh:property _:DiagramObjectShape.drawingOrder , _:DiagramObjectShape.isPolygon , _:DiagramObjectShape.offsetX , _:DiagramObjectShape.offsetY , _:DiagramObjectShape.rotation , _:DiagramObjectShape.DiagramObjectStyle , _:DiagramObjectShape.IdentifiedObject , _:DiagramObjectShape.Diagram , _:DiagramObjectShape.VisibilityLayers , _:DiagramObjectShape.DiagramObjectPoints , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.DiagramObjects .
 
-<DiagramObjectShape.drawingOrder> rdf:type sh:PropertyShape ;
+_:DiagramObjectShape.drawingOrder rdf:type sh:PropertyShape ;
 	sh:path <DiagramObject.drawingOrder> ;
 	sh:datatype xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Drawing Order"@en ;
 	sh:description "The drawing order of this element."^^rdf:XMLLiteral .
-<DiagramObjectShape.isPolygon> rdf:type sh:PropertyShape ;
+_:DiagramObjectShape.isPolygon rdf:type sh:PropertyShape ;
 	sh:path <DiagramObject.isPolygon> ;
 	sh:datatype xsd:boolean ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Is Polygon"@en ;
 	sh:description "Defines whether or not the diagram objects points define the boundaries of a polygon or the routing of a polyline."^^rdf:XMLLiteral .
-<DiagramObjectShape.offsetX> rdf:type sh:PropertyShape ;
+_:DiagramObjectShape.offsetX rdf:type sh:PropertyShape ;
 	sh:path <DiagramObject.offsetX> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Offset X"@en ;
 	sh:description "The offset in the X direction."^^rdf:XMLLiteral .
-<DiagramObjectShape.offsetY> rdf:type sh:PropertyShape ;
+_:DiagramObjectShape.offsetY rdf:type sh:PropertyShape ;
 	sh:path <DiagramObject.offsetY> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Offset Y"@en ;
 	sh:description "The offset in the Y direction."^^rdf:XMLLiteral .
-<DiagramObjectShape.rotation> rdf:type sh:PropertyShape ;
+_:DiagramObjectShape.rotation rdf:type sh:PropertyShape ;
 	sh:path <DiagramObject.rotation> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Rotation"@en ;
 	sh:description "Sets the angle of rotation of the diagram object."^^rdf:XMLLiteral .
 
-<DiagramObjectShape.DiagramObjectStyle> rdf:type sh:PropertyShape ;
+_:DiagramObjectShape.DiagramObjectStyle rdf:type sh:PropertyShape ;
 	sh:path <DiagramObject.DiagramObjectStyle> ;
 	sh:class <DiagramObjectStyle> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Diagram Object Style"@en ;
 	sh:description "A diagram object has a style associated that provides a reference for the style used in the originating system."^^rdf:XMLLiteral .
-<DiagramObjectShape.IdentifiedObject> rdf:type sh:PropertyShape ;
+_:DiagramObjectShape.IdentifiedObject rdf:type sh:PropertyShape ;
 	sh:path <DiagramObject.IdentifiedObject> ;
 	sh:class <IdentifiedObject> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Identified Object"@en ;
 	sh:description "The domain object to which this diagram object is associated."^^rdf:XMLLiteral .
-<DiagramObjectShape.Diagram> rdf:type sh:PropertyShape ;
+_:DiagramObjectShape.Diagram rdf:type sh:PropertyShape ;
 	sh:path <DiagramObject.Diagram> ;
 	sh:class <Diagram> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Diagram"@en ;
 	sh:description "A diagram object is part of a diagram."^^rdf:XMLLiteral .
-<DiagramObjectShape.VisibilityLayers> rdf:type sh:PropertyShape ;
+_:DiagramObjectShape.VisibilityLayers rdf:type sh:PropertyShape ;
 	sh:path <DiagramObject.VisibilityLayers> ;
 	sh:class <VisibilityLayer> ;
 	sh:name "Visibility Layers"@en ;
 	sh:description "A diagram object can be part of multiple visibility layers."^^rdf:XMLLiteral .
-<DiagramObjectShape.DiagramObjectPoints> rdf:type sh:PropertyShape ;
+_:DiagramObjectShape.DiagramObjectPoints rdf:type sh:PropertyShape ;
 	sh:path <DiagramObject.DiagramObjectPoints> ;
 	sh:class <DiagramObjectPoint> ;
 	sh:name "Diagram Object Points"@en .
 
 <DiagramObjectGluePointShape> rdf:type sh:NodeShape ;
 	sh:targetClass <DiagramObjectGluePoint> ;
-	sh:property <DiagramObjectGluePointShape.DiagramObjectPoints> .
+	sh:property _:DiagramObjectGluePointShape.DiagramObjectPoints .
 
-<DiagramObjectGluePointShape.DiagramObjectPoints> rdf:type sh:PropertyShape ;
+_:DiagramObjectGluePointShape.DiagramObjectPoints rdf:type sh:PropertyShape ;
 	sh:path <DiagramObjectGluePoint.DiagramObjectPoints> ;
 	sh:class <DiagramObjectPoint> ;
 	sh:minCount "2"^^xsd:integer ;
@@ -130,41 +130,41 @@
 
 <DiagramObjectPointShape> rdf:type sh:NodeShape ;
 	sh:targetClass <DiagramObjectPoint> ;
-	sh:property <DiagramObjectPointShape.sequenceNumber> , <DiagramObjectPointShape.xPosition> , <DiagramObjectPointShape.yPosition> , <DiagramObjectPointShape.zPosition> , <DiagramObjectPointShape.DiagramObjectGluePoint> , <DiagramObjectPointShape.DiagramObject> .
+	sh:property _:DiagramObjectPointShape.sequenceNumber , _:DiagramObjectPointShape.xPosition , _:DiagramObjectPointShape.yPosition , _:DiagramObjectPointShape.zPosition , _:DiagramObjectPointShape.DiagramObjectGluePoint , _:DiagramObjectPointShape.DiagramObject .
 
-<DiagramObjectPointShape.sequenceNumber> rdf:type sh:PropertyShape ;
+_:DiagramObjectPointShape.sequenceNumber rdf:type sh:PropertyShape ;
 	sh:path <DiagramObjectPoint.sequenceNumber> ;
 	sh:datatype xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Sequence Number"@en .
-<DiagramObjectPointShape.xPosition> rdf:type sh:PropertyShape ;
+_:DiagramObjectPointShape.xPosition rdf:type sh:PropertyShape ;
 	sh:path <DiagramObjectPoint.xPosition> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "X Position"@en ;
 	sh:description "The X coordinate of this point."^^rdf:XMLLiteral .
-<DiagramObjectPointShape.yPosition> rdf:type sh:PropertyShape ;
+_:DiagramObjectPointShape.yPosition rdf:type sh:PropertyShape ;
 	sh:path <DiagramObjectPoint.yPosition> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Y Position"@en ;
 	sh:description "The Y coordinate of this point."^^rdf:XMLLiteral .
-<DiagramObjectPointShape.zPosition> rdf:type sh:PropertyShape ;
+_:DiagramObjectPointShape.zPosition rdf:type sh:PropertyShape ;
 	sh:path <DiagramObjectPoint.zPosition> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Z Position"@en ;
 	sh:description "The Z coordinate of this point."^^rdf:XMLLiteral .
 
-<DiagramObjectPointShape.DiagramObjectGluePoint> rdf:type sh:PropertyShape ;
+_:DiagramObjectPointShape.DiagramObjectGluePoint rdf:type sh:PropertyShape ;
 	sh:path <DiagramObjectPoint.DiagramObjectGluePoint> ;
 	sh:class <DiagramObjectGluePoint> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Diagram Object Glue Point"@en ;
 	sh:description "The 'glue' point to which this point is associated."^^rdf:XMLLiteral .
-<DiagramObjectPointShape.DiagramObject> rdf:type sh:PropertyShape ;
+_:DiagramObjectPointShape.DiagramObject rdf:type sh:PropertyShape ;
 	sh:path <DiagramObjectPoint.DiagramObject> ;
 	sh:class <DiagramObject> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -174,9 +174,9 @@
 
 <DiagramObjectStyleShape> rdf:type sh:NodeShape ;
 	sh:targetClass <DiagramObjectStyle> ;
-	sh:property <DiagramObjectStyleShape.StyledObjects> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.DiagramObjects> .
+	sh:property _:DiagramObjectStyleShape.StyledObjects , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.DiagramObjects .
 
-<DiagramObjectStyleShape.StyledObjects> rdf:type sh:PropertyShape ;
+_:DiagramObjectStyleShape.StyledObjects rdf:type sh:PropertyShape ;
 	sh:path <DiagramObjectStyle.StyledObjects> ;
 	sh:class <DiagramObject> ;
 	sh:name "Styled Objects"@en ;
@@ -184,9 +184,9 @@
 
 <DiagramStyleShape> rdf:type sh:NodeShape ;
 	sh:targetClass <DiagramStyle> ;
-	sh:property <DiagramStyleShape.Diagram> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.DiagramObjects> .
+	sh:property _:DiagramStyleShape.Diagram , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.DiagramObjects .
 
-<DiagramStyleShape.Diagram> rdf:type sh:PropertyShape ;
+_:DiagramStyleShape.Diagram rdf:type sh:PropertyShape ;
 	sh:path <DiagramStyle.Diagram> ;
 	sh:class <Diagram> ;
 	sh:name "Diagram"@en ;
@@ -196,20 +196,20 @@
 	sh:targetClass <IdentifiedObject> ;
 	sh:closed "true"^^xsd:boolean .
 
-<IdentifiedObjectShape.description> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.description rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.description> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Description"@en ;
 	sh:description "The description is a free human readable text describing or naming the object."^^rdf:XMLLiteral .
-<IdentifiedObjectShape.mRID> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.mRID rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.mRID> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "MRID"@en ;
 	sh:description "Master resource identifier issued by a model authority."^^rdf:XMLLiteral .
-<IdentifiedObjectShape.name> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.name rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.name> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -217,7 +217,7 @@
 	sh:name "Name"@en ;
 	sh:description "The name is any free human readable and possibly non unique text naming the object."^^rdf:XMLLiteral .
 
-<IdentifiedObjectShape.DiagramObjects> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.DiagramObjects rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.DiagramObjects> ;
 	sh:class <DiagramObject> ;
 	sh:name "Diagram Objects"@en ;
@@ -225,9 +225,9 @@
 
 <TextDiagramObjectShape> rdf:type sh:NodeShape ;
 	sh:targetClass <TextDiagramObject> ;
-	sh:property <TextDiagramObjectShape.text> , <DiagramObjectShape.drawingOrder> , <DiagramObjectShape.isPolygon> , <DiagramObjectShape.offsetX> , <DiagramObjectShape.offsetY> , <DiagramObjectShape.rotation> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <DiagramObjectShape.DiagramObjectStyle> , <DiagramObjectShape.IdentifiedObject> , <DiagramObjectShape.Diagram> , <DiagramObjectShape.VisibilityLayers> , <DiagramObjectShape.DiagramObjectPoints> , <IdentifiedObjectShape.DiagramObjects> .
+	sh:property _:TextDiagramObjectShape.text , _:DiagramObjectShape.drawingOrder , _:DiagramObjectShape.isPolygon , _:DiagramObjectShape.offsetX , _:DiagramObjectShape.offsetY , _:DiagramObjectShape.rotation , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:DiagramObjectShape.DiagramObjectStyle , _:DiagramObjectShape.IdentifiedObject , _:DiagramObjectShape.Diagram , _:DiagramObjectShape.VisibilityLayers , _:DiagramObjectShape.DiagramObjectPoints , _:IdentifiedObjectShape.DiagramObjects .
 
-<TextDiagramObjectShape.text> rdf:type sh:PropertyShape ;
+_:TextDiagramObjectShape.text rdf:type sh:PropertyShape ;
 	sh:path <TextDiagramObject.text> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -237,16 +237,16 @@
 
 <VisibilityLayerShape> rdf:type sh:NodeShape ;
 	sh:targetClass <VisibilityLayer> ;
-	sh:property <VisibilityLayerShape.drawingOrder> , <VisibilityLayerShape.VisibleObjects> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <IdentifiedObjectShape.DiagramObjects> .
+	sh:property _:VisibilityLayerShape.drawingOrder , _:VisibilityLayerShape.VisibleObjects , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:IdentifiedObjectShape.DiagramObjects .
 
-<VisibilityLayerShape.drawingOrder> rdf:type sh:PropertyShape ;
+_:VisibilityLayerShape.drawingOrder rdf:type sh:PropertyShape ;
 	sh:path <VisibilityLayer.drawingOrder> ;
 	sh:datatype xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Drawing Order"@en ;
 	sh:description "The drawing order for this layer."^^rdf:XMLLiteral .
 
-<VisibilityLayerShape.VisibleObjects> rdf:type sh:PropertyShape ;
+_:VisibilityLayerShape.VisibleObjects rdf:type sh:PropertyShape ;
 	sh:path <VisibilityLayer.VisibleObjects> ;
 	sh:class <DiagramObject> ;
 	sh:minCount "1"^^xsd:integer ;

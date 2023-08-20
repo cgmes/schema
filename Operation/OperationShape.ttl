@@ -7,9 +7,9 @@
 <ACDCTerminalShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ACDCTerminal> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name .
 
-<ACDCTerminalShape.Measurements> rdf:type sh:PropertyShape ;
+_:ACDCTerminalShape.Measurements rdf:type sh:PropertyShape ;
 	sh:path <ACDCTerminal.Measurements> ;
 	sh:class <Measurement> ;
 	sh:name "Measurements"@en ;
@@ -17,14 +17,14 @@
 
 <AccumulatorShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Accumulator> ;
-	sh:property <AccumulatorShape.LimitSets> , <AccumulatorShape.AccumulatorValues> , <MeasurementShape.measurementType> , <MeasurementShape.phases> , <MeasurementShape.unitMultiplier> , <MeasurementShape.unitSymbol> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <MeasurementShape.Terminal> , <MeasurementShape.PowerSystemResource> .
+	sh:property _:AccumulatorShape.LimitSets , _:AccumulatorShape.AccumulatorValues , _:MeasurementShape.measurementType , _:MeasurementShape.phases , _:MeasurementShape.unitMultiplier , _:MeasurementShape.unitSymbol , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:MeasurementShape.Terminal , _:MeasurementShape.PowerSystemResource .
 
-<AccumulatorShape.LimitSets> rdf:type sh:PropertyShape ;
+_:AccumulatorShape.LimitSets rdf:type sh:PropertyShape ;
 	sh:path <Accumulator.LimitSets> ;
 	sh:class <AccumulatorLimitSet> ;
 	sh:name "Limit Sets"@en ;
 	sh:description "A measurement may have zero or more limit ranges defined for it."^^rdf:XMLLiteral .
-<AccumulatorShape.AccumulatorValues> rdf:type sh:PropertyShape ;
+_:AccumulatorShape.AccumulatorValues rdf:type sh:PropertyShape ;
 	sh:path <Accumulator.AccumulatorValues> ;
 	sh:class <AccumulatorValue> ;
 	sh:name "Accumulator Values"@en ;
@@ -32,9 +32,9 @@
 
 <AccumulatorLimitShape> rdf:type sh:NodeShape ;
 	sh:targetClass <AccumulatorLimit> ;
-	sh:property <AccumulatorLimitShape.value> , <AccumulatorLimitShape.LimitSet> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+	sh:property _:AccumulatorLimitShape.value , _:AccumulatorLimitShape.LimitSet , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name .
 
-<AccumulatorLimitShape.value> rdf:type sh:PropertyShape ;
+_:AccumulatorLimitShape.value rdf:type sh:PropertyShape ;
 	sh:path <AccumulatorLimit.value> ;
 	sh:datatype xsd:integer ;
 	sh:minCount "1"^^xsd:integer ;
@@ -42,7 +42,7 @@
 	sh:name "Value"@en ;
 	sh:description "The value to supervise against."^^rdf:XMLLiteral .
 
-<AccumulatorLimitShape.LimitSet> rdf:type sh:PropertyShape ;
+_:AccumulatorLimitShape.LimitSet rdf:type sh:PropertyShape ;
 	sh:path <AccumulatorLimit.LimitSet> ;
 	sh:class <AccumulatorLimitSet> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -52,15 +52,15 @@
 
 <AccumulatorLimitSetShape> rdf:type sh:NodeShape ;
 	sh:targetClass <AccumulatorLimitSet> ;
-	sh:property <AccumulatorLimitSetShape.Measurements> , <AccumulatorLimitSetShape.Limits> , <LimitSetShape.isPercentageLimits> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+	sh:property _:AccumulatorLimitSetShape.Measurements , _:AccumulatorLimitSetShape.Limits , _:LimitSetShape.isPercentageLimits , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name .
 
-<AccumulatorLimitSetShape.Measurements> rdf:type sh:PropertyShape ;
+_:AccumulatorLimitSetShape.Measurements rdf:type sh:PropertyShape ;
 	sh:path <AccumulatorLimitSet.Measurements> ;
 	sh:class <Accumulator> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:name "Measurements"@en ;
 	sh:description "The Measurements using the LimitSet."^^rdf:XMLLiteral .
-<AccumulatorLimitSetShape.Limits> rdf:type sh:PropertyShape ;
+_:AccumulatorLimitSetShape.Limits rdf:type sh:PropertyShape ;
 	sh:path <AccumulatorLimitSet.Limits> ;
 	sh:class <AccumulatorLimit> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -69,9 +69,9 @@
 
 <AccumulatorResetShape> rdf:type sh:NodeShape ;
 	sh:targetClass <AccumulatorReset> ;
-	sh:property <AccumulatorResetShape.AccumulatorValue> , <ControlShape.controlType> , <ControlShape.operationInProgress> , <ControlShape.timeStamp> , <ControlShape.unitMultiplier> , <ControlShape.unitSymbol> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <ControlShape.PowerSystemResource> .
+	sh:property _:AccumulatorResetShape.AccumulatorValue , _:ControlShape.controlType , _:ControlShape.operationInProgress , _:ControlShape.timeStamp , _:ControlShape.unitMultiplier , _:ControlShape.unitSymbol , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:ControlShape.PowerSystemResource .
 
-<AccumulatorResetShape.AccumulatorValue> rdf:type sh:PropertyShape ;
+_:AccumulatorResetShape.AccumulatorValue rdf:type sh:PropertyShape ;
 	sh:path <AccumulatorReset.AccumulatorValue> ;
 	sh:class <AccumulatorValue> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -81,15 +81,15 @@
 
 <AccumulatorValueShape> rdf:type sh:NodeShape ;
 	sh:targetClass <AccumulatorValue> ;
-	sh:property <AccumulatorValueShape.AccumulatorReset> , <AccumulatorValueShape.Accumulator> , <MeasurementValueShape.sensorAccuracy> , <MeasurementValueShape.timeStamp> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <MeasurementValueShape.MeasurementValueSource> , <MeasurementValueShape.MeasurementValueQuality> .
+	sh:property _:AccumulatorValueShape.AccumulatorReset , _:AccumulatorValueShape.Accumulator , _:MeasurementValueShape.sensorAccuracy , _:MeasurementValueShape.timeStamp , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:MeasurementValueShape.MeasurementValueSource , _:MeasurementValueShape.MeasurementValueQuality .
 
-<AccumulatorValueShape.AccumulatorReset> rdf:type sh:PropertyShape ;
+_:AccumulatorValueShape.AccumulatorReset rdf:type sh:PropertyShape ;
 	sh:path <AccumulatorValue.AccumulatorReset> ;
 	sh:class <AccumulatorReset> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Accumulator Reset"@en ;
 	sh:description "The command that resets the accumulator value."^^rdf:XMLLiteral .
-<AccumulatorValueShape.Accumulator> rdf:type sh:PropertyShape ;
+_:AccumulatorValueShape.Accumulator rdf:type sh:PropertyShape ;
 	sh:path <AccumulatorValue.Accumulator> ;
 	sh:class <Accumulator> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -99,20 +99,20 @@
 
 <AnalogShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Analog> ;
-	sh:property <AnalogShape.positiveFlowIn> , <AnalogShape.AnalogValues> , <AnalogShape.LimitSets> , <MeasurementShape.measurementType> , <MeasurementShape.phases> , <MeasurementShape.unitMultiplier> , <MeasurementShape.unitSymbol> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <MeasurementShape.Terminal> , <MeasurementShape.PowerSystemResource> .
+	sh:property _:AnalogShape.positiveFlowIn , _:AnalogShape.AnalogValues , _:AnalogShape.LimitSets , _:MeasurementShape.measurementType , _:MeasurementShape.phases , _:MeasurementShape.unitMultiplier , _:MeasurementShape.unitSymbol , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:MeasurementShape.Terminal , _:MeasurementShape.PowerSystemResource .
 
-<AnalogShape.positiveFlowIn> rdf:type sh:PropertyShape ;
+_:AnalogShape.positiveFlowIn rdf:type sh:PropertyShape ;
 	sh:path <Analog.positiveFlowIn> ;
 	sh:datatype xsd:boolean ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Positive Flow In"@en .
 
-<AnalogShape.AnalogValues> rdf:type sh:PropertyShape ;
+_:AnalogShape.AnalogValues rdf:type sh:PropertyShape ;
 	sh:path <Analog.AnalogValues> ;
 	sh:class <AnalogValue> ;
 	sh:name "Analog Values"@en ;
 	sh:description "The values connected to this measurement."^^rdf:XMLLiteral .
-<AnalogShape.LimitSets> rdf:type sh:PropertyShape ;
+_:AnalogShape.LimitSets rdf:type sh:PropertyShape ;
 	sh:path <Analog.LimitSets> ;
 	sh:class <AnalogLimitSet> ;
 	sh:name "Limit Sets"@en ;
@@ -121,16 +121,16 @@
 <AnalogControlShape> rdf:type sh:NodeShape ;
 	sh:targetClass <AnalogControl> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <ControlShape.controlType> , <ControlShape.operationInProgress> , <ControlShape.timeStamp> , <ControlShape.unitMultiplier> , <ControlShape.unitSymbol> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <ControlShape.PowerSystemResource> .
+	sh:property _:ControlShape.controlType , _:ControlShape.operationInProgress , _:ControlShape.timeStamp , _:ControlShape.unitMultiplier , _:ControlShape.unitSymbol , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:ControlShape.PowerSystemResource .
 
-<AnalogControlShape.maxValue> rdf:type sh:PropertyShape ;
+_:AnalogControlShape.maxValue rdf:type sh:PropertyShape ;
 	sh:path <AnalogControl.maxValue> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Max Value"@en ;
 	sh:description "Normal value range maximum for any of the Control.value."^^rdf:XMLLiteral .
-<AnalogControlShape.minValue> rdf:type sh:PropertyShape ;
+_:AnalogControlShape.minValue rdf:type sh:PropertyShape ;
 	sh:path <AnalogControl.minValue> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -138,7 +138,7 @@
 	sh:name "Min Value"@en ;
 	sh:description "Normal value range minimum for any of the Control.value."^^rdf:XMLLiteral .
 
-<AnalogControlShape.AnalogValue> rdf:type sh:PropertyShape ;
+_:AnalogControlShape.AnalogValue rdf:type sh:PropertyShape ;
 	sh:path <AnalogControl.AnalogValue> ;
 	sh:class <AnalogValue> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -148,9 +148,9 @@
 
 <AnalogLimitShape> rdf:type sh:NodeShape ;
 	sh:targetClass <AnalogLimit> ;
-	sh:property <AnalogLimitShape.value> , <AnalogLimitShape.LimitSet> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+	sh:property _:AnalogLimitShape.value , _:AnalogLimitShape.LimitSet , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name .
 
-<AnalogLimitShape.value> rdf:type sh:PropertyShape ;
+_:AnalogLimitShape.value rdf:type sh:PropertyShape ;
 	sh:path <AnalogLimit.value> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -158,7 +158,7 @@
 	sh:name "Value"@en ;
 	sh:description "The value to supervise against."^^rdf:XMLLiteral .
 
-<AnalogLimitShape.LimitSet> rdf:type sh:PropertyShape ;
+_:AnalogLimitShape.LimitSet rdf:type sh:PropertyShape ;
 	sh:path <AnalogLimit.LimitSet> ;
 	sh:class <AnalogLimitSet> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -168,15 +168,15 @@
 
 <AnalogLimitSetShape> rdf:type sh:NodeShape ;
 	sh:targetClass <AnalogLimitSet> ;
-	sh:property <AnalogLimitSetShape.Measurements> , <AnalogLimitSetShape.Limits> , <LimitSetShape.isPercentageLimits> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+	sh:property _:AnalogLimitSetShape.Measurements , _:AnalogLimitSetShape.Limits , _:LimitSetShape.isPercentageLimits , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name .
 
-<AnalogLimitSetShape.Measurements> rdf:type sh:PropertyShape ;
+_:AnalogLimitSetShape.Measurements rdf:type sh:PropertyShape ;
 	sh:path <AnalogLimitSet.Measurements> ;
 	sh:class <Analog> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:name "Measurements"@en ;
 	sh:description "The Measurements using the LimitSet."^^rdf:XMLLiteral .
-<AnalogLimitSetShape.Limits> rdf:type sh:PropertyShape ;
+_:AnalogLimitSetShape.Limits rdf:type sh:PropertyShape ;
 	sh:path <AnalogLimitSet.Limits> ;
 	sh:class <AnalogLimit> ;
 	sh:name "Limits"@en ;
@@ -184,15 +184,15 @@
 
 <AnalogValueShape> rdf:type sh:NodeShape ;
 	sh:targetClass <AnalogValue> ;
-	sh:property <AnalogValueShape.AnalogControl> , <AnalogValueShape.Analog> , <MeasurementValueShape.sensorAccuracy> , <MeasurementValueShape.timeStamp> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <MeasurementValueShape.MeasurementValueSource> , <MeasurementValueShape.MeasurementValueQuality> .
+	sh:property _:AnalogValueShape.AnalogControl , _:AnalogValueShape.Analog , _:MeasurementValueShape.sensorAccuracy , _:MeasurementValueShape.timeStamp , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:MeasurementValueShape.MeasurementValueSource , _:MeasurementValueShape.MeasurementValueQuality .
 
-<AnalogValueShape.AnalogControl> rdf:type sh:PropertyShape ;
+_:AnalogValueShape.AnalogControl rdf:type sh:PropertyShape ;
 	sh:path <AnalogValue.AnalogControl> ;
 	sh:class <AnalogControl> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Analog Control"@en ;
 	sh:description "The Control variable associated with the MeasurementValue."^^rdf:XMLLiteral .
-<AnalogValueShape.Analog> rdf:type sh:PropertyShape ;
+_:AnalogValueShape.Analog rdf:type sh:PropertyShape ;
 	sh:path <AnalogValue.Analog> ;
 	sh:class <Analog> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -202,16 +202,16 @@
 
 <CommandShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Command> ;
-	sh:property <CommandShape.normalValue> , <CommandShape.value> , <CommandShape.DiscreteValue> , <CommandShape.ValueAliasSet> , <ControlShape.controlType> , <ControlShape.operationInProgress> , <ControlShape.timeStamp> , <ControlShape.unitMultiplier> , <ControlShape.unitSymbol> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <ControlShape.PowerSystemResource> .
+	sh:property _:CommandShape.normalValue , _:CommandShape.value , _:CommandShape.DiscreteValue , _:CommandShape.ValueAliasSet , _:ControlShape.controlType , _:ControlShape.operationInProgress , _:ControlShape.timeStamp , _:ControlShape.unitMultiplier , _:ControlShape.unitSymbol , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:ControlShape.PowerSystemResource .
 
-<CommandShape.normalValue> rdf:type sh:PropertyShape ;
+_:CommandShape.normalValue rdf:type sh:PropertyShape ;
 	sh:path <Command.normalValue> ;
 	sh:datatype xsd:integer ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Normal Value"@en ;
 	sh:description "Normal value for Control.value e.g."^^rdf:XMLLiteral .
-<CommandShape.value> rdf:type sh:PropertyShape ;
+_:CommandShape.value rdf:type sh:PropertyShape ;
 	sh:path <Command.value> ;
 	sh:datatype xsd:integer ;
 	sh:minCount "1"^^xsd:integer ;
@@ -219,14 +219,14 @@
 	sh:name "Value"@en ;
 	sh:description "The value representing the actuator output."^^rdf:XMLLiteral .
 
-<CommandShape.DiscreteValue> rdf:type sh:PropertyShape ;
+_:CommandShape.DiscreteValue rdf:type sh:PropertyShape ;
 	sh:path <Command.DiscreteValue> ;
 	sh:class <DiscreteValue> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Discrete Value"@en ;
 	sh:description "The MeasurementValue that is controlled."^^rdf:XMLLiteral .
-<CommandShape.ValueAliasSet> rdf:type sh:PropertyShape ;
+_:CommandShape.ValueAliasSet rdf:type sh:PropertyShape ;
 	sh:path <Command.ValueAliasSet> ;
 	sh:class <ValueAliasSet> ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -236,35 +236,35 @@
 <ControlShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Control> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name .
 
-<ControlShape.controlType> rdf:type sh:PropertyShape ;
+_:ControlShape.controlType rdf:type sh:PropertyShape ;
 	sh:path <Control.controlType> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Control Type"@en ;
 	sh:description "Specifies the type of Control."^^rdf:XMLLiteral .
-<ControlShape.operationInProgress> rdf:type sh:PropertyShape ;
+_:ControlShape.operationInProgress rdf:type sh:PropertyShape ;
 	sh:path <Control.operationInProgress> ;
 	sh:datatype xsd:boolean ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Operation In Progress"@en ;
 	sh:description "Indicates that a client is currently sending control commands that has not completed."^^rdf:XMLLiteral .
-<ControlShape.timeStamp> rdf:type sh:PropertyShape ;
+_:ControlShape.timeStamp rdf:type sh:PropertyShape ;
 	sh:path <Control.timeStamp> ;
 	sh:datatype <https://schema.org/DateTime> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Time Stamp"@en ;
 	sh:description "The last time a control output was sent."^^rdf:XMLLiteral .
-<ControlShape.unitMultiplier> rdf:type sh:PropertyShape ;
+_:ControlShape.unitMultiplier rdf:type sh:PropertyShape ;
 	sh:path <Control.unitMultiplier> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:in "y" , "z" , "a" , "f" , "p" , "n" , "micro" , "m" , "c" , "d" , "none" , "da" , "h" , "k" , "M" , "G" , "T" , "P" , "E" , "Z" , "Y" ;
 	sh:name "Unit Multiplier"@en ;
 	sh:description "The unit multiplier of the controlled quantity."^^rdf:XMLLiteral .
-<ControlShape.unitSymbol> rdf:type sh:PropertyShape ;
+_:ControlShape.unitSymbol rdf:type sh:PropertyShape ;
 	sh:path <Control.unitSymbol> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -272,7 +272,7 @@
 	sh:name "Unit Symbol"@en ;
 	sh:description "The unit of measure of the controlled quantity."^^rdf:XMLLiteral .
 
-<ControlShape.PowerSystemResource> rdf:type sh:PropertyShape ;
+_:ControlShape.PowerSystemResource rdf:type sh:PropertyShape ;
 	sh:path <Control.PowerSystemResource> ;
 	sh:class <PowerSystemResource> ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -281,14 +281,14 @@
 
 <DiscreteShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Discrete> ;
-	sh:property <DiscreteShape.DiscreteValues> , <DiscreteShape.ValueAliasSet> , <MeasurementShape.measurementType> , <MeasurementShape.phases> , <MeasurementShape.unitMultiplier> , <MeasurementShape.unitSymbol> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <MeasurementShape.Terminal> , <MeasurementShape.PowerSystemResource> .
+	sh:property _:DiscreteShape.DiscreteValues , _:DiscreteShape.ValueAliasSet , _:MeasurementShape.measurementType , _:MeasurementShape.phases , _:MeasurementShape.unitMultiplier , _:MeasurementShape.unitSymbol , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:MeasurementShape.Terminal , _:MeasurementShape.PowerSystemResource .
 
-<DiscreteShape.DiscreteValues> rdf:type sh:PropertyShape ;
+_:DiscreteShape.DiscreteValues rdf:type sh:PropertyShape ;
 	sh:path <Discrete.DiscreteValues> ;
 	sh:class <DiscreteValue> ;
 	sh:name "Discrete Values"@en ;
 	sh:description "The values connected to this measurement."^^rdf:XMLLiteral .
-<DiscreteShape.ValueAliasSet> rdf:type sh:PropertyShape ;
+_:DiscreteShape.ValueAliasSet rdf:type sh:PropertyShape ;
 	sh:path <Discrete.ValueAliasSet> ;
 	sh:class <ValueAliasSet> ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -297,16 +297,16 @@
 
 <DiscreteValueShape> rdf:type sh:NodeShape ;
 	sh:targetClass <DiscreteValue> ;
-	sh:property <DiscreteValueShape.Discrete> , <DiscreteValueShape.Command> , <MeasurementValueShape.sensorAccuracy> , <MeasurementValueShape.timeStamp> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <MeasurementValueShape.MeasurementValueSource> , <MeasurementValueShape.MeasurementValueQuality> .
+	sh:property _:DiscreteValueShape.Discrete , _:DiscreteValueShape.Command , _:MeasurementValueShape.sensorAccuracy , _:MeasurementValueShape.timeStamp , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:MeasurementValueShape.MeasurementValueSource , _:MeasurementValueShape.MeasurementValueQuality .
 
-<DiscreteValueShape.Discrete> rdf:type sh:PropertyShape ;
+_:DiscreteValueShape.Discrete rdf:type sh:PropertyShape ;
 	sh:path <DiscreteValue.Discrete> ;
 	sh:class <Discrete> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Discrete"@en ;
 	sh:description "Measurement to which this value is connected."^^rdf:XMLLiteral .
-<DiscreteValueShape.Command> rdf:type sh:PropertyShape ;
+_:DiscreteValueShape.Command rdf:type sh:PropertyShape ;
 	sh:path <DiscreteValue.Command> ;
 	sh:class <Command> ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -316,26 +316,26 @@
 <IOPointShape> rdf:type sh:NodeShape ;
 	sh:targetClass <IOPoint> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name .
 
 <IdentifiedObjectShape> rdf:type sh:NodeShape ;
 	sh:targetClass <IdentifiedObject> ;
 	sh:closed "true"^^xsd:boolean .
 
-<IdentifiedObjectShape.description> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.description rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.description> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Description"@en ;
 	sh:description "The description is a free human readable text describing or naming the object."^^rdf:XMLLiteral .
-<IdentifiedObjectShape.mRID> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.mRID rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.mRID> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "MRID"@en ;
 	sh:description "Master resource identifier issued by a model authority."^^rdf:XMLLiteral .
-<IdentifiedObjectShape.name> rdf:type sh:PropertyShape ;
+_:IdentifiedObjectShape.name rdf:type sh:PropertyShape ;
 	sh:path <IdentifiedObject.name> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -346,14 +346,14 @@
 <LimitShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Limit> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name .
 
 <LimitSetShape> rdf:type sh:NodeShape ;
 	sh:targetClass <LimitSet> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name .
 
-<LimitSetShape.isPercentageLimits> rdf:type sh:PropertyShape ;
+_:LimitSetShape.isPercentageLimits rdf:type sh:PropertyShape ;
 	sh:path <LimitSet.isPercentageLimits> ;
 	sh:datatype xsd:boolean ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -363,22 +363,22 @@
 <MeasurementShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Measurement> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name .
 
-<MeasurementShape.measurementType> rdf:type sh:PropertyShape ;
+_:MeasurementShape.measurementType rdf:type sh:PropertyShape ;
 	sh:path <Measurement.measurementType> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Measurement Type"@en ;
 	sh:description "Specifies the type of measurement."^^rdf:XMLLiteral .
-<MeasurementShape.phases> rdf:type sh:PropertyShape ;
+_:MeasurementShape.phases rdf:type sh:PropertyShape ;
 	sh:path <Measurement.phases> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:in "ABCN" , "ABC" , "ABN" , "ACN" , "BCN" , "AB" , "AC" , "BC" , "AN" , "BN" , "CN" , "A" , "B" , "C" , "N" , "s1N" , "s2N" , "s12N" , "s1" , "s2" , "s12" , "none" , "X" , "XY" , "XN" , "XYN" ;
 	sh:name "Phases"@en .
-<MeasurementShape.unitMultiplier> rdf:type sh:PropertyShape ;
+_:MeasurementShape.unitMultiplier rdf:type sh:PropertyShape ;
 	sh:path <Measurement.unitMultiplier> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -386,7 +386,7 @@
 	sh:in "y" , "z" , "a" , "f" , "p" , "n" , "micro" , "m" , "c" , "d" , "none" , "da" , "h" , "k" , "M" , "G" , "T" , "P" , "E" , "Z" , "Y" ;
 	sh:name "Unit Multiplier"@en ;
 	sh:description "The unit multiplier of the measured quantity."^^rdf:XMLLiteral .
-<MeasurementShape.unitSymbol> rdf:type sh:PropertyShape ;
+_:MeasurementShape.unitSymbol rdf:type sh:PropertyShape ;
 	sh:path <Measurement.unitSymbol> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
@@ -395,13 +395,13 @@
 	sh:name "Unit Symbol"@en ;
 	sh:description "The unit of measure of the measured quantity."^^rdf:XMLLiteral .
 
-<MeasurementShape.Terminal> rdf:type sh:PropertyShape ;
+_:MeasurementShape.Terminal rdf:type sh:PropertyShape ;
 	sh:path <Measurement.Terminal> ;
 	sh:class <ACDCTerminal> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Terminal"@en ;
 	sh:description "One or more measurements may be associated with a terminal in the network."^^rdf:XMLLiteral .
-<MeasurementShape.PowerSystemResource> rdf:type sh:PropertyShape ;
+_:MeasurementShape.PowerSystemResource rdf:type sh:PropertyShape ;
 	sh:path <Measurement.PowerSystemResource> ;
 	sh:class <PowerSystemResource> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -412,28 +412,28 @@
 <MeasurementValueShape> rdf:type sh:NodeShape ;
 	sh:targetClass <MeasurementValue> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name .
 
-<MeasurementValueShape.sensorAccuracy> rdf:type sh:PropertyShape ;
+_:MeasurementValueShape.sensorAccuracy rdf:type sh:PropertyShape ;
 	sh:path <MeasurementValue.sensorAccuracy> ;
 	sh:datatype xsd:double ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Sensor Accuracy"@en .
-<MeasurementValueShape.timeStamp> rdf:type sh:PropertyShape ;
+_:MeasurementValueShape.timeStamp rdf:type sh:PropertyShape ;
 	sh:path <MeasurementValue.timeStamp> ;
 	sh:datatype <https://schema.org/DateTime> ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Time Stamp"@en ;
 	sh:description "The time when the value was last updated."^^rdf:XMLLiteral .
 
-<MeasurementValueShape.MeasurementValueSource> rdf:type sh:PropertyShape ;
+_:MeasurementValueShape.MeasurementValueSource rdf:type sh:PropertyShape ;
 	sh:path <MeasurementValue.MeasurementValueSource> ;
 	sh:class <MeasurementValueSource> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Measurement Value Source"@en ;
 	sh:description "A reference to the type of source that updates the MeasurementValue, e.g."^^rdf:XMLLiteral .
-<MeasurementValueShape.MeasurementValueQuality> rdf:type sh:PropertyShape ;
+_:MeasurementValueShape.MeasurementValueQuality rdf:type sh:PropertyShape ;
 	sh:path <MeasurementValue.MeasurementValueQuality> ;
 	sh:class <MeasurementValueQuality> ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -442,9 +442,9 @@
 
 <MeasurementValueQualityShape> rdf:type sh:NodeShape ;
 	sh:targetClass <MeasurementValueQuality> ;
-	sh:property <MeasurementValueQualityShape.MeasurementValue> , <Quality61850Shape.badReference> , <Quality61850Shape.estimatorReplaced> , <Quality61850Shape.failure> , <Quality61850Shape.oldData> , <Quality61850Shape.operatorBlocked> , <Quality61850Shape.oscillatory> , <Quality61850Shape.outOfRange> , <Quality61850Shape.overFlow> , <Quality61850Shape.source> , <Quality61850Shape.suspect> , <Quality61850Shape.test> , <Quality61850Shape.validity> .
+	sh:property _:MeasurementValueQualityShape.MeasurementValue , _:Quality61850Shape.badReference , _:Quality61850Shape.estimatorReplaced , _:Quality61850Shape.failure , _:Quality61850Shape.oldData , _:Quality61850Shape.operatorBlocked , _:Quality61850Shape.oscillatory , _:Quality61850Shape.outOfRange , _:Quality61850Shape.overFlow , _:Quality61850Shape.source , _:Quality61850Shape.suspect , _:Quality61850Shape.test , _:Quality61850Shape.validity .
 
-<MeasurementValueQualityShape.MeasurementValue> rdf:type sh:PropertyShape ;
+_:MeasurementValueQualityShape.MeasurementValue rdf:type sh:PropertyShape ;
 	sh:path <MeasurementValueQuality.MeasurementValue> ;
 	sh:class <MeasurementValue> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -454,9 +454,9 @@
 
 <MeasurementValueSourceShape> rdf:type sh:NodeShape ;
 	sh:targetClass <MeasurementValueSource> ;
-	sh:property <MeasurementValueSourceShape.MeasurementValues> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+	sh:property _:MeasurementValueSourceShape.MeasurementValues , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name .
 
-<MeasurementValueSourceShape.MeasurementValues> rdf:type sh:PropertyShape ;
+_:MeasurementValueSourceShape.MeasurementValues rdf:type sh:PropertyShape ;
 	sh:path <MeasurementValueSource.MeasurementValues> ;
 	sh:class <MeasurementValue> ;
 	sh:name "Measurement Values"@en ;
@@ -465,14 +465,14 @@
 <PowerSystemResourceShape> rdf:type sh:NodeShape ;
 	sh:targetClass <PowerSystemResource> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name .
 
-<PowerSystemResourceShape.Controls> rdf:type sh:PropertyShape ;
+_:PowerSystemResourceShape.Controls rdf:type sh:PropertyShape ;
 	sh:path <PowerSystemResource.Controls> ;
 	sh:class <Control> ;
 	sh:name "Controls"@en ;
 	sh:description "The controller outputs used to actually govern a regulating device, e.g."^^rdf:XMLLiteral .
-<PowerSystemResourceShape.Measurements> rdf:type sh:PropertyShape ;
+_:PowerSystemResourceShape.Measurements rdf:type sh:PropertyShape ;
 	sh:path <PowerSystemResource.Measurements> ;
 	sh:class <Measurement> ;
 	sh:name "Measurements"@en ;
@@ -482,73 +482,73 @@
 	sh:targetClass <Quality61850> ;
 	sh:closed "true"^^xsd:boolean .
 
-<Quality61850Shape.badReference> rdf:type sh:PropertyShape ;
+_:Quality61850Shape.badReference rdf:type sh:PropertyShape ;
 	sh:path <Quality61850.badReference> ;
 	sh:datatype xsd:boolean ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Bad Reference"@en ;
 	sh:description "Measurement value may be incorrect due to a reference being out of calibration."^^rdf:XMLLiteral .
-<Quality61850Shape.estimatorReplaced> rdf:type sh:PropertyShape ;
+_:Quality61850Shape.estimatorReplaced rdf:type sh:PropertyShape ;
 	sh:path <Quality61850.estimatorReplaced> ;
 	sh:datatype xsd:boolean ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Estimator Replaced"@en ;
 	sh:description "Value has been replaced by State Estimator."^^rdf:XMLLiteral .
-<Quality61850Shape.failure> rdf:type sh:PropertyShape ;
+_:Quality61850Shape.failure rdf:type sh:PropertyShape ;
 	sh:path <Quality61850.failure> ;
 	sh:datatype xsd:boolean ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Failure"@en ;
 	sh:description "This identifier indicates that a supervision function has detected an internal or external failure, e.g."^^rdf:XMLLiteral .
-<Quality61850Shape.oldData> rdf:type sh:PropertyShape ;
+_:Quality61850Shape.oldData rdf:type sh:PropertyShape ;
 	sh:path <Quality61850.oldData> ;
 	sh:datatype xsd:boolean ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Old Data"@en ;
 	sh:description "Measurement value is old and possibly invalid, as it has not been successfully updated during a specified time interval."^^rdf:XMLLiteral .
-<Quality61850Shape.operatorBlocked> rdf:type sh:PropertyShape ;
+_:Quality61850Shape.operatorBlocked rdf:type sh:PropertyShape ;
 	sh:path <Quality61850.operatorBlocked> ;
 	sh:datatype xsd:boolean ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Operator Blocked"@en ;
 	sh:description "Measurement value is blocked and hence unavailable for transmission."^^rdf:XMLLiteral .
-<Quality61850Shape.oscillatory> rdf:type sh:PropertyShape ;
+_:Quality61850Shape.oscillatory rdf:type sh:PropertyShape ;
 	sh:path <Quality61850.oscillatory> ;
 	sh:datatype xsd:boolean ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Oscillatory"@en .
-<Quality61850Shape.outOfRange> rdf:type sh:PropertyShape ;
+_:Quality61850Shape.outOfRange rdf:type sh:PropertyShape ;
 	sh:path <Quality61850.outOfRange> ;
 	sh:datatype xsd:boolean ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Out Of Range"@en ;
 	sh:description "Measurement value is beyond a predefined range of value."^^rdf:XMLLiteral .
-<Quality61850Shape.overFlow> rdf:type sh:PropertyShape ;
+_:Quality61850Shape.overFlow rdf:type sh:PropertyShape ;
 	sh:path <Quality61850.overFlow> ;
 	sh:datatype xsd:boolean ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Over Flow"@en ;
 	sh:description "Measurement value is beyond the capability of being  represented properly."^^rdf:XMLLiteral .
-<Quality61850Shape.source> rdf:type sh:PropertyShape ;
+_:Quality61850Shape.source rdf:type sh:PropertyShape ;
 	sh:path <Quality61850.source> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:in "PROCESS" , "DEFAULTED" , "SUBSTITUTED" ;
 	sh:name "Source"@en ;
 	sh:description "Source gives information related to the origin of a value."^^rdf:XMLLiteral .
-<Quality61850Shape.suspect> rdf:type sh:PropertyShape ;
+_:Quality61850Shape.suspect rdf:type sh:PropertyShape ;
 	sh:path <Quality61850.suspect> ;
 	sh:datatype xsd:boolean ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Suspect"@en ;
 	sh:description "A correlation function has detected that the value is not consistent with other values."^^rdf:XMLLiteral .
-<Quality61850Shape.test> rdf:type sh:PropertyShape ;
+_:Quality61850Shape.test rdf:type sh:PropertyShape ;
 	sh:path <Quality61850.test> ;
 	sh:datatype xsd:boolean ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Test"@en ;
 	sh:description "Measurement value is transmitted for test purposes."^^rdf:XMLLiteral .
-<Quality61850Shape.validity> rdf:type sh:PropertyShape ;
+_:Quality61850Shape.validity rdf:type sh:PropertyShape ;
 	sh:path <Quality61850.validity> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -558,9 +558,9 @@
 
 <RaiseLowerCommandShape> rdf:type sh:NodeShape ;
 	sh:targetClass <RaiseLowerCommand> ;
-	sh:property <RaiseLowerCommandShape.ValueAliasSet> , <AnalogControlShape.maxValue> , <AnalogControlShape.minValue> , <ControlShape.controlType> , <ControlShape.operationInProgress> , <ControlShape.timeStamp> , <ControlShape.unitMultiplier> , <ControlShape.unitSymbol> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <AnalogControlShape.AnalogValue> , <ControlShape.PowerSystemResource> .
+	sh:property _:RaiseLowerCommandShape.ValueAliasSet , _:AnalogControlShape.maxValue , _:AnalogControlShape.minValue , _:ControlShape.controlType , _:ControlShape.operationInProgress , _:ControlShape.timeStamp , _:ControlShape.unitMultiplier , _:ControlShape.unitSymbol , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:AnalogControlShape.AnalogValue , _:ControlShape.PowerSystemResource .
 
-<RaiseLowerCommandShape.ValueAliasSet> rdf:type sh:PropertyShape ;
+_:RaiseLowerCommandShape.ValueAliasSet rdf:type sh:PropertyShape ;
 	sh:path <RaiseLowerCommand.ValueAliasSet> ;
 	sh:class <ValueAliasSet> ;
 	sh:maxCount "1"^^xsd:integer ;
@@ -569,16 +569,16 @@
 
 <SetPointShape> rdf:type sh:NodeShape ;
 	sh:targetClass <SetPoint> ;
-	sh:property <SetPointShape.normalValue> , <SetPointShape.value> , <AnalogControlShape.maxValue> , <AnalogControlShape.minValue> , <ControlShape.controlType> , <ControlShape.operationInProgress> , <ControlShape.timeStamp> , <ControlShape.unitMultiplier> , <ControlShape.unitSymbol> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <AnalogControlShape.AnalogValue> , <ControlShape.PowerSystemResource> .
+	sh:property _:SetPointShape.normalValue , _:SetPointShape.value , _:AnalogControlShape.maxValue , _:AnalogControlShape.minValue , _:ControlShape.controlType , _:ControlShape.operationInProgress , _:ControlShape.timeStamp , _:ControlShape.unitMultiplier , _:ControlShape.unitSymbol , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:AnalogControlShape.AnalogValue , _:ControlShape.PowerSystemResource .
 
-<SetPointShape.normalValue> rdf:type sh:PropertyShape ;
+_:SetPointShape.normalValue rdf:type sh:PropertyShape ;
 	sh:path <SetPoint.normalValue> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Normal Value"@en ;
 	sh:description "Normal value for Control.value e.g."^^rdf:XMLLiteral .
-<SetPointShape.value> rdf:type sh:PropertyShape ;
+_:SetPointShape.value rdf:type sh:PropertyShape ;
 	sh:path <SetPoint.value> ;
 	sh:datatype xsd:double ;
 	sh:minCount "1"^^xsd:integer ;
@@ -588,9 +588,9 @@
 
 <StringMeasurementShape> rdf:type sh:NodeShape ;
 	sh:targetClass <StringMeasurement> ;
-	sh:property <StringMeasurementShape.StringMeasurementValues> , <MeasurementShape.measurementType> , <MeasurementShape.phases> , <MeasurementShape.unitMultiplier> , <MeasurementShape.unitSymbol> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <MeasurementShape.Terminal> , <MeasurementShape.PowerSystemResource> .
+	sh:property _:StringMeasurementShape.StringMeasurementValues , _:MeasurementShape.measurementType , _:MeasurementShape.phases , _:MeasurementShape.unitMultiplier , _:MeasurementShape.unitSymbol , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:MeasurementShape.Terminal , _:MeasurementShape.PowerSystemResource .
 
-<StringMeasurementShape.StringMeasurementValues> rdf:type sh:PropertyShape ;
+_:StringMeasurementShape.StringMeasurementValues rdf:type sh:PropertyShape ;
 	sh:path <StringMeasurement.StringMeasurementValues> ;
 	sh:class <StringMeasurementValue> ;
 	sh:name "String Measurement Values"@en ;
@@ -598,9 +598,9 @@
 
 <StringMeasurementValueShape> rdf:type sh:NodeShape ;
 	sh:targetClass <StringMeasurementValue> ;
-	sh:property <StringMeasurementValueShape.StringMeasurement> , <MeasurementValueShape.sensorAccuracy> , <MeasurementValueShape.timeStamp> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <MeasurementValueShape.MeasurementValueSource> , <MeasurementValueShape.MeasurementValueQuality> .
+	sh:property _:StringMeasurementValueShape.StringMeasurement , _:MeasurementValueShape.sensorAccuracy , _:MeasurementValueShape.timeStamp , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:MeasurementValueShape.MeasurementValueSource , _:MeasurementValueShape.MeasurementValueQuality .
 
-<StringMeasurementValueShape.StringMeasurement> rdf:type sh:PropertyShape ;
+_:StringMeasurementValueShape.StringMeasurement rdf:type sh:PropertyShape ;
 	sh:path <StringMeasurementValue.StringMeasurement> ;
 	sh:class <StringMeasurement> ;
 	sh:minCount "1"^^xsd:integer ;
@@ -611,29 +611,29 @@
 <TerminalShape> rdf:type sh:NodeShape ;
 	sh:targetClass <Terminal> ;
 	sh:closed "true"^^xsd:boolean ;
-	sh:property <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> , <ACDCTerminalShape.Measurements> .
+	sh:property _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name , _:ACDCTerminalShape.Measurements .
 
 <ValueAliasSetShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ValueAliasSet> ;
-	sh:property <ValueAliasSetShape.RaiseLowerCommands> , <ValueAliasSetShape.Values> , <ValueAliasSetShape.Discretes> , <ValueAliasSetShape.Commands> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+	sh:property _:ValueAliasSetShape.RaiseLowerCommands , _:ValueAliasSetShape.Values , _:ValueAliasSetShape.Discretes , _:ValueAliasSetShape.Commands , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name .
 
-<ValueAliasSetShape.RaiseLowerCommands> rdf:type sh:PropertyShape ;
+_:ValueAliasSetShape.RaiseLowerCommands rdf:type sh:PropertyShape ;
 	sh:path <ValueAliasSet.RaiseLowerCommands> ;
 	sh:class <RaiseLowerCommand> ;
 	sh:name "Raise Lower Commands"@en ;
 	sh:description "The Commands using the set for translation."^^rdf:XMLLiteral .
-<ValueAliasSetShape.Values> rdf:type sh:PropertyShape ;
+_:ValueAliasSetShape.Values rdf:type sh:PropertyShape ;
 	sh:path <ValueAliasSet.Values> ;
 	sh:class <ValueToAlias> ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:name "Values"@en ;
 	sh:description "The ValueToAlias mappings included in the set."^^rdf:XMLLiteral .
-<ValueAliasSetShape.Discretes> rdf:type sh:PropertyShape ;
+_:ValueAliasSetShape.Discretes rdf:type sh:PropertyShape ;
 	sh:path <ValueAliasSet.Discretes> ;
 	sh:class <Discrete> ;
 	sh:name "Discretes"@en ;
 	sh:description "The Measurements using the set for translation."^^rdf:XMLLiteral .
-<ValueAliasSetShape.Commands> rdf:type sh:PropertyShape ;
+_:ValueAliasSetShape.Commands rdf:type sh:PropertyShape ;
 	sh:path <ValueAliasSet.Commands> ;
 	sh:class <Command> ;
 	sh:name "Commands"@en ;
@@ -641,9 +641,9 @@
 
 <ValueToAliasShape> rdf:type sh:NodeShape ;
 	sh:targetClass <ValueToAlias> ;
-	sh:property <ValueToAliasShape.value> , <ValueToAliasShape.ValueAliasSet> , <IdentifiedObjectShape.description> , <IdentifiedObjectShape.mRID> , <IdentifiedObjectShape.name> .
+	sh:property _:ValueToAliasShape.value , _:ValueToAliasShape.ValueAliasSet , _:IdentifiedObjectShape.description , _:IdentifiedObjectShape.mRID , _:IdentifiedObjectShape.name .
 
-<ValueToAliasShape.value> rdf:type sh:PropertyShape ;
+_:ValueToAliasShape.value rdf:type sh:PropertyShape ;
 	sh:path <ValueToAlias.value> ;
 	sh:datatype xsd:integer ;
 	sh:minCount "1"^^xsd:integer ;
@@ -651,7 +651,7 @@
 	sh:name "Value"@en ;
 	sh:description "The value that is mapped."^^rdf:XMLLiteral .
 
-<ValueToAliasShape.ValueAliasSet> rdf:type sh:PropertyShape ;
+_:ValueToAliasShape.ValueAliasSet rdf:type sh:PropertyShape ;
 	sh:path <ValueToAlias.ValueAliasSet> ;
 	sh:class <ValueAliasSet> ;
 	sh:minCount "1"^^xsd:integer ;
