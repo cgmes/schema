@@ -97,7 +97,7 @@ _:ACDCConverterDCTerminalShape.polarity rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "positive" , "middle" , "negative" ;
+	sh:in _:DCPolarityKind ;
 	sh:name "Polarity"@en ;
 	sh:description "Represents the normal network polarity condition."^^rdf:XMLLiteral .
 
@@ -276,14 +276,14 @@ _:BasicIntervalScheduleShape.value1Unit rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "none" , "m" , "kg" , "s" , "A" , "K" , "mol" , "cd" , "deg" , "rad" , "sr" , "Gy" , "Bq" , "degC" , "Sv" , "F" , "C" , "S" , "H" , "V" , "ohm" , "J" , "N" , "Hz" , "lx" , "lm" , "Wb" , "T" , "W" , "Pa" , "m2" , "m3" , "mPers" , "mPers2" , "m3Pers" , "mPerm3" , "kgm" , "kgPerm3" , "m2Pers" , "WPermK" , "JPerK" , "ppm" , "rotPers" , "radPers" , "WPerm2" , "JPerm2" , "SPerm" , "KPers" , "PaPers" , "JPerkgK" , "VA" , "VAr" , "cosPhi" , "Vs" , "V2" , "As" , "A2" , "A2s" , "VAh" , "Wh" , "VArh" , "VPerHz" , "HzPers" , "character" , "charPers" , "kgm2" , "dB" , "WPers" , "lPers" , "dBm" , "h" , "min" , "Q" , "Qh" , "ohmm" , "APerm" , "V2h" , "A2h" , "Ah" , "count" , "ft3" , "m3Perh" , "gal" , "Btu" , "l" , "lPerh" , "lPerl" , "gPerg" , "molPerm3" , "molPermol" , "molPerkg" , "sPers" , "HzPerHz" , "VPerV" , "APerA" , "VPerVA" , "rev" , "kat" , "JPerkg" , "m3Uncompensated" , "m3Compensated" , "WPerW" , "therm" , "onePerm" , "m3Perkg" , "Pas" , "Nm" , "NPerm" , "radPers2" , "JPerm3" , "VPerm" , "CPerm3" , "CPerm2" , "FPerm" , "HPerm" , "JPermol" , "JPermolK" , "CPerkg" , "GyPers" , "WPersr" , "WPerm2sr" , "katPerm3" , "d" , "anglemin" , "anglesec" , "ha" , "tonne" , "bar" , "mmHg" , "M" , "kn" , "Mx" , "G" , "Oe" , "Vh" , "WPerA" , "onePerHz" , "VPerVAr" , "ohmPerm" , "kgPerJ" , "JPers" ;
+	sh:in _:UnitSymbol ;
 	sh:name "Value1 Unit"@en ;
 	sh:description "Value1 units of measure."^^rdf:XMLLiteral .
 _:BasicIntervalScheduleShape.value2Unit rdf:type sh:PropertyShape ;
 	sh:path <BasicIntervalSchedule.value2Unit> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "none" , "m" , "kg" , "s" , "A" , "K" , "mol" , "cd" , "deg" , "rad" , "sr" , "Gy" , "Bq" , "degC" , "Sv" , "F" , "C" , "S" , "H" , "V" , "ohm" , "J" , "N" , "Hz" , "lx" , "lm" , "Wb" , "T" , "W" , "Pa" , "m2" , "m3" , "mPers" , "mPers2" , "m3Pers" , "mPerm3" , "kgm" , "kgPerm3" , "m2Pers" , "WPermK" , "JPerK" , "ppm" , "rotPers" , "radPers" , "WPerm2" , "JPerm2" , "SPerm" , "KPers" , "PaPers" , "JPerkgK" , "VA" , "VAr" , "cosPhi" , "Vs" , "V2" , "As" , "A2" , "A2s" , "VAh" , "Wh" , "VArh" , "VPerHz" , "HzPers" , "character" , "charPers" , "kgm2" , "dB" , "WPers" , "lPers" , "dBm" , "h" , "min" , "Q" , "Qh" , "ohmm" , "APerm" , "V2h" , "A2h" , "Ah" , "count" , "ft3" , "m3Perh" , "gal" , "Btu" , "l" , "lPerh" , "lPerl" , "gPerg" , "molPerm3" , "molPermol" , "molPerkg" , "sPers" , "HzPerHz" , "VPerV" , "APerA" , "VPerVA" , "rev" , "kat" , "JPerkg" , "m3Uncompensated" , "m3Compensated" , "WPerW" , "therm" , "onePerm" , "m3Perkg" , "Pas" , "Nm" , "NPerm" , "radPers2" , "JPerm3" , "VPerm" , "CPerm3" , "CPerm2" , "FPerm" , "HPerm" , "JPermol" , "JPermolK" , "CPerkg" , "GyPers" , "WPersr" , "WPerm2sr" , "katPerm3" , "d" , "anglemin" , "anglesec" , "ha" , "tonne" , "bar" , "mmHg" , "M" , "kn" , "Mx" , "G" , "Oe" , "Vh" , "WPerA" , "onePerHz" , "VPerVAr" , "ohmPerm" , "kgPerJ" , "JPers" ;
+	sh:in _:UnitSymbol ;
 	sh:name "Value2 Unit"@en ;
 	sh:description "Value2 units of measure."^^rdf:XMLLiteral .
 
@@ -570,7 +570,7 @@ _:ControlAreaShape.type rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "AGC" , "Forecast" , "Interchange" ;
+	sh:in _:ControlAreaTypeKind ;
 	sh:name "Type"@en .
 
 _:ControlAreaShape.EnergyArea rdf:type sh:PropertyShape ;
@@ -683,7 +683,7 @@ _:CurveShape.curveStyle rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "constantYValue" , "straightLineYValues" ;
+	sh:in _:CurveStyle ;
 	sh:name "Curve Style"@en ;
 	sh:description "The style or shape of the curve."^^rdf:XMLLiteral .
 _:CurveShape.xUnit rdf:type sh:PropertyShape ;
@@ -691,7 +691,7 @@ _:CurveShape.xUnit rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "none" , "m" , "kg" , "s" , "A" , "K" , "mol" , "cd" , "deg" , "rad" , "sr" , "Gy" , "Bq" , "degC" , "Sv" , "F" , "C" , "S" , "H" , "V" , "ohm" , "J" , "N" , "Hz" , "lx" , "lm" , "Wb" , "T" , "W" , "Pa" , "m2" , "m3" , "mPers" , "mPers2" , "m3Pers" , "mPerm3" , "kgm" , "kgPerm3" , "m2Pers" , "WPermK" , "JPerK" , "ppm" , "rotPers" , "radPers" , "WPerm2" , "JPerm2" , "SPerm" , "KPers" , "PaPers" , "JPerkgK" , "VA" , "VAr" , "cosPhi" , "Vs" , "V2" , "As" , "A2" , "A2s" , "VAh" , "Wh" , "VArh" , "VPerHz" , "HzPers" , "character" , "charPers" , "kgm2" , "dB" , "WPers" , "lPers" , "dBm" , "h" , "min" , "Q" , "Qh" , "ohmm" , "APerm" , "V2h" , "A2h" , "Ah" , "count" , "ft3" , "m3Perh" , "gal" , "Btu" , "l" , "lPerh" , "lPerl" , "gPerg" , "molPerm3" , "molPermol" , "molPerkg" , "sPers" , "HzPerHz" , "VPerV" , "APerA" , "VPerVA" , "rev" , "kat" , "JPerkg" , "m3Uncompensated" , "m3Compensated" , "WPerW" , "therm" , "onePerm" , "m3Perkg" , "Pas" , "Nm" , "NPerm" , "radPers2" , "JPerm3" , "VPerm" , "CPerm3" , "CPerm2" , "FPerm" , "HPerm" , "JPermol" , "JPermolK" , "CPerkg" , "GyPers" , "WPersr" , "WPerm2sr" , "katPerm3" , "d" , "anglemin" , "anglesec" , "ha" , "tonne" , "bar" , "mmHg" , "M" , "kn" , "Mx" , "G" , "Oe" , "Vh" , "WPerA" , "onePerHz" , "VPerVAr" , "ohmPerm" , "kgPerJ" , "JPers" ;
+	sh:in _:UnitSymbol ;
 	sh:name "X Unit"@en ;
 	sh:description "The X-axis units of measure."^^rdf:XMLLiteral .
 _:CurveShape.y1Unit rdf:type sh:PropertyShape ;
@@ -699,14 +699,14 @@ _:CurveShape.y1Unit rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "none" , "m" , "kg" , "s" , "A" , "K" , "mol" , "cd" , "deg" , "rad" , "sr" , "Gy" , "Bq" , "degC" , "Sv" , "F" , "C" , "S" , "H" , "V" , "ohm" , "J" , "N" , "Hz" , "lx" , "lm" , "Wb" , "T" , "W" , "Pa" , "m2" , "m3" , "mPers" , "mPers2" , "m3Pers" , "mPerm3" , "kgm" , "kgPerm3" , "m2Pers" , "WPermK" , "JPerK" , "ppm" , "rotPers" , "radPers" , "WPerm2" , "JPerm2" , "SPerm" , "KPers" , "PaPers" , "JPerkgK" , "VA" , "VAr" , "cosPhi" , "Vs" , "V2" , "As" , "A2" , "A2s" , "VAh" , "Wh" , "VArh" , "VPerHz" , "HzPers" , "character" , "charPers" , "kgm2" , "dB" , "WPers" , "lPers" , "dBm" , "h" , "min" , "Q" , "Qh" , "ohmm" , "APerm" , "V2h" , "A2h" , "Ah" , "count" , "ft3" , "m3Perh" , "gal" , "Btu" , "l" , "lPerh" , "lPerl" , "gPerg" , "molPerm3" , "molPermol" , "molPerkg" , "sPers" , "HzPerHz" , "VPerV" , "APerA" , "VPerVA" , "rev" , "kat" , "JPerkg" , "m3Uncompensated" , "m3Compensated" , "WPerW" , "therm" , "onePerm" , "m3Perkg" , "Pas" , "Nm" , "NPerm" , "radPers2" , "JPerm3" , "VPerm" , "CPerm3" , "CPerm2" , "FPerm" , "HPerm" , "JPermol" , "JPermolK" , "CPerkg" , "GyPers" , "WPersr" , "WPerm2sr" , "katPerm3" , "d" , "anglemin" , "anglesec" , "ha" , "tonne" , "bar" , "mmHg" , "M" , "kn" , "Mx" , "G" , "Oe" , "Vh" , "WPerA" , "onePerHz" , "VPerVAr" , "ohmPerm" , "kgPerJ" , "JPers" ;
+	sh:in _:UnitSymbol ;
 	sh:name "Y1 Unit"@en ;
 	sh:description "The Y1-axis units of measure."^^rdf:XMLLiteral .
 _:CurveShape.y2Unit rdf:type sh:PropertyShape ;
 	sh:path <Curve.y2Unit> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "none" , "m" , "kg" , "s" , "A" , "K" , "mol" , "cd" , "deg" , "rad" , "sr" , "Gy" , "Bq" , "degC" , "Sv" , "F" , "C" , "S" , "H" , "V" , "ohm" , "J" , "N" , "Hz" , "lx" , "lm" , "Wb" , "T" , "W" , "Pa" , "m2" , "m3" , "mPers" , "mPers2" , "m3Pers" , "mPerm3" , "kgm" , "kgPerm3" , "m2Pers" , "WPermK" , "JPerK" , "ppm" , "rotPers" , "radPers" , "WPerm2" , "JPerm2" , "SPerm" , "KPers" , "PaPers" , "JPerkgK" , "VA" , "VAr" , "cosPhi" , "Vs" , "V2" , "As" , "A2" , "A2s" , "VAh" , "Wh" , "VArh" , "VPerHz" , "HzPers" , "character" , "charPers" , "kgm2" , "dB" , "WPers" , "lPers" , "dBm" , "h" , "min" , "Q" , "Qh" , "ohmm" , "APerm" , "V2h" , "A2h" , "Ah" , "count" , "ft3" , "m3Perh" , "gal" , "Btu" , "l" , "lPerh" , "lPerl" , "gPerg" , "molPerm3" , "molPermol" , "molPerkg" , "sPers" , "HzPerHz" , "VPerV" , "APerA" , "VPerVA" , "rev" , "kat" , "JPerkg" , "m3Uncompensated" , "m3Compensated" , "WPerW" , "therm" , "onePerm" , "m3Perkg" , "Pas" , "Nm" , "NPerm" , "radPers2" , "JPerm3" , "VPerm" , "CPerm3" , "CPerm2" , "FPerm" , "HPerm" , "JPermol" , "JPermolK" , "CPerkg" , "GyPers" , "WPersr" , "WPerm2sr" , "katPerm3" , "d" , "anglemin" , "anglesec" , "ha" , "tonne" , "bar" , "mmHg" , "M" , "kn" , "Mx" , "G" , "Oe" , "Vh" , "WPerA" , "onePerHz" , "VPerVAr" , "ohmPerm" , "kgPerJ" , "JPers" ;
+	sh:in _:UnitSymbol ;
 	sh:name "Y2 Unit"@en ;
 	sh:description "The Y2-axis units of measure."^^rdf:XMLLiteral .
 
@@ -821,7 +821,7 @@ _:DCConverterUnitShape.operationMode rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "bipolar" , "monopolarMetallicReturn" , "monopolarGroundReturn" ;
+	sh:in _:DCConverterOperatingModeKind ;
 	sh:name "Operation Mode"@en ;
 	sh:description "The operating mode of an HVDC bipole (bipolar, monopolar metallic return, etc)."^^rdf:XMLLiteral .
 
@@ -1303,7 +1303,7 @@ _:FossilFuelShape.fossilFuelType rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "coal" , "oil" , "gas" , "lignite" , "hardCoal" , "oilShale" , "brownCoalLignite" , "coalDerivedGas" , "peat" , "other" ;
+	sh:in _:FuelType ;
 	sh:name "Fossil Fuel Type"@en ;
 	sh:description "The type of fossil fuel, such as coal, oil, or gas."^^rdf:XMLLiteral .
 
@@ -1327,7 +1327,7 @@ _:GeneratingUnitShape.genControlSource rdf:type sh:PropertyShape ;
 	sh:path <GeneratingUnit.genControlSource> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "unavailable" , "offAGC" , "onAGC" , "plantControl" ;
+	sh:in _:GeneratorControlSource ;
 	sh:name "Gen Control Source"@en ;
 	sh:description "The source of controls for a generating unit."^^rdf:XMLLiteral .
 _:GeneratingUnitShape.governorSCD rdf:type sh:PropertyShape ;
@@ -1478,14 +1478,14 @@ _:HydroGeneratingUnitShape.energyConversionCapability rdf:type sh:PropertyShape 
 	sh:path <HydroGeneratingUnit.energyConversionCapability> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "generator" , "pumpAndGenerator" ;
+	sh:in _:HydroEnergyConversionKind ;
 	sh:name "Energy Conversion Capability"@en ;
 	sh:description "Energy conversion capability for generating."^^rdf:XMLLiteral .
 _:HydroGeneratingUnitShape.turbineType rdf:type sh:PropertyShape ;
 	sh:path <HydroGeneratingUnit.turbineType> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "francis" , "pelton" , "kaplan" ;
+	sh:in _:HydroTurbineKind ;
 	sh:name "Turbine Type"@en ;
 	sh:description "Type of turbine."^^rdf:XMLLiteral .
 
@@ -1505,7 +1505,7 @@ _:HydroPowerPlantShape.hydroPlantStorageType rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "runOfRiver" , "pumpedStorage" , "storage" ;
+	sh:in _:HydroPlantStorageKind ;
 	sh:name "Hydro Plant Storage Type"@en ;
 	sh:description "The type of hydro power plant water storage."^^rdf:XMLLiteral .
 
@@ -1866,7 +1866,7 @@ _:OperationalLimitTypeShape.direction rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "high" , "low" , "absoluteValue" ;
+	sh:in _:OperationalLimitDirectionKind ;
 	sh:name "Direction"@en ;
 	sh:description "The direction of the limit."^^rdf:XMLLiteral .
 _:OperationalLimitTypeShape.isInfiniteDuration rdf:type sh:PropertyShape ;
@@ -1881,7 +1881,7 @@ _:OperationalLimitTypeShape.kind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "patl" , "patlt" , "tatl" , "tc" , "tct" , "highVoltage" , "lowVoltage" , "operationalVoltageLimit" , "alarmVoltage" , "warningVoltage" , "stability" ;
+	sh:in _:LimitKind ;
 	sh:name "Kind"@en ;
 	sh:description "Types of limits defined in the ENTSO-E Operational Handbook Policy 3."^^rdf:XMLLiteral .
 
@@ -2132,7 +2132,7 @@ _:PowerTransformerEndShape.connectionKind rdf:type sh:PropertyShape ;
 	sh:path <PowerTransformerEnd.connectionKind> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "D" , "Y" , "Z" , "Yn" , "Zn" , "A" , "I" ;
+	sh:in _:WindingConnection ;
 	sh:name "Connection Kind"@en ;
 	sh:description "Kind of connection."^^rdf:XMLLiteral .
 _:PowerTransformerEndShape.g rdf:type sh:PropertyShape ;
@@ -2330,7 +2330,7 @@ _:RegulatingControlShape.mode rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "voltage" , "activePower" , "reactivePower" , "currentFlow" , "admittance" , "timeScheduled" , "temperature" , "powerFactor" ;
+	sh:in _:RegulatingControlModeKind ;
 	sh:name "Mode"@en ;
 	sh:description "The regulating control mode presently available."^^rdf:XMLLiteral .
 
@@ -2573,7 +2573,7 @@ _:StaticVarCompensatorShape.sVCControlMode rdf:type sh:PropertyShape ;
 	sh:path <StaticVarCompensator.sVCControlMode> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "reactivePower" , "voltage" ;
+	sh:in _:SVCControlMode ;
 	sh:name "S Vc Control Mode"@en ;
 	sh:description "SVC control mode."^^rdf:XMLLiteral .
 _:StaticVarCompensatorShape.voltageSetPoint rdf:type sh:PropertyShape ;
@@ -2726,7 +2726,7 @@ _:SynchronousMachineShape.type rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "generator" , "condenser" , "generatorOrCondenser" , "motor" , "generatorOrMotor" , "motorOrCondenser" , "generatorOrCondenserOrMotor" ;
+	sh:in _:SynchronousMachineKind ;
 	sh:name "Type"@en ;
 	sh:description "Modes that this synchronous machine can operate in."^^rdf:XMLLiteral .
 
@@ -2869,7 +2869,7 @@ _:TerminalShape.phases rdf:type sh:PropertyShape ;
 	sh:path <Terminal.phases> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "ABCN" , "ABC" , "ABN" , "ACN" , "BCN" , "AB" , "AC" , "BC" , "AN" , "BN" , "CN" , "A" , "B" , "C" , "N" , "s1N" , "s2N" , "s12N" , "s1" , "s2" , "s12" , "none" , "X" , "XY" , "XN" , "XYN" ;
+	sh:in _:PhaseCode ;
 	sh:name "Phases"@en ;
 	sh:description "Represents the normal network phasing condition."^^rdf:XMLLiteral .
 
@@ -3097,7 +3097,7 @@ _:WindGeneratingUnitShape.windGenUnitType rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "offshore" , "onshore" ;
+	sh:in _:WindGenUnitKind ;
 	sh:name "Wind Gen Unit Type"@en ;
 	sh:description "The kind of wind generating unit."^^rdf:XMLLiteral .
 
@@ -3117,3 +3117,501 @@ _:WindPowerPlantShape.WindGeneratingUnits rdf:type sh:PropertyShape ;
 	sh:class <WindGeneratingUnit> ;
 	sh:name "Wind Generating Units"@en ;
 	sh:description "A wind generating unit or units may be a member of a wind power plant."^^rdf:XMLLiteral .
+
+_:ControlAreaTypeKind rdf:first "AGC" ;
+	rdf:rest _:ControlAreaTypeKind.Forecast .
+_:ControlAreaTypeKind.Forecast rdf:first "Forecast" ;
+	rdf:rest _:ControlAreaTypeKind.Interchange .
+_:ControlAreaTypeKind.Interchange rdf:first "Interchange" ;
+	rdf:rest rdf:nil .
+
+_:CurveStyle rdf:first "constantYValue" ;
+	rdf:rest _:CurveStyle.straightLineYValues .
+_:CurveStyle.straightLineYValues rdf:first "straightLineYValues" ;
+	rdf:rest rdf:nil .
+
+_:DCConverterOperatingModeKind rdf:first "bipolar" ;
+	rdf:rest _:DCConverterOperatingModeKind.monopolarMetallicReturn .
+_:DCConverterOperatingModeKind.monopolarMetallicReturn rdf:first "monopolarMetallicReturn" ;
+	rdf:rest _:DCConverterOperatingModeKind.monopolarGroundReturn .
+_:DCConverterOperatingModeKind.monopolarGroundReturn rdf:first "monopolarGroundReturn" ;
+	rdf:rest rdf:nil .
+
+_:DCPolarityKind rdf:first "positive" ;
+	rdf:rest _:DCPolarityKind.middle .
+_:DCPolarityKind.middle rdf:first "middle" ;
+	rdf:rest _:DCPolarityKind.negative .
+_:DCPolarityKind.negative rdf:first "negative" ;
+	rdf:rest rdf:nil .
+
+_:FuelType rdf:first "coal" ;
+	rdf:rest _:FuelType.oil .
+_:FuelType.oil rdf:first "oil" ;
+	rdf:rest _:FuelType.gas .
+_:FuelType.gas rdf:first "gas" ;
+	rdf:rest _:FuelType.lignite .
+_:FuelType.lignite rdf:first "lignite" ;
+	rdf:rest _:FuelType.hardCoal .
+_:FuelType.hardCoal rdf:first "hardCoal" ;
+	rdf:rest _:FuelType.oilShale .
+_:FuelType.oilShale rdf:first "oilShale" ;
+	rdf:rest _:FuelType.brownCoalLignite .
+_:FuelType.brownCoalLignite rdf:first "brownCoalLignite" ;
+	rdf:rest _:FuelType.coalDerivedGas .
+_:FuelType.coalDerivedGas rdf:first "coalDerivedGas" ;
+	rdf:rest _:FuelType.peat .
+_:FuelType.peat rdf:first "peat" ;
+	rdf:rest _:FuelType.other .
+_:FuelType.other rdf:first "other" ;
+	rdf:rest rdf:nil .
+
+_:GeneratorControlSource rdf:first "unavailable" ;
+	rdf:rest _:GeneratorControlSource.offAGC .
+_:GeneratorControlSource.offAGC rdf:first "offAGC" ;
+	rdf:rest _:GeneratorControlSource.onAGC .
+_:GeneratorControlSource.onAGC rdf:first "onAGC" ;
+	rdf:rest _:GeneratorControlSource.plantControl .
+_:GeneratorControlSource.plantControl rdf:first "plantControl" ;
+	rdf:rest rdf:nil .
+
+_:HydroEnergyConversionKind rdf:first "generator" ;
+	rdf:rest _:HydroEnergyConversionKind.pumpAndGenerator .
+_:HydroEnergyConversionKind.pumpAndGenerator rdf:first "pumpAndGenerator" ;
+	rdf:rest rdf:nil .
+
+_:HydroPlantStorageKind rdf:first "runOfRiver" ;
+	rdf:rest _:HydroPlantStorageKind.pumpedStorage .
+_:HydroPlantStorageKind.pumpedStorage rdf:first "pumpedStorage" ;
+	rdf:rest _:HydroPlantStorageKind.storage .
+_:HydroPlantStorageKind.storage rdf:first "storage" ;
+	rdf:rest rdf:nil .
+
+_:HydroTurbineKind rdf:first "francis" ;
+	rdf:rest _:HydroTurbineKind.pelton .
+_:HydroTurbineKind.pelton rdf:first "pelton" ;
+	rdf:rest _:HydroTurbineKind.kaplan .
+_:HydroTurbineKind.kaplan rdf:first "kaplan" ;
+	rdf:rest rdf:nil .
+
+_:LimitKind rdf:first "patl" ;
+	rdf:rest _:LimitKind.patlt .
+_:LimitKind.patlt rdf:first "patlt" ;
+	rdf:rest _:LimitKind.tatl .
+_:LimitKind.tatl rdf:first "tatl" ;
+	rdf:rest _:LimitKind.tc .
+_:LimitKind.tc rdf:first "tc" ;
+	rdf:rest _:LimitKind.tct .
+_:LimitKind.tct rdf:first "tct" ;
+	rdf:rest _:LimitKind.highVoltage .
+_:LimitKind.highVoltage rdf:first "highVoltage" ;
+	rdf:rest _:LimitKind.lowVoltage .
+_:LimitKind.lowVoltage rdf:first "lowVoltage" ;
+	rdf:rest _:LimitKind.operationalVoltageLimit .
+_:LimitKind.operationalVoltageLimit rdf:first "operationalVoltageLimit" ;
+	rdf:rest _:LimitKind.alarmVoltage .
+_:LimitKind.alarmVoltage rdf:first "alarmVoltage" ;
+	rdf:rest _:LimitKind.warningVoltage .
+_:LimitKind.warningVoltage rdf:first "warningVoltage" ;
+	rdf:rest _:LimitKind.stability .
+_:LimitKind.stability rdf:first "stability" ;
+	rdf:rest rdf:nil .
+
+_:OperationalLimitDirectionKind rdf:first "high" ;
+	rdf:rest _:OperationalLimitDirectionKind.low .
+_:OperationalLimitDirectionKind.low rdf:first "low" ;
+	rdf:rest _:OperationalLimitDirectionKind.absoluteValue .
+_:OperationalLimitDirectionKind.absoluteValue rdf:first "absoluteValue" ;
+	rdf:rest rdf:nil .
+
+_:PhaseCode rdf:first "ABCN" ;
+	rdf:rest _:PhaseCode.ABC .
+_:PhaseCode.ABC rdf:first "ABC" ;
+	rdf:rest _:PhaseCode.ABN .
+_:PhaseCode.ABN rdf:first "ABN" ;
+	rdf:rest _:PhaseCode.ACN .
+_:PhaseCode.ACN rdf:first "ACN" ;
+	rdf:rest _:PhaseCode.BCN .
+_:PhaseCode.BCN rdf:first "BCN" ;
+	rdf:rest _:PhaseCode.AB .
+_:PhaseCode.AB rdf:first "AB" ;
+	rdf:rest _:PhaseCode.AC .
+_:PhaseCode.AC rdf:first "AC" ;
+	rdf:rest _:PhaseCode.BC .
+_:PhaseCode.BC rdf:first "BC" ;
+	rdf:rest _:PhaseCode.AN .
+_:PhaseCode.AN rdf:first "AN" ;
+	rdf:rest _:PhaseCode.BN .
+_:PhaseCode.BN rdf:first "BN" ;
+	rdf:rest _:PhaseCode.CN .
+_:PhaseCode.CN rdf:first "CN" ;
+	rdf:rest _:PhaseCode.A .
+_:PhaseCode.A rdf:first "A" ;
+	rdf:rest _:PhaseCode.B .
+_:PhaseCode.B rdf:first "B" ;
+	rdf:rest _:PhaseCode.C .
+_:PhaseCode.C rdf:first "C" ;
+	rdf:rest _:PhaseCode.N .
+_:PhaseCode.N rdf:first "N" ;
+	rdf:rest _:PhaseCode.s1N .
+_:PhaseCode.s1N rdf:first "s1N" ;
+	rdf:rest _:PhaseCode.s2N .
+_:PhaseCode.s2N rdf:first "s2N" ;
+	rdf:rest _:PhaseCode.s12N .
+_:PhaseCode.s12N rdf:first "s12N" ;
+	rdf:rest _:PhaseCode.s1 .
+_:PhaseCode.s1 rdf:first "s1" ;
+	rdf:rest _:PhaseCode.s2 .
+_:PhaseCode.s2 rdf:first "s2" ;
+	rdf:rest _:PhaseCode.s12 .
+_:PhaseCode.s12 rdf:first "s12" ;
+	rdf:rest _:PhaseCode.none .
+_:PhaseCode.none rdf:first "none" ;
+	rdf:rest _:PhaseCode.X .
+_:PhaseCode.X rdf:first "X" ;
+	rdf:rest _:PhaseCode.XY .
+_:PhaseCode.XY rdf:first "XY" ;
+	rdf:rest _:PhaseCode.XN .
+_:PhaseCode.XN rdf:first "XN" ;
+	rdf:rest _:PhaseCode.XYN .
+_:PhaseCode.XYN rdf:first "XYN" ;
+	rdf:rest rdf:nil .
+
+_:RegulatingControlModeKind rdf:first "voltage" ;
+	rdf:rest _:RegulatingControlModeKind.activePower .
+_:RegulatingControlModeKind.activePower rdf:first "activePower" ;
+	rdf:rest _:RegulatingControlModeKind.reactivePower .
+_:RegulatingControlModeKind.reactivePower rdf:first "reactivePower" ;
+	rdf:rest _:RegulatingControlModeKind.currentFlow .
+_:RegulatingControlModeKind.currentFlow rdf:first "currentFlow" ;
+	rdf:rest _:RegulatingControlModeKind.admittance .
+_:RegulatingControlModeKind.admittance rdf:first "admittance" ;
+	rdf:rest _:RegulatingControlModeKind.timeScheduled .
+_:RegulatingControlModeKind.timeScheduled rdf:first "timeScheduled" ;
+	rdf:rest _:RegulatingControlModeKind.temperature .
+_:RegulatingControlModeKind.temperature rdf:first "temperature" ;
+	rdf:rest _:RegulatingControlModeKind.powerFactor .
+_:RegulatingControlModeKind.powerFactor rdf:first "powerFactor" ;
+	rdf:rest rdf:nil .
+
+_:SVCControlMode rdf:first "reactivePower" ;
+	rdf:rest _:SVCControlMode.voltage .
+_:SVCControlMode.voltage rdf:first "voltage" ;
+	rdf:rest rdf:nil .
+
+_:SynchronousMachineKind rdf:first "generator" ;
+	rdf:rest _:SynchronousMachineKind.condenser .
+_:SynchronousMachineKind.condenser rdf:first "condenser" ;
+	rdf:rest _:SynchronousMachineKind.generatorOrCondenser .
+_:SynchronousMachineKind.generatorOrCondenser rdf:first "generatorOrCondenser" ;
+	rdf:rest _:SynchronousMachineKind.motor .
+_:SynchronousMachineKind.motor rdf:first "motor" ;
+	rdf:rest _:SynchronousMachineKind.generatorOrMotor .
+_:SynchronousMachineKind.generatorOrMotor rdf:first "generatorOrMotor" ;
+	rdf:rest _:SynchronousMachineKind.motorOrCondenser .
+_:SynchronousMachineKind.motorOrCondenser rdf:first "motorOrCondenser" ;
+	rdf:rest _:SynchronousMachineKind.generatorOrCondenserOrMotor .
+_:SynchronousMachineKind.generatorOrCondenserOrMotor rdf:first "generatorOrCondenserOrMotor" ;
+	rdf:rest rdf:nil .
+
+_:UnitSymbol rdf:first "none" ;
+	rdf:rest _:UnitSymbol.m .
+_:UnitSymbol.m rdf:first "m" ;
+	rdf:rest _:UnitSymbol.kg .
+_:UnitSymbol.kg rdf:first "kg" ;
+	rdf:rest _:UnitSymbol.s .
+_:UnitSymbol.s rdf:first "s" ;
+	rdf:rest _:UnitSymbol.A .
+_:UnitSymbol.A rdf:first "A" ;
+	rdf:rest _:UnitSymbol.K .
+_:UnitSymbol.K rdf:first "K" ;
+	rdf:rest _:UnitSymbol.mol .
+_:UnitSymbol.mol rdf:first "mol" ;
+	rdf:rest _:UnitSymbol.cd .
+_:UnitSymbol.cd rdf:first "cd" ;
+	rdf:rest _:UnitSymbol.deg .
+_:UnitSymbol.deg rdf:first "deg" ;
+	rdf:rest _:UnitSymbol.rad .
+_:UnitSymbol.rad rdf:first "rad" ;
+	rdf:rest _:UnitSymbol.sr .
+_:UnitSymbol.sr rdf:first "sr" ;
+	rdf:rest _:UnitSymbol.Gy .
+_:UnitSymbol.Gy rdf:first "Gy" ;
+	rdf:rest _:UnitSymbol.Bq .
+_:UnitSymbol.Bq rdf:first "Bq" ;
+	rdf:rest _:UnitSymbol.degC .
+_:UnitSymbol.degC rdf:first "degC" ;
+	rdf:rest _:UnitSymbol.Sv .
+_:UnitSymbol.Sv rdf:first "Sv" ;
+	rdf:rest _:UnitSymbol.F .
+_:UnitSymbol.F rdf:first "F" ;
+	rdf:rest _:UnitSymbol.C .
+_:UnitSymbol.C rdf:first "C" ;
+	rdf:rest _:UnitSymbol.S .
+_:UnitSymbol.S rdf:first "S" ;
+	rdf:rest _:UnitSymbol.H .
+_:UnitSymbol.H rdf:first "H" ;
+	rdf:rest _:UnitSymbol.V .
+_:UnitSymbol.V rdf:first "V" ;
+	rdf:rest _:UnitSymbol.ohm .
+_:UnitSymbol.ohm rdf:first "ohm" ;
+	rdf:rest _:UnitSymbol.J .
+_:UnitSymbol.J rdf:first "J" ;
+	rdf:rest _:UnitSymbol.N .
+_:UnitSymbol.N rdf:first "N" ;
+	rdf:rest _:UnitSymbol.Hz .
+_:UnitSymbol.Hz rdf:first "Hz" ;
+	rdf:rest _:UnitSymbol.lx .
+_:UnitSymbol.lx rdf:first "lx" ;
+	rdf:rest _:UnitSymbol.lm .
+_:UnitSymbol.lm rdf:first "lm" ;
+	rdf:rest _:UnitSymbol.Wb .
+_:UnitSymbol.Wb rdf:first "Wb" ;
+	rdf:rest _:UnitSymbol.T .
+_:UnitSymbol.T rdf:first "T" ;
+	rdf:rest _:UnitSymbol.W .
+_:UnitSymbol.W rdf:first "W" ;
+	rdf:rest _:UnitSymbol.Pa .
+_:UnitSymbol.Pa rdf:first "Pa" ;
+	rdf:rest _:UnitSymbol.m2 .
+_:UnitSymbol.m2 rdf:first "m2" ;
+	rdf:rest _:UnitSymbol.m3 .
+_:UnitSymbol.m3 rdf:first "m3" ;
+	rdf:rest _:UnitSymbol.mPers .
+_:UnitSymbol.mPers rdf:first "mPers" ;
+	rdf:rest _:UnitSymbol.mPers2 .
+_:UnitSymbol.mPers2 rdf:first "mPers2" ;
+	rdf:rest _:UnitSymbol.m3Pers .
+_:UnitSymbol.m3Pers rdf:first "m3Pers" ;
+	rdf:rest _:UnitSymbol.mPerm3 .
+_:UnitSymbol.mPerm3 rdf:first "mPerm3" ;
+	rdf:rest _:UnitSymbol.kgm .
+_:UnitSymbol.kgm rdf:first "kgm" ;
+	rdf:rest _:UnitSymbol.kgPerm3 .
+_:UnitSymbol.kgPerm3 rdf:first "kgPerm3" ;
+	rdf:rest _:UnitSymbol.m2Pers .
+_:UnitSymbol.m2Pers rdf:first "m2Pers" ;
+	rdf:rest _:UnitSymbol.WPermK .
+_:UnitSymbol.WPermK rdf:first "WPermK" ;
+	rdf:rest _:UnitSymbol.JPerK .
+_:UnitSymbol.JPerK rdf:first "JPerK" ;
+	rdf:rest _:UnitSymbol.ppm .
+_:UnitSymbol.ppm rdf:first "ppm" ;
+	rdf:rest _:UnitSymbol.rotPers .
+_:UnitSymbol.rotPers rdf:first "rotPers" ;
+	rdf:rest _:UnitSymbol.radPers .
+_:UnitSymbol.radPers rdf:first "radPers" ;
+	rdf:rest _:UnitSymbol.WPerm2 .
+_:UnitSymbol.WPerm2 rdf:first "WPerm2" ;
+	rdf:rest _:UnitSymbol.JPerm2 .
+_:UnitSymbol.JPerm2 rdf:first "JPerm2" ;
+	rdf:rest _:UnitSymbol.SPerm .
+_:UnitSymbol.SPerm rdf:first "SPerm" ;
+	rdf:rest _:UnitSymbol.KPers .
+_:UnitSymbol.KPers rdf:first "KPers" ;
+	rdf:rest _:UnitSymbol.PaPers .
+_:UnitSymbol.PaPers rdf:first "PaPers" ;
+	rdf:rest _:UnitSymbol.JPerkgK .
+_:UnitSymbol.JPerkgK rdf:first "JPerkgK" ;
+	rdf:rest _:UnitSymbol.VA .
+_:UnitSymbol.VA rdf:first "VA" ;
+	rdf:rest _:UnitSymbol.VAr .
+_:UnitSymbol.VAr rdf:first "VAr" ;
+	rdf:rest _:UnitSymbol.cosPhi .
+_:UnitSymbol.cosPhi rdf:first "cosPhi" ;
+	rdf:rest _:UnitSymbol.Vs .
+_:UnitSymbol.Vs rdf:first "Vs" ;
+	rdf:rest _:UnitSymbol.V2 .
+_:UnitSymbol.V2 rdf:first "V2" ;
+	rdf:rest _:UnitSymbol.As .
+_:UnitSymbol.As rdf:first "As" ;
+	rdf:rest _:UnitSymbol.A2 .
+_:UnitSymbol.A2 rdf:first "A2" ;
+	rdf:rest _:UnitSymbol.A2s .
+_:UnitSymbol.A2s rdf:first "A2s" ;
+	rdf:rest _:UnitSymbol.VAh .
+_:UnitSymbol.VAh rdf:first "VAh" ;
+	rdf:rest _:UnitSymbol.Wh .
+_:UnitSymbol.Wh rdf:first "Wh" ;
+	rdf:rest _:UnitSymbol.VArh .
+_:UnitSymbol.VArh rdf:first "VArh" ;
+	rdf:rest _:UnitSymbol.VPerHz .
+_:UnitSymbol.VPerHz rdf:first "VPerHz" ;
+	rdf:rest _:UnitSymbol.HzPers .
+_:UnitSymbol.HzPers rdf:first "HzPers" ;
+	rdf:rest _:UnitSymbol.character .
+_:UnitSymbol.character rdf:first "character" ;
+	rdf:rest _:UnitSymbol.charPers .
+_:UnitSymbol.charPers rdf:first "charPers" ;
+	rdf:rest _:UnitSymbol.kgm2 .
+_:UnitSymbol.kgm2 rdf:first "kgm2" ;
+	rdf:rest _:UnitSymbol.dB .
+_:UnitSymbol.dB rdf:first "dB" ;
+	rdf:rest _:UnitSymbol.WPers .
+_:UnitSymbol.WPers rdf:first "WPers" ;
+	rdf:rest _:UnitSymbol.lPers .
+_:UnitSymbol.lPers rdf:first "lPers" ;
+	rdf:rest _:UnitSymbol.dBm .
+_:UnitSymbol.dBm rdf:first "dBm" ;
+	rdf:rest _:UnitSymbol.h .
+_:UnitSymbol.h rdf:first "h" ;
+	rdf:rest _:UnitSymbol.min .
+_:UnitSymbol.min rdf:first "min" ;
+	rdf:rest _:UnitSymbol.Q .
+_:UnitSymbol.Q rdf:first "Q" ;
+	rdf:rest _:UnitSymbol.Qh .
+_:UnitSymbol.Qh rdf:first "Qh" ;
+	rdf:rest _:UnitSymbol.ohmm .
+_:UnitSymbol.ohmm rdf:first "ohmm" ;
+	rdf:rest _:UnitSymbol.APerm .
+_:UnitSymbol.APerm rdf:first "APerm" ;
+	rdf:rest _:UnitSymbol.V2h .
+_:UnitSymbol.V2h rdf:first "V2h" ;
+	rdf:rest _:UnitSymbol.A2h .
+_:UnitSymbol.A2h rdf:first "A2h" ;
+	rdf:rest _:UnitSymbol.Ah .
+_:UnitSymbol.Ah rdf:first "Ah" ;
+	rdf:rest _:UnitSymbol.count .
+_:UnitSymbol.count rdf:first "count" ;
+	rdf:rest _:UnitSymbol.ft3 .
+_:UnitSymbol.ft3 rdf:first "ft3" ;
+	rdf:rest _:UnitSymbol.m3Perh .
+_:UnitSymbol.m3Perh rdf:first "m3Perh" ;
+	rdf:rest _:UnitSymbol.gal .
+_:UnitSymbol.gal rdf:first "gal" ;
+	rdf:rest _:UnitSymbol.Btu .
+_:UnitSymbol.Btu rdf:first "Btu" ;
+	rdf:rest _:UnitSymbol.l .
+_:UnitSymbol.l rdf:first "l" ;
+	rdf:rest _:UnitSymbol.lPerh .
+_:UnitSymbol.lPerh rdf:first "lPerh" ;
+	rdf:rest _:UnitSymbol.lPerl .
+_:UnitSymbol.lPerl rdf:first "lPerl" ;
+	rdf:rest _:UnitSymbol.gPerg .
+_:UnitSymbol.gPerg rdf:first "gPerg" ;
+	rdf:rest _:UnitSymbol.molPerm3 .
+_:UnitSymbol.molPerm3 rdf:first "molPerm3" ;
+	rdf:rest _:UnitSymbol.molPermol .
+_:UnitSymbol.molPermol rdf:first "molPermol" ;
+	rdf:rest _:UnitSymbol.molPerkg .
+_:UnitSymbol.molPerkg rdf:first "molPerkg" ;
+	rdf:rest _:UnitSymbol.sPers .
+_:UnitSymbol.sPers rdf:first "sPers" ;
+	rdf:rest _:UnitSymbol.HzPerHz .
+_:UnitSymbol.HzPerHz rdf:first "HzPerHz" ;
+	rdf:rest _:UnitSymbol.VPerV .
+_:UnitSymbol.VPerV rdf:first "VPerV" ;
+	rdf:rest _:UnitSymbol.APerA .
+_:UnitSymbol.APerA rdf:first "APerA" ;
+	rdf:rest _:UnitSymbol.VPerVA .
+_:UnitSymbol.VPerVA rdf:first "VPerVA" ;
+	rdf:rest _:UnitSymbol.rev .
+_:UnitSymbol.rev rdf:first "rev" ;
+	rdf:rest _:UnitSymbol.kat .
+_:UnitSymbol.kat rdf:first "kat" ;
+	rdf:rest _:UnitSymbol.JPerkg .
+_:UnitSymbol.JPerkg rdf:first "JPerkg" ;
+	rdf:rest _:UnitSymbol.m3Uncompensated .
+_:UnitSymbol.m3Uncompensated rdf:first "m3Uncompensated" ;
+	rdf:rest _:UnitSymbol.m3Compensated .
+_:UnitSymbol.m3Compensated rdf:first "m3Compensated" ;
+	rdf:rest _:UnitSymbol.WPerW .
+_:UnitSymbol.WPerW rdf:first "WPerW" ;
+	rdf:rest _:UnitSymbol.therm .
+_:UnitSymbol.therm rdf:first "therm" ;
+	rdf:rest _:UnitSymbol.onePerm .
+_:UnitSymbol.onePerm rdf:first "onePerm" ;
+	rdf:rest _:UnitSymbol.m3Perkg .
+_:UnitSymbol.m3Perkg rdf:first "m3Perkg" ;
+	rdf:rest _:UnitSymbol.Pas .
+_:UnitSymbol.Pas rdf:first "Pas" ;
+	rdf:rest _:UnitSymbol.Nm .
+_:UnitSymbol.Nm rdf:first "Nm" ;
+	rdf:rest _:UnitSymbol.NPerm .
+_:UnitSymbol.NPerm rdf:first "NPerm" ;
+	rdf:rest _:UnitSymbol.radPers2 .
+_:UnitSymbol.radPers2 rdf:first "radPers2" ;
+	rdf:rest _:UnitSymbol.JPerm3 .
+_:UnitSymbol.JPerm3 rdf:first "JPerm3" ;
+	rdf:rest _:UnitSymbol.VPerm .
+_:UnitSymbol.VPerm rdf:first "VPerm" ;
+	rdf:rest _:UnitSymbol.CPerm3 .
+_:UnitSymbol.CPerm3 rdf:first "CPerm3" ;
+	rdf:rest _:UnitSymbol.CPerm2 .
+_:UnitSymbol.CPerm2 rdf:first "CPerm2" ;
+	rdf:rest _:UnitSymbol.FPerm .
+_:UnitSymbol.FPerm rdf:first "FPerm" ;
+	rdf:rest _:UnitSymbol.HPerm .
+_:UnitSymbol.HPerm rdf:first "HPerm" ;
+	rdf:rest _:UnitSymbol.JPermol .
+_:UnitSymbol.JPermol rdf:first "JPermol" ;
+	rdf:rest _:UnitSymbol.JPermolK .
+_:UnitSymbol.JPermolK rdf:first "JPermolK" ;
+	rdf:rest _:UnitSymbol.CPerkg .
+_:UnitSymbol.CPerkg rdf:first "CPerkg" ;
+	rdf:rest _:UnitSymbol.GyPers .
+_:UnitSymbol.GyPers rdf:first "GyPers" ;
+	rdf:rest _:UnitSymbol.WPersr .
+_:UnitSymbol.WPersr rdf:first "WPersr" ;
+	rdf:rest _:UnitSymbol.WPerm2sr .
+_:UnitSymbol.WPerm2sr rdf:first "WPerm2sr" ;
+	rdf:rest _:UnitSymbol.katPerm3 .
+_:UnitSymbol.katPerm3 rdf:first "katPerm3" ;
+	rdf:rest _:UnitSymbol.d .
+_:UnitSymbol.d rdf:first "d" ;
+	rdf:rest _:UnitSymbol.anglemin .
+_:UnitSymbol.anglemin rdf:first "anglemin" ;
+	rdf:rest _:UnitSymbol.anglesec .
+_:UnitSymbol.anglesec rdf:first "anglesec" ;
+	rdf:rest _:UnitSymbol.ha .
+_:UnitSymbol.ha rdf:first "ha" ;
+	rdf:rest _:UnitSymbol.tonne .
+_:UnitSymbol.tonne rdf:first "tonne" ;
+	rdf:rest _:UnitSymbol.bar .
+_:UnitSymbol.bar rdf:first "bar" ;
+	rdf:rest _:UnitSymbol.mmHg .
+_:UnitSymbol.mmHg rdf:first "mmHg" ;
+	rdf:rest _:UnitSymbol.M .
+_:UnitSymbol.M rdf:first "M" ;
+	rdf:rest _:UnitSymbol.kn .
+_:UnitSymbol.kn rdf:first "kn" ;
+	rdf:rest _:UnitSymbol.Mx .
+_:UnitSymbol.Mx rdf:first "Mx" ;
+	rdf:rest _:UnitSymbol.G .
+_:UnitSymbol.G rdf:first "G" ;
+	rdf:rest _:UnitSymbol.Oe .
+_:UnitSymbol.Oe rdf:first "Oe" ;
+	rdf:rest _:UnitSymbol.Vh .
+_:UnitSymbol.Vh rdf:first "Vh" ;
+	rdf:rest _:UnitSymbol.WPerA .
+_:UnitSymbol.WPerA rdf:first "WPerA" ;
+	rdf:rest _:UnitSymbol.onePerHz .
+_:UnitSymbol.onePerHz rdf:first "onePerHz" ;
+	rdf:rest _:UnitSymbol.VPerVAr .
+_:UnitSymbol.VPerVAr rdf:first "VPerVAr" ;
+	rdf:rest _:UnitSymbol.ohmPerm .
+_:UnitSymbol.ohmPerm rdf:first "ohmPerm" ;
+	rdf:rest _:UnitSymbol.kgPerJ .
+_:UnitSymbol.kgPerJ rdf:first "kgPerJ" ;
+	rdf:rest _:UnitSymbol.JPers .
+_:UnitSymbol.JPers rdf:first "JPers" ;
+	rdf:rest rdf:nil .
+
+_:WindGenUnitKind rdf:first "offshore" ;
+	rdf:rest _:WindGenUnitKind.onshore .
+_:WindGenUnitKind.onshore rdf:first "onshore" ;
+	rdf:rest rdf:nil .
+
+_:WindingConnection rdf:first "D" ;
+	rdf:rest _:WindingConnection.Y .
+_:WindingConnection.Y rdf:first "Y" ;
+	rdf:rest _:WindingConnection.Z .
+_:WindingConnection.Z rdf:first "Z" ;
+	rdf:rest _:WindingConnection.Yn .
+_:WindingConnection.Yn rdf:first "Yn" ;
+	rdf:rest _:WindingConnection.Zn .
+_:WindingConnection.Zn rdf:first "Zn" ;
+	rdf:rest _:WindingConnection.A .
+_:WindingConnection.A rdf:first "A" ;
+	rdf:rest _:WindingConnection.I .
+_:WindingConnection.I rdf:first "I" ;
+	rdf:rest rdf:nil .

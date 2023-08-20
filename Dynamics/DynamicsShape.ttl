@@ -237,7 +237,7 @@ _:CommunicationIECShape.kind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "windPlantReferences" , "windPlantMeasurements" , "powerDeviceReferences" ;
+	sh:in _:CommunicationModuleKind ;
 	sh:name "Kind"@en ;
 	sh:description "Kind of communication."^^rdf:XMLLiteral .
 
@@ -273,7 +273,7 @@ _:ConstantPowerFactorSettingsShape.constantPowerFactorExcitationKind rdf:type sh
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "inj" , "abs" ;
+	sh:in _:ConstantPowerFactorSettingKind ;
 	sh:name "Constant Power Factor Excitation Kind"@en ;
 	sh:description "Under or over excited (CONST_PF_EXCITATION)."^^rdf:XMLLiteral .
 _:ConstantPowerFactorSettingsShape.enabled rdf:type sh:PropertyShape ;
@@ -518,7 +518,7 @@ _:DERNameplateDataShape.abnormalOPcatKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "catI" , "catII" , "catIII" ;
+	sh:in _:AbnormalOPcatKind ;
 	sh:name "Abnormal O Pcat Kind"@en ;
 	sh:description "Abnormal performance Category (NP_ABNORMAL_OP_CAT)."^^rdf:XMLLiteral .
 _:DERNameplateDataShape.acVmax rdf:type sh:PropertyShape ;
@@ -561,7 +561,7 @@ _:DERNameplateDataShape.normalOPcatKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "catA" , "catB" ;
+	sh:in _:NormalOPcatKind ;
 	sh:name "Normal O Pcat Kind"@en ;
 	sh:description "Normal performance capability (NP_NORMAL_OP_CAT)."^^rdf:XMLLiteral .
 _:DERNameplateDataShape.reactiveSusceptance rdf:type sh:PropertyShape ;
@@ -4048,7 +4048,7 @@ _:ExcIEEEAC10CShape.voelInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageError" , "takeOverRegOutput" , "takeOverInnerLoop" ;
+	sh:in _:VoelInputKind ;
 	sh:name "Voel Input Kind"@en ;
 	sh:description "Alternate OEL input locations (Voel)."^^rdf:XMLLiteral .
 _:ExcIEEEAC10CShape.vrmax rdf:type sh:PropertyShape ;
@@ -4084,7 +4084,7 @@ _:ExcIEEEAC10CShape.vsclInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageError" , "takeOverRegOutput" ;
+	sh:in _:VsclInputKind ;
 	sh:name "Vscl Input Kind"@en ;
 	sh:description "Alternate SCL input locations (Vscl)."^^rdf:XMLLiteral .
 _:ExcIEEEAC10CShape.vsInputKind rdf:type sh:PropertyShape ;
@@ -4092,7 +4092,7 @@ _:ExcIEEEAC10CShape.vsInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "voltageError" , "voltageErrorOrAfterTakeOver" , "outputAVR" ;
+	sh:in _:VsInputKind ;
 	sh:name "Vs Input Kind"@en ;
 	sh:description "Alternate PSS input locations (Vs)."^^rdf:XMLLiteral .
 _:ExcIEEEAC10CShape.vuelInputKind rdf:type sh:PropertyShape ;
@@ -4100,7 +4100,7 @@ _:ExcIEEEAC10CShape.vuelInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageError" , "takeOverRegOutput" ;
+	sh:in _:VuelInputKind ;
 	sh:name "Vuel Input Kind"@en ;
 	sh:description "Alternate UEL input locations (Vuel)."^^rdf:XMLLiteral .
 _:ExcIEEEAC10CShape.xl rdf:type sh:PropertyShape ;
@@ -4337,7 +4337,7 @@ _:ExcIEEEAC11CShape.voelInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageError" , "takeOverRegOutput" , "takeOverInnerLoop" ;
+	sh:in _:VoelInputKind ;
 	sh:name "Voel Input Kind"@en ;
 	sh:description "Alternate OEL input locations (Voel)."^^rdf:XMLLiteral .
 _:ExcIEEEAC11CShape.vrmax rdf:type sh:PropertyShape ;
@@ -4373,7 +4373,7 @@ _:ExcIEEEAC11CShape.vsclInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageError" , "takeOverRegOutput" ;
+	sh:in _:VsclInputKind ;
 	sh:name "Vscl Input Kind"@en ;
 	sh:description "Alternate SCL input locations (Vscl)."^^rdf:XMLLiteral .
 _:ExcIEEEAC11CShape.vsInputKind rdf:type sh:PropertyShape ;
@@ -4381,7 +4381,7 @@ _:ExcIEEEAC11CShape.vsInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "voltageError" , "voltageErrorOrAfterTakeOver" , "outputAVR" ;
+	sh:in _:VsInputKind ;
 	sh:name "Vs Input Kind"@en ;
 	sh:description "Alternate PSS input locations (Vs)."^^rdf:XMLLiteral .
 _:ExcIEEEAC11CShape.vuelInputKind rdf:type sh:PropertyShape ;
@@ -4389,7 +4389,7 @@ _:ExcIEEEAC11CShape.vuelInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageError" , "takeOverRegOutput" ;
+	sh:in _:VuelInputKind ;
 	sh:name "Vuel Input Kind"@en ;
 	sh:description "Alternate UEL input locations (Vuel)."^^rdf:XMLLiteral .
 _:ExcIEEEAC11CShape.xl rdf:type sh:PropertyShape ;
@@ -6552,7 +6552,7 @@ _:ExcIEEEAC7CShape.voelInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageError" , "takeOverRegOutput" , "takeOverInnerLoop" ;
+	sh:in _:VoelInputKind ;
 	sh:name "Voel Input Kind"@en ;
 	sh:description "Alternate OEL input locations (Voel)."^^rdf:XMLLiteral .
 _:ExcIEEEAC7CShape.vrmax rdf:type sh:PropertyShape ;
@@ -6581,7 +6581,7 @@ _:ExcIEEEAC7CShape.vsclInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageError" , "takeOverRegOutput" ;
+	sh:in _:VsclInputKind ;
 	sh:name "Vscl Input Kind"@en ;
 	sh:description "Alternate SCL input locations (Vscl)."^^rdf:XMLLiteral .
 _:ExcIEEEAC7CShape.vuelInputKind rdf:type sh:PropertyShape ;
@@ -6589,7 +6589,7 @@ _:ExcIEEEAC7CShape.vuelInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageError" , "takeOverRegOutput" ;
+	sh:in _:VuelInputKind ;
 	sh:name "Vuel Input Kind"@en ;
 	sh:description "Alternate UEL input locations (Vuel)."^^rdf:XMLLiteral .
 _:ExcIEEEAC7CShape.xl rdf:type sh:PropertyShape ;
@@ -6890,7 +6890,7 @@ _:ExcIEEEAC8CShape.voelInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageError" , "takeOverRegOutput" , "takeOverInnerLoop" ;
+	sh:in _:VoelInputKind ;
 	sh:name "Voel Input Kind"@en ;
 	sh:description "Alternate OEL input locations (Voel)."^^rdf:XMLLiteral .
 _:ExcIEEEAC8CShape.vpidmax rdf:type sh:PropertyShape ;
@@ -6933,7 +6933,7 @@ _:ExcIEEEAC8CShape.vsclInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageError" , "takeOverRegOutput" ;
+	sh:in _:VsclInputKind ;
 	sh:name "Vscl Input Kind"@en ;
 	sh:description "Alternate SCL input locations (Vscl)."^^rdf:XMLLiteral .
 _:ExcIEEEAC8CShape.vuelInputKind rdf:type sh:PropertyShape ;
@@ -6941,7 +6941,7 @@ _:ExcIEEEAC8CShape.vuelInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageError" , "takeOverRegOutput" ;
+	sh:in _:VuelInputKind ;
 	sh:name "Vuel Input Kind"@en ;
 	sh:description "Alternate UEL input locations (Vuel)."^^rdf:XMLLiteral .
 _:ExcIEEEAC8CShape.xl rdf:type sh:PropertyShape ;
@@ -8314,7 +8314,7 @@ _:ExcIEEEST10CShape.voelInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageError" , "takeOverRegOutput" , "takeOverInnerLoop" ;
+	sh:in _:VoelInputKind ;
 	sh:name "Voel Input Kind"@en ;
 	sh:description "Alternate OEL input locations (Voel)."^^rdf:XMLLiteral .
 _:ExcIEEEST10CShape.vrmax rdf:type sh:PropertyShape ;
@@ -8350,7 +8350,7 @@ _:ExcIEEEST10CShape.vsclInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageError" , "takeOverRegOutput" ;
+	sh:in _:VsclInputKind ;
 	sh:name "Vscl Input Kind"@en ;
 	sh:description "Alternate SCL input locations (Vscl)."^^rdf:XMLLiteral .
 _:ExcIEEEST10CShape.vsInputKind rdf:type sh:PropertyShape ;
@@ -8358,7 +8358,7 @@ _:ExcIEEEST10CShape.vsInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "voltageError" , "voltageErrorOrAfterTakeOver" , "outputAVR" ;
+	sh:in _:VsInputKind ;
 	sh:name "Vs Input Kind"@en ;
 	sh:description "Alternate PSS input locations (Vs)."^^rdf:XMLLiteral .
 _:ExcIEEEST10CShape.vuelInputKind rdf:type sh:PropertyShape ;
@@ -8366,7 +8366,7 @@ _:ExcIEEEST10CShape.vuelInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageError" , "takeOverRegOutput" ;
+	sh:in _:VuelInputKind ;
 	sh:name "Vuel Input Kind"@en ;
 	sh:description "Alternate UEL input locations (Vuel)."^^rdf:XMLLiteral .
 _:ExcIEEEST10CShape.xl rdf:type sh:PropertyShape ;
@@ -8469,7 +8469,7 @@ _:ExcIEEEST1AShape.uelin rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "ignoreUELsignal" , "inputHVgateVoltageOutput" , "inputHVgateErrorSignal" , "inputAddedToErrorSignal" ;
+	sh:in _:ExcIEEEST1AUELselectorKind ;
 	sh:name "Uelin"@en ;
 	sh:description "Selector of the connection of the UEL input (<i>UELin</i>)."^^rdf:XMLLiteral .
 _:ExcIEEEST1AShape.vamax rdf:type sh:PropertyShape ;
@@ -8629,7 +8629,7 @@ _:ExcIEEEST1CShape.voelInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageError" , "takeOverRegOutput" , "takeOverInnerLoop" ;
+	sh:in _:VoelInputKind ;
 	sh:name "Voel Input Kind"@en ;
 	sh:description "Alternate OEL input locations (Voel)."^^rdf:XMLLiteral .
 _:ExcIEEEST1CShape.vrmax rdf:type sh:PropertyShape ;
@@ -8658,7 +8658,7 @@ _:ExcIEEEST1CShape.vsclInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageError" , "takeOverRegOutput" ;
+	sh:in _:VsclInputKind ;
 	sh:name "Vscl Input Kind"@en ;
 	sh:description "Alternate SCL input locations (Vscl)."^^rdf:XMLLiteral .
 _:ExcIEEEST1CShape.vuelInputKind rdf:type sh:PropertyShape ;
@@ -8666,7 +8666,7 @@ _:ExcIEEEST1CShape.vuelInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageError" , "takeOverRegOutput" ;
+	sh:in _:VuelInputKind ;
 	sh:name "Vuel Input Kind"@en ;
 	sh:description "Alternate UEL input locations (Vuel)."^^rdf:XMLLiteral .
 
@@ -9530,7 +9530,7 @@ _:ExcIEEEST4CShape.voelInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageRegInput" , "takeOverInnerLoop" ;
+	sh:in _:InputsST4CKind ;
 	sh:name "Voel Input Kind"@en ;
 	sh:description "Alternate OEL input locations (Voel)."^^rdf:XMLLiteral .
 _:ExcIEEEST4CShape.vrmax rdf:type sh:PropertyShape ;
@@ -9559,7 +9559,7 @@ _:ExcIEEEST4CShape.vsclInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageRegInput" , "takeOverInnerLoop" ;
+	sh:in _:InputsST4CKind ;
 	sh:name "Vscl Input Kind"@en ;
 	sh:description "Alternate SCL input locations (Vscl)."^^rdf:XMLLiteral .
 _:ExcIEEEST4CShape.vuelInputKind rdf:type sh:PropertyShape ;
@@ -9567,7 +9567,7 @@ _:ExcIEEEST4CShape.vuelInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageRegInput" , "takeOverInnerLoop" ;
+	sh:in _:InputsST4CKind ;
 	sh:name "Vuel Input Kind"@en ;
 	sh:description "Alternate UEL input locations (Vuel)."^^rdf:XMLLiteral .
 _:ExcIEEEST4CShape.xl rdf:type sh:PropertyShape ;
@@ -9912,7 +9912,7 @@ _:ExcIEEEST6BShape.oelin rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "noOELinput" , "beforeUEL" , "afterUEL" ;
+	sh:in _:ExcST6BOELselectorKind ;
 	sh:name "Oelin"@en ;
 	sh:description "OEL input selector (<i>OELin</i>)."^^rdf:XMLLiteral .
 _:ExcIEEEST6BShape.tg rdf:type sh:PropertyShape ;
@@ -10100,7 +10100,7 @@ _:ExcIEEEST6CShape.voelInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageRegInput" , "summationPointAVR" , "takeOverInnerLoop" ;
+	sh:in _:InputsST6CKind ;
 	sh:name "Voel Input Kind"@en ;
 	sh:description "Alternate OEL input locations (Voel)."^^rdf:XMLLiteral .
 _:ExcIEEEST6CShape.vrmax rdf:type sh:PropertyShape ;
@@ -10122,7 +10122,7 @@ _:ExcIEEEST6CShape.vsclInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageRegInput" , "summationPointAVR" , "takeOverInnerLoop" ;
+	sh:in _:InputsST6CKind ;
 	sh:name "Vscl Input Kind"@en ;
 	sh:description "Alternate SCL input locations (Vscl)."^^rdf:XMLLiteral .
 _:ExcIEEEST6CShape.vuelInputKind rdf:type sh:PropertyShape ;
@@ -10130,7 +10130,7 @@ _:ExcIEEEST6CShape.vuelInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageRegInput" , "summationPointAVR" , "takeOverInnerLoop" ;
+	sh:in _:InputsST6CKind ;
 	sh:name "Vuel Input Kind"@en ;
 	sh:description "Alternate UEL input locations (Vuel)."^^rdf:XMLLiteral .
 _:ExcIEEEST6CShape.xl rdf:type sh:PropertyShape ;
@@ -10178,7 +10178,7 @@ _:ExcIEEEST7BShape.oelin rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "noOELinput" , "addVref" , "inputLVgate" , "outputLVgate" ;
+	sh:in _:ExcST7BOELselectorKind ;
 	sh:name "Oelin"@en ;
 	sh:description "OEL input selector (<i>OELin</i>)."^^rdf:XMLLiteral .
 _:ExcIEEEST7BShape.tb rdf:type sh:PropertyShape ;
@@ -10221,7 +10221,7 @@ _:ExcIEEEST7BShape.uelin rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "noUELinput" , "addVref" , "inputHVgate" , "outputHVgate" ;
+	sh:in _:ExcST7BUELselectorKind ;
 	sh:name "Uelin"@en ;
 	sh:description "UEL input selector (<i>UELin</i>)."^^rdf:XMLLiteral .
 _:ExcIEEEST7BShape.vmax rdf:type sh:PropertyShape ;
@@ -10346,7 +10346,7 @@ _:ExcIEEEST7CShape.voelInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageRef" , "takeOverVoltageRegOutput" ;
+	sh:in _:InputsST7CKind ;
 	sh:name "Voel Input Kind"@en ;
 	sh:description "Alternate OEL input locations (Voel)."^^rdf:XMLLiteral .
 _:ExcIEEEST7CShape.vrmax rdf:type sh:PropertyShape ;
@@ -10368,7 +10368,7 @@ _:ExcIEEEST7CShape.vsclInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageRef" , "takeOverVoltageRegOutput" ;
+	sh:in _:InputsST7CKind ;
 	sh:name "Vscl Input Kind"@en ;
 	sh:description "Alternate SCL input locations (Vscl)."^^rdf:XMLLiteral .
 _:ExcIEEEST7CShape.vuelInputKind rdf:type sh:PropertyShape ;
@@ -10376,7 +10376,7 @@ _:ExcIEEEST7CShape.vuelInputKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "summationPoint" , "takeOverVoltageRef" , "takeOverVoltageRegOutput" ;
+	sh:in _:InputsST7CKind ;
 	sh:name "Vuel Input Kind"@en ;
 	sh:description "Alternate UEL input locations (Vuel)."^^rdf:XMLLiteral .
 
@@ -11128,7 +11128,7 @@ _:ExcREXSShape.fbf rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "fieldVoltage" , "fieldCurrent" , "outputVoltage" ;
+	sh:in _:ExcREXSFeedbackSignalKind ;
 	sh:name "Fbf"@en ;
 	sh:description "Rate feedback signal flag (<i>fbf</i>)."^^rdf:XMLLiteral .
 _:ExcREXSShape.flimf rdf:type sh:PropertyShape ;
@@ -12410,7 +12410,7 @@ _:ExcST6BShape.oelin rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "noOELinput" , "beforeUEL" , "afterUEL" ;
+	sh:in _:ExcST6BOELselectorKind ;
 	sh:name "Oelin"@en ;
 	sh:description "OEL input selector (<i>OELin</i>)."^^rdf:XMLLiteral .
 _:ExcST6BShape.tg rdf:type sh:PropertyShape ;
@@ -12533,7 +12533,7 @@ _:ExcST7BShape.oelin rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "noOELinput" , "addVref" , "inputLVgate" , "outputLVgate" ;
+	sh:in _:ExcST7BOELselectorKind ;
 	sh:name "Oelin"@en ;
 	sh:description "OEL input selector (<i>OELin</i>)."^^rdf:XMLLiteral .
 _:ExcST7BShape.tb rdf:type sh:PropertyShape ;
@@ -12583,7 +12583,7 @@ _:ExcST7BShape.uelin rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "noUELinput" , "addVref" , "inputHVgate" , "outputHVgate" ;
+	sh:in _:ExcST7BUELselectorKind ;
 	sh:name "Uelin"@en ;
 	sh:description "UEL input selector (<i>UELin</i>)."^^rdf:XMLLiteral .
 _:ExcST7BShape.vmax rdf:type sh:PropertyShape ;
@@ -13247,7 +13247,7 @@ _:GovCT1Shape.rselect rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "electricalPower" , "none" , "fuelValveStroke" , "governorOutput" ;
+	sh:in _:DroopSignalFeedbackKind ;
 	sh:name "Rselect"@en ;
 	sh:description "Feedback signal for droop (<i>Rselect</i>)."^^rdf:XMLLiteral .
 _:GovCT1Shape.rup rdf:type sh:PropertyShape ;
@@ -13649,7 +13649,7 @@ _:GovCT2Shape.rselect rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "electricalPower" , "none" , "fuelValveStroke" , "governorOutput" ;
+	sh:in _:DroopSignalFeedbackKind ;
 	sh:name "Rselect"@en ;
 	sh:description "Feedback signal for droop (<i>Rselect</i>)."^^rdf:XMLLiteral .
 _:GovCT2Shape.rup rdf:type sh:PropertyShape ;
@@ -15502,7 +15502,7 @@ _:GovHydro4Shape.model rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "simple" , "francisPelton" , "kaplan" ;
+	sh:in _:GovHydro4ModelKind ;
 	sh:name "Model"@en ;
 	sh:description "The kind of model being represented (simple, Francis/Pelton or Kaplan)."^^rdf:XMLLiteral .
 _:GovHydro4Shape.mwbase rdf:type sh:PropertyShape ;
@@ -15925,7 +15925,7 @@ _:GovHydroFrancisShape.governorControl rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "mechanicHydrolicTachoAccelerator" , "mechanicHydraulicTransientFeedback" , "electromechanicalElectrohydraulic" ;
+	sh:in _:FrancisGovernorControlKind ;
 	sh:name "Governor Control"@en ;
 	sh:description "Governor control flag (<i>Cflag</i>)."^^rdf:XMLLiteral .
 _:GovHydroFrancisShape.h1 rdf:type sh:PropertyShape ;
@@ -21828,7 +21828,7 @@ _:LoadGenericNonLinearShape.genericNonLinearLoadModelType rdf:type sh:PropertySh
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "exponentialRecovery" , "loadAdaptive" ;
+	sh:in _:GenericNonLinearLoadModelKind ;
 	sh:name "Generic Non Linear Load Model Type"@en ;
 	sh:description "Type of generic non-linear load model."^^rdf:XMLLiteral .
 _:LoadGenericNonLinearShape.ls rdf:type sh:PropertyShape ;
@@ -22215,7 +22215,7 @@ _:LoadStaticShape.staticLoadModelType rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "exponential" , "zIP1" , "zIP2" , "constantZ" ;
+	sh:in _:StaticLoadModelKind ;
 	sh:name "Static Load Model Type"@en ;
 	sh:description "Type of static load model."^^rdf:XMLLiteral .
 
@@ -24249,7 +24249,7 @@ _:Pss1AShape.inputSignalType rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "rotorSpeed" , "rotorAngularFrequencyDeviation" , "busFrequency" , "busFrequencyDeviation" , "generatorElectricalPower" , "generatorAcceleratingPower" , "busVoltage" , "busVoltageDerivative" , "branchCurrent" , "fieldCurrent" , "generatorMechanicalPower" ;
+	sh:in _:InputSignalKind ;
 	sh:name "Input Signal Type"@en .
 _:Pss1AShape.kd rdf:type sh:PropertyShape ;
 	sh:path <Pss1A.kd> ;
@@ -24359,7 +24359,7 @@ _:Pss2BShape.inputSignal1Type rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "rotorSpeed" , "rotorAngularFrequencyDeviation" , "busFrequency" , "busFrequencyDeviation" , "generatorElectricalPower" , "generatorAcceleratingPower" , "busVoltage" , "busVoltageDerivative" , "branchCurrent" , "fieldCurrent" , "generatorMechanicalPower" ;
+	sh:in _:InputSignalKind ;
 	sh:name "Input Signal1 Type"@en ;
 	sh:description "Type of input signal #1 (rotorAngularFrequencyDeviation, busFrequencyDeviation)."^^rdf:XMLLiteral .
 _:Pss2BShape.inputSignal2Type rdf:type sh:PropertyShape ;
@@ -24367,7 +24367,7 @@ _:Pss2BShape.inputSignal2Type rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "rotorSpeed" , "rotorAngularFrequencyDeviation" , "busFrequency" , "busFrequencyDeviation" , "generatorElectricalPower" , "generatorAcceleratingPower" , "busVoltage" , "busVoltageDerivative" , "branchCurrent" , "fieldCurrent" , "generatorMechanicalPower" ;
+	sh:in _:InputSignalKind ;
 	sh:name "Input Signal2 Type"@en ;
 	sh:description "Type of input signal #2 (generatorElectricalPower)."^^rdf:XMLLiteral .
 _:Pss2BShape.ks1 rdf:type sh:PropertyShape ;
@@ -24576,14 +24576,14 @@ _:Pss2STShape.inputSignal1Type rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "rotorSpeed" , "rotorAngularFrequencyDeviation" , "busFrequency" , "busFrequencyDeviation" , "generatorElectricalPower" , "generatorAcceleratingPower" , "busVoltage" , "busVoltageDerivative" , "branchCurrent" , "fieldCurrent" , "generatorMechanicalPower" ;
+	sh:in _:InputSignalKind ;
 	sh:name "Input Signal1 Type"@en .
 _:Pss2STShape.inputSignal2Type rdf:type sh:PropertyShape ;
 	sh:path <Pss2ST.inputSignal2Type> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "rotorSpeed" , "rotorAngularFrequencyDeviation" , "busFrequency" , "busFrequencyDeviation" , "generatorElectricalPower" , "generatorAcceleratingPower" , "busVoltage" , "busVoltageDerivative" , "branchCurrent" , "fieldCurrent" , "generatorMechanicalPower" ;
+	sh:in _:InputSignalKind ;
 	sh:name "Input Signal2 Type"@en .
 _:Pss2STShape.k1 rdf:type sh:PropertyShape ;
 	sh:path <Pss2ST.k1> ;
@@ -24918,7 +24918,7 @@ _:PssIEEE1AShape.inputSignalType rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "rotorSpeed" , "rotorAngularFrequencyDeviation" , "busFrequency" , "busFrequencyDeviation" , "generatorElectricalPower" , "generatorAcceleratingPower" , "busVoltage" , "busVoltageDerivative" , "branchCurrent" , "fieldCurrent" , "generatorMechanicalPower" ;
+	sh:in _:InputSignalKind ;
 	sh:name "Input Signal Type"@en .
 _:PssIEEE1AShape.ks rdf:type sh:PropertyShape ;
 	sh:path <PssIEEE1A.ks> ;
@@ -24993,7 +24993,7 @@ _:PssIEEE2BShape.inputSignal1Type rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "rotorSpeed" , "rotorAngularFrequencyDeviation" , "busFrequency" , "busFrequencyDeviation" , "generatorElectricalPower" , "generatorAcceleratingPower" , "busVoltage" , "busVoltageDerivative" , "branchCurrent" , "fieldCurrent" , "generatorMechanicalPower" ;
+	sh:in _:InputSignalKind ;
 	sh:name "Input Signal1 Type"@en ;
 	sh:description "Type of input signal #1 (rotorAngularFrequencyDeviation, busFrequencyDeviation, rotorSpeed, busFrequency)."^^rdf:XMLLiteral .
 _:PssIEEE2BShape.inputSignal2Type rdf:type sh:PropertyShape ;
@@ -25001,7 +25001,7 @@ _:PssIEEE2BShape.inputSignal2Type rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "rotorSpeed" , "rotorAngularFrequencyDeviation" , "busFrequency" , "busFrequencyDeviation" , "generatorElectricalPower" , "generatorAcceleratingPower" , "busVoltage" , "busVoltageDerivative" , "branchCurrent" , "fieldCurrent" , "generatorMechanicalPower" ;
+	sh:in _:InputSignalKind ;
 	sh:name "Input Signal2 Type"@en ;
 	sh:description "Type of input signal #2 (generatorElectricalPower)."^^rdf:XMLLiteral .
 _:PssIEEE2BShape.ks1 rdf:type sh:PropertyShape ;
@@ -25189,7 +25189,7 @@ _:PssIEEE2CShape.inputSignal1Kind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "rotorSpeed" , "rotorAngularFrequencyDeviation" , "busFrequency" , "busFrequencyDeviation" , "generatorElectricalPower" , "generatorAcceleratingPower" , "busVoltage" , "busVoltageDerivative" , "branchCurrent" , "fieldCurrent" , "generatorMechanicalPower" ;
+	sh:in _:InputSignalKind ;
 	sh:name "Input Signal1 Kind"@en ;
 	sh:description "Type of input signal #1 (rotorSpeed, rotorAngularFrequencyDeviation, busFrequencyDeviation, busFrequency)."^^rdf:XMLLiteral .
 _:PssIEEE2CShape.inputSignal2Kind rdf:type sh:PropertyShape ;
@@ -25197,7 +25197,7 @@ _:PssIEEE2CShape.inputSignal2Kind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "rotorSpeed" , "rotorAngularFrequencyDeviation" , "busFrequency" , "busFrequencyDeviation" , "generatorElectricalPower" , "generatorAcceleratingPower" , "busVoltage" , "busVoltageDerivative" , "branchCurrent" , "fieldCurrent" , "generatorMechanicalPower" ;
+	sh:in _:InputSignalKind ;
 	sh:name "Input Signal2 Kind"@en ;
 	sh:description "Type of input signal #2 (generatorElectricalPower)."^^rdf:XMLLiteral .
 _:PssIEEE2CShape.ks1 rdf:type sh:PropertyShape ;
@@ -25593,7 +25593,7 @@ _:PssIEEE3CShape.inputSignal1Kind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "rotorSpeed" , "rotorAngularFrequencyDeviation" , "busFrequency" , "busFrequencyDeviation" , "generatorElectricalPower" , "generatorAcceleratingPower" , "busVoltage" , "busVoltageDerivative" , "branchCurrent" , "fieldCurrent" , "generatorMechanicalPower" ;
+	sh:in _:InputSignalKind ;
 	sh:name "Input Signal1 Kind"@en ;
 	sh:description "Type of input signal #1 (generatorElectricalPower)."^^rdf:XMLLiteral .
 _:PssIEEE3CShape.inputSignal2Kind rdf:type sh:PropertyShape ;
@@ -25601,7 +25601,7 @@ _:PssIEEE3CShape.inputSignal2Kind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "rotorSpeed" , "rotorAngularFrequencyDeviation" , "busFrequency" , "busFrequencyDeviation" , "generatorElectricalPower" , "generatorAcceleratingPower" , "busVoltage" , "busVoltageDerivative" , "branchCurrent" , "fieldCurrent" , "generatorMechanicalPower" ;
+	sh:in _:InputSignalKind ;
 	sh:name "Input Signal2 Kind"@en ;
 	sh:description "Type of input signal #2 (rotorAngularFrequencyDeviation)."^^rdf:XMLLiteral .
 _:PssIEEE3CShape.ks1 rdf:type sh:PropertyShape ;
@@ -27111,7 +27111,7 @@ _:PssIEEE7CShape.inputSignal1Kind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "rotorSpeed" , "rotorAngularFrequencyDeviation" , "busFrequency" , "busFrequencyDeviation" , "generatorElectricalPower" , "generatorAcceleratingPower" , "busVoltage" , "busVoltageDerivative" , "branchCurrent" , "fieldCurrent" , "generatorMechanicalPower" ;
+	sh:in _:InputSignalKind ;
 	sh:name "Input Signal1 Kind"@en ;
 	sh:description "Type of input signal #1 (rotorSpeed, rotorAngularFrequencyDeviation, busFrequencyDeviation, busFrequency)."^^rdf:XMLLiteral .
 _:PssIEEE7CShape.inputSignal2Kind rdf:type sh:PropertyShape ;
@@ -27119,7 +27119,7 @@ _:PssIEEE7CShape.inputSignal2Kind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "rotorSpeed" , "rotorAngularFrequencyDeviation" , "busFrequency" , "busFrequencyDeviation" , "generatorElectricalPower" , "generatorAcceleratingPower" , "busVoltage" , "busVoltageDerivative" , "branchCurrent" , "fieldCurrent" , "generatorMechanicalPower" ;
+	sh:in _:InputSignalKind ;
 	sh:name "Input Signal2 Kind"@en ;
 	sh:description "Type of input signal #2 (generatorElectricalPower)."^^rdf:XMLLiteral .
 _:PssIEEE7CShape.k0 rdf:type sh:PropertyShape ;
@@ -28069,14 +28069,14 @@ _:PssWECCShape.inputSignal1Type rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "rotorSpeed" , "rotorAngularFrequencyDeviation" , "busFrequency" , "busFrequencyDeviation" , "generatorElectricalPower" , "generatorAcceleratingPower" , "busVoltage" , "busVoltageDerivative" , "branchCurrent" , "fieldCurrent" , "generatorMechanicalPower" ;
+	sh:in _:InputSignalKind ;
 	sh:name "Input Signal1 Type"@en .
 _:PssWECCShape.inputSignal2Type rdf:type sh:PropertyShape ;
 	sh:path <PssWECC.inputSignal2Type> ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "rotorSpeed" , "rotorAngularFrequencyDeviation" , "busFrequency" , "busFrequencyDeviation" , "generatorElectricalPower" , "generatorAcceleratingPower" , "busVoltage" , "busVoltageDerivative" , "branchCurrent" , "fieldCurrent" , "generatorMechanicalPower" ;
+	sh:in _:InputSignalKind ;
 	sh:name "Input Signal2 Type"@en .
 _:PssWECCShape.k1 rdf:type sh:PropertyShape ;
 	sh:path <PssWECC.k1> ;
@@ -28292,7 +28292,7 @@ _:RemoteInputSignalShape.phase rdf:type sh:PropertyShape ;
 	sh:path <RemoteInputSignal.phase> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "A" , "B" , "C" , "N" , "s1" , "s2" ;
+	sh:in _:SinglePhaseKind ;
 	sh:name "Phase"@en ;
 	sh:description "Phase code of the phase which is used as a remote input signal."^^rdf:XMLLiteral .
 _:RemoteInputSignalShape.remoteSignalType rdf:type sh:PropertyShape ;
@@ -28300,7 +28300,7 @@ _:RemoteInputSignalShape.remoteSignalType rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "remoteBusVoltageFrequency" , "remoteBusVoltageFrequencyDeviation" , "remoteBusFrequency" , "remoteBusFrequencyDeviation" , "remoteBusVoltageAmplitude" , "remoteBusVoltage" , "remoteBranchCurrentAmplitude" , "remoteBusVoltageAmplitudeDerivative" , "remotePuBusVoltageDerivative" ;
+	sh:in _:RemoteSignalKind ;
 	sh:name "Remote Signal Type"@en ;
 	sh:description "Type of input signal."^^rdf:XMLLiteral .
 
@@ -30631,7 +30631,7 @@ _:SynchronousMachineDetailedShape.ifdBaseType rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "ifag" , "ifnl" , "iffl" ;
+	sh:in _:IfdBaseKind ;
 	sh:name "Ifd Base Type"@en ;
 	sh:description "Excitation base system mode."^^rdf:XMLLiteral .
 _:SynchronousMachineDetailedShape.saturationFactor rdf:type sh:PropertyShape ;
@@ -30807,14 +30807,14 @@ _:SynchronousMachineTimeConstantReactanceShape.modelType rdf:type sh:PropertySha
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "subtransient" , "subtransientTypeF" , "subtransientTypeJ" , "subtransientSimplified" , "subtransientSimplifiedDirectAxis" ;
+	sh:in _:SynchronousMachineModelKind ;
 	sh:name "Model Type"@en ;
 	sh:description "Type of synchronous machine model used in dynamic simulation applications."^^rdf:XMLLiteral .
 _:SynchronousMachineTimeConstantReactanceShape.rotorType rdf:type sh:PropertyShape ;
 	sh:path <SynchronousMachineTimeConstantReactance.rotorType> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "roundRotor" , "salientPole" ;
+	sh:in _:RotorKind ;
 	sh:name "Rotor Type"@en ;
 	sh:description "Type of rotor on physical machine."^^rdf:XMLLiteral .
 _:SynchronousMachineTimeConstantReactanceShape.tc rdf:type sh:PropertyShape ;
@@ -33454,7 +33454,7 @@ _:WeccDynamicsLookupTableShape.lookupTableFunctionType rdf:type sh:PropertyShape
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "pwsl" , "pe" , "tduwt" ;
+	sh:in _:WeccLookupTableFunctionKind ;
 	sh:name "Lookup Table Function Type"@en ;
 	sh:description "Type of the lookup table function."^^rdf:XMLLiteral .
 _:WeccDynamicsLookupTableShape.output rdf:type sh:PropertyShape ;
@@ -38272,7 +38272,7 @@ _:WindContQIECShape.windQcontrolModesType rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "voltage" , "reactivePower" , "openLoopReactivePower" , "powerFactor" , "openLooppowerFactor" ;
+	sh:in _:WindQcontrolModeKind ;
 	sh:name "Wind Qcontrol Modes Type"@en ;
 	sh:description "Types of general wind turbine Q control modes (<i>M</i><i><sub>qG</sub></i>)."^^rdf:XMLLiteral .
 _:WindContQIECShape.windUVRTQcontrolModesType rdf:type sh:PropertyShape ;
@@ -38280,7 +38280,7 @@ _:WindContQIECShape.windUVRTQcontrolModesType rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "mode0" , "mode1" , "mode2" ;
+	sh:in _:WindUVRTQcontrolModeKind ;
 	sh:name "Wind Uvrt Qcontrol Modes Type"@en ;
 	sh:description "Types of UVRT Q control modes (<i>M</i><i><sub>qUVRT</sub></i>)."^^rdf:XMLLiteral .
 _:WindContQIECShape.xdroop rdf:type sh:PropertyShape ;
@@ -38454,7 +38454,7 @@ _:WindContQIEC2Shape.windFRTQcontrolModesType rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "mode0" , "mode1" , "mode2" , "mode3" ;
+	sh:in _:WindFRTQcontrolModeKind ;
 	sh:name "Wind Frt Qcontrol Modes Type"@en ;
 	sh:description "Types of FRT Q control modes (<i>M</i><i><sub>qFRT</sub></i>)."^^rdf:XMLLiteral .
 _:WindContQIEC2Shape.windQcontrolModesType rdf:type sh:PropertyShape ;
@@ -38462,7 +38462,7 @@ _:WindContQIEC2Shape.windQcontrolModesType rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "voltage" , "reactivePower" , "openLoopReactivePower" , "powerFactor" , "openLooppowerFactor" ;
+	sh:in _:WindQcontrolModeKind2 ;
 	sh:name "Wind Qcontrol Modes Type"@en ;
 	sh:description "Types of general wind turbine Q control modes (<i>M</i><i><sub>qG</sub></i>)."^^rdf:XMLLiteral .
 _:WindContQIEC2Shape.xdroop rdf:type sh:PropertyShape ;
@@ -38738,7 +38738,7 @@ _:WindDynamicsLookupTableShape.lookupTableFunctionType rdf:type sh:PropertyShape
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "prr" , "omegap" , "ipmax" , "iqmax" , "pwp" , "tcwdu" , "tduwt" , "qmaxp" , "qminp" , "qmaxu" , "qminu" , "tuover" , "tuunder" , "tfover" , "tfunder" , "qwp" ;
+	sh:in _:WindLookupTableFunctionKind ;
 	sh:name "Lookup Table Function Type"@en ;
 	sh:description "Type of the lookup table function."^^rdf:XMLLiteral .
 _:WindDynamicsLookupTableShape.output rdf:type sh:PropertyShape ;
@@ -38827,7 +38827,7 @@ _:WindDynamicsLookupTable2Shape.lookupTableFunctionType rdf:type sh:PropertyShap
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "prr" , "omegap" , "ipmax" , "iqmax" , "pwpbias" , "tcrdu" , "tduwt" , "qmaxp" , "qminp" , "qmaxu" , "qminu" , "tuover" , "tuunder" , "tfover" , "tfunder" , "qwp" ;
+	sh:in _:WindLookupTableFunctionKind2 ;
 	sh:name "Lookup Table Function Type"@en ;
 	sh:description "Type of the lookup table function."^^rdf:XMLLiteral .
 _:WindDynamicsLookupTable2Shape.output rdf:type sh:PropertyShape ;
@@ -40147,7 +40147,7 @@ _:WindPlantQControlIECShape.windPlantQcontrolModesType rdf:type sh:PropertyShape
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "reactivePower" , "powerFactor" , "uqStatic" , "voltageControl" ;
+	sh:in _:WindPlantQcontrolModeKind2 ;
 	sh:name "Wind Plant Qcontrol Modes Type"@en ;
 	sh:description "Reactive power/voltage control mode (<i>M</i><i><sub>WPqmode</sub></i>)."^^rdf:XMLLiteral .
 _:WindPlantQControlIECShape.xerrmax rdf:type sh:PropertyShape ;
@@ -40306,7 +40306,7 @@ _:WindPlantReactiveControlIECShape.windPlantQcontrolModesType rdf:type sh:Proper
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "reactivePower" , "powerFactor" , "uqStatic" , "voltageControl" ;
+	sh:in _:WindPlantQcontrolModeKind ;
 	sh:name "Wind Plant Qcontrol Modes Type"@en ;
 	sh:description "Reactive power/voltage controller mode (<i>M</i><i><sub>WPqmode</sub></i>)."^^rdf:XMLLiteral .
 _:WindPlantReactiveControlIECShape.xrefmax rdf:type sh:PropertyShape ;
@@ -40998,3 +40998,365 @@ _:WindType3or4UserDefinedShape.ProprietaryParameterDynamics rdf:type sh:Property
 	sh:class <ProprietaryParameterDynamics> ;
 	sh:name "Proprietary Parameter Dynamics"@en ;
 	sh:description "Parameter of this proprietary user-defined model."^^rdf:XMLLiteral .
+
+_:AbnormalOPcatKind rdf:first "catI" ;
+	rdf:rest _:AbnormalOPcatKind.catII .
+_:AbnormalOPcatKind.catII rdf:first "catII" ;
+	rdf:rest _:AbnormalOPcatKind.catIII .
+_:AbnormalOPcatKind.catIII rdf:first "catIII" ;
+	rdf:rest rdf:nil .
+
+_:CommunicationModuleKind rdf:first "windPlantReferences" ;
+	rdf:rest _:CommunicationModuleKind.windPlantMeasurements .
+_:CommunicationModuleKind.windPlantMeasurements rdf:first "windPlantMeasurements" ;
+	rdf:rest _:CommunicationModuleKind.powerDeviceReferences .
+_:CommunicationModuleKind.powerDeviceReferences rdf:first "powerDeviceReferences" ;
+	rdf:rest rdf:nil .
+
+_:ConstantPowerFactorSettingKind rdf:first "inj" ;
+	rdf:rest _:ConstantPowerFactorSettingKind.abs .
+_:ConstantPowerFactorSettingKind.abs rdf:first "abs" ;
+	rdf:rest rdf:nil .
+
+_:DroopSignalFeedbackKind rdf:first "electricalPower" ;
+	rdf:rest _:DroopSignalFeedbackKind.none .
+_:DroopSignalFeedbackKind.none rdf:first "none" ;
+	rdf:rest _:DroopSignalFeedbackKind.fuelValveStroke .
+_:DroopSignalFeedbackKind.fuelValveStroke rdf:first "fuelValveStroke" ;
+	rdf:rest _:DroopSignalFeedbackKind.governorOutput .
+_:DroopSignalFeedbackKind.governorOutput rdf:first "governorOutput" ;
+	rdf:rest rdf:nil .
+
+_:ExcIEEEST1AUELselectorKind rdf:first "ignoreUELsignal" ;
+	rdf:rest _:ExcIEEEST1AUELselectorKind.inputHVgateVoltageOutput .
+_:ExcIEEEST1AUELselectorKind.inputHVgateVoltageOutput rdf:first "inputHVgateVoltageOutput" ;
+	rdf:rest _:ExcIEEEST1AUELselectorKind.inputHVgateErrorSignal .
+_:ExcIEEEST1AUELselectorKind.inputHVgateErrorSignal rdf:first "inputHVgateErrorSignal" ;
+	rdf:rest _:ExcIEEEST1AUELselectorKind.inputAddedToErrorSignal .
+_:ExcIEEEST1AUELselectorKind.inputAddedToErrorSignal rdf:first "inputAddedToErrorSignal" ;
+	rdf:rest rdf:nil .
+
+_:ExcREXSFeedbackSignalKind rdf:first "fieldVoltage" ;
+	rdf:rest _:ExcREXSFeedbackSignalKind.fieldCurrent .
+_:ExcREXSFeedbackSignalKind.fieldCurrent rdf:first "fieldCurrent" ;
+	rdf:rest _:ExcREXSFeedbackSignalKind.outputVoltage .
+_:ExcREXSFeedbackSignalKind.outputVoltage rdf:first "outputVoltage" ;
+	rdf:rest rdf:nil .
+
+_:ExcST6BOELselectorKind rdf:first "noOELinput" ;
+	rdf:rest _:ExcST6BOELselectorKind.beforeUEL .
+_:ExcST6BOELselectorKind.beforeUEL rdf:first "beforeUEL" ;
+	rdf:rest _:ExcST6BOELselectorKind.afterUEL .
+_:ExcST6BOELselectorKind.afterUEL rdf:first "afterUEL" ;
+	rdf:rest rdf:nil .
+
+_:ExcST7BOELselectorKind rdf:first "noOELinput" ;
+	rdf:rest _:ExcST7BOELselectorKind.addVref .
+_:ExcST7BOELselectorKind.addVref rdf:first "addVref" ;
+	rdf:rest _:ExcST7BOELselectorKind.inputLVgate .
+_:ExcST7BOELselectorKind.inputLVgate rdf:first "inputLVgate" ;
+	rdf:rest _:ExcST7BOELselectorKind.outputLVgate .
+_:ExcST7BOELselectorKind.outputLVgate rdf:first "outputLVgate" ;
+	rdf:rest rdf:nil .
+
+_:ExcST7BUELselectorKind rdf:first "noUELinput" ;
+	rdf:rest _:ExcST7BUELselectorKind.addVref .
+_:ExcST7BUELselectorKind.addVref rdf:first "addVref" ;
+	rdf:rest _:ExcST7BUELselectorKind.inputHVgate .
+_:ExcST7BUELselectorKind.inputHVgate rdf:first "inputHVgate" ;
+	rdf:rest _:ExcST7BUELselectorKind.outputHVgate .
+_:ExcST7BUELselectorKind.outputHVgate rdf:first "outputHVgate" ;
+	rdf:rest rdf:nil .
+
+_:FrancisGovernorControlKind rdf:first "mechanicHydrolicTachoAccelerator" ;
+	rdf:rest _:FrancisGovernorControlKind.mechanicHydraulicTransientFeedback .
+_:FrancisGovernorControlKind.mechanicHydraulicTransientFeedback rdf:first "mechanicHydraulicTransientFeedback" ;
+	rdf:rest _:FrancisGovernorControlKind.electromechanicalElectrohydraulic .
+_:FrancisGovernorControlKind.electromechanicalElectrohydraulic rdf:first "electromechanicalElectrohydraulic" ;
+	rdf:rest rdf:nil .
+
+_:GenericNonLinearLoadModelKind rdf:first "exponentialRecovery" ;
+	rdf:rest _:GenericNonLinearLoadModelKind.loadAdaptive .
+_:GenericNonLinearLoadModelKind.loadAdaptive rdf:first "loadAdaptive" ;
+	rdf:rest rdf:nil .
+
+_:GovHydro4ModelKind rdf:first "simple" ;
+	rdf:rest _:GovHydro4ModelKind.francisPelton .
+_:GovHydro4ModelKind.francisPelton rdf:first "francisPelton" ;
+	rdf:rest _:GovHydro4ModelKind.kaplan .
+_:GovHydro4ModelKind.kaplan rdf:first "kaplan" ;
+	rdf:rest rdf:nil .
+
+_:IfdBaseKind rdf:first "ifag" ;
+	rdf:rest _:IfdBaseKind.ifnl .
+_:IfdBaseKind.ifnl rdf:first "ifnl" ;
+	rdf:rest _:IfdBaseKind.iffl .
+_:IfdBaseKind.iffl rdf:first "iffl" ;
+	rdf:rest rdf:nil .
+
+_:InputSignalKind rdf:first "rotorSpeed" ;
+	rdf:rest _:InputSignalKind.rotorAngularFrequencyDeviation .
+_:InputSignalKind.rotorAngularFrequencyDeviation rdf:first "rotorAngularFrequencyDeviation" ;
+	rdf:rest _:InputSignalKind.busFrequency .
+_:InputSignalKind.busFrequency rdf:first "busFrequency" ;
+	rdf:rest _:InputSignalKind.busFrequencyDeviation .
+_:InputSignalKind.busFrequencyDeviation rdf:first "busFrequencyDeviation" ;
+	rdf:rest _:InputSignalKind.generatorElectricalPower .
+_:InputSignalKind.generatorElectricalPower rdf:first "generatorElectricalPower" ;
+	rdf:rest _:InputSignalKind.generatorAcceleratingPower .
+_:InputSignalKind.generatorAcceleratingPower rdf:first "generatorAcceleratingPower" ;
+	rdf:rest _:InputSignalKind.busVoltage .
+_:InputSignalKind.busVoltage rdf:first "busVoltage" ;
+	rdf:rest _:InputSignalKind.busVoltageDerivative .
+_:InputSignalKind.busVoltageDerivative rdf:first "busVoltageDerivative" ;
+	rdf:rest _:InputSignalKind.branchCurrent .
+_:InputSignalKind.branchCurrent rdf:first "branchCurrent" ;
+	rdf:rest _:InputSignalKind.fieldCurrent .
+_:InputSignalKind.fieldCurrent rdf:first "fieldCurrent" ;
+	rdf:rest _:InputSignalKind.generatorMechanicalPower .
+_:InputSignalKind.generatorMechanicalPower rdf:first "generatorMechanicalPower" ;
+	rdf:rest rdf:nil .
+
+_:InputsST4CKind rdf:first "summationPoint" ;
+	rdf:rest _:InputsST4CKind.takeOverVoltageRegInput .
+_:InputsST4CKind.takeOverVoltageRegInput rdf:first "takeOverVoltageRegInput" ;
+	rdf:rest _:InputsST4CKind.takeOverInnerLoop .
+_:InputsST4CKind.takeOverInnerLoop rdf:first "takeOverInnerLoop" ;
+	rdf:rest rdf:nil .
+
+_:InputsST6CKind rdf:first "summationPoint" ;
+	rdf:rest _:InputsST6CKind.takeOverVoltageRegInput .
+_:InputsST6CKind.takeOverVoltageRegInput rdf:first "takeOverVoltageRegInput" ;
+	rdf:rest _:InputsST6CKind.summationPointAVR .
+_:InputsST6CKind.summationPointAVR rdf:first "summationPointAVR" ;
+	rdf:rest _:InputsST6CKind.takeOverInnerLoop .
+_:InputsST6CKind.takeOverInnerLoop rdf:first "takeOverInnerLoop" ;
+	rdf:rest rdf:nil .
+
+_:InputsST7CKind rdf:first "summationPoint" ;
+	rdf:rest _:InputsST7CKind.takeOverVoltageRef .
+_:InputsST7CKind.takeOverVoltageRef rdf:first "takeOverVoltageRef" ;
+	rdf:rest _:InputsST7CKind.takeOverVoltageRegOutput .
+_:InputsST7CKind.takeOverVoltageRegOutput rdf:first "takeOverVoltageRegOutput" ;
+	rdf:rest rdf:nil .
+
+_:NormalOPcatKind rdf:first "catA" ;
+	rdf:rest _:NormalOPcatKind.catB .
+_:NormalOPcatKind.catB rdf:first "catB" ;
+	rdf:rest rdf:nil .
+
+_:RemoteSignalKind rdf:first "remoteBusVoltageFrequency" ;
+	rdf:rest _:RemoteSignalKind.remoteBusVoltageFrequencyDeviation .
+_:RemoteSignalKind.remoteBusVoltageFrequencyDeviation rdf:first "remoteBusVoltageFrequencyDeviation" ;
+	rdf:rest _:RemoteSignalKind.remoteBusFrequency .
+_:RemoteSignalKind.remoteBusFrequency rdf:first "remoteBusFrequency" ;
+	rdf:rest _:RemoteSignalKind.remoteBusFrequencyDeviation .
+_:RemoteSignalKind.remoteBusFrequencyDeviation rdf:first "remoteBusFrequencyDeviation" ;
+	rdf:rest _:RemoteSignalKind.remoteBusVoltageAmplitude .
+_:RemoteSignalKind.remoteBusVoltageAmplitude rdf:first "remoteBusVoltageAmplitude" ;
+	rdf:rest _:RemoteSignalKind.remoteBusVoltage .
+_:RemoteSignalKind.remoteBusVoltage rdf:first "remoteBusVoltage" ;
+	rdf:rest _:RemoteSignalKind.remoteBranchCurrentAmplitude .
+_:RemoteSignalKind.remoteBranchCurrentAmplitude rdf:first "remoteBranchCurrentAmplitude" ;
+	rdf:rest _:RemoteSignalKind.remoteBusVoltageAmplitudeDerivative .
+_:RemoteSignalKind.remoteBusVoltageAmplitudeDerivative rdf:first "remoteBusVoltageAmplitudeDerivative" ;
+	rdf:rest _:RemoteSignalKind.remotePuBusVoltageDerivative .
+_:RemoteSignalKind.remotePuBusVoltageDerivative rdf:first "remotePuBusVoltageDerivative" ;
+	rdf:rest rdf:nil .
+
+_:RotorKind rdf:first "roundRotor" ;
+	rdf:rest _:RotorKind.salientPole .
+_:RotorKind.salientPole rdf:first "salientPole" ;
+	rdf:rest rdf:nil .
+
+_:SinglePhaseKind rdf:first "A" ;
+	rdf:rest _:SinglePhaseKind.B .
+_:SinglePhaseKind.B rdf:first "B" ;
+	rdf:rest _:SinglePhaseKind.C .
+_:SinglePhaseKind.C rdf:first "C" ;
+	rdf:rest _:SinglePhaseKind.N .
+_:SinglePhaseKind.N rdf:first "N" ;
+	rdf:rest _:SinglePhaseKind.s1 .
+_:SinglePhaseKind.s1 rdf:first "s1" ;
+	rdf:rest _:SinglePhaseKind.s2 .
+_:SinglePhaseKind.s2 rdf:first "s2" ;
+	rdf:rest rdf:nil .
+
+_:StaticLoadModelKind rdf:first "exponential" ;
+	rdf:rest _:StaticLoadModelKind.zIP1 .
+_:StaticLoadModelKind.zIP1 rdf:first "zIP1" ;
+	rdf:rest _:StaticLoadModelKind.zIP2 .
+_:StaticLoadModelKind.zIP2 rdf:first "zIP2" ;
+	rdf:rest _:StaticLoadModelKind.constantZ .
+_:StaticLoadModelKind.constantZ rdf:first "constantZ" ;
+	rdf:rest rdf:nil .
+
+_:SynchronousMachineModelKind rdf:first "subtransient" ;
+	rdf:rest _:SynchronousMachineModelKind.subtransientTypeF .
+_:SynchronousMachineModelKind.subtransientTypeF rdf:first "subtransientTypeF" ;
+	rdf:rest _:SynchronousMachineModelKind.subtransientTypeJ .
+_:SynchronousMachineModelKind.subtransientTypeJ rdf:first "subtransientTypeJ" ;
+	rdf:rest _:SynchronousMachineModelKind.subtransientSimplified .
+_:SynchronousMachineModelKind.subtransientSimplified rdf:first "subtransientSimplified" ;
+	rdf:rest _:SynchronousMachineModelKind.subtransientSimplifiedDirectAxis .
+_:SynchronousMachineModelKind.subtransientSimplifiedDirectAxis rdf:first "subtransientSimplifiedDirectAxis" ;
+	rdf:rest rdf:nil .
+
+_:VoelInputKind rdf:first "summationPoint" ;
+	rdf:rest _:VoelInputKind.takeOverVoltageError .
+_:VoelInputKind.takeOverVoltageError rdf:first "takeOverVoltageError" ;
+	rdf:rest _:VoelInputKind.takeOverRegOutput .
+_:VoelInputKind.takeOverRegOutput rdf:first "takeOverRegOutput" ;
+	rdf:rest _:VoelInputKind.takeOverInnerLoop .
+_:VoelInputKind.takeOverInnerLoop rdf:first "takeOverInnerLoop" ;
+	rdf:rest rdf:nil .
+
+_:VsInputKind rdf:first "voltageError" ;
+	rdf:rest _:VsInputKind.voltageErrorOrAfterTakeOver .
+_:VsInputKind.voltageErrorOrAfterTakeOver rdf:first "voltageErrorOrAfterTakeOver" ;
+	rdf:rest _:VsInputKind.outputAVR .
+_:VsInputKind.outputAVR rdf:first "outputAVR" ;
+	rdf:rest rdf:nil .
+
+_:VsclInputKind rdf:first "summationPoint" ;
+	rdf:rest _:VsclInputKind.takeOverVoltageError .
+_:VsclInputKind.takeOverVoltageError rdf:first "takeOverVoltageError" ;
+	rdf:rest _:VsclInputKind.takeOverRegOutput .
+_:VsclInputKind.takeOverRegOutput rdf:first "takeOverRegOutput" ;
+	rdf:rest rdf:nil .
+
+_:VuelInputKind rdf:first "summationPoint" ;
+	rdf:rest _:VuelInputKind.takeOverVoltageError .
+_:VuelInputKind.takeOverVoltageError rdf:first "takeOverVoltageError" ;
+	rdf:rest _:VuelInputKind.takeOverRegOutput .
+_:VuelInputKind.takeOverRegOutput rdf:first "takeOverRegOutput" ;
+	rdf:rest rdf:nil .
+
+_:WeccLookupTableFunctionKind rdf:first "pwsl" ;
+	rdf:rest _:WeccLookupTableFunctionKind.pe .
+_:WeccLookupTableFunctionKind.pe rdf:first "pe" ;
+	rdf:rest _:WeccLookupTableFunctionKind.tduwt .
+_:WeccLookupTableFunctionKind.tduwt rdf:first "tduwt" ;
+	rdf:rest rdf:nil .
+
+_:WindFRTQcontrolModeKind rdf:first "mode0" ;
+	rdf:rest _:WindFRTQcontrolModeKind.mode1 .
+_:WindFRTQcontrolModeKind.mode1 rdf:first "mode1" ;
+	rdf:rest _:WindFRTQcontrolModeKind.mode2 .
+_:WindFRTQcontrolModeKind.mode2 rdf:first "mode2" ;
+	rdf:rest _:WindFRTQcontrolModeKind.mode3 .
+_:WindFRTQcontrolModeKind.mode3 rdf:first "mode3" ;
+	rdf:rest rdf:nil .
+
+_:WindLookupTableFunctionKind rdf:first "prr" ;
+	rdf:rest _:WindLookupTableFunctionKind.omegap .
+_:WindLookupTableFunctionKind.omegap rdf:first "omegap" ;
+	rdf:rest _:WindLookupTableFunctionKind.ipmax .
+_:WindLookupTableFunctionKind.ipmax rdf:first "ipmax" ;
+	rdf:rest _:WindLookupTableFunctionKind.iqmax .
+_:WindLookupTableFunctionKind.iqmax rdf:first "iqmax" ;
+	rdf:rest _:WindLookupTableFunctionKind.pwp .
+_:WindLookupTableFunctionKind.pwp rdf:first "pwp" ;
+	rdf:rest _:WindLookupTableFunctionKind.tcwdu .
+_:WindLookupTableFunctionKind.tcwdu rdf:first "tcwdu" ;
+	rdf:rest _:WindLookupTableFunctionKind.tduwt .
+_:WindLookupTableFunctionKind.tduwt rdf:first "tduwt" ;
+	rdf:rest _:WindLookupTableFunctionKind.qmaxp .
+_:WindLookupTableFunctionKind.qmaxp rdf:first "qmaxp" ;
+	rdf:rest _:WindLookupTableFunctionKind.qminp .
+_:WindLookupTableFunctionKind.qminp rdf:first "qminp" ;
+	rdf:rest _:WindLookupTableFunctionKind.qmaxu .
+_:WindLookupTableFunctionKind.qmaxu rdf:first "qmaxu" ;
+	rdf:rest _:WindLookupTableFunctionKind.qminu .
+_:WindLookupTableFunctionKind.qminu rdf:first "qminu" ;
+	rdf:rest _:WindLookupTableFunctionKind.tuover .
+_:WindLookupTableFunctionKind.tuover rdf:first "tuover" ;
+	rdf:rest _:WindLookupTableFunctionKind.tuunder .
+_:WindLookupTableFunctionKind.tuunder rdf:first "tuunder" ;
+	rdf:rest _:WindLookupTableFunctionKind.tfover .
+_:WindLookupTableFunctionKind.tfover rdf:first "tfover" ;
+	rdf:rest _:WindLookupTableFunctionKind.tfunder .
+_:WindLookupTableFunctionKind.tfunder rdf:first "tfunder" ;
+	rdf:rest _:WindLookupTableFunctionKind.qwp .
+_:WindLookupTableFunctionKind.qwp rdf:first "qwp" ;
+	rdf:rest rdf:nil .
+
+_:WindLookupTableFunctionKind2 rdf:first "prr" ;
+	rdf:rest _:WindLookupTableFunctionKind2.omegap .
+_:WindLookupTableFunctionKind2.omegap rdf:first "omegap" ;
+	rdf:rest _:WindLookupTableFunctionKind2.ipmax .
+_:WindLookupTableFunctionKind2.ipmax rdf:first "ipmax" ;
+	rdf:rest _:WindLookupTableFunctionKind2.iqmax .
+_:WindLookupTableFunctionKind2.iqmax rdf:first "iqmax" ;
+	rdf:rest _:WindLookupTableFunctionKind2.pwpbias .
+_:WindLookupTableFunctionKind2.pwpbias rdf:first "pwpbias" ;
+	rdf:rest _:WindLookupTableFunctionKind2.tcrdu .
+_:WindLookupTableFunctionKind2.tcrdu rdf:first "tcrdu" ;
+	rdf:rest _:WindLookupTableFunctionKind2.tduwt .
+_:WindLookupTableFunctionKind2.tduwt rdf:first "tduwt" ;
+	rdf:rest _:WindLookupTableFunctionKind2.qmaxp .
+_:WindLookupTableFunctionKind2.qmaxp rdf:first "qmaxp" ;
+	rdf:rest _:WindLookupTableFunctionKind2.qminp .
+_:WindLookupTableFunctionKind2.qminp rdf:first "qminp" ;
+	rdf:rest _:WindLookupTableFunctionKind2.qmaxu .
+_:WindLookupTableFunctionKind2.qmaxu rdf:first "qmaxu" ;
+	rdf:rest _:WindLookupTableFunctionKind2.qminu .
+_:WindLookupTableFunctionKind2.qminu rdf:first "qminu" ;
+	rdf:rest _:WindLookupTableFunctionKind2.tuover .
+_:WindLookupTableFunctionKind2.tuover rdf:first "tuover" ;
+	rdf:rest _:WindLookupTableFunctionKind2.tuunder .
+_:WindLookupTableFunctionKind2.tuunder rdf:first "tuunder" ;
+	rdf:rest _:WindLookupTableFunctionKind2.tfover .
+_:WindLookupTableFunctionKind2.tfover rdf:first "tfover" ;
+	rdf:rest _:WindLookupTableFunctionKind2.tfunder .
+_:WindLookupTableFunctionKind2.tfunder rdf:first "tfunder" ;
+	rdf:rest _:WindLookupTableFunctionKind2.qwp .
+_:WindLookupTableFunctionKind2.qwp rdf:first "qwp" ;
+	rdf:rest rdf:nil .
+
+_:WindPlantQcontrolModeKind rdf:first "reactivePower" ;
+	rdf:rest _:WindPlantQcontrolModeKind.powerFactor .
+_:WindPlantQcontrolModeKind.powerFactor rdf:first "powerFactor" ;
+	rdf:rest _:WindPlantQcontrolModeKind.uqStatic .
+_:WindPlantQcontrolModeKind.uqStatic rdf:first "uqStatic" ;
+	rdf:rest _:WindPlantQcontrolModeKind.voltageControl .
+_:WindPlantQcontrolModeKind.voltageControl rdf:first "voltageControl" ;
+	rdf:rest rdf:nil .
+
+_:WindPlantQcontrolModeKind2 rdf:first "reactivePower" ;
+	rdf:rest _:WindPlantQcontrolModeKind2.powerFactor .
+_:WindPlantQcontrolModeKind2.powerFactor rdf:first "powerFactor" ;
+	rdf:rest _:WindPlantQcontrolModeKind2.uqStatic .
+_:WindPlantQcontrolModeKind2.uqStatic rdf:first "uqStatic" ;
+	rdf:rest _:WindPlantQcontrolModeKind2.voltageControl .
+_:WindPlantQcontrolModeKind2.voltageControl rdf:first "voltageControl" ;
+	rdf:rest rdf:nil .
+
+_:WindQcontrolModeKind rdf:first "voltage" ;
+	rdf:rest _:WindQcontrolModeKind.reactivePower .
+_:WindQcontrolModeKind.reactivePower rdf:first "reactivePower" ;
+	rdf:rest _:WindQcontrolModeKind.openLoopReactivePower .
+_:WindQcontrolModeKind.openLoopReactivePower rdf:first "openLoopReactivePower" ;
+	rdf:rest _:WindQcontrolModeKind.powerFactor .
+_:WindQcontrolModeKind.powerFactor rdf:first "powerFactor" ;
+	rdf:rest _:WindQcontrolModeKind.openLooppowerFactor .
+_:WindQcontrolModeKind.openLooppowerFactor rdf:first "openLooppowerFactor" ;
+	rdf:rest rdf:nil .
+
+_:WindQcontrolModeKind2 rdf:first "voltage" ;
+	rdf:rest _:WindQcontrolModeKind2.reactivePower .
+_:WindQcontrolModeKind2.reactivePower rdf:first "reactivePower" ;
+	rdf:rest _:WindQcontrolModeKind2.openLoopReactivePower .
+_:WindQcontrolModeKind2.openLoopReactivePower rdf:first "openLoopReactivePower" ;
+	rdf:rest _:WindQcontrolModeKind2.powerFactor .
+_:WindQcontrolModeKind2.powerFactor rdf:first "powerFactor" ;
+	rdf:rest _:WindQcontrolModeKind2.openLooppowerFactor .
+_:WindQcontrolModeKind2.openLooppowerFactor rdf:first "openLooppowerFactor" ;
+	rdf:rest rdf:nil .
+
+_:WindUVRTQcontrolModeKind rdf:first "mode0" ;
+	rdf:rest _:WindUVRTQcontrolModeKind.mode1 .
+_:WindUVRTQcontrolModeKind.mode1 rdf:first "mode1" ;
+	rdf:rest _:WindUVRTQcontrolModeKind.mode2 .
+_:WindUVRTQcontrolModeKind.mode2 rdf:first "mode2" ;
+	rdf:rest rdf:nil .

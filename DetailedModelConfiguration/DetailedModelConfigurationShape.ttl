@@ -37,7 +37,7 @@ _:DetailedModelDescriptorArtifactShape.equationLanguageKind rdf:type sh:Property
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "modelica" , "generalMathemathicalExpression" , "matlab" ;
+	sh:in _:EquationLanguageKind ;
 	sh:name "Equation Language Kind"@en ;
 	sh:description "Describes what kind of language is used to describe the equation."^^rdf:XMLLiteral .
 _:DetailedModelDescriptorArtifactShape.equationLanguageTypeOther rdf:type sh:PropertyShape ;
@@ -100,7 +100,7 @@ _:FunctionDescriptorShape.equationLanguageKind rdf:type sh:PropertyShape ;
 	sh:path <FunctionDescriptor.equationLanguageKind> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "modelica" , "generalMathemathicalExpression" , "matlab" ;
+	sh:in _:EquationLanguageKind ;
 	sh:name "Equation Language Kind"@en ;
 	sh:description "Describes what kind of language is used to describe the equation."^^rdf:XMLLiteral .
 _:FunctionDescriptorShape.initialConditionsEquation rdf:type sh:PropertyShape ;
@@ -230,7 +230,7 @@ _:OperatorDescriptorShape.logicalKind rdf:type sh:PropertyShape ;
 	sh:path <OperatorDescriptor.logicalKind> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "and" , "or" , "not" , "equal" , "greaterThan" , "lessThan" , "greaterThanOrEqual" , "lessThanOrEqual" ;
+	sh:in _:LogicalKind ;
 	sh:name "Logical Kind"@en ;
 	sh:description "Logical kind of the operator."^^rdf:XMLLiteral .
 _:OperatorDescriptorShape.operatorKind rdf:type sh:PropertyShape ;
@@ -238,7 +238,7 @@ _:OperatorDescriptorShape.operatorKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "multiplier" , "summation" , "division" , "other" , "logical" ;
+	sh:in _:OperatorDescriptorKind ;
 	sh:name "Operator Kind"@en ;
 	sh:description "Kinds of operator."^^rdf:XMLLiteral .
 
@@ -258,7 +258,7 @@ _:ParameterDesctiptorShape.constraintKind rdf:type sh:PropertyShape ;
 	sh:path <ParameterDesctiptor.constraintKind> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "lessThan" , "greaterThan" , "equals" , "lessThanOrEquals" , "greaterThanOrEquals" ;
+	sh:in _:ConstraintKind ;
 	sh:name "Constraint Kind"@en ;
 	sh:description "The kind for the constraint."^^rdf:XMLLiteral .
 _:ParameterDesctiptorShape.constraintValue rdf:type sh:PropertyShape ;
@@ -278,7 +278,7 @@ _:ParameterDesctiptorShape.kind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "stateVariable" , "regular" , "internal" ;
+	sh:in _:ParameterKind ;
 	sh:name "Kind"@en ;
 	sh:description "The kind of the parameter."^^rdf:XMLLiteral .
 _:ParameterDesctiptorShape.referenceCustomConstraint rdf:type sh:PropertyShape ;
@@ -317,7 +317,7 @@ _:ParameterDesctiptorShape.valueXSDdatatype rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "string" , "boolean" , "decimal" , "float" , "double" , "duration" , "dateTime" , "time" , "date" , "anyURI" ;
+	sh:in _:XSDDatatypeKind ;
 	sh:name "Value Xs Ddatatype"@en ;
 	sh:description "The XSD datatype of the value."^^rdf:XMLLiteral .
 
@@ -363,3 +363,77 @@ _:SignalDescriptorShape.DynamicsFunctionBlock rdf:type sh:PropertyShape ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Dynamics Function Block"@en ;
 	sh:description "The dynamics function block to which this signal belongs to."^^rdf:XMLLiteral .
+
+_:ConstraintKind rdf:first "lessThan" ;
+	rdf:rest _:ConstraintKind.greaterThan .
+_:ConstraintKind.greaterThan rdf:first "greaterThan" ;
+	rdf:rest _:ConstraintKind.equals .
+_:ConstraintKind.equals rdf:first "equals" ;
+	rdf:rest _:ConstraintKind.lessThanOrEquals .
+_:ConstraintKind.lessThanOrEquals rdf:first "lessThanOrEquals" ;
+	rdf:rest _:ConstraintKind.greaterThanOrEquals .
+_:ConstraintKind.greaterThanOrEquals rdf:first "greaterThanOrEquals" ;
+	rdf:rest rdf:nil .
+
+_:EquationLanguageKind rdf:first "modelica" ;
+	rdf:rest _:EquationLanguageKind.generalMathemathicalExpression .
+_:EquationLanguageKind.generalMathemathicalExpression rdf:first "generalMathemathicalExpression" ;
+	rdf:rest _:EquationLanguageKind.matlab .
+_:EquationLanguageKind.matlab rdf:first "matlab" ;
+	rdf:rest rdf:nil .
+
+_:LogicalKind rdf:first "and" ;
+	rdf:rest _:LogicalKind.or .
+_:LogicalKind.or rdf:first "or" ;
+	rdf:rest _:LogicalKind.not .
+_:LogicalKind.not rdf:first "not" ;
+	rdf:rest _:LogicalKind.equal .
+_:LogicalKind.equal rdf:first "equal" ;
+	rdf:rest _:LogicalKind.greaterThan .
+_:LogicalKind.greaterThan rdf:first "greaterThan" ;
+	rdf:rest _:LogicalKind.lessThan .
+_:LogicalKind.lessThan rdf:first "lessThan" ;
+	rdf:rest _:LogicalKind.greaterThanOrEqual .
+_:LogicalKind.greaterThanOrEqual rdf:first "greaterThanOrEqual" ;
+	rdf:rest _:LogicalKind.lessThanOrEqual .
+_:LogicalKind.lessThanOrEqual rdf:first "lessThanOrEqual" ;
+	rdf:rest rdf:nil .
+
+_:OperatorDescriptorKind rdf:first "multiplier" ;
+	rdf:rest _:OperatorDescriptorKind.summation .
+_:OperatorDescriptorKind.summation rdf:first "summation" ;
+	rdf:rest _:OperatorDescriptorKind.division .
+_:OperatorDescriptorKind.division rdf:first "division" ;
+	rdf:rest _:OperatorDescriptorKind.other .
+_:OperatorDescriptorKind.other rdf:first "other" ;
+	rdf:rest _:OperatorDescriptorKind.logical .
+_:OperatorDescriptorKind.logical rdf:first "logical" ;
+	rdf:rest rdf:nil .
+
+_:ParameterKind rdf:first "stateVariable" ;
+	rdf:rest _:ParameterKind.regular .
+_:ParameterKind.regular rdf:first "regular" ;
+	rdf:rest _:ParameterKind.internal .
+_:ParameterKind.internal rdf:first "internal" ;
+	rdf:rest rdf:nil .
+
+_:XSDDatatypeKind rdf:first "string" ;
+	rdf:rest _:XSDDatatypeKind.boolean .
+_:XSDDatatypeKind.boolean rdf:first "boolean" ;
+	rdf:rest _:XSDDatatypeKind.decimal .
+_:XSDDatatypeKind.decimal rdf:first "decimal" ;
+	rdf:rest _:XSDDatatypeKind.float .
+_:XSDDatatypeKind.float rdf:first "float" ;
+	rdf:rest _:XSDDatatypeKind.double .
+_:XSDDatatypeKind.double rdf:first "double" ;
+	rdf:rest _:XSDDatatypeKind.duration .
+_:XSDDatatypeKind.duration rdf:first "duration" ;
+	rdf:rest _:XSDDatatypeKind.dateTime .
+_:XSDDatatypeKind.dateTime rdf:first "dateTime" ;
+	rdf:rest _:XSDDatatypeKind.time .
+_:XSDDatatypeKind.time rdf:first "time" ;
+	rdf:rest _:XSDDatatypeKind.date .
+_:XSDDatatypeKind.date rdf:first "date" ;
+	rdf:rest _:XSDDatatypeKind.anyURI .
+_:XSDDatatypeKind.anyURI rdf:first "anyURI" ;
+	rdf:rest rdf:nil .

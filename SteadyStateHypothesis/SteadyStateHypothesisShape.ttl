@@ -86,7 +86,7 @@ _:AsynchronousMachineShape.asynchronousMachineType rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "generator" , "motor" ;
+	sh:in _:AsynchronousMachineKind ;
 	sh:name "Asynchronous Machine Type"@en ;
 	sh:description "Indicates the type of Asynchronous Machine (motor or generator)."^^rdf:XMLLiteral .
 
@@ -99,7 +99,7 @@ _:BatteryUnitShape.batteryState rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "discharging" , "full" , "waiting" , "charging" , "empty" ;
+	sh:in _:BatteryStateKind ;
 	sh:name "Battery State"@en ;
 	sh:description "The current state of the battery (charging, full, etc.)."^^rdf:XMLLiteral .
 _:BatteryUnitShape.storedE rdf:type sh:PropertyShape ;
@@ -150,7 +150,7 @@ _:CsConverterShape.operatingMode rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "inverter" , "rectifier" ;
+	sh:in _:CsOperatingModeKind ;
 	sh:name "Operating Mode"@en ;
 	sh:description "Indicates whether the DC pole is operating as an inverter or as a rectifier."^^rdf:XMLLiteral .
 _:CsConverterShape.pPccControl rdf:type sh:PropertyShape ;
@@ -158,7 +158,7 @@ _:CsConverterShape.pPccControl rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "activePower" , "dcVoltage" , "dcCurrent" ;
+	sh:in _:CsPpccControlKind ;
 	sh:name "P Pcc Control"@en ;
 	sh:description "Kind of active power control."^^rdf:XMLLiteral .
 _:CsConverterShape.targetAlpha rdf:type sh:PropertyShape ;
@@ -525,7 +525,7 @@ _:RegulatingControlShape.targetValueUnitMultiplier rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "y" , "z" , "a" , "f" , "p" , "n" , "micro" , "m" , "c" , "d" , "none" , "da" , "h" , "k" , "M" , "G" , "T" , "P" , "E" , "Z" , "Y" ;
+	sh:in _:UnitMultiplier ;
 	sh:name "Target Value Unit Multiplier"@en ;
 	sh:description "Specify the multiplier for used for the targetValue."^^rdf:XMLLiteral .
 
@@ -610,7 +610,7 @@ _:SynchronousMachineShape.operatingMode rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "generator" , "condenser" , "motor" ;
+	sh:in _:SynchronousMachineOperatingMode ;
 	sh:name "Operating Mode"@en ;
 	sh:description "Current mode of operation."^^rdf:XMLLiteral .
 _:SynchronousMachineShape.referencePriority rdf:type sh:PropertyShape ;
@@ -686,7 +686,7 @@ _:VsConverterShape.pPccControl rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "pPcc" , "udc" , "pPccAndUdcDroop" , "pPccAndUdcDroopWithCompensation" , "pPccAndUdcDroopPilot" , "phasePcc" ;
+	sh:in _:VsPpccControlKind ;
 	sh:name "P Pcc Control"@en ;
 	sh:description "Kind of control of real power and/or DC voltage."^^rdf:XMLLiteral .
 _:VsConverterShape.qPccControl rdf:type sh:PropertyShape ;
@@ -694,7 +694,7 @@ _:VsConverterShape.qPccControl rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "reactivePcc" , "voltagePcc" , "powerFactorPcc" , "pulseWidthModulation" ;
+	sh:in _:VsQpccControlKind ;
 	sh:name "Q Pcc Control"@en ;
 	sh:description "Kind of reactive power control."^^rdf:XMLLiteral .
 _:VsConverterShape.qShare rdf:type sh:PropertyShape ;
@@ -737,3 +737,103 @@ _:VsConverterShape.targetUpcc rdf:type sh:PropertyShape ;
 <WindGeneratingUnitShape> rdf:type sh:NodeShape ;
 	sh:targetClass <WindGeneratingUnit> ;
 	sh:property _:GeneratingUnitShape.normalPF , _:EquipmentShape.inService , _:IdentifiedObjectShape.mRID .
+
+_:AsynchronousMachineKind rdf:first "generator" ;
+	rdf:rest _:AsynchronousMachineKind.motor .
+_:AsynchronousMachineKind.motor rdf:first "motor" ;
+	rdf:rest rdf:nil .
+
+_:BatteryStateKind rdf:first "discharging" ;
+	rdf:rest _:BatteryStateKind.full .
+_:BatteryStateKind.full rdf:first "full" ;
+	rdf:rest _:BatteryStateKind.waiting .
+_:BatteryStateKind.waiting rdf:first "waiting" ;
+	rdf:rest _:BatteryStateKind.charging .
+_:BatteryStateKind.charging rdf:first "charging" ;
+	rdf:rest _:BatteryStateKind.empty .
+_:BatteryStateKind.empty rdf:first "empty" ;
+	rdf:rest rdf:nil .
+
+_:CsOperatingModeKind rdf:first "inverter" ;
+	rdf:rest _:CsOperatingModeKind.rectifier .
+_:CsOperatingModeKind.rectifier rdf:first "rectifier" ;
+	rdf:rest rdf:nil .
+
+_:CsPpccControlKind rdf:first "activePower" ;
+	rdf:rest _:CsPpccControlKind.dcVoltage .
+_:CsPpccControlKind.dcVoltage rdf:first "dcVoltage" ;
+	rdf:rest _:CsPpccControlKind.dcCurrent .
+_:CsPpccControlKind.dcCurrent rdf:first "dcCurrent" ;
+	rdf:rest rdf:nil .
+
+_:SynchronousMachineOperatingMode rdf:first "generator" ;
+	rdf:rest _:SynchronousMachineOperatingMode.condenser .
+_:SynchronousMachineOperatingMode.condenser rdf:first "condenser" ;
+	rdf:rest _:SynchronousMachineOperatingMode.motor .
+_:SynchronousMachineOperatingMode.motor rdf:first "motor" ;
+	rdf:rest rdf:nil .
+
+_:UnitMultiplier rdf:first "y" ;
+	rdf:rest _:UnitMultiplier.z .
+_:UnitMultiplier.z rdf:first "z" ;
+	rdf:rest _:UnitMultiplier.a .
+_:UnitMultiplier.a rdf:first "a" ;
+	rdf:rest _:UnitMultiplier.f .
+_:UnitMultiplier.f rdf:first "f" ;
+	rdf:rest _:UnitMultiplier.p .
+_:UnitMultiplier.p rdf:first "p" ;
+	rdf:rest _:UnitMultiplier.n .
+_:UnitMultiplier.n rdf:first "n" ;
+	rdf:rest _:UnitMultiplier.micro .
+_:UnitMultiplier.micro rdf:first "micro" ;
+	rdf:rest _:UnitMultiplier.m .
+_:UnitMultiplier.m rdf:first "m" ;
+	rdf:rest _:UnitMultiplier.c .
+_:UnitMultiplier.c rdf:first "c" ;
+	rdf:rest _:UnitMultiplier.d .
+_:UnitMultiplier.d rdf:first "d" ;
+	rdf:rest _:UnitMultiplier.none .
+_:UnitMultiplier.none rdf:first "none" ;
+	rdf:rest _:UnitMultiplier.da .
+_:UnitMultiplier.da rdf:first "da" ;
+	rdf:rest _:UnitMultiplier.h .
+_:UnitMultiplier.h rdf:first "h" ;
+	rdf:rest _:UnitMultiplier.k .
+_:UnitMultiplier.k rdf:first "k" ;
+	rdf:rest _:UnitMultiplier.M .
+_:UnitMultiplier.M rdf:first "M" ;
+	rdf:rest _:UnitMultiplier.G .
+_:UnitMultiplier.G rdf:first "G" ;
+	rdf:rest _:UnitMultiplier.T .
+_:UnitMultiplier.T rdf:first "T" ;
+	rdf:rest _:UnitMultiplier.P .
+_:UnitMultiplier.P rdf:first "P" ;
+	rdf:rest _:UnitMultiplier.E .
+_:UnitMultiplier.E rdf:first "E" ;
+	rdf:rest _:UnitMultiplier.Z .
+_:UnitMultiplier.Z rdf:first "Z" ;
+	rdf:rest _:UnitMultiplier.Y .
+_:UnitMultiplier.Y rdf:first "Y" ;
+	rdf:rest rdf:nil .
+
+_:VsPpccControlKind rdf:first "pPcc" ;
+	rdf:rest _:VsPpccControlKind.udc .
+_:VsPpccControlKind.udc rdf:first "udc" ;
+	rdf:rest _:VsPpccControlKind.pPccAndUdcDroop .
+_:VsPpccControlKind.pPccAndUdcDroop rdf:first "pPccAndUdcDroop" ;
+	rdf:rest _:VsPpccControlKind.pPccAndUdcDroopWithCompensation .
+_:VsPpccControlKind.pPccAndUdcDroopWithCompensation rdf:first "pPccAndUdcDroopWithCompensation" ;
+	rdf:rest _:VsPpccControlKind.pPccAndUdcDroopPilot .
+_:VsPpccControlKind.pPccAndUdcDroopPilot rdf:first "pPccAndUdcDroopPilot" ;
+	rdf:rest _:VsPpccControlKind.phasePcc .
+_:VsPpccControlKind.phasePcc rdf:first "phasePcc" ;
+	rdf:rest rdf:nil .
+
+_:VsQpccControlKind rdf:first "reactivePcc" ;
+	rdf:rest _:VsQpccControlKind.voltagePcc .
+_:VsQpccControlKind.voltagePcc rdf:first "voltagePcc" ;
+	rdf:rest _:VsQpccControlKind.powerFactorPcc .
+_:VsQpccControlKind.powerFactorPcc rdf:first "powerFactorPcc" ;
+	rdf:rest _:VsQpccControlKind.pulseWidthModulation .
+_:VsQpccControlKind.pulseWidthModulation rdf:first "pulseWidthModulation" ;
+	rdf:rest rdf:nil .

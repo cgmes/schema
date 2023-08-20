@@ -552,7 +552,7 @@ _:PetersenCoilShape.mode rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "fixed" , "manual" , "automaticPositioning" ;
+	sh:in _:PetersenCoilModeKind ;
 	sh:name "Mode"@en ;
 	sh:description "The mode of operation of the Petersen coil."^^rdf:XMLLiteral .
 _:PetersenCoilShape.nominalU rdf:type sh:PropertyShape ;
@@ -809,7 +809,7 @@ _:SynchronousMachineShape.shortCircuitRotorType rdf:type sh:PropertyShape ;
 	sh:path <SynchronousMachine.shortCircuitRotorType> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "salientPole1" , "salientPole2" , "turboSeries1" , "turboSeries2" ;
+	sh:in _:ShortCircuitRotorKind ;
 	sh:name "Short Circuit Rotor Type"@en ;
 	sh:description "Type of rotor, used by short circuit applications, only for single fed short circuit according to IEC 60909."^^rdf:XMLLiteral .
 _:SynchronousMachineShape.voltageRegulationRange rdf:type sh:PropertyShape ;
@@ -872,3 +872,19 @@ _:TransformerEndShape.xground rdf:type sh:PropertyShape ;
 	sh:maxCount "1"^^xsd:integer ;
 	sh:name "Xground"@en ;
 	sh:description "(for Yn and Zn connections) Reactive part of neutral impedance where 'grounded' is true."^^rdf:XMLLiteral .
+
+_:PetersenCoilModeKind rdf:first "fixed" ;
+	rdf:rest _:PetersenCoilModeKind.manual .
+_:PetersenCoilModeKind.manual rdf:first "manual" ;
+	rdf:rest _:PetersenCoilModeKind.automaticPositioning .
+_:PetersenCoilModeKind.automaticPositioning rdf:first "automaticPositioning" ;
+	rdf:rest rdf:nil .
+
+_:ShortCircuitRotorKind rdf:first "salientPole1" ;
+	rdf:rest _:ShortCircuitRotorKind.salientPole2 .
+_:ShortCircuitRotorKind.salientPole2 rdf:first "salientPole2" ;
+	rdf:rest _:ShortCircuitRotorKind.turboSeries1 .
+_:ShortCircuitRotorKind.turboSeries1 rdf:first "turboSeries1" ;
+	rdf:rest _:ShortCircuitRotorKind.turboSeries2 .
+_:ShortCircuitRotorKind.turboSeries2 rdf:first "turboSeries2" ;
+	rdf:rest rdf:nil .

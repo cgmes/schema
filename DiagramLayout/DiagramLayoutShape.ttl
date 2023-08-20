@@ -13,7 +13,7 @@ _:DiagramShape.orientation rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "positive" , "negative" ;
+	sh:in _:OrientationKind ;
 	sh:name "Orientation"@en ;
 	sh:description "Coordinate system orientation of the diagram."^^rdf:XMLLiteral .
 _:DiagramShape.x1InitialView rdf:type sh:PropertyShape ;
@@ -252,3 +252,8 @@ _:VisibilityLayerShape.VisibleObjects rdf:type sh:PropertyShape ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:name "Visible Objects"@en ;
 	sh:description "A visibility layer can contain one or more diagram objects."^^rdf:XMLLiteral .
+
+_:OrientationKind rdf:first "positive" ;
+	rdf:rest _:OrientationKind.negative .
+_:OrientationKind.negative rdf:first "negative" ;
+	rdf:rest rdf:nil .

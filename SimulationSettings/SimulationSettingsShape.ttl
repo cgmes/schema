@@ -112,7 +112,7 @@ _:FaultShape.kind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "lineToGround" , "lineToLine" , "lineToLineToGround" , "lineOpen" ;
+	sh:in _:PhaseConnectedFaultKind ;
 	sh:name "Kind"@en ;
 	sh:description "The kind of phase fault."^^rdf:XMLLiteral .
 _:FaultShape.occurredDateTime rdf:type sh:PropertyShape ;
@@ -127,7 +127,7 @@ _:FaultShape.phases rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "ABCN" , "ABC" , "ABN" , "ACN" , "BCN" , "AB" , "AC" , "BC" , "AN" , "BN" , "CN" , "A" , "B" , "C" , "N" , "s1N" , "s2N" , "s12N" , "s1" , "s2" , "s12" , "none" , "X" , "XY" , "XN" , "XYN" ;
+	sh:in _:PhaseCode ;
 	sh:name "Phases"@en ;
 	sh:description "The phases participating in the fault."^^rdf:XMLLiteral .
 
@@ -259,7 +259,7 @@ _:ParameterEventShape.changeKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "step" , "ramp" ;
+	sh:in _:ParameterChangeKind ;
 	sh:name "Change Kind"@en ;
 	sh:description "Defines if the change is done in one step or using ramp."^^rdf:XMLLiteral .
 _:ParameterEventShape.eventTime rdf:type sh:PropertyShape ;
@@ -336,7 +336,7 @@ _:PowerFlowSettingsShape.algorithmKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "fullNewtonRaphson" , "fixedSlopeNewtonRaphson" , "fastDecoupled" , "gaussSeidel" , "modifiedGaussSeidel" , "dcPowerFlow" ;
+	sh:in _:PowerFlowAlgorithmKind ;
 	sh:name "Algorithm Kind"@en ;
 	sh:description "It defines the power flow algorithm."^^rdf:XMLLiteral .
 _:PowerFlowSettingsShape.flatStart rdf:type sh:PropertyShape ;
@@ -392,7 +392,7 @@ _:PowerFlowSettingsShape.shiftKind rdf:type sh:PropertyShape ;
 	sh:path <PowerFlowSettings.shiftKind> ;
 	sh:datatype xsd:string ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "conformLoadShift" , "allLoadShift" , "generationShift" , "generationAndLoadShiftKey" ;
+	sh:in _:PowerShiftKind ;
 	sh:name "Shift Kind"@en ;
 	sh:description "Defines type of scaling used to reach defined net-position."^^rdf:XMLLiteral .
 _:PowerFlowSettingsShape.slackDistributionKind rdf:type sh:PropertyShape ;
@@ -400,7 +400,7 @@ _:PowerFlowSettingsShape.slackDistributionKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "loadDistribution" , "generationDistributionParticipationFactor" , "generationDistributionActivePowerAndVoltageNodesOnly" , "singleReferenceMachine" ;
+	sh:in _:SlackDistributionKind ;
 	sh:name "Slack Distribution Kind"@en ;
 	sh:description "Defines slack distribution used in power flow calculation."^^rdf:XMLLiteral .
 _:PowerFlowSettingsShape.staticVarCompensatorControlPriority rdf:type sh:PropertyShape ;
@@ -481,7 +481,7 @@ _:SignalRecorderShape.signalKind rdf:type sh:PropertyShape ;
 	sh:datatype xsd:string ;
 	sh:minCount "1"^^xsd:integer ;
 	sh:maxCount "1"^^xsd:integer ;
-	sh:in "detailedModel" , "standardModelInternal" , "powerSystemSignal" ;
+	sh:in _:SignalKind ;
 	sh:name "Signal Kind"@en ;
 	sh:description "Indicates the kind of the signal."^^rdf:XMLLiteral .
 
@@ -593,3 +593,108 @@ _:TerminalShape.EquipmentFaults rdf:type sh:PropertyShape ;
 	sh:class <EquipmentFault> ;
 	sh:name "Equipment Faults"@en ;
 	sh:description "The equipment faults at this terminal."^^rdf:XMLLiteral .
+
+_:ParameterChangeKind rdf:first "step" ;
+	rdf:rest _:ParameterChangeKind.ramp .
+_:ParameterChangeKind.ramp rdf:first "ramp" ;
+	rdf:rest rdf:nil .
+
+_:PhaseCode rdf:first "ABCN" ;
+	rdf:rest _:PhaseCode.ABC .
+_:PhaseCode.ABC rdf:first "ABC" ;
+	rdf:rest _:PhaseCode.ABN .
+_:PhaseCode.ABN rdf:first "ABN" ;
+	rdf:rest _:PhaseCode.ACN .
+_:PhaseCode.ACN rdf:first "ACN" ;
+	rdf:rest _:PhaseCode.BCN .
+_:PhaseCode.BCN rdf:first "BCN" ;
+	rdf:rest _:PhaseCode.AB .
+_:PhaseCode.AB rdf:first "AB" ;
+	rdf:rest _:PhaseCode.AC .
+_:PhaseCode.AC rdf:first "AC" ;
+	rdf:rest _:PhaseCode.BC .
+_:PhaseCode.BC rdf:first "BC" ;
+	rdf:rest _:PhaseCode.AN .
+_:PhaseCode.AN rdf:first "AN" ;
+	rdf:rest _:PhaseCode.BN .
+_:PhaseCode.BN rdf:first "BN" ;
+	rdf:rest _:PhaseCode.CN .
+_:PhaseCode.CN rdf:first "CN" ;
+	rdf:rest _:PhaseCode.A .
+_:PhaseCode.A rdf:first "A" ;
+	rdf:rest _:PhaseCode.B .
+_:PhaseCode.B rdf:first "B" ;
+	rdf:rest _:PhaseCode.C .
+_:PhaseCode.C rdf:first "C" ;
+	rdf:rest _:PhaseCode.N .
+_:PhaseCode.N rdf:first "N" ;
+	rdf:rest _:PhaseCode.s1N .
+_:PhaseCode.s1N rdf:first "s1N" ;
+	rdf:rest _:PhaseCode.s2N .
+_:PhaseCode.s2N rdf:first "s2N" ;
+	rdf:rest _:PhaseCode.s12N .
+_:PhaseCode.s12N rdf:first "s12N" ;
+	rdf:rest _:PhaseCode.s1 .
+_:PhaseCode.s1 rdf:first "s1" ;
+	rdf:rest _:PhaseCode.s2 .
+_:PhaseCode.s2 rdf:first "s2" ;
+	rdf:rest _:PhaseCode.s12 .
+_:PhaseCode.s12 rdf:first "s12" ;
+	rdf:rest _:PhaseCode.none .
+_:PhaseCode.none rdf:first "none" ;
+	rdf:rest _:PhaseCode.X .
+_:PhaseCode.X rdf:first "X" ;
+	rdf:rest _:PhaseCode.XY .
+_:PhaseCode.XY rdf:first "XY" ;
+	rdf:rest _:PhaseCode.XN .
+_:PhaseCode.XN rdf:first "XN" ;
+	rdf:rest _:PhaseCode.XYN .
+_:PhaseCode.XYN rdf:first "XYN" ;
+	rdf:rest rdf:nil .
+
+_:PhaseConnectedFaultKind rdf:first "lineToGround" ;
+	rdf:rest _:PhaseConnectedFaultKind.lineToLine .
+_:PhaseConnectedFaultKind.lineToLine rdf:first "lineToLine" ;
+	rdf:rest _:PhaseConnectedFaultKind.lineToLineToGround .
+_:PhaseConnectedFaultKind.lineToLineToGround rdf:first "lineToLineToGround" ;
+	rdf:rest _:PhaseConnectedFaultKind.lineOpen .
+_:PhaseConnectedFaultKind.lineOpen rdf:first "lineOpen" ;
+	rdf:rest rdf:nil .
+
+_:PowerFlowAlgorithmKind rdf:first "fullNewtonRaphson" ;
+	rdf:rest _:PowerFlowAlgorithmKind.fixedSlopeNewtonRaphson .
+_:PowerFlowAlgorithmKind.fixedSlopeNewtonRaphson rdf:first "fixedSlopeNewtonRaphson" ;
+	rdf:rest _:PowerFlowAlgorithmKind.fastDecoupled .
+_:PowerFlowAlgorithmKind.fastDecoupled rdf:first "fastDecoupled" ;
+	rdf:rest _:PowerFlowAlgorithmKind.gaussSeidel .
+_:PowerFlowAlgorithmKind.gaussSeidel rdf:first "gaussSeidel" ;
+	rdf:rest _:PowerFlowAlgorithmKind.modifiedGaussSeidel .
+_:PowerFlowAlgorithmKind.modifiedGaussSeidel rdf:first "modifiedGaussSeidel" ;
+	rdf:rest _:PowerFlowAlgorithmKind.dcPowerFlow .
+_:PowerFlowAlgorithmKind.dcPowerFlow rdf:first "dcPowerFlow" ;
+	rdf:rest rdf:nil .
+
+_:PowerShiftKind rdf:first "conformLoadShift" ;
+	rdf:rest _:PowerShiftKind.allLoadShift .
+_:PowerShiftKind.allLoadShift rdf:first "allLoadShift" ;
+	rdf:rest _:PowerShiftKind.generationShift .
+_:PowerShiftKind.generationShift rdf:first "generationShift" ;
+	rdf:rest _:PowerShiftKind.generationAndLoadShiftKey .
+_:PowerShiftKind.generationAndLoadShiftKey rdf:first "generationAndLoadShiftKey" ;
+	rdf:rest rdf:nil .
+
+_:SignalKind rdf:first "detailedModel" ;
+	rdf:rest _:SignalKind.standardModelInternal .
+_:SignalKind.standardModelInternal rdf:first "standardModelInternal" ;
+	rdf:rest _:SignalKind.powerSystemSignal .
+_:SignalKind.powerSystemSignal rdf:first "powerSystemSignal" ;
+	rdf:rest rdf:nil .
+
+_:SlackDistributionKind rdf:first "loadDistribution" ;
+	rdf:rest _:SlackDistributionKind.generationDistributionParticipationFactor .
+_:SlackDistributionKind.generationDistributionParticipationFactor rdf:first "generationDistributionParticipationFactor" ;
+	rdf:rest _:SlackDistributionKind.generationDistributionActivePowerAndVoltageNodesOnly .
+_:SlackDistributionKind.generationDistributionActivePowerAndVoltageNodesOnly rdf:first "generationDistributionActivePowerAndVoltageNodesOnly" ;
+	rdf:rest _:SlackDistributionKind.singleReferenceMachine .
+_:SlackDistributionKind.singleReferenceMachine rdf:first "singleReferenceMachine" ;
+	rdf:rest rdf:nil .
