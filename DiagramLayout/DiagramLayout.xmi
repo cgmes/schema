@@ -1,145 +1,211 @@
 <?xml version="1.0" encoding="windows-1252" standalone="no" ?>
-<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2023-08-02 12:46:17">
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2023-08-24 15:49:23">
 	<XMI.header>
 		<XMI.documentation>
 			<XMI.exporter>Enterprise Architect</XMI.exporter>
-			<XMI.exporterVersion>2.5</XMI.exporterVersion>
-			<XMI.exporterID>1627</XMI.exporterID>
+			<XMI.exporterVersion>4.1RR</XMI.exporterVersion>
 		</XMI.documentation>
+		<XMI.metamodel XMI.name="UML" XMI.version="1.3"/>
 	</XMI.header>
 	<XMI.content>
 		<UML:Model name="EA Model" xmi.id="MX_EAID_563140E0_62E2_49ae_B06F_FF8BCA282289">
 			<UML:Namespace.ownedElement>
-				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
 				<UML:Package name="DiagramLayoutProfile" xmi.id="EAPK_563140E0_62E2_49ae_B06F_FF8BCA282289" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 					<UML:ModelElement.taggedValue>
 						<UML:TaggedValue tag="documentation" value="This profile has been built on the basis of the IEC 61970-453 document and adjusted to fit the purpose of the ENTSO-E CGMES."/>
 					</UML:ModelElement.taggedValue>
 					<UML:Namespace.ownedElement>
-						<UML:Comment xmi.id="EAID_0C6FE142_7F17_4c78_8B17_EA82E6B9C5D3" visibility="public" namespace="EAPK_563140E0_62E2_49ae_B06F_FF8BCA282289">
+						<UML:Comment name="The DiagramObject should link to SynchronousMachine and not GeneratingUnit." annotatedElement="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09" xmi.id="EAID_0C6FE142_7F17_4c78_8B17_EA82E6B9C5D3" visibility="public" namespace="EAPK_563140E0_62E2_49ae_B06F_FF8BCA282289">
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="The DiagramObject should link to SynchronousMachine and not GeneratingUnit."/>
 							</UML:ModelElement.taggedValue>
 						</UML:Comment>
-						<UML:Comment xmi.id="EAID_14EAE036_A3C5_4d3e_B066_786FEB835C44" visibility="public" namespace="EAPK_563140E0_62E2_49ae_B06F_FF8BCA282289">
+						<UML:Comment name="Coordinate units used in the exchange are mm (millimetres)." annotatedElement="EAID_760CED2F_AC2C_408c_A26B_51AAB9F82D21" xmi.id="EAID_14EAE036_A3C5_4d3e_B066_786FEB835C44" visibility="public" namespace="EAPK_563140E0_62E2_49ae_B06F_FF8BCA282289">
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="Coordinate units used in the exchange are mm (millimetres)."/>
 							</UML:ModelElement.taggedValue>
 						</UML:Comment>
 						<UML:Class name="DiagramLayoutVersion" xmi.id="EAID_3CD8C886_6074_49a7_84B1_237F2FF69E95" visibility="public" namespace="EAPK_563140E0_62E2_49ae_B06F_FF8BCA282289" isRoot="false" isLeaf="false" isAbstract="true" isActive="false">
-							<UML:ModelElement.stereotype>
-								<UML:Stereotype name="Entsoe"/>
-							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="Version details."/>
 							</UML:ModelElement.taggedValue>
 							<UML:Classifier.feature>
-								<UML:Attribute name="baseUML" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="baseUML" xmi.id="EAID_DFB69078_B3C7_4128_A413_DE6EC99A015E" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="iec61970cim16v28_iec61968cim12v08_iec62325cim03v01a"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
 									</UML:StructuralFeature.type>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="Base UML provided by CIM model manager."/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="baseURI" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="baseURI" xmi.id="EAID_B135BDB7_F7D9_49af_8E28_2EF0268DAEA9" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="http://iec.ch/TC57/2013/61970-453/DiagramLayout/3"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
 									</UML:StructuralFeature.type>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="Profile URI used in the Model Exchange header and defined in IEC standards.  It uniquely identifies the Profile and its version. It is given for information only and to identify the closest IEC profile to which this CGMES profile is based on."/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="date" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="date" xmi.id="EAID_29F4E01F_CAC8_4095_88EA_3BBD1FD199E8" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="2014-08-07"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_FF85CB9F_4A0C_4339_A3E4_06CE2EA1772F"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_FF85CB9F_4A0C_4339_A3E4_06CE2EA1772F"/>
 									</UML:StructuralFeature.type>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="Profile creation date&#xA;Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05."/>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{8DADB97F-283D-40c7-A25A-D75E4C0D8507}" xmi.id="EAID_F5094BC4_B737_42ad_91D8_9E2F71E1FD9E"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="differenceModelURI" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="differenceModelURI" xmi.id="EAID_B9D8B260_34E0_4332_8457_D0DC3254116B" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="http://iec.ch/TC57/61970-552/DifferenceModel/1#"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
 									</UML:StructuralFeature.type>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="Difference model URI defined by IEC 61970-552. "/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="entsoeUML" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="entsoeUML" xmi.id="EAID_372858D6_47AB_4b3d_83C0_E036425C007A" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="entsoe_v2.4.15"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
 									</UML:StructuralFeature.type>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="UML provided by ENTSO-E."/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="entsoeURI" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="entsoeURI" xmi.id="EAID_92E869F6_A84E_4bf0_842A_A9376CF11369" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="http://entsoe.eu/CIM/DiagramLayout/3/1"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
 									</UML:StructuralFeature.type>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="Profile URI defined by ENTSO-E and used in the Model Exchange header.  It uniquely identifies the Profile and its version. The last two elements in the URI (http://entsoe.eu/CIM/DiagramLayout/yy/zzz) indicate major and minor versions where: &#xA;- yy - indicates a major version;&#xA;- zzz - indicates a minor version. "/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="modelDescriptionURI" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="modelDescriptionURI" xmi.id="EAID_D16B5F4F_2430_4a1e_AFC7_03B46A1E4A50" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="http://iec.ch/TC57/61970-552/ModelDescription/1#"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
 									</UML:StructuralFeature.type>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="Model Description URI defined by IEC 61970-552. "/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="namespaceRDF" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="namespaceRDF" xmi.id="EAID_89437264_60FD_40f0_BEEF_E5689067609E" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
 									</UML:StructuralFeature.type>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="RDF namespace. "/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="namespaceUML" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="namespaceUML" xmi.id="EAID_6C91388E_1A76_4b82_A135_9AA2F5019BF7" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="http://iec.ch/TC57/2013/CIM-schema-cim16#"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
 									</UML:StructuralFeature.type>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="CIM UML namespace. "/>
 									</UML:ModelElement.taggedValue>
 								</UML:Attribute>
-								<UML:Attribute name="shortName" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+								<UML:Attribute name="shortName" xmi.id="EAID_2474F044_4BB0_499a_A639_1BD261E44B6B" changeable="frozen" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:StructuralFeature.multiplicity>
+										<UML:Multiplicity>
+											<UML:Multiplicity.range>
+												<UML:MultiplicityRange lower="1" upper="1"/>
+											</UML:Multiplicity.range>
+										</UML:Multiplicity>
+									</UML:StructuralFeature.multiplicity>
 									<UML:Attribute.initialValue>
 										<UML:Expression body="DL"/>
 									</UML:Attribute.initialValue>
 									<UML:StructuralFeature.type>
-										<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+										<Foundation.Core.Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
 									</UML:StructuralFeature.type>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="description" value="The short name of the profile used in profile documentation."/>
@@ -147,17 +213,17 @@
 								</UML:Attribute>
 							</UML:Classifier.feature>
 						</UML:Class>
-						<UML:Comment xmi.id="EAID_74D9B7FC_37EA_4916_8214_2BFD9647061C" visibility="public" namespace="EAPK_563140E0_62E2_49ae_B06F_FF8BCA282289">
+						<UML:Comment name="The inherited IdentifiedObject.name shall have one of the following names: node-breaker, bus-branch, or geoschematic." annotatedElement="EAID_91825829_C2D0_409d_98CA_6C872A715407" xmi.id="EAID_74D9B7FC_37EA_4916_8214_2BFD9647061C" visibility="public" namespace="EAPK_563140E0_62E2_49ae_B06F_FF8BCA282289">
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="The inherited IdentifiedObject.name shall have one of the following names: node-breaker, bus-branch, or geoschematic."/>
 							</UML:ModelElement.taggedValue>
 						</UML:Comment>
-						<UML:Comment xmi.id="EAID_C8240713_D2A4_42a3_80C9_2EBA93AA4902" visibility="public" namespace="EAPK_563140E0_62E2_49ae_B06F_FF8BCA282289">
+						<UML:Comment name="&lt;ul&gt;&#xA; &lt;li&gt;DiagramObject.rotation=0 has the following meaning: The connection point of an element which has one terminal is pointing to the top side of the diagram. The connection point &quot;From side&quot; of an element which has more than one terminal is pointing to the top side of the diagram. &lt;/li&gt;&#xA; &lt;li&gt;DiagramObject.rotation=90 has the following meaning: The connection point of an element which has one terminal is pointing to the right hand side of the diagram. The connection point &quot;From side&quot; of an element which has more than one terminal is pointing to the right hand side of the diagram.&lt;/li&gt;&#xA;&lt;/ul&gt;" annotatedElement="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09" xmi.id="EAID_C8240713_D2A4_42a3_80C9_2EBA93AA4902" visibility="public" namespace="EAPK_563140E0_62E2_49ae_B06F_FF8BCA282289">
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="&lt;ul&gt;&#xA; &lt;li&gt;DiagramObject.rotation=0 has the following meaning: The connection point of an element which has one terminal is pointing to the top side of the diagram. The connection point &quot;From side&quot; of an element which has more than one terminal is pointing to the top side of the diagram. &lt;/li&gt;&#xA; &lt;li&gt;DiagramObject.rotation=90 has the following meaning: The connection point of an element which has one terminal is pointing to the right hand side of the diagram. The connection point &quot;From side&quot; of an element which has more than one terminal is pointing to the right hand side of the diagram.&lt;/li&gt;&#xA;&lt;/ul&gt;"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Comment>
-						<UML:Comment xmi.id="EAID_E4CC5D2A_07A0_49a3_A3E3_A123A067E296" visibility="public" namespace="EAPK_563140E0_62E2_49ae_B06F_FF8BCA282289">
+						<UML:Comment name="IdentifiedObject.name is 32 characters maximum. It shall be consistent with the name of the object used in companies, in daily operation (e. g. in SCADA systems), in planning processes or in asset related systems and should allow inter-communicating of TSO, using general names." annotatedElement="EAID_F56A9616_524E_4d17_AB85_EDB31E40B72F" xmi.id="EAID_E4CC5D2A_07A0_49a3_A3E3_A123A067E296" visibility="public" namespace="EAPK_563140E0_62E2_49ae_B06F_FF8BCA282289">
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="IdentifiedObject.name is 32 characters maximum. It shall be consistent with the name of the object used in companies, in daily operation (e. g. in SCADA systems), in planning processes or in asset related systems and should allow inter-communicating of TSO, using general names."/>
 							</UML:ModelElement.taggedValue>
@@ -175,12 +241,26 @@
 										<UML:TaggedValue tag="GUIDBasedOn" value="{1C8A6E42-935B-4a26-88C0-9F9E2AB80D36}" xmi.id="EAID_6DEC4494_696B_4f12_A957_3F4D3D173A71"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Association.connection>
-										<UML:AssociationEnd visibility="public" multiplicity="0..1" name="DiagramObjectGluePoint" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_0DAED907_4466_42a1_9F03_85E78EF460FF">
+										<UML:AssociationEnd xmi.id="EAID_src9FAF30_B84B_450f_B373_50330E81C653" visibility="public" multiplicity="0..1" name="DiagramObjectGluePoint" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_0DAED907_4466_42a1_9F03_85E78EF460FF">
+											<UML:AssociationEnd.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:AssociationEnd.multiplicity>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="A diagram object glue point is associated with 2 or more object points that are considered to be 'glued' together."/>
 											</UML:ModelElement.taggedValue>
 										</UML:AssociationEnd>
-										<UML:AssociationEnd visibility="public" multiplicity="2..*" name="DiagramObjectPoints" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_6F27B2F6_F6D7_4551_9EF5_7F7A1F7CB149">
+										<UML:AssociationEnd xmi.id="EAID_dst9FAF30_B84B_450f_B373_50330E81C653" visibility="public" multiplicity="2..*" name="DiagramObjectPoints" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_6F27B2F6_F6D7_4551_9EF5_7F7A1F7CB149">
+											<UML:AssociationEnd.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="2" upper="-1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:AssociationEnd.multiplicity>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="The 'glue' point to which this point is associated."/>
 											</UML:ModelElement.taggedValue>
@@ -188,64 +268,102 @@
 									</UML:Association.connection>
 								</UML:Association>
 								<UML:Class name="DiagramObject" xmi.id="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09" visibility="public" namespace="EAPK_FEB82C3C_09A0_49f4_9414_7FB158FA9DCB" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+									<UML:GeneralizableElement.generalization>
+										<Foundation.Core.Generalization xmi.idref="EAID_CBC5E1E9_1082_45e5_BD97_707E1BAA74C2"/>
+									</UML:GeneralizableElement.generalization>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="documentation" value="An object that defines one or more points in a given space. This object can be associated with anything that specializes IdentifiedObject. For single line diagrams such objects typically include such items as analog values, breakers, disconnectors, power transformers, and transmission lines."/>
 									</UML:ModelElement.taggedValue>
 									<UML:Classifier.feature>
-										<UML:Attribute name="drawingOrder" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+										<UML:Attribute name="drawingOrder" xmi.id="EAID_01417058_3960_4adb_BF83_6BFB5C5BF901" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:StructuralFeature.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:StructuralFeature.multiplicity>
 											<UML:Attribute.initialValue>
 												<UML:Expression/>
 											</UML:Attribute.initialValue>
 											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_5444BCC6_E3F1_4ba3_9041_6E67985141CD"/>
+												<Foundation.Core.Classifier xmi.idref="EAID_5444BCC6_E3F1_4ba3_9041_6E67985141CD"/>
 											</UML:StructuralFeature.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="The drawing order of this element. The higher the number, the later the element is drawn in sequence. This is used to ensure that elements that overlap are rendered in the correct order."/>
 												<UML:TaggedValue tag="GUIDBasedOn" value="{9C8F08EF-6539-4118-BEA5-1E00C412E809}" xmi.id="EAID_67610004_F227_4241_8B9F_7566DC229FE3"/>
 											</UML:ModelElement.taggedValue>
 										</UML:Attribute>
-										<UML:Attribute name="isPolygon" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+										<UML:Attribute name="isPolygon" xmi.id="EAID_61A63C97_A2C4_423b_82D2_C1814D60F395" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:StructuralFeature.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:StructuralFeature.multiplicity>
 											<UML:Attribute.initialValue>
 												<UML:Expression/>
 											</UML:Attribute.initialValue>
 											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_1BD84350_CD0A_4736_A7C4_0017A4F6F699"/>
+												<Foundation.Core.Classifier xmi.idref="EAID_1BD84350_CD0A_4736_A7C4_0017A4F6F699"/>
 											</UML:StructuralFeature.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="Defines whether or not the diagram objects points define the boundaries of a polygon or the routing of a polyline. If this value is true then a receiving application should consider the first and last points to be connected."/>
 												<UML:TaggedValue tag="GUIDBasedOn" value="{E105F67A-F735-40c8-828B-50637B38AEBC}" xmi.id="EAID_2447E680_C3A8_45b4_A331_A5429125D86C"/>
 											</UML:ModelElement.taggedValue>
 										</UML:Attribute>
-										<UML:Attribute name="offsetX" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+										<UML:Attribute name="offsetX" xmi.id="EAID_A4278C4A_760C_436a_B4CF_0AB353BC0CD8" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:StructuralFeature.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:StructuralFeature.multiplicity>
 											<UML:Attribute.initialValue>
 												<UML:Expression/>
 											</UML:Attribute.initialValue>
 											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F"/>
+												<Foundation.Core.Classifier xmi.idref="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F"/>
 											</UML:StructuralFeature.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="The offset in the X direction. This is used for defining the offset from centre for rendering an icon (the default is that a single point specifies the centre of the icon).&#xA;&#xA;The offset is in per-unit with 0 indicating there is no offset from the horizontal centre of the icon.  -0.5 indicates it is offset by 50% to the left and 0.5 indicates an offset of 50% to the right.&#xA;"/>
 												<UML:TaggedValue tag="GUIDBasedOn" value="{9E1EABB6-8384-40b8-B97D-CAC2F81D25CC}" xmi.id="EAID_46D646C1_887A_468d_AA36_2AB6557DF93A"/>
 											</UML:ModelElement.taggedValue>
 										</UML:Attribute>
-										<UML:Attribute name="offsetY" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+										<UML:Attribute name="offsetY" xmi.id="EAID_0B699985_8D3D_4966_BB7E_4B2B88CB5E77" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:StructuralFeature.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:StructuralFeature.multiplicity>
 											<UML:Attribute.initialValue>
 												<UML:Expression/>
 											</UML:Attribute.initialValue>
 											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F"/>
+												<Foundation.Core.Classifier xmi.idref="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F"/>
 											</UML:StructuralFeature.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="The offset in the Y direction. This is used for defining the offset from centre for rendering an icon (the default is that a single point specifies the centre of the icon).&#xA;&#xA;The offset is in per-unit with 0 indicating there is no offset from the vertical centre of the icon.  The offset direction is dependent on the orientation of the diagram, with -0.5 and 0.5 indicating an offset of +/- 50% on the vertical axis.&#xA;"/>
 												<UML:TaggedValue tag="GUIDBasedOn" value="{10731F3A-76D6-488f-8C14-CC488A1F8B2D}" xmi.id="EAID_E2612B2A_35D1_4b00_8351_D2EACB9F8B6B"/>
 											</UML:ModelElement.taggedValue>
 										</UML:Attribute>
-										<UML:Attribute name="rotation" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+										<UML:Attribute name="rotation" xmi.id="EAID_F368F121_AAC4_4659_9605_2601FDD2BE6A" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:StructuralFeature.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:StructuralFeature.multiplicity>
 											<UML:Attribute.initialValue>
 												<UML:Expression/>
 											</UML:Attribute.initialValue>
 											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_2C503787_F407_4afc_AB13_D0AFD33066C1"/>
+												<Foundation.Core.Classifier xmi.idref="EAID_2C503787_F407_4afc_AB13_D0AFD33066C1"/>
 											</UML:StructuralFeature.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="Sets the angle of rotation of the diagram object.  Zero degrees is pointing to the top of the diagram.  Rotation is clockwise."/>
@@ -253,18 +371,42 @@
 											</UML:ModelElement.taggedValue>
 										</UML:Attribute>
 									</UML:Classifier.feature>
+									<UML:Namespace.ownedElement>
+										<UML:Generalization child="EAID_E5F4721C_C683_4741_9E52_829F269D4580" parent="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09" xmi.id="EAID_4CE06AFE_B343_4f18_BEE9_36C42C6B5E46" visibility="public">
+											<UML:ModelElement.taggedValue/>
+										</UML:Generalization>
+									</UML:Namespace.ownedElement>
+									<UML:Namespace.ownedElement>
+										<UML:Generalization child="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09" parent="EAID_F56A9616_524E_4d17_AB85_EDB31E40B72F" xmi.id="EAID_CBC5E1E9_1082_45e5_BD97_707E1BAA74C2" visibility="public">
+											<UML:ModelElement.taggedValue/>
+										</UML:Generalization>
+									</UML:Namespace.ownedElement>
 								</UML:Class>
 								<UML:Association xmi.id="EAID_01E52390_608A_4a8a_A061_7D7016EBD5F6" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{2D17C38C-27D8-402d-9B7B-687AC6753212}" xmi.id="EAID_4AFD06E3_8391_4428_8979_8A78F56E12AE"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Association.connection>
-										<UML:AssociationEnd visibility="public" multiplicity="0..*" name="StyledObjects" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09">
+										<UML:AssociationEnd xmi.id="EAID_srcE52390_608A_4a8a_A061_7D7016EBD5F6" visibility="public" multiplicity="0..*" name="StyledObjects" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09">
+											<UML:AssociationEnd.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="-1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:AssociationEnd.multiplicity>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="A style can be assigned to multiple diagram objects."/>
 											</UML:ModelElement.taggedValue>
 										</UML:AssociationEnd>
-										<UML:AssociationEnd visibility="public" multiplicity="0..1" name="DiagramObjectStyle" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_B56C6A1C_CAEE_4c82_A12F_A49B4F824B9D">
+										<UML:AssociationEnd xmi.id="EAID_dstE52390_608A_4a8a_A061_7D7016EBD5F6" visibility="public" multiplicity="0..1" name="DiagramObjectStyle" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_B56C6A1C_CAEE_4c82_A12F_A49B4F824B9D">
+											<UML:AssociationEnd.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:AssociationEnd.multiplicity>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="A diagram object has a style associated that provides a reference for the style used in the originating system."/>
 											</UML:ModelElement.taggedValue>
@@ -276,32 +418,57 @@
 										<UML:TaggedValue tag="GUIDBasedOn" value="{5C4A600A-6EA7-4ac1-A144-9E7C309F375B}" xmi.id="EAID_3B360DD1_3B80_4db8_8DC6_E1178643C696"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Association.connection>
-										<UML:AssociationEnd visibility="public" multiplicity="0..*" name="DiagramElements" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09">
+										<UML:AssociationEnd xmi.id="EAID_src1AD70D_D157_45b2_87DB_84B92BA27F23" visibility="public" multiplicity="0..*" name="DiagramElements" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09">
+											<UML:AssociationEnd.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="-1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:AssociationEnd.multiplicity>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="A diagram is made up of multiple diagram objects."/>
 											</UML:ModelElement.taggedValue>
 										</UML:AssociationEnd>
-										<UML:AssociationEnd visibility="public" multiplicity="1" name="Diagram" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_760CED2F_AC2C_408c_A26B_51AAB9F82D21">
+										<UML:AssociationEnd xmi.id="EAID_dst1AD70D_D157_45b2_87DB_84B92BA27F23" visibility="public" multiplicity="1" name="Diagram" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_760CED2F_AC2C_408c_A26B_51AAB9F82D21">
+											<UML:AssociationEnd.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="1" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:AssociationEnd.multiplicity>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="A diagram object is part of a diagram."/>
 											</UML:ModelElement.taggedValue>
 										</UML:AssociationEnd>
 									</UML:Association.connection>
 								</UML:Association>
-								<UML:Generalization subtype="EAID_E5F4721C_C683_4741_9E52_829F269D4580" supertype="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09" xmi.id="EAID_4CE06AFE_B343_4f18_BEE9_36C42C6B5E46" visibility="public">
-									<UML:ModelElement.taggedValue/>
-								</UML:Generalization>
 								<UML:Association xmi.id="EAID_5AB699F2_F5EB_491f_80C9_FC6C7897AC9A" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{86380B03-52EA-473d-9BFA-DCDAAE9D1275}" xmi.id="EAID_E85B58A9_FF50_470d_9C84_EDC4BD8DF334"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Association.connection>
-										<UML:AssociationEnd visibility="public" multiplicity="0..*" name="VisibleObjects" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09">
+										<UML:AssociationEnd xmi.id="EAID_srcB699F2_F5EB_491f_80C9_FC6C7897AC9A" visibility="public" multiplicity="0..*" name="VisibleObjects" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09">
+											<UML:AssociationEnd.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="-1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:AssociationEnd.multiplicity>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="A visibility layer can contain one or more diagram objects."/>
 											</UML:ModelElement.taggedValue>
 										</UML:AssociationEnd>
-										<UML:AssociationEnd visibility="public" multiplicity="0..*" name="VisibilityLayers" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_84BEE75D_D6D2_49ea_8D29_1B75EA046664">
+										<UML:AssociationEnd xmi.id="EAID_dstB699F2_F5EB_491f_80C9_FC6C7897AC9A" visibility="public" multiplicity="0..*" name="VisibilityLayers" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_84BEE75D_D6D2_49ea_8D29_1B75EA046664">
+											<UML:AssociationEnd.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="-1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:AssociationEnd.multiplicity>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="A diagram object can be part of multiple visibility layers."/>
 											</UML:ModelElement.taggedValue>
@@ -313,32 +480,57 @@
 										<UML:TaggedValue tag="GUIDBasedOn" value="{4DFBB74F-9127-43ee-A7AA-04329802814F}" xmi.id="EAID_B9B10FF5_E98C_49e0_8929_06354CCAA478"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Association.connection>
-										<UML:AssociationEnd visibility="public" multiplicity="1" name="DiagramObject" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09">
+										<UML:AssociationEnd xmi.id="EAID_src95EAE2_A364_4f11_B62D_8243D772D1EF" visibility="public" multiplicity="1" name="DiagramObject" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09">
+											<UML:AssociationEnd.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="1" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:AssociationEnd.multiplicity>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="The diagram object with which the points are associated."/>
 											</UML:ModelElement.taggedValue>
 										</UML:AssociationEnd>
-										<UML:AssociationEnd visibility="public" multiplicity="0..*" name="DiagramObjectPoints" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_6F27B2F6_F6D7_4551_9EF5_7F7A1F7CB149">
+										<UML:AssociationEnd xmi.id="EAID_dst95EAE2_A364_4f11_B62D_8243D772D1EF" visibility="public" multiplicity="0..*" name="DiagramObjectPoints" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_6F27B2F6_F6D7_4551_9EF5_7F7A1F7CB149">
+											<UML:AssociationEnd.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="-1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:AssociationEnd.multiplicity>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="A diagram object can have 0 or more points to reflect its layout position, routing (for polylines) or boundary (for polygons)."/>
 											</UML:ModelElement.taggedValue>
 										</UML:AssociationEnd>
 									</UML:Association.connection>
 								</UML:Association>
-								<UML:Generalization subtype="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09" supertype="EAID_F56A9616_524E_4d17_AB85_EDB31E40B72F" xmi.id="EAID_CBC5E1E9_1082_45e5_BD97_707E1BAA74C2" visibility="public">
-									<UML:ModelElement.taggedValue/>
-								</UML:Generalization>
 								<UML:Association xmi.id="EAID_F0AA6617_A817_40ff_9BAB_676E5820AE21" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{03423B70-34E0-4313-B19B-5FAFFD1F143B}" xmi.id="EAID_F68C5246_0675_45e9_A0E7_2336506E6D30"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Association.connection>
-										<UML:AssociationEnd visibility="public" multiplicity="0..*" name="DiagramObjects" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09">
+										<UML:AssociationEnd xmi.id="EAID_srcAA6617_A817_40ff_9BAB_676E5820AE21" visibility="public" multiplicity="0..*" name="DiagramObjects" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09">
+											<UML:AssociationEnd.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="-1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:AssociationEnd.multiplicity>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="The domain object to which this diagram object is associated."/>
 											</UML:ModelElement.taggedValue>
 										</UML:AssociationEnd>
-										<UML:AssociationEnd visibility="public" multiplicity="0..1" name="IdentifiedObject" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_F56A9616_524E_4d17_AB85_EDB31E40B72F">
+										<UML:AssociationEnd xmi.id="EAID_dstAA6617_A817_40ff_9BAB_676E5820AE21" visibility="public" multiplicity="0..1" name="IdentifiedObject" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_F56A9616_524E_4d17_AB85_EDB31E40B72F">
+											<UML:AssociationEnd.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:AssociationEnd.multiplicity>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="The diagram objects that are associated with the domain object."/>
 											</UML:ModelElement.taggedValue>
@@ -350,48 +542,76 @@
 										<UML:TaggedValue tag="documentation" value="A point in a given space defined by 3 coordinates and associated to a diagram object.  The coordinates may be positive or negative as the origin does not have to be in the corner of a diagram.  &#xA;"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Classifier.feature>
-										<UML:Attribute name="sequenceNumber" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+										<UML:Attribute name="sequenceNumber" xmi.id="EAID_50FAC2B1_4A9B_411d_A474_82015614C7FC" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:StructuralFeature.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:StructuralFeature.multiplicity>
 											<UML:Attribute.initialValue>
 												<UML:Expression/>
 											</UML:Attribute.initialValue>
 											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_5444BCC6_E3F1_4ba3_9041_6E67985141CD"/>
+												<Foundation.Core.Classifier xmi.idref="EAID_5444BCC6_E3F1_4ba3_9041_6E67985141CD"/>
 											</UML:StructuralFeature.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="The sequence position of the point, used for defining the order of points for diagram objects acting as a polyline or polygon with more than one point.&#xA;"/>
 												<UML:TaggedValue tag="GUIDBasedOn" value="{DD5337A3-21F0-414c-B772-EC69C25CB9C0}" xmi.id="EAID_48436BE9_029F_40fb_88DC_38529FD2F4F2"/>
 											</UML:ModelElement.taggedValue>
 										</UML:Attribute>
-										<UML:Attribute name="xPosition" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+										<UML:Attribute name="xPosition" xmi.id="EAID_BB617E53_9BAE_4389_8C95_D20A713F5115" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:StructuralFeature.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="1" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:StructuralFeature.multiplicity>
 											<UML:Attribute.initialValue>
 												<UML:Expression/>
 											</UML:Attribute.initialValue>
 											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F"/>
+												<Foundation.Core.Classifier xmi.idref="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F"/>
 											</UML:StructuralFeature.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="The X coordinate of this point.&#xA;"/>
 												<UML:TaggedValue tag="GUIDBasedOn" value="{A3590665-8EB6-420f-B38D-80EDBB9A2879}" xmi.id="EAID_98BF74C6_6DB0_498e_9455_A230A5F5ACB0"/>
 											</UML:ModelElement.taggedValue>
 										</UML:Attribute>
-										<UML:Attribute name="yPosition" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+										<UML:Attribute name="yPosition" xmi.id="EAID_36020FA9_2BC6_49b0_B2EC_E84E96FE31D9" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:StructuralFeature.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="1" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:StructuralFeature.multiplicity>
 											<UML:Attribute.initialValue>
 												<UML:Expression/>
 											</UML:Attribute.initialValue>
 											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F"/>
+												<Foundation.Core.Classifier xmi.idref="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F"/>
 											</UML:StructuralFeature.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="The Y coordinate of this point.&#xA;"/>
 												<UML:TaggedValue tag="GUIDBasedOn" value="{997CF101-75B1-45e4-9EEE-974A5021B21A}" xmi.id="EAID_A6F32F86_9FE6_41e9_A898_03B286DAFA9B"/>
 											</UML:ModelElement.taggedValue>
 										</UML:Attribute>
-										<UML:Attribute name="zPosition" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+										<UML:Attribute name="zPosition" xmi.id="EAID_911CD40E_3BE0_4f7d_B1F2_33DC325822F0" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:StructuralFeature.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:StructuralFeature.multiplicity>
 											<UML:Attribute.initialValue>
 												<UML:Expression/>
 											</UML:Attribute.initialValue>
 											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F"/>
+												<Foundation.Core.Classifier xmi.idref="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F"/>
 											</UML:StructuralFeature.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="The Z coordinate of this point.&#xA;"/>
@@ -401,64 +621,102 @@
 									</UML:Classifier.feature>
 								</UML:Class>
 								<UML:Class name="Diagram" xmi.id="EAID_760CED2F_AC2C_408c_A26B_51AAB9F82D21" visibility="public" namespace="EAPK_FEB82C3C_09A0_49f4_9414_7FB158FA9DCB" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+									<UML:GeneralizableElement.generalization>
+										<Foundation.Core.Generalization xmi.idref="EAID_05054193_327B_40d2_85B4_DAAA6FE24356"/>
+									</UML:GeneralizableElement.generalization>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="documentation" value="The diagram being exchanged.  The coordinate system is a standard Cartesian coordinate system and the orientation attribute defines the orientation.&#xA;"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Classifier.feature>
-										<UML:Attribute name="orientation" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+										<UML:Attribute name="orientation" xmi.id="EAID_1AA615E5_F0B7_44ea_98E6_3CB2D70CBA8C" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:StructuralFeature.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="1" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:StructuralFeature.multiplicity>
 											<UML:Attribute.initialValue>
 												<UML:Expression/>
 											</UML:Attribute.initialValue>
 											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_E4220C0C_428B_4f5a_9BD9_6403DC459AB2"/>
+												<Foundation.Core.Classifier xmi.idref="EAID_E4220C0C_428B_4f5a_9BD9_6403DC459AB2"/>
 											</UML:StructuralFeature.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="Coordinate system orientation of the diagram.&#xA;"/>
 												<UML:TaggedValue tag="GUIDBasedOn" value="{E434F373-9059-4d4e-8D77-8532E6D6E20A}" xmi.id="EAID_8F64C789_F35A_4381_993B_72E370103D50"/>
 											</UML:ModelElement.taggedValue>
 										</UML:Attribute>
-										<UML:Attribute name="x1InitialView" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+										<UML:Attribute name="x1InitialView" xmi.id="EAID_0768E819_3BF0_445c_BAFC_9E11C14A30B8" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:StructuralFeature.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:StructuralFeature.multiplicity>
 											<UML:Attribute.initialValue>
 												<UML:Expression/>
 											</UML:Attribute.initialValue>
 											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F"/>
+												<Foundation.Core.Classifier xmi.idref="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F"/>
 											</UML:StructuralFeature.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="X coordinate of the first corner of the initial view.&#xA;"/>
 												<UML:TaggedValue tag="GUIDBasedOn" value="{C3E7979E-7009-4acc-BEFD-4EE6C76AC48B}" xmi.id="EAID_E74B6BAC_44B9_4701_80AD_92D03C4CE96C"/>
 											</UML:ModelElement.taggedValue>
 										</UML:Attribute>
-										<UML:Attribute name="x2InitialView" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+										<UML:Attribute name="x2InitialView" xmi.id="EAID_973F7497_FC32_4f8c_A0A3_5C4E24137F70" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:StructuralFeature.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:StructuralFeature.multiplicity>
 											<UML:Attribute.initialValue>
 												<UML:Expression/>
 											</UML:Attribute.initialValue>
 											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F"/>
+												<Foundation.Core.Classifier xmi.idref="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F"/>
 											</UML:StructuralFeature.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="X coordinate of the second corner of the initial view.&#xA;"/>
 												<UML:TaggedValue tag="GUIDBasedOn" value="{8D98579B-5D7F-44a7-B694-6ADA4287C5AB}" xmi.id="EAID_EBFAFB96_0BF2_4235_9AEE_2B3F025AD3E2"/>
 											</UML:ModelElement.taggedValue>
 										</UML:Attribute>
-										<UML:Attribute name="y1InitialView" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+										<UML:Attribute name="y1InitialView" xmi.id="EAID_84EA8A5D_783D_4b07_AD5B_258F46139E63" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:StructuralFeature.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:StructuralFeature.multiplicity>
 											<UML:Attribute.initialValue>
 												<UML:Expression/>
 											</UML:Attribute.initialValue>
 											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F"/>
+												<Foundation.Core.Classifier xmi.idref="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F"/>
 											</UML:StructuralFeature.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="Y coordinate of the first corner of the initial view.&#xA;"/>
 												<UML:TaggedValue tag="GUIDBasedOn" value="{F9ED2529-E452-4556-ACAD-C33EA342768B}" xmi.id="EAID_F19B7B39_7B76_47f5_9505_E50336C9EBFA"/>
 											</UML:ModelElement.taggedValue>
 										</UML:Attribute>
-										<UML:Attribute name="y2InitialView" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+										<UML:Attribute name="y2InitialView" xmi.id="EAID_B8C34196_BE4D_47c8_A7C4_AC5CFEF60EA4" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:StructuralFeature.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:StructuralFeature.multiplicity>
 											<UML:Attribute.initialValue>
 												<UML:Expression/>
 											</UML:Attribute.initialValue>
 											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F"/>
+												<Foundation.Core.Classifier xmi.idref="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F"/>
 											</UML:StructuralFeature.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="Y coordinate of the second corner of the initial view.&#xA;"/>
@@ -466,21 +724,37 @@
 											</UML:ModelElement.taggedValue>
 										</UML:Attribute>
 									</UML:Classifier.feature>
+									<UML:Namespace.ownedElement>
+										<UML:Generalization child="EAID_760CED2F_AC2C_408c_A26B_51AAB9F82D21" parent="EAID_F56A9616_524E_4d17_AB85_EDB31E40B72F" xmi.id="EAID_05054193_327B_40d2_85B4_DAAA6FE24356" visibility="public">
+											<UML:ModelElement.taggedValue/>
+										</UML:Generalization>
+									</UML:Namespace.ownedElement>
 								</UML:Class>
-								<UML:Generalization subtype="EAID_760CED2F_AC2C_408c_A26B_51AAB9F82D21" supertype="EAID_F56A9616_524E_4d17_AB85_EDB31E40B72F" xmi.id="EAID_05054193_327B_40d2_85B4_DAAA6FE24356" visibility="public">
-									<UML:ModelElement.taggedValue/>
-								</UML:Generalization>
 								<UML:Association xmi.id="EAID_23CFBE2E_03F2_46b3_9198_87DD44A218FB" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="GUIDBasedOn" value="{442E3273-18B9-4a81-A9E5-42B612D453BC}" xmi.id="EAID_048C2130_CBBE_49de_97E2_E369479CBDE0"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Association.connection>
-										<UML:AssociationEnd visibility="public" multiplicity="0..1" name="DiagramStyle" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_91825829_C2D0_409d_98CA_6C872A715407">
+										<UML:AssociationEnd xmi.id="EAID_srcCFBE2E_03F2_46b3_9198_87DD44A218FB" visibility="public" multiplicity="0..1" name="DiagramStyle" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_91825829_C2D0_409d_98CA_6C872A715407">
+											<UML:AssociationEnd.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:AssociationEnd.multiplicity>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="A Diagram may have a DiagramStyle."/>
 											</UML:ModelElement.taggedValue>
 										</UML:AssociationEnd>
-										<UML:AssociationEnd visibility="public" multiplicity="0..*" name="Diagram" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_760CED2F_AC2C_408c_A26B_51AAB9F82D21">
+										<UML:AssociationEnd xmi.id="EAID_dstCFBE2E_03F2_46b3_9198_87DD44A218FB" visibility="public" multiplicity="0..*" name="Diagram" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_760CED2F_AC2C_408c_A26B_51AAB9F82D21">
+											<UML:AssociationEnd.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="-1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:AssociationEnd.multiplicity>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="A DiagramStyle can be used by many Diagrams."/>
 											</UML:ModelElement.taggedValue>
@@ -488,16 +762,26 @@
 									</UML:Association.connection>
 								</UML:Association>
 								<UML:Class name="VisibilityLayer" xmi.id="EAID_84BEE75D_D6D2_49ea_8D29_1B75EA046664" visibility="public" namespace="EAPK_FEB82C3C_09A0_49f4_9414_7FB158FA9DCB" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+									<UML:GeneralizableElement.generalization>
+										<Foundation.Core.Generalization xmi.idref="EAID_E23B609E_6B07_4f57_9E78_826E085E0519"/>
+									</UML:GeneralizableElement.generalization>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="documentation" value="Layers are typically used for grouping diagram objects according to themes and scales. Themes are used to display or hide certain information (e.g., lakes, borders), while scales are used for hiding or displaying information depending on the current zoom level (hide text when it is too small to be read, or when it exceeds the screen size). This is also called de-cluttering.&#xA;&#xA;CIM based graphics exchange will support an m:n relationship between diagram objects and layers. It will be the task of the importing system to convert an m:n case into an appropriate 1:n representation if the importing system does not support m:n.&#xA;"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Classifier.feature>
-										<UML:Attribute name="drawingOrder" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+										<UML:Attribute name="drawingOrder" xmi.id="EAID_D09D5C8A_8424_4b3d_B508_F3EA5C7D8183" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:StructuralFeature.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:StructuralFeature.multiplicity>
 											<UML:Attribute.initialValue>
 												<UML:Expression/>
 											</UML:Attribute.initialValue>
 											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_5444BCC6_E3F1_4ba3_9041_6E67985141CD"/>
+												<Foundation.Core.Classifier xmi.idref="EAID_5444BCC6_E3F1_4ba3_9041_6E67985141CD"/>
 											</UML:StructuralFeature.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="The drawing order for this layer.  The higher the number, the later the layer and the objects within it are rendered.&#xA;"/>
@@ -505,37 +789,59 @@
 											</UML:ModelElement.taggedValue>
 										</UML:Attribute>
 									</UML:Classifier.feature>
+									<UML:Namespace.ownedElement>
+										<UML:Generalization child="EAID_84BEE75D_D6D2_49ea_8D29_1B75EA046664" parent="EAID_F56A9616_524E_4d17_AB85_EDB31E40B72F" xmi.id="EAID_E23B609E_6B07_4f57_9E78_826E085E0519" visibility="public">
+											<UML:ModelElement.taggedValue/>
+										</UML:Generalization>
+									</UML:Namespace.ownedElement>
 								</UML:Class>
-								<UML:Generalization subtype="EAID_84BEE75D_D6D2_49ea_8D29_1B75EA046664" supertype="EAID_F56A9616_524E_4d17_AB85_EDB31E40B72F" xmi.id="EAID_E23B609E_6B07_4f57_9E78_826E085E0519" visibility="public">
-									<UML:ModelElement.taggedValue/>
-								</UML:Generalization>
 								<UML:Class name="DiagramStyle" xmi.id="EAID_91825829_C2D0_409d_98CA_6C872A715407" visibility="public" namespace="EAPK_FEB82C3C_09A0_49f4_9414_7FB158FA9DCB" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+									<UML:GeneralizableElement.generalization>
+										<Foundation.Core.Generalization xmi.idref="EAID_2065358C_1208_4a39_9B65_B7D72B46F9B2"/>
+									</UML:GeneralizableElement.generalization>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="documentation" value="The diagram style refer to a style used by the originating system for a diagram.  A diagram style describes information such as schematic, geographic, bus-branch etc."/>
 									</UML:ModelElement.taggedValue>
+									<UML:Namespace.ownedElement>
+										<UML:Generalization child="EAID_91825829_C2D0_409d_98CA_6C872A715407" parent="EAID_F56A9616_524E_4d17_AB85_EDB31E40B72F" xmi.id="EAID_2065358C_1208_4a39_9B65_B7D72B46F9B2" visibility="public">
+											<UML:ModelElement.taggedValue/>
+										</UML:Generalization>
+									</UML:Namespace.ownedElement>
 								</UML:Class>
-								<UML:Generalization subtype="EAID_91825829_C2D0_409d_98CA_6C872A715407" supertype="EAID_F56A9616_524E_4d17_AB85_EDB31E40B72F" xmi.id="EAID_2065358C_1208_4a39_9B65_B7D72B46F9B2" visibility="public">
-									<UML:ModelElement.taggedValue/>
-								</UML:Generalization>
 								<UML:Class name="DiagramObjectStyle" xmi.id="EAID_B56C6A1C_CAEE_4c82_A12F_A49B4F824B9D" visibility="public" namespace="EAPK_FEB82C3C_09A0_49f4_9414_7FB158FA9DCB" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+									<UML:GeneralizableElement.generalization>
+										<Foundation.Core.Generalization xmi.idref="EAID_ACB7B897_4EC6_46f2_BB82_DC80902AB793"/>
+									</UML:GeneralizableElement.generalization>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="documentation" value="A reference to a style used by the originating system for a diagram object.  A diagram object style describes information such as line thickness, shape such as circle or rectangle etc, and color.&#xA;"/>
 									</UML:ModelElement.taggedValue>
+									<UML:Namespace.ownedElement>
+										<UML:Generalization child="EAID_B56C6A1C_CAEE_4c82_A12F_A49B4F824B9D" parent="EAID_F56A9616_524E_4d17_AB85_EDB31E40B72F" xmi.id="EAID_ACB7B897_4EC6_46f2_BB82_DC80902AB793" visibility="public">
+											<UML:ModelElement.taggedValue/>
+										</UML:Generalization>
+									</UML:Namespace.ownedElement>
 								</UML:Class>
-								<UML:Generalization subtype="EAID_B56C6A1C_CAEE_4c82_A12F_A49B4F824B9D" supertype="EAID_F56A9616_524E_4d17_AB85_EDB31E40B72F" xmi.id="EAID_ACB7B897_4EC6_46f2_BB82_DC80902AB793" visibility="public">
-									<UML:ModelElement.taggedValue/>
-								</UML:Generalization>
 								<UML:Class name="TextDiagramObject" xmi.id="EAID_E5F4721C_C683_4741_9E52_829F269D4580" visibility="public" namespace="EAPK_FEB82C3C_09A0_49f4_9414_7FB158FA9DCB" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+									<UML:GeneralizableElement.generalization>
+										<Foundation.Core.Generalization xmi.idref="EAID_4CE06AFE_B343_4f18_BEE9_36C42C6B5E46"/>
+									</UML:GeneralizableElement.generalization>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="documentation" value="A diagram object for placing free-text or text derived from an associated domain object."/>
 									</UML:ModelElement.taggedValue>
 									<UML:Classifier.feature>
-										<UML:Attribute name="text" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+										<UML:Attribute name="text" xmi.id="EAID_6C44AF67_714F_4705_BE47_E3AE7AFD547D" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:StructuralFeature.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="1" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:StructuralFeature.multiplicity>
 											<UML:Attribute.initialValue>
 												<UML:Expression/>
 											</UML:Attribute.initialValue>
 											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+												<Foundation.Core.Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
 											</UML:StructuralFeature.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="The text that is displayed by this text diagram object.&#xA;"/>
@@ -554,24 +860,38 @@
 										<UML:TaggedValue tag="documentation" value="This is a root class to provide common identification for all classes needing identification and naming attributes."/>
 									</UML:ModelElement.taggedValue>
 									<UML:Classifier.feature>
-										<UML:Attribute name="mRID" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+										<UML:Attribute name="mRID" xmi.id="EAID_9F975B97_59FC_4536_AE25_5F9CF6568193" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:StructuralFeature.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="0" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:StructuralFeature.multiplicity>
 											<UML:Attribute.initialValue>
 												<UML:Expression/>
 											</UML:Attribute.initialValue>
 											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+												<Foundation.Core.Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
 											</UML:StructuralFeature.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="Master resource identifier issued by a model authority. The mRID is globally unique within an exchange context. Global uniqueness is easily achieved by using a UUID,  as specified in RFC 4122, for the mRID.  The use of UUID is strongly recommended.&#xA;For CIMXML data files in RDF syntax conforming to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements."/>
 												<UML:TaggedValue tag="GUIDBasedOn" value="{C775F80A-A23D-4f38-AB9D-49D1FA882337}" xmi.id="EAID_5F32DC2E_B92A_4a13_8145_E358C00982C7"/>
 											</UML:ModelElement.taggedValue>
 										</UML:Attribute>
-										<UML:Attribute name="name" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+										<UML:Attribute name="name" xmi.id="EAID_5666A30F_FC4D_4c75_9D28_5B530BE89B96" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+											<UML:StructuralFeature.multiplicity>
+												<UML:Multiplicity>
+													<UML:Multiplicity.range>
+														<UML:MultiplicityRange lower="1" upper="1"/>
+													</UML:Multiplicity.range>
+												</UML:Multiplicity>
+											</UML:StructuralFeature.multiplicity>
 											<UML:Attribute.initialValue>
 												<UML:Expression/>
 											</UML:Attribute.initialValue>
 											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
+												<Foundation.Core.Classifier xmi.idref="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E"/>
 											</UML:StructuralFeature.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="description" value="The name is any free human readable and possibly non unique text naming the object.&#xA;"/>
@@ -609,47 +929,13 @@
 						</UML:Package>
 					</UML:Namespace.ownedElement>
 				</UML:Package>
+				<UML:Stereotype xmi.id="eaxmiid0" name="Entsoe" visibility="private" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false" baseClass="Class">
+					<UML:Stereotype.extendedElement>
+						<Foundation.Core.ModelElement xmi.idref="EAID_3CD8C886_6074_49a7_84B1_237F2FF69E95"/>
+					</UML:Stereotype.extendedElement>
+				</UML:Stereotype>
 			</UML:Namespace.ownedElement>
 		</UML:Model>
-		<UML:Diagram name="DiagramLayoutProfile" xmi.id="EAID_B6F072BC_9373_47f3_A605_A9EEAB9D9104" diagramType="ClassDiagram" owner="EAPK_563140E0_62E2_49ae_B06F_FF8BCA282289" toolName="Enterprise Architect 2.5">
-			<UML:ModelElement.taggedValue/>
-			<UML:Diagram.element>
-				<UML:DiagramElement geometry="Left=950;Top=203;Right=1065;Bottom=320;imgL=975;imgT=233;imgR=1090;imgB=350;" subject="EAID_74D9B7FC_37EA_4916_8214_2BFD9647061C" seqno="1" style="DUID=691568B7;"/>
-				<UML:DiagramElement geometry="Left=831;Top=123;Right=930;Bottom=193;imgL=856;imgT=153;imgR=955;imgB=223;" subject="EAID_91825829_C2D0_409d_98CA_6C872A715407" seqno="2" style="DUID=E17895DE;LCol=0;BCol=14938876;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=555;Top=441;Right=670;Bottom=530;imgL=580;imgT=471;imgR=695;imgB=560;" subject="EAID_0C6FE142_7F17_4c78_8B17_EA82E6B9C5D3" seqno="3" style="DUID=C0BBB44F;"/>
-				<UML:DiagramElement geometry="Left=371;Top=634;Right=847;Bottom=774;imgL=396;imgT=664;imgR=872;imgB=804;" subject="EAID_C8240713_D2A4_42a3_80C9_2EBA93AA4902" seqno="4" style="DUID=AC81B918;"/>
-				<UML:DiagramElement geometry="Left=753;Top=8;Right=1037;Bottom=111;imgL=778;imgT=38;imgR=1062;imgB=141;" subject="EAID_E4CC5D2A_07A0_49a3_A3E3_A123A067E296" seqno="5" style="DUID=D07E7A3C;"/>
-				<UML:DiagramElement geometry="Left=679;Top=415;Right=794;Bottom=476;imgL=704;imgT=445;imgR=819;imgB=506;" subject="EAID_14EAE036_A3C5_4d3e_B066_786FEB835C44" seqno="6" style="DUID=3D9F50C3;"/>
-				<UML:DiagramElement geometry="Left=24;Top=644;Right=338;Bottom=846;imgL=49;imgT=674;imgR=363;imgB=876;" subject="EAID_3CD8C886_6074_49a7_84B1_237F2FF69E95" seqno="7" style="DUID=C5D75810;BCol=13434828;"/>
-				<UML:DiagramElement geometry="Left=131;Top=0;Right=704;Bottom=62;imgL=156;imgT=30;imgR=729;imgB=92;" subject="EAID_F56A9616_524E_4d17_AB85_EDB31E40B72F" seqno="8" style="DUID=500B7FDA;AttCustom=0;OpCustom=0;RzO=1;LCol=0;BCol=14745599;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=706;Top=491;Right=850;Bottom=581;imgL=731;imgT=521;imgR=875;imgB=611;" subject="EAID_E4220C0C_428B_4f5a_9BD9_6403DC459AB2" seqno="9" style="DUID=80B53251;LCol=0;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;BCol=10092287;"/>
-				<UML:DiagramElement geometry="Left=30;Top=512;Right=178;Bottom=582;imgL=55;imgT=542;imgR=203;imgB=612;" subject="EAID_0DAED907_4466_42a1_9F03_85E78EF460FF" seqno="10" style="DUID=EDB82F5F;LCol=0;BCol=14938876;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=18;Top=310;Right=197;Bottom=417;imgL=43;imgT=340;imgR=222;imgB=447;" subject="EAID_6F27B2F6_F6D7_4551_9EF5_7F7A1F7CB149" seqno="11" style="DUID=752918C0;LCol=0;BCol=14938876;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=127;Top=166;Right=270;Bottom=231;imgL=152;imgT=196;imgR=295;imgB=261;" subject="EAID_B56C6A1C_CAEE_4c82_A12F_A49B4F824B9D" seqno="12" style="DUID=7BE7FEBE;LCol=0;BCol=14938876;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=494;Top=186;Right=662;Bottom=265;imgL=519;imgT=216;imgR=687;imgB=295;" subject="EAID_84BEE75D_D6D2_49ea_8D29_1B75EA046664" seqno="13" style="DUID=A2987C0D;LCol=0;BCol=14938876;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=354;Top=515;Right=535;Bottom=575;imgL=379;imgT=545;imgR=560;imgB=605;" subject="EAID_E5F4721C_C683_4741_9E52_829F269D4580" seqno="14" style="DUID=762523F1;LCol=0;BCol=14938876;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=672;Top=280;Right=869;Bottom=398;imgL=697;imgT=310;imgR=894;imgB=428;" subject="EAID_760CED2F_AC2C_408c_A26B_51AAB9F82D21" seqno="15" style="DUID=2D9D24F0;LCol=0;BCol=14938876;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=357;Top=344;Right=525;Bottom=461;imgL=382;imgT=374;imgR=550;imgB=491;" subject="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09" seqno="16" style="DUID=CDA6759F;LCol=0;BCol=14938876;BFol=0;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_BBF669B7_4C45_426b_B369_3D99B3CCEBDB" style="Mode=3;EOID=E17895DE;SOID=691568B7;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=3;$LLB=CX=18:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=72:CY=14:OX=35:OY=14:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=49:CY=14:OX=47:OY=-12:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=17:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_23CFBE2E_03F2_46b3_9198_87DD44A218FB" style="Mode=3;EOID=2D9D24F0;SOID=E17895DE;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="SX=-48;SY=-4;EX=206;EY=-30;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_2065358C_1208_4a39_9B65_B7D72B46F9B2" style="Mode=3;EOID=500B7FDA;SOID=E17895DE;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_AFCEEE32_2052_456e_816E_D7CA15214DF1" style="Mode=3;EOID=CDA6759F;SOID=C0BBB44F;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="SX=33;SY=0;EX=33;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_839D7016_68F3_444b_9D3C_3D625DE5046E" style="Mode=3;EOID=CDA6759F;SOID=AC81B918;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_D2F6017B_D4D9_4458_A025_1F3F25AE155B" style="Mode=3;EOID=500B7FDA;SOID=D07E7A3C;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="SX=0;SY=0;EX=50;EY=-58;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_08C40536_4729_4c4c_AB0D_27E25CE92E5A" style="Mode=3;EOID=2D9D24F0;SOID=3D9F50C3;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;SX=-1;SY=-2;EX=0;EY=-2;$LLB=CX=18:CY=14:OX=10:OY=-4:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=126:CY=14:OX=167:OY=-2:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=110:CY=14:OX=122:OY=14:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=17:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_E69FAF30_B84B_450f_B373_50330E81C653" style="Mode=3;EOID=752918C0;SOID=EDB82F5F;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EX=-219;EY=-30;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_ACB7B897_4EC6_46f2_BB82_DC80902AB793" style="Mode=3;EOID=500B7FDA;SOID=7BE7FEBE;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_E23B609E_6B07_4f57_9E78_826E085E0519" style="Mode=3;EOID=500B7FDA;SOID=A2987C0D;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_4CE06AFE_B343_4f18_BEE9_36C42C6B5E46" style="Mode=3;EOID=CDA6759F;SOID=762523F1;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;SX=98;SY=-15;EX=121;EY=-15;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_05054193_327B_40d2_85B4_DAAA6FE24356" style="Mode=3;EOID=500B7FDA;SOID=2D9D24F0;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;EX=-50;EY=-30;SX=-74;SY=57;$LLB=CX=17:CY=14:OX=-10:OY=-10:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=85:CY=14:OX=53:OY=-37:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=84:CY=14:OX=-30:OY=9:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=18:CY=14:OX=-23:OY=14:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_F0AA6617_A817_40ff_9BAB_676E5820AE21" style="Mode=3;EOID=500B7FDA;SOID=CDA6759F;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=4;SX=4;SY=-9;EX=4;EY=-1;$LLB=CX=6:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=80:CY=14:OX=-15:OY=24:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=110:CY=14:OX=-1:OY=3:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=17:CY=14:OX=7:OY=-37:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_6295EAE2_A364_4f11_B62D_8243D772D1EF" style="Mode=3;EOID=752918C0;SOID=CDA6759F;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;SX=8;SY=-11;EX=12;EY=-11;$LLB=CX=17:CY=14:OX=6:OY=-5:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=76:CY=14:OX=35:OY=-27:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=83:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=17:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_5AB699F2_F5EB_491f_80C9_FC6C7897AC9A" style="Mode=3;EOID=A2987C0D;SOID=CDA6759F;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=4;SX=-20;SY=-8;EX=-20;EY=-8;$LLB=CX=17:CY=14:OX=0:OY=-24:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=73:CY=14:OX=4:OY=-30:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=103:CY=14:OX=9:OY=5:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=18:CY=14:OX=-6:OY=11:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_01E52390_608A_4a8a_A061_7D7016EBD5F6" style="Mode=3;EOID=7BE7FEBE;SOID=CDA6759F;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="SX=-10;SY=0;EX=14;EY=-30;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_CBC5E1E9_1082_45e5_BD97_707E1BAA74C2" style="Mode=3;EOID=500B7FDA;SOID=CDA6759F;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=2;SX=1;SY=1;EX=1;EY=1;$LLB=CX=17:CY=14:OX=24:OY=15:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=90:CY=14:OX=-6:OY=6:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=49:CY=14:OX=-5:OY=32:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=6:CY=14:OX=-4:OY=-30:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_391AD70D_D157_45b2_87DB_84B92BA27F23" style="Mode=3;EOID=2D9D24F0;SOID=CDA6759F;Color=-1;LWidth=0;Hidden=0;"/>
-			</UML:Diagram.element>
-		</UML:Diagram>
 		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_7A2D2FA9_D90E_4bad_8DE0_6655D8345858" value="{9C1F1E7A-8711-422b-9415-9BCC8A04C0CD}" modelElement="EAID_0DAED907_4466_42a1_9F03_85E78EF460FF"/>
 		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_8499A426_F074_4bc3_B383_4DD9A887984D" value="{E5A0EE1A-EA81-4542-8974-B5D3C2F3F465}" modelElement="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09"/>
 		<UML:TaggedValue tag="GUIDBasedOn" xmi.id="EAID_6ECD8147_437F_433c_B185_8583E6218660" value="{4E77FE4E-1547-4538-A26A-26B06F42FA7C}" modelElement="EAID_6F27B2F6_F6D7_4551_9EF5_7F7A1F7CB149"/>
@@ -662,49 +948,6 @@
 	</XMI.content>
 	<XMI.difference/>
 	<XMI.extensions xmi.extender="Enterprise Architect 2.5">
-		<EANoteLink xmi.id="EAID_AFCEEE32_2052_456e_816E_D7CA15214DF1" source="EAID_0C6FE142_7F17_4c78_8B17_EA82E6B9C5D3" target="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09">
-			<UML:ModelElement.taggedValue>
-				<UML:TaggedValue tag="linecolor" value="-1"/>
-				<UML:TaggedValue tag="linewidth" value="0"/>
-			</UML:ModelElement.taggedValue>
-		</EANoteLink>
-		<EANoteLink xmi.id="EAID_08C40536_4729_4c4c_AB0D_27E25CE92E5A" source="EAID_14EAE036_A3C5_4d3e_B066_786FEB835C44" target="EAID_760CED2F_AC2C_408c_A26B_51AAB9F82D21">
-			<UML:ModelElement.taggedValue>
-				<UML:TaggedValue tag="linecolor" value="0"/>
-				<UML:TaggedValue tag="linewidth" value="0"/>
-			</UML:ModelElement.taggedValue>
-		</EANoteLink>
-		<EANoteLink xmi.id="EAID_BBF669B7_4C45_426b_B369_3D99B3CCEBDB" source="EAID_74D9B7FC_37EA_4916_8214_2BFD9647061C" target="EAID_91825829_C2D0_409d_98CA_6C872A715407">
-			<UML:ModelElement.taggedValue>
-				<UML:TaggedValue tag="linecolor" value="-1"/>
-				<UML:TaggedValue tag="linewidth" value="0"/>
-			</UML:ModelElement.taggedValue>
-		</EANoteLink>
-		<EANoteLink xmi.id="EAID_839D7016_68F3_444b_9D3C_3D625DE5046E" source="EAID_C8240713_D2A4_42a3_80C9_2EBA93AA4902" target="EAID_575B8D8F_F841_4645_BC99_E6E5EF011F09">
-			<UML:ModelElement.taggedValue>
-				<UML:TaggedValue tag="linecolor" value="-1"/>
-				<UML:TaggedValue tag="linewidth" value="0"/>
-			</UML:ModelElement.taggedValue>
-		</EANoteLink>
-		<EANoteLink xmi.id="EAID_D2F6017B_D4D9_4458_A025_1F3F25AE155B" source="EAID_E4CC5D2A_07A0_49a3_A3E3_A123A067E296" target="EAID_F56A9616_524E_4d17_AB85_EDB31E40B72F">
-			<UML:ModelElement.taggedValue>
-				<UML:TaggedValue tag="linecolor" value="-1"/>
-				<UML:TaggedValue tag="linewidth" value="0"/>
-			</UML:ModelElement.taggedValue>
-		</EANoteLink>
 		<EAModel.paramSub/>
-		<EANoteLink xmi.id="EAID_FE02A0DD_798D_4802_AC40_C273FA2FA3EC" source="EAID_OR000000_524E_4d17_AB85_EDB31E40B72F" target="EAID_F56A9616_524E_4d17_AB85_EDB31E40B72F">
-			<UML:ModelElement.taggedValue>
-				<UML:TaggedValue tag="linecolor" value="0"/>
-				<UML:TaggedValue tag="linewidth" value="0"/>
-			</UML:ModelElement.taggedValue>
-		</EANoteLink>
-		<EAStub xmi.id="EAID_B50354A2_673F_4854_9143_7C83C81F2B8E" name="String" UMLType="Class"/>
-		<EAStub xmi.id="EAID_FF85CB9F_4A0C_4339_A3E4_06CE2EA1772F" name="Date" UMLType="Class"/>
-		<EAStub xmi.id="EAID_5444BCC6_E3F1_4ba3_9041_6E67985141CD" name="Integer" UMLType="Class"/>
-		<EAStub xmi.id="EAID_1BD84350_CD0A_4736_A7C4_0017A4F6F699" name="Boolean" UMLType="Class"/>
-		<EAStub xmi.id="EAID_BBE82735_E793_402c_9A43_F82C0EA1B76F" name="Simple_Float" UMLType="Class"/>
-		<EAStub xmi.id="EAID_2C503787_F407_4afc_AB13_D0AFD33066C1" name="AngleDegrees" UMLType="Class"/>
-		<EAStub xmi.id="EAID_E4220C0C_428B_4f5a_9BD9_6403DC459AB2" name="OrientationKind" UMLType="Class"/>
 	</XMI.extensions>
 </XMI>
